@@ -285,6 +285,12 @@ footer {
     padding: 0.5rem;
 }
 
+@-moz-document url-prefix() {
+    footer {
+        font-size: 1.1rem;
+    }
+}
+
 .footer-link:hover .blue,
 .footer-link:hover .red {
     text-decoration: underline;
@@ -327,6 +333,12 @@ footer {
         left: 375px;
     }
 
+    @-moz-document url-prefix() {
+        .header-sub {
+            left: 390px
+        }
+    }
+
     .navbar {
         height: 25%;
     }
@@ -364,12 +376,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .header-sub {
-        left: 340px;
-    }
-}
-
 @media screen and (max-width: 425px) {
     .left-header {
         text-align: center;
@@ -391,6 +397,12 @@ footer {
         left: 150px;
         font-size: 1rem;
         margin-top: -8px;
+    }
+
+    @-moz-document url-prefix() {
+        .header-sub {
+            left: 158px;
+        }
     }
 
     .project-name {

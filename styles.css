@@ -342,6 +342,14 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+    .left-header {
+        text-align: center;
+    }
+
+    .center-header {
+        margin-left: 0.8rem;
+    }
+    
     .hashflag-logo {
         width: 40px;
     }
@@ -361,7 +369,7 @@ footer {
     }
 
     .header-sub {
-        left: 150px;
+        left: 50px;
     }
 
     footer {

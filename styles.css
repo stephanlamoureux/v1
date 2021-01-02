@@ -202,7 +202,6 @@ header {
 .projects-grid {
     display: flex;
     flex-flow: row wrap;
-
 }
 
 .projects-cell {
@@ -219,7 +218,7 @@ header {
 
 .project-image {
     max-width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
     filter: grayscale(100%);
     transition: 1s ease;
 }
@@ -327,6 +326,42 @@ footer {
     .header-sub {
         left: 400px;
     }
+
+    .navbar {
+        height: 25%;
+    }
+
+    .round {
+        max-width: 40%;
+        max-height: 40%;
+    }
+
+    .project-name {
+        background-color: white;
+        color: black;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+
+    .project-image {
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        filter: none;
+        transition: none;
+    }
+
+    .project-image:hover {
+        filter: none;
+        transition: none;
+    }
+
+    .project-tile:hover .project-name {
+        color: #C81E3F;
+        transition: 1s ease;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -350,6 +385,16 @@ footer {
         left: 130px;
         font-size: 1rem;
         margin-top: -8px;
+    }
+
+    .project-name {
+        padding: 0.5rem 0;
+        font-size: 1.1rem;
+    }
+
+    .round {
+        max-width: 45%;
+        max-height: 45%;
     }
 
     .icon-links-red {

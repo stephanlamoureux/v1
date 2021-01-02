@@ -1,12 +1,12 @@
 /* TODO:
 
-- Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with it.
+-- Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with it.
 
-- Finish tablet and mobile design
+-- Finish tablet and mobile design:
 
-- Brighten up blue on contact icons
+-- Brighten up blue on contact icons
 
-- Write about me content
+-- Write about me content
 
 */
 
@@ -298,7 +298,6 @@ footer {
 }
 
 /* from https://wweb.dev/resources/css-separator-generator */
-
 .spikes {
     position: relative;
     background: #FFFFFF;
@@ -333,6 +332,16 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
+
+    header {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .header-sub {
+        left: 425px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {}

@@ -343,7 +343,7 @@ footer {
     }
 
     .center-header {
-        margin-left: 0.8rem;
+        margin-left: 0;
     }
 
     .hashflag-logo {
@@ -351,17 +351,7 @@ footer {
     }
 
     .header-title {
-        font-size: 2rem;
-    }
-
-    .icon-links-red {
-        color: #C81E3F;
-        font-size: 2.5rem;
-    }
-
-    .icon-links-blue {
-        color: #153054;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .header-sub {

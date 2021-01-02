@@ -2,6 +2,12 @@
 
 - Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with it.
 
+- Finish tablet and mobile design
+
+- Brighten up blue on contact icons
+
+- Write about me content
+
 */
 
 
@@ -30,7 +36,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #000000;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 a {
@@ -51,7 +57,7 @@ a {
 }
 
 .line {
-    background: linear-gradient(to right, #C81E3F, #ffffff, #09203F);
+    background: linear-gradient(to right, #C81E3F, #FFFFFF, #09203F);
     border: 0;
     height: 1px;
     margin: 0 auto;
@@ -295,7 +301,7 @@ footer {
 
 .spikes {
     position: relative;
-    background: #ffffff;
+    background: #FFFFFF;
 
 }
 
@@ -309,7 +315,7 @@ footer {
     display: block;
     height: 50px;
     background-size: 50px 100%;
-    background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%);
+    background-image: linear-gradient(135deg, #FFFFFF 25%, transparent 25%), linear-gradient(225deg, #FFFFFF 25%, transparent 25%);
     background-position: 0 0;
 }
 

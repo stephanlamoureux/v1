@@ -321,10 +321,14 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
     .wrapper {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .header-title {
+        font-size: 4rem;
     }
 
     .header-sub {

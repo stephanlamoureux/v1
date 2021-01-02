@@ -364,6 +364,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .header-sub {
+        left: 340px;
+    }
+}
+
 @media screen and (max-width: 425px) {
     .left-header {
         text-align: center;

@@ -328,11 +328,11 @@ footer {
     }
 
     .header-sub {
-        left: 425px;
+        left: 400px;
     }
 
     .center-header {
-        margin-left: 0;
+        margin-left: 0.3rem;
     }
 
 }

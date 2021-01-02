@@ -2,10 +2,6 @@
 
 -- Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with it.
 
--- Finish tablet and mobile design:
-
--- Write about me content
-
 */
 
 
@@ -369,9 +365,9 @@ footer {
     }
 
     .header-sub {
-        left: 0;
+        left: 100px;
         font-size: 1rem;
-        margin-top: 0;
+        margin-top: -10px;
     }
 
     footer {

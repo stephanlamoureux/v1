@@ -4,8 +4,6 @@
 
 -- Finish tablet and mobile design:
 
--- Brighten up blue on contact icons
-
 -- Write about me content
 
 */
@@ -270,7 +268,7 @@ header {
 }
 
 .icon-links-blue {
-    color: #09203F;
+    color: #153054;
     font-size: 4rem;
 }
 
@@ -333,15 +331,24 @@ footer {
         margin: 0 auto;
     }
 
-    header {
-        width: 70%;
-        margin: 0 auto;
+    .header-sub {
+        left: 390px;
     }
 
-    .header-sub {
-        left: 425px;
+    .center-header {
+        margin-left: 0.5rem;
     }
 
 }
 
-@media screen and (max-width: 425px) {}
+@media screen and (max-width: 425px) {
+    .icon-links-red {
+        color: #C81E3F;
+        font-size: 3rem;
+    }
+
+    .icon-links-blue {
+        color: #153054;
+        font-size: 3rem;
+    }
+}

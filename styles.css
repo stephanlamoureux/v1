@@ -349,7 +349,7 @@ footer {
     .center-header {
         margin-left: 0.8rem;
     }
-    
+
     .hashflag-logo {
         width: 40px;
     }
@@ -369,7 +369,9 @@ footer {
     }
 
     .header-sub {
-        left: 50px;
+        left: 0;
+        font-size: 1rem;
+        margin-top: 0;
     }
 
     footer {

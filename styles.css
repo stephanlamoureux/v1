@@ -110,6 +110,12 @@ header {
     margin-top: -1.2rem;
 }
 
+@-moz-document url-prefix() {
+    .header-sub {
+     left: 390px
+    }
+}
+
 /* Nav Menu */
 
 .menu {

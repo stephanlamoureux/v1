@@ -319,6 +319,10 @@ footer {
         width: 80%;
         margin: 0 auto;
     }
+
+    .center-header {
+        margin-left: 0.3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -330,11 +334,6 @@ footer {
     .header-sub {
         left: 400px;
     }
-
-    .center-header {
-        margin-left: 0.3rem;
-    }
-
 }
 
 @media screen and (max-width: 425px) {

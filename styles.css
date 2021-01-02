@@ -342,13 +342,33 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+    .left-header {
+        flex-grow: 1;
+        flex-basis: min-content;
+        text-align: right;
+        width: 50%;
+    }
+
+    .hashflag-logo {
+        width: 50px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
     .icon-links-red {
         color: #C81E3F;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .icon-links-blue {
         color: #153054;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
+
+    footer {
+        font-size: 1rem;
+    }
+
 }

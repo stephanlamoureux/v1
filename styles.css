@@ -110,9 +110,10 @@ header {
     margin-top: -1.2rem;
 }
 
+/* adjust only in firefox */
 @-moz-document url-prefix() {
     .header-sub {
-     left: 390px
+        left: 390px;
     }
 }
 

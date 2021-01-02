@@ -2,9 +2,6 @@
 
 - Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with it.
 
-- Dark Mode Toggle
-
-
 */
 
 
@@ -42,7 +39,7 @@ a {
 }
 
 .wrapper {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -112,13 +109,6 @@ header {
     font-style: italic;
     margin-top: -1.2rem;
 }
-
-/*
-.fa-lightbulb:hover {
-    text-shadow: 0 0 15px lightgoldenrodyellow;
-    color: lightgoldenrodyellow;
-}
-*/
 
 /* Nav Menu */
 

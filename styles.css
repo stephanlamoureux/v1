@@ -187,6 +187,8 @@ header {
     padding-top: 2rem;
     text-align: justify;
     font-size: 1.2rem;
+    text-indent: 30px;
+    line-height: 1.5;
 }
 
 .round {

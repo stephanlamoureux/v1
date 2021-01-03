@@ -183,11 +183,14 @@ header {
     padding-top: 1rem;
 }
 
+.about-p:not(:first-of-type) {
+    text-indent: 30px;
+}
+
 .about-p {
     padding-top: 2rem;
     text-align: justify;
     font-size: 1.2rem;
-    text-indent: 30px;
     line-height: 1.5;
 }
 

@@ -412,6 +412,10 @@ footer {
         }
     }
 
+    .about-p {
+        text-align: left;
+    }
+
     .project-name {
         padding: 0.5rem 0;
         font-size: 1.1rem;

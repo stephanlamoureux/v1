@@ -1,12 +1,3 @@
-/* TODO:
-
--- Project Tile Name: Right now the text is always there and just changes color from black to white. Using ::before and ::after pseudo selectors might be a better way, but I couldn't get the ease transition to work with them.
-
-*/
-
-
-
-
 /* Universal box sizing and base reset */
 
 html {

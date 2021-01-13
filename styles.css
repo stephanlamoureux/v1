@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #090909;
+    background-color: #0E0E0E;
     color: #EEEEEE;
 }
 
@@ -215,8 +215,8 @@ header {
 
 .project-name {
     text-align: center;
-    background-color: #090909;
-    color: #090909;
+    background-color: #0E0E0E;
+    color: #0E0E0E;
     font-size: 1.4rem;
     padding: 1rem 0;
     max-width: 1000px;
@@ -446,6 +446,11 @@ footer {
         }
     }
 
+    .menu {
+        width: 30px;
+        height: 30px;
+    }
+
     .about-p {
         text-align: left;
     }
@@ -488,11 +493,6 @@ footer {
         font-size: 1rem;
         margin-top: -8px;
     }
-
-    .menu {
-        width: 30px;
-        height: 30px;
-    }
 }
 
 @media screen and (max-width: 300px) {
@@ -508,10 +508,5 @@ footer {
         left: 131px;
         font-size: 1rem;
         margin-top: -8px;
-    }
-
-    .menu {
-        width: 30px;
-        height: 30px;
     }
 }

@@ -145,7 +145,7 @@ header {
 /* About Me */
 
 .about {
-    margin-top: 8rem;
+    margin-top: 10rem;
     padding-top: 1rem;
 }
 
@@ -254,6 +254,7 @@ header {
 
 footer {
     margin-top: 4rem;
+    margin-bottom: 10px;
     text-align: center;
     background-color: #EEEEEE;
     color: #000000;
@@ -274,37 +275,13 @@ footer {
     text-decoration: underline;
 }
 
-/* from https://wweb.dev/resources/css-separator-generator */
-.spikes {
-    position: relative;
-    background: #EEEEEE;
-
-}
-
-.spikes::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: -0%;
-    top: 100%;
-    z-index: 10;
-    display: block;
-    height: 50px;
-    background-size: 50px 100%;
-    background-image: linear-gradient(135deg, #EEEEEE 25%, transparent 25%), linear-gradient(225deg, #EEEEEE 25%, transparent 25%);
-    background-position: 0 0;
-}
 
 /* Responsiveness */
 
 @media screen and (max-width: 1200px) {
     .wrapper {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-    }
-
-    .center-header {
-        margin-left: 0.3rem;
     }
 
     .header-sub {
@@ -317,51 +294,23 @@ footer {
         }
     }
 
-    .navbar {
-        height: 25%;
-    }
-
     .round {
         max-width: 40%;
         max-height: 40%;
     }
-
-    .project-name {
-        background-color: #EEEEEE;
-        color: #000000;
-        font-size: 1.3rem;
-        font-weight: bold;
-        padding: 1rem 0;
-    }
-
-    .project-image {
-        max-width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        filter: none;
-        transition: none;
-    }
-
-    .project-image:hover {
-        filter: none;
-        transition: none;
-    }
-
-    .project-tile:hover .project-name {
-        color: #C81E3F;
-        transition: 1s ease;
-    }
 }
 
 @media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
+
     .header-title {
         font-size: 3rem;
     }
 
     .hashflag-logo {
-        width: 65px;
+        width: 60px;
     }
 
     .header-sub {
@@ -440,17 +389,43 @@ footer {
     .menu-link a:hover {
         border-bottom: 2px solid #EEEEEE;
     }
+
+    .about {
+        margin-top: 8rem;
+    }
+
+    .project-name {
+        background-color: #EEEEEE;
+        color: #000000;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 1rem 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .project-image {
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        filter: none;
+        transition: none;
+    }
+
+    .project-image:hover {
+        filter: none;
+        transition: none;
+    }
+
+    .project-tile:hover .project-name {
+        color: #C81E3F;
+        transition: 1s ease;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    .left-header {
-        text-align: center;
-    }
-
-    .center-header {
-        margin-left: 0;
-    }
-
+@media screen and (max-width: 600px) {
     .hashflag-logo {
         width: 40px;
     }
@@ -499,7 +474,7 @@ footer {
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .hashflag-logo {
         width: 35px;
     }

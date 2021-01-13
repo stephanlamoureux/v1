@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #070707;
+    background-color: #090909;
     color: #EEEEEE;
 }
 
@@ -116,7 +116,23 @@ header {
 }
 
 .navbar {
+<<<<<<< HEAD
     display: none;
+=======
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #090909;
+    width: 100%;
+    height: 30%;
+    z-index: 999;
+    overflow: hidden;
+    color: #EEEEEE;
+    /* hide the menu above the screen by default */
+    transform: translateY(-100%);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+>>>>>>> master
 }
 
 .nav-desktop {
@@ -215,8 +231,8 @@ header {
 
 .project-name {
     text-align: center;
-    background-color: #070707;
-    color: #070707;
+    background-color: #090909;
+    color: #090909;
     font-size: 1.4rem;
     padding: 1rem 0;
     max-width: 1000px;

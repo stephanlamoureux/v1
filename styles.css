@@ -20,7 +20,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #070707;
+    background-color: #090909;
     color: #EEEEEE;
 }
 
@@ -130,7 +130,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background: #070707;
+    background: #090909;
     width: 100%;
     height: 30%;
     z-index: 999;
@@ -241,8 +241,8 @@ header {
 
 .project-name {
     text-align: center;
-    background-color: #070707;
-    color: #070707;
+    background-color: #090909;
+    color: #090909;
     font-size: 1.4rem;
     padding: 1rem 0;
     max-width: 1000px;

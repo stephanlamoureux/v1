@@ -162,12 +162,15 @@ header {
 
 .round {
     border-radius: 50%;
-    max-width: 35%;
-    max-height: 35%;
+    max-width: 40%;
     float: left;
     shape-outside: circle();
     margin-right: 1rem;
     margin-bottom: 0.5rem;
+}
+
+.round-mobile {
+    display: none;
 }
 
 /* Projects */
@@ -295,26 +298,25 @@ footer {
     }
 
     .round {
-        max-width: 40%;
-        max-height: 40%;
+        max-width: 50%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .wrapper {
         width: 90%;
     }
 
     .header-title {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .hashflag-logo {
-        width: 60px;
+        width: 70px;
     }
 
     .header-sub {
-        left: 196px;
+        left: 245px;
         font-size: 1.5rem;
         font-style: italic;
         margin-top: -0.8rem;
@@ -322,7 +324,7 @@ footer {
 
     @-moz-document url-prefix() {
         .header-sub {
-            left: 207px;
+            left: 257px;
         }
     }
 
@@ -424,7 +426,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .hashflag-logo {
         width: 40px;
     }
@@ -461,7 +463,6 @@ footer {
 
     .round {
         max-width: 45%;
-        max-height: 45%;
     }
 
     .icon-links-red {
@@ -475,12 +476,28 @@ footer {
     footer {
         font-size: 1rem;
     }
-
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
+    .about-p {
+        text-align: center;
+    }
+
+    .round {
+        display: none;
+    }
+
+    .mobile-img {
+        text-align: center;
+    }
+
+    .round-mobile {
+        display: initial;
+        width: 80%;
+    }
+
     .hashflag-logo {
-        width: 35px;
+        width: 40px;
     }
 
     .header-title {
@@ -488,24 +505,46 @@ footer {
     }
 
     .header-sub {
-        left: 131px;
+        left: 130px;
         font-size: 1rem;
         margin-top: -8px;
+    }
+
+    @-moz-document url-prefix() {
+        .header-sub {
+            left: 138px;
+        }
+    }
+
+    .menu {
+        width: 25px;
+        height: 25px;
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
     .hashflag-logo {
-        width: 35px;
+        width: 30px;
     }
 
     .header-title {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .header-sub {
-        left: 131px;
+        left: 150px;
         font-size: 1rem;
         margin-top: -8px;
+    }
+
+    @-moz-document url-prefix() {
+        .header-sub {
+            left: 107px;
+        }
+    }
+
+    .menu {
+        width: 25px;
+        height: 25px;
     }
 }

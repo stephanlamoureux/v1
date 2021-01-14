@@ -127,7 +127,7 @@ header {
     list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .desktop-link a {

@@ -10,12 +10,4 @@ You can find a live version of it [Here.](https://slamoureux.github.io/vwc-capst
 
 
 
-## Screenshots
-
-
-
 ![Desktop Version](images/screenshots/laptop.jpg)
-
-![Tablet Version](images/screenshots/tablet.jpg)
-
-![Phone Version](images/screenshots/phone.jpg)

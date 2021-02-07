@@ -160,6 +160,10 @@ header {
     line-height: 1.5;
 }
 
+.about-p::selection {
+    background: #C81E3F;
+}
+
 .round {
     border-radius: 50%;
     max-width: 40%;

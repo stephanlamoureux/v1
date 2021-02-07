@@ -39,6 +39,7 @@ a {
     font-size: 2rem;
     padding: 1rem 0;
     font-weight: normal;
+    font-family: 'Inter', sans-serif;
 }
 
 .line {
@@ -142,6 +143,11 @@ header {
     border-bottom: 2px solid #EEEEEE;
 }
 
+.menu-link a,
+.desktop-link a {
+    font-family: 'Inter', sans-serif;
+}
+
 /* About Me */
 
 .about {
@@ -158,11 +164,11 @@ header {
     text-align: justify;
     font-size: 1.2rem;
     line-height: 1.5;
+    font-family: 'Inter', sans-serif;
 }
 
 .about-p::selection {
     background: #C81E3F;
-    font-family: 'Roboto', sans-serif;
 }
 
 .round {

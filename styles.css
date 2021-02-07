@@ -19,7 +19,7 @@ html {
 /* Base Style */
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #131415;
     color: #EEEEEE;
 }
@@ -162,6 +162,7 @@ header {
 
 .about-p::selection {
     background: #C81E3F;
+    font-family: 'Roboto', sans-serif;
 }
 
 .round {

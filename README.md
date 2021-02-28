@@ -6,7 +6,7 @@ I did my best to make it consistent across all browsers, while also being respon
 
 It uses basic HTML/CSS with a sprinkle of JavaScript for the hamburger menu.
 
-You can find a live version of it [Here.](https://slamoureux.github.io/vwc-capstone/)
+You can find a live version of it [Here.](https://stephanlamoureux.github.io/vwc-capstone/)
 
 
 

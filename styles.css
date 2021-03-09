@@ -16,12 +16,19 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    --color-red:#C81E3F;
+    --color-blue: #003C7D;
+    --color-dark: #131415;
+    --color-light: #EEEEEE;
+}
+
 /* Base Style */
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #131415;
-    color: #EEEEEE;
+    background-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 a {
@@ -43,7 +50,7 @@ a {
 }
 
 .line {
-    background: linear-gradient(to right, #C81E3F, #FFFFFF, #003C7D);
+    background: linear-gradient(to right, var(--color-red), #FFFFFF, var(--color-blue));
     border: 0;
     height: 1px;
     margin: 0 auto;
@@ -79,11 +86,11 @@ header {
 }
 
 .red {
-    color: #C81E3F;
+    color: var(--color-red);
 }
 
 .blue {
-    color: #003C7D;
+    color: var(--color-blue);
 }
 
 .header-title {
@@ -132,15 +139,15 @@ header {
 }
 
 .desktop-link a {
-    color: #EEEEEE;
+    color: var(--color-light);
     padding-bottom: 10px;
     text-decoration: none;
     font-size: 1.4rem;
-    border-bottom: 2px solid #C81E3F;
+    border-bottom: 2px solid var(--color-red);
 }
 
 .desktop-link a:hover {
-    border-bottom: 2px solid #EEEEEE;
+    border-bottom: 2px solid var(--color-light);
 }
 
 .menu-link a,
@@ -168,7 +175,7 @@ header {
 }
 
 .about-p::selection {
-    background: #C81E3F;
+    background: var(--color-red);
 }
 
 .round {
@@ -221,14 +228,14 @@ header {
 }
 
 .project-tile:hover .project-name {
-    color: #EEEEEE;
+    color: var(--color-light);
     transition: 0.8s ease;
 }
 
 .project-name {
     text-align: center;
-    background-color: #131415;
-    color: #131415;
+    background-color: var(--color-dark);
+    color: var(--color-dark);
     font-size: 1.4rem;
     padding: 1rem 0;
     max-width: 1000px;
@@ -248,18 +255,18 @@ header {
 }
 
 .icon-links-red {
-    color: #C81E3F;
+    color: var(--color-red);
     font-size: 4rem;
 }
 
 .icon-links-blue {
-    color: #003C7D;
+    color: var(--color-blue);
     font-size: 4rem;
 }
 
 .icon-links-red:hover,
 .icon-links-blue:hover {
-    color: #EEEEEE;
+    color: var(--color-light);
 }
 
 /* Footer */
@@ -268,7 +275,7 @@ footer {
     margin-top: 4rem;
     margin-bottom: 10px;
     text-align: center;
-    background-color: #EEEEEE;
+    background-color: var(--color-light);
     color: #000000;
     font-weight: bold;
     font-family: monospace;
@@ -363,12 +370,12 @@ footer {
         display: initial;
         top: 0;
         left: 0;
-        background: #131415;
+        background: var(--color-dark);
         width: 100%;
         height: 30%;
         z-index: 999;
         overflow: hidden;
-        color: #EEEEEE;
+        color: var(--color-light);
         /* hide the menu above the screen by default */
         transform: translateY(-100%);
         transition: transform 0.2s ease;
@@ -389,15 +396,15 @@ footer {
     }
 
     .menu-link a {
-        color: #EEEEEE;
+        color: var(--color-light);
         padding-bottom: 10px;
         text-decoration: none;
         font-size: 1.2rem;
-        border-bottom: 2px solid #C81E3F;
+        border-bottom: 2px solid var(--color-red);
     }
 
     .menu-link a:hover {
-        border-bottom: 2px solid #EEEEEE;
+        border-bottom: 2px solid var(--color-light);
     }
 
     .about {
@@ -405,7 +412,7 @@ footer {
     }
 
     .project-name {
-        background-color: #EEEEEE;
+        background-color: var(--color-light);
         color: #000000;
         font-size: 1.3rem;
         padding: 1rem 0;

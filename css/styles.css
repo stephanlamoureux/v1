@@ -357,12 +357,12 @@ footer {
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
-		background-image: url("images/icons/menu.svg");
+		background-image: url("../images/icons/menu.svg");
 		background-size: 100%;
 	}
 
 	.showClose {
-		background-image: url("images/icons/close.svg");
+		background-image: url("../images/icons/close.svg");
 	}
 
 	.navbar {

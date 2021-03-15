@@ -39,6 +39,7 @@ a {
 .wrapper {
 	width: 60%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .section-header {
@@ -104,7 +105,7 @@ header {
 .header-sub {
 	position: relative;
 	top: 0;
-	left: 375px;
+	left: 379px;
 	font-size: 1.5rem;
 	font-style: italic;
 	margin-top: -1.2rem;
@@ -113,7 +114,7 @@ header {
 /* adjust only in firefox */
 @-moz-document url-prefix() {
 	.header-sub {
-		left: 390px;
+		left: 394px;
 	}
 }
 
@@ -174,8 +175,12 @@ header {
 	font-family: 'Inter', sans-serif;
 }
 
-.about-p::selection {
+.about-p:nth-child(even)::selection {
 	background: var(--color-red);
+}
+
+.about-p:nth-child(odd)::selection {
+	background: var(--color-blue);
 }
 
 .round {
@@ -295,7 +300,7 @@ footer {
 }
 
 
-/* Responsiveness */
+/* Media Queries */
 
 @media screen and (max-width: 1400px) {
 	.wrapper {
@@ -304,12 +309,12 @@ footer {
 	}
 
 	.header-sub {
-		left: 375px;
+		left: 379px;
 	}
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 390px
+			left: 394px
 		}
 	}
 
@@ -332,7 +337,7 @@ footer {
 	}
 
 	.header-sub {
-		left: 252px;
+		left: 254px;
 		font-size: 1.4rem;
 		font-style: italic;
 		margin-top: -0.8rem;
@@ -340,7 +345,7 @@ footer {
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 264px;
+			left: 266px;
 		}
 	}
 
@@ -457,14 +462,14 @@ footer {
 	}
 
 	.header-sub {
-		left: 202px;
+		left: 205px;
 		font-size: 1.1rem;
 		margin-top: -10px;
 	}
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 211px;
+			left: 215px;
 		}
 	}
 
@@ -487,6 +492,15 @@ footer {
 		max-width: 45%;
 	}
 
+	.about-p {
+		text-indent: 0;
+		text-align: center;
+	}
+
+	.about-p:not(:first-of-type) {
+		text-indent: 0px;
+	}
+
 	.icon-links-red {
 		font-size: 2.5rem;
 	}
@@ -500,11 +514,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 480px) {
-	.about-p {
-		text-align: center;
-	}
-
+@media screen and (max-width: 550px) {
 	.hashflag-logo {
 		width: 35px;
 	}
@@ -514,14 +524,14 @@ footer {
 	}
 
 	.header-sub {
-		left: 134px;
+		left: 135px;
 		font-size: 0.8rem;
 		margin-top: -7px;
 	}
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 140px;
+			left: 142px;
 		}
 	}
 
@@ -541,19 +551,19 @@ footer {
 	}
 
 	.header-sub {
-		left: 120px;
+		left: 121px;
 		font-size: 0.7rem;
 		margin-top: -6px;
 	}
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 126px;
+			left: 128px;
 		}
 	}
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 330px) {
 	.hashflag-logo {
 		width: 20px;
 	}
@@ -563,14 +573,14 @@ footer {
 	}
 
 	.header-sub {
-		left: 94px;
+		left: 95px;
 		font-size: 0.5rem;
 		margin-top: -4px;
 	}
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 99px;
+			left: 101px;
 		}
 	}
 

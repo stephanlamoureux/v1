@@ -9,3 +9,4 @@
 - Add some animation (the hashflag logo? profile pic?)
 - re-write the about me section
 - better readme
+- make the nav links sticky once I scroll down to them?

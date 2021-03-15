@@ -132,7 +132,7 @@ header {
 	margin-top: 4rem;
 }
 
-.nav-desktop ul {
+.desktop-list {
 	list-style: none;
 	display: flex;
 	flex-flow: row nowrap;
@@ -190,10 +190,6 @@ header {
 	shape-outside: circle();
 	margin-right: 1rem;
 	margin-bottom: 0.5rem;
-}
-
-.round-mobile {
-	display: none;
 }
 
 /* || Projects */
@@ -317,10 +313,6 @@ footer {
 			left: 394px
 		}
 	}
-
-	.round {
-		max-width: 50%;
-	}
 }
 
 @media screen and (max-width: 1024px) {
@@ -414,6 +406,10 @@ footer {
 		margin-top: 8rem;
 	}
 
+	.round {
+		min-width: 45%;
+	}
+
 	.project-name {
 		background-color: var(--color-light);
 		color: #000000;
@@ -438,17 +434,15 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-	.round {
-		display: none;
-	}
-
-	.mobile-img {
+	.profile-div {
 		text-align: center;
 	}
 
-	.round-mobile {
-		display: initial;
-		width: 80%;
+	.round {
+		min-width: 75%;
+		float: none;
+		shape-outside: none;
+		margin: 0;
 	}
 
 	.hashflag-logo {
@@ -484,10 +478,6 @@ footer {
 	.project-name {
 		padding: 0.5rem 0;
 		font-size: 1.1rem;
-	}
-
-	.round {
-		max-width: 45%;
 	}
 
 	.about-p {

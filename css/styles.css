@@ -439,8 +439,7 @@ footer {
 	}
 
 	.round {
-		width: 100%;
-		max-width: 40%;
+		min-width: 75%;
 		float: none;
 		shape-outside: none;
 		margin: 0;

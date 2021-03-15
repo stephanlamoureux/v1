@@ -9,3 +9,4 @@
 - re-write the about me section
 - better readme
 - make the nav links sticky once I scroll down to them?
+- increase drop down menu size on the first couple breakpoints

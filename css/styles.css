@@ -192,10 +192,6 @@ header {
 	margin-bottom: 0.5rem;
 }
 
-.round-mobile {
-	display: none;
-}
-
 /* || Projects */
 
 .projects {
@@ -438,17 +434,16 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
-	.round {
-		display: none;
-	}
-
-	.mobile-img {
+	.profile-div {
 		text-align: center;
 	}
 
-	.round-mobile {
-		display: initial;
-		width: 80%;
+	.round {
+		width: 100%;
+		max-width: 40%;
+		float: none;
+		shape-outside: none;
+		margin: 0;
 	}
 
 	.hashflag-logo {

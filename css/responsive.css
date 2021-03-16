@@ -1,0 +1,297 @@
+/* || Media Queries */
+
+@media screen and (max-width: 1400px) {
+	.wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.header-sub {
+		left: 379px;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 394px
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.wrapper {
+		width: 90%;
+	}
+
+	.header-title {
+		font-size: 3.5rem;
+	}
+
+	.hashflag-logo {
+		width: 70px;
+	}
+
+	.header-sub {
+		left: 254px;
+		font-size: 1.4rem;
+		font-style: italic;
+		margin-top: -0.8rem;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 266px;
+		}
+	}
+
+	.nav-desktop {
+		display: none;
+	}
+
+	.menu {
+		z-index: 1000;
+		display: initial;
+		width: 36px;
+		height: 36px;
+		border: none;
+		cursor: pointer;
+		background-color: transparent;
+		background-image: url("../images/icons/menu.svg");
+		background-size: 100%;
+	}
+
+	.showClose {
+		background-image: url("../images/icons/close.svg");
+	}
+
+	.navbar {
+		position: absolute;
+		display: initial;
+		top: 0;
+		left: 0;
+		background: var(--color-dark);
+		width: 100%;
+		height: 30%;
+		z-index: 999;
+		overflow: hidden;
+		color: var(--color-light);
+		transform: translateY(-100%);
+		transition: transform 0.2s ease;
+	}
+
+	.showNav {
+		transform: translateY(0);
+	}
+
+	.navbar ul {
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.menu-link a {
+		color: var(--color-light);
+		padding-bottom: 10px;
+		text-decoration: none;
+		font-size: 1.2rem;
+		border-bottom: 2px solid var(--color-red);
+	}
+
+	.menu-link a:hover {
+		border-bottom: 2px solid var(--color-light);
+	}
+
+	.about {
+		margin-top: 8rem;
+	}
+
+	.round {
+		min-width: 45%;
+	}
+
+	.project-name1,
+	.project-name2,
+	.project-name3,
+	.project-name4,
+	.project-name5 {
+		background-color: var(--color-light);
+		color: #000000;
+		font-size: 1.3rem;
+		padding: 1rem 0;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+	.project-image {
+		max-width: 100%;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		opacity: 1;
+	}
+
+	.project-tile:hover .project-name1,
+	.project-tile:hover .project-name2,
+	.project-tile:hover .project-name3,
+	.project-tile:hover .project-name4,
+	.project-tile:hover .project-name5 {
+		color: #000000;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.profile-div {
+		text-align: center;
+	}
+
+	.round {
+		min-width: 75%;
+		float: none;
+		shape-outside: none;
+		margin: 0;
+	}
+
+	.hashflag-logo {
+		width: 50px;
+	}
+
+	.header-title {
+		font-size: 2.8rem;
+	}
+
+	.header-sub {
+		left: 205px;
+		font-size: 1.1rem;
+		margin-top: -10px;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 215px;
+		}
+	}
+
+	.menu {
+		width: 30px;
+		height: 30px;
+	}
+
+	.about-p {
+		text-align: left;
+		text-indent: 30px;
+	}
+
+	.project-name1,
+	.project-name2,
+	.project-name3,
+	.project-name4,
+	.project-name5 {
+		padding: 0.5rem 0;
+		font-size: 1.1rem;
+	}
+
+	.about-p {
+		text-indent: 0;
+		text-align: center;
+	}
+
+	.about-p:not(:first-of-type) {
+		text-indent: 0px;
+	}
+
+	.icon-links-red {
+		font-size: 2.5rem;
+	}
+
+	.icon-links-blue {
+		font-size: 2.5rem;
+	}
+
+	footer {
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.hashflag-logo {
+		width: 35px;
+	}
+
+	.header-title {
+		font-size: 1.9rem;
+	}
+
+	.header-sub {
+		left: 135px;
+		font-size: 0.8rem;
+		margin-top: -7px;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 142px;
+		}
+	}
+
+	.menu {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.hashflag-logo {
+		width: 30px;
+	}
+
+	.header-title {
+		font-size: 1.7rem;
+	}
+
+	.header-sub {
+		left: 121px;
+		font-size: 0.7rem;
+		margin-top: -6px;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 128px;
+		}
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.hashflag-logo {
+		width: 20px;
+	}
+
+	.header-title {
+		font-size: 1.3rem;
+	}
+
+	.header-sub {
+		left: 95px;
+		font-size: 0.5rem;
+		margin-top: -4px;
+	}
+
+	@-moz-document url-prefix() {
+		.header-sub {
+			left: 101px;
+		}
+	}
+
+	.menu {
+		width: 20px;
+		height: 20px;
+	}
+
+	.center-header {
+		margin-left: 5px;
+	}
+}

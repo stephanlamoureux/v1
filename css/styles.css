@@ -431,7 +431,11 @@ footer {
 		min-width: 45%;
 	}
 
-	.project-name {
+	.project-name1,
+	.project-name2,
+	.project-name3,
+	.project-name4,
+	.project-name5 {
 		background-color: var(--color-light);
 		color: #000000;
 		font-size: 1.3rem;
@@ -449,7 +453,11 @@ footer {
 		opacity: 1;
 	}
 
-	.project-tile:hover .project-name {
+	.project-tile:hover .project-name1,
+	.project-tile:hover .project-name2,
+	.project-tile:hover .project-name3,
+	.project-tile:hover .project-name4,
+	.project-tile:hover .project-name5 {
 		color: #000000;
 	}
 }
@@ -496,7 +504,11 @@ footer {
 		text-indent: 30px;
 	}
 
-	.project-name {
+	.project-name1,
+	.project-name2,
+	.project-name3,
+	.project-name4,
+	.project-name5 {
 		padding: 0.5rem 0;
 		font-size: 1.1rem;
 	}

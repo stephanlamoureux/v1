@@ -209,13 +209,6 @@ header {
 	margin: 0 auto;
 }
 
-.projects-subtitle {
-	text-align: center;
-	padding-top: 0.5rem;
-	font-style: italic;
-	font-size: 1.1rem;
-}
-
 .project-image {
 	max-width: 100%;
 	border-radius: 10px;

@@ -216,17 +216,16 @@ header {
 	transition: 0.8s ease;
 }
 
-.project-image:hover {
+.project-tile:hover .project-image {
 	opacity: 1;
 	transition: 0.8s ease;
 }
 
-.project-tile:hover .project-name {
-	color: var(--color-light);
-	transition: 0.8s ease;
-}
-
-.project-name {
+.project-name1,
+.project-name2,
+.project-name3,
+.project-name4,
+.project-name5 {
 	text-align: center;
 	background-color: var(--color-dark);
 	color: var(--color-dark);
@@ -234,6 +233,35 @@ header {
 	padding: 1rem 0;
 	max-width: 1000px;
 	transition: 0.8s ease;
+}
+
+.project-tile:hover .project-name1,
+.project-tile:hover .project-name2,
+.project-tile:hover .project-name3,
+.project-tile:hover .project-name4,
+.project-tile:hover .project-name5 {
+	color: var(--color-light);
+	transition: 0.8s ease;
+}
+
+.project-name1::after {
+	content: "Personal Portfolio";
+}
+
+.project-name2::after {
+	content: "Technical Document";
+}
+
+.project-name3::after {
+	content: "Product Landing Page";
+}
+
+.project-name4::after {
+	content: "Survey Form";
+}
+
+.project-name5::after {
+	content: "Tribute Page";
 }
 
 /* || Contact */

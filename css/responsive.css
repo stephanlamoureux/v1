@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1400px) {
 	.wrapper {
-		width: 80%;
+		width: 70%;
 		margin: 0 auto;
 	}
 
@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 1024px) {
 	.wrapper {
-		width: 90%;
+		width: 85%;
 	}
 
 	.header-title {
@@ -57,6 +57,7 @@
 		background-color: transparent;
 		background-image: url("../images/icons/menu.svg");
 		background-size: 100%;
+		margin-right: 15px;
 	}
 
 	.showClose {
@@ -241,6 +242,11 @@
 		width: 25px;
 		height: 25px;
 	}
+
+	.about {
+		margin-top: 6rem;
+	}
+
 }
 
 @media screen and (max-width: 375px) {

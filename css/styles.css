@@ -20,7 +20,7 @@ html {
 	--color-red: #C81E3F;
 	--color-blue: #003C7D;
 	--color-dark: #131415;
-	--color-light: #EEEEEE;
+	--color-light: #E6EAEA;
 }
 
 /* || General Styles */
@@ -72,6 +72,9 @@ header {
 	align-items: center;
 	margin-top: 2rem;
 	width: auto;
+	background-color: var(--color-light);
+	border-radius: 5px;
+	padding: 25px 0;
 }
 
 .left-header {
@@ -109,6 +112,7 @@ header {
 	font-size: 1.5rem;
 	font-style: italic;
 	margin-top: -1.2rem;
+	color: var(--color-dark);
 }
 
 /* adjust only in firefox */

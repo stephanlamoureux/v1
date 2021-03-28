@@ -143,6 +143,14 @@ header {
 	justify-content: space-between;
 }
 
+.desktop-link:nth-of-type(1) {
+	padding-left: 5px;
+}
+
+.desktop-link:nth-of-type(3) {
+	padding-right: 5px;
+}
+
 .desktop-link a {
 	color: var(--color-light);
 	padding-bottom: 10px;
@@ -194,6 +202,11 @@ header {
 	shape-outside: circle();
 	margin-right: 1rem;
 	margin-bottom: 0.5rem;
+}
+
+p a:hover {
+	text-decoration-style: dashed;
+	text-decoration-line: underline;
 }
 
 /* || Projects */

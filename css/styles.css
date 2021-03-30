@@ -181,7 +181,6 @@ header {
 
 .about-p {
 	padding-top: 2rem;
-	text-align: justify;
 	font-size: 1.2rem;
 	line-height: 1.5;
 	font-family: 'Inter', sans-serif;
@@ -287,10 +286,10 @@ p a:hover {
 	margin-top: 8rem;
 }
 
-.contact-flex {
+.icons-flex {
 	display: flex;
 	justify-content: space-evenly;
-	margin-top: 2rem;
+	margin: 2rem 0;
 }
 
 .icon-links-red {
@@ -305,7 +304,7 @@ p a:hover {
 
 .icon-links-red:hover,
 .icon-links-blue:hover {
-	color: var(--color-light);
+	color: var(--color-dark);
 }
 
 /* || Footer */
@@ -320,12 +319,17 @@ footer {
 	font-family: monospace;
 	font-size: 1.4rem;
 	padding: 0.5rem;
+	border-radius: 5px;
 }
 
 @-moz-document url-prefix() {
 	footer {
 		font-size: 1.1rem;
 	}
+}
+
+footer p {
+	padding-bottom: 10px;
 }
 
 .footer-link:hover .blue,

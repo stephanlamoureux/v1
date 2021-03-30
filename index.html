@@ -159,19 +159,23 @@
 
 			<!-- Contact Section -->
 			<section id="contact" class="contact">
-				<div class="contact-flex">
-					<a href="mailto:sa.lamoureuxgmail.com" class="icon-links-red" title="Email Me"><i
-							class="fas fa-envelope"></i></a>
-					<a href="https://github.com/stephanlamoureux" target="new" class="icon-links-blue" title="Github"><i
-							class="fab fa-github"></i></a>
-					<a href="https://codepen.io/stephanlamoureux" target="new" class="icon-links-red" title="Codepen"><i
-							class="fab fa-codepen"></i></a>
-					<a href="https://twitter.com/sa_lamoureux" target="new" class="icon-links-blue" title="Twitter"><i
-							class="fab fa-twitter"></i></a>
-					<a href="https://dev.to/stephanlamoureux" target="new" class="icon-links-red" title="Dev.to"><i
-							class="fab fa-dev"></i></a>
-					<a href="https://www.linkedin.com/in/stephanlamoureux" target="new" class="icon-links-blue"
-						title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+				<hr class="line" />
+				<h2 class="section-header">Contact Me</h2>
+				<hr class="line marg-bottom" />
+				<div class="form-container">
+					<form>
+						<fieldset>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="name" required>
+							<label for="email">E-mail:</label>
+							<input type="email" id="email" name="email" required>
+						</fieldset>
+						<fieldset class="message">
+							<textarea id="message" name="message" required placeholder="Say Whatup!">
+							</textarea>
+						</fieldset>
+						<button type="submit">Submit</button>
+					</form>
 				</div>
 			</section>
 			<!-- End Contact Section -->
@@ -179,9 +183,24 @@
 
 		<!-- Footer -->
 		<footer>
-			<p>Coded by Stephan Lamoureux for the <a href="https://vetswhocode.io/" target="new" class="footer-link">#<span
-						class="blue">Vets</span><span class="red">Who</span><span class="blue">Code</span></a>
-				2021 Cohort</p>
+			<div class="icons-flex">
+				<a href="https://github.com/stephanlamoureux" target="new" class="icon-links-red" title="Github">
+					<i class="fab fa-github"></i></a>
+				<a href="https://codepen.io/stephanlamoureux" target="new" class="icon-links-blue" title="Codepen">
+					<i class="fab fa-codepen"></i></a>
+				<a href="https://twitter.com/sa_lamoureux" target="new" class="icon-links-red" title="Twitter">
+					<i class="fab fa-twitter"></i></a>
+				<a href="https://dev.to/stephanlamoureux" target="new" class="icon-links-blue" title="Dev.to">
+					<i class="fab fa-dev"></i></a>
+				<a href="https://www.linkedin.com/in/stephanlamoureux" target="new" class="icon-links-red" title="LinkedIn">
+					<i class="fab fa-linkedin"></i></a>
+				<a href="https://www.freecodecamp.org/stephanlamoureux" target="new" class="icon-links-blue" title="Email Me">
+					<i class="fab fa-free-code-camp"></i></a>
+			</div>
+			<p>
+				Coded by Stephan Lamoureux for the #<a href="https://vetswhocode.io/" target="new" class="footer-link"><span
+						class="blue">Vets</span><span class="red">Who</span><span class="blue">Code</span></a> 2021 Cohort
+			</p>
 		</footer>
 		<!-- End Footer -->
 	</div>

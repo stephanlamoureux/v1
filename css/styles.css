@@ -283,28 +283,62 @@ p a:hover {
 /* || Contact */
 
 .contact {
-	margin-top: 8rem;
+	margin: 5rem 0 7rem 0;
 }
 
-.icons-flex {
+.form-container {
 	display: flex;
-	justify-content: space-evenly;
-	margin: 2rem 0;
+	justify-content: center;
 }
 
-.icon-links-red {
-	color: var(--color-red);
-	font-size: 4rem;
+form {
+	width: 70%;
+	margin: 10px auto;
+	padding: 10px 20px;
 }
 
-.icon-links-blue {
-	color: var(--color-blue);
-	font-size: 4rem;
+fieldset {
+	border: none;
 }
 
-.icon-links-red:hover,
-.icon-links-blue:hover {
-	color: var(--color-dark);
+label {
+	display: block;
+	padding-bottom: 0.3rem;
+	color: var(--color-light);
+	font-size: 1.1rem;
+}
+
+input,
+textarea {
+	background: rgba(255, 255, 255, 0.1);
+	border: none;
+	font-size: 18px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
+	background-color: #e8eeef;
+	color: #8a97a0;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+.form-submit {
+	padding: 19px 39px 18px 39px;
+	color: var(--color-light);
+	background-color: var(--color-red);
+	font-size: 1.3rem;
+	text-align: center;
+	font-style: normal;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.form-submit:hover {
+	background-color: var(--color-blue);
 }
 
 /* || Footer */
@@ -335,4 +369,25 @@ footer p {
 .footer-link:hover .blue,
 .footer-link:hover .red {
 	text-decoration: underline;
+}
+
+.icons-flex {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2rem 0;
+}
+
+.icon-links-red {
+	color: var(--color-red);
+	font-size: 4rem;
+}
+
+.icon-links-blue {
+	color: var(--color-blue);
+	font-size: 4rem;
+}
+
+.icon-links-red:hover,
+.icon-links-blue:hover {
+	transform: translate(0, -5px);
 }

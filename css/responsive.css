@@ -17,6 +17,12 @@
 	}
 }
 
+@media screen and (max-width: 1200px) {
+	form {
+		width: 900%;
+	}
+}
+
 @media screen and (max-width: 1024px) {
 	.wrapper {
 		width: 85%;
@@ -142,6 +148,18 @@
 	.project-tile:hover .project-name5 {
 		color: #000000;
 	}
+
+	.contact {
+		margin-top: 8rem;
+	}
+
+	.icons-flex a i {
+		font-size: .8em;
+	}
+
+	form {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 700px) {
@@ -204,6 +222,10 @@
 		text-indent: 0px;
 	}
 
+	.icons-flex a i {
+		padding: 0 10px;
+	}
+
 	.icon-links-red {
 		font-size: 2.5rem;
 	}
@@ -242,8 +264,6 @@
 		width: 25px;
 		height: 25px;
 	}
-
-	.about {}
 }
 
 @media screen and (max-width: 375px) {

@@ -12,7 +12,7 @@
 
 	@-moz-document url-prefix() {
 		.header-sub {
-			left: 394px
+			left: 394px;
 		}
 	}
 }
@@ -243,9 +243,7 @@
 		height: 25px;
 	}
 
-	.about {
-		
-	}
+	.about {}
 }
 
 @media screen and (max-width: 375px) {

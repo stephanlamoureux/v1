@@ -33,6 +33,8 @@ window.onload = function () {
 		// these IDs from the previous steps
 		emailjs.sendForm('contact_service', 'contact_form', this)
 			.then(function () {
+				let submitButton = document.getElementById('submit').value = "Success!";
+				let successButton = document.getElementById('submit').style.background = "green";
 				console.log('SUCCESS!');
 			}, function (error) {
 				console.log('FAILED...', error);

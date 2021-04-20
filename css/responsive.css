@@ -1,6 +1,6 @@
 /* || Media Queries */
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
 	.wrapper {
 		width: 70%;
 		margin: 0 auto;
@@ -17,13 +17,13 @@
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	form {
 		width: 900%;
 	}
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 	.wrapper {
 		width: 85%;
 	}
@@ -153,16 +153,18 @@
 		margin-top: 8rem;
 	}
 
-	.icons-flex a i {
-		font-size: .8em;
-	}
-
 	form {
 		width: 100%;
 	}
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 810px) {
+	.icons-flex {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 700px) {
 	.profile-div {
 		text-align: center;
 	}
@@ -226,20 +228,18 @@
 		padding: 0 10px;
 	}
 
-	.icon-links-red {
-		font-size: 2.5rem;
-	}
-
-	.icon-links-blue {
-		font-size: 2.5rem;
-	}
-
 	footer {
 		font-size: 1rem;
 	}
 }
 
-@media screen and (max-width: 550px) {
+@media (max-width: 600px) {
+	.icons-flex>span {
+		font-size: 1.7rem;
+	}
+}
+
+@media (max-width: 550px) {
 	.hashflag-logo {
 		width: 35px;
 	}
@@ -264,9 +264,13 @@
 		width: 25px;
 		height: 25px;
 	}
+
+	.icons-flex>span {
+		margin: 5px 20px;
+	}
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
 	.hashflag-logo {
 		width: 30px;
 	}
@@ -288,7 +292,7 @@
 	}
 }
 
-@media screen and (max-width: 330px) {
+@media (max-width: 330px) {
 	.hashflag-logo {
 		width: 20px;
 	}

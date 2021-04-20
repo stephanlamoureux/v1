@@ -350,8 +350,7 @@ footer {
 	background-color: var(--color-light);
 	color: #000000;
 	font-weight: bold;
-	font-family: monospace;
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	padding: 0.5rem;
 	border-radius: 5px;
 }
@@ -377,14 +376,20 @@ footer p {
 	margin: 2rem 0;
 }
 
-.icon-links-red {
-	color: var(--color-red);
-	font-size: 4rem;
+.icons-flex>span {
+	font-size: 2rem;
 }
 
-.icon-links-blue {
+span>i {
+	color: var(--color-dark);
+}
+
+.icon-links-red i:hover {
+	color: var(--color-red);
+}
+
+.icon-links-blue i:hover {
 	color: var(--color-blue);
-	font-size: 4rem;
 }
 
 .icon-links-red:hover,

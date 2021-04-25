@@ -157,6 +157,7 @@ header {
 	text-decoration: none;
 	font-size: 1.4rem;
 	border-bottom: 2px solid var(--color-red);
+	transition: ease-in .2s all;
 }
 
 .desktop-link a:hover {
@@ -335,6 +336,8 @@ textarea {
 	border-radius: 5px;
 	width: 100%;
 	margin-bottom: 10px;
+	cursor: pointer;
+	transition: ease .6s all;
 }
 
 .form-submit:hover {
@@ -383,15 +386,14 @@ span>i {
 	color: var(--color-dark);
 }
 
-.icon-links-red i:hover {
+.icon-links i:hover {
 	color: var(--color-red);
 }
 
-.icon-links-blue i:hover {
-	color: var(--color-blue);
+.icon-links i:active {
+	color: var(--color-blue)
 }
 
-.icon-links-red:hover,
-.icon-links-blue:hover {
-	transform: translate(0, -5px);
+.icon-links i:focus {
+	color: var(--color-red)
 }

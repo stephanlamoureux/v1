@@ -9,5 +9,4 @@
 - make sure everything is tabbable and accessible, add aria labels/roles (headers are currently not)
 - mobile nav to take up entire screen on phones?
 - Add some drop shadow to the project tiles
-- add scrollbar to dark mode
-
+- custom 404

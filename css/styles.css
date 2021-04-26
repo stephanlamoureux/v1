@@ -290,10 +290,11 @@ p a:hover {
 .form-container {
 	display: flex;
 	justify-content: center;
+	width: 100%;
 }
 
 form {
-	width: 100%;
+	width: 96%;
 	margin: 10px auto;
 	padding: 10px 0;
 }
@@ -375,7 +376,7 @@ footer p {
 .icons-flex {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 2rem 0;
+	margin: 1.5rem 0 2rem 0;
 }
 
 .icons-flex>span {

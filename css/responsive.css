@@ -1,5 +1,11 @@
 /* || Media Queries */
 
+@media (min-width: 1776px) {
+	form {
+		max-width: 1000px;
+	}
+}
+
 @media (max-width: 1400px) {
 	.wrapper {
 		width: 70%;
@@ -14,12 +20,6 @@
 		.header-sub {
 			left: 394px;
 		}
-	}
-}
-
-@media (max-width: 1200px) {
-	form {
-		width: 900%;
 	}
 }
 
@@ -152,10 +152,6 @@
 	.contact {
 		margin-top: 8rem;
 	}
-
-	form {
-		width: 100%;
-	}
 }
 
 @media (max-width: 810px) {
@@ -266,7 +262,7 @@
 	}
 
 	.icons-flex>span {
-		margin: 5px 20px;
+		margin: 15px 24px;
 	}
 }
 

@@ -6,10 +6,40 @@
 	}
 }
 
+@media (max-width: 1550px) {
+	.header-title {
+		font-size: 3.5rem;
+	}
+
+	.header-sub {
+		font-size: 1.1rem;
+	}
+}
+
 @media (max-width: 1400px) {
 	.wrapper {
 		width: 70%;
 		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.header-title {
+		font-size: 3.2rem;
+	}
+
+	.header-sub {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 1124px) {
+	.header-title {
+		font-size: 3rem;
+	}
+
+	.header-sub {
+		font-size: .9rem;
 	}
 }
 
@@ -19,7 +49,7 @@
 	}
 
 	.header-title {
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 
 	.hashflag-logo {
@@ -40,7 +70,8 @@
 		background-color: transparent;
 		background-image: url("../images/icons/menu.svg");
 		background-size: 100%;
-		margin-right: 15px;
+		margin-left: 25px;
+		margin-top: -14px;
 	}
 
 	.showClose {

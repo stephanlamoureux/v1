@@ -39,7 +39,7 @@ body {
 }
 
 a {
-	color: var(--dracula-green);
+	color: var(--dracula-cyan);
 	text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ a {
 }
 
 .line {
-	background: linear-gradient(to right, var(--dracula-green), var(--dracula-pink), var(--dracula-cyan));
+	background: linear-gradient(to right, var(--color-blue), var(--dracula-cyan), var(--dracula-green));
 	border: 0;
 	height: 1px;
 	margin: 0 auto;

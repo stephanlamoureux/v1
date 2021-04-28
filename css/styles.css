@@ -28,13 +28,14 @@ html {
 	--color-blue: #BD93F9;
 	--color-dark: #282A36;
 	--color-light: #F8F8F2;
-	--mostly-dark: #44475A;
+	--dracula-selection: #44475A;
 	--dracula-pink: #FF79C6;
-	--dracula-blue: #383A59;
+	--dracula-greypurple: #383A59;
 	--dracula-green: #50FA7B;
 	--dracula-cyan: #8BE9FD;
 	--dracula-yellow: #F1FA8C;
-	--dracula-steel: #6272A4;
+	--dracula-comment: #6272A4;
+	--dracula-orange: #FFB86C;
 }
 
 /* || General Styles */
@@ -87,7 +88,7 @@ header {
 	align-items: center;
 	margin-top: 2rem;
 	width: auto;
-	background-color: var(--dracula-blue);
+	background-color: var(--dracula-greypurple);
 	border-radius: 5px;
 	padding: 25px 0;
 }
@@ -263,7 +264,7 @@ p a:hover {
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-	color: var(--dracula-pink);
+	color: var(--dracula-cyan);
 	transition: 0.8s ease;
 }
 
@@ -400,6 +401,26 @@ span>i {
 
 .icon-links i:hover {
 	color: var(--color-red);
+}
+
+.icon-links .cyan:hover {
+	color: var(--dracula-cyan);
+}
+
+.icon-links .purple:hover {
+	color: var(--color-blue);
+}
+
+.icon-links .yellow:hover {
+	color: var(--dracula-yellow);
+}
+
+.icon-links .pink:hover {
+	color: var(--dracula-pink);
+}
+
+.icon-links .green:hover {
+	color: var(--dracula-green);
 }
 
 .icon-links i:active {

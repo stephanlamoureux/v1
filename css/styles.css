@@ -1,3 +1,10 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'Proza';
+	src: url("../Fonts/Proza-Regular.otf") format("opentype");
+}
+
 /* Universal box sizing and base reset */
 
 html {
@@ -85,14 +92,15 @@ header {
 	padding: 25px 0;
 }
 
-.center-header {
+.header-title {
+	font-size: 4rem;
 	color: var(--color-blue);
-	font-family: 'Roboto';
-	font-weight: 600;
+	font-family: 'Proza', sans-serif;
+	text-transform: uppercase;
 }
 
 .spacing {
-	letter-spacing: 12px;
+	letter-spacing: 10px;
 }
 
 .red {
@@ -101,10 +109,6 @@ header {
 
 .blue {
 	color: var(--color-blue);
-}
-
-.header-title {
-	font-size: 4.8rem;
 }
 
 .hashflag-logo {
@@ -119,6 +123,7 @@ header {
 	letter-spacing: 2px;
 	color: var(--color-light);
 	text-transform: uppercase;
+	margin-top: -5px;
 }
 
 
@@ -162,6 +167,7 @@ header {
 
 .desktop-link a:hover {
 	border-bottom: 2px solid var(--dracula-cyan);
+	color: var(--dracula-green);
 }
 
 .menu-link a,
@@ -370,8 +376,11 @@ footer p {
 	padding-bottom: 10px;
 }
 
-.footer-link:hover .blue,
-.footer-link:hover .red {
+.footer-link {
+	color: var(--color-red);
+}
+
+.footer-link:hover {
 	text-decoration: underline;
 }
 

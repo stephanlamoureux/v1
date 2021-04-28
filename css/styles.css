@@ -26,6 +26,8 @@ html {
 	--dracula-blue: #383A59;
 	--dracula-green: #50FA7B;
 	--dracula-cyan: #8BE9FD;
+	--dracula-yellow: #F1FA8C;
+	--dracula-steel: #6272A4;
 }
 
 /* || General Styles */
@@ -53,10 +55,11 @@ a {
 	padding: 1rem 0;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
+	color: var(--color-light);
 }
 
 .line {
-	background: linear-gradient(to right, var(--color-red), var(--dracula-pink), var(--dracula-cyan));
+	background: linear-gradient(to right, var(--dracula-green), var(--dracula-pink), var(--dracula-cyan));
 	border: 0;
 	height: 1px;
 	margin: 0 auto;
@@ -78,11 +81,18 @@ header {
 	margin-top: 2rem;
 	width: auto;
 	background-color: var(--dracula-blue);
-	color: var(--color-blue);
-	font-family: 'Fira Code', monospace;
-	font-weight: 600;
 	border-radius: 5px;
 	padding: 25px 0;
+}
+
+.center-header {
+	color: var(--color-blue);
+	font-family: 'Roboto';
+	font-weight: 600;
+}
+
+.spacing {
+	letter-spacing: 12px;
 }
 
 .red {
@@ -106,7 +116,9 @@ header {
 	font-family: 'Inter', sans-serif;
 	font-style: italic;
 	text-align: center;
+	letter-spacing: 2px;
 	color: var(--color-light);
+	text-transform: uppercase;
 }
 
 
@@ -140,16 +152,16 @@ header {
 }
 
 .desktop-link a {
-	color: var(--color-light);
+	color: var(--dracula-pink);
 	padding-bottom: 10px;
 	text-decoration: none;
 	font-size: 1.4rem;
-	border-bottom: 2px solid var(--color-red);
+	border-bottom: 2px solid var(--color-blue);
 	transition: ease-in .2s all;
 }
 
 .desktop-link a:hover {
-	border-bottom: 2px solid var(--color-light);
+	border-bottom: 2px solid var(--dracula-cyan);
 }
 
 .menu-link a,
@@ -245,7 +257,7 @@ p a:hover {
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-	color: var(--color-blue);
+	color: var(--dracula-pink);
 	transition: 0.8s ease;
 }
 
@@ -317,8 +329,8 @@ textarea {
 
 .form-submit {
 	padding: 19px 39px 18px 39px;
-	color: var(--color-light);
-	background-color: var(--color-red);
+	color: var(--color-dark);
+	background-color: var(--color-blue);
 	font-size: 1.3rem;
 	text-align: center;
 	font-style: normal;
@@ -330,7 +342,8 @@ textarea {
 }
 
 .form-submit:hover {
-	background-color: var(--color-blue);
+	background-color: var(--color-red);
+	color: var(--color-light);
 }
 
 /* || Footer */

@@ -6,7 +6,7 @@
 	}
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1650px) {
 	.header-title {
 		font-size: 3.5rem;
 	}
@@ -16,14 +16,14 @@
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
 	.wrapper {
 		width: 70%;
 		margin: 0 auto;
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
 	.header-title {
 		font-size: 3.2rem;
 	}
@@ -33,7 +33,7 @@
 	}
 }
 
-@media (max-width: 1124px) {
+@media (max-width: 1150px) {
 	.header-title {
 		font-size: 3rem;
 	}
@@ -43,17 +43,25 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
 	.wrapper {
 		width: 85%;
+	}
+
+	header {
+		background-color: var(--dracula-greypurple);
 	}
 
 	.header-title {
 		font-size: 3rem;
 	}
 
-	.hashflag-logo {
-		width: 70px;
+	.center-header {
+		margin-right: 10px;
+	}
+
+	.header-sub {
+		margin-left: 80px;
 	}
 
 	.nav-desktop {
@@ -68,7 +76,7 @@
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
-		background-image: url("../images/icons/menu.svg");
+		background-image: url("../images/icons/menu-white.svg");
 		background-size: 100%;
 		margin-left: 25px;
 		margin-top: -14px;
@@ -162,9 +170,40 @@
 	}
 }
 
+@media (max-width: 970px) {
+	.header-title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 850px) {
+	.header-title {
+		font-size: 2.2rem;
+	}
+}
+
 @media (max-width: 810px) {
 	.icons-flex {
 		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 775px) {
+	.header-title {
+		font-size: 2rem;
+	}
+
+	.menu {
+		width: 30px;
+		height: 30px;
+	}
+
+	.center-header {
+		margin-right: 0;
+	}
+
+	.header-sub {
+		margin-left: 70px;
 	}
 }
 
@@ -180,17 +219,8 @@
 		margin: 0;
 	}
 
-	.hashflag-logo {
-		width: 50px;
-	}
-
 	.header-title {
-		font-size: 2.8rem;
-	}
-
-	.menu {
-		width: 30px;
-		height: 30px;
+		font-size: 1.8rem;
 	}
 
 	.about-p {
@@ -225,19 +255,25 @@
 	}
 }
 
+@media (max-width: 650px) {
+	.header-title {
+		font-size: 1.5rem;
+	}
+}
+
 @media (max-width: 600px) {
 	.icons-flex>span {
 		font-size: 1.7rem;
 	}
 }
 
-@media (max-width: 550px) {
-	.hashflag-logo {
-		width: 35px;
+@media (max-width: 580px) {
+	.header-title {
+		font-size: 1.2rem;
 	}
 
-	.header-title {
-		font-size: 1.9rem;
+	.header-sub {
+		font-size: .7rem;
 	}
 
 	.menu {
@@ -250,23 +286,11 @@
 	}
 }
 
-@media (max-width: 375px) {
-	.hashflag-logo {
-		width: 30px;
-	}
-
-	.header-title {
-		font-size: 1.7rem;
-	}
-}
+@media (max-width: 375px) {}
 
 @media (max-width: 330px) {
-	.hashflag-logo {
-		width: 20px;
-	}
-
 	.header-title {
-		font-size: 1.3rem;
+		font-size: 1rem;
 	}
 
 	.header-sub {
@@ -276,9 +300,5 @@
 	.menu {
 		width: 20px;
 		height: 20px;
-	}
-
-	.center-header {
-		margin-left: 5px;
 	}
 }

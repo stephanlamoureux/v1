@@ -112,10 +112,6 @@ header {
 	color: var(--color-blue);
 }
 
-.hashflag-logo {
-	width: 95px;
-}
-
 .header-sub {
 	font-size: 1.2rem;
 	font-family: 'Inter', sans-serif;
@@ -124,7 +120,6 @@ header {
 	letter-spacing: 2px;
 	color: var(--color-light);
 	text-transform: uppercase;
-	margin-top: -5px;
 }
 
 

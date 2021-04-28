@@ -122,6 +122,9 @@ header {
 	text-transform: uppercase;
 }
 
+.show {
+	display: none;
+}
 
 /* || Nav Menu */
 

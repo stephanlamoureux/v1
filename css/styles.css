@@ -39,7 +39,7 @@ body {
 }
 
 a {
-	color: var(--dracula-pink);
+	color: var(--dracula-green);
 	text-decoration: none;
 }
 
@@ -330,7 +330,7 @@ textarea {
 .form-submit {
 	padding: 19px 39px 18px 39px;
 	color: var(--color-dark);
-	background-color: var(--color-blue);
+	background-color: var(--dracula-cyan);
 	font-size: 1.3rem;
 	text-align: center;
 	font-style: normal;

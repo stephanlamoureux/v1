@@ -84,18 +84,6 @@ header {
 	padding: 25px 0;
 }
 
-.left-header {
-	flex-grow: 1;
-	flex-basis: min-content;
-	text-align: right;
-}
-
-.center-header {
-	flex-grow: 1;
-	flex-basis: min-content;
-	margin-left: 1rem;
-}
-
 .red {
 	color: var(--color-red);
 }
@@ -113,13 +101,10 @@ header {
 }
 
 .header-sub {
-	position: relative;
-	top: 0;
-	left: 379px;
 	font-size: 1.5rem;
 	font-style: italic;
-	margin-top: -1.2rem;
-	color: var(--color-dark);
+	text-align: center;
+	color: var(--color-light);
 }
 
 /* adjust only in firefox */

@@ -25,6 +25,7 @@ html {
 	--dracula-pink: #FF79C6;
 	--dracula-blue: #383A59;
 	--dracula-green: #50FA7B;
+	--dracula-cyan: #8BE9FD;
 }
 
 /* || General Styles */
@@ -101,18 +102,13 @@ header {
 }
 
 .header-sub {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	font-family: 'Inter', sans-serif;
 	font-style: italic;
 	text-align: center;
 	color: var(--color-light);
 }
 
-/* adjust only in firefox */
-@-moz-document url-prefix() {
-	.header-sub {
-		left: 394px;
-	}
-}
 
 /* || Nav Menu */
 
@@ -249,7 +245,7 @@ p a:hover {
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-	color: var(--color-light);
+	color: var(--color-blue);
 	transition: 0.8s ease;
 }
 

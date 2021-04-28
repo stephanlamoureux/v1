@@ -11,16 +11,6 @@
 		width: 70%;
 		margin: 0 auto;
 	}
-
-	.header-sub {
-		left: 379px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 394px;
-		}
-	}
 }
 
 @media (max-width: 1024px) {
@@ -34,19 +24,6 @@
 
 	.hashflag-logo {
 		width: 70px;
-	}
-
-	.header-sub {
-		left: 254px;
-		font-size: 1.4rem;
-		font-style: italic;
-		margin-top: -0.8rem;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 266px;
-		}
 	}
 
 	.nav-desktop {
@@ -180,18 +157,6 @@
 		font-size: 2.8rem;
 	}
 
-	.header-sub {
-		left: 205px;
-		font-size: 1.1rem;
-		margin-top: -10px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 215px;
-		}
-	}
-
 	.menu {
 		width: 30px;
 		height: 30px;
@@ -244,18 +209,6 @@
 		font-size: 1.9rem;
 	}
 
-	.header-sub {
-		left: 135px;
-		font-size: 0.8rem;
-		margin-top: -7px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 142px;
-		}
-	}
-
 	.menu {
 		width: 25px;
 		height: 25px;
@@ -274,18 +227,6 @@
 	.header-title {
 		font-size: 1.7rem;
 	}
-
-	.header-sub {
-		left: 121px;
-		font-size: 0.7rem;
-		margin-top: -6px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 128px;
-		}
-	}
 }
 
 @media (max-width: 330px) {
@@ -298,15 +239,7 @@
 	}
 
 	.header-sub {
-		left: 95px;
 		font-size: 0.5rem;
-		margin-top: -4px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 101px;
-		}
 	}
 
 	.menu {

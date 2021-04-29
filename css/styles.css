@@ -28,16 +28,18 @@ html {
 	--color-blue: #BD93F9;
 	--color-dark: #282A36;
 	--color-light: #F8F8F2;
+	--dracula-background: #282A36;
+	--dracula-foreground: #F8F8F2;
+	--dracula-selection: #44475A;
+	--dracula-comment: #6272A4;
 	--dracula-red: #FF5555;
 	--dracula-purple: #BD93F9;
-	--dracula-selection: #44475A;
 	--dracula-pink: #FF79C6;
-	--dracula-greypurple: #383A59;
 	--dracula-green: #50FA7B;
 	--dracula-cyan: #8BE9FD;
 	--dracula-yellow: #F1FA8C;
-	--dracula-comment: #6272A4;
 	--dracula-orange: #FFB86C;
+	--dracula-greypurple: #383A59;
 }
 
 /* || General Styles */
@@ -69,7 +71,7 @@ a {
 }
 
 .line {
-	background: linear-gradient(to right, var(--color-blue), var(--dracula-cyan), var(--dracula-green));
+	background: linear-gradient(to right, var(--color-blue), var(--dracula-cyan), var(--dracula-pink));
 	border: 0;
 	height: 1px;
 	margin: 0 auto;
@@ -100,6 +102,24 @@ header {
 	color: var(--color-blue);
 	font-family: 'Proza', sans-serif;
 	text-transform: uppercase;
+}
+
+.header-gradient {
+	  /* Fallback: Set a background color. */
+		background-color: var(--dracula-purple);
+
+		/* Create the gradient. */
+		background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
+
+		/* Set the background size and repeat properties. */
+		background-size: 100%;
+		background-repeat: repeat;
+		/* Use the text as a mask for the background. */
+		/* This will show the gradient as a text color rather than element bg. */
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-background-clip: text;
+		-moz-text-fill-color: transparent;
 }
 
 .spacing {
@@ -167,8 +187,8 @@ header {
 }
 
 .desktop-link a:hover {
-	border-bottom: 2px solid var(--dracula-cyan);
-	color: var(--dracula-green);
+	border-bottom: 2px solid var(--dracula-pink);
+	color: var(--dracula-cyan);
 }
 
 .menu-link a,
@@ -195,11 +215,13 @@ header {
 }
 
 .about-p:nth-child(even)::selection {
-	background: var(--color-red);
+	background: var(--dracula-green);
+	color: var(--dracula-background);
 }
 
 .about-p:nth-child(odd)::selection {
-	background: var(--color-blue);
+	background: var(--dracula-cyan);
+	color: var(--dracula-background);
 }
 
 .round {

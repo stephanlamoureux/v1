@@ -136,8 +136,8 @@
 	.project-name3,
 	.project-name4,
 	.project-name5 {
-		background-color: var(--color-light);
-		color: #000000;
+		background-color: var(--dracula-foreground);
+		color: var(--dracula-background);
 		font-size: 1.3rem;
 		padding: 1rem 0;
 		border-bottom-left-radius: 5px;

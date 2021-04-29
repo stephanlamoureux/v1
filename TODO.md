@@ -8,7 +8,6 @@
 - make sure everything is tabbable and accessible, add aria labels/roles
 - Add some drop shadow to the project tiles
 - custom 404
-- css section dividers
 - add subheader to content section
 - add new project
 - remove tribute page and survey form projects

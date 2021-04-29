@@ -176,7 +176,7 @@
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 860px) {
 	.header-title {
 		font-size: 2.2rem;
 	}
@@ -194,7 +194,7 @@
 	}
 }
 
-@media (max-width: 775px) {
+@media (max-width: 785px) {
 	.header-title {
 		font-size: 2rem;
 	}
@@ -261,7 +261,7 @@
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
 	.header-title {
 		font-size: 1.5rem;
 	}
@@ -274,21 +274,21 @@
 	.navbar {
 		height: 40%;
 	}
-}
 
-@media (max-width: 600px) {
 	.icons-flex>span {
-		font-size: 1.7rem;
+		margin: 15px 0;
+		font-size: 2rem;
 	}
 }
 
-@media (max-width: 580px) {
+@media (max-width: 614px) {
 	.menu {
 		margin-top: -15px;
 	}
 
 	.icons-flex>span {
-		margin: 15px 26px;
+		margin: 15px 0;
+		font-size: 1.8rem;
 	}
 
 	.header-title {
@@ -300,7 +300,33 @@
 	}
 }
 
-@media (max-width: 555px) {
+@media (max-width: 540px) {
+	.icons-flex>span {
+		margin: 15px 20px;
+		font-size: 1.9rem;
+	}
+}
+
+@media (max-width: 583px) {
+	footer {
+		font-size: 1.2rem;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	footer p {
+		font-size: 1.2rem;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.icons-flex>span {
+		margin: 15px 20px;
+		font-size: 2.3rem;
+	}
+}
+
+@media (max-width: 560px) {
 	.header-title {
 		font-size: 1rem;
 	}
@@ -311,7 +337,7 @@
 	}
 }
 
-@media (max-width: 475px) {
+@media (max-width: 490px) {
 	.hidden {
 		display: none;
 	}
@@ -334,6 +360,33 @@
 		width: 25px;
 		height: 25px;
 	}
+
+	.icons-flex>span {
+		margin: 15px 15px;
+		font-size: 1.9rem;
+	}
+
+}
+
+@media (max-width: 443px) {
+	footer p {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 429px) {
+	.icons-flex>span {
+		margin: 15px 10px;
+		font-size: 1.8rem;
+	}
+
+}
+
+@media (max-width: 405px) {
+	.icons-flex>span {
+		margin: 15px 10px;
+	}
+
 }
 
 @media (max-width: 400px) {
@@ -342,7 +395,11 @@
 	}
 }
 
-@media (max-width: 355px) {
+@media (max-width: 380px) {
+	footer p {
+		font-size: .9rem;
+	}
+
 	.header-title {
 		font-size: 1.5rem;
 	}
@@ -356,10 +413,23 @@
 		height: 20px;
 		margin-top: -10px;
 	}
+
+	footer p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
 	.header-title {
 		font-size: 1.2rem;
+	}
+
+	.header-sub {
+		font-size: 0.5rem;
+	}
+
+	.icons-flex>span {
+		margin: 15px 0;
 	}
 }

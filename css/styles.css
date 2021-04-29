@@ -331,6 +331,17 @@ p a:hover {
 	transition: 0.8s ease;
 }
 
+.shrink {
+	transition: 1s ease;
+}
+
+.shrink:hover {
+	-webkit-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	transform: scale(0.8);
+	transition: 0.8s ease;
+}
+
 .project-name1,
 .project-name2,
 .project-name3,
@@ -352,6 +363,7 @@ p a:hover {
 .project-tile:hover .project-name5 {
 	color: var(--dracula-cyan);
 	transition: 0.8s ease;
+	transform: translateY(-35px);
 }
 
 .project-name1::after {

@@ -17,9 +17,11 @@
 }
 
 @media (max-width: 1450px) {
-	.wrapper {
+	.nav-desktop,
+	.about,
+	.projects,
+	.contact {
 		width: 70%;
-		margin: 0 auto;
 	}
 }
 
@@ -44,7 +46,10 @@
 }
 
 @media (max-width: 1100px) {
-	.wrapper {
+	.nav-desktop,
+	.about,
+	.projects,
+	.contact {
 		width: 85%;
 	}
 
@@ -197,6 +202,35 @@
 
 	.center-header {
 		margin-right: 0;
+	}
+
+	.custom-shape-divider-bottom-1619735001 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+
+	.custom-shape-divider-bottom-1619735001 svg {
+		position: relative;
+		display: block;
+		width: calc(300% + 1.3px);
+		height: 500px;
+	}
+
+	.custom-shape-divider-bottom-1619735001 .shape-fill {
+		fill: #FF79C6;
+	}
+
+	/** For tablet devices **/
+	@media (min-width: 768px) and (max-width: 1023px) {
+		.custom-shape-divider-bottom-1619735001 svg {
+			width: calc(135% + 1.3px);
+			height: 500px;
+		}
 	}
 }
 

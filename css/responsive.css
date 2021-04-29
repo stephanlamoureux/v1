@@ -331,6 +331,10 @@
 		font-size: 1rem;
 	}
 
+	.header-sub {
+		font-size: 0.65rem;
+	}
+
 	.menu {
 		width: 20px;
 		height: 20px;

@@ -11,3 +11,5 @@
 - css section dividers
 - add subheader to content section
 - add new project
+- remove tribute page and survey form projects
+- fix margin on resize for tech doc

@@ -24,10 +24,6 @@ html {
 }
 
 :root {
-	--color-red: #FF5555;
-	--color-blue: #BD93F9;
-	--color-dark: #282A36;
-	--color-light: #F8F8F2;
 	--dracula-background: #282A36;
 	--dracula-foreground: #F8F8F2;
 	--dracula-selection: #44475A;
@@ -46,8 +42,8 @@ html {
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: var(--color-dark);
-	color: var(--color-light);
+	background-color: var(--dracula-background);
+	color: var(--dracula-foreground);
 }
 
 a {
@@ -67,11 +63,11 @@ a {
 	padding: 1rem 0;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
-	color: var(--color-light);
+	color: var(--dracula-foreground);
 }
 
 .line {
-	background: linear-gradient(to right, var(--color-blue), var(--dracula-cyan), var(--dracula-pink));
+	background: linear-gradient(to right, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
 	border: 0;
 	height: 1px;
 	margin: 0 auto;
@@ -99,27 +95,28 @@ header {
 
 .header-title {
 	font-size: 4rem;
-	color: var(--color-blue);
+	color: var(--dracula-purple);
 	font-family: 'Proza', sans-serif;
 	text-transform: uppercase;
 }
 
 .header-gradient {
-	  /* Fallback: Set a background color. */
-		background-color: var(--dracula-purple);
+	/* Fallback: Set a background color. */
+	background-color: var(--dracula-purple);
+	background-clip: text;
 
-		/* Create the gradient. */
-		background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
+	/* Create the gradient. */
+	background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
 
-		/* Set the background size and repeat properties. */
-		background-size: 100%;
-		background-repeat: repeat;
-		/* Use the text as a mask for the background. */
-		/* This will show the gradient as a text color rather than element bg. */
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-moz-background-clip: text;
-		-moz-text-fill-color: transparent;
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 }
 
 .spacing {
@@ -127,11 +124,7 @@ header {
 }
 
 .red {
-	color: var(--color-red);
-}
-
-.blue {
-	color: var(--color-blue);
+	color: var(--dracula-red);
 }
 
 .header-sub {
@@ -140,7 +133,7 @@ header {
 	font-style: italic;
 	text-align: center;
 	letter-spacing: 2px;
-	color: var(--color-light);
+	color: var(--dracula-foreground);
 	text-transform: uppercase;
 }
 
@@ -182,7 +175,7 @@ header {
 	padding-bottom: 10px;
 	text-decoration: none;
 	font-size: 1.4rem;
-	border-bottom: 2px solid var(--color-blue);
+	border-bottom: 2px solid var(--dracula-purple);
 	transition: ease-in .2s all;
 }
 
@@ -273,8 +266,8 @@ p a:hover {
 .project-name4,
 .project-name5 {
 	text-align: center;
-	background-color: var(--color-dark);
-	color: var(--color-dark);
+	background-color: var(--dracula-background);
+	color: var(--dracula-background);
 	font-size: 1.4rem;
 	padding: 1rem 0;
 	max-width: 1000px;
@@ -336,7 +329,7 @@ fieldset {
 label {
 	display: block;
 	padding-bottom: 0.3rem;
-	color: var(--color-light);
+	color: var(--dracula-foreground);
 	font-size: 1.1rem;
 }
 
@@ -359,7 +352,7 @@ textarea {
 
 .form-submit {
 	padding: 19px 39px 18px 39px;
-	color: var(--color-dark);
+	color: var(--dracula-background);
 	background-color: var(--dracula-cyan);
 	font-size: 1.3rem;
 	text-align: center;
@@ -372,8 +365,8 @@ textarea {
 }
 
 .form-submit:hover {
-	background-color: var(--color-red);
-	color: var(--color-light);
+	background-color: var(--dracula-red);
+	color: var(--dracula-foreground);
 }
 
 /* || Footer */
@@ -382,8 +375,8 @@ footer {
 	margin-top: 4rem;
 	margin-bottom: 10px;
 	text-align: center;
-	background-color: var(--color-light);
-	color: #000000;
+	background-color: var(--dracula-foreground);
+	color: var(--dracula-background);
 	font-size: 1.1rem;
 	padding: 0.5rem;
 	border-radius: 5px;
@@ -400,7 +393,7 @@ footer p {
 }
 
 .footer-link {
-	color: var(--color-red);
+	color: var(--dracula-red);
 }
 
 .footer-link:hover {
@@ -418,11 +411,11 @@ footer p {
 }
 
 span>i {
-	color: var(--color-dark);
+	color: var(--dracula-background);
 }
 
 .icon-links i:hover {
-	color: var(--color-red);
+	color: var(--dracula-red);
 }
 
 .icon-links .cyan:hover {
@@ -430,7 +423,7 @@ span>i {
 }
 
 .icon-links .purple:hover {
-	color: var(--color-blue);
+	color: var(--dracula-purple);
 }
 
 .icon-links .yellow:hover {
@@ -446,9 +439,9 @@ span>i {
 }
 
 .icon-links i:active {
-	color: var(--color-blue)
+	color: var(--dracula-purple)
 }
 
 .icon-links i:focus {
-	color: var(--color-red)
+	color: var(--dracula-red)
 }

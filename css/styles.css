@@ -1,3 +1,10 @@
+/* Fonts */
+
+@font-face {
+	font-family: 'Proza';
+	src: url("../Fonts/Proza-Regular.otf") format("opentype");
+}
+
 /* Universal box sizing and base reset */
 
 html {
@@ -17,22 +24,30 @@ html {
 }
 
 :root {
-	--color-red: #C81E3F;
-	--color-blue: #003C7D;
-	--color-dark: #131415;
-	--color-light: #E6EAEA;
+	--dracula-background: #282A36;
+	--dracula-foreground: #F8F8F2;
+	--dracula-selection: #44475A;
+	--dracula-comment: #6272A4;
+	--dracula-red: #FF5555;
+	--dracula-purple: #BD93F9;
+	--dracula-pink: #FF79C6;
+	--dracula-green: #50FA7B;
+	--dracula-cyan: #8BE9FD;
+	--dracula-yellow: #F1FA8C;
+	--dracula-orange: #FFB86C;
+	--dracula-greypurple: #383A59;
 }
 
 /* || General Styles */
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: var(--color-dark);
-	color: var(--color-light);
+	background-color: var(--dracula-background);
+	color: var(--dracula-foreground);
 }
 
 a {
-	color: red;
+	color: var(--dracula-cyan);
 	text-decoration: none;
 }
 
@@ -48,15 +63,16 @@ a {
 	padding: 1rem 0;
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
+	color: var(--dracula-foreground);
 }
 
 .line {
-	background: linear-gradient(to right, var(--color-red), #FFFFFF, var(--color-blue));
+	background: linear-gradient(to right, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
 	border: 0;
 	height: 1px;
 	margin: 0 auto;
 	opacity: 0.9;
-	width: 25%;
+	width: 240px;
 }
 
 .marg-bottom {
@@ -72,54 +88,59 @@ header {
 	align-items: center;
 	margin-top: 2rem;
 	width: auto;
-	background-color: var(--color-light);
+	background-color: var(--dracula-greypurple);
 	border-radius: 5px;
 	padding: 25px 0;
 }
 
-.left-header {
-	flex-grow: 1;
-	flex-basis: min-content;
-	text-align: right;
+.header-title {
+	font-size: 4rem;
+	color: var(--dracula-purple);
+	font-family: 'Proza', sans-serif;
+	text-transform: uppercase;
 }
 
 .center-header {
-	flex-grow: 1;
-	flex-basis: min-content;
-	margin-left: 1rem;
+	padding: 20px 0;
+}
+
+.header-gradient {
+	/* Fallback: Set a background color. */
+	background-color: var(--dracula-purple);
+	background-clip: text;
+	/* Create the gradient. */
+	background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+
+.spacing {
+	letter-spacing: 10px;
 }
 
 .red {
-	color: var(--color-red);
-}
-
-.blue {
-	color: var(--color-blue);
-}
-
-.header-title {
-	font-size: 4.8rem;
-}
-
-.hashflag-logo {
-	width: 95px;
+	color: var(--dracula-red);
 }
 
 .header-sub {
-	position: relative;
-	top: 0;
-	left: 379px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	font-family: 'Inter', sans-serif;
 	font-style: italic;
-	margin-top: -1.2rem;
-	color: var(--color-dark);
+	text-align: right;
+	letter-spacing: 2px;
+	color: var(--dracula-foreground);
+	text-transform: uppercase;
 }
 
-/* adjust only in firefox */
-@-moz-document url-prefix() {
-	.header-sub {
-		left: 394px;
-	}
+.show {
+	display: none;
 }
 
 /* || Nav Menu */
@@ -152,16 +173,17 @@ header {
 }
 
 .desktop-link a {
-	color: var(--color-light);
+	color: var(--dracula-pink);
 	padding-bottom: 10px;
 	text-decoration: none;
 	font-size: 1.4rem;
-	border-bottom: 2px solid var(--color-red);
+	border-bottom: 2px solid var(--dracula-purple);
 	transition: ease-in .2s all;
 }
 
 .desktop-link a:hover {
-	border-bottom: 2px solid var(--color-light);
+	border-bottom: 2px solid var(--dracula-pink);
+	color: var(--dracula-cyan);
 }
 
 .menu-link a,
@@ -188,11 +210,13 @@ header {
 }
 
 .about-p:nth-child(even)::selection {
-	background: var(--color-red);
+	background: var(--dracula-green);
+	color: var(--dracula-background);
 }
 
 .about-p:nth-child(odd)::selection {
-	background: var(--color-blue);
+	background: var(--dracula-cyan);
+	color: var(--dracula-background);
 }
 
 .round {
@@ -244,8 +268,8 @@ p a:hover {
 .project-name4,
 .project-name5 {
 	text-align: center;
-	background-color: var(--color-dark);
-	color: var(--color-dark);
+	background-color: var(--dracula-background);
+	color: var(--dracula-background);
 	font-size: 1.4rem;
 	padding: 1rem 0;
 	max-width: 1000px;
@@ -257,7 +281,7 @@ p a:hover {
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-	color: var(--color-light);
+	color: var(--dracula-cyan);
 	transition: 0.8s ease;
 }
 
@@ -285,6 +309,7 @@ p a:hover {
 
 .contact {
 	margin: 5rem 0 7rem 0;
+	padding-top: 16px;
 }
 
 .form-container {
@@ -294,7 +319,7 @@ p a:hover {
 }
 
 form {
-	width: 96%;
+	width: 100%;
 	margin: 10px auto;
 	padding: 10px 0;
 }
@@ -306,13 +331,12 @@ fieldset {
 label {
 	display: block;
 	padding-bottom: 0.3rem;
-	color: var(--color-light);
+	color: var(--dracula-foreground);
 	font-size: 1.1rem;
 }
 
 input,
 textarea {
-	background: rgba(255, 255, 255, 0.1);
 	border: none;
 	font-size: 18px;
 	height: auto;
@@ -320,8 +344,8 @@ textarea {
 	outline: 0;
 	padding: 15px;
 	width: 100%;
-	background-color: #e8eeef;
-	color: #8a97a0;
+	background-color: var(--dracula-foreground);
+	color: var(--dracula-background);
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
 	margin-bottom: 30px;
 	border-radius: 5px;
@@ -329,8 +353,8 @@ textarea {
 
 .form-submit {
 	padding: 19px 39px 18px 39px;
-	color: var(--color-light);
-	background-color: var(--color-red);
+	color: var(--dracula-background);
+	background-color: var(--dracula-cyan);
 	font-size: 1.3rem;
 	text-align: center;
 	font-style: normal;
@@ -342,7 +366,8 @@ textarea {
 }
 
 .form-submit:hover {
-	background-color: var(--color-blue);
+	background-color: var(--dracula-red);
+	color: var(--dracula-foreground);
 }
 
 /* || Footer */
@@ -351,8 +376,8 @@ footer {
 	margin-top: 4rem;
 	margin-bottom: 10px;
 	text-align: center;
-	background-color: var(--color-light);
-	color: #000000;
+	background-color: var(--dracula-foreground);
+	color: var(--dracula-background);
 	font-size: 1.1rem;
 	padding: 0.5rem;
 	border-radius: 5px;
@@ -368,8 +393,11 @@ footer p {
 	padding-bottom: 10px;
 }
 
-.footer-link:hover .blue,
-.footer-link:hover .red {
+.footer-link {
+	color: var(--dracula-red);
+}
+
+.footer-link:hover {
 	text-decoration: underline;
 }
 
@@ -380,21 +408,41 @@ footer p {
 }
 
 .icons-flex>span {
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 span>i {
-	color: var(--color-dark);
+	color: var(--dracula-background);
 }
 
 .icon-links i:hover {
-	color: var(--color-red);
+	color: var(--dracula-red);
+}
+
+.icon-links .cyan:hover {
+	color: var(--dracula-cyan);
+}
+
+.icon-links .purple:hover {
+	color: var(--dracula-purple);
+}
+
+.icon-links .yellow:hover {
+	color: var(--dracula-yellow);
+}
+
+.icon-links .pink:hover {
+	color: var(--dracula-pink);
+}
+
+.icon-links .green:hover {
+	color: var(--dracula-green);
 }
 
 .icon-links i:active {
-	color: var(--color-blue)
+	color: var(--dracula-purple)
 }
 
 .icon-links i:focus {
-	color: var(--color-red)
+	color: var(--dracula-red)
 }

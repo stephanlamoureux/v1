@@ -6,47 +6,54 @@
 	}
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1650px) {
+	.header-title {
+		font-size: 3.5rem;
+	}
+
+	.header-sub {
+		font-size: 1.1rem;
+	}
+}
+
+@media (max-width: 1450px) {
 	.wrapper {
 		width: 70%;
 		margin: 0 auto;
 	}
+}
 
-	.header-sub {
-		left: 379px;
+@media (max-width: 1300px) {
+	.header-title {
+		font-size: 3.2rem;
 	}
 
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 394px;
-		}
+	.header-sub {
+		font-size: 1rem;
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
+	.header-title {
+		font-size: 3rem;
+	}
+
+	.header-sub {
+		font-size: .9rem;
+	}
+}
+
+@media (max-width: 1100px) {
 	.wrapper {
 		width: 85%;
 	}
 
 	.header-title {
-		font-size: 3.5rem;
+		font-size: 3rem;
 	}
 
-	.hashflag-logo {
-		width: 70px;
-	}
-
-	.header-sub {
-		left: 254px;
-		font-size: 1.4rem;
-		font-style: italic;
-		margin-top: -0.8rem;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 266px;
-		}
+	.center-header {
+		margin-right: 10px;
 	}
 
 	.nav-desktop {
@@ -61,9 +68,10 @@
 		border: none;
 		cursor: pointer;
 		background-color: transparent;
-		background-image: url("../images/icons/menu.svg");
+		background-image: url("../images/icons/menu-white.svg");
 		background-size: 100%;
-		margin-right: 15px;
+		margin-left: 25px;
+		margin-top: -20px;
 	}
 
 	.showClose {
@@ -75,12 +83,12 @@
 		display: initial;
 		top: 0;
 		left: 0;
-		background: var(--color-dark);
+		background: var(--dracula-background);
 		width: 100%;
-		height: 30%;
+		height: 41%;
 		z-index: 999;
 		overflow: hidden;
-		color: var(--color-light);
+		color: var(--dracula-foreground);
 		transform: translateY(-100%);
 		transition: transform 0.2s ease;
 	}
@@ -100,15 +108,15 @@
 	}
 
 	.menu-link a {
-		color: var(--color-light);
+		color: var(--dracula-foreground);
 		padding-bottom: 10px;
 		text-decoration: none;
 		font-size: 1.2rem;
-		border-bottom: 2px solid var(--color-red);
+		border-bottom: 2px solid var(--dracula-purple);
 	}
 
 	.menu-link a:hover {
-		border-bottom: 2px solid var(--color-light);
+		border-bottom: 2px solid var(--dracula-pink);
 	}
 
 	.about {
@@ -124,18 +132,18 @@
 	.project-name3,
 	.project-name4,
 	.project-name5 {
-		background-color: var(--color-light);
-		color: #000000;
+		background-color: var(--dracula-foreground);
+		color: var(--dracula-background);
 		font-size: 1.3rem;
 		padding: 1rem 0;
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 
 	.project-image {
 		max-width: 100%;
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 		opacity: 1;
@@ -154,13 +162,45 @@
 	}
 }
 
+@media (max-width: 970px) {
+	.header-title {
+		font-size: 2.5rem;
+	}
+
+	.menu {
+		margin-top: -18px;
+	}
+}
+
+@media (max-width: 860px) {
+	.header-title {
+		font-size: 2.2rem;
+	}
+
+	.menu {
+		width: 30px;
+		height: 30px;
+		margin-top: -19px;
+	}
+}
+
 @media (max-width: 810px) {
 	.icons-flex {
 		flex-wrap: wrap;
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 785px) {
+	.header-title {
+		font-size: 2rem;
+	}
+
+	.center-header {
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 715px) {
 	.profile-div {
 		text-align: center;
 	}
@@ -172,29 +212,13 @@
 		margin: 0;
 	}
 
-	.hashflag-logo {
-		width: 50px;
-	}
-
 	.header-title {
-		font-size: 2.8rem;
-	}
-
-	.header-sub {
-		left: 205px;
-		font-size: 1.1rem;
-		margin-top: -10px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 215px;
-		}
+		font-size: 1.8rem;
 	}
 
 	.menu {
-		width: 30px;
-		height: 30px;
+		width: 25px;
+		height: 25px;
 	}
 
 	.about-p {
@@ -229,31 +253,98 @@
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
+	.header-title {
+		font-size: 1.5rem;
+	}
+
+	.menu {
+		width: 20px;
+		height: 20px;
+	}
+
+	.navbar {
+		height: 40%;
+	}
+
 	.icons-flex>span {
-		font-size: 1.7rem;
+		margin: 15px 0;
+		font-size: 2rem;
 	}
 }
 
-@media (max-width: 550px) {
-	.hashflag-logo {
-		width: 35px;
+@media (max-width: 614px) {
+	.menu {
+		margin-top: -15px;
+	}
+
+	.icons-flex>span {
+		margin: 15px 0;
+		font-size: 1.8rem;
 	}
 
 	.header-title {
-		font-size: 1.9rem;
+		font-size: 1.3rem;
 	}
 
 	.header-sub {
-		left: 135px;
-		font-size: 0.8rem;
-		margin-top: -7px;
+		font-size: 0.7rem;
+	}
+}
+
+@media (max-width: 540px) {
+	.icons-flex>span {
+		margin: 15px 20px;
+		font-size: 1.9rem;
+	}
+}
+
+@media (max-width: 583px) {
+	footer {
+		font-size: 1.2rem;
+		padding-left: 0;
+		padding-right: 0;
 	}
 
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 142px;
-		}
+	footer p {
+		font-size: 1.2rem;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.icons-flex>span {
+		margin: 15px 20px;
+		font-size: 2.3rem;
+	}
+}
+
+@media (max-width: 560px) {
+	.header-title {
+		font-size: 1rem;
+	}
+
+	.header-sub {
+		font-size: 0.65rem;
+	}
+
+	.menu {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (max-width: 490px) {
+	.hidden {
+		display: none;
+	}
+
+	.show {
+		display: initial;
+	}
+
+	.header-title {
+		text-align: right;
+		font-size: 1.8rem;
 	}
 
 	.menu {
@@ -262,59 +353,74 @@
 	}
 
 	.icons-flex>span {
-		margin: 15px 24px;
+		margin: 15px 15px;
+		font-size: 1.9rem;
+	}
+
+}
+
+@media (max-width: 443px) {
+	footer p {
+		font-size: 1rem;
 	}
 }
 
-@media (max-width: 375px) {
-	.hashflag-logo {
-		width: 30px;
+@media (max-width: 429px) {
+	.icons-flex>span {
+		margin: 15px 10px;
+		font-size: 1.8rem;
 	}
 
-	.header-title {
-		font-size: 1.7rem;
+}
+
+@media (max-width: 405px) {
+	.icons-flex>span {
+		margin: 15px 10px;
 	}
 
-	.header-sub {
-		left: 121px;
-		font-size: 0.7rem;
-		margin-top: -6px;
-	}
+}
 
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 128px;
-		}
+@media (max-width: 400px) {
+	.navbar {
+		height: 100vh;
 	}
 }
 
-@media (max-width: 330px) {
-	.hashflag-logo {
-		width: 20px;
+@media (max-width: 380px) {
+	footer p {
+		font-size: .9rem;
 	}
 
 	.header-title {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 	}
 
 	.header-sub {
-		left: 95px;
-		font-size: 0.5rem;
-		margin-top: -4px;
-	}
-
-	@-moz-document url-prefix() {
-		.header-sub {
-			left: 101px;
-		}
+		font-size: 0.6rem;
 	}
 
 	.menu {
 		width: 20px;
 		height: 20px;
+		margin-top: -10px;
 	}
 
-	.center-header {
-		margin-left: 5px;
+	footer p {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 325px) {
+	.header-title {
+		font-size: 1.2rem;
+	}
+
+	.header-sub {
+		font-size: 0.5rem;
+	}
+
+	.icons-flex>span {
+		margin: 15px 0;
 	}
 }

@@ -34,7 +34,7 @@ window.onload = function () {
 		emailjs.sendForm('contact_service', 'contact_form', this)
 			.then(function () {
 				let submitButton = document.getElementById('submit').value = "Success!";
-				let successButton = document.getElementById('submit').style.background = "green";
+				let successButton = document.getElementById('submit').style.background = "var(--dracula-green)";
 				console.log('SUCCESS!');
 			}, function (error) {
 				console.log('FAILED...', error);

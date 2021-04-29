@@ -363,7 +363,7 @@ p a:hover {
 .project-tile:hover .project-name5 {
 	color: var(--dracula-cyan);
 	transition: 0.8s ease;
-	transform: translateY(-35px);
+	transform: translateY(-45px);
 }
 
 .project-name1::after {

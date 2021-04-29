@@ -56,10 +56,6 @@
 		margin-right: 10px;
 	}
 
-	.header-sub {
-		margin-left: 80px;
-	}
-
 	.nav-desktop {
 		display: none;
 	}
@@ -201,10 +197,6 @@
 
 	.center-header {
 		margin-right: 0;
-	}
-
-	.header-sub {
-		margin-left: 70px;
 	}
 }
 
@@ -353,11 +345,6 @@
 	.header-title {
 		text-align: right;
 		font-size: 1.8rem;
-	}
-
-	.header-sub {
-		margin-left: 0;
-		text-align: right;
 	}
 
 	.menu {

@@ -13,3 +13,4 @@
 - add new project
 - remove tribute page and survey form projects
 - fix margin on resize for tech doc
+- add hover animation to header

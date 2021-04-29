@@ -258,6 +258,10 @@
 		font-size: 1.5rem;
 	}
 
+	.header-sub {
+		font-size: 0.8rem;
+	}
+
 	.menu {
 		width: 20px;
 		height: 20px;

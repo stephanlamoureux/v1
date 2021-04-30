@@ -147,6 +147,7 @@
 		padding: 1rem 0;
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
+		transition: none;
 	}
 
 	.project-image {
@@ -156,6 +157,7 @@
 		border-bottom-left-radius: 0;
 		border-bottom-right-radius: 0;
 		opacity: 1;
+		transition: none;
 	}
 
 	.project-tile:hover .project-name1,
@@ -164,6 +166,19 @@
 	.project-tile:hover .project-name4,
 	.project-tile:hover .project-name5 {
 		color: #000000;
+		transform: none;
+		transition: none;
+	}
+
+	.shrink {
+		transition: none;
+	}
+
+	.shrink:hover {
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		transition: none;
 	}
 
 	.projects-cell {
@@ -241,6 +256,11 @@
 			height: 500px;
 		}
 	}
+
+	footer p {
+		font-size: 1.6rem;
+		padding: 0 95px;
+	}
 }
 
 @media (max-width: 715px) {
@@ -280,6 +300,7 @@
 	.project-name5 {
 		padding: 0.5rem 0;
 		font-size: 1.1rem;
+		transition: none;
 	}
 
 	.about-p {
@@ -295,8 +316,9 @@
 		padding: 0 10px;
 	}
 
-	footer {
-		font-size: 1rem;
+	footer p {
+		font-size: 1.5rem;
+		padding: 0 35px;
 	}
 }
 
@@ -320,7 +342,7 @@
 
 	.icons-flex>span {
 		margin: 15px 0;
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 }
 
@@ -332,7 +354,7 @@
 
 	.icons-flex>span {
 		margin: 15px 0;
-		font-size: 1.8rem;
+		font-size: 1.9rem;
 	}
 
 	.header-title {
@@ -344,29 +366,15 @@
 	}
 }
 
-@media (max-width: 540px) {
-	.icons-flex>span {
-		margin: 15px 20px;
-		font-size: 1.9rem;
-	}
-}
-
 @media (max-width: 583px) {
 	footer {
-		font-size: 1.2rem;
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	footer p {
-		font-size: 1.2rem;
-		padding-left: 30px;
-		padding-right: 30px;
-	}
-
 	.icons-flex>span {
-		margin: 15px 20px;
-		font-size: 2.3rem;
+		margin: 15px 0;
+		font-size: 1.8rem;
 	}
 }
 
@@ -383,6 +391,13 @@
 		width: 20px;
 		height: 20px;
 		margin-left: 25px;
+	}
+}
+
+@media (max-width: 530px) {
+	footer p {
+		font-size: 1.3rem;
+		padding: 0 25px;
 	}
 }
 
@@ -411,15 +426,26 @@
 	}
 
 	.icons-flex>span {
-		margin: 15px 15px;
-		font-size: 1.9rem;
+		margin: 0;
+		font-size: 1.8rem;
+	}
+
+	footer p {
+		font-size: 1.2rem;
+		padding: 0 20px;
 	}
 
 }
 
+@media (max-width: 456px) {
+	.icons-flex>span {
+		font-size: 1.7rem;
+	}
+}
+
 @media (max-width: 443px) {
 	footer p {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 
 	.header-title {
@@ -427,30 +453,32 @@
 	}
 }
 
-@media (max-width: 429px) {
+@media (max-width: 430px) {
 	.icons-flex>span {
-		margin: 15px 10px;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
-
 }
 
-@media (max-width: 405px) {
+@media (max-width: 408px) {
 	.icons-flex>span {
-		margin: 15px 10px;
+		font-size: 1.5rem;
 	}
-
 }
 
 @media (max-width: 400px) {
 	.navbar {
 		height: 100vh;
 	}
+
+	.icons-flex>span {
+		font-size: 1.6rem;
+		margin: 10px 20px;
+	}
 }
 
 @media (max-width: 380px) {
 	footer p {
-		font-size: .9rem;
+		font-size: 1rem;
 	}
 
 	.header-title {
@@ -481,10 +509,6 @@
 
 	.header-sub {
 		font-size: 0.55rem;
-	}
-
-	.icons-flex>span {
-		margin: 15px 0;
 	}
 
 	.menu {

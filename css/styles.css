@@ -319,7 +319,7 @@ p a:hover {
 	text-align: center;
 	background-color: var(--dracula-background);
 	color: var(--dracula-background);
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	padding: 1rem 0;
 	max-width: 1000px;
 	transition: 0.8s ease;
@@ -457,11 +457,11 @@ footer p {
 .icons-flex {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 1.5rem 0 2rem 0;
+	margin: 1rem 0 2rem 0;
 }
 
 .icons-flex>span {
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 }
 
 span>i {
@@ -485,7 +485,7 @@ span>i {
 }
 
 .icon-links .pink:hover {
-	color: var(--dracula-pink);
+	color: var(--dracula-orange);
 }
 
 .icon-links .green:hover {
@@ -496,7 +496,7 @@ span>i {
 	color: var(--dracula-purple)
 }
 
-.icon-links i:focus {
+.icon-links:focus i					 {
 	color: var(--dracula-red)
 }
 

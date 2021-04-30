@@ -320,7 +320,7 @@ p a:hover {
 	background-color: var(--dracula-background);
 	color: var(--dracula-background);
 	font-size: 1.3rem;
-	padding: 1rem 0;
+	padding: 0 0;
 	max-width: 1000px;
 	transition: 0.8s ease;
 }
@@ -332,7 +332,7 @@ p a:hover {
 .project-tile:hover .project-name5 {
 	color: var(--dracula-cyan);
 	transition: 0.8s ease;
-	transform: translateY(-45px);
+	transform: translateY(-25px);
 }
 
 .project-name1::after {

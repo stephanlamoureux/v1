@@ -14,6 +14,16 @@
 	.header-sub {
 		font-size: 1.1rem;
 	}
+
+	.project-tile:hover .project-name1,
+	.project-tile:hover .project-name2,
+	.project-tile:hover .project-name3,
+	.project-tile:hover .project-name4,
+	.project-tile:hover .project-name5 {
+		color: var(--dracula-cyan);
+		transition: 0.8s ease;
+		transform: translateY(-20px);
+	}
 }
 
 @media (max-width: 1450px) {
@@ -22,6 +32,16 @@
 	.about,
 	.contact {
 		width: 70%;
+	}
+
+	.project-tile:hover .project-name1,
+	.project-tile:hover .project-name2,
+	.project-tile:hover .project-name3,
+	.project-tile:hover .project-name4,
+	.project-tile:hover .project-name5 {
+		color: var(--dracula-cyan);
+		transition: 0.8s ease;
+		transform: translateY(-15px);
 	}
 }
 
@@ -434,7 +454,6 @@
 		font-size: 1.2rem;
 		padding: 0 20px;
 	}
-
 }
 
 @media (max-width: 456px) {

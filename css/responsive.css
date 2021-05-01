@@ -160,6 +160,7 @@
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		transition: none;
+		border: 1px solid var(--dracula-greypurple);
 	}
 
 	.project-image {
@@ -170,6 +171,8 @@
 		border-bottom-right-radius: 0;
 		opacity: 1;
 		transition: none;
+		box-shadow: 0 0 0 0;
+		border: 1px solid var(--dracula-greypurple);
 	}
 
 	.project-tile:hover .project-name1,

@@ -303,7 +303,6 @@ p a:hover {
 	opacity: 0.5;
 	transition: 0.8s ease;
 	box-shadow: 0 0 3px 1px var(--dracula-cyan);
-
 }
 
 .project-tile:hover .project-image {

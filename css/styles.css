@@ -162,14 +162,23 @@ header {
 	color: var(--dracula-red);
 }
 
+.header-sub-div {
+	text-align: right;
+}
+
 .header-sub {
 	font-size: 1.4rem;
 	font-family: 'Inter', sans-serif;
 	font-style: italic;
 	text-align: right;
 	letter-spacing: 2px;
-	color: var(--dracula-foreground);
+	color: var(--dracula-green);
 	text-transform: uppercase;
+	width: 100%;
+}
+
+.typed {
+	color: var(--dracula-cyan);
 }
 
 .show {

@@ -412,6 +412,10 @@ textarea {
 	border-radius: 5px;
 }
 
+input:focus, textarea:focus {
+	box-shadow: 0 0 2px 2px var(--dracula-purple);
+}
+
 .form-submit {
 	padding: 19px 39px 18px 39px;
 	color: var(--dracula-background);
@@ -441,12 +445,6 @@ footer {
 	color: var(--dracula-background);
 	padding: 0.5rem;
 	border-radius: 5px;
-}
-
-@-moz-document url-prefix() {
-	footer {
-		font-size: 1.1rem;
-	}
 }
 
 footer p {

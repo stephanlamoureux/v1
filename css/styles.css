@@ -302,6 +302,8 @@ p a:hover {
 	border-radius: 5px;
 	opacity: 0.5;
 	transition: 0.8s ease;
+	box-shadow: 0 0 3px 1px var(--dracula-cyan);
+
 }
 
 .project-tile:hover .project-image {
@@ -332,6 +334,7 @@ p a:hover {
 	padding: 0 0;
 	max-width: 1000px;
 	transition: 0.8s ease;
+	font-family: Inter, sans-serif;
 }
 
 .project-tile:hover .project-name1,

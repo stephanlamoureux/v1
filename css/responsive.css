@@ -8,7 +8,7 @@
 
 @media (max-width: 1650px) {
 	.header-title {
-		font-size: 4rem;
+		font-size: 5.5rem;
 	}
 
 	.header-sub {
@@ -47,11 +47,11 @@
 
 @media (max-width: 1300px) {
 	.header-title {
-		font-size: 3.4rem;
+		font-size: 4.7rem;
 	}
 
 	.header-sub {
-		font-size: 1rem;
+		font-size: 1.1rem;
 	}
 
 	.projects-cell {
@@ -68,11 +68,11 @@
 	}
 
 	.header-title {
-		font-size: 3rem;
+		font-size: 3.5rem;
 	}
 
 	.center-header {
-		margin-right: 10px;
+		margin-right: 5px;
 	}
 
 	.nav-desktop {
@@ -90,7 +90,7 @@
 		background-image: url("../images/icons/menu-white.svg");
 		background-size: 100%;
 		margin-left: 55px;
-		margin-top: -20px;
+		margin-top: -27px;
 	}
 
 	.showClose {
@@ -205,25 +205,29 @@
 
 @media (max-width: 970px) {
 	.header-title {
-		font-size: 2.6rem;
+		font-size: 3rem;
 	}
 
 	.header-sub {
-		font-size: 0.85rem;
+		font-size: 1rem;
 	}
 
 	.menu {
-		margin-top: -16px;
+		margin-top: -22px;
 	}
 }
 
 @media (max-width: 860px) {
 	.header-title {
-		font-size: 2.25rem;
+		font-size: 2.3rem;
 	}
 
 	.header-sub {
-		font-size: 0.75rem;
+		font-size: 0.9rem;
+	}
+
+	.center-header {
+		margin-right: 0;
 	}
 
 	.menu {
@@ -288,7 +292,7 @@
 	}
 
 	.header-title {
-		font-size: 1.8rem;
+		font-size: 2.1rem;
 	}
 
 	.header-sub {
@@ -298,6 +302,12 @@
 	.menu {
 		width: 25px;
 		height: 25px;
+		margin-top: -19px;
+		margin-left: 40px;
+	}
+
+	.center-header {
+		margin-right: 0;
 	}
 
 	.about-p {
@@ -336,16 +346,11 @@
 
 @media (max-width: 660px) {
 	.header-title {
-		font-size: 1.7rem;
+		font-size: 1.9rem;
 	}
 
 	.header-sub {
 		font-size: 0.8rem;
-	}
-
-	.menu {
-		width: 20px;
-		height: 20px;
 	}
 
 	.navbar {
@@ -370,12 +375,17 @@
 	}
 
 	.header-title {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 	}
 
 	.header-sub {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 	}
+
+	.menu {
+		margin-top: -18px;
+	}
+
 }
 
 @media (max-width: 583px) {
@@ -392,17 +402,18 @@
 
 @media (max-width: 560px) {
 	.header-title {
-		font-size: 1.25rem;
+		font-size: 1.4rem;
 	}
 
 	.header-sub {
-		font-size: 0.7rem;
+		font-size: 0.75rem;
 	}
 
 	.menu {
 		width: 20px;
 		height: 20px;
-		margin-left: 25px;
+		margin-left: 35px;
+		margin-top: -17px;
 	}
 }
 
@@ -424,7 +435,7 @@
 
 	.header-title {
 		text-align: right;
-		font-size: 2.5rem;
+		font-size: 2.6rem;
 	}
 
 	.header-sub {
@@ -460,7 +471,7 @@
 	}
 
 	.header-title {
-		font-size: 2.1rem;
+		font-size: 2.3rem;
 	}
 }
 
@@ -493,7 +504,7 @@
 	}
 
 	.header-title {
-		font-size: 1.7rem;
+		font-size: 1.8rem;
 	}
 
 	.header-sub {
@@ -504,7 +515,7 @@
 		width: 25px;
 		height: 25px;
 		margin-top: -13px;
-		margin-left: 20px;
+		margin-left: 35px;
 	}
 
 	footer p {
@@ -519,12 +530,32 @@
 	}
 
 	.header-sub {
-		font-size: 0.55rem;
+		font-size: 0.6rem;
 	}
 
 	.menu {
 		width: 20px;
 		height: 20px;
-		margin-left: 15px;
+		margin-left: 25px;
+	}
+
+	.line {
+		width: 175px;
+	}
+}
+
+@media (max-width: 250px) {
+	.header-title {
+		font-size: 1rem;
+	}
+
+	.header-sub {
+		font-size: 0.5rem;
+	}
+
+	.menu {
+		width: 15px;
+		height: 15px;
+		margin-top: -10px;
 	}
 }

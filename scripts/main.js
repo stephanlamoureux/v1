@@ -21,13 +21,14 @@ menuLinks.forEach(
 // Typed.js
 
 var typed = new Typed('#typed', {
-	stringsElement: '#typed-strings',
-	backSpeed: 75,
-	typeSpeed: 100,
+	strings: ["Frontend Web Developer.", "^1000 Veteran.", "^1000 Gradient Gangster.", "^1000 Dark Mode Connoisseur."],
+	typeSpeed: 70,
 	loop: true,
 	startDelay: 1000,
 	backDelay: 3000,
+	backSpeed: 50
 });
+
 
 // EmailJS
 

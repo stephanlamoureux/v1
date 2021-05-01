@@ -505,7 +505,7 @@ span>i {
 	color: var(--dracula-purple)
 }
 
-.icon-links:focus i					 {
+.icon-links:focus i {
 	color: var(--dracula-red)
 }
 

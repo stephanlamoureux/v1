@@ -18,6 +18,10 @@ menuLinks.forEach(
 	}
 );
 
+// Typed.js
+
+
+
 // EmailJS
 
 (function () {

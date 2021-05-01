@@ -8,11 +8,11 @@
 
 @media (max-width: 1650px) {
 	.header-title {
-		font-size: 3.5rem;
+		font-size: 4rem;
 	}
 
 	.header-sub {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 
 	.project-tile:hover .project-name1,
@@ -47,7 +47,7 @@
 
 @media (max-width: 1300px) {
 	.header-title {
-		font-size: 3.2rem;
+		font-size: 3.4rem;
 	}
 
 	.header-sub {

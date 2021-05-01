@@ -104,12 +104,14 @@
 		left: 0;
 		background: var(--dracula-background);
 		width: 100%;
-		height: 41%;
+		height: 40%;
 		z-index: 999;
 		overflow: hidden;
 		color: var(--dracula-foreground);
 		transform: translateY(-100%);
 		transition: transform 0.2s ease;
+		border-bottom-right-radius: 10%;
+		border-bottom-left-radius: 10%;
 	}
 
 	.showNav {

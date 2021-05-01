@@ -172,13 +172,13 @@ header {
 	font-style: italic;
 	text-align: right;
 	letter-spacing: 2px;
-	color: var(--dracula-green);
+	color: var(--dracula-foreground);
 	text-transform: uppercase;
 	width: 100%;
 }
 
 .typed {
-	color: var(--dracula-cyan);
+	color: var(--dracula-green);
 }
 
 .show {

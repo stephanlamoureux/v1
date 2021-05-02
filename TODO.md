@@ -2,8 +2,6 @@
 
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles
-- fix margin on resize for tech doc project
-- fix resize on inputs for survey form project
 
 ## Maybe
 

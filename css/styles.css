@@ -75,7 +75,7 @@ a {
 }
 
 .custom-shape-divider-top-1619733049 .shape-fill {
-	fill: #383A59;
+	fill: var(--dracula-greypurple);
 }
 
 /** For tablet devices **/
@@ -127,7 +127,7 @@ header {
 }
 
 .header-title {
-	font-size: 7rem;
+	font-size: 4.7rem;
 	color: var(--dracula-purple);
 	font-family: 'Proza', sans-serif;
 	text-transform: uppercase;
@@ -179,6 +179,10 @@ header {
 
 .typed {
 	color: var(--dracula-green);
+}
+
+.typed-cursor {
+	color: var(--dracula-foreground);
 }
 
 .show {

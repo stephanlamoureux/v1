@@ -52,3 +52,18 @@ window.onload = function () {
 			});
 	});
 }
+
+// Footer hover effect
+
+let hash = document.getElementById("hash");
+let vwc = document.getElementById("vwc");
+
+vwc.addEventListener("mouseenter", function (event) {
+	hash.style.color = "var(--dracula-foreground)";
+	hash.style.transition = "0.5s ease all"
+});
+
+vwc.addEventListener("mouseleave", function (event) {
+	hash.style.color = "var(--dracula-background)";
+	hash.style.transition = "0.5s ease all"
+});

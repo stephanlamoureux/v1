@@ -418,7 +418,8 @@ textarea {
 	border-radius: 5px;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
 	box-shadow: 0 0 2px 2px var(--dracula-purple);
 }
 
@@ -461,10 +462,12 @@ footer p {
 
 .footer-link {
 	color: var(--dracula-foreground);
+	transition: 0.5s ease all;
 }
 
 .footer-link:hover {
-	text-decoration: underline;
+	text-decoration: none;
+	color: var(--dracula-background);
 }
 
 .icons-flex {

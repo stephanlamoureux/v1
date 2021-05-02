@@ -3,6 +3,7 @@
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles
 - connect dev.to API
+- add tab to main (blog)
 
 ## Maybe
 

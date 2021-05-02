@@ -11,4 +11,3 @@
 - light mode toggle
 - custom 404
 - add subheader to contact section?
-- add hover animation to header

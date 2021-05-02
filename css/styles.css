@@ -152,6 +152,39 @@ header {
 	-webkit-text-fill-color: transparent;
 	-moz-background-clip: text;
 	-moz-text-fill-color: transparent;
+	animation: header-animation-rev 1s ease forwards;
+}
+
+@keyframes header-animation-rev {
+	0% {
+		background-size: 300%;
+	}
+
+	40% {
+		background-size: 200%;
+	}
+
+	100% {
+		background-size: 100%;
+	}
+}
+
+.header-gradient:hover {
+	animation: header-animation 0.5s ease-in forwards;
+}
+
+@keyframes header-animation {
+	0% {
+		background-size: 100%;
+	}
+
+	80% {
+		background-size: 200%;
+	}
+
+	100% {
+		background-size: 300%;
+	}
 }
 
 .spacing {
@@ -324,6 +357,7 @@ p a:hover {
 	transform: scale(0.8);
 	transition: 0.8s ease;
 }
+
 .project-name0,
 .project-name1,
 .project-name2,

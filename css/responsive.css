@@ -136,6 +136,8 @@
 		text-decoration: none;
 		font-size: 1.2rem;
 		border-bottom: 2px solid var(--dracula-purple);
+		text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+
 	}
 
 	.menu-link a:hover {

@@ -21,7 +21,7 @@ menuLinks.forEach(
 // Typed.js
 
 var typed = new Typed('#typed', {
-	strings: ["Frontend Web Developer.", "^1000 Veteran.", "^1000 Gangster of Gradients.", "^1000 Dark Mode Connoisseur."],
+	strings: ["Frontend Web Developer.", "^1500 Veteran.", "^1500 Gangster of Gradients.", "^1500 Dark Mode Connoisseur."],
 	typeSpeed: 70,
 	loop: true,
 	startDelay: 1000,

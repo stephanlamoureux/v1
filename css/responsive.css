@@ -277,7 +277,7 @@
 	}
 
 	footer p {
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 		padding: 0 95px;
 	}
 }
@@ -417,6 +417,10 @@
 		height: 20px;
 		margin-left: 35px;
 		margin-top: -17px;
+	}
+
+	footer p {
+		font-size: 1.4rem;
 	}
 }
 

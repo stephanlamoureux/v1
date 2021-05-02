@@ -2,6 +2,7 @@
 
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles
+- connect dev.to API
 
 ## Maybe
 

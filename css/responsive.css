@@ -15,6 +15,7 @@
 		font-size: 1.2rem;
 	}
 
+	.project-tile:hover .project-name0,
 	.project-tile:hover .project-name1,
 	.project-tile:hover .project-name2,
 	.project-tile:hover .project-name3,
@@ -34,6 +35,7 @@
 		width: 70%;
 	}
 
+	.project-tile:hover .project-name0,
 	.project-tile:hover .project-name1,
 	.project-tile:hover .project-name2,
 	.project-tile:hover .project-name3,
@@ -148,6 +150,7 @@
 		min-width: 45%;
 	}
 
+	.project-name0,
 	.project-name1,
 	.project-name2,
 	.project-name3,
@@ -175,6 +178,7 @@
 		border: 1px solid var(--dracula-greypurple);
 	}
 
+	.project-tile:hover .project-name0,
 	.project-tile:hover .project-name1,
 	.project-tile:hover .project-name2,
 	.project-tile:hover .project-name3,
@@ -318,6 +322,7 @@
 		text-indent: 30px;
 	}
 
+	.project-name0,
 	.project-name1,
 	.project-name2,
 	.project-name3,

@@ -324,7 +324,7 @@ p a:hover {
 	transform: scale(0.8);
 	transition: 0.8s ease;
 }
-
+.project-name0,
 .project-name1,
 .project-name2,
 .project-name3,
@@ -340,6 +340,7 @@ p a:hover {
 	font-family: Inter, sans-serif;
 }
 
+.project-tile:hover .project-name0,
 .project-tile:hover .project-name1,
 .project-tile:hover .project-name2,
 .project-tile:hover .project-name3,
@@ -348,6 +349,10 @@ p a:hover {
 	color: var(--dracula-cyan);
 	transition: 0.8s ease;
 	transform: translateY(-25px);
+}
+
+.project-name0::after {
+	content: "Job Search App";
 }
 
 .project-name1::after {

@@ -501,11 +501,13 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 	.navbar {
 		height: 100vh;
 	}
+}
 
+@media (max-width: 400px) {
 	.icons-flex>span {
 		font-size: 1.6rem;
 		margin: 10px 20px;

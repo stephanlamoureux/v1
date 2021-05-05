@@ -7,6 +7,8 @@
 - add skip to main (blog)
 - and scroll to top arrow component that appears once you start scrolling down
 - add rel noopener noreferrer to links
+- change profile pic and about me content
+
 ## Maybe
 
 - light mode toggle

@@ -6,7 +6,7 @@
 - connect dev.to API
 - add skip to main (blog)
 - and scroll to top arrow component that appears once you start scrolling down
-
+- add rel noopener noreferrer to links
 ## Maybe
 
 - light mode toggle

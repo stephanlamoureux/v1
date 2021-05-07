@@ -8,7 +8,7 @@
 - change from a SPA
 - deploy to surge and use my domain name
 - add a light mode toggle
-- custom 404?
+- custom 404
 
 ## Landing Page
 - Create landing page

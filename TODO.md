@@ -2,13 +2,11 @@
 
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
-- add rel noopener and noreferrer to external links
 - move nav link to top (fixed)
 - nav links hover background should be gradient
 - change from a SPA
 - deploy to surge and use my domain name
 - add a light mode toggle
-- custom 404
 
 ## Landing Page
 - Create landing page
@@ -16,7 +14,6 @@
 - Add small and engaging content (use it as a business card)
 ## Footer
 - Change footer text
-- Add email icon instead of freecodecamp
 - Add site map to footer
 
 ## Projects Page

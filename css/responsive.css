@@ -281,11 +281,6 @@
 			height: 500px;
 		}
 	}
-
-	footer p {
-		font-size: 1.5rem;
-		padding: 0 95px;
-	}
 }
 
 @media (max-width: 715px) {
@@ -347,11 +342,6 @@
 	.icons-flex a i {
 		padding: 0 10px;
 	}
-
-	footer p {
-		font-size: 1.5rem;
-		padding: 0 55px;
-	}
 }
 
 @media (max-width: 660px) {
@@ -370,6 +360,10 @@
 	.icons-flex>span {
 		margin: 15px 0;
 		font-size: 2.2rem;
+	}
+
+	footer p {
+		font-size: 1.3rem;
 	}
 }
 
@@ -396,6 +390,9 @@
 		margin-top: -18px;
 	}
 
+	footer p {
+		font-size: 1.2rem;
+	}
 }
 
 @media (max-width: 583px) {
@@ -425,15 +422,10 @@
 		margin-left: 35px;
 		margin-top: -17px;
 	}
-
-	footer p {
-		font-size: 1.4rem;
-	}
 }
 
 @media (max-width: 530px) {
 	footer p {
-		font-size: 1.3rem;
 		padding: 0 25px;
 	}
 }
@@ -468,7 +460,6 @@
 	}
 
 	footer p {
-		font-size: 1.2rem;
 		padding: 0 20px;
 	}
 }

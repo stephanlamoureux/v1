@@ -12,6 +12,7 @@
 - Create landing page
 - change profile pic and move it up
 - Add small and engaging content (use it as a business card)
+
 ## Footer
 - Change footer text
 - Add site map to footer

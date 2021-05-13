@@ -14,7 +14,7 @@
 - Add small and engaging content (use it as a business card)
 
 ## Footer
-- Change footer text
+- make footer heart animate (beat)
 - Add site map to footer
 
 ## Projects Page

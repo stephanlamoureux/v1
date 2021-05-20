@@ -2,9 +2,7 @@
 
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
-- move nav link to top (fixed)
 - nav links hover background should be gradient
-- change from a SPA
 - deploy to surge and use my domain name
 - add a light mode toggle
 
@@ -18,7 +16,9 @@
 - Add site map to footer
 
 ## Projects Page
-- Add more details about each product
+* Add more details about each project (add text on hover)
+	- add hide/show arrow on mobile
+- Add sub header
 
 ## Contact Page
 - Add a sub header to the form

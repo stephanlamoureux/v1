@@ -29,7 +29,6 @@
 
 @media (max-width: 1450px) {
 
-	.nav-desktop,
 	.about,
 	.contact {
 		width: 70%;
@@ -63,7 +62,6 @@
 
 @media (max-width: 1100px) {
 
-	.nav-desktop,
 	.about,
 	.contact {
 		width: 85%;

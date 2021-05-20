@@ -363,7 +363,7 @@ p a:hover {
 .project-name4,
 .project-name5 {
 	text-align: center;
-	background-color: var(--dracula-background);
+	background-color: transparent;
 	color: var(--dracula-background);
 	font-size: 1.3rem;
 	padding: 0 0;

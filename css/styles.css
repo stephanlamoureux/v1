@@ -111,7 +111,7 @@ a {
 	overflow: hidden;
 	background-color: var(--dracula-greypurple);
 	z-index: 200;
-	box-shadow: 0 0 3px 2px rgba(50, 52, 75, 0.6);
+	box-shadow: 0 0 5px 2px rgba(50, 52, 75, 0.6);
 }
 
 .desktop-list {
@@ -160,7 +160,7 @@ header {
 	align-items: center;
 	background-color: transparent;
 	border-radius: 5px;
-	padding: 75px 0 25px 0;
+	padding: 100px 0 25px 0;
 }
 
 .header-title {
@@ -168,10 +168,6 @@ header {
 	color: var(--dracula-purple);
 	font-family: 'Proza', sans-serif;
 	text-transform: uppercase;
-}
-
-.center-header {
-	padding: 20px 0;
 }
 
 .header-gradient {

@@ -131,6 +131,7 @@ a {
 	box-shadow: inset 0 -2px 0 var(--dracula-purple);
 	transition: background 0.1s cubic-bezier(.33, .66, .66, 1);
 	text-transform: uppercase;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .desktop-link a:hover {

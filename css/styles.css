@@ -366,7 +366,7 @@ p a:hover {
 .project-name5 {
 	text-align: center;
 	background-color: transparent;
-	color: var(--dracula-background);
+	color: transparent;
 	font-size: 1.3rem;
 	padding: 0 0;
 	max-width: 1000px;

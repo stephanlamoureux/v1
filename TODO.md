@@ -2,13 +2,11 @@
 
 ## Misc
 
-- fix header and footer on resize
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
 - deploy to surge and use my domain name
 - add a light mode toggle
 - change profile pic
-- keep nav link underline on bottom after clicking link
 
 ## Landing Page
 
@@ -18,6 +16,7 @@
 ## Footer
 
 - Add site map to footer
+- fix footer on resize
 
 ## Projects Page
 

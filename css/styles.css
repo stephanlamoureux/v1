@@ -133,7 +133,7 @@ a {
 	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.link:nth-of-type(5) {
+.desktop-link:nth-of-type(5) a {
 	margin-right: 0;
 }
 

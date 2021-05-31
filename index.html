@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> <!-- Roboto -->
@@ -56,9 +57,10 @@
 
 	<!-- Header -->
 	<header>
-		<div class="center-header">
-			<h1 class="header-title"><span class="header-gradient"><span class="spacing">Stephan <span
-							class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
+		<div class="center-header" id="center-header">
+			<h1 class="header-title" id="header-title"
+				data-anijs="if: onRunFinished, on: $AniJSNotifier, do: zoomInLeft animated"><span class="header-gradient"><span
+						class="spacing">Stephan <span class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
 					class="show header-gradient">L.</span>
 			</h1>
 			<p class="header-sub"><span id="typed" class="typed"></span></p>
@@ -231,32 +233,32 @@
 	<!-- Footer -->
 	<footer>
 		<div class="icons-flex">
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://github.com/stephanlamoureux" target="_blank" class="icon-links" title="Github"
 					rel="noopener noreferrer">
 					<i class="fab fa-github fa-stack-1x fa-inverse"></i></a></span>
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://codepen.io/stephanlamoureux" target="_blank" class="icon-links" title="Codepen"
 					rel="noopener noreferrer">
 					<i class="fab fa-codepen fa-stack-1x fa-inverse orange"></i></a></span>
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://twitter.com/sa_lamoureux" target="_blank" class="icon-links" title="Twitter"
 					rel="noopener noreferrer">
 					<i class="fab fa-twitter fa-stack-1x fa-inverse purple"></i></a></span>
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://dev.to/stephanlamoureux" target="_blank" class="icon-links" title="Dev.to"
 					rel="noopener noreferrer">
 					<i class="fab fa-dev fa-stack-1x fa-inverse yellow"></i></a></span>
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://www.linkedin.com/in/stephanlamoureux" target="_blank" class="icon-links" title="LinkedIn"
 					rel="noopener noreferrer">
 					<i class="fab fa-linkedin fa-stack-1x fa-inverse cyan"></i></a></span>
-			<span class="fa-stack fa-2x">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="mailto:sa.lamoureux@gmail.com" target="_blank" class="icon-links" title="email"
 					rel="noopener noreferrer">
@@ -289,6 +291,7 @@
 	<!-- Divider End -->
 
 	<script src="scripts/main.js"></script>
+	<script src="scripts/anijs-master/dist/anijs-min.js"></script>
 </body>
 
 </html>

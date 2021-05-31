@@ -8,6 +8,7 @@
 	<link rel="icon" type="image/png" href="../images/icons/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> <!-- Roboto -->
@@ -15,10 +16,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> <!-- Fira Code -->
 	<!-- Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-	<!-- Typed.js-->
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-	<!-- EmailJS -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	<title>Stephan Lamoureux - About</title>
 </head>
 
@@ -86,7 +83,8 @@
 			<h2 class="section-header">About Me</h2>
 			<hr class="line marg-bottom" />
 			<div class="profile-div">
-				<img src="../images/military/army.png" alt="Me in Afghanistan" class="round" title="Me in Afghanistan" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: pulse animated"/>
+				<img src="../images/military/army.png" alt="Me in Afghanistan" class="round" title="Me in Afghanistan"
+					data-anijs="if: onRunFinished, on: $AniJSNotifier, do: pulse animated" />
 			</div>
 			<p class="about-p">Hey! I'm Steve, a former grunt and a lifetime computer nerd. Here is a quick rundown
 				on who I am and why I'm here.
@@ -154,17 +152,17 @@
 	<!-- Footer -->
 	<footer>
 		<div class="icons-flex">
-			<span class="fa-stack fa-2x"  data-anijs="if: mouseenter, do: rubberBand animated">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://github.com/stephanlamoureux" target="_blank" class="icon-links" title="Github"
 					rel="noopener noreferrer">
 					<i class="fab fa-github fa-stack-1x fa-inverse"></i></a></span>
-			<span class="fa-stack fa-2x"  data-anijs="if: mouseenter, do: rubberBand animated">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://codepen.io/stephanlamoureux" target="_blank" class="icon-links" title="Codepen"
 					rel="noopener noreferrer">
 					<i class="fab fa-codepen fa-stack-1x fa-inverse orange"></i></a></span>
-			<span class="fa-stack fa-2x"  data-anijs="if: mouseenter, do: rubberBand animated">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://twitter.com/sa_lamoureux" target="_blank" class="icon-links" title="Twitter"
 					rel="noopener noreferrer">
@@ -174,12 +172,12 @@
 				<a href="https://dev.to/stephanlamoureux" target="_blank" class="icon-links" title="Dev.to"
 					rel="noopener noreferrer">
 					<i class="fab fa-dev fa-stack-1x fa-inverse yellow"></i></a></span>
-			<span class="fa-stack fa-2x"  data-anijs="if: mouseenter, do: rubberBand animated">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="https://www.linkedin.com/in/stephanlamoureux" target="_blank" class="icon-links" title="LinkedIn"
 					rel="noopener noreferrer">
 					<i class="fab fa-linkedin fa-stack-1x fa-inverse cyan"></i></a></span>
-			<span class="fa-stack fa-2x"  data-anijs="if: mouseenter, do: rubberBand animated">
+			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
 				<a href="mailto:sa.lamoureux@gmail.com" target="_blank" class="icon-links" title="email"
 					rel="noopener noreferrer">
@@ -211,8 +209,14 @@
 	</div>
 	<!-- Divider End -->
 
-	<script src="../scripts/main.js"></script>
+	<!-- AniJS -->
 	<script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/anijs-min.js"></script>
+	<!-- Typed.js-->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<!-- EmailJS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<!-- Local JS -->
+	<script src="../scripts/main.js"></script>
 </body>
 
 </html>

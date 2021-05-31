@@ -8,7 +8,7 @@
 	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
-	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css" />
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" /> <!-- Roboto -->
@@ -16,10 +16,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> <!-- Fira Code -->
 	<!-- Font Awesome 5 -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-	<!-- Typed.js-->
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-	<!-- EmailJS -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	<title>Stephan Lamoureux</title>
 </head>
 
@@ -59,7 +55,7 @@
 	<header>
 		<div class="center-header" id="center-header">
 			<h1 class="header-title" id="header-title"
-				data-anijs="if: onRunFinished, on: $AniJSNotifier, do: zoomInLeft animated"><span class="header-gradient"><span
+				data-anijs="if: onRunFinished, on: $AniJSNotifier, do: tada animated"><span class="header-gradient"><span
 						class="spacing">Stephan <span class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
 					class="show header-gradient">L.</span>
 			</h1>
@@ -290,8 +286,14 @@
 	</div>
 	<!-- Divider End -->
 
-	<script src="scripts/main.js"></script>
+	<!-- AniJS -->
 	<script src="https://cdn.jsdelivr.net/gh/anijs/anijs@0.9.3/dist/anijs-min.js"></script>
+	<!-- Typed.js-->
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<!-- EmailJS -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+	<!-- Local JS -->
+	<script src="scripts/main.js"></script>
 </body>
 
 </html>

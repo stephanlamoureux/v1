@@ -10,6 +10,7 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
+	cursor: url("https://img.icons8.com/dusk/32/000000/cursor.png"), auto;
 }
 
 * {

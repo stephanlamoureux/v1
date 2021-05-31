@@ -67,3 +67,12 @@ vwc.addEventListener("mouseleave", function (event) {
 	hash.style.color = "var(--dracula-background)";
 	hash.style.transition = "0.5s ease all"
 });
+
+// Nav links keep underline effect when clicked
+
+const link = document.querySelector(".link");
+link.addEventListener("click", toggleActive);
+
+function toggleActive() {
+	link.classList.toggle("is-active");
+};

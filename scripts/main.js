@@ -70,9 +70,17 @@ vwc.addEventListener("mouseleave", function (event) {
 
 // Nav links keep underline effect when clicked
 
-const link = document.querySelector(".link");
-link.addEventListener("click", toggleActive);
+/*
+//--> you need to get all the elements in the nodeList
+const links = document.querySelectorAll(".link");
+//--> loop over these elements and add the eventListener
+links.forEach(link => link.addEventListener("click", toggleActive));
 
-function toggleActive() {
-	link.classList.toggle("is-active");
+//--> note the e passing into the function, this will be the event from the eventListener
+function toggleActive(e) {
+	//--> remove all instances of the classList on these nodes
+	links.forEach(link => link.classList.remove("is-active"));
+	//--> now use the event.target to add the active class to the classList
+	e.target.classList.add("is-active");
 };
+*/

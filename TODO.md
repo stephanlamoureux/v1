@@ -17,7 +17,6 @@
 
 ## Footer
 
-- make footer heart animate (beat)
 - Add site map to footer
 
 ## Projects Page

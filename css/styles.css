@@ -10,7 +10,7 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	cursor: url("https://img.icons8.com/dusk/32/000000/cursor.png"), auto;
+	cursor: url("../images/icons/cursor-blue.png"), auto;
 }
 
 * {
@@ -50,6 +50,7 @@ body {
 a {
 	color: var(--dracula-cyan);
 	text-decoration: none;
+	cursor: url("../images/icons/cursor-hand-white.png"), auto;
 }
 
 .wrapper {
@@ -454,7 +455,7 @@ textarea:focus {
 	border-radius: 5px;
 	width: 100%;
 	margin-bottom: 10px;
-	cursor: pointer;
+	cursor: url("../images/icons/cursor-hand-white.png"), auto;
 	transition: ease .6s all;
 }
 

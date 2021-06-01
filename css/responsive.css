@@ -394,6 +394,14 @@
 		height: 20px;
 	}
 
+	.made {
+		margin-right: 25px;
+	}
+
+	.heart {
+		right: 291px;
+	}
+
 	footer p {
 		font-size: 1.2rem;
 	}
@@ -431,6 +439,14 @@
 @media (max-width: 530px) {
 	footer p {
 		padding: 0 25px;
+	}
+
+	.made {
+		margin-right: 25px;
+	}
+
+	.heart {
+		right: 145px;
 	}
 }
 
@@ -481,6 +497,14 @@
 
 	.header-title {
 		font-size: 2.3rem;
+	}
+
+	.made {
+		margin-right: 22px;
+	}
+
+	.heart {
+		right: 133px;
 	}
 }
 
@@ -533,6 +557,14 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+	.made {
+		margin-right: 20px;
+	}
+
+	.heart {
+		right: 120px;
+	}
 }
 
 @media (max-width: 325px) {
@@ -552,6 +584,24 @@
 
 	.line {
 		width: 175px;
+	}
+
+	.made {
+		margin-right: 20px;
+	}
+
+	.heart {
+		right: 95px;
+	}
+}
+
+@media (max-width: 297px) {
+	.made {
+		margin-right: 20px;
+	}
+
+	.heart {
+		right: 8px;
 	}
 }
 

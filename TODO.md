@@ -13,10 +13,6 @@
 - Create landing page
 - Add small and engaging content (use it as a business card)
 
-## Footer
-
-- fix footer on resize
-
 ## Projects Page
 
 - Add more details about each project (add text on hover)

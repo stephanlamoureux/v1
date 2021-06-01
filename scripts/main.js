@@ -84,4 +84,3 @@ function toggleActive(e) {
 	e.target.classList.add("is-active");
 };
 */
-

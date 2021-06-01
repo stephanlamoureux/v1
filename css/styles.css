@@ -189,6 +189,47 @@ header {
 	-moz-text-fill-color: transparent;
 }
 
+.hire-me {
+	position: relative;
+	display: inline-block;
+}
+
+.hire-me .tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: var(--dracula-background);
+	color: var(--dracula-foreground);
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	width: 120px;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -60px;
+	margin-bottom: -5px;
+	font-size: 1rem;
+	opacity: 0;
+}
+
+.hire-me .tooltip::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -8px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: var(--dracula-background) transparent transparent transparent;
+}
+
+.hire-me:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity 1s;
+}
+
 .spacing {
 	letter-spacing: 10px;
 }

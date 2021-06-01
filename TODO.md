@@ -7,6 +7,7 @@
 - deploy to surge and use my domain name
 - add a light mode toggle
 - change profile pic
+- turn header into a hire me link
 
 ## Landing Page
 

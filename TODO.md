@@ -15,7 +15,6 @@
 
 ## Footer
 
-- Add site map to footer
 - fix footer on resize
 
 ## Projects Page

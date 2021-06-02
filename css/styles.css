@@ -287,6 +287,12 @@ header {
 	margin-bottom: 3rem;
 }
 
+/* Landing Page */
+
+.landing {
+	height: 51vh;
+}
+
 /* || About Me */
 
 .about {
@@ -336,7 +342,7 @@ p a:hover {
 	padding-top: 1rem;
 	width: 90%;
 	margin: 5rem auto 0 auto;
-	height: 100vh;
+	height: 45vh;
 }
 
 /* || Projects */

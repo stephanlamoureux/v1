@@ -297,7 +297,7 @@ header {
 
 .about {
 	width: 70%;
-	margin: 5rem auto 5rem auto;
+	margin: 4rem auto 5rem auto;
 	padding-top: 1rem;
 }
 
@@ -341,7 +341,7 @@ p a:hover {
 .blog {
 	padding-top: 1rem;
 	width: 90%;
-	margin: 5rem auto 0 auto;
+	margin: 4rem auto 0 auto;
 	height: 45vh;
 }
 
@@ -350,7 +350,7 @@ p a:hover {
 .projects {
 	padding-top: 1rem;
 	width: 90%;
-	margin: 5rem auto 0 auto;
+	margin: 4rem auto 0 auto;
 }
 
 .projects-grid {
@@ -442,8 +442,8 @@ p a:hover {
 /* || Contact */
 
 .contact {
-	margin: 5rem 0 7rem 0;
-	padding-top: 16px;
+	margin: 4rem 0 7rem 0;
+
 	width: 60%;
 	margin: 5rem auto 7rem auto;
 }

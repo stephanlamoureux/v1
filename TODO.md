@@ -6,7 +6,6 @@
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
 - deploy to surge and use my domain name
 - add a light mode toggle
-- change profile pic
 
 ## Landing Page
 
@@ -33,3 +32,5 @@
 ## About Me Page
 
 - update about me content
+- move hire me tooltip to profile pic
+- change profile pic

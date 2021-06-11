@@ -263,7 +263,9 @@ header {
 
 .typed-gradient {
 	background: -webkit-linear-gradient(var(--dracula-green), var(--dracula-cyan), var(--dracula-pink));
+	background-clip: text;
 	-webkit-background-clip: text;
+	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 

@@ -298,7 +298,17 @@ header {
 /* Landing Page */
 
 .landing {
-	height: 51vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100vh;
+	align-items: center;
+	justify-items: center;
+}
+
+.landing-header {
+	font-size: 50px;
+	align-self: center;
+	justify-self: center;
 }
 
 /* || About Me */
@@ -353,7 +363,7 @@ p a:hover {
 .blog {
 	padding-top: 1rem;
 	width: 90%;
-	margin: 4rem auto 0 auto;
+	margin: 4rem auto 10rem auto;
 	height: 45vh;
 }
 

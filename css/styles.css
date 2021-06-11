@@ -79,7 +79,7 @@ a {
 	position: relative;
 	display: block;
 	width: calc(300% + 1.3px);
-	height: 700px;
+	height: 550px;
 }
 
 .custom-shape-divider-top-1619733049 .shape-fill {
@@ -305,12 +305,16 @@ header {
 
 .about {
 	width: 70%;
-	margin: 4rem auto 5rem auto;
+	margin: 4rem auto 20rem auto;
 	padding-top: 1rem;
 }
 
 .about-p:not(:first-of-type) {
 	text-indent: 30px;
+}
+
+.marg-bottom-about {
+	margin-bottom: 7rem;
 }
 
 .about-p {
@@ -358,7 +362,19 @@ p a:hover {
 .projects {
 	padding-top: 1rem;
 	width: 90%;
-	margin: 4rem auto 0 auto;
+	margin: 4rem auto 18rem auto;
+}
+
+.projects-subheader {
+	margin-bottom: 3rem;
+	margin-top: 9rem;
+}
+
+.projects-p {
+	font-size: 1.4rem;
+	width: 75%;
+	margin: 0 auto;
+	line-height: 1.5;
 }
 
 .projects-grid {
@@ -452,17 +468,19 @@ p a:hover {
 .contact {
 	margin: 4rem 0 7rem 0;
 	width: 60%;
-	margin: 5rem auto 7rem auto;
+	margin: 5rem auto 17rem auto;
 }
 
 .contact-subheader {
 	margin-bottom: 3rem;
+	margin-top: 9rem;
 }
 
 .contact-p {
 	font-size: 1.4rem;
 	width: 75%;
 	margin: 0 auto;
+	line-height: 1.5;
 }
 
 .form-container {

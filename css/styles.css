@@ -451,7 +451,6 @@ p a:hover {
 
 .contact {
 	margin: 4rem 0 7rem 0;
-
 	width: 60%;
 	margin: 5rem auto 7rem auto;
 }
@@ -462,6 +461,8 @@ p a:hover {
 
 .contact-p {
 	font-size: 1.4rem;
+	width: 75%;
+	margin: 0 auto;
 }
 
 .form-container {

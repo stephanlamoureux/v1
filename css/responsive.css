@@ -1,5 +1,17 @@
 /* || Media Queries */
 
+@media (min-width: 2400px) {
+	.contact-p {
+		text-align: center;
+	}
+}
+
+@media (min-width: 2001px) {
+	.contact-p {
+		width: 65%;
+	}
+}
+
 @media (min-width: 1776px) {
 	form {
 		max-width: 1000px;
@@ -211,6 +223,10 @@
 
 	.contact {
 		margin-top: 8rem;
+	}
+
+	.contact-p {
+		text-align: center;
 	}
 }
 

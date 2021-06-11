@@ -454,6 +454,14 @@ p a:hover {
 	margin: 5rem auto 7rem auto;
 }
 
+.contact-subheader {
+	margin-bottom: 3rem;
+}
+
+.contact-p {
+	font-size: 1.4rem;
+}
+
 .form-container {
 	display: flex;
 	justify-content: center;

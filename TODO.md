@@ -6,6 +6,7 @@
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
 - deploy to surge and use my domain name
 - add a light mode toggle
+- add templates (mustache, underscore, pugjs, handlebars)
 
 ## Landing Page
 

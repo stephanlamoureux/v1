@@ -7,6 +7,7 @@
 - deploy to surge and use my domain name
 - add a light mode toggle
 - add templates (mustache, underscore, pugjs, handlebars)
+- optimize w/ lighthouse
 
 ## Landing Page
 

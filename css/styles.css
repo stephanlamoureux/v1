@@ -300,7 +300,7 @@ header {
 .landing {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 100vh;
+	grid-template-rows: 50vh;
 	align-items: center;
 	justify-items: center;
 }
@@ -309,6 +309,7 @@ header {
 	font-size: 50px;
 	align-self: center;
 	justify-self: center;
+	text-align: center;
 }
 
 /* || About Me */
@@ -363,7 +364,7 @@ p a:hover {
 .blog {
 	padding-top: 1rem;
 	width: 90%;
-	margin: 4rem auto 10rem auto;
+	margin: 4rem auto 30rem auto;
 	height: 45vh;
 }
 

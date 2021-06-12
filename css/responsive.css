@@ -158,6 +158,10 @@
 		color: var(--dracula-cyan)
 	}
 
+	.landing-header {
+		font-size: 30px;
+	}
+
 	.about {
 		margin-top: 8rem;
 	}
@@ -410,6 +414,10 @@
 		height: 20px;
 	}
 
+	.landing-header {
+		font-size: 20px;
+	}
+
 	.made {
 		margin-right: 25px;
 	}
@@ -506,6 +514,12 @@
 	}
 }
 
+@media (max-width: 450px) {
+	.navbar {
+		height: 75vh;
+	}
+}
+
 @media (max-width: 443px) {
 	footer p {
 		font-size: 1.1rem;
@@ -516,11 +530,15 @@
 	}
 
 	.made {
-		margin-right: 22px;
+		margin-right: 25px;
 	}
 
 	.heart {
-		right: 133px;
+		right: 130px;
+	}
+
+	.stephan {
+		margin-left: 10px;
 	}
 }
 
@@ -533,12 +551,6 @@
 @media (max-width: 408px) {
 	.icons-flex>span {
 		font-size: 1.5rem;
-	}
-}
-
-@media (max-width: 450px) {
-	.navbar {
-		height: 75vh;
 	}
 }
 

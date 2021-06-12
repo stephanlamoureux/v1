@@ -308,6 +308,7 @@ header {
 	grid-template-rows: 50vh;
 	align-items: center;
 	justify-items: center;
+	margin-bottom: 30rem;
 }
 
 .landing-header {

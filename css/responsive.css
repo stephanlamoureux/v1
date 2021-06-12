@@ -162,15 +162,27 @@
 		font-size: 30px;
 	}
 
-	.about {
-		margin-top: 8rem;
+	.about,
+	.blog,
+	.projects,
+	.contact {
+		margin-top: 4rem;
+	}
+
+	.section-subheader {
+		margin-top: 5rem;
 	}
 
 	.round {
 		min-width: 45%;
 	}
 
-	.projects-p {
+	.marg-bottom-about {
+		margin-bottom: 3rem;
+	}
+
+	.projects-p,
+	.blog-p {
 		text-align: center;
 	}
 
@@ -227,10 +239,6 @@
 	.projects-cell {
 		width: 100%;
 		padding: 2rem 1rem;
-	}
-
-	.contact {
-		margin-top: 8rem;
 	}
 
 	.contact-p {
@@ -338,11 +346,6 @@
 
 	.center-header {
 		margin-right: 0;
-	}
-
-	.about-p {
-		text-align: left;
-		text-indent: 30px;
 	}
 
 	.project-name0,

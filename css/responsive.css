@@ -523,6 +523,7 @@
 @media (max-width: 443px) {
 	footer p {
 		font-size: 1.1rem;
+		padding: 0 10px;
 	}
 
 	.header-title {

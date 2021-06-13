@@ -5,8 +5,9 @@
 - update readme
 - make sure everything is tabbable and accessible, add aria labels/roles etc.
 - deploy to surge and use my domain name
+- remove CDNs
 - add a light mode toggle
-- add templates (mustache, underscore, pugjs, handlebars)
+- add templates w/ HTML Templates or js library(mustache, underscore, pugjs, handlebars)
 - optimize w/ lighthouse
 
 ## Landing Page

@@ -21,7 +21,7 @@
 - Add more details about each project (add text on hover)
   - add hide/show arrow on mobile
 - Add sub header
-- change cards to be more like [this](https://mattfarley.ca/)
+- change cards to be more like [this](https://mattfarley.ca/) with the hover overlays
 
 ## Contact Page
 

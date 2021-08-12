@@ -9,7 +9,7 @@
 - add a light mode toggle
 - add templates w/ HTML Templates or js library(mustache, underscore, pugjs, handlebars)
 - optimize w/ lighthouse
-- add tests
+- add tests (mocha/chai)
 
 ## Landing Page
 

@@ -5,6 +5,7 @@
 ### Misc
 
 - update readme
+- change subheader width of contact page to match others
 - make sure everything is tabbable and accessible, add aria labels/roles, contrast check etc.
 - deploy to surge and use my domain name
 - remove CDNs?

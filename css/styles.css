@@ -348,7 +348,7 @@ header {
 
 .round {
 	border-radius: 50%;
-	max-width: 40%;
+	max-width: 30%;
 	float: left;
 	shape-outside: circle();
 	margin-right: 1rem;

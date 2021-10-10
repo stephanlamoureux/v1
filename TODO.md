@@ -5,11 +5,9 @@
 ### Misc
 
 - update readme
-- change subheader width of contact page to match others
 - make sure everything is tabbable and accessible, add aria labels/roles, contrast check etc.
 - deploy to surge and use my domain name
 - remove CDNs?
-- add a light mode toggle
 - optimize w/ lighthouse
 
 ### Landing Page
@@ -33,6 +31,10 @@
 - change profile pic
 
 ## Phase 2
+
+### Misc
+
+- add a light mode toggle
 
 ### Projects Page
 

@@ -297,7 +297,7 @@ header {
 }
 
 .marg-bottom {
-	margin-bottom: 3rem;
+	margin-bottom: 7rem;
 }
 
 /* Landing Page */
@@ -327,10 +327,6 @@ header {
 
 .about-p:not(:first-of-type) {
 	text-indent: 30px;
-}
-
-.marg-bottom-about {
-	margin-bottom: 7rem;
 }
 
 .about-p {

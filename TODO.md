@@ -28,7 +28,6 @@
 
 - update about me content
 - move hire me tooltip to profile pic and link to resume
-- change profile pic
 
 ## Phase 2
 

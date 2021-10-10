@@ -32,7 +32,7 @@
 
 ## Phase 2
 
-### Misc
+### Nav
 
 - add a light mode toggle
 

@@ -2,7 +2,7 @@
 
 @font-face {
 	font-family: 'Proza';
-	src: url("../fonts/Proza-Regular.otf") format("opentype");
+	src: url("../assets/fonts/Proza-Regular.otf") format("opentype");
 }
 
 /* Universal box sizing and base reset */
@@ -10,7 +10,7 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	cursor: url("../images/icons/cursor-blue.png"), auto;
+	cursor: url("../assets/images/icons/cursor-blue.png"), auto;
 }
 
 * {
@@ -50,7 +50,7 @@ body {
 a {
 	color: var(--dracula-cyan);
 	text-decoration: none;
-	cursor: url("../images/icons/cursor-hand-white.png"), auto;
+	cursor: url("../assets/images/icons/cursor-hand-white.png"), auto;
 }
 
 .wrapper {
@@ -534,7 +534,7 @@ textarea:focus {
 	border-radius: 5px;
 	width: 100%;
 	margin-bottom: 10px;
-	cursor: url("../images/icons/cursor-hand-white.png"), auto;
+	cursor: url("../assets/images/icons/cursor-hand-white.png"), auto;
 	transition: ease .6s all;
 }
 
@@ -576,36 +576,34 @@ span>i {
 	color: var(--dracula-background);
 }
 
-.icon-links i:hover {
+.icon-links .red:hover,
+.icon-links:focus .red {
 	color: var(--dracula-red);
 }
 
-.icon-links .cyan:hover {
-	color: var(--dracula-cyan);
-}
-
-.icon-links .purple:hover {
-	color: var(--dracula-purple);
-}
-
-.icon-links .yellow:hover {
-	color: var(--dracula-yellow);
-}
-
-.icon-links .orange:hover {
+.icon-links .orange:hover,
+.icon-links:focus .orange {
 	color: var(--dracula-orange);
 }
 
-.icon-links .green:hover {
+.icon-links .purple:hover,
+.icon-links:focus .purple {
+	color: var(--dracula-purple);
+}
+
+.icon-links .yellow:hover,
+.icon-links:focus .yellow {
+	color: var(--dracula-yellow);
+}
+
+.icon-links .cyan:hover,
+.icon-links:focus .cyan  {
+	color: var(--dracula-cyan);
+}
+
+.icon-links .green:hover,
+.icon-links:focus .green {
 	color: var(--dracula-green);
-}
-
-.icon-links i:active {
-	color: var(--dracula-purple)
-}
-
-.icon-links:focus i {
-	color: var(--dracula-red)
 }
 
 .made {

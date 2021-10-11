@@ -9,7 +9,6 @@
 - deploy to surge and use my domain name
 - remove CDNs?
 - optimize w/ lighthouse
-- change favicon
 
 ### Contact Page
 

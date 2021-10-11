@@ -328,6 +328,7 @@ header {
 .about {
 	width: 70%;
 	margin: 5rem auto 20rem auto;
+	overflow: hidden;
 }
 
 .about-p:not(:first-of-type) {
@@ -371,6 +372,7 @@ p a:hover {
 	width: 90%;
 	margin: 5rem auto 30rem auto;
 	height: 45vh;
+	overflow: hidden;
 }
 
 .blog-p {
@@ -385,6 +387,7 @@ p a:hover {
 .projects {
 	width: 90%;
 	margin: 5rem auto 18rem auto;
+	overflow: hidden;
 }
 
 .projects-p {
@@ -486,6 +489,7 @@ p a:hover {
 	margin: 4rem 0 7rem 0;
 	width: 60%;
 	margin: 5rem auto 17rem auto;
+	overflow: hidden;
 }
 
 .contact-p {

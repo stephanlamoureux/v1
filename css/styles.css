@@ -140,7 +140,7 @@ a {
 	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.desktop-link:nth-of-type(5) a {
+.desktop-link:nth-of-type(4) a {
 	margin-right: 0;
 }
 
@@ -305,30 +305,11 @@ header {
 	margin-bottom: 7rem;
 }
 
-/* Landing Page */
-
-.landing {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 50vh;
-	align-items: center;
-	justify-items: center;
-	margin-bottom: 30rem;
-}
-
-.landing-header {
-	font-size: 2rem;
-	align-self: center;
-	justify-self: center;
-	text-align: center;
-}
-
 /* || About Me */
 
 .about {
 	width: 70%;
 	margin: 5rem auto 20rem auto;
-	overflow: hidden;
 }
 
 .about-p:not(:first-of-type) {
@@ -581,16 +562,6 @@ footer p {
 	font-family: 'Inter', monospace;
 }
 
-.footer-link {
-	color: var(--dracula-foreground);
-	transition: 0.5s ease all;
-}
-
-.footer-link:hover {
-	text-decoration: none;
-	color: var(--dracula-background);
-}
-
 .icons-flex {
 	display: flex;
 	justify-content: space-evenly;
@@ -638,7 +609,7 @@ span>i {
 }
 
 .made {
-	margin-right: 30px;
+	margin-right: 28px;
 }
 
 .heart {
@@ -646,12 +617,8 @@ span>i {
 	margin-left: auto;
 	margin-right: auto;
 	left: 0px;
-	right: 315px;
+	right: 196px;
 	text-align: center;
-}
-
-.vwc-link {
-	position: relative;
 }
 
 .animate-beat {

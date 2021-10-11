@@ -174,10 +174,6 @@
 		color: var(--dracula-cyan)
 	}
 
-	.landing-header {
-		font-size: 30px;
-	}
-
 	.about,
 	.blog,
 	.projects,
@@ -452,22 +448,6 @@
 		width: 20px;
 		height: 20px;
 	}
-
-	.landing-header {
-		font-size: 20px;
-	}
-
-	.made {
-		margin-right: 25px;
-	}
-
-	.heart {
-		right: 291px;
-	}
-
-	footer p {
-		font-size: 1.2rem;
-	}
 }
 
 @media (max-width: 583px) {
@@ -502,14 +482,6 @@
 @media (max-width: 530px) {
 	footer p {
 		padding: 0 25px;
-	}
-
-	.made {
-		margin-right: 25px;
-	}
-
-	.heart {
-		right: 145px;
 	}
 }
 
@@ -547,6 +519,20 @@
 	}
 }
 
+@media (max-width: 476px) {
+	footer p {
+		font-size: 1.1rem;
+		font-weight: 500;
+	}
+
+	.made {
+		margin-right: 24px;
+	}
+	.heart {
+		right: 167px;
+	}
+}
+
 @media (max-width: 456px) {
 	.icons-flex>span {
 		font-size: 1.7rem;
@@ -561,7 +547,7 @@
 
 @media (max-width: 443px) {
 	footer p {
-		font-size: 1.1rem;
+		font-size: 1.3rem;
 		padding: 0 10px;
 	}
 
@@ -570,15 +556,11 @@
 	}
 
 	.made {
-		margin-right: 15px;
+		margin-right: 26px;
 	}
 
 	.heart {
-		right: 136px;
-	}
-
-	.stephan {
-		margin-left: 12px;
+		right: 125px;
 	}
 }
 
@@ -599,12 +581,19 @@
 		font-size: 1.6rem;
 		margin: 10px 20px;
 	}
+
+	footer p {
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 1.2rem;
+	}
+
+	.heart {
+		right: 115px;
+	}
 }
 
 @media (max-width: 380px) {
-	footer p {
-		font-size: 1rem;
-	}
 
 	.header-title {
 		font-size: 1.8rem;
@@ -620,18 +609,17 @@
 		margin-top: -13px;
 		margin-left: 35px;
 	}
+}
 
+@media (max-width: 368px) {
 	footer p {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding: 0 5px;
 	}
+}
 
-	.made {
-		margin-right: 20px;
-	}
-
+@media (max-width: 348px) {
 	.heart {
-		right: 120px;
+		right: 8px;
 	}
 }
 
@@ -653,19 +641,15 @@
 	.line {
 		width: 175px;
 	}
-
-	.made {
-		margin-right: 20px;
-	}
-
-	.heart {
-		right: 95px;
-	}
 }
 
 @media (max-width: 297px) {
+	footer p {
+		padding: 0;
+	}
+
 	.made {
-		margin-right: 20px;
+		margin-right: 25px;
 	}
 
 	.heart {

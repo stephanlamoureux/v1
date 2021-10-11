@@ -11,10 +11,6 @@
 - optimize w/ lighthouse
 - change favicon
 
-### Landing Page
-
-- Create landing page
-
 ### Contact Page
 
 - Clear the contact form submit button after success

@@ -5,7 +5,7 @@
 ### Misc
 
 - update readme
-- make sure everything is tabbable and accessible, add aria labels/roles, contrast check etc.
+- check a11y - tabbable, add aria labels/roles, contrast check etc.
 - deploy to surge and use my domain name
 - remove CDNs?
 - optimize w/ lighthouse

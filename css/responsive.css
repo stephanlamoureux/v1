@@ -308,6 +308,13 @@
 	}
 }
 
+@media screen and (orientation:landscape)
+and (max-device-width: 850px) {
+  .heart {
+		right: 150px;
+	}
+}
+
 @media (max-width: 810px) {
 	.icons-flex {
 		flex-wrap: wrap;

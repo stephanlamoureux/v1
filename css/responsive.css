@@ -310,8 +310,8 @@
 
 @media screen and (orientation:landscape)
 and (max-device-width: 850px) {
-  .heart {
-		right: 300px;
+	.heart {
+		right: 400px;
 	}
 }
 

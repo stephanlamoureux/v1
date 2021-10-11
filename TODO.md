@@ -37,6 +37,10 @@
 - Add sub header
 - change cards to be more like [this](https://mattfarley.ca/) with the hover overlays
 
+### Review
+
+- Get feedback before migrating to React
+
 ## Phase 3
 
 - Migrate to React

@@ -34,10 +34,9 @@
 
 ### Projects
 
-- Add more details about each project (add text on hover)
+- Add more details about each project
   - add hide/show arrow on mobile
-- Add sub header
-- change cards to be more like [this](https://mattfarley.ca/) with the hover overlays
+  - add text on hover like [this](https://mattfarley.ca/) with the overlays
 
 ### Review
 

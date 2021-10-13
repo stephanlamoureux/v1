@@ -9,17 +9,17 @@
 - deploy to surge
 - optimize w/ lighthouse
 
-### Contact Page
+### Contact
 
 - Clear the contact form submit button message
 
-### Blog Page
+### Blog
 
 - create blog page
 - connect dev.to API
 - canonical links
 
-### About Me Page
+### About Me
 
 - update about me content
   - quick bio
@@ -32,7 +32,7 @@
 
 - add a light mode toggle
 
-### Projects Page
+### Projects
 
 - Add more details about each project (add text on hover)
   - add hide/show arrow on mobile

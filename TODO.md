@@ -47,6 +47,7 @@
 
 - Migrate to React
 - Add testing
+- Deploy on Netlify
 
 ## Phase 4
 

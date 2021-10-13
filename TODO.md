@@ -6,13 +6,12 @@
 
 - update readme
 - check a11y - tabbable, add aria labels/roles, contrast check etc.
-- deploy to surge and use my domain name
-- remove CDNs?
+- deploy to surge
 - optimize w/ lighthouse
 
 ### Contact Page
 
-- Clear the contact form submit button after success
+- Clear the contact form submit button message
 
 ### Blog Page
 

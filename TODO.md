@@ -22,6 +22,9 @@
 ### About Me Page
 
 - update about me content
+  - quick bio
+  - tech used
+  - future plans
 
 ## Phase 2
 

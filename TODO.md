@@ -21,7 +21,7 @@
 
 ### About Me
 
-- update about me content
+- replace about me content
   - quick bio
   - tech used
   - future plans

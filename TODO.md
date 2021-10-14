@@ -1,6 +1,8 @@
 # TODO
 
-## Phase 1
+<details open>
+  
+  <summary>Phase 1</summary>
 
 ### Misc
 
@@ -27,11 +29,16 @@
   - tech used
   - future plans
 
-## Phase 2
+</details>
+
+<details>
+  
+  <summary>Phase 2</summary>
 
 ### Nav
 
 - add a light mode toggle
+  
 
 ### Projects
 
@@ -44,9 +51,11 @@
 
 - Get feedback before migrating to React
 
+</details>
+
 <details>
   
-  <summary>## Phase 3</summary>
+  <summary>Phase 3</summary>
 
 - Migrate to React
 - Add testing
@@ -56,7 +65,7 @@
 
 <details>
   
-  <summary>## Phase 4</summary>
+  <summary>Phase 4</summary>
 
 - Add Gatsby
   

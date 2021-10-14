@@ -44,12 +44,20 @@
 
 - Get feedback before migrating to React
 
-## Phase 3
+<details>
+  
+  <summary>## Phase 3</summary>
 
 - Migrate to React
 - Add testing
 - Deploy on Netlify
 
-## Phase 4
+</details>
+
+<details>
+  
+  <summary>## Phase 4</summary>
 
 - Add Gatsby
+  
+ </details>

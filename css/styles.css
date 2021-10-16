@@ -398,12 +398,13 @@ p a:hover {
 	border-radius: 5px;
 	opacity: 0.5;
 	transition: 0.5s ease;
-	box-shadow: 0 0 3px 1px var(--dracula-cyan);
+	box-shadow: 0 0 3px 1px var(--dracula-foreground);
 }
 
 .project-tile:hover .project-image {
 	opacity: 1;
-	transition: 0.5s ease;
+	transition: 0.5s ease all;
+	box-shadow: 0 0 3px 1px var(--dracula-cyan);
 }
 
 .shrink {
@@ -440,7 +441,7 @@ p a:hover {
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
 	color: var(--dracula-cyan);
-	transition: 0.5s ease;
+	transition: 0.5s ease all;
 	transform: translateY(-15px);
 }
 

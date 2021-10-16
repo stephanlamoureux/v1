@@ -397,24 +397,24 @@ p a:hover {
 	max-width: 100%;
 	border-radius: 5px;
 	opacity: 0.5;
-	transition: 0.8s ease;
+	transition: 0.5s ease;
 	box-shadow: 0 0 3px 1px var(--dracula-cyan);
 }
 
 .project-tile:hover .project-image {
 	opacity: 1;
-	transition: 0.8s ease;
+	transition: 0.5s ease;
 }
 
 .shrink {
-	transition: 1s ease;
+	transition: 0.5s ease;
 }
 
 .shrink:hover {
-	-webkit-transform: scale(0.8);
-	-ms-transform: scale(0.8);
-	transform: scale(0.8);
-	transition: 0.8s ease;
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	transition: 0.5s ease;
 }
 
 .project-name0,
@@ -429,7 +429,7 @@ p a:hover {
 	font-size: 1.3rem;
 	padding: 0 0;
 	max-width: 1000px;
-	transition: 0.8s ease;
+	transition: 0.4s ease all;
 	font-family: Inter, sans-serif;
 }
 
@@ -440,8 +440,8 @@ p a:hover {
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
 	color: var(--dracula-cyan);
-	transition: 0.8s ease;
-	transform: translateY(-25px);
+	transition: 0.5s ease;
+	transform: translateY(-15px);
 }
 
 .project-name0::after {
@@ -580,6 +580,10 @@ span>i {
 	color: var(--dracula-background);
 }
 
+.icon-links i:hover {
+	transition: 0.5s ease color;
+}
+
 .icon-links .red:hover,
 .icon-links:focus .red {
 	color: var(--dracula-red);
@@ -608,6 +612,10 @@ span>i {
 .icon-links .green:hover,
 .icon-links:focus .green {
 	color: var(--dracula-green);
+}
+
+.red, .orange, .purple, .yellow, .cyan, .green {
+	transition: 0.5s ease color;
 }
 
 .coded-by {

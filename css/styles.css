@@ -266,6 +266,7 @@ header {
 
 .typed {
 	color: var(--dracula-green);
+	text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 }
 
 .typed-cursor {
@@ -273,6 +274,7 @@ header {
 }
 
 .typed-gradient {
+	text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
 	background: -webkit-linear-gradient(var(--dracula-green), var(--dracula-cyan), var(--dracula-pink));
 	background-clip: text;
 	-webkit-background-clip: text;

@@ -1,7 +1,7 @@
 # TODO
 
 <details open>
-  
+
   <summary>Phase 1</summary>
 
 ### Misc
@@ -32,13 +32,13 @@
 </details>
 
 <details>
-  
+
   <summary>Phase 2</summary>
 
 ### Nav
 
 - add a light mode toggle
-  
+
 
 ### Projects
 
@@ -47,14 +47,10 @@
   - add hide/show arrow on mobile?
   - use modals?
 
-### Review
-
-- Get feedback before migrating to React
-
 </details>
 
 <details>
-  
+
   <summary>Phase 3</summary>
 
 - Migrate to React
@@ -64,9 +60,9 @@
 </details>
 
 <details>
-  
+
   <summary>Phase 4</summary>
 
 - Add Gatsby
-  
+
  </details>

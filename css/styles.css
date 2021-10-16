@@ -137,7 +137,7 @@ a {
 	text-decoration: none;
 	font-size: 1.2rem;
 	text-transform: uppercase;
-	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .desktop-link:nth-of-type(4) a {
@@ -202,7 +202,7 @@ header {
 .hire-me .tooltip {
 	visibility: hidden;
 	width: 120px;
-	background-color: var(--dracula-purple);
+	background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-green));
 	color: var(--dracula-background);
 	text-align: center;
 	font-weight: 600;
@@ -217,6 +217,7 @@ header {
 	margin-bottom: 15px;
 	font-size: 1rem;
 	opacity: 0;
+	transition: 0.5s ease all;
 }
 
 .hire-me .tooltip::after {
@@ -227,7 +228,7 @@ header {
 	margin-left: -6px;
 	border-width: 6px;
 	border-style: solid;
-	border-color: var(--dracula-purple) var(--dracula-purple) transparent transparent;
+	border-color: var(--dracula-cyan) var(--dracula-cyan) transparent transparent;
 }
 
 .hire-me:hover .tooltip {
@@ -290,6 +291,7 @@ header {
 	font-weight: normal;
 	font-family: 'Inter', sans-serif;
 	color: var(--dracula-foreground);
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1), 0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .line {
@@ -604,6 +606,10 @@ span>i {
 .icon-links .green:hover,
 .icon-links:focus .green {
 	color: var(--dracula-green);
+}
+
+.coded-by {
+	text-shadow: 0px 15px 5px rgba(0,0,0,0.1), 10px 20px 5px rgba(0,0,0,0.05), -10px 20px 5px rgba(0,0,0,0.05);
 }
 
 .made {

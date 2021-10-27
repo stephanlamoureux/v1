@@ -383,6 +383,10 @@ and (max-device-width: 500px) {
 		text-align: center;
 	}
 
+	.about-container {
+		box-shadow: none;
+	}
+
 	.round {
 		min-width: 75%;
 		float: none;

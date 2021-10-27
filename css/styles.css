@@ -317,7 +317,7 @@ header {
 }
 
 .about-container {
-  box-shadow: 8px 0 5px -2px rgba(0,0,0,0.75);
+  box-shadow: 10px 0 5px -5px rgba(0,0,0,0.75);
 	padding-bottom: 20px;
 }
 

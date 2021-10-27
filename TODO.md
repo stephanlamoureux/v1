@@ -10,6 +10,7 @@
 - check a11y - tabbable, add aria labels/roles, contrast check etc.
 - deploy to surge
 - optimize w/ lighthouse
+- HTTPS
 
 ### Contact
 

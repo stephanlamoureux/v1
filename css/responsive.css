@@ -6,6 +6,12 @@
 	}
 }
 
+@media (min-width: 2200px) {
+	.hire-me .tooltip {
+		margin-left: -400px;
+	}
+}
+
 @media (min-width: 2001px) {
 	.contact-p {
 		width: 65%;
@@ -42,7 +48,7 @@
 		width: 120px;
 		bottom: 100%;
 		left: 50%;
-		margin-left: 35px;
+		margin-left: -300px;
 		margin-bottom: 15px;
 	}
 }
@@ -69,7 +75,7 @@
 		width: 120px;
 		bottom: 100%;
 		left: 50%;
-		margin-left: 20px;
+		margin-left: -300px;
 		margin-bottom: 15px;
 	}
 }
@@ -85,6 +91,10 @@
 
 	.projects-cell {
 		padding: 2rem 1rem;
+	}
+
+	.hire-me .tooltip {
+		margin-left: -280px;
 	}
 }
 
@@ -193,7 +203,7 @@
 		width: 120px;
 		bottom: 100%;
 		left: 50%;
-		margin-left: 50px;
+		margin-left: -300px;
 		margin-bottom: 15px;
 	}
 
@@ -303,7 +313,7 @@
 		width: 120px;
 		bottom: 100%;
 		left: 50%;
-		margin-left: 30px;
+		margin-left: -260px;
 		margin-bottom: 15px;
 	}
 }

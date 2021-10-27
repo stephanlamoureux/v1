@@ -41,7 +41,7 @@
 	.project-tile:hover .project-name5 {
 		color: var(--dracula-cyan);
 		transition: 0.8s ease;
-		transform: translateY(-20px);
+		transform: translateY(-12px);
 	}
 
 	.hire-me .tooltip {
@@ -68,7 +68,7 @@
 	.project-tile:hover .project-name5 {
 		color: var(--dracula-cyan);
 		transition: 0.8s ease;
-		transform: translateY(-15px);
+		transform: translateY(-10px);
 	}
 
 	.hire-me .tooltip {
@@ -95,6 +95,15 @@
 
 	.hire-me .tooltip {
 		margin-left: -280px;
+	}
+
+	.project-name0,
+	.project-name1,
+	.project-name2,
+	.project-name3,
+	.project-name4,
+	.project-name5 {
+		font-size: 1rem;
 	}
 }
 
@@ -229,7 +238,7 @@
 		border-bottom-left-radius: 5px;
 		border-bottom-right-radius: 5px;
 		transition: none;
-		border: 1px solid var(--dracula-greypurple);
+		border: 1px solid var(--dracula-purple);
 	}
 
 	.project-image {
@@ -240,8 +249,12 @@
 		border-bottom-right-radius: 0;
 		opacity: 1;
 		transition: none;
-		box-shadow: 0 0 0 0;
-		border: 1px solid var(--dracula-greypurple);
+		box-shadow: none;
+		border: 1px solid var(--dracula-purple);
+	}
+
+	.project-tile:hover .project-image {
+		box-shadow: 0 0 3px 1px var(--dracula-purple);
 	}
 
 	.project-tile:hover .project-name0,
@@ -253,6 +266,9 @@
 		color: #000000;
 		transform: none;
 		transition: none;
+		opacity: 1;
+		transition: 0.5s ease all;
+		box-shadow: 0 0 3px 1px inset var(--dracula-purple);
 	}
 
 	.shrink {

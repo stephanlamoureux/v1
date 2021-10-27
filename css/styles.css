@@ -428,7 +428,7 @@ p a:hover {
 	background-color: transparent;
 	color: transparent;
 	font-size: 1.3rem;
-	padding: 0 0;
+	padding: 0;
 	max-width: 1000px;
 	transition: 0.4s ease all;
 	font-family: Inter, sans-serif;

@@ -667,6 +667,10 @@ span>i {
 	}
 }
 
+.resume {
+	height: 100vh;
+}
+
 /* Footer Divider */
 
 .divider2 {

@@ -40,7 +40,7 @@
 	.project-tile:hover .project-name4,
 	.project-tile:hover .project-name5 {
 		color: var(--dracula-cyan);
-		transition: 0.8s ease;
+		transition: 0.5s ease;
 		transform: translateY(-12px);
 	}
 
@@ -67,7 +67,7 @@
 	.project-tile:hover .project-name4,
 	.project-tile:hover .project-name5 {
 		color: var(--dracula-cyan);
-		transition: 0.8s ease;
+		transition: 0.5s ease;
 		transform: translateY(-10px);
 	}
 

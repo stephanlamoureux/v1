@@ -674,10 +674,16 @@ span>i {
 	}
 }
 
-.resume {
-	height: 100vh;
+.source-link:link,
+.source-link:visited {
+	text-decoration: none;
+	color: var(--dracula-background);
 }
 
+.source-link:hover {
+	color: var(--dracula-foreground);
+	transition: ease 0.3s;
+}
 /* Footer Divider */
 
 .divider2 {

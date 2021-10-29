@@ -39,6 +39,7 @@
 ### Nav
 
 - add a light mode toggle
+- add resume button
 
 
 ### Projects

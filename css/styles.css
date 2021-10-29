@@ -220,6 +220,13 @@ header {
 	transition: 0.3s ease-out all;
 }
 
+@-moz-document url-prefix() {
+	.hire-me .tooltip {
+		margin-left: -140px;
+		margin-bottom: 5px;
+	}
+}
+
 .hire-me .tooltip::after {
 	content: " ";
 	position: absolute;

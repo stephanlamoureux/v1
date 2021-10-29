@@ -10,6 +10,12 @@
 	.hire-me .tooltip {
 		margin-left: -400px;
 	}
+
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: 80px;
+		}
+	}
 }
 
 @media (min-width: 2001px) {
@@ -51,6 +57,13 @@
 		margin-left: -300px;
 		margin-bottom: 15px;
 	}
+
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: -120px;
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 1450px) {
@@ -78,6 +91,13 @@
 		margin-left: -300px;
 		margin-bottom: 15px;
 	}
+
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: -120px;
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media (max-width: 1300px) {
@@ -95,6 +115,13 @@
 
 	.hire-me .tooltip {
 		margin-left: -280px;
+	}
+
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: -150px;
+			margin-bottom: 0;
+		}
 	}
 
 	.project-name0,
@@ -216,6 +243,13 @@
 		margin-bottom: 15px;
 	}
 
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: -180px;
+			margin-bottom: 0;
+		}
+	}
+
 	.marg-bottom {
 		margin-bottom: 3rem;
 	}
@@ -331,6 +365,13 @@
 		left: 50%;
 		margin-left: -260px;
 		margin-bottom: 15px;
+	}
+
+	@-moz-document url-prefix() {
+		.hire-me .tooltip {
+			margin-left: -140px;
+			margin-bottom: 0;
+		}
 	}
 }
 

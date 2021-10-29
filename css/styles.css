@@ -328,7 +328,7 @@ header {
 	padding-bottom: 20px;
 }
 
-.about-p:not(:first-of-type) {
+.about-p:nth-child(n+3) {
 	text-indent: 30px;
 }
 

@@ -41,10 +41,10 @@
 	<!-- Desktop Nav -->
 	<div class="nav-desktop">
 		<ul class="desktop-list" role="menu">
-			<li class="desktop-link" role="none"><a class="link" href="../index.html" role="menuitem">About</a></li>
-			<li class="desktop-link" role="none"><a class="link is-active" href="blog.html" role="menuitem">Blog</a></li>
-			<li class="desktop-link" role="none"><a class="link" href="projects.html" role="menuitem">Projects</a></li>
-			<li class="desktop-link" role="none"><a class="link" href="contact.html" role="menuitem">Contact</a></li>
+			<li class="desktop-link" role="none"><a class="link is-active" href="index.html" role="menuitem">About</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="#" role="menuitem" title="Coming Soon">Blog</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="pages/projects.html" role="menuitem">Projects</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="pages/contact.html" role="menuitem">Contact</a></li>
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -52,8 +52,9 @@
 	<!-- Header -->
 	<header>
 		<div class="center-header">
-			<h1 class="header-title"><span class="header-gradient"><span class="spacing">Stephan <span
-							class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
+			<h1 class="header-title data-anijs=" if: onRunFinished, on: $AniJSNotifier, do: tada animated"><span
+					class="header-gradient"><span class="spacing">Stephan
+						<span class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
 					class="show header-gradient">L.</span>
 			</h1>
 			<p class="header-sub"><span id="typed" class="typed"></span></p>
@@ -64,10 +65,10 @@
 		<button class="menu"></button>
 		<nav class="navbar">
 			<ul class="nav-list" role="menu">
-				<li class="menu-link" role="none"><a href="../index.html" role="menuitem">About</a></li>
-				<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
-				<li class="menu-link" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
-				<li class="menu-link" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+				<li class="menu-link" role="none"><a href="index.html" role="menuitem">About</a></li>
+				<li class="menu-link" role="none"><a href="#" role="menuitem" title="Coming Soon">Blog</a></li>
+				<li class="menu-link" role="none"><a href="pages/projects.html" role="menuitem">Projects</a></li>
+				<li class="menu-link" role="none"><a href="pages/contact.html" role="menuitem">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -89,33 +90,28 @@
 		<div class="icons-flex">
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="https://github.com/stephanlamoureux" target="_blank" class="icon-links" title="Github"
-					rel="noopener noreferrer">
+				<a href="https://github.com/stephanlamoureux" target="_blank" class="icon-links" rel="noopener noreferrer">
 					<i class="fab fa-github fa-stack-1x fa-inverse red"></i></a></span>
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="https://codepen.io/stephanlamoureux" target="_blank" class="icon-links" title="Codepen"
-					rel="noopener noreferrer">
+				<a href="https://codepen.io/stephanlamoureux" target="_blank" class="icon-links" rel="noopener noreferrer">
 					<i class="fab fa-codepen fa-stack-1x fa-inverse orange"></i></a></span>
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="https://twitter.com/sa_lamoureux" target="_blank" class="icon-links" title="Twitter"
-					rel="noopener noreferrer">
+				<a href="https://twitter.com/sa_lamoureux" target="_blank" class="icon-links" rel="noopener noreferrer">
 					<i class="fab fa-twitter fa-stack-1x fa-inverse purple"></i></a></span>
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="https://dev.to/stephanlamoureux" target="_blank" class="icon-links" title="Dev.to"
-					rel="noopener noreferrer">
+				<a href="https://dev.to/stephanlamoureux" target="_blank" class="icon-links" rel="noopener noreferrer">
 					<i class="fab fa-dev fa-stack-1x fa-inverse yellow"></i></a></span>
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="https://www.linkedin.com/in/stephanlamoureux" target="_blank" class="icon-links" title="LinkedIn"
+				<a href="https://www.linkedin.com/in/stephanlamoureux" target="_blank" class="icon-links"
 					rel="noopener noreferrer">
 					<i class="fab fa-linkedin fa-stack-1x fa-inverse cyan"></i></a></span>
 			<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
 				<i class="fas fa-circle fa-stack-2x"></i>
-				<a href="mailto:sa.lamoureux@gmail.com" target="_blank" class="icon-links" title="email"
-					rel="noopener noreferrer">
+				<a href="mailto:sa.lamoureux@gmail.com" target="_blank" class="icon-links" el="noopener noreferrer">
 					<i class="fa fa-envelope fa-stack-1x fa-inverse green"></i></a></span>
 		</div>
 		<p class="coded-by">

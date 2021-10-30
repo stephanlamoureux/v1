@@ -17,7 +17,6 @@
 - create blog page
 - connect dev.to API
 - modals?
-- canonical links
 
 ## About Me
 

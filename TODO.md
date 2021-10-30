@@ -4,7 +4,7 @@
 
   <summary>Phase 1</summary>
 
-### Misc
+## Misc
 
 - update readme
 - check a11y - tabbable, add aria labels/roles, contrast check etc.
@@ -12,18 +12,14 @@
 - optimize w/ lighthouse
 - HTTPS
 
-### Contact
-
-- Clear the contact form submit button message
-
-### Blog
+## Blog
 
 - create blog page
 - connect dev.to API
 - modals?
 - canonical links
 
-### About Me
+## About Me
 
 - replace about me content
   - quick bio
@@ -36,18 +32,19 @@
 
   <summary>Phase 2</summary>
 
-### Nav
+## Nav
 
 - add a light mode toggle
 - add resume button
 
 
-### Projects
+## Projects
 
 - Add more details about each project
   - add text on hover like [this](https://mattfarley.ca/) with the overlays
   - add hide/show arrow on mobile?
   - use modals?
+- Replace tribute page with calc
 
 </details>
 

@@ -14,9 +14,8 @@
 
 ## Blog
 
-- create blog page
+- create blog cards
 - connect dev.to API
-- modals?
 
 ## About Me
 

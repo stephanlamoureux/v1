@@ -39,8 +39,9 @@
 ## Projects
 
 - Add more details about each project
-  - add text on hover like [this](https://mattfarley.ca/) with the overlays
-  - add hide/show arrow on mobile?
+  - add text on hover like [this](https://mattfarley.ca/) 
+    - link for source and link for app
+  - add hide/show details arrow on mobile?
   - use modals?
 - Replace tribute page with calc
 

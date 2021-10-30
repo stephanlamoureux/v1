@@ -55,6 +55,12 @@ window.onload = function () {
 						'submit'
 					).style.background = 'var(--dracula-green)');
 					console.log('SUCCESS!');
+					setTimeout(function(){
+						document.forms['contact-form'].reset();
+						document.getElementById('submit').value = 'Submit';
+						document.getElementById('submit').style = "";
+					}
+						, 5000);
 				},
 				function (error) {
 					console.log('FAILED...', error);

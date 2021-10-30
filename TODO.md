@@ -41,8 +41,7 @@
 - Add more details about each project
   - add text on hover like [this](https://mattfarley.ca/) 
     - link for source and link for app
-  - add hide/show details arrow on mobile?
-  - use modals?
+  - add hide/show details arrow on mobile
 - Replace tribute page with calc
 
 </details>

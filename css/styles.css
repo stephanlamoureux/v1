@@ -493,19 +493,19 @@ p a:hover {
 }
 
 .project-name2::after {
-  content: 'Technical Document';
+  content: 'JavaScript Calculator';
 }
 
 .project-name3::after {
-  content: 'Product Landing Page';
-}
-
-.project-name4::after {
   content: 'Random Dog Generator';
 }
 
+.project-name4::after {
+  content: 'Technical Document';
+}
+
 .project-name5::after {
-  content: 'Tribute Page';
+  content: 'Product Landing Page';
 }
 
 /* || Contact */

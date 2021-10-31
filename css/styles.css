@@ -365,6 +365,32 @@ header {
   padding-bottom: 20px;
 }
 
+.fa-blink {
+  -webkit-animation: fa-blink 2s infinite;
+  -moz-animation: fa-blink 2s infinite;
+  -ms-animation: fa-blink 2s infinite;
+  -o-animation: fa-blink 2s infinite;
+  animation: fa-blink 2s infinite;
+}
+
+@keyframes fa-blink {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .p-icon {
   margin-right: 5px;
   color: var(--dracula-cyan);

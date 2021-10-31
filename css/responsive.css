@@ -235,6 +235,10 @@
     min-width: 45%;
   }
 
+  .profile-div {
+    margin-bottom: 35px;
+  }
+
   .hire-me .tooltip {
     width: 120px;
     bottom: 100%;
@@ -477,6 +481,11 @@
     text-indent: 0px;
   }
 
+  .paragraph,
+  .steve {
+    text-align: center;
+  }
+
   .icons-flex a i {
     padding: 0 10px;
   }
@@ -645,6 +654,9 @@
   .icons-flex > span {
     font-size: 1.7rem;
   }
+  .about {
+    margin-bottom: 15rem;
+  }
 }
 
 @media (max-width: 408px) {
@@ -684,6 +696,9 @@
     height: 25px;
     margin-top: -13px;
     margin-left: 35px;
+  }
+  .about {
+    margin-bottom: 10rem;
   }
 }
 

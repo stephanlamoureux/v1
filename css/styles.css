@@ -48,7 +48,7 @@ html {
 /* || General Styles */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: var(--dracula-background);
   color: var(--dracula-foreground);
 }
@@ -365,12 +365,24 @@ header {
   padding-bottom: 20px;
 }
 
+.profile-div {
+  padding-bottom: 32px;
+}
+
+.about-header {
+  margin-bottom: 20px;
+}
+
+.about-header-inline {
+  display: inline;
+}
+
 .fa-blink {
-  -webkit-animation: fa-blink 2s infinite;
-  -moz-animation: fa-blink 2s infinite;
-  -ms-animation: fa-blink 2s infinite;
-  -o-animation: fa-blink 2s infinite;
-  animation: fa-blink 2s infinite;
+  -webkit-animation: fa-blink 1.5s infinite;
+  -moz-animation: fa-blink 1.5s infinite;
+  -ms-animation: fa-blink 1.5s infinite;
+  -o-animation: fa-blink 1.5s infinite;
+  animation: fa-blink 1.5s infinite;
 }
 
 @keyframes fa-blink {
@@ -391,17 +403,21 @@ header {
   }
 }
 
+.steve {
+  text-align: left;
+}
+
+.paragraph {
+  display: inline;
+}
+
 .p-icon {
   margin-right: 5px;
   color: var(--dracula-cyan);
 }
 
-.about-p:nth-child(n + 3) {
-  text-indent: 30px;
-}
-
 .about-p {
-  padding: 2rem 15px 0 15px;
+  padding: 0 15px 20px 15px;
   font-size: 1.2rem;
   line-height: 1.5;
   font-family: 'Inter', sans-serif;
@@ -409,12 +425,21 @@ header {
     0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
-.about-p:nth-child(even)::selection {
+.about-p:first-of-type {
+  margin-top: 20px;
+}
+
+.about-header::selection {
+  background: var(--dracula-pink);
+  color: var(--dracula-background);
+}
+
+.sel-green::selection {
   background: var(--dracula-green);
   color: var(--dracula-background);
 }
 
-.about-p:nth-child(odd)::selection {
+.sel-blue::selection {
   background: var(--dracula-cyan);
   color: var(--dracula-background);
 }
@@ -652,7 +677,7 @@ footer {
 footer p {
   padding-bottom: 10px;
   font-size: 1.3rem;
-  font-family: 'Inter', monospace;
+  font-family: 'Inter', sans-serif;
 }
 
 .icons-flex {

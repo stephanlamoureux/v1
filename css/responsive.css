@@ -486,6 +486,10 @@
     text-align: center;
   }
 
+  .hidden {
+    display: none;
+  }
+
   .icons-flex a i {
     padding: 0 10px;
   }

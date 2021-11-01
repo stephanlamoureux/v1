@@ -8,7 +8,7 @@
 
 @media (min-width: 2200px) {
   .hire-me .tooltip {
-    margin-left: -400px;
+    margin-left: 100px;
   }
 
   @-moz-document url-prefix() {
@@ -54,7 +54,7 @@
     width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: -300px;
+    margin-left: 40px;
     margin-bottom: 15px;
   }
 
@@ -87,7 +87,6 @@
     width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: -300px;
     margin-bottom: 15px;
   }
 
@@ -113,7 +112,7 @@
   }
 
   .hire-me .tooltip {
-    margin-left: -280px;
+    margin-left: 30px;
   }
 
   @-moz-document url-prefix() {
@@ -243,7 +242,7 @@
     width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: -300px;
+    margin-left: 70px;
     margin-bottom: 15px;
   }
 
@@ -367,7 +366,7 @@
     width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: -260px;
+    margin-left: 50px;
     margin-bottom: 15px;
   }
 

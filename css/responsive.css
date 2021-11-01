@@ -4,6 +4,12 @@
   .contact-p {
     text-align: center;
   }
+
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 30px;
+    }
+  }
 }
 
 @media (min-width: 2200px) {
@@ -27,6 +33,14 @@
 @media (min-width: 1776px) {
   form {
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 1849px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 80px;
+    }
   }
 }
 

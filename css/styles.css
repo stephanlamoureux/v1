@@ -370,6 +370,9 @@ header {
 
 .about-header {
   margin-bottom: 20px;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+  font-size: 1.3rem;
 }
 
 .about-header-inline {
@@ -382,6 +385,7 @@ header {
   -ms-animation: fa-blink 1.5s infinite;
   -o-animation: fa-blink 1.5s infinite;
   animation: fa-blink 1.5s infinite;
+  font-size: 1.3rem;
 }
 
 @keyframes fa-blink {

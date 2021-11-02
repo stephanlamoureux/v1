@@ -759,12 +759,12 @@ span > i {
 }
 
 .animate-beat {
-  animation: beat 1.2s infinite;
+  animation: beat 1.3s infinite;
 }
 
 @keyframes beat {
   0% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 
   40% {
@@ -772,7 +772,7 @@ span > i {
   }
 
   60% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 
   80% {
@@ -780,7 +780,7 @@ span > i {
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(0.9);
   }
 }
 

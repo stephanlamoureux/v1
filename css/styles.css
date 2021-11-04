@@ -265,17 +265,17 @@ header {
   transition: opacity 0.5s ease-in;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   .hire-me:hover .tooltip {
     margin-bottom: 0;
   }
-}
+} */
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .hire-me:hover .tooltip {
     visibility: hidden;
   }
-} */
+}
 
 .inline {
   display: inline;

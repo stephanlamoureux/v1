@@ -6,11 +6,19 @@
 
 ## Misc
 
-- update readme
-- check a11y - tabbable, add aria labels/roles, contrast check etc.
-- deploy to surge
-- optimize w/ lighthouse
-- HTTPS
+- Update README
+- Check a11y - links tabbable, add aria labels/roles, contrast check etc.
+- Deploy to Netlify
+- Optimize w/ lighthouse
+  - Change profile pic image format
+  - remove unused CSS
+  - remove CDNs
+    - AniJS
+    - Typedjs
+    - Emailjs
+    - Inter font
+- Set up HTTPS
+- Add one more alliteration to subheader
 
 ## Blog
 
@@ -50,7 +58,6 @@
 
 - Migrate to React
 - Add testing
-- Deploy on Netlify
 
 </details>
 

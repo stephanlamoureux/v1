@@ -191,6 +191,7 @@
   .menu-link a:hover {
     border-bottom: 2px solid var(--dracula-pink);
     color: var(--dracula-cyan);
+    transition: ease color 0.2s;
   }
 
   .about,
@@ -617,7 +618,10 @@
   .icons-flex > span {
     font-size: 1.7rem;
   }
-  .about {
+  .about,
+  .blog,
+  .projects,
+  .contact {
     margin-bottom: 15rem;
   }
 }
@@ -660,7 +664,10 @@
     margin-top: -13px;
     margin-left: 35px;
   }
-  .about {
+  .about,
+  .blog,
+  .projects,
+  .contact {
     margin-bottom: 10rem;
   }
 }

@@ -374,11 +374,15 @@ header {
   padding-bottom: 32px;
 }
 
-.about-header {
-  margin-bottom: 20px;
-  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-    0 18px 23px rgba(0, 0, 0, 0.1);
-  font-size: 1.3rem;
+.paragraph .about-header {
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 0px var(--dracula-greypurple), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
+
+.steve .about-header {
+  margin-top: 0;
 }
 
 .about-header-inline {
@@ -391,7 +395,7 @@ header {
   -ms-animation: fa-blink 1.5s infinite;
   -o-animation: fa-blink 1.5s infinite;
   animation: fa-blink 1.5s infinite;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 @keyframes fa-blink {
@@ -435,7 +439,7 @@ header {
 }
 
 .about-p:first-of-type {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .about-header::selection {

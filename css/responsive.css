@@ -161,10 +161,13 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
+    opacity: 0;
   }
 
   .showNav {
     transform: translateY(0);
+    opacity: 1;
+    transition: opacity 0.25s ease;
   }
 
   .navbar ul {

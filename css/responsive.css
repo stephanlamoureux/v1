@@ -4,23 +4,11 @@
   .contact-p {
     text-align: center;
   }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 30px;
-    }
-  }
 }
 
 @media (min-width: 2200px) {
   .hire-me .tooltip {
     margin-left: 100px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 80px;
-    }
   }
 }
 
@@ -33,14 +21,6 @@
 @media (min-width: 1776px) {
   form {
     max-width: 1000px;
-  }
-}
-
-@media (max-width: 1849px) {
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 80px;
-    }
   }
 }
 
@@ -71,13 +51,6 @@
     margin-left: 40px;
     margin-bottom: 15px;
   }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: -120px;
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (max-width: 1450px) {
@@ -103,13 +76,6 @@
     left: 50%;
     margin-bottom: 15px;
   }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: -120px;
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (max-width: 1300px) {
@@ -127,13 +93,6 @@
 
   .hire-me .tooltip {
     margin-left: 30px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: -150px;
-      margin-bottom: 0;
-    }
   }
 
   .project-name0,
@@ -260,13 +219,6 @@
     margin-bottom: 15px;
   }
 
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: -180px;
-      margin-bottom: 0;
-    }
-  }
-
   .marg-bottom {
     margin-bottom: 3rem;
   }
@@ -382,13 +334,6 @@
     left: 50%;
     margin-left: 50px;
     margin-bottom: 15px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: -140px;
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -780,3 +725,64 @@
     margin-top: -10px;
   }
 }
+
+/* Firefox */
+
+/* @media (min-width: 2400px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: -130px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 2399px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 110px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1850px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 80px;
+    }
+  }
+}
+
+@media (max-width: 1650px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 110px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 120px;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 150px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  @-moz-document url-prefix() {
+    .hire-me .tooltip {
+      margin-left: 180px;
+    }
+  }
+} */

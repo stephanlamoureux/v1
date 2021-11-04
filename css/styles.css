@@ -267,9 +267,15 @@ header {
 
 @-moz-document url-prefix() {
   .hire-me:hover .tooltip {
-    visibility: hidden;
+    margin-bottom: 0;
   }
 }
+
+/* @-moz-document url-prefix() {
+  .hire-me:hover .tooltip {
+    visibility: hidden;
+  }
+} */
 
 .inline {
   display: inline;

@@ -8,11 +8,12 @@
 
 - Update README
 - Check a11y - links tabbable, add aria labels/roles, contrast check etc.
+- HTML/CSS Validators
 - Deploy to Netlify
 - Optimize w/ lighthouse
   - Change profile pic image format
-  - remove unused CSS
-  - remove CDNs
+  - Remove unused CSS
+  - Remove CDNs
     - AniJS
     - Typedjs
     - Emailjs
@@ -22,12 +23,12 @@
 
 ## Blog
 
-- create blog cards
-- connect dev.to API
+- Create blog cards
+- Connect dev.to API
 
 ## About Me
 
-- replace about me content
+- Replace about me content
   - quick bio
   - tech used
   - future plans

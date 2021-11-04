@@ -617,13 +617,14 @@
 
 @media (max-width: 430px) {
   .icons-flex > span {
-    font-size: 1.7rem;
+    font-size: 2rem;
+    margin: 10px 20px;
   }
   .about,
   .blog,
   .projects,
   .contact {
-    margin-bottom: 15rem;
+    margin-bottom: 8rem;
   }
 
   .paragraph .about-header {
@@ -632,18 +633,7 @@
   }
 }
 
-@media (max-width: 408px) {
-  .icons-flex > span {
-    font-size: 1.5rem;
-  }
-}
-
 @media (max-width: 400px) {
-  .icons-flex > span {
-    font-size: 1.6rem;
-    margin: 10px 20px;
-  }
-
   footer p {
     padding-left: 15px;
     padding-right: 15px;
@@ -674,7 +664,7 @@
   .blog,
   .projects,
   .contact {
-    margin-bottom: 10rem;
+    margin-bottom: 7rem;
   }
 }
 

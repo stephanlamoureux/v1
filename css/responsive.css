@@ -156,10 +156,11 @@
     z-index: 999;
     overflow: hidden;
     color: var(--dracula-foreground);
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-    border-bottom-right-radius: 1%;
-    border-bottom-left-radius: 1%;
+    transform: translateY(-110%);
+    transition: transform 0.25s ease;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(255, 121, 198, 0.3);
   }
 
   .showNav {

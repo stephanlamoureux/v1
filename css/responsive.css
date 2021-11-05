@@ -33,6 +33,10 @@
     font-size: 1.2rem;
   }
 
+  .about {
+    width: 75%;
+  }
+
   .project-tile:hover .project-name0,
   .project-tile:hover .project-name1,
   .project-tile:hover .project-name2,

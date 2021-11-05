@@ -54,11 +54,6 @@
 }
 
 @media (max-width: 1450px) {
-  .about,
-  .contact {
-    width: 70%;
-  }
-
   .project-tile:hover .project-name0,
   .project-tile:hover .project-name1,
   .project-tile:hover .project-name2,

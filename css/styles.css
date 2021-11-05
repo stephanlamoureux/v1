@@ -361,7 +361,7 @@ header {
 /* || About Me */
 
 .about {
-  width: 72%;
+  width: 73%;
   margin: 5rem auto 20rem auto;
 }
 
@@ -383,6 +383,7 @@ header {
 
 .steve .about-header {
   margin-top: 0;
+  padding-right: 20px;
 }
 
 .about-header-inline {

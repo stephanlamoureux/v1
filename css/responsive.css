@@ -157,7 +157,7 @@
     overflow: hidden;
     color: var(--dracula-foreground);
     transform: translateY(-110%);
-    transition: transform 0.4s ease;
+    transition: transform 0.2s ease;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
@@ -182,7 +182,7 @@
     color: var(--dracula-foreground);
     padding-bottom: 8px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-bottom: 2px solid var(--dracula-purple);
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
@@ -558,6 +558,13 @@
     width: 30px;
     height: 30px;
     margin-top: -20px;
+  }
+
+  .about,
+  .blog,
+  .projects,
+  .contact {
+    margin-top: 4rem;
   }
 
   .icons-flex > span {

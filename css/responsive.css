@@ -453,6 +453,10 @@
   .icons-flex a i {
     padding: 0 10px;
   }
+
+  .tech-used {
+    text-align: left;
+  }
 }
 
 @media (max-width: 660px) {
@@ -639,6 +643,12 @@
   }
 }
 
+@media (max-width: 415px) {
+  .tech-used {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 400px) {
   footer p {
     padding-left: 15px;
@@ -651,7 +661,7 @@
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 381px) {
   .header-title {
     font-size: 1.8rem;
   }
@@ -672,6 +682,10 @@
   .contact {
     margin-bottom: 7rem;
   }
+
+  .tech-used {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 368px) {
@@ -683,6 +697,9 @@
 @media (max-width: 348px) {
   .heart {
     right: 8px;
+  }
+  .tech-used {
+    font-size: 0.9rem;
   }
 }
 

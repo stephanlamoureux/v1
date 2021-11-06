@@ -477,17 +477,24 @@ p a:hover {
   font-size: 1.2rem;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
     0 18px 23px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
 }
 
-.tech-used li {
+.tech-used-list {
   margin-left: 15px;
+  line-height: 1.5;
 }
 
-.tech-used a {
+.tech-used-link {
   color: var(--dracula-pink);
 }
 
-.tech-used a:hover {
+.tech-used-link:hover {
+  color: var(--dracula-cyan);
+  transition: 0.2s ease;
+}
+
+.tech-used-list:hover .bullet {
   color: var(--dracula-cyan);
   transition: 0.2s ease;
 }

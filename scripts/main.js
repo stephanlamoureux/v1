@@ -42,14 +42,14 @@ var typed = new Typed('#typed', {
 window.onload = function () {
   document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault()
-    let sendingButton = (document.getElementById('submit').value = 'Sending...')
+    const sendingButton = (document.getElementById('submit').value = 'Sending...')
     // generate a five digit number for the contact_number variable
     this.contact_number.value = (Math.random() * 100000) | 0
     // these IDs from the previous steps
     emailjs.sendForm('contact_service', 'contact_form', this).then(
       function () {
-        let submitButton = (document.getElementById('submit').value = 'Success!')
-        let successButton = (document.getElementById('submit').style.background =
+        const submitButton = (document.getElementById('submit').value = 'Success!')
+        const successButton = (document.getElementById('submit').style.background =
           'var(--dracula-green)')
         console.log('SUCCESS!')
         setTimeout(function () {
@@ -59,8 +59,8 @@ window.onload = function () {
         }, 5000)
       },
       function (error) {
-        let submitButton = (document.getElementById('submit').value = 'Failed!')
-        let successButton = (document.getElementById('submit').style.background =
+        const submitButton = (document.getElementById('submit').value = 'Failed!')
+        const successButton = (document.getElementById('submit').style.background =
           'var(--dracula-red)')
         console.log('FAILED...', error)
         setTimeout(function () {
@@ -72,16 +72,3 @@ window.onload = function () {
     )
   })
 }
-
-let bullet = document.querySelector('.bullet')
-let link = document.querySelector('.tech-used-link')
-
-link.addEventListener('mouseenter', function (event) {
-  bullet.style.color = 'var(--dracula-cyan)'
-  bullet.style.transition = '0.2s ease all'
-})
-
-link.addEventListener('mouseleave', function (event) {
-  bullet.style.color = 'var(--dracula-foreground)'
-  bullet.style.transition = '0.2s ease all'
-})

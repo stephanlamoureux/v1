@@ -472,6 +472,30 @@ p a:hover {
   text-decoration-line: underline;
 }
 
+.tech-used {
+  list-style-type: none;
+  font-size: 1.2rem;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.tech-used li {
+  margin-left: 15px;
+}
+
+.tech-used a {
+  color: var(--dracula-pink);
+}
+
+.tech-used a:hover {
+  color: var(--dracula-cyan);
+  transition: 0.2s ease;
+}
+
+.bullet {
+  padding-right: 5px;
+}
+
 /* || Blog */
 
 .blog {

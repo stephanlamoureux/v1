@@ -72,3 +72,16 @@ window.onload = function () {
     )
   })
 }
+
+let bullet = document.querySelector('.bullet')
+let link = document.querySelector('.tech-used-link')
+
+link.addEventListener('mouseenter', function (event) {
+  bullet.style.color = 'var(--dracula-cyan)'
+  bullet.style.transition = '0.2s ease all'
+})
+
+link.addEventListener('mouseleave', function (event) {
+  bullet.style.color = 'var(--dracula-foreground)'
+  bullet.style.transition = '0.2s ease all'
+})

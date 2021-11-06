@@ -13,11 +13,11 @@ html {
   cursor: url('../assets/images/icons/cursor-blue.png'), auto;
 }
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   html {
     cursor: initial;
   }
-} */
+}
 
 * {
   margin: 0;
@@ -59,11 +59,11 @@ a {
   cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   a {
     cursor: pointer;
   }
-} */
+}
 
 .wrapper {
   width: 60%;
@@ -265,11 +265,11 @@ header {
   transition: opacity 0.5s ease-in;
 }
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .hire-me:hover .tooltip {
     margin-bottom: 0;
   }
-} */
+}
 
 @-moz-document url-prefix() {
   .hire-me:hover .tooltip {
@@ -695,11 +695,11 @@ textarea:focus {
   transition: ease 0.5s all;
 }
 
-/* @-moz-document url-prefix() {
+@-moz-document url-prefix() {
   .form-submit {
     cursor: pointer;
   }
-} */
+}
 
 .form-submit:hover {
   background-color: var(--dracula-red);

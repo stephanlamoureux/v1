@@ -434,7 +434,7 @@
 
   .about-p {
     text-indent: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .about-p:not(:first-of-type) {

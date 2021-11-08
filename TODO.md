@@ -17,13 +17,11 @@
     - AniJS
     - Typedjs
     - Emailjs
-    - Inter font
 - Set up HTTPS
 - Add one more alliteration to subheader
 - Update Resume
 - Connect phone/ipad to live server to make device adjustments
 - Fix calc project on mobile
-- Replace 'Sending...' with loading icon on contact form button
 
 ## Blog
 

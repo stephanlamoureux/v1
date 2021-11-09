@@ -13,8 +13,6 @@
 - Optimize w/ lighthouse
   - Change profile pic image format
   - Remove unused CSS
-  - Remove CDNs
-    - AniJS
 - Set up HTTPS
 - Add one more alliteration to subheader
 - Update Resume

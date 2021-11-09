@@ -15,8 +15,6 @@
   - Remove unused CSS
   - Remove CDNs
     - AniJS
-    - Typedjs
-    - Emailjs
 - Set up HTTPS
 - Add one more alliteration to subheader
 - Update Resume

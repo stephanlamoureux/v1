@@ -7,12 +7,9 @@
 ## Misc
 
 - Update README
-- Check a11y - links tabbable, add aria labels/roles, contrast check etc.
 - HTML/CSS Validators
 - Deploy to Netlify
-- Optimize w/ lighthouse
-  - Change profile pic image format
-  - Remove unused CSS
+- Remove unused CSS
 - Set up HTTPS
 - Add one more alliteration to subheader
 - Update Resume

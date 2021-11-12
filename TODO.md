@@ -25,8 +25,8 @@
 
 - Replace about me content
   - quick bio
-  - tech used
   - future plans
+  - currently working on
 
 </details>
 
@@ -37,7 +37,6 @@
 ## Nav
 
 - add a light mode toggle
-- add resume button
 
 ## Projects
 

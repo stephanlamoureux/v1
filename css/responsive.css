@@ -52,8 +52,6 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    color: var(--dracula-cyan);
-    transition: 0.4s ease;
     transform: translateY(-10px);
   }
 
@@ -73,8 +71,6 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    color: var(--dracula-cyan);
-    transition: 0.4s ease;
     transform: translateY(-8px);
   }
 
@@ -248,11 +244,14 @@
     background-color: var(--dracula-foreground);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px solid var(--dracula-purple);
+    box-shadow: 0 0 2px 1px var(--dracula-purple);
     color: var(--dracula-background);
     font-size: 1.3rem;
+    font-weight: 500;
     padding: 1rem 0;
     transition: none;
+    width: 100%;
+    margin-top: 5px;
   }
 
   .project-image {
@@ -260,15 +259,18 @@
     border-bottom-right-radius: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border: 1px solid var(--dracula-purple);
-    box-shadow: none;
+    box-shadow: 0 0 2px 1px var(--dracula-purple);
     max-width: 100%;
     opacity: 1;
     transition: none;
   }
 
   .project-tile:hover .project-image {
-    box-shadow: 0 0 3px 1px var(--dracula-purple);
+    opacity: 1;
+    box-shadow: 0 0 4px 1px var(--dracula-purple);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: none;
   }
 
   .project-tile:hover .project-name0,
@@ -277,11 +279,9 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    box-shadow: 0 0 3px 1px inset var(--dracula-purple);
-    color: #000000;
+    color: var(--dracula-background);
     opacity: 1;
     transform: none;
-    transition: 0.4s ease all;
     transition: none;
   }
 

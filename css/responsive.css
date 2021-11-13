@@ -334,9 +334,13 @@
     margin-right: 0;
   }
 
+  .section-header {
+    font-size: 2.1rem;
+  }
+
   .menu {
     height: 30px;
-    margin-top: -17px;
+    margin-top: -19px;
     width: 30px;
   }
 
@@ -404,7 +408,7 @@
   .round {
     float: none;
     margin: 0;
-    min-width: 75%;
+    max-width: 65%;
     shape-outside: none;
   }
 
@@ -429,6 +433,10 @@
 
   .center-header {
     margin-right: 0;
+  }
+
+  .section-header {
+    font-size: 1.9rem;
   }
 
   .project-name0,
@@ -503,6 +511,11 @@
     font-size: 1.7rem;
   }
 
+  .section-header {
+    font-size: 1.8rem;
+    padding: 0.75rem 0;
+  }
+
   .header-sub {
     font-size: 0.8rem;
   }
@@ -536,10 +549,8 @@
   }
 
   .menu {
-    height: 20px;
     margin-left: 35px;
     margin-top: -16px;
-    width: 20px;
   }
 }
 
@@ -571,6 +582,14 @@
     height: 30px;
     margin-top: -20px;
     width: 30px;
+  }
+
+  .line {
+    width: 195px;
+  }
+
+  .round {
+    max-width: 75%;
   }
 
   .about,
@@ -613,6 +632,10 @@
 @media (max-width: 450px) {
   .navbar {
     height: 75vh;
+  }
+
+  .paragraph .about-header {
+    font-size: 1.5rem;
   }
 }
 

@@ -1,0 +1,15 @@
+/* || Blog */
+
+.blog {
+  height: 30vh;
+  margin: 5rem auto 30rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+
+.blog-p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 75%;
+}

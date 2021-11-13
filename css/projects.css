@@ -1,0 +1,108 @@
+/* || Projects */
+
+.projects {
+  margin: 5rem auto 18rem auto;
+  overflow: hidden;
+  width: 90%;
+}
+
+.projects-p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.projects-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.projects-cell {
+  padding: 2rem 2rem;
+  width: 45%;
+}
+
+.project-image {
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px var(--dracula-foreground);
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.4s ease;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-tile:hover .project-image {
+  opacity: 1;
+  transition: 0.4s ease all;
+  box-shadow: 0 0 3px 1px var(--dracula-cyan);
+}
+
+.shrink {
+  transition: 0.4s ease;
+}
+
+.shrink:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: 0.4s ease;
+}
+
+.project-name0,
+.project-name1,
+.project-name2,
+.project-name3,
+.project-name4,
+.project-name5 {
+  background-color: transparent;
+  color: transparent;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  max-width: 1000px;
+  padding: 0;
+  text-align: center;
+  transition: 0.4s ease all;
+}
+
+.project-tile:hover .project-name0,
+.project-tile:hover .project-name1,
+.project-tile:hover .project-name2,
+.project-tile:hover .project-name3,
+.project-tile:hover .project-name4,
+.project-tile:hover .project-name5 {
+  color: var(--dracula-cyan);
+  transition: 0.4s ease all;
+  transform: translateY(-12px);
+}
+
+.project-name0::after {
+  content: 'Job Search App';
+}
+
+.project-name1::after {
+  content: 'Personal Portfolio';
+}
+
+.project-name2::after {
+  content: 'JavaScript Calculator';
+}
+
+.project-name3::after {
+  content: 'Random Dog Generator';
+}
+
+.project-name4::after {
+  content: 'Technical Document';
+}
+
+.project-name5::after {
+  content: 'Product Landing Page';
+}

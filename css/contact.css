@@ -1,0 +1,83 @@
+/* || Contact */
+
+.contact {
+  margin: 4rem 0 7rem 0;
+  width: 60%;
+  margin: 5rem auto 17rem auto;
+  overflow: hidden;
+}
+
+.contact-p {
+  font-size: 1.4rem;
+  width: 75%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.3rem;
+  color: var(--dracula-foreground);
+  font-size: 1.1rem;
+}
+
+input,
+textarea {
+  background-color: var(--dracula-foreground);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  color: var(--dracula-background);
+  font-size: 18px;
+  height: auto;
+  margin-bottom: 30px;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 2px 2px var(--dracula-purple);
+}
+
+.form-submit {
+  background-color: var(--dracula-cyan);
+  border-radius: 5px;
+  color: var(--dracula-background);
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+  font-size: 1.3rem;
+  font-style: normal;
+  margin-bottom: 10px;
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  transition: ease 0.4s all;
+  width: 100%;
+}
+
+@-moz-document url-prefix() {
+  .form-submit {
+    cursor: pointer;
+  }
+}
+
+.form-submit:hover {
+  background-color: var(--dracula-red);
+  color: var(--dracula-foreground);
+}

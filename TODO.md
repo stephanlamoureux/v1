@@ -22,7 +22,6 @@
 - Replace about me content
   - quick bio
   - future plans
-  - currently working on
 
 </details>
 

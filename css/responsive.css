@@ -37,6 +37,15 @@
     width: 75%;
   }
 
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
+    font-size: 1.1rem;
+  }
+
   .project-tile:hover .project-name0,
   .project-tile:hover .project-name1,
   .project-tile:hover .project-name2,
@@ -44,8 +53,8 @@
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
     color: var(--dracula-cyan);
-    transition: 0.5s ease;
-    transform: translateY(-12px);
+    transition: 0.4s ease;
+    transform: translateY(-10px);
   }
 
   .hire-me .tooltip {
@@ -65,8 +74,8 @@
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
     color: var(--dracula-cyan);
-    transition: 0.5s ease;
-    transform: translateY(-10px);
+    transition: 0.4s ease;
+    transform: translateY(-8px);
   }
 
   .hire-me .tooltip {
@@ -272,7 +281,7 @@
     color: #000000;
     opacity: 1;
     transform: none;
-    transition: 0.5s ease all;
+    transition: 0.4s ease all;
     transition: none;
   }
 

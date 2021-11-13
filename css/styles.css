@@ -257,7 +257,7 @@ header {
 
 .hire-me:hover .tooltip {
   opacity: 1;
-  transition: opacity 0.5s ease-in;
+  transition: opacity 0.4s ease-in;
   visibility: visible;
 }
 
@@ -527,7 +527,6 @@ header {
 }
 
 .projects-cell {
-  margin: 0 auto;
   padding: 2rem 2rem;
   width: 50%;
 }
@@ -535,26 +534,33 @@ header {
 .project-image {
   border-radius: 5px;
   box-shadow: 0 0 3px 1px var(--dracula-foreground);
-  max-width: 100%;
+  max-width: 90%;
   opacity: 0.5;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .project-tile:hover .project-image {
   opacity: 1;
-  transition: 0.5s ease all;
+  transition: 0.4s ease all;
   box-shadow: 0 0 3px 1px var(--dracula-cyan);
 }
 
 .shrink {
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 .shrink:hover {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 .project-name0,
@@ -566,7 +572,7 @@ header {
   background-color: transparent;
   color: transparent;
   font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   max-width: 1000px;
   padding: 0;
   text-align: center;
@@ -580,8 +586,8 @@ header {
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
   color: var(--dracula-cyan);
-  transition: 0.5s ease all;
-  transform: translateY(-15px);
+  transition: 0.4s ease all;
+  transform: translateY(-13px);
 }
 
 .project-name0::after {
@@ -677,7 +683,7 @@ textarea:focus {
   margin-bottom: 10px;
   padding: 19px 39px 18px 39px;
   text-align: center;
-  transition: ease 0.5s all;
+  transition: ease 0.4s all;
   width: 100%;
 }
 
@@ -726,7 +732,7 @@ span > i {
 }
 
 .icon-links i:hover {
-  transition: 0.5s ease color;
+  transition: 0.4s ease color;
 }
 
 .icon-links .red:hover,
@@ -765,7 +771,7 @@ span > i {
 .yellow,
 .cyan,
 .green {
-  transition: 0.5s ease color;
+  transition: 0.4s ease color;
 }
 
 .coded-by {

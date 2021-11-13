@@ -230,6 +230,11 @@
     margin-bottom: 3rem;
   }
 
+  .projects-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
   .projects-p,
   .blog-p {
     text-align: center;

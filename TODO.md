@@ -7,11 +7,9 @@
 ## Misc
 
 - Update README
-- HTML/CSS Validators
 - Deploy to Netlify
 - Remove unused CSS
 - Set up HTTPS
-- Add one more alliteration to subheader
 - Update Resume
 - Connect phone/ipad to live server to make device adjustments
 - Fix calc project on mobile

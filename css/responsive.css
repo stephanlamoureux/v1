@@ -52,7 +52,7 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
   }
 
   .hire-me .tooltip {
@@ -71,7 +71,11 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+  }
+
+  .projects-cell {
+    width: 50%;
   }
 
   .hire-me .tooltip {
@@ -235,6 +239,11 @@
     text-align: center;
   }
 
+  .projects-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .project-name0,
   .project-name1,
   .project-name2,
@@ -350,6 +359,10 @@
     margin-bottom: 15px;
     margin-left: 50px;
     width: 120px;
+  }
+
+  .projects-container {
+    width: 100%;
   }
 }
 
@@ -620,6 +633,10 @@
   }
   .heart {
     right: 167px;
+  }
+
+  .projects-container {
+    width: 100%;
   }
 }
 

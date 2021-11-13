@@ -368,7 +368,7 @@ header {
 
 .paragraph .about-header {
   margin-bottom: 25px;
-  text-shadow: 3px 3px 0px var(--dracula-greypurple), 9px 8px 0px rgba(0, 0, 0, 0.15);
+  text-shadow: 4px 4px 1px var(--dracula-greypurple), 9px 8px 0px rgba(0, 0, 0, 0.15);
   font-size: 1.6rem;
   margin-top: 20px;
 }

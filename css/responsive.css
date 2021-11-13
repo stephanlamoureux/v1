@@ -267,7 +267,7 @@
 
   .project-tile:hover .project-image {
     opacity: 1;
-    box-shadow: 0 0 4px 1px var(--dracula-purple);
+    box-shadow: 0 0 3px 1px var(--dracula-purple);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
     transition: none;
@@ -279,6 +279,7 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
+    box-shadow: 0 0 3px 1px var(--dracula-purple);
     color: var(--dracula-background);
     opacity: 1;
     transform: none;

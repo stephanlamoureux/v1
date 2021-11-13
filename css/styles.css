@@ -73,17 +73,6 @@ a {
   }
 }
 
-.wrapper {
-  margin: 0 auto;
-  overflow: hidden;
-  width: 60%;
-}
-
-.section-subheader {
-  margin-bottom: 3rem;
-  margin-top: 8rem;
-}
-
 /* Header Divider */
 
 .divider1 {
@@ -296,10 +285,6 @@ header {
   color: var(--dracula-red);
 }
 
-.header-sub-div {
-  text-align: right;
-}
-
 .header-sub {
   color: var(--dracula-foreground);
   font-family: 'Inter', sans-serif;
@@ -472,11 +457,6 @@ header {
   margin-right: 1rem;
   max-width: 30%;
   shape-outside: circle();
-}
-
-p a:hover {
-  text-decoration-style: dashed;
-  text-decoration-line: underline;
 }
 
 .tech-used {

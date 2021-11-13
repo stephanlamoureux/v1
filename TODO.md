@@ -8,8 +8,6 @@
 
 - Update README
 - Deploy to Netlify
-- Remove unused CSS
-- Set up HTTPS
 - Update Resume
 - Connect phone/ipad to live server to make device adjustments
 - Fix calc project on mobile

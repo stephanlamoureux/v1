@@ -49,11 +49,11 @@
   }
 
   .hire-me .tooltip {
-    width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: 40px;
     margin-bottom: 15px;
+    margin-left: 40px;
+    width: 120px;
   }
 }
 
@@ -70,10 +70,10 @@
   }
 
   .hire-me .tooltip {
-    width: 120px;
     bottom: 100%;
     left: 50%;
     margin-bottom: 15px;
+    width: 120px;
   }
 }
 
@@ -127,17 +127,17 @@
   }
 
   .menu {
-    z-index: 1000;
-    display: initial;
-    width: 36px;
-    height: 36px;
-    border: none;
-    cursor: pointer;
     background-color: transparent;
     background-image: url('../assets/images/icons/menu-white.svg');
     background-size: 100%;
+    border: none;
+    cursor: pointer;
+    display: initial;
+    height: 36px;
     margin-left: 55px;
     margin-top: -27px;
+    width: 36px;
+    z-index: 1000;
   }
 
   .showClose {
@@ -145,21 +145,21 @@
   }
 
   .navbar {
-    position: absolute;
-    display: initial;
-    top: 0;
-    left: 0;
     background: var(--dracula-background);
-    width: 100%;
-    height: 50%;
-    z-index: 999;
-    overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
     color: var(--dracula-foreground);
+    display: initial;
+    height: 50%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
     transform: translateY(-110%);
     transition: transform 0.2s ease;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
+    width: 100%;
+    z-index: 999;
   }
 
   .showNav {
@@ -168,21 +168,21 @@
   }
 
   .navbar ul {
-    width: 100%;
-    height: 100%;
-    list-style: none;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
+    height: 100%;
     justify-content: space-evenly;
-    align-items: center;
+    list-style: none;
+    width: 100%;
   }
 
   .menu-link a {
+    border-bottom: 2px solid var(--dracula-purple);
     color: var(--dracula-foreground);
+    font-size: 1.4rem;
     padding-bottom: 8px;
     text-decoration: none;
-    font-size: 1.4rem;
-    border-bottom: 2px solid var(--dracula-purple);
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
@@ -214,11 +214,11 @@
   }
 
   .hire-me .tooltip {
-    width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: 70px;
     margin-bottom: 15px;
+    margin-left: 70px;
+    width: 120px;
   }
 
   .marg-bottom {
@@ -237,25 +237,25 @@
   .project-name4,
   .project-name5 {
     background-color: var(--dracula-foreground);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid var(--dracula-purple);
     color: var(--dracula-background);
     font-size: 1.3rem;
     padding: 1rem 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     transition: none;
-    border: 1px solid var(--dracula-purple);
   }
 
   .project-image {
-    max-width: 100%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid var(--dracula-purple);
+    box-shadow: none;
+    max-width: 100%;
     opacity: 1;
     transition: none;
-    box-shadow: none;
-    border: 1px solid var(--dracula-purple);
   }
 
   .project-tile:hover .project-image {
@@ -268,12 +268,12 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    color: #000000;
-    transform: none;
-    transition: none;
-    opacity: 1;
-    transition: 0.5s ease all;
     box-shadow: 0 0 3px 1px inset var(--dracula-purple);
+    color: #000000;
+    opacity: 1;
+    transform: none;
+    transition: 0.5s ease all;
+    transition: none;
   }
 
   .shrink {
@@ -325,17 +325,17 @@
   }
 
   .menu {
-    width: 30px;
     height: 30px;
     margin-top: -17px;
+    width: 30px;
   }
 
   .hire-me .tooltip {
-    width: 120px;
     bottom: 100%;
     left: 50%;
-    margin-left: 50px;
     margin-bottom: 15px;
+    margin-left: 50px;
+    width: 120px;
   }
 }
 
@@ -353,13 +353,13 @@
 
 @media (max-width: 785px) {
   .custom-shape-divider-bottom-1619735001 {
-    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    overflow: hidden;
     line-height: 0;
+    overflow: hidden;
+    position: absolute;
     transform: rotate(180deg);
+    width: 100%;
   }
 
   .custom-shape-divider-bottom-1619735001 svg {
@@ -392,10 +392,10 @@
   }
 
   .round {
-    min-width: 75%;
     float: none;
-    shape-outside: none;
     margin: 0;
+    min-width: 75%;
+    shape-outside: none;
   }
 
   .tooltip {
@@ -411,10 +411,10 @@
   }
 
   .menu {
-    width: 25px;
     height: 25px;
-    margin-top: -18px;
     margin-left: 40px;
+    margin-top: -18px;
+    width: 25px;
   }
 
   .center-header {
@@ -427,8 +427,8 @@
   .project-name3,
   .project-name4,
   .project-name5 {
-    padding: 0.5rem 0;
     font-size: 1.1rem;
+    padding: 0.5rem 0;
     transition: none;
   }
 
@@ -526,10 +526,10 @@
   }
 
   .menu {
-    width: 20px;
     height: 20px;
     margin-left: 35px;
     margin-top: -16px;
+    width: 20px;
   }
 }
 
@@ -558,9 +558,9 @@
   }
 
   .menu {
-    width: 30px;
     height: 30px;
     margin-top: -20px;
+    width: 30px;
   }
 
   .about,
@@ -571,8 +571,8 @@
   }
 
   .icons-flex > span {
-    margin: 0;
     font-size: 1.8rem;
+    margin: 0;
   }
 
   footer p {
@@ -651,9 +651,9 @@
 
 @media (max-width: 400px) {
   footer p {
+    font-size: 1.2rem;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 1.2rem;
   }
 
   .heart {
@@ -671,11 +671,12 @@
   }
 
   .menu {
-    width: 25px;
     height: 25px;
-    margin-top: -13px;
     margin-left: 35px;
+    margin-top: -13px;
+    width: 25px;
   }
+
   .about,
   .blog,
   .projects,

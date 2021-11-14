@@ -39,10 +39,10 @@ const links = document.querySelectorAll('.tech-used-link')
 links.forEach(link => {
   const bullet = link.parentElement.querySelector('.bullet')
   link.addEventListener('mouseover', () => {
-    bullet.style.color = 'var(--dracula-purple'
+    bullet.style.color = 'var(--dracula-purple)'
     bullet.style.transition = 'ease 0.1s'
   })
   link.addEventListener('mouseleave', () => {
-    bullet.style.color = 'var(--dracula-foreground'
+    bullet.style.color = 'var(--dracula-foreground)'
   })
 })

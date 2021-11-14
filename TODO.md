@@ -9,7 +9,6 @@
 - Update README
 - Deploy to Netlify
 - Update Resume
-- Fix calc project on mobile
 
 ## Blog
 

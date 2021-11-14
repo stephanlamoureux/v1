@@ -107,6 +107,10 @@
   .project-name5 {
     font-size: 1rem;
   }
+
+  .round {
+    max-width: 35%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -211,7 +215,7 @@
   }
 
   .round {
-    min-width: 45%;
+    max-width: 35%;
   }
 
   .profile-div {
@@ -417,7 +421,7 @@
   .round {
     float: none;
     margin: 0;
-    max-width: 65%;
+    max-width: 60%;
     shape-outside: none;
   }
 
@@ -598,7 +602,7 @@
   }
 
   .round {
-    max-width: 75%;
+    max-width: 70%;
   }
 
   .about,

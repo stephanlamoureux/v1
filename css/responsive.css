@@ -368,7 +368,13 @@
 
 @media screen and (orientation: landscape) and (max-device-width: 500px) {
   .heart {
-    right: 252px;
+    right: 255px;
+  }
+}
+
+@media screen and (max-device-width: 850px) {
+  .heart {
+    right: 200px;
   }
 }
 
@@ -609,12 +615,25 @@
   .blog,
   .projects,
   .contact {
-    margin-top: 4rem;
+    margin-top: 3rem;
+  }
+
+  .about-p {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .tech-used-list {
+    margin-left: 0;
   }
 
   .icons-flex > span {
     font-size: 1.8rem;
     margin: 0;
+  }
+
+  .icons-flex {
+    margin-bottom: 0.8rem;
   }
 
   footer p {

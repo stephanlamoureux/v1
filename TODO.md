@@ -9,7 +9,6 @@
 - Update README
 - Deploy to Netlify
 - Update Resume
-- Connect phone/ipad to live server to make device adjustments
 - Fix calc project on mobile
 
 ## Blog

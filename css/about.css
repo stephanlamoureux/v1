@@ -133,6 +133,10 @@
   color: var(--dracula-cyan);
 }
 
+.trio {
+  margin-left: 3px;
+}
+
 .about-p {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;

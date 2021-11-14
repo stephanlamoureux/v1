@@ -92,6 +92,18 @@ readers do not read off random characters that represent icons */
   content: '\f099';
 }
 
+.fa-html5:before {
+  content: '\f13b';
+}
+
+.fa-css3-alt:before {
+  content: '\f38b';
+}
+
+.fa-js-square:before {
+  content: '\f3b9';
+}
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);

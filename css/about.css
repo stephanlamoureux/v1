@@ -130,11 +130,12 @@
 
 .p-icon {
   margin-right: 5px;
-  color: var(--dracula-cyan);
+  color: var(--dracula-purple);
 }
 
 .trio {
   margin-left: 3px;
+  color: var(--dracula-purple);
 }
 
 .about-p {
@@ -192,13 +193,8 @@
 }
 
 .tech-used-link:hover {
-  color: var(--dracula-cyan);
-  transition: 0.2s ease;
-}
-
-.tech-used-list:hover .bullet {
-  color: var(--dracula-cyan);
-  transition: 0.2s ease;
+  color: var(--dracula-purple);
+  transition: ease 0.1s;
 }
 
 .bullet {

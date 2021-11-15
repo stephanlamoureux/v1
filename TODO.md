@@ -14,6 +14,7 @@
 
 - Create blog cards
 - Connect dev.to API
+- Add pagination
 
 </details>
 

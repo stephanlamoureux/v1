@@ -8,7 +8,7 @@
 
 @media (min-width: 2200px) {
   .hire-me .tooltip {
-    margin-left: 100px;
+    margin-left: 80px;
   }
 }
 
@@ -21,6 +21,12 @@
 @media (min-width: 1776px) {
   form {
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 1775px) {
+  .hire-me .tooltip {
+    margin-left: 30px;
   }
 }
 
@@ -59,7 +65,7 @@
     bottom: 100%;
     left: 50%;
     margin-bottom: 15px;
-    margin-left: 40px;
+    margin-left: 30px;
     width: 120px;
   }
 }
@@ -96,7 +102,7 @@
   }
 
   .hire-me .tooltip {
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   .project-name0,
@@ -226,7 +232,7 @@
     bottom: 100%;
     left: 50%;
     margin-bottom: 15px;
-    margin-left: 70px;
+    margin-left: 35px;
     width: 120px;
   }
 
@@ -357,7 +363,7 @@
     bottom: 100%;
     left: 50%;
     margin-bottom: 15px;
-    margin-left: 50px;
+    margin-left: 15px;
     width: 120px;
   }
 
@@ -681,6 +687,10 @@
     font-size: 2.3rem;
   }
 
+  .tech-used {
+    font-size: 1.1rem;
+  }
+
   .made {
     margin-right: 26px;
   }
@@ -708,17 +718,15 @@
   }
 }
 
-@media (max-width: 415px) {
-  .tech-used {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 395px) {
   footer p {
     font-size: 1.2rem;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .tech-used {
+    font-size: 1rem;
   }
 
   .heart {

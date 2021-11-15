@@ -14,7 +14,6 @@
 
 - Create blog cards
 - Connect dev.to API
-- Add pagination
 
 </details>
 
@@ -32,6 +31,10 @@
   - add text on hover similar to [this](https://mattfarley.ca/)
     - link for source and link for app
   - add accordion on mobile
+
+## Blog
+
+- Add pagination
 
 </details>
 

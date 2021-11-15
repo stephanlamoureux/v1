@@ -15,11 +15,6 @@
 - Create blog cards
 - Connect dev.to API
 
-## About Me
-
-- Replace about me content
-  - quick bio
-
 </details>
 
 <details>

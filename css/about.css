@@ -134,14 +134,14 @@
 }
 
 .trio {
-  margin-left: 2px;
+  margin-left: 3px;
   color: var(--dracula-purple);
 }
 
 .about-p {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
-  line-height: 1.5;
+  line-height: 170%;
   padding: 0 15px 20px 15px;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
     0 18px 23px rgba(0, 0, 0, 0.1);

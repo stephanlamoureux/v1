@@ -19,7 +19,6 @@
 
 - Replace about me content
   - quick bio
-  - future plans
 
 </details>
 

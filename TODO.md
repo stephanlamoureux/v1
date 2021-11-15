@@ -6,7 +6,6 @@
 
 ## Misc
 
-- Deploy to Netlify
 - Update Resume
 
 ## Blog

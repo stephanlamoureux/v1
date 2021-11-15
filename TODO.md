@@ -6,7 +6,6 @@
 
 ## Misc
 
-- Update README
 - Deploy to Netlify
 - Update Resume
 

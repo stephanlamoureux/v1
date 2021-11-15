@@ -151,19 +151,14 @@
   margin-top: 25px;
 }
 
-.about-header::selection {
-  background: var(--dracula-pink);
-  color: var(--dracula-background);
-}
-
-.sel-green::selection {
+.about-p::selection {
   background: var(--dracula-green);
   color: var(--dracula-background);
 }
 
-.sel-blue::selection {
-  background: var(--dracula-cyan);
-  color: var(--dracula-background);
+.about-header::selection {
+  background: var(--dracula-pink);
+  color: var(--dracula-foreground);
 }
 
 .round {
@@ -183,6 +178,11 @@
   padding-bottom: 20px;
 }
 
+.tech-used-list::selection {
+  background-color: var(--dracula-green);
+  color: var(--dracula-background);
+}
+
 .tech-used-list {
   margin-left: 15px;
   line-height: 1.5;
@@ -190,6 +190,11 @@
 
 .tech-used-link {
   color: var(--dracula-pink);
+}
+
+.tech-used-link::selection {
+  background-color: var(--dracula-green);
+  color: var(--dracula-background);
 }
 
 .tech-used-link:hover {

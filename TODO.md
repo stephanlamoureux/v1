@@ -50,5 +50,5 @@
   <summary>Phase 4</summary>
 
 - Add Gatsby
-
+- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)? 
  </details>

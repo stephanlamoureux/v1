@@ -19,10 +19,6 @@
 
   <summary>Phase 2</summary>
 
-## Nav
-
-- add a light mode toggle
-
 ## Projects
 
 - Add more details about each project
@@ -30,16 +26,22 @@
     - link for source and link for app
   - add accordion on mobile
 
-## Blog
-
-- Add pagination
-
 </details>
 
 <details>
 
   <summary>Phase 3</summary>
 
+## Nav
+
+- add a light mode toggle
+
+## Blog
+
+- Add pagination
+ 
+## React
+  
 - Migrate to React
 - Add testing
 

@@ -1,6 +1,6 @@
 # 🔗 [Portfolio v1](https://stephanlamoureux.github.io/vwc-capstone/)
 
-## Welcome to my portfolio site! 
+## Welcome To My Portfolio Site! 
 
 ### I use this as a playground to learn knew technologies and showcase my work.
 

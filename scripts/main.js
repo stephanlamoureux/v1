@@ -22,7 +22,7 @@ var typed = new Typed('#typed', {
   strings: [
     'A Frontend Fanatic.',
     "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
-    '^2000 A Curiously Caffeinated Coder.',
+    '^2000 An Over-Caffeinated Coder.',
     '^2000 The Duke of Dark Mode.',
   ],
   typeSpeed: 70,

@@ -4,11 +4,6 @@
 
   <summary>Phase 1</summary>
 
-## Misc
-
-- Deploy to Netlify
-- Update Resume
-
 ## Blog
 
 - Create blog cards
@@ -20,10 +15,6 @@
 
   <summary>Phase 2</summary>
 
-## Nav
-
-- add a light mode toggle
-
 ## Projects
 
 - Add more details about each project
@@ -31,15 +22,21 @@
     - link for source and link for app
   - add accordion on mobile
 
-## Blog
-
-- Add pagination
-
 </details>
 
 <details>
 
   <summary>Phase 3</summary>
+
+## Nav
+
+- add a light mode toggle
+
+## Blog
+
+- Add pagination
+
+## React
 
 - Migrate to React
 - Add testing
@@ -51,5 +48,5 @@
   <summary>Phase 4</summary>
 
 - Add Gatsby
-
- </details>
+- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+</details>

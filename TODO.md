@@ -4,10 +4,6 @@
 
   <summary>Phase 1</summary>
 
-## Misc
-
-- Update Resume
-
 ## Blog
 
 - Create blog cards
@@ -39,9 +35,9 @@
 ## Blog
 
 - Add pagination
- 
+
 ## React
-  
+
 - Migrate to React
 - Add testing
 
@@ -52,5 +48,5 @@
   <summary>Phase 4</summary>
 
 - Add Gatsby
-- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)? 
- </details>
+- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+</details>

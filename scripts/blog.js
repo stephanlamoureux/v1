@@ -3,12 +3,12 @@ const api_url = 'https://dev.to/api/articles?username=stephanlamoureux'
 async function getArticle() {
   const response = await fetch(api_url)
   const data = await response.json()
-
   const title = data[0].title
   const link = data[0].url
   // const profilePic = data[0].user.profile_image
   const tag = data[0].tag_list
   const name = data[0].user.username
+  const cover = data[0].cover_image
 
   document.getElementById('article_title').textContent = title
   document.getElementById('devArticle').href = link
@@ -60,7 +60,7 @@ async function getArticle() {
       infoArt.appendChild(anotherEmptyDiv)
       anotherEmptyDiv.appendChild(tagsInArt)
       anotherEmptyDiv.appendChild(yourUsername)
-      document.getElementById('blog-container').appendChild(element)
+      document.getElementById('blog_container').appendChild(element)
     }
   }
 

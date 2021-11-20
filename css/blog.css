@@ -1,7 +1,7 @@
 /* || Blog */
 
 .blog {
-  margin: 5rem auto 30rem auto;
+  margin: 5rem auto 18rem auto;
   overflow: hidden;
   width: 90%;
 }
@@ -23,11 +23,10 @@
 .devArticle {
   margin: 1%;
   display: flex;
-  border: 1px solid var(--dracula-cyan);
   border-radius: 5px;
   width: 30%;
   min-height: 180px;
-  padding-left: 20px;
+  padding: 0 20px;
   align-items: center;
   background-color: var(--dracula-greypurple);
 }
@@ -56,4 +55,16 @@
 }
 #tags {
   color: var(--dracula-green);
+}
+
+@media screen and (max-width: 1250px) {
+  .devArticle {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .devArticle {
+    width: 75%;
+  }
 }

@@ -5,16 +5,16 @@ async function getArticle() {
   const data = await response.json()
   const title = data[0].title
   const link = data[0].url
-  // const profilePic = data[0].user.profile_image
   const tag = data[0].tag_list
   const name = data[0].user.username
+  // const profilePic = data[0].user.profile_image
   // const cover = data[0].cover_image
 
   document.getElementById('article_title').textContent = title
   document.getElementById('article_link').href = link
-  // document.getElementById('profile_image').src = profilePic
   document.getElementById('tags').textContent = tag.map(i => '#' + i)
   document.getElementById('username').textContent = '@' + name
+  // document.getElementById('profile_image').src = profilePic
 
   //For multiple articles that you want to display
   function displayMultipleArticles() {
@@ -35,7 +35,6 @@ async function getArticle() {
       infoArt.className = 'article-info'
 
       // let emptyProfileDiv = document.createElement('div') //pfp container
-
       // let theProfileImage = document.createElement('img') //pfp
       // theProfileImage.style.width = '50px'
       // theProfileImage.id = 'profile_image'

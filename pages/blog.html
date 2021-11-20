@@ -40,10 +40,10 @@
 	<!-- Desktop Nav -->
 	<div class="nav-desktop">
 		<ul class="desktop-list" role="menu">
-			<li class="desktop-link" role="none"><a class="link is-active" href="index.html" role="menuitem">About</a></li>
-			<li class="desktop-link" role="none"><a class="link" href="#" role="menuitem" title="Coming Soon">Blog</a></li>
-			<li class="desktop-link" role="none"><a class="link" href="pages/projects.html" role="menuitem">Projects</a></li>
-			<li class="desktop-link" role="none"><a class="link" href="pages/contact.html" role="menuitem">Contact</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="../index.html" role="menuitem">About</a></li>
+			<li class="desktop-link" role="none"><a class="link is-active" href="blog.html" role="menuitem">Blog</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="projects.html" role="menuitem">Projects</a></li>
+			<li class="desktop-link" role="none"><a class="link" href="contact.html" role="menuitem">Contact</a></li>
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -63,10 +63,10 @@
 		<button class="menu" aria-label="Main Menu"></button>
 		<nav class="navbar">
 			<ul class="nav-list" role="menu">
-				<li class="menu-link" role="none"><a href="index.html" role="menuitem">About</a></li>
-				<li class="menu-link" role="none"><a href="#" role="menuitem" title="Coming Soon">Blog</a></li>
-				<li class="menu-link" role="none"><a href="pages/projects.html" role="menuitem">Projects</a></li>
-				<li class="menu-link" role="none"><a href="pages/contact.html" role="menuitem">Contact</a></li>
+				<li class="menu-link" role="none"><a href="../index.html" role="menuitem">About</a></li>
+				<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
+				<li class="menu-link" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+				<li class="menu-link" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -79,6 +79,19 @@
 			<h2 class="section-header" data-anijs="if: onRunFinished, on: $AniJSNotifier, do: rubberBand animated">Blog Posts
 			</h2>
 			<hr class="line marg-bottom" />
+			<div class="blog-container" id="blog-container">
+				<div class="devArticle">
+					<a target="_blank" id="devArticle">
+						<h1 id="article_title"></h1>
+						<div class="article-info">
+							<div>
+								<p id="tags"></p>
+								<p id="username"></p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
 		</section>
 		<!-- End Blog Section -->
 	</main>

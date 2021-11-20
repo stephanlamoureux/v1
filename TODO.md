@@ -6,8 +6,7 @@
 
 ## Blog
 
-- Create blog cards
-- Connect dev.to API
+- Style Cards
 
 </details>
 

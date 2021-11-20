@@ -1,4 +1,4 @@
-# 🔗 [Portfolio v1](https://stephanlamoureux.github.io/vwc-capstone/)
+# 🔗 [Portfolio v1](https://wheresteve.codes/)
 
 ## Welcome To My Portfolio Site! 
 

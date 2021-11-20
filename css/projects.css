@@ -29,7 +29,6 @@
   box-shadow: 0 0 5px 1px var(--dracula-foreground);
   max-width: 100%;
   opacity: 0.5;
-  transition: 0.4s ease;
 }
 
 .project-tile {
@@ -42,7 +41,7 @@
 .project-tile:hover .project-image {
   opacity: 1;
   transition: 0.4s ease all;
-  box-shadow: 0 0 4px 1px var(--dracula-cyan);
+  box-shadow: 0 0 5px 1px var(--dracula-cyan);
 }
 
 .shrink {
@@ -69,7 +68,7 @@
   max-width: 1000px;
   padding: 0;
   text-align: center;
-  transition: 0.4s ease all;
+  transition: 0.2s ease all;
 }
 
 .project-tile:hover .project-name0,

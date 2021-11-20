@@ -26,7 +26,7 @@
 
 .project-image {
   border-radius: 5px;
-  box-shadow: 0 0 3px 1px var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px var(--dracula-foreground);
   max-width: 100%;
   opacity: 0.5;
   transition: 0.4s ease;
@@ -42,7 +42,7 @@
 .project-tile:hover .project-image {
   opacity: 1;
   transition: 0.4s ease all;
-  box-shadow: 0 0 3px 1px var(--dracula-cyan);
+  box-shadow: 0 0 4px 1px var(--dracula-cyan);
 }
 
 .shrink {

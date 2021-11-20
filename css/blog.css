@@ -29,7 +29,6 @@
   min-height: 180px;
   padding: 0 14px 0 20px;
   align-items: center;
-  background-color: var(--dracula-greypurple);
   background: linear-gradient(var(--dracula-greypurple), var(--dracula-greypurple)) padding-box,
     linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink)) border-box;
   border-radius: 5px;

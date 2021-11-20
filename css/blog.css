@@ -27,15 +27,25 @@
   border-radius: 5px;
   width: 30%;
   min-height: 180px;
-  padding: 0 20px;
+  padding: 0 14px 0 20px;
   align-items: center;
   background-color: var(--dracula-greypurple);
+  background: linear-gradient(var(--dracula-greypurple), var(--dracula-greypurple)) padding-box,
+    linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink)) border-box;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.1s ease;
 }
 
 #devArticle {
   color: white;
   text-decoration: none;
   width: 100%;
+}
+
+.devArticle:hover {
+  box-shadow: 0 0 5px 1px var(--dracula-purple);
+  transition: 0.1s ease;
 }
 
 #profile_image {

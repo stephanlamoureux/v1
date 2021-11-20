@@ -18,6 +18,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .devArticle {
@@ -41,8 +42,14 @@
   border-radius: 50%;
   margin-right: 20px;
 }
+
 .article-info {
   display: flex;
+  word-break: break-all;
+}
+
+.article-info p {
+  margin: 5px;
 }
 
 #article_title {
@@ -50,9 +57,6 @@
   font-size: 1.2rem;
 }
 
-.article-info p {
-  margin: 5px;
-}
 #tags {
   color: var(--dracula-green);
 }
@@ -66,5 +70,6 @@
 @media screen and (max-width: 1100px) {
   .devArticle {
     width: 75%;
+    margin: 2%;
   }
 }

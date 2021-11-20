@@ -16,7 +16,7 @@ async function getArticle() {
   document.getElementById('tags').textContent = tag.map(i => '#' + i)
   document.getElementById('username').textContent = '@' + name
 
-  //For mulitple articles that you want to display
+  //For multiple articles that you want to display
   function displayMultipleArticles() {
     for (let i = 1; i < 4; i++) {
       let element = document.createElement('div') //container
@@ -34,19 +34,19 @@ async function getArticle() {
       let infoArt = document.createElement('div') //info container
       infoArt.className = 'article-info'
 
-      let emptyDiv = document.createElement('div') //pfp container
+      // let emptyProfileDiv = document.createElement('div') //pfp container
 
       // let theProfileImage = document.createElement('img') //pfp
       // theProfileImage.style.width = '50px'
       // theProfileImage.id = 'profile_image'
       // theProfileImage.src = data[i].user.profile_image
 
-      let anotherEmptyDiv = document.createElement('div') //tags container
+      let emptyDiv = document.createElement('div') //tags container
 
       let tagsInArt = document.createElement('p') //tag
       tagsInArt.id = 'tags'
-      let realtags = data[i].tag_list
-      tagsInArt.textContent = realtags.map(i => '#' + i)
+      let realTags = data[i].tag_list
+      tagsInArt.textContent = realTags.map(i => '#' + i)
 
       let yourUsername = document.createElement('p') //username
       yourUsername.id = 'username'
@@ -55,11 +55,11 @@ async function getArticle() {
       element.appendChild(articleLink)
       articleLink.appendChild(theTitle)
       articleLink.appendChild(infoArt)
+      // infoArt.appendChild(emptyProfileDiv)
+      // emptyProfileDiv.appendChild(theProfileImage)
       infoArt.appendChild(emptyDiv)
-      // emptyDiv.appendChild(theProfileImage)
-      infoArt.appendChild(anotherEmptyDiv)
-      anotherEmptyDiv.appendChild(tagsInArt)
-      anotherEmptyDiv.appendChild(yourUsername)
+      emptyDiv.appendChild(tagsInArt)
+      emptyDiv.appendChild(yourUsername)
       document.getElementById('blog_container').appendChild(element)
     }
   }

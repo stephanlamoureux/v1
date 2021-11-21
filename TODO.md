@@ -4,7 +4,7 @@
 
   <summary>Phase 1</summary>
 
-  ### COMPLETE ✔︎
+### COMPLETE ✔︎
 
 </details>
 
@@ -12,12 +12,12 @@
 
   <summary>Phase 2</summary>
 
-  ## Projects
+## Projects
 
-  - Add more details about each project
-    - add text on hover similar to [this](https://mattfarley.ca/)
-    - link for source and link for app
-  - add accordion on mobile
+- Add more details about each project
+  - add text on hover similar to [this](https://mattfarley.ca/)
+  - link for source and link for app
+- add accordion on mobile
 
 </details>
 
@@ -25,11 +25,11 @@
 
   <summary>Phase 3</summary>
 
-  ## React
+## React
 
 - Migrate to React (Create React App)
 - Add testing
-  
+
 ## Nav
 
 - Add a light mode toggle
@@ -44,6 +44,6 @@
 
   <summary>Phase 4</summary>
 
-  - Port to Gatsby
-  - Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+- Port to Gatsby
+- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
 </details>

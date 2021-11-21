@@ -4,20 +4,18 @@
 
   <summary>Phase 1</summary>
 
-## Blog
-
-- Style Cards
+  ### COMPLETE ✔︎
 
 </details>
 
-<details>
+<details open>
 
   <summary>Phase 2</summary>
 
-## Projects
+  ## Projects
 
-- Add more details about each project
-  - add text on hover similar to [this](https://mattfarley.ca/)
+  - Add more details about each project
+    - add text on hover similar to [this](https://mattfarley.ca/)
     - link for source and link for app
   - add accordion on mobile
 
@@ -27,18 +25,18 @@
 
   <summary>Phase 3</summary>
 
+  ## React
+
+- Migrate to React (Create React App)
+- Add testing
+  
 ## Nav
 
-- add a light mode toggle
+- Add a light mode toggle
 
 ## Blog
 
 - Add pagination
-
-## React
-
-- Migrate to React
-- Add testing
 
 </details>
 
@@ -46,6 +44,6 @@
 
   <summary>Phase 4</summary>
 
-- Add Gatsby
-- Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+  - Port to Gatsby
+  - Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
 </details>

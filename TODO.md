@@ -4,7 +4,7 @@
 
   <summary>Phase 1</summary>
 
-### COMPLETE ✔︎
+## COMPLETE ✔︎
 
 </details>
 
@@ -46,4 +46,5 @@
 
 - Port to Gatsby
 - Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+
 </details>

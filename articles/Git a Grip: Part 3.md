@@ -1,3 +1,5 @@
+# Git a Grip: Part 3 - Ah, push it - push it real good 🔊
+
 In the last part, we created a repository on our local system. However, if we want to share our code or collaborate, it needs to be available in a public location. [GitHub](https://github.com) is one of the many hosts that provides this service. Some of the other popular platforms include [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/), and [SourceForge](https://sourceforge.net/). GitHub is by far the most popular (and what I use) - that is why I chose it for this series.
 
 ## Create a Remote Repository
@@ -16,11 +18,11 @@ We already have a README file made and the other two will not be used in this le
 
 Click the 'Create repository' button and on the next page, you will see _Quick setup_ at the top. Make sure that the HTTPS box is selected and then copy the link to the right of it. This is the address to the remote repository.
 
-#### README
+### README
 
 A README file explains what the project is, where to get it, how to use it, and so on.
 
-#### .gitignore
+### .gitignore
 
 Files that you wish to ignore are saved in a special file named _.gitignore_. These will often be files with passwords, hidden system files (like .DS_Store in macOS), and node packages/modules. There is no git command to add or remove files to .gitignore. The file must be edited and committed manually when you wish to make changes.
 
@@ -30,7 +32,7 @@ I usually use `ls -lah` when displaying files from the command line. `-l` is to 
 
 ![ls -lah](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1egehaipbb1td1bkgmgy.png)
 
-#### Licenses
+### Licenses
 
 A software license lets others know what they can and can't do with your source code.
 

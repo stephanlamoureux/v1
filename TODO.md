@@ -12,12 +12,7 @@
 
   <summary>Phase 2</summary>
 
-## Projects
-
-- Add more details about each project
-  - add text on hover similar to [this](https://mattfarley.ca/)
-  - link for source and link for app
-- add accordion on mobile
+## COMPLETE ✔︎
 
 </details>
 
@@ -37,6 +32,12 @@
 ## Blog
 
 - Add pagination
+
+## Projects
+
+- Add more details about each project
+  - use a modal
+  - link for source and link for app
 
 </details>
 

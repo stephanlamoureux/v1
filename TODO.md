@@ -16,7 +16,7 @@
 
 </details>
 
-<details>
+<details open>
 
   <summary>Phase 3</summary>
 

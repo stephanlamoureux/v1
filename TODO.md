@@ -45,7 +45,14 @@
 
   <summary>Phase 4</summary>
 
+## Gatsby
 - Port to Gatsby
 - Create a backend with [Netlify Functions](https://www.joshwcomeau.com/gatsby/using-netlify-functions-with-gatsby)?
+  
+## Plugins
+  - Cloudinary
+  - Google Analytics 
+  - gatsby-plugin-image
+  - gatsby-plugin-sitemap
 
 </details>

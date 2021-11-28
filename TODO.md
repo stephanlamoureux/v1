@@ -22,7 +22,9 @@
 
 ## React
 
-- Migrate to React (Create React App)
+- Migrate to React
+  - Create React App
+  - npm libraries
 - Add testing
 
 ## Nav

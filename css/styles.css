@@ -218,7 +218,7 @@ header {
   letter-spacing: 10px;
 }
 
-.red { 
+.red {
   color: var(--dracula-red);
 }
 
@@ -377,7 +377,7 @@ span > i {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  right: 196px;
+  right: 198px;
   text-align: center;
 }
 

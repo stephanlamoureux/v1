@@ -23,7 +23,7 @@ If you are unsure if you already have Git installed or want to check which versi
 
 The Windows operating system does not come with Git pre-installed, but here are two simple ways to install it onto your PC:
 
-- Download Git from https://git-scm.com/
+- Download [Git](https://git-scm.com/)
 - Install with [chocolatey](https://chocolatey.org/) by entering `choco install git -y` into the terminal.
 
 If installing via chocolatey, remember to open Power Shell as an administrator. You can do this by right-clicking on the Start menu and selecting _Power Shell (Admin)_. If you have the Power Shell pinned to your taskbar, you can also hold down the Shift key and right-click the icon to select _Run as administrator_.
@@ -32,7 +32,7 @@ If installing via chocolatey, remember to open Power Shell as an administrator. 
 
 macOS already comes with Git pre-installed, however, it is most likely an older version. To get the latest version use one of the following methods:
 
-- Download Git from https://git-scm.com/
+- Download [Git](https://git-scm.com/)
 - Install with [homebrew](https://brew.sh/) by entering `brew install git` into the terminal.
 
 ### Linux

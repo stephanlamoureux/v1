@@ -1,3 +1,8 @@
+---
+title: 'Git a Grip: Part 2 - Don't Fear Commitment'
+date: '2021-03-05'
+---
+
 # Git a Grip: Part 2 - Don't Fear Commitment 💍
 
 In this lesson, we will start using some basic shell commands and the Git CLI (command line interface) to navigate the file system and to create our first repository. We will then cover the different steps taken until a file is officially committed into our local repository.

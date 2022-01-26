@@ -1,6 +1,6 @@
 ---
 title: 'Git a Grip: Part 2 - Don't Fear Commitment'
-date: '2021-03-05'
+date: '2021-02-22'
 ---
 
 # Git a Grip: Part 2 - Don't Fear Commitment 💍

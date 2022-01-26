@@ -1,3 +1,8 @@
+---
+title: 'Git a Grip: Part 3 - Ah, push it - push it real good'
+date: '2021-02-27'
+---
+
 # Git a Grip: Part 3 - Ah, push it - push it real good 🔊
 
 In the last part, we created a repository on our local system. However, if we want to share our code or collaborate, it needs to be available in a public location. [GitHub](https://github.com) is one of the many hosts that provides this service. Some of the other popular platforms include [GitLab](https://about.gitlab.com/), [BitBucket](https://bitbucket.org/), and [SourceForge](https://sourceforge.net/). GitHub is by far the most popular (and what I use) - that is why I chose it for this series.

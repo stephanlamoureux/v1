@@ -1,3 +1,8 @@
+---
+title: 'Git a Grip: Part 1 - Initial Setup'
+date: '2021-02-18'
+---
+
 # Git a Grip: Part 1 - Initial Setup 💻
 
 The goal of this series is to create small, easy-to-digest lessons that get progressively more in-depth. Hopefully, this can turn into a quick reference guide while also being a non-intimidating way to learn Git.

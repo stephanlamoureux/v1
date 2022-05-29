@@ -18,7 +18,7 @@ async function getArticle() {
 
   //For multiple articles that you want to display
   function displayMultipleArticles() {
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 9; i++) {
       let element = document.createElement('div') //container
       element.className = 'devArticle'
 

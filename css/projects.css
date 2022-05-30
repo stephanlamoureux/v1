@@ -87,21 +87,21 @@
 }
 
 .project-name1::after {
-  content: 'Personal Portfolio';
+  content: 'Blog';
 }
 
 .project-name2::after {
-  content: 'JavaScript Calculator';
+  content: 'Windows Dev Guide';
 }
 
 .project-name3::after {
-  content: 'Random Dog Generator';
+  content: 'JavaScript Calculator';
 }
 
 .project-name4::after {
-  content: 'Technical Document';
+  content: 'Random Dog Generator';
 }
 
 .project-name5::after {
-  content: 'Windows Dev Guide';
+  content: 'Personal Portfolio';
 }

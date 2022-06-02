@@ -87,7 +87,7 @@
 }
 
 .project-name1::after {
-  content: 'Blog';
+  content: 'Personal Blog';
 }
 
 .project-name2::after {
@@ -103,5 +103,5 @@
 }
 
 .project-name5::after {
-  content: 'Personal Portfolio';
+  content: 'Responsive Design Certification';
 }

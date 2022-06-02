@@ -188,6 +188,10 @@
   line-height: 1.5;
 }
 
+.tech-used-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .tech-used-link {
   color: var(--dracula-pink);
 }

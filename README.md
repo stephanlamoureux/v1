@@ -4,7 +4,7 @@
 
 ## Welcome To My Portfolio Site!
 
-### I use this as a playground to learn new technologies and showcase my work.
+<p>I use this as a playground to learn new technologies and showcase my work.</p>
 
 <div>
   <h3 class="about-header">Tech Used</h3>

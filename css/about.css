@@ -189,7 +189,7 @@
 }
 
 .tech-used-list:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .tech-used-link {

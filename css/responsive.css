@@ -687,10 +687,6 @@
     font-size: 2.3rem;
   }
 
-  .tech-used {
-    font-size: 1.1rem;
-  }
-
   .made {
     margin-right: 26px;
   }
@@ -725,10 +721,6 @@
     padding-right: 15px;
   }
 
-  .tech-used {
-    font-size: 1rem;
-  }
-
   .heart {
     right: 115px;
   }
@@ -756,10 +748,6 @@
   .contact {
     margin-bottom: 7rem;
   }
-
-  .tech-used {
-    font-size: 1rem;
-  }
 }
 
 @media (max-width: 368px) {
@@ -771,9 +759,6 @@
 @media (max-width: 348px) {
   .heart {
     right: 8px;
-  }
-  .tech-used {
-    font-size: 0.9rem;
   }
 }
 

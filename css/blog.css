@@ -54,7 +54,12 @@
 
 .article-info {
   display: flex;
-  word-break: break-all;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.devArticle a {
+  word-wrap: break-word;
 }
 
 .article-info p {
@@ -83,8 +88,8 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .article-info {
-    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }

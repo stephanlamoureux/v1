@@ -92,4 +92,7 @@
   .article-info {
     overflow-wrap: break-word;
   }
+  #article_title {
+    font-size: 1.1rem;
+  }
 }

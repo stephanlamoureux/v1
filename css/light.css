@@ -5,6 +5,15 @@ body.light-mode {
   color: var(--dracula-background);
 }
 
+.line.light-mode {
+  background: linear-gradient(
+    to right,
+    rgb(241, 250, 140, 0.8),
+    rgb(255, 184, 108, 1),
+    rgb(255, 85, 85, 0.8)
+  );
+}
+
 /* About */
 
 .paragraph .about-header.light-mode,

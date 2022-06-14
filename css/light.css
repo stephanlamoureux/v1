@@ -1,0 +1,24 @@
+/* Light Mode */
+
+body.light-mode {
+  background-color: var(--dracula-foreground);
+  color: var(--dracula-background);
+}
+
+/* About */
+
+.paragraph .about-header.light-mode,
+.paragraph .working-on-header.light-mode {
+  text-shadow: 4px 4px 1px var(--dracula-purple), 9px 8px 1px rgba(125, 125, 125, 0.15);
+}
+
+.about-p.light-mode {
+  text-shadow: 0 4px 3px rgba(125, 125, 125, 0.4), 0 8px 13px rgba(125, 125, 125, 0.1),
+    0 18px 23px rgba(125, 125, 125, 0.1);
+}
+
+/* Projects */
+
+/* Blog */
+
+/* Contact */

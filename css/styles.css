@@ -189,6 +189,18 @@ a {
   margin-right: 50px;
 }
 
+.sun i {
+  color: var(--dracula-foreground);
+}
+
+.fa-sun:hover {
+  filter: drop-shadow(1px 1px 5px rgb(241, 250, 140, 0.6));
+}
+
+.fa-moon:hover {
+  filter: drop-shadow(1px 1px 5px rgb(255, 184, 108, 0.8));
+}
+
 /* || Header */
 
 header {
@@ -468,11 +480,4 @@ span > i {
     width: calc(135% + 1.3px);
     height: 500px;
   }
-}
-
-/* Light Mode */
-
-.light-background {
-  background-color: var(--dracula-foreground);
-  color: var(--dracula-background);
 }

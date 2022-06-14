@@ -51,7 +51,7 @@ links.forEach(link => {
 
 function lightMode() {
   document.querySelectorAll('about-p').forEach(p => p.classList.toggle('light-mode'))
-  document.body.classList.toggle('light-background')
+  document.body.classList.toggle('light-mode')
   document.querySelector('.fa-sun').classList.toggle('fa-moon')
   document.querySelector('.paragraph .about-header').classList.toggle('light-mode')
   document.querySelector('.paragraph .working-on-header').classList.toggle('light-mode')

@@ -46,3 +46,18 @@ links.forEach(link => {
     bullet.style.color = 'var(--dracula-foreground)'
   })
 })
+
+// Light Mode
+
+function lightMode() {
+  document.querySelectorAll('about-p').forEach(p => p.classList.toggle('light-mode'))
+  document.body.classList.toggle('light-background')
+  document.querySelector('.fa-sun').classList.toggle('fa-moon')
+  document.querySelector('.paragraph .about-header').classList.toggle('light-mode')
+  document.querySelector('.paragraph .working-on-header').classList.toggle('light-mode')
+  // document.querySelector('.typed').classList.toggle('light-mode')
+
+  // document.querySelectorAll('.grid-container').forEach(e => e.classList.toggle('dark-container'))
+  // document.querySelectorAll('.grid-item').forEach(e => e.classList.toggle('dark-grid'))
+  // document.querySelectorAll('.apply').forEach(e => e.classList.toggle('dark-apply'))
+}

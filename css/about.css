@@ -77,11 +77,17 @@
   display: inline;
 }
 
-.paragraph .about-header {
+.paragraph .about-header,
+.paragraph .working-on-header {
   margin-bottom: 25px;
   text-shadow: 4px 4px 1px var(--dracula-greypurple), 9px 8px 1px rgba(0, 0, 0, 0.15);
   font-size: 1.6rem;
   margin-top: 40px;
+}
+
+.paragraph .about-header.light-mode,
+.paragraph .working-on-header.light-mode {
+  text-shadow: 4px 4px 1px var(--dracula-purple), 9px 8px 1px rgba(125, 125, 125, 0.15);
 }
 
 .steve .about-header {
@@ -145,6 +151,11 @@
   padding: 0 15px 20px 15px;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
     0 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.about-p.light-mode {
+  text-shadow: 0 4px 3px rgba(125, 125, 125, 0.4), 0 8px 13px rgba(125, 125, 125, 0.1),
+    0 18px 23px rgba(125, 125, 125, 0.1);
 }
 
 .about-p:first-of-type {

@@ -137,6 +137,13 @@ a {
   flex-flow: row nowrap;
   justify-content: center;
   list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-link {
+  display: flex;
 }
 
 .link {
@@ -171,6 +178,15 @@ a {
 .menu-link a,
 .link {
   font-family: 'Inter', sans-serif;
+}
+
+.mode-toggle {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
 }
 
 /* || Header */
@@ -414,8 +430,7 @@ span > i {
 }
 
 .source-link:hover {
-  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.18), 0px 24px 2px rgba(0, 0, 0, 0.13),
-    0px 34px 30px rgba(0, 0, 0, 0.13);
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.18);
   transition: ease 0.3s;
 }
 
@@ -453,4 +468,11 @@ span > i {
     width: calc(135% + 1.3px);
     height: 500px;
   }
+}
+
+/* Light Mode */
+
+.light-background {
+  background-color: var(--dracula-foreground);
+  color: var(--dracula-background);
 }

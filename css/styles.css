@@ -194,11 +194,11 @@ a {
 }
 
 .fa-sun:hover {
-  filter: drop-shadow(1px 1px 5px rgb(241, 250, 140, 0.6));
+  filter: drop-shadow(1px 1px 5px rgb(255, 184, 108, 0.6));
 }
 
 .fa-moon:hover {
-  filter: drop-shadow(1px 1px 5px rgb(255, 184, 108, 0.8));
+  filter: drop-shadow(1px 1px 5px rgb(139, 233, 253, 0.6));
 }
 
 /* || Header */

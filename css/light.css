@@ -5,10 +5,6 @@ body.light-mode {
   color: var(--dracula-background);
 }
 
-.custom-shape-divider-top-1619733049 .shape-fill.light-mode {
-  opacity: 0.8;
-}
-
 .line.light-mode {
   background: linear-gradient(
     to right,
@@ -22,20 +18,38 @@ body.light-mode {
 
 .paragraph .about-header.light-mode,
 .paragraph .working-on-header.light-mode {
-  text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(125, 125, 125, 0.15);
+  color: var(--dracula-foreground);
 }
 
 .about-p.light-mode {
-  text-shadow: 0 4px 3px rgba(179, 125, 255, 0.8), 0 8px 13px rgba(179, 125, 255, 0.1),
-    0 18px 23px rgba(179, 125, 255, 0.1);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 0 0 rgba(137, 87, 208, 0.1);
 }
 
 .tech-used-link.light-mode {
   color: var(--dracula-cyan);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 0 0 rgba(137, 87, 208, 0.1);
 }
 
+.tech-used-link.light-mode:hover {
+  color: var(--dracula-green);
+}
+
+.tech-used-list.light-mode {
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 0 0 rgba(137, 87, 208, 0.1);
+}
+
+.p-icon.light-mode {
+  color: var(--dracula-green);
+}
 /* Projects */
 
 /* Blog */
+
+#devArticle.light-mode:hover {
+  box-shadow: 0 0 5px 1px var(--dracula-foreground);
+}
 
 /* Contact */

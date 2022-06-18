@@ -209,4 +209,5 @@
 
 .bullet {
   padding-right: 5px;
+  color: var(--dracula-cyan);
 }

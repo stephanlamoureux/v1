@@ -14,6 +14,10 @@ body.light-mode {
   );
 }
 
+.custom-shape-divider-bottom-1619735001 .shape-fill.light-mode {
+  fill: var(--dracula-green);
+}
+
 /* About */
 
 .paragraph .about-header.light-mode,
@@ -44,6 +48,11 @@ body.light-mode {
 .p-icon.light-mode {
   color: var(--dracula-green);
 }
+
+.bullet.light-mode {
+  color: var(--dracula-foreground);
+}
+
 /* Projects */
 
 /* Blog */

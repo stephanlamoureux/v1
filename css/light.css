@@ -55,9 +55,26 @@ body.light-mode {
 
 /* Projects */
 
+.project-tile:hover .project-image.light-mode {
+  box-shadow: 0 0 5px 1px var(--dracula-selection);
+}
+
+.project-tile:hover .project-name0.light-mode,
+.project-tile:hover .project-name1.light-mode,
+.project-tile:hover .project-name2.light-mode,
+.project-tile:hover .project-name3.light-mode,
+.project-tile:hover .project-name4.light-mode,
+.project-tile:hover .project-name5.light-mode {
+  color: var(--dracula-selection);
+}
+
+.project-tile:hover .project-name0.light-mode {
+  color: var(--dracula-selection);
+}
+
 /* Blog */
 
-#devArticle.light-mode:hover {
+.devArticle:hover .light-mode {
   box-shadow: 0 0 5px 1px var(--dracula-foreground);
 }
 

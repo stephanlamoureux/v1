@@ -41,7 +41,7 @@
 .project-tile:hover .project-image {
   opacity: 1;
   transition: 0.4s ease all;
-  box-shadow: 0 0 5px 1px var(--dracula-cyan);
+  box-shadow: 0 0 5px 1px var(--dracula-comment);
 }
 
 .shrink {
@@ -77,7 +77,7 @@
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-  color: var(--dracula-cyan);
+  color: var(--dracula-foreground);
   transition: 0.4s ease all;
   transform: translateY(-12px);
 }

@@ -22,7 +22,7 @@
 
 ## Nav
 
-- Change sun hover color
+- Add to mobile nav
 
 ## Misc
 

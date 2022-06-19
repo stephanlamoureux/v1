@@ -32,7 +32,7 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
-// Currently working on section hover effect
+// Hover effect for Currently Working On section
 
 // const links = document.querySelectorAll('.tech-used-link')
 

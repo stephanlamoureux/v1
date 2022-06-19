@@ -15,7 +15,6 @@ function lightMode() {
   document.querySelector('.paragraph .about-header').classList.toggle('light-mode')
   document.querySelector('.paragraph .working-on-header').classList.toggle('light-mode')
   // Blog
-  // maybe need to make a promise here to wait for the blog to load first?
   document.querySelectorAll('.devArticle').forEach(blog => blog.classList.toggle('light-mode'))
   // Projects
   document

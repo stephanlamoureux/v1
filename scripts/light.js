@@ -6,6 +6,7 @@ function lightMode() {
   document
     .querySelectorAll('.custom-shape-divider-bottom-1619735001 .shape-fill')
     .forEach(shape => shape.classList.toggle('light-mode'))
+
   // About
   document.querySelectorAll('.about-p').forEach(p => p.classList.toggle('light-mode'))
   document.querySelectorAll('.p-icon').forEach(icon => icon.classList.toggle('light-mode'))
@@ -14,8 +15,11 @@ function lightMode() {
   document.querySelectorAll('.tech-used-list').forEach(list => list.classList.toggle('light-mode'))
   document.querySelector('.paragraph .about-header').classList.toggle('light-mode')
   document.querySelector('.paragraph .working-on-header').classList.toggle('light-mode')
+  document.querySelector('.hire-me .tooltip').classList.toggle('light-mode')
+
   // Blog
   document.querySelectorAll('.devArticle').forEach(blog => blog.classList.toggle('light-mode'))
+
   // Projects
   document
     .querySelectorAll('.project-tile .project-image')
@@ -26,5 +30,6 @@ function lightMode() {
   document.querySelector('.project-tile .project-name3').classList.toggle('light-mode')
   document.querySelector('.project-tile .project-name4').classList.toggle('light-mode')
   document.querySelector('.project-tile .project-name5').classList.toggle('light-mode')
+
   // Contact
 }

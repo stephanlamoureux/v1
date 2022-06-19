@@ -2,8 +2,6 @@
 
 ## About
 
-- change tooltip colors
-
 ## Blog
 
 - Get hover to work on cards

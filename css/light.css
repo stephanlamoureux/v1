@@ -25,6 +25,16 @@ body.light-mode {
   color: var(--dracula-foreground);
 }
 
+.hire-me .tooltip.light-mode {
+  background-image: linear-gradient(
+    45deg,
+    var(--dracula-pink),
+    var(--dracula-cyan),
+    var(--dracula-green)
+  );
+  color: var(--dracula-selection);
+}
+
 .about-p.light-mode {
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 0 0 rgba(137, 87, 208, 0.1);
@@ -38,6 +48,7 @@ body.light-mode {
 
 .tech-used-link.light-mode:hover {
   color: var(--dracula-green);
+  transition: ease 0.1s;
 }
 
 .tech-used-list.light-mode {

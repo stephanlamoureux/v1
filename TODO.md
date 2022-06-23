@@ -2,15 +2,13 @@
 
 ## About
 
-- Change shadows on section headers?
+- Change shadows on light mode section headers?
 
 ## Blog
 
 ## Projects
 
 ## Contact
-
-- Box shadow not showing on top and bottom
 
 ## Footer
 
@@ -23,6 +21,6 @@
 ## Misc
 
 - Keep selected theme when changing pages
-- Make icon fully clickable
 - rename tech-used-link
 - rename round
+- rename dividers

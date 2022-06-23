@@ -405,7 +405,7 @@
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 500px;
+    height: 480px;
   }
 
   .custom-shape-divider-bottom-1619735001 .shape-fill {
@@ -747,6 +747,10 @@
   .projects,
   .contact {
     margin-bottom: 7rem;
+  }
+
+  .custom-shape-divider-bottom-1619735001 svg {
+    height: 460px;
   }
 }
 

@@ -26,7 +26,7 @@
 
 .project-image {
   border-radius: 5px;
-  box-shadow: 0 0 5px 1px var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.8);
   max-width: 100%;
   opacity: 0.5;
 }
@@ -41,7 +41,7 @@
 .project-tile:hover .project-image {
   opacity: 1;
   transition: 0.4s ease all;
-  box-shadow: 0 0 5px 1px var(--dracula-comment);
+  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.8);
 }
 
 .shrink {
@@ -80,6 +80,8 @@
   color: var(--dracula-foreground);
   transition: 0.4s ease all;
   transform: translateY(-12px);
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .project-name0::after {

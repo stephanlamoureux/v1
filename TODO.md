@@ -2,21 +2,17 @@
 
 ## About
 
-## Blog
+- Change shadows on section headers?
 
-- Get hover to work on cards
+## Blog
 
 ## Projects
 
-- Get hover to work on cards
-
 ## Contact
-
-- Change form colors
 
 ## Footer
 
-- Fix hover on name
+- Fix hover effect on name
 
 ## Nav
 
@@ -25,3 +21,6 @@
 ## Misc
 
 - Keep selected theme when changing pages
+- Make icon fully clickable
+- rename tech-used-link
+- rename round

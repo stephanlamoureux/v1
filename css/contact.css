@@ -35,6 +35,8 @@ label {
   padding-bottom: 0.3rem;
   color: var(--dracula-foreground);
   font-size: 1.1rem;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 input,
@@ -58,9 +60,10 @@ textarea:focus {
 }
 
 .form-submit {
-  background-color: var(--dracula-cyan);
+  background-color: var(--dracula-pink);
+  opacity: 0.7;
   border-radius: 5px;
-  color: var(--dracula-background);
+  color: var(--dracula-foreground);
   cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
   font-size: 1.3rem;
   font-style: normal;
@@ -69,6 +72,14 @@ textarea:focus {
   text-align: center;
   transition: ease 0.4s all;
   width: 100%;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -3px #00000045, 1px 1px 3px #0000009e;
+}
+
+.form-submit:active {
+  box-shadow: none;
+  transform: translateY(3px);
 }
 
 @-moz-document url-prefix() {
@@ -78,6 +89,8 @@ textarea:focus {
 }
 
 .form-submit:hover {
-  background-color: var(--dracula-red);
+  background-color: var(--dracula-pink);
   color: var(--dracula-foreground);
+  opacity: 1;
+  transition: ease all 0.4s;
 }

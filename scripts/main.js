@@ -32,6 +32,11 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
+function lightMode() {
+  document.body.classList.toggle('light-mode')
+  document.querySelector('.fa-sun').classList.toggle('fa-moon')
+}
+
 // Hover effect for Currently Working On section
 
 // const links = document.querySelectorAll('.tech-used-link')

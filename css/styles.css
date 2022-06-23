@@ -39,18 +39,18 @@ html {
 }
 
 :root {
-  --dracula-background: #282a36;
-  --dracula-comment: #6272a4;
-  --dracula-cyan: #8be9fd;
-  --dracula-foreground: #f8f8f2;
-  --dracula-green: #50fa7b;
-  --dracula-greypurple: #383a59;
-  --dracula-orange: #ffb86c;
-  --dracula-pink: #ff79c6;
-  --dracula-purple: #bd93f9;
-  --dracula-red: #ff5555;
-  --dracula-selection: #44475a;
-  --dracula-yellow: #f1fa8c;
+  --dracula-background: rgb(40, 42, 54);
+  --dracula-comment: rgb(98, 114, 164);
+  --dracula-cyan: rgb(139, 233, 253);
+  --dracula-foreground: rgb(248, 248, 242);
+  --dracula-green: rgb(80, 250, 123);
+  --dracula-greypurple: rgb(56, 58, 89);
+  --dracula-orange: rgb(255, 184, 108);
+  --dracula-pink: rgb(255, 121, 198);
+  --dracula-purple: rgb(189, 147, 249);
+  --dracula-red: rgb(255, 85, 85);
+  --dracula-selection: rgb(68, 71, 90);
+  --dracula-yellow: rgb(241, 250, 140);
 }
 
 /* || General Styles */

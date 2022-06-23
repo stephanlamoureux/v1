@@ -5,7 +5,9 @@ body.light-mode {
   color: var(--dracula-background);
 }
 
-.line.light-mode {
+/* Header */
+
+body.light-mode .line {
   background: linear-gradient(
     to right,
     rgba(189, 147, 249, 0.8),
@@ -14,79 +16,113 @@ body.light-mode {
   );
 }
 
-.custom-shape-divider-bottom-1619735001 .shape-fill.light-mode {
-  fill: var(--dracula-green);
-}
-
 /* About */
 
-.paragraph .about-header.light-mode,
-.paragraph .working-on-header.light-mode {
+body.light-mode .paragraph .about-header,
+body.light-mode .paragraph .working-on-header {
   color: var(--dracula-foreground);
 }
 
-.hire-me .tooltip.light-mode {
+body.light-mode .hire-me .tooltip {
   background-image: linear-gradient(
     45deg,
-    var(--dracula-pink),
+    var(--dracula-foreground),
     var(--dracula-cyan),
     var(--dracula-green)
   );
   color: var(--dracula-selection);
 }
 
-.about-p.light-mode {
+body.light-mode .about-p {
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-    0 0 0 rgba(137, 87, 208, 0.1);
+    0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
-.tech-used-link.light-mode {
+body.light-mode .p-icon {
+  color: var(--dracula-green);
+}
+
+body.light-mode .tech-used-link {
   color: var(--dracula-cyan);
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-    0 0 0 rgba(137, 87, 208, 0.1);
+    0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
-.tech-used-link.light-mode:hover {
+body.light-mode .tech-used-link:hover {
   color: var(--dracula-green);
   transition: ease 0.1s;
 }
 
-.tech-used-list.light-mode {
+body.light-mode .tech-used-list {
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-    0 0 0 rgba(137, 87, 208, 0.1);
+    0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
-.p-icon.light-mode {
-  color: var(--dracula-green);
-}
-
-.bullet.light-mode {
+body.light-mode .bullet {
   color: var(--dracula-foreground);
 }
 
 /* Projects */
 
-.project-tile:hover .project-image.light-mode {
-  box-shadow: 0 0 5px 1px var(--dracula-selection);
+body.light-mode .project-tile:hover .project-image {
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
 }
 
-.project-tile:hover .project-name0.light-mode,
-.project-tile:hover .project-name1.light-mode,
-.project-tile:hover .project-name2.light-mode,
-.project-tile:hover .project-name3.light-mode,
-.project-tile:hover .project-name4.light-mode,
-.project-tile:hover .project-name5.light-mode {
-  color: var(--dracula-selection);
+body.light-mode .project-tile:hover .project-name0,
+body.light-mode .project-tile:hover .project-name1,
+body.light-mode .project-tile:hover .project-name2,
+body.light-mode .project-tile:hover .project-name3,
+body.light-mode .project-tile:hover .project-name4,
+body.light-mode .project-tile:hover .project-name5 {
+  color: var(--dracula-background);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
-.project-tile:hover .project-name0.light-mode {
-  color: var(--dracula-selection);
+body.light-mode .project-image {
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
 }
 
 /* Blog */
 
-.devArticle:hover .light-mode {
-  box-shadow: 0 0 5px 1px var(--dracula-foreground);
+body.light-mode .devArticle:hover {
+  box-shadow: 0 0 5px 1px rgba(56, 58, 89, 0.9);
 }
 
 /* Contact */
+
+body.light-mode label {
+  color: var(--dracula-greypurple);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  color: var(--dracula-background);
+  opacity: 0.7;
+  background-color: var(--dracula-foreground);
+}
+
+body.light-mode input:focus,
+body.light-mode textarea:focus {
+  box-shadow: 0 0 2px 2px var(--dracula-green);
+}
+
+body.light-mode .form-submit {
+  background-color: var(--dracula-greypurple);
+  color: var(--dracula-foreground);
+  opacity: 0.7;
+}
+
+body.light-mode .form-submit:hover {
+  background-color: var(--dracula-greypurple);
+  color: var(--dracula-foreground);
+  opacity: 1;
+}
+
+/* Footer Divider */
+
+body.light-mode .custom-shape-divider-bottom-1619735001 .shape-fill {
+  fill: var(--dracula-green);
+}

@@ -21,6 +21,12 @@
   margin-bottom: 1rem;
 }
 
+#devArticle {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+
 .devArticle {
   margin: 1%;
   display: flex;
@@ -36,15 +42,18 @@
   transition: 0.1s ease;
 }
 
-#devArticle {
-  color: white;
-  text-decoration: none;
-  width: 100%;
+.devArticle:hover {
+  box-shadow: 0 0 5px 1px rgba(189, 147, 249, 0.9);
 }
 
-.devArticle:hover {
-  box-shadow: 0 0 5px 1px var(--dracula-purple);
-  transition: 0.1s ease;
+.devArticle a {
+  word-wrap: break-word;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 3em 0;
+  margin: -3em 0;
 }
 
 #profile_image {
@@ -55,10 +64,6 @@
 .article-info {
   display: flex;
   word-break: break-word;
-  word-wrap: break-word;
-}
-
-.devArticle a {
   word-wrap: break-word;
 }
 

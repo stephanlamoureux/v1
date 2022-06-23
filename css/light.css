@@ -100,7 +100,6 @@ body.light-mode label {
 body.light-mode input,
 body.light-mode textarea {
   color: var(--dracula-background);
-  opacity: 0.7;
   background-color: var(--dracula-foreground);
 }
 

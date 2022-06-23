@@ -10,6 +10,8 @@
 
 ## Contact
 
+- Box shadow not showing on top and bottom
+
 ## Footer
 
 - Fix hover effect on name

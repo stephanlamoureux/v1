@@ -2,9 +2,11 @@
 
 ## About
 
-- Change shadows on light mode section headers?
+- Change shadows on light mode section headers
 
 ## Blog
+
+- Add a loader
 
 ## Projects
 
@@ -16,7 +18,7 @@
 
 ## Nav
 
-- Add to mobile nav
+- Add toggle to mobile nav
 
 ## Misc
 

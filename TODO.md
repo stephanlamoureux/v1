@@ -27,3 +27,5 @@
 - rename round
 - rename dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) for typed.js and anijs
+- Add landing page
+- Update about me

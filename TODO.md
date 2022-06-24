@@ -1,4 +1,4 @@
-# Light Mode TODO
+# TODO
 
 ## About
 
@@ -10,6 +10,8 @@
 
 ## Projects
 
+- Add modals to cards
+
 ## Contact
 
 ## Footer
@@ -18,6 +20,7 @@
 
 ## Nav
 
+- Change Icons to a slide toggle
 - Add toggle to mobile nav
 
 ## Misc

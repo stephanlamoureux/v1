@@ -31,4 +31,5 @@
 - rename dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) for typed.js and anijs
 - Add landing page
-- Update about me
+- Update about me content
+- renew font awesome pro and add the cdn

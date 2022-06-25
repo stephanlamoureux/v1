@@ -18,9 +18,9 @@ body.light-mode .line {
 
 /* About */
 
-body.light-mode .paragraph .about-header,
-body.light-mode .paragraph .working-on-header {
+body.light-mode .paragraph h3 {
   color: var(--dracula-foreground);
+  text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(0, 0, 0, 0);
 }
 
 body.light-mode .hire-me .tooltip {
@@ -112,6 +112,10 @@ body.light-mode .form-submit {
   background-color: var(--dracula-greypurple);
   color: var(--dracula-foreground);
   opacity: 0.7;
+}
+
+body.light-mode .form-submit:active {
+  box-shadow: none;
 }
 
 body.light-mode .form-submit:hover {

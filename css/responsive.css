@@ -209,6 +209,11 @@
     transition: ease color 0.2s;
   }
 
+  .mode-toggle {
+    position: inherit;
+    margin-right: 0;
+  }
+
   .about,
   .blog,
   .projects,

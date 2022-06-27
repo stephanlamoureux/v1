@@ -33,3 +33,4 @@
 - Update about me content
 - renew font awesome pro and add the cdn
 - Create components for header/footer/nav etc
+- write tests

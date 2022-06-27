@@ -47,12 +47,17 @@ body.light-mode .p-icon {
 body.light-mode .vwc {
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
-  color: var(--dracula-foreground);
-}
-
-body.light-mode .vwc:hover {
+  background-repeat: repeat-x;
+  background-position: left 0% bottom -5%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(173, 116, 255, 1) 0%,
+    rgb(98, 114, 164, 1) 50%,
+    rgba(248, 248, 242, 0.8) 100%
+  );
+  background-size: 100% 12%;
+  padding-bottom: 5px;
   color: var(--dracula-background);
-  transition: ease 0.1s;
 }
 
 body.light-mode .tech-used-link {
@@ -63,29 +68,12 @@ body.light-mode .tech-used-link {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(248, 248, 242, 1) 0%,
-    rgba(68, 71, 90, 1) 50%,
-    rgba(40, 42, 54, 1) 100%
+    rgba(173, 116, 255, 1) 0%,
+    rgb(98, 114, 164, 1) 50%,
+    rgba(248, 248, 242, 0.8) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;
-  display: inline-block;
-  transition: all ease 0.1s;
-}
-
-body.light-mode .tech-used-link:hover {
-  color: var(--dracula-background);
-  background-repeat: repeat-x;
-  background-position: left 0% bottom -5%;
-  background-image: linear-gradient(
-    90deg,
-    rgba(40, 42, 54, 1) 0%,
-    rgba(68, 71, 90, 1) 50%,
-    rgba(248, 248, 242, 1) 100%
-  );
-  background-size: 100% 12%;
-  padding-bottom: 5px;
-  transition: all ease 0.1s;
 }
 
 body.light-mode .tech-used-list {
@@ -95,6 +83,12 @@ body.light-mode .tech-used-list {
 
 body.light-mode .bullet {
   color: var(--dracula-foreground);
+}
+
+@media screen and (max-width: 1100px) {
+  body.light-mode .bullet {
+    display: none;
+  }
 }
 
 /* Projects */
@@ -110,7 +104,7 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
   color: var(--dracula-background);
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 body.light-mode .project-image {
@@ -127,8 +121,7 @@ body.light-mode .project-image {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
-    text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-      0 18px 23px rgba(137, 87, 208, 0.1);
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
   body.light-mode .project-image {
@@ -150,6 +143,7 @@ body.light-mode .project-image {
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
     opacity: 1;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   }
 }
 

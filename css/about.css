@@ -100,6 +100,8 @@
   -o-animation: fa-blink 1.5s infinite;
   animation: fa-blink 1.5s infinite;
   font-size: 1.6rem;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fa-blink {
@@ -193,26 +195,45 @@
 }
 
 .vwc {
-  color: var(--dracula-pink);
+  color: var(--dracula-foreground);
+  background-repeat: repeat-x;
+  background-position: left 0% bottom -5%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(40, 42, 54, 1) 0%,
+    rgba(68, 71, 90, 1) 50%,
+    rgba(139, 233, 253, 0.8) 100%
+  );
+  background-size: 100% 12%;
+  padding-bottom: 5px;
 }
 
 .vwc:hover {
-  color: var(--dracula-purple);
-  transition: ease 0.1s;
+  color: var(--dracula-foreground);
+}
+
+.vwc::selection {
+  color: var(--dracula-background);
+  background-color: var(--dracula-green);
 }
 
 .tech-used-link {
   color: var(--dracula-pink);
+  background-repeat: repeat-x;
+  background-position: left 0% bottom -5%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(40, 42, 54, 1) 0%,
+    rgba(68, 71, 90, 1) 50%,
+    rgba(139, 233, 253, 0.8) 100%
+  );
+  background-size: 100% 12%;
+  padding-bottom: 5px;
 }
 
 .tech-used-link::selection {
   background-color: var(--dracula-green);
   color: var(--dracula-background);
-}
-
-.tech-used-link:hover {
-  color: var(--dracula-purple);
-  transition: ease 0.1s;
 }
 
 .bullet {

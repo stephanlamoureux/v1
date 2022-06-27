@@ -16,6 +16,10 @@
   font-size: 2em;
 }
 
+.fa-3x {
+  font-size: 3em;
+}
+
 .fa-stack {
   display: inline-block;
   height: 2em;

@@ -204,8 +204,7 @@
   }
 
   .menu-link a:hover {
-    border-bottom: 2px solid var(--dracula-pink);
-    color: var(--dracula-cyan);
+    color: var(--dracula-purple);
     transition: ease color 0.2s;
   }
 
@@ -213,6 +212,10 @@
     position: initial;
     margin-right: 0;
     padding: 0;
+  }
+
+  .tech-used-list .bullet {
+    display: none;
   }
 
   .about,

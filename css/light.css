@@ -20,7 +20,7 @@ body.light-mode .line {
 
 body.light-mode .paragraph h3 {
   color: var(--dracula-foreground);
-  text-shadow: 4px 4px 1px var(--dracula-greypurple), 9px 8px 1px rgba(0, 0, 0, 0);
+  text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(0, 0, 0, 0);
 }
 
 body.light-mode .hire-me .tooltip {
@@ -34,17 +34,19 @@ body.light-mode .hire-me .tooltip {
 }
 
 body.light-mode .about-p {
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
 body.light-mode .p-icon {
   color: var(--dracula-green);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
 body.light-mode .tech-used-link {
   color: var(--dracula-cyan);
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
@@ -54,7 +56,7 @@ body.light-mode .tech-used-link:hover {
 }
 
 body.light-mode .tech-used-list {
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 

@@ -17,15 +17,13 @@
 ## Nav
 
 - Change Icons to a slide toggle
-- Add toggle to mobile nav
-- Add transition to sun/moon icons
 - Keep selected theme when changing pages
 
 ## Misc
 
-- rename tech-used to working-on
-- rename tech-used-link to working-on-link
-- rename tech-used-list to working-on-list
+- rename "tech-used" to "working-on"
+- rename "tech-used-link" to "working-on-link"
+- rename "tech-used-list" to "working-on-list"
 - rename top and bottom dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) for typed.js and anijs
 - Add landing page

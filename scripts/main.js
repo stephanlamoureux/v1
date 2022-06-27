@@ -34,7 +34,7 @@ var typed = new Typed('#typed', {
 
 function lightMode() {
   document.body.classList.toggle('light-mode')
-  document.querySelector('.fa-sun').classList.toggle('fa-moon')
+  document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
 }
 
 // Hover effect for Currently Working On section

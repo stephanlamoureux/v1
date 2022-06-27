@@ -15,8 +15,8 @@ window.onload = function () {
     emailjs.sendForm('contact_service', 'contact_form', this).then(
       function () {
         const submitButton = (document.getElementById('submit').value = 'Success!')
-        const successButton = (document.getElementById('submit').style.background =
-          'var(--dracula-green)')
+        const successButton = (document.getElementById('submit').style.cssText =
+          'background:var(--dracula-green); color: var(--dracula-background)')
         console.log('SUCCESS!')
         setTimeout(function () {
           document.forms['contact-form'].reset()

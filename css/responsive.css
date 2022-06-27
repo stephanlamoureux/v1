@@ -146,7 +146,7 @@
     background-image: url('../assets/images/icons/menu-white.svg');
     background-size: 100%;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
     display: initial;
     height: 36px;
     margin-left: 55px;
@@ -210,8 +210,9 @@
   }
 
   .mode-toggle {
-    position: inherit;
+    position: initial;
     margin-right: 0;
+    padding: 0;
   }
 
   .about,
@@ -677,7 +678,7 @@
     height: 75vh;
   }
 
-  .paragraph .about-header {
+  .paragraph h3 {
     font-size: 1.5rem;
   }
 }
@@ -713,7 +714,7 @@
     margin-bottom: 10rem;
   }
 
-  .paragraph .about-header {
+  .paragraph h3 {
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
   }

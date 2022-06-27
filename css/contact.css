@@ -82,13 +82,13 @@ textarea:focus {
   transform: translateY(3px);
 }
 
+.form-submit:hover {
+  opacity: 1;
+  transition: ease all 0.2s;
+}
+
 @-moz-document url-prefix() {
   .form-submit {
     cursor: pointer;
   }
-}
-
-.form-submit:hover {
-  opacity: 1;
-  transition: ease all 0.4s;
 }

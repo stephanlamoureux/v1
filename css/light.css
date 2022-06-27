@@ -34,19 +34,19 @@ body.light-mode .hire-me .tooltip {
 }
 
 body.light-mode .about-p {
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
 body.light-mode .p-icon {
   color: var(--dracula-green);
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
 body.light-mode .tech-used-link {
   color: var(--dracula-cyan);
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
@@ -56,7 +56,7 @@ body.light-mode .tech-used-link:hover {
 }
 
 body.light-mode .tech-used-list {
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.6), 0 8px 13px rgba(137, 87, 208, 0.1),
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 

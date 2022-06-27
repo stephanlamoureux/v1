@@ -1,7 +1,7 @@
 /* Light Mode */
 
 body.light-mode {
-  background-color: var(--dracula-purple);
+  background-color: rgb(173, 116, 255);
   color: var(--dracula-background);
 }
 
@@ -44,15 +44,48 @@ body.light-mode .p-icon {
     0 18px 23px rgba(137, 87, 208, 0.1);
 }
 
-body.light-mode .tech-used-link {
-  color: var(--dracula-cyan);
+body.light-mode .vwc {
   text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
     0 18px 23px rgba(137, 87, 208, 0.1);
+  color: var(--dracula-foreground);
+}
+
+body.light-mode .vwc:hover {
+  color: var(--dracula-background);
+  transition: ease 0.1s;
+}
+
+body.light-mode .tech-used-link {
+  color: var(--dracula-foreground);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+  background-repeat: repeat-x;
+  background-position: left 0% bottom -5%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(248, 248, 242, 1) 0%,
+    rgba(68, 71, 90, 1) 50%,
+    rgba(40, 42, 54, 1) 100%
+  );
+  background-size: 100% 12%;
+  padding-bottom: 5px;
+  display: inline-block;
+  transition: all ease 0.1s;
 }
 
 body.light-mode .tech-used-link:hover {
-  color: var(--dracula-green);
-  transition: ease 0.1s;
+  color: var(--dracula-background);
+  background-repeat: repeat-x;
+  background-position: left 0% bottom -5%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(40, 42, 54, 1) 0%,
+    rgba(68, 71, 90, 1) 50%,
+    rgba(248, 248, 242, 1) 100%
+  );
+  background-size: 100% 12%;
+  padding-bottom: 5px;
+  transition: all ease 0.1s;
 }
 
 body.light-mode .tech-used-list {
@@ -67,7 +100,7 @@ body.light-mode .bullet {
 /* Projects */
 
 body.light-mode .project-tile:hover .project-image {
-  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
 }
 
 body.light-mode .project-tile:hover .project-name0,
@@ -77,12 +110,47 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
   color: var(--dracula-background);
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-    0 18px 23px rgba(137, 87, 208, 0.1);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 body.light-mode .project-image {
-  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+}
+
+@media (max-width: 1100px) {
+  body.light-mode .project-name0,
+  body.light-mode .project-name1,
+  body.light-mode .project-name2,
+  body.light-mode .project-name3,
+  body.light-mode .project-name4,
+  body.light-mode .project-name5 {
+    background-color: var(--dracula-foreground);
+    box-shadow: 0 0 3px 1px var(--dracula-background);
+    color: var(--dracula-background);
+    text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+      0 18px 23px rgba(137, 87, 208, 0.1);
+  }
+
+  body.light-mode .project-image {
+    box-shadow: 0 0 3px 1px var(--dracula-background);
+    opacity: 1;
+  }
+
+  body.light-mode .project-tile:hover .project-image {
+    opacity: 1;
+    box-shadow: 0 0 3px 1px var(--dracula-background);
+  }
+
+  body.light-mode .project-tile:hover .project-name0,
+  body.light-mode .project-tile:hover .project-name1,
+  body.light-mode .project-tile:hover .project-name2,
+  body.light-mode .project-tile:hover .project-name3,
+  body.light-mode .project-tile:hover .project-name4,
+  body.light-mode .project-tile:hover .project-name5 {
+    box-shadow: 0 0 3px 1px var(--dracula-background);
+    color: var(--dracula-background);
+    opacity: 1;
+  }
 }
 
 /* Blog */
@@ -94,9 +162,7 @@ body.light-mode .devArticle:hover {
 /* Contact */
 
 body.light-mode label {
-  color: var(--dracula-greypurple);
-  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
-    0 18px 23px rgba(137, 87, 208, 0.1);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 body.light-mode input,
@@ -117,9 +183,18 @@ body.light-mode .form-submit {
 }
 
 body.light-mode .form-submit:hover {
-  background-color: var(--dracula-greypurple);
-  color: var(--dracula-foreground);
   opacity: 1;
+}
+
+body.light-mode .form-submit:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+@media (max-width: 1100px) {
+  body.light-mode .form-submit {
+    opacity: 1;
+  }
 }
 
 /* Footer Divider */

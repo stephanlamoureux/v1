@@ -2,6 +2,9 @@
 
 ## About
 
+- Get tooltip to work in firefox
+- Fix hover effect bug
+
 ## Blog
 
 - Add a loader

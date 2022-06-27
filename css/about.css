@@ -192,6 +192,15 @@
   margin-bottom: 20px;
 }
 
+.vwc {
+  color: var(--dracula-pink);
+}
+
+.vwc:hover {
+  color: var(--dracula-purple);
+  transition: ease 0.1s;
+}
+
 .tech-used-link {
   color: var(--dracula-pink);
 }

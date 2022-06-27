@@ -21,11 +21,11 @@ html {
   cursor: url('../assets/images/icons/cursor-blue.png'), auto;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   html {
-    cursor: initial;
+    cursor: url('../assets/images/icons/cursor-blue.png'), auto;
   }
-}
+} */
 
 * {
   margin: 0;
@@ -67,11 +67,11 @@ a {
   cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   a {
     cursor: pointer;
   }
-}
+} */
 
 /* Header Divider */
 

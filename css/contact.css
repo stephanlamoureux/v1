@@ -80,6 +80,7 @@ textarea:focus {
 .form-submit:active {
   box-shadow: none;
   transform: translateY(3px);
+  transition: ease 0.2s all;
 }
 
 .form-submit:hover {
@@ -87,8 +88,8 @@ textarea:focus {
   transition: ease all 0.2s;
 }
 
-@-moz-document url-prefix() {
+/* @-moz-document url-prefix() {
   .form-submit {
     cursor: pointer;
   }
-}
+} */

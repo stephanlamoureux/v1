@@ -39,18 +39,18 @@ html {
 }
 
 :root {
-  --dracula-background: #282a36;
-  --dracula-comment: #6272a4;
-  --dracula-cyan: #8be9fd;
-  --dracula-foreground: #f8f8f2;
-  --dracula-green: #50fa7b;
-  --dracula-greypurple: #383a59;
-  --dracula-orange: #ffb86c;
-  --dracula-pink: #ff79c6;
-  --dracula-purple: #bd93f9;
-  --dracula-red: #ff5555;
-  --dracula-selection: #44475a;
-  --dracula-yellow: #f1fa8c;
+  --dracula-background: rgb(40, 42, 54);
+  --dracula-comment: rgb(98, 114, 164);
+  --dracula-cyan: rgb(139, 233, 253);
+  --dracula-foreground: rgb(248, 248, 242);
+  --dracula-green: rgb(80, 250, 123);
+  --dracula-greypurple: rgb(56, 58, 89);
+  --dracula-orange: rgb(255, 184, 108);
+  --dracula-pink: rgb(255, 121, 198);
+  --dracula-purple: rgb(189, 147, 249);
+  --dracula-red: rgb(255, 85, 85);
+  --dracula-selection: rgb(68, 71, 90);
+  --dracula-yellow: rgb(241, 250, 140);
 }
 
 /* || General Styles */
@@ -137,6 +137,13 @@ a {
   flex-flow: row nowrap;
   justify-content: center;
   list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.desktop-link {
+  display: flex;
 }
 
 .link {
@@ -171,6 +178,34 @@ a {
 .menu-link a,
 .link {
   font-family: 'Inter', sans-serif;
+}
+
+.mode-toggle {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 50px;
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
+.fa-sun {
+  color: var(--dracula-foreground);
+  transition: all 0.3s;
+  filter: drop-shadow(5px 5px 5px var(--dracula-background));
+}
+
+.fa-moon {
+  color: rgb(209, 176, 255);
+  transition: all 0.3s;
+  filter: drop-shadow(5px 5px 5px var(--dracula-background));
+}
+
+.mode-toggle:hover i {
+  filter: drop-shadow(0px 0px 0px var(--dracula-background));
 }
 
 /* || Header */
@@ -414,8 +449,8 @@ span > i {
 }
 
 .source-link:hover {
-  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.18), 0px 24px 2px rgba(0, 0, 0, 0.13),
-    0px 34px 30px rgba(0, 0, 0, 0.13);
+  text-shadow: 0px 14px 10px rgb(0 0 0 / 18%), 0px 24px 2px rgb(0 0 0 / 13%),
+    0px 34px 30px rgb(0 0 0 / 13%);
   transition: ease 0.3s;
 }
 

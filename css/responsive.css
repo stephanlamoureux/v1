@@ -114,7 +114,7 @@
     font-size: 1rem;
   }
 
-  .round {
+  .profile-image {
     max-width: 35%;
   }
 }
@@ -146,7 +146,7 @@
     background-image: url('../assets/images/icons/menu-white.svg');
     background-size: 100%;
     border: none;
-    cursor: pointer;
+    cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
     display: initial;
     height: 36px;
     margin-left: 55px;
@@ -209,6 +209,12 @@
     transition: ease color 0.2s;
   }
 
+  .mode-toggle {
+    position: initial;
+    margin-right: 0;
+    padding: 0;
+  }
+
   .about,
   .blog,
   .projects,
@@ -220,7 +226,7 @@
     margin-top: 5rem;
   }
 
-  .round {
+  .profile-image {
     max-width: 35%;
   }
 
@@ -405,7 +411,7 @@
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 500px;
+    height: 480px;
   }
 
   .custom-shape-divider-bottom-1619735001 .shape-fill {
@@ -430,7 +436,7 @@
     box-shadow: none;
   }
 
-  .round {
+  .profile-image {
     float: none;
     margin: 0;
     max-width: 60%;
@@ -613,7 +619,7 @@
     width: 195px;
   }
 
-  .round {
+  .profile-image {
     max-width: 70%;
   }
 
@@ -672,7 +678,7 @@
     height: 75vh;
   }
 
-  .paragraph .about-header {
+  .paragraph h3 {
     font-size: 1.5rem;
   }
 }
@@ -708,7 +714,7 @@
     margin-bottom: 10rem;
   }
 
-  .paragraph .about-header {
+  .paragraph h3 {
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
   }
@@ -747,6 +753,10 @@
   .projects,
   .contact {
     margin-bottom: 7rem;
+  }
+
+  .custom-shape-divider-bottom-1619735001 svg {
+    height: 460px;
   }
 }
 

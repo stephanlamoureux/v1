@@ -32,17 +32,22 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
-// About section hover effect
+function lightMode() {
+  document.body.classList.toggle('light-mode')
+  document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
+}
 
-const links = document.querySelectorAll('.tech-used-link')
+// Hover effect for Currently Working On section
 
-links.forEach(link => {
-  const bullet = link.parentElement.querySelector('.bullet')
-  link.addEventListener('mouseover', () => {
-    bullet.style.color = 'var(--dracula-purple)'
-    bullet.style.transition = 'ease 0.1s'
-  })
-  link.addEventListener('mouseleave', () => {
-    bullet.style.color = 'var(--dracula-foreground)'
-  })
-})
+// const links = document.querySelectorAll('.tech-used-link')
+
+// links.forEach(link => {
+//   const bullet = link.parentElement.querySelector('.bullet')
+//   link.addEventListener('mouseover', () => {
+//     bullet.style.color = 'var(--dracula-purple)'
+//     bullet.style.transition = 'ease 0.1s'
+//   })
+//   link.addEventListener('mouseleave', () => {
+//     bullet.style.color = ''
+//   })
+// })

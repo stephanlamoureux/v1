@@ -1,0 +1,129 @@
+/* Light Mode */
+
+body.light-mode {
+  background-color: var(--dracula-purple);
+  color: var(--dracula-background);
+}
+
+/* Header */
+
+body.light-mode .line {
+  background: linear-gradient(
+    to right,
+    rgba(189, 147, 249, 0.8),
+    rgba(139, 233, 253, 1),
+    rgb(255, 121, 198, 0.8)
+  );
+}
+
+/* About */
+
+body.light-mode .paragraph h3 {
+  color: var(--dracula-foreground);
+  text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(0, 0, 0, 0);
+}
+
+body.light-mode .hire-me .tooltip {
+  background-image: linear-gradient(
+    45deg,
+    var(--dracula-foreground),
+    var(--dracula-cyan),
+    var(--dracula-green)
+  );
+  color: var(--dracula-selection);
+}
+
+body.light-mode .about-p {
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode .p-icon {
+  color: var(--dracula-green);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode .tech-used-link {
+  color: var(--dracula-cyan);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode .tech-used-link:hover {
+  color: var(--dracula-green);
+  transition: ease 0.1s;
+}
+
+body.light-mode .tech-used-list {
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.5), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode .bullet {
+  color: var(--dracula-foreground);
+}
+
+/* Projects */
+
+body.light-mode .project-tile:hover .project-image {
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+}
+
+body.light-mode .project-tile:hover .project-name0,
+body.light-mode .project-tile:hover .project-name1,
+body.light-mode .project-tile:hover .project-name2,
+body.light-mode .project-tile:hover .project-name3,
+body.light-mode .project-tile:hover .project-name4,
+body.light-mode .project-tile:hover .project-name5 {
+  color: var(--dracula-background);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode .project-image {
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+}
+
+/* Blog */
+
+body.light-mode .devArticle:hover {
+  box-shadow: 0 0 5px 1px rgba(56, 58, 89, 0.9);
+}
+
+/* Contact */
+
+body.light-mode label {
+  color: var(--dracula-greypurple);
+  text-shadow: 0 4px 3px rgba(137, 87, 208, 0.4), 0 8px 13px rgba(137, 87, 208, 0.1),
+    0 18px 23px rgba(137, 87, 208, 0.1);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  color: var(--dracula-background);
+  background-color: var(--dracula-foreground);
+}
+
+body.light-mode input:focus,
+body.light-mode textarea:focus {
+  box-shadow: 0 0 2px 2px var(--dracula-green);
+}
+
+body.light-mode .form-submit {
+  background-color: var(--dracula-greypurple);
+  color: var(--dracula-foreground);
+  opacity: 0.7;
+}
+
+body.light-mode .form-submit:hover {
+  background-color: var(--dracula-greypurple);
+  color: var(--dracula-foreground);
+  opacity: 1;
+}
+
+/* Footer Divider */
+
+body.light-mode .custom-shape-divider-bottom-1619735001 .shape-fill {
+  fill: var(--dracula-green);
+}

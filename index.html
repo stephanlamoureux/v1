@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="css/about.css" />
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" />
+	<link rel="stylesheet" type="text/css" href="css/light.css" />
 	<!-- AniJS -->
 	<link rel="stylesheet" type="text/css" href="css/anicollection.css" />
 	<!-- Font Awesome 5 -->
@@ -44,6 +45,7 @@
 			<li class="desktop-link" role="none"><a class="link" href="pages/blog.html" role="menuitem">Blog</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="pages/projects.html" role="menuitem">Projects</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="pages/contact.html" role="menuitem">Contact</a></li>
+			<li><button class="mode-toggle" onclick="lightMode()"><i alt="sun icon" class="fas fa-sun fa-2x"></i></button></li>
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -67,6 +69,7 @@
 				<li class="menu-link" role="none"><a href="pages/blog.html" role="menuitem">Blog</a></li>
 				<li class="menu-link" role="none"><a href="pages/projects.html" role="menuitem">Projects</a></li>
 				<li class="menu-link" role="none"><a href="pages/contact.html" role="menuitem">Contact</a></li>
+				<li><button class="mode-toggle" onclick="lightMode()"><i alt="sun icon" class="fas fa-sun fa-2x"></i></button></li>
 			</ul>
 		</nav>
 	</header>
@@ -82,7 +85,7 @@
 			<!-- Profile Image -->
 			<div class="profile-div">
 				<a href="assets/StephanLamoureux.pdf" target="_blank" rel="noopener noreferrer" class="hire-me inline">
-					<img src="assets/images/profile/profile-pic.webp" alt="Profile picture of Stephan" class="round"
+					<img src="assets/images/profile/profile-pic.webp" alt="Profile picture of Stephan" class="profile-image"
 						data-anijs="if: mouseenter, do: pulse animated" />
 					<span class="tooltip">Hire Me!</span></a>
 			</div>
@@ -123,7 +126,7 @@
 
 				<!-- Currently Working On -->
 				<div class="paragraph">
-					<h3 class="about-header">Currently Working On</h3>
+					<h3 class="working-on-header">Currently Working On</h3>
 					<p class="about-p">
 						<i class="fal fa-code-merge p-icon"></i>
 						Here are some of the projects I am working on at the moment:
@@ -143,7 +146,7 @@
 					</li>
 					<li class="tech-used-list"><i class="fal fa-chevron-right bullet"></i><a
 						href="https://github.com/Vets-Who-Code/windows-dev-guide" target="_blank" rel="noopener referrer"
-						class="tech-used-link">Windows Dev Guide</a> - Writing more sections for my guide on Windows
+						class="tech-used-link">Windows Dev Guide</a> - Writing more sections for my developer guide on Windows
 				</li>
 						<li class="tech-used-list"><i class="fal fa-chevron-right bullet"></i><a
 								href="https://github.com/stephanlamoureux/v2" target="_blank" rel="noopener referrer"

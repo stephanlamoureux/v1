@@ -11,7 +11,7 @@
 
 ## Projects
 
-- Add modals to cards for project details (or use [dialog?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)
+- Add modals to cards for project details (or use [dialog?](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog))
 
 ## Contact
 

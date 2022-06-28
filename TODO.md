@@ -21,6 +21,7 @@
 
 - Change Icons to a slide toggle
 - Keep selected theme when changing pages
+- Close nav when clicking anywhere off of it 
 
 ## Misc
 
@@ -33,3 +34,4 @@
 - renew font awesome pro and add the cdn
 - Create components for header/footer/nav etc
 - write tests
+- fix icons clickable areas 

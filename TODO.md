@@ -3,7 +3,7 @@
 ## About
 
 - Get tooltip to work in firefox
-- Fix hover effect bug
+- Fix chevron hover effect bug
 
 ## Blog
 

@@ -35,3 +35,4 @@
 - Create components for header/footer/nav etc
 - write tests
 - fix icons clickable areas 
+- Use a different color palette entirely for light mode since Dracula doesn't have one

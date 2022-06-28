@@ -11,7 +11,7 @@
 
 ## Projects
 
-- Add modals to cards
+- Add modals to cards for project details
 
 ## Contact
 
@@ -30,7 +30,6 @@
 - rename top and bottom dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) for typed.js and anijs
 - Add landing page
-- Update about me content
 - renew font awesome pro and add the cdn
 - Create components for header/footer/nav etc
 - write tests

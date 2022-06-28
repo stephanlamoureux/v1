@@ -39,15 +39,16 @@ function lightMode() {
 
 // Hover effect for Currently Working On section
 
-// const links = document.querySelectorAll('.tech-used-link')
+const links = document.querySelectorAll('.tech-used-link')
 
-// links.forEach(link => {
-//   const bullet = link.parentElement.querySelector('.bullet')
-//   link.addEventListener('mouseover', () => {
-//     bullet.style.color = 'var(--dracula-purple)'
-//     bullet.style.transition = 'ease 0.1s'
-//   })
-//   link.addEventListener('mouseleave', () => {
-//     bullet.style.color = ''
-//   })
-// })
+links.forEach(link => {
+  const bullet = link.parentElement.querySelector('.bullet')
+  link.addEventListener('mouseover', () => {
+    bullet.style.color = 'var(--dracula-foreground)'
+    bullet.style.transition = 'ease 0.1s'
+  })
+  link.addEventListener('mouseleave', () => {
+    bullet.style.color = ''
+    bullet.style.transition = 'ease 0.1s'
+  })
+})

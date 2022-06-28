@@ -28,7 +28,7 @@
 - rename "tech-used-link" to "working-on-link"
 - rename "tech-used-list" to "working-on-list"
 - rename top and bottom dividers
-- [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) for typed.js and anijs
+- [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) and install typed.js, emailjs, and anijs
 - Add landing page
 - renew font awesome pro and add the cdn
 - Create components for header/footer/nav etc

@@ -8,6 +8,7 @@
 ## Blog
 
 - Add a loader
+- adjust media queries
 
 ## Projects
 
@@ -33,6 +34,7 @@
 - Create components for header/footer/nav etc
 - write tests
 - fix icons clickable areas
+- organize responsive.css
 
 ## Light Mode
 

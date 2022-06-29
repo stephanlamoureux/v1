@@ -20,6 +20,7 @@
 ## Nav
 
 - Change Icons to a slide toggle
+- close nav when clicking color mode icon
 - Keep selected theme when changing pages
 - Close nav when clicking anywhere off of it 
 

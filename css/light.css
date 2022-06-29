@@ -193,7 +193,17 @@ body.light-mode .form-submit:active {
   }
 }
 
-/* Footer Divider */
+/* Footer */
+
+@media (max-width: 430px) {
+  body.light-mode span > i {
+    color: var(--dracula-background);
+  }
+
+  body.light-mode .icon-links i {
+    color: var(--dracula-foreground);
+  }
+}
 
 body.light-mode .custom-shape-divider-bottom-1619735001 .shape-fill {
   fill: var(--dracula-green);

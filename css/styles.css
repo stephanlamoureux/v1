@@ -369,19 +369,9 @@ span > i {
   color: var(--dracula-orange);
 }
 
-.icon-links .purple:hover,
-.icon-links:focus .purple {
-  color: var(--dracula-purple);
-}
-
 .icon-links .yellow:hover,
 .icon-links:focus .yellow {
   color: var(--dracula-yellow);
-}
-
-.icon-links .cyan:hover,
-.icon-links:focus .cyan {
-  color: var(--dracula-cyan);
 }
 
 .icon-links .green:hover,
@@ -389,12 +379,22 @@ span > i {
   color: var(--dracula-green);
 }
 
+.icon-links .cyan:hover,
+.icon-links:focus .cyan {
+  color: var(--dracula-cyan);
+}
+
+.icon-links .purple:hover,
+.icon-links:focus .purple {
+  color: var(--dracula-purple);
+}
+
 .red,
 .orange,
-.purple,
 .yellow,
+.green,
 .cyan,
-.green {
+.purple {
   transition: 0.4s ease color;
 }
 

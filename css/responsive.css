@@ -129,6 +129,13 @@
     width: 85%;
   }
 
+  .about,
+  .blog,
+  .projects,
+  .contact {
+    margin-top: 4rem;
+  }
+
   .header-title {
     font-size: 3.5rem;
   }
@@ -136,6 +143,16 @@
   .center-header {
     margin-right: 5px;
   }
+
+  .section-subheader {
+    margin-top: 5rem;
+  }
+
+  .marg-bottom {
+    margin-bottom: 3rem;
+  }
+
+  /* Nav */
 
   .nav-desktop {
     display: none;
@@ -161,8 +178,6 @@
 
   .navbar {
     background: var(--dracula-background);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
     color: var(--dracula-foreground);
     display: initial;
@@ -193,7 +208,6 @@
   }
 
   .menu-link a {
-    border-bottom: 2px solid var(--dracula-purple);
     color: var(--dracula-foreground);
     font-size: 1.4rem;
     padding-bottom: 8px;
@@ -201,6 +215,15 @@
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    background-repeat: repeat-x;
+    background-position: left 0% bottom -5%;
+    background-image: linear-gradient(
+      90deg,
+      rgba(139, 233, 253, 1) 0%,
+      rgba(189, 147, 249, 1) 50%,
+      rgba(80, 250, 123, 1) 100%
+    );
+    background-size: 100% 12%;
   }
 
   .menu-link a:hover {
@@ -214,19 +237,10 @@
     padding: 0;
   }
 
+  /* About */
+
   .tech-used-list .bullet {
     display: none;
-  }
-
-  .about,
-  .blog,
-  .projects,
-  .contact {
-    margin-top: 4rem;
-  }
-
-  .section-subheader {
-    margin-top: 5rem;
   }
 
   .profile-image {
@@ -245,9 +259,7 @@
     width: 120px;
   }
 
-  .marg-bottom {
-    margin-bottom: 3rem;
-  }
+  /* Projects */
 
   .projects-container {
     width: 85%;
@@ -326,6 +338,8 @@
     width: 100%;
     padding: 2rem 1rem;
   }
+
+  /* Contact */
 
   .contact-p {
     text-align: center;
@@ -436,8 +450,20 @@
 }
 
 @media (max-width: 715px) {
-  .profile-div {
-    text-align: center;
+  .header-title {
+    font-size: 2.1rem;
+  }
+
+  .header-sub {
+    font-size: 0.8rem;
+  }
+
+  .center-header {
+    margin-right: 0;
+  }
+
+  .section-header {
+    font-size: 1.9rem;
   }
 
   .about-container {
@@ -451,42 +477,12 @@
     shape-outside: none;
   }
 
+  .profile-div {
+    text-align: center;
+  }
+
   .tooltip {
     display: none;
-  }
-
-  .header-title {
-    font-size: 2.1rem;
-  }
-
-  .header-sub {
-    font-size: 0.8rem;
-  }
-
-  .menu {
-    height: 25px;
-    margin-left: 40px;
-    margin-top: -18px;
-    width: 25px;
-  }
-
-  .center-header {
-    margin-right: 0;
-  }
-
-  .section-header {
-    font-size: 1.9rem;
-  }
-
-  .project-name0,
-  .project-name1,
-  .project-name2,
-  .project-name3,
-  .project-name4,
-  .project-name5 {
-    font-size: 1.1rem;
-    padding: 0.5rem 0;
-    transition: none;
   }
 
   .about-p {
@@ -507,12 +503,34 @@
     display: none;
   }
 
-  .icons-flex a i {
-    padding: 0 10px;
-  }
-
   .tech-used {
     text-align: left;
+  }
+
+  .menu {
+    height: 25px;
+    margin-left: 40px;
+    margin-top: -18px;
+    width: 25px;
+  }
+
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    transition: none;
+  }
+
+  .devArticle {
+    width: 90%;
+  }
+
+  .icons-flex a i {
+    padding: 0 10px;
   }
 }
 
@@ -717,10 +735,6 @@
 }
 
 @media (max-width: 430px) {
-  .icons-flex > span {
-    font-size: 2rem;
-    margin: 10px 20px;
-  }
   .about,
   .blog,
   .projects,
@@ -731,6 +745,19 @@
   .paragraph h3 {
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
+  }
+
+  .icons-flex > span {
+    font-size: 2rem;
+    margin: 10px 20px;
+  }
+
+  span > i {
+    color: rgb(219, 219, 215);
+  }
+
+  .icon-links i {
+    color: var(--dracula-background);
   }
 }
 

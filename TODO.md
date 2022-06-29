@@ -36,6 +36,6 @@
 
 ## Light Mode
 
-- Change mouse cursor
+- Change mouse cursor (just use default)
 - close nav when clicking color mode icon
 - Keep selected theme when changing pages

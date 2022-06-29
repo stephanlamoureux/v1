@@ -29,10 +29,10 @@
 - rename top and bottom dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) and install typed.js, emailjs, and anijs
 - Add landing page
-- renew font awesome pro and add the cdn
+- renew font awesome pro and add the cdn?
 - Create components for header/footer/nav etc
 - write tests
-- fix icons clickable areas 
+- fix icons clickable areas
 
 ## Light Mode
 

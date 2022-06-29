@@ -37,6 +37,5 @@
 ## Light Mode
 
 - Change mouse cursor
-- Use a different color palette entirely for light mode since Dracula doesn't have one
 - close nav when clicking color mode icon
 - Keep selected theme when changing pages

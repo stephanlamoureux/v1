@@ -33,16 +33,16 @@ body.light-mode .hire-me .tooltip {
 }
 
 body.light-mode .about-p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .p-icon {
   color: var(--dracula-green);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .vwc {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   background-repeat: repeat-x;
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
@@ -72,12 +72,12 @@ body.light-mode .tech-used-link {
 }
 
 body.light-mode .tech-used-list {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .bullet {
   color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1100px) {
@@ -99,7 +99,7 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
   color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .project-image {
@@ -116,7 +116,7 @@ body.light-mode .project-image {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   body.light-mode .project-image {
@@ -138,7 +138,7 @@ body.light-mode .project-image {
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
     opacity: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     background-repeat: initial;
     background-position: initial;
     background-image: none;

@@ -19,10 +19,7 @@
 
 ## Nav
 
-- Change Icons to a slide toggle
-- close nav when clicking color mode icon
-- Keep selected theme when changing pages
-- Close nav when clicking anywhere off of it 
+- Change color mode icons into a slide toggle
 
 ## Misc
 
@@ -36,4 +33,10 @@
 - Create components for header/footer/nav etc
 - write tests
 - fix icons clickable areas 
+
+## Light Mode
+
+- Change mouse cursor
 - Use a different color palette entirely for light mode since Dracula doesn't have one
+- close nav when clicking color mode icon
+- Keep selected theme when changing pages

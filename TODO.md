@@ -9,6 +9,7 @@
 
 - Add a loader
 - adjust media queries
+- replace author with date
 
 ## Projects
 
@@ -38,6 +39,5 @@
 
 ## Light Mode
 
-- Change mouse cursor (just use default)
 - close nav when clicking color mode icon
 - Keep selected theme when changing pages

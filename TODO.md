@@ -2,9 +2,6 @@
 
 ## About
 
-- Get tooltip to work in firefox
-- Fix chevron hover effect bug
-
 ## Blog
 
 - Add a loader
@@ -25,6 +22,8 @@
 
 - Close mobile nav when clicking outside of it
 - Change color mode icons into a slide toggle
+- Transition animation on menu icon
+- Make mobile nav a little smaller on phones
 
 ## Misc
 
@@ -35,10 +34,17 @@
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) and install typed.js, emailjs, and anijs
 - Add landing page
 - renew font awesome pro and add the cdn?
-- Create components for header/footer/nav etc
+- Create web components for header/footer/nav etc
 - write tests
-- fix icons clickable areas
 - organize responsive.css
+
+# Bugfixes
+
+- Fix heartbeat icon on landscape phone
+- Increaes height for landscape phone
+- Increase icons clickable areas
+- Get tooltip to work in firefox
+- Fix chevron hover effect bug
 
 ## Light Mode
 

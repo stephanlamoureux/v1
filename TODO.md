@@ -35,7 +35,7 @@
 - Add landing page
 - renew font awesome pro and add the cdn?
 - Create web components for header/footer/nav etc
-- write tests
+- write tests [jest](https://jestjs.io/)
 - organize responsive.css
 
 # Bugfixes

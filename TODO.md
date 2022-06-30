@@ -10,6 +10,7 @@
 - Add a loader
 - adjust media queries
 - replace author with date
+- Add pagination
 
 ## Projects
 

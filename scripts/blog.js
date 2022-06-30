@@ -1,6 +1,7 @@
 const api_url = 'https://dev.to/api/articles?username=stephanlamoureux'
 
 async function getArticle() {
+  // Data for the first article
   const response = await fetch(api_url)
   const data = await response.json()
   const title = data[0].title
@@ -12,13 +13,13 @@ async function getArticle() {
 
   document.getElementById('article_title').textContent = title
   document.getElementById('article_link').href = link
-  document.getElementById('tags').textContent = tag.map(i => '#' + i)
+  document.getElementById('tags').textContent = tag.map(i => '#' + i).join(', ')
   document.getElementById('username').textContent = '@' + name
   // document.getElementById('profile_image').src = profilePic
 
   //For multiple articles that you want to display
   function displayMultipleArticles() {
-    for (let i = 1; i < 9; i++) {
+    for (let i = 1; i < data.length; i++) {
       let element = document.createElement('div') //container
       element.className = 'devArticle'
 
@@ -31,8 +32,8 @@ async function getArticle() {
       theTitle.id = 'article_title'
       theTitle.textContent = data[i].title
 
-      let infoArt = document.createElement('div') //info container
-      infoArt.className = 'article-info'
+      let articleInfo = document.createElement('div') //info container
+      articleInfo.className = 'article-info'
 
       // let emptyProfileDiv = document.createElement('div') //pfp container
       // let theProfileImage = document.createElement('img') //pfp
@@ -42,10 +43,10 @@ async function getArticle() {
 
       let emptyDiv = document.createElement('div') //tags container
 
-      let tagsInArt = document.createElement('p') //tag
-      tagsInArt.id = 'tags'
+      let tagsInArticle = document.createElement('p') //tag
+      tagsInArticle.id = 'tags'
       let realTags = data[i].tag_list
-      tagsInArt.textContent = realTags.map(i => '#' + i)
+      tagsInArticle.textContent = realTags.map(i => '#' + i).join(', ')
 
       let yourUsername = document.createElement('p') //username
       yourUsername.id = 'username'
@@ -53,11 +54,11 @@ async function getArticle() {
 
       element.appendChild(articleLink)
       articleLink.appendChild(theTitle)
-      articleLink.appendChild(infoArt)
-      // infoArt.appendChild(emptyProfileDiv)
+      articleLink.appendChild(articleInfo)
+      // articleInfo.appendChild(emptyProfileDiv)
       // emptyProfileDiv.appendChild(theProfileImage)
-      infoArt.appendChild(emptyDiv)
-      emptyDiv.appendChild(tagsInArt)
+      articleInfo.appendChild(emptyDiv)
+      emptyDiv.appendChild(tagsInArticle)
       emptyDiv.appendChild(yourUsername)
       document.getElementById('blog_container').appendChild(element)
     }

@@ -37,12 +37,13 @@ var typed = new Typed('#typed', {
 const button = document.querySelector('.mode-toggle')
 
 button.addEventListener('click', function () {
-  localStorage.setItem('light-mode', this.click)
-  if (this.click) {
+  localStorage.setItem('light-mode', true)
+  if (localStorage.getItem('light-mode')) {
     document.body.classList.toggle('light-mode')
     document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
   } else {
     document.body.classList.remove('light-mode')
+    localStorage.setItem('light-mode', false)
   }
 })
 

@@ -11,6 +11,7 @@
 - adjust media queries
 - replace author with date
 - Add pagination
+- Add error handling
 
 ## Projects
 

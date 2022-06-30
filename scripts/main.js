@@ -32,12 +32,57 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
-function lightMode() {
-  document.body.classList.toggle('light-mode')
-  document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
+// Light Mode
+
+const button = document.querySelector('.mode-toggle')
+
+button.addEventListener('click', function () {
+  localStorage.setItem('light-mode', this.click)
+  if (this.click) {
+    document.body.classList.toggle('light-mode')
+    document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.toggle('fa-moon'))
+  } else {
+    document.body.classList.remove('light-mode')
+  }
+})
+
+function checkLightMode() {
+  if (localStorage.getItem('light-mode')) {
+    body.classList.add('light-mode')
+  }
 }
 
-// Hover effect for Currently Working On section
+// const theme = window.localStorage.currentTheme
+// const button = document.querySelector('.mode-toggle')
+// const themeIcon = document.querySelector('mode-icon')
+// const body = document.body
+
+// body.addClass(theme)
+
+// if (body.hasClass('light-mode')) {
+//   themeIcon.addClass('fa-moon')
+//   themeIcon.removeClass('fa-sun')
+// } else {
+//   themeIcon.removeClass('fa-moon')
+//   themeIcon.addClass('fa-sun')
+// }
+
+// themeIcon.click(function () {
+//   themeIcon.toggleClass('fa-moon')
+//   themeIcon.toggleClass('fa-sun')
+
+//   if (body.hasClass('light-mode')) {
+//     body.toggleClass('light-mode')
+//     localStorage.removeItem('currentTheme')
+//     localStorage.currentTheme = 'dark-mode'
+//   } else {
+//     body.toggleClass('light-mode')
+//     localStorage.removeItem('currentTheme')
+//     localStorage.currentTheme = 'light-mode'
+//   }
+// })
+
+// Hover effect for Currently Working On section list items
 
 const links = document.querySelectorAll('.tech-used-link')
 

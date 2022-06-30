@@ -28,9 +28,9 @@ async function getArticle() {
       articleLink.target = '_blank'
       articleLink.href = data[i].url
 
-      let theTitle = document.createElement('h1') //title
-      theTitle.id = 'article_title'
-      theTitle.textContent = data[i].title
+      let articleTitle = document.createElement('h1') //title
+      articleTitle.id = 'article_title'
+      articleTitle.textContent = data[i].title
 
       let articleInfo = document.createElement('div') //info container
       articleInfo.className = 'article-info'
@@ -53,7 +53,7 @@ async function getArticle() {
       yourUsername.textContent = '@' + data[i].user.username
 
       element.appendChild(articleLink)
-      articleLink.appendChild(theTitle)
+      articleLink.appendChild(articleTitle)
       articleLink.appendChild(articleInfo)
       // articleInfo.appendChild(emptyProfileDiv)
       // emptyProfileDiv.appendChild(theProfileImage)
@@ -63,7 +63,6 @@ async function getArticle() {
       document.getElementById('blog_container').appendChild(element)
     }
   }
-
   displayMultipleArticles()
 }
 getArticle()

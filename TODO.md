@@ -23,6 +23,7 @@
 
 ## Nav
 
+- Close mobile nav when clicking outside of it
 - Change color mode icons into a slide toggle
 
 ## Misc
@@ -41,5 +42,4 @@
 
 ## Light Mode
 
-- close nav when clicking color mode icon
 - Keep selected theme when changing pages

@@ -36,6 +36,7 @@
 - renew font awesome pro and add the cdn?
 - Create web components for header/footer/nav etc
 - write tests [jest](https://jestjs.io/)
+- Use a bundler [parcel](https://github.com/parcel-bundler/parcel#readme) / [esbuild](https://github.com/evanw/esbuild#readme) / [webpack](https://github.com/webpack/webpack)
 
 ## Bugfixes
 

@@ -57,7 +57,7 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
-// Hover effect for Currently Working On section list items
+// Hover effect for Currently Working On section chevrons
 
 const links = document.querySelectorAll('.tech-used-link')
 

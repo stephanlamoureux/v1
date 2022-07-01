@@ -41,7 +41,7 @@
 ## Bugfixes
 
 - Fix heartbeat icon on landscape phone
-- Increaes height for landscape phone
+- Increase nav height for landscape phone
 - Increase icons clickable areas
 - Get tooltip to work in firefox
 - Fix chevron hover effect bug

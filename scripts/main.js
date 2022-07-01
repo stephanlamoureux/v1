@@ -1,4 +1,4 @@
-// Hamburger Menu
+// Mobile Nav
 
 const navbar = document.querySelector('.navbar')
 const menu = document.querySelector('.menu')

@@ -38,14 +38,10 @@
 - write tests [jest](https://jestjs.io/)
 - organize responsive.css
 
-# Bugfixes
+## Bugfixes
 
 - Fix heartbeat icon on landscape phone
 - Increaes height for landscape phone
 - Increase icons clickable areas
 - Get tooltip to work in firefox
 - Fix chevron hover effect bug
-
-## Light Mode
-
-- Keep selected theme when changing pages

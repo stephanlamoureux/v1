@@ -194,13 +194,11 @@ a {
 
 .fa-sun {
   color: var(--dracula-foreground);
-  transition: all 0.3s;
   filter: drop-shadow(5px 5px 5px var(--dracula-background));
 }
 
 .fa-moon {
   color: rgb(209, 176, 255);
-  transition: all 0.3s;
   filter: drop-shadow(5px 5px 5px var(--dracula-background));
 }
 

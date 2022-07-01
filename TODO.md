@@ -22,8 +22,8 @@
 
 - Close mobile nav when clicking outside of it
 - Change color mode icons into a slide toggle
-- Transition animation on menu icon
-- Make mobile nav a little smaller on phones
+- Add transition animation on menu icon
+- Make mobile nav a little smaller on phones?
 
 ## Misc
 
@@ -36,7 +36,6 @@
 - renew font awesome pro and add the cdn?
 - Create web components for header/footer/nav etc
 - write tests [jest](https://jestjs.io/)
-- organize responsive.css
 
 ## Bugfixes
 

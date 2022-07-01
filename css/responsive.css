@@ -1,5 +1,7 @@
 /* || Media Queries */
 
+/* || Desktop & Laptop */
+
 @media (min-width: 2400px) {
   .contact-p {
     text-align: center;
@@ -119,10 +121,14 @@
   }
 }
 
+/* || Mobile */
+
 @media (max-width: 1100px) {
   header {
     padding-top: 2rem;
   }
+
+  /* General */
 
   .about,
   .contact {
@@ -450,6 +456,8 @@
 }
 
 @media (max-width: 716px) {
+  /* General */
+
   .header-title {
     font-size: 2.1rem;
   }
@@ -465,6 +473,8 @@
   .section-header {
     font-size: 1.9rem;
   }
+
+  /* About */
 
   .about-container {
     box-shadow: none;
@@ -514,6 +524,8 @@
     width: 25px;
   }
 
+  /* Projects */
+
   .project-name0,
   .project-name1,
   .project-name2,
@@ -525,9 +537,13 @@
     transition: none;
   }
 
+  /* Blog */
+
   .devArticle {
     width: 90%;
   }
+
+  /* Footer */
 
   .icons-flex a i {
     padding: 0 10px;
@@ -618,6 +634,8 @@
 }
 
 @media (max-width: 510px) {
+  /* General */
+
   .hidden {
     display: none;
   }
@@ -645,6 +663,8 @@
     width: 195px;
   }
 
+  /* About */
+
   .profile-image {
     max-width: 70%;
   }
@@ -664,6 +684,8 @@
   .tech-used-list {
     margin-left: 0;
   }
+
+  /* Footer */
 
   .icons-flex > span {
     font-size: 1.8rem;

@@ -202,10 +202,6 @@ a {
   filter: drop-shadow(5px 5px 5px var(--dracula-background));
 }
 
-.mode-toggle:hover i {
-  filter: drop-shadow(0px 0px 0px var(--dracula-background));
-}
-
 /* || Header */
 
 header {

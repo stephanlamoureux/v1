@@ -60,7 +60,7 @@ textarea:focus {
 }
 
 .form-submit {
-  background-color: var(--dracula-pink);
+  background-color: var(--dracula-purple);
   border-radius: 5px;
   color: white;
   cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
@@ -71,12 +71,12 @@ textarea:focus {
   text-align: center;
   transition: ease 0.1s all;
   width: 100%;
-  box-shadow: 0 5px 0 rgb(252, 80, 177);
+  box-shadow: 0 5px 0 rgb(168, 110, 248);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .form-submit:focus {
-  box-shadow: 0 5px 0 rgb(248, 30, 154);
+  box-shadow: 0 5px 0 rgb(109, 55, 184);
   transition: ease 0.1s all;
 }
 

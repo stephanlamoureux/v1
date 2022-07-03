@@ -23,7 +23,6 @@
 ## Nav
 
 - Close mobile nav when clicking outside of it
-- Add transition animation on menu icon
 
 ## Misc
 
@@ -34,8 +33,6 @@
 
 ## Bugfixes
 
-- Fix heartbeat icon on landscape phone
-- Increase nav height for landscape phone
 - Increase icons clickable areas
 - Get tooltip to work in firefox - use [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
 

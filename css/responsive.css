@@ -204,10 +204,12 @@
     margin-top: -27px;
     width: 36px;
     z-index: 1000;
+    transition: ease all 0.2s;
   }
 
   .showClose {
     background-image: url('../assets/images/icons/close.svg');
+    transition: ease all 0.2s;
   }
 
   .navbar {
@@ -437,12 +439,6 @@
 
   .projects-container {
     width: 100%;
-  }
-}
-
-@media screen and (orientation: landscape) and (max-device-width: 500px) {
-  .heart {
-    right: 255px;
   }
 }
 
@@ -732,6 +728,16 @@
 
   footer p {
     padding: 0 20px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-width: 500px) {
+  .navbar {
+    height: 90vh;
+  }
+
+  .heart {
+    right: 255px;
   }
 }
 

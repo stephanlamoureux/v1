@@ -85,9 +85,3 @@ textarea:focus {
   transform: translateY(5px);
   transition: ease 0.1s all;
 }
-
-/* @-moz-document url-prefix() {
-  .form-submit {
-    cursor: pointer;
-  }
-} */

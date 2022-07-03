@@ -172,7 +172,7 @@
   shape-outside: circle();
 }
 
-.tech-used {
+.working-on {
   list-style-type: none;
   font-size: 1.2rem;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
@@ -180,17 +180,17 @@
   padding-bottom: 20px;
 }
 
-.tech-used-list::selection {
+.working-on-list::selection {
   background-color: var(--dracula-green);
   color: var(--dracula-background);
 }
 
-.tech-used-list {
+.working-on-list {
   margin-left: 15px;
   line-height: 1.5;
 }
 
-.tech-used-list:not(:last-child) {
+.working-on-list:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -217,7 +217,7 @@
   background-color: var(--dracula-green);
 }
 
-.tech-used-link {
+.working-on-link {
   color: var(--dracula-pink);
   background-repeat: repeat-x;
   background-position: left 0% bottom -5%;
@@ -231,7 +231,7 @@
   padding-bottom: 5px;
 }
 
-.tech-used-link::selection {
+.working-on-link::selection {
   background-color: var(--dracula-green);
   color: var(--dracula-background);
 }

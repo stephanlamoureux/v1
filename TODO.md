@@ -27,9 +27,6 @@
 
 ## Misc
 
-- rename "tech-used" to "working-on"
-- rename "tech-used-link" to "working-on-link"
-- rename "tech-used-list" to "working-on-list"
 - rename top and bottom dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) and install typed.js, emailjs, and anijs
 - Create web components for header/footer/nav etc
@@ -42,7 +39,6 @@
 - Increase nav height for landscape phone
 - Increase icons clickable areas
 - Get tooltip to work in firefox
-- Fix chevron hover effect bug
 
 ## Maybe's
 

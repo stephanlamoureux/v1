@@ -1,6 +1,7 @@
 // Light Mode
 
 const buttons = document.querySelectorAll('.mode-toggle')
+const links = document.querySelectorAll('.working-on-link')
 
 buttons.forEach(button => {
   button.addEventListener('click', function () {
@@ -12,8 +13,10 @@ buttons.forEach(button => {
 
     if (document.body.classList.contains('light-mode')) {
       localStorage.setItem('lightMode', 'enabled')
+      hoverLightChevron()
     } else {
       localStorage.setItem('lightMode', 'disabled')
+      hoverDarkChevron()
     }
   })
 })
@@ -21,6 +24,9 @@ buttons.forEach(button => {
 if (localStorage.getItem('lightMode') === 'enabled') {
   document.body.classList.add('light-mode')
   document.querySelectorAll('.fa-sun').forEach(icon => icon.classList.add('fa-moon'))
+  hoverLightChevron()
+} else {
+  hoverDarkChevron()
 }
 
 // Mobile Nav
@@ -57,18 +63,32 @@ var typed = new Typed('#typed', {
   backSpeed: 50,
 })
 
-// Hover effect for Currently Working On section chevrons
-
-const links = document.querySelectorAll('.tech-used-link')
-
-links.forEach(link => {
-  const bullet = link.parentElement.querySelector('.bullet')
-  link.addEventListener('mouseover', () => {
-    bullet.style.color = 'var(--dracula-foreground)'
-    bullet.style.transition = 'ease 0.1s'
+function hoverLightChevron() {
+  // Hover effect on currently-working-on chevrons (light mode)
+  links.forEach(link => {
+    const bullet = link.parentElement.querySelector('.bullet')
+    link.addEventListener('mouseover', () => {
+      bullet.style.color = 'white'
+      bullet.style.transition = 'ease 0.1s'
+    })
+    link.addEventListener('mouseleave', () => {
+      bullet.style.color = ''
+      bullet.style.transition = 'ease 0.1s'
+    })
   })
-  link.addEventListener('mouseleave', () => {
-    bullet.style.color = ''
-    bullet.style.transition = 'ease 0.1s'
+}
+
+function hoverDarkChevron() {
+  // Hover effect on currently-working-on chevrons (dark mode)
+  links.forEach(link => {
+    const bullet = link.parentElement.querySelector('.bullet')
+    link.addEventListener('mouseover', () => {
+      bullet.style.color = 'var(--dracula-pink)'
+      bullet.style.transition = 'ease 0.1s'
+    })
+    link.addEventListener('mouseleave', () => {
+      bullet.style.color = ''
+      bullet.style.transition = 'ease 0.1s'
+    })
   })
-})
+}

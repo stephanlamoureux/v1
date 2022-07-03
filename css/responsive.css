@@ -245,7 +245,7 @@
 
   /* About */
 
-  .tech-used-list .bullet {
+  .working-on-list .bullet {
     display: none;
   }
 
@@ -513,7 +513,7 @@
     display: none;
   }
 
-  .tech-used {
+  .working-on {
     text-align: left;
   }
 
@@ -681,7 +681,7 @@
     padding-right: 0;
   }
 
-  .tech-used-list {
+  .working-on-list {
     margin-left: 0;
   }
 

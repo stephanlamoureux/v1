@@ -20,6 +20,7 @@
 }
 
 .hire-me .tooltip {
+  /* tooltip main shape */
   background-image: linear-gradient(
     45deg,
     var(--dracula-purple),
@@ -44,7 +45,15 @@
   z-index: 1;
 }
 
+/* @-moz-document url-prefix() {
+  .hire-me .tooltip {
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+} */
+
 .hire-me .tooltip::after {
+  /* styling to create the tooltip arrow */
   border-color: var(--dracula-cyan) var(--dracula-cyan) transparent transparent;
   border-style: solid;
   border-width: 6px;
@@ -59,12 +68,6 @@
   opacity: 1;
   transition: opacity 0.4s ease-in;
   visibility: visible;
-}
-
-@-moz-document url-prefix() {
-  .hire-me:hover .tooltip {
-    margin-bottom: 0;
-  }
 }
 
 @-moz-document url-prefix() {

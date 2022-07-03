@@ -37,10 +37,9 @@
 - Fix heartbeat icon on landscape phone
 - Increase nav height for landscape phone
 - Increase icons clickable areas
-- Get tooltip to work in firefox
+- Get tooltip to work in firefox - use [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
 
 ## Maybe's
 
 - renew font awesome pro and add the cdn?
-- Make mobile nav a little smaller on phones?
 - Change color mode icons into a slide toggle?

@@ -27,7 +27,6 @@
 
 ## Misc
 
-- rename top and bottom dividers
 - [npm init](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/) and install typed.js, emailjs, and anijs
 - Create web components for header/footer/nav etc
 - write tests [jest](https://jestjs.io/)

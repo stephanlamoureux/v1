@@ -80,7 +80,7 @@ a {
   z-index: -1;
 }
 
-.custom-shape-divider-top-1619733049 {
+.top-divider {
   left: 0;
   line-height: 0;
   overflow: hidden;
@@ -89,20 +89,20 @@ a {
   width: 100%;
 }
 
-.custom-shape-divider-top-1619733049 svg {
+.top-divider svg {
   display: block;
   height: 550px;
   position: relative;
   width: calc(300% + 1.3px);
 }
 
-.custom-shape-divider-top-1619733049 .shape-fill {
+.top-divider .shape-fill {
   fill: var(--dracula-greypurple);
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-top-1619733049 svg {
+  .top-divider svg {
     width: calc(135% + 1.3px);
     height: 500px;
   }
@@ -455,7 +455,7 @@ span > i {
   z-index: -1;
 }
 
-.custom-shape-divider-bottom-1619735001 {
+.bottom-divider {
   bottom: 0;
   left: 0;
   line-height: 0;
@@ -465,20 +465,20 @@ span > i {
   width: 100%;
 }
 
-.custom-shape-divider-bottom-1619735001 svg {
+.bottom-divider svg {
   display: block;
   height: 500px;
   position: relative;
   width: calc(156% + 1.3px);
 }
 
-.custom-shape-divider-bottom-1619735001 .shape-fill {
+.bottom-divider .shape-fill {
   fill: #ff79c6;
 }
 
 /** For tablet devices **/
 @media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-bottom-1619735001 svg {
+  .bottom-divider svg {
     width: calc(135% + 1.3px);
     height: 500px;
   }

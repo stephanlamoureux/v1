@@ -3,6 +3,7 @@
 body.light-mode {
   background-color: rgb(173, 116, 255);
   color: black;
+  cursor: url('../assets/images/icons/cursor-white.png'), auto;
 }
 
 /* Header */
@@ -205,6 +206,6 @@ body.light-mode .form-submit:active {
   }
 }
 
-body.light-mode .custom-shape-divider-bottom-1619735001 .shape-fill {
+body.light-mode .bottom-divider .shape-fill {
   fill: var(--dracula-green);
 }

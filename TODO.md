@@ -2,15 +2,15 @@
 
 ## About
 
-- Create a landing page section above the about me
+- Create a landing page above About Me section
 
 ## Blog
 
+- Add error handling (try/catch)
+- Adjust media queries
+- Replace author with date
 - Add a loader
-- adjust media queries
-- replace author with date
 - Add pagination
-- Add error handling
 
 ## Projects
 
@@ -30,13 +30,13 @@
 - Create web components for header/footer/nav etc
 - write tests [jest](https://jestjs.io/)
 - Use a bundler [parcel](https://github.com/parcel-bundler/parcel#readme) / [esbuild](https://github.com/evanw/esbuild#readme) / [webpack](https://github.com/webpack/webpack)
+- Replace tooltip with a library [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
 
 ## Bugfixes
 
 - Increase icons clickable areas
-- Get tooltip to work in firefox - use [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
 
 ## Maybe's
 
-- renew font awesome pro and add the cdn?
+- Renew font awesome pro and add the cdn?
 - Change color mode icons into a slide toggle?

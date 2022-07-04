@@ -8,9 +8,9 @@
 
 - Add error handling (try/catch)
 - Adjust media queries
-- Replace author with date
+- Replace author with date posted
 - Add a loader
-- Add pagination
+- Add pagination [toastui](https://ui.toast.com/tui-pagination)
 
 ## Projects
 

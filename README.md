@@ -12,6 +12,7 @@
 		For v1 of my portfolio, I focused on the foundations by using semantic HTML, responsive CSS && vanilla JavaScript along with the following resources:
 		</p>
 			<ul>
+				<li><a href="https://parceljs.org/">Parcel</a> - Build tool</li>
 				<li><a href="https://anijs.github.io/">AniJS</a> - Animation library</li>
 				<li><a href="https://www.emailjs.com/">EmailJS</a> - Email service</li>
 				<li><a href="https://mattboldt.com/demos/typed-js/">TypedJS</a> - Typing animation library</li>

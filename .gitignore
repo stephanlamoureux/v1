@@ -2,3 +2,4 @@
 debug.log
 .vscode/
 node_modules/
+.parcel-cache/

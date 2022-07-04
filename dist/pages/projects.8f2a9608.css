@@ -1,0 +1,96 @@
+.projects {
+  width: 90%;
+  margin: 5rem auto 18rem;
+  overflow: hidden;
+}
+
+.projects-p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.projects-grid {
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.projects-cell {
+  width: 45%;
+  padding: 2rem;
+}
+
+.project-image {
+  max-width: 100%;
+  opacity: .5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #f8f8f2cc;
+}
+
+.project-tile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.project-tile:hover .project-image {
+  opacity: 1;
+  transition: all .3s;
+  box-shadow: 0 0 5px 1px #f8f8f2cc;
+}
+
+.shrink {
+  transition: all .3s;
+}
+
+.shrink:hover {
+  transition: all .3s;
+  transform: scale(.9);
+}
+
+.project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
+  color: #0000;
+  max-width: 1000px;
+  text-align: center;
+  background-color: #0000;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  transition: all .2s;
+}
+
+.project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
+  color: var(--dracula-foreground);
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  transition: all .3s;
+  transform: translateY(-12px);
+}
+
+.project-name0:after {
+  content: "Job Search App";
+}
+
+.project-name1:after {
+  content: "Personal Blog";
+}
+
+.project-name2:after {
+  content: "Windows Dev Guide";
+}
+
+.project-name3:after {
+  content: "JavaScript Calculator";
+}
+
+.project-name4:after {
+  content: "Random Dog Generator";
+}
+
+.project-name5:after {
+  content: "Responsive Design Certification";
+}
+
+/*# sourceMappingURL=projects.8f2a9608.css.map */

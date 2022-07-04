@@ -26,10 +26,10 @@
 
 ## Misc
 
-- Install typed.js, emailjs, and anijs with npm
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc
 - Write tests with [jest](https://jestjs.io/)
 - Replace tooltip with a library - [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
+- Replace anijs with a new animation library
 
 ## Bugfixes
 

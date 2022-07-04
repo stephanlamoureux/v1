@@ -1,5 +1,4 @@
-// EmailJS
-
+import emailjs from '@emailjs/browser'
 ;(function () {
   // https://dashboard.emailjs.com/admin/integration
   emailjs.init('user_hYeCfF0DkAoQPn3bOS7WR')
@@ -16,7 +15,7 @@ window.onload = function () {
       function () {
         const submitButton = (document.getElementById('submit').value = 'Success!')
         const successButton = (document.getElementById('submit').style.cssText =
-          'background:var(--dracula-green); color: var(--dracula-background)')
+          'background: var(--dracula-green); color: var(--dracula-background); text-shadow: none;')
         console.log('SUCCESS!')
         setTimeout(function () {
           document.forms['contact-form'].reset()

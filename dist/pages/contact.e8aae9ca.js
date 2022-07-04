@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"foMn7":[function(require,module,exports) {
+})({"ee7lP":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "c26ef22bf71e6048";
+module.bundle.HMR_BUNDLE_ID = "279927d3e8aae9ca";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,72 +531,40 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8VGZO":[function(require,module,exports) {
-// Light Mode
-const buttons = document.querySelectorAll(".mode-toggle");
-const links = document.querySelectorAll(".working-on-link");
-buttons.forEach((button)=>{
-    button.addEventListener("click", function() {
-        document.body.classList.toggle("light-mode");
-        document.querySelectorAll(".fa-sun").forEach((icon)=>{
-            icon.classList.toggle("fa-moon");
-            icon.style.transition = "ease-in all 0.1s";
-        });
-        if (document.body.classList.contains("light-mode")) {
-            localStorage.setItem("lightMode", "enabled");
-            hoverLightChevron();
-        } else {
-            localStorage.setItem("lightMode", "disabled");
-            hoverDarkChevron();
-        }
-    });
-});
-if (localStorage.getItem("lightMode") === "enabled") {
-    document.body.classList.add("light-mode");
-    document.querySelectorAll(".fa-sun").forEach((icon)=>icon.classList.add("fa-moon"));
-    hoverLightChevron();
-} else hoverDarkChevron();
-// Mobile Nav
-const navbar = document.querySelector(".navbar");
-const menu = document.querySelector(".menu");
-menu.addEventListener("click", toggleMenu);
-function toggleMenu() {
-    navbar.classList.toggle("showNav");
-    menu.classList.toggle("showClose");
-}
-const menuLinks = document.querySelectorAll(".menu-link");
-menuLinks.forEach(function(menuLink) {
-    menuLink.addEventListener("click", toggleMenu);
-});
-function hoverLightChevron() {
-    // Hover effect on currently-working-on chevrons (light mode)
-    links.forEach((link)=>{
-        const bullet = link.parentElement.querySelector(".bullet");
-        link.addEventListener("mouseover", ()=>{
-            bullet.style.color = "white";
-            bullet.style.transition = "ease 0.1s";
-        });
-        link.addEventListener("mouseleave", ()=>{
-            bullet.style.color = "";
-            bullet.style.transition = "ease 0.1s";
+},{}],"6yNxf":[function(require,module,exports) {
+(function() {
+    // https://dashboard.emailjs.com/admin/integration
+    emailjs.init("user_hYeCfF0DkAoQPn3bOS7WR");
+})();
+window.onload = function() {
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const sendingButton = document.getElementById("submit").value = "Sending...";
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm("contact_service", "contact_form", this).then(function() {
+            const submitButton = document.getElementById("submit").value = "Success!";
+            const successButton = document.getElementById("submit").style.cssText = "background:var(--dracula-green); color: var(--dracula-background)";
+            console.log("SUCCESS!");
+            setTimeout(function() {
+                document.forms["contact-form"].reset();
+                document.getElementById("submit").value = "Submit";
+                document.getElementById("submit").style = "";
+            }, 5000);
+        }, function(error) {
+            const submitButton = document.getElementById("submit").value = "Failed!";
+            const successButton = document.getElementById("submit").style.background = "var(--dracula-red)";
+            console.log("FAILED...", error);
+            setTimeout(function() {
+                document.forms["contact-form"].reset();
+                document.getElementById("submit").value = "Submit";
+                document.getElementById("submit").style = "";
+            }, 5000);
         });
     });
-}
-function hoverDarkChevron() {
-    // Hover effect on currently-working-on chevrons (dark mode)
-    links.forEach((link)=>{
-        const bullet = link.parentElement.querySelector(".bullet");
-        link.addEventListener("mouseover", ()=>{
-            bullet.style.color = "var(--dracula-pink)";
-            bullet.style.transition = "ease 0.1s";
-        });
-        link.addEventListener("mouseleave", ()=>{
-            bullet.style.color = "";
-            bullet.style.transition = "ease 0.1s";
-        });
-    });
-}
+};
 
-},{}]},["foMn7","8VGZO"], "8VGZO", "parcelRequire390d")
+},{}]},["ee7lP","6yNxf"], "6yNxf", "parcelRequire390d")
 
-//# sourceMappingURL=contact.f71e6048.js.map
+//# sourceMappingURL=contact.e8aae9ca.js.map

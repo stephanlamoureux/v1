@@ -204,8 +204,8 @@
   background-image: linear-gradient(
     90deg,
     rgba(40, 42, 54, 1) 0%,
-    rgba(68, 71, 90, 1) 50%,
-    rgba(139, 233, 253, 0.8) 100%
+    rgba(139, 233, 253, 1) 50%,
+    rgba(189, 147, 249, 0.9) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;
@@ -227,8 +227,8 @@
   background-image: linear-gradient(
     90deg,
     rgba(40, 42, 54, 1) 0%,
-    rgba(68, 71, 90, 1) 50%,
-    rgba(139, 233, 253, 0.8) 100%
+    rgba(139, 233, 253, 1) 50%,
+    rgba(189, 147, 249, 0.9) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;

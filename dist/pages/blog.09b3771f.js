@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"foMn7":[function(require,module,exports) {
+})({"1muWg":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "c26ef22bf71e6048";
+module.bundle.HMR_BUNDLE_ID = "be88e85309b3771f";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,72 +531,72 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8VGZO":[function(require,module,exports) {
-// Light Mode
-const buttons = document.querySelectorAll(".mode-toggle");
-const links = document.querySelectorAll(".working-on-link");
-buttons.forEach((button)=>{
-    button.addEventListener("click", function() {
-        document.body.classList.toggle("light-mode");
-        document.querySelectorAll(".fa-sun").forEach((icon)=>{
-            icon.classList.toggle("fa-moon");
-            icon.style.transition = "ease-in all 0.1s";
-        });
-        if (document.body.classList.contains("light-mode")) {
-            localStorage.setItem("lightMode", "enabled");
-            hoverLightChevron();
-        } else {
-            localStorage.setItem("lightMode", "disabled");
-            hoverDarkChevron();
+},{}],"gWX7s":[function(require,module,exports) {
+const api_url = "https://dev.to/api/articles?username=stephanlamoureux";
+async function getArticle() {
+    // Data for the first article
+    const response = await fetch(api_url);
+    const data = await response.json();
+    const title = data[0].title;
+    const link = data[0].url;
+    const tag = data[0].tag_list;
+    const name = data[0].user.username;
+    // const profilePic = data[0].user.profile_image
+    // const cover = data[0].cover_image
+    document.getElementById("article_title").textContent = title;
+    document.getElementById("article_link").href = link;
+    document.getElementById("tags").textContent = tag.map((i)=>"#" + i).join(", ");
+    document.getElementById("username").textContent = "@" + name;
+    // document.getElementById('profile_image').src = profilePic
+    //For multiple articles that you want to display
+    function displayMultipleArticles() {
+        for(let i1 = 1; i1 < data.length; i1++){
+            let element = document.createElement("div") //container
+            ;
+            element.className = "devArticle";
+            let articleLink = document.createElement("a") //link
+            ;
+            articleLink.id = "article_link" + i1;
+            articleLink.target = "_blank";
+            articleLink.href = data[i1].url;
+            let articleTitle = document.createElement("h1") //title
+            ;
+            articleTitle.id = "article_title";
+            articleTitle.textContent = data[i1].title;
+            let articleInfo = document.createElement("div") //info container
+            ;
+            articleInfo.className = "article-info";
+            // let emptyProfileDiv = document.createElement('div') //pfp container
+            // let theProfileImage = document.createElement('img') //pfp
+            // theProfileImage.style.width = '50px'
+            // theProfileImage.id = 'profile_image'
+            // theProfileImage.src = data[i].user.profile_image
+            let emptyDiv = document.createElement("div") //tags container
+            ;
+            let tagsInArticle = document.createElement("p") //tag
+            ;
+            tagsInArticle.id = "tags";
+            let realTags = data[i1].tag_list;
+            tagsInArticle.textContent = realTags.map((i)=>"#" + i).join(", ");
+            let yourUsername = document.createElement("p") //username
+            ;
+            yourUsername.id = "username";
+            yourUsername.textContent = "@" + data[i1].user.username;
+            element.appendChild(articleLink);
+            articleLink.appendChild(articleTitle);
+            articleLink.appendChild(articleInfo);
+            // articleInfo.appendChild(emptyProfileDiv)
+            // emptyProfileDiv.appendChild(theProfileImage)
+            articleInfo.appendChild(emptyDiv);
+            emptyDiv.appendChild(tagsInArticle);
+            emptyDiv.appendChild(yourUsername);
+            document.getElementById("blog_container").appendChild(element);
         }
-    });
-});
-if (localStorage.getItem("lightMode") === "enabled") {
-    document.body.classList.add("light-mode");
-    document.querySelectorAll(".fa-sun").forEach((icon)=>icon.classList.add("fa-moon"));
-    hoverLightChevron();
-} else hoverDarkChevron();
-// Mobile Nav
-const navbar = document.querySelector(".navbar");
-const menu = document.querySelector(".menu");
-menu.addEventListener("click", toggleMenu);
-function toggleMenu() {
-    navbar.classList.toggle("showNav");
-    menu.classList.toggle("showClose");
+    }
+    displayMultipleArticles();
 }
-const menuLinks = document.querySelectorAll(".menu-link");
-menuLinks.forEach(function(menuLink) {
-    menuLink.addEventListener("click", toggleMenu);
-});
-function hoverLightChevron() {
-    // Hover effect on currently-working-on chevrons (light mode)
-    links.forEach((link)=>{
-        const bullet = link.parentElement.querySelector(".bullet");
-        link.addEventListener("mouseover", ()=>{
-            bullet.style.color = "white";
-            bullet.style.transition = "ease 0.1s";
-        });
-        link.addEventListener("mouseleave", ()=>{
-            bullet.style.color = "";
-            bullet.style.transition = "ease 0.1s";
-        });
-    });
-}
-function hoverDarkChevron() {
-    // Hover effect on currently-working-on chevrons (dark mode)
-    links.forEach((link)=>{
-        const bullet = link.parentElement.querySelector(".bullet");
-        link.addEventListener("mouseover", ()=>{
-            bullet.style.color = "var(--dracula-pink)";
-            bullet.style.transition = "ease 0.1s";
-        });
-        link.addEventListener("mouseleave", ()=>{
-            bullet.style.color = "";
-            bullet.style.transition = "ease 0.1s";
-        });
-    });
-}
+getArticle();
 
-},{}]},["foMn7","8VGZO"], "8VGZO", "parcelRequire390d")
+},{}]},["1muWg","gWX7s"], "gWX7s", "parcelRequire390d")
 
-//# sourceMappingURL=contact.f71e6048.js.map
+//# sourceMappingURL=blog.09b3771f.js.map

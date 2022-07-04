@@ -29,7 +29,6 @@
 - Install typed.js, emailjs, and anijs with npm
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc
 - Write tests with [jest](https://jestjs.io/)
-- Use a bundler - [parcel](https://github.com/parcel-bundler/parcel#readme) / [esbuild](https://github.com/evanw/esbuild#readme) / [webpack](https://github.com/webpack/webpack)
 - Replace tooltip with a library - [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
 
 ## Bugfixes

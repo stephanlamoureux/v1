@@ -14,7 +14,7 @@ window.onload = function () {
       function () {
         const submitButton = (document.getElementById('submit').value = 'Success!')
         const successButton = (document.getElementById('submit').style.cssText =
-          'background: var(--dracula-green); color: var(--dracula-background); text-shadow: none;')
+          'background: var(--dracula-green); color: var(--dracula-background); text-shadow: none; box-shadow: 0 5px 0 var(--dracula-green);')
         console.log('SUCCESS!')
         setTimeout(function () {
           document.forms['contact-form'].reset()
@@ -24,8 +24,8 @@ window.onload = function () {
       },
       function (error) {
         const submitButton = (document.getElementById('submit').value = 'Failed!')
-        const successButton = (document.getElementById('submit').style.background =
-          'var(--dracula-red)')
+        const successButton = (document.getElementById('submit').style.cssText =
+          'background: var(--dracula-red) box-shadow: 0 5px 0 var(--dracula-red);')
         console.log('FAILED...', error)
         setTimeout(function () {
           document.forms['contact-form'].reset()

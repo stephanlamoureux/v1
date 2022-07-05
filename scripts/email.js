@@ -1,4 +1,4 @@
-import emailjs from '@emailjs/browser'
+import emailjs from '../node_modules/@emailjs/browser'
 ;(function () {
   // https://dashboard.emailjs.com/admin/integration
   emailjs.init('user_hYeCfF0DkAoQPn3bOS7WR')

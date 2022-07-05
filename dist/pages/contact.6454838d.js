@@ -533,7 +533,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"dAQqO":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _typedJs = require("typed.js");
+var _typedJs = require("../node_modules/typed.js");
 var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
 var typed = new (0, _typedJsDefault.default)("#typed", {
     strings: [
@@ -549,7 +549,7 @@ var typed = new (0, _typedJsDefault.default)("#typed", {
     backSpeed: 50
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","typed.js":"4hQNd"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../node_modules/typed.js":"4hQNd"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a

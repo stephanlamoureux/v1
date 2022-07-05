@@ -533,7 +533,7 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"3eG7t":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _browser = require("@emailjs/browser");
+var _browser = require("../node_modules/@emailjs/browser");
 var _browserDefault = parcelHelpers.interopDefault(_browser);
 (function() {
     // https://dashboard.emailjs.com/admin/integration
@@ -568,7 +568,7 @@ window.onload = function() {
     });
 };
 
-},{"@emailjs/browser":"kbSqr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kbSqr":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../node_modules/@emailjs/browser":"kbSqr"}],"kbSqr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "init", ()=>(0, _init.init));

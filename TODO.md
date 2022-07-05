@@ -23,19 +23,11 @@
 ## Nav
 
 - Close mobile nav when clicking outside of it
+- Increase icons clickable areas
+- Change color mode icons into a slide toggle
 
 ## Misc
 
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc
 - Write tests with [jest](https://jestjs.io/)
 - Replace tooltip with a library - [tippy](https://atomiks.github.io/tippyjs/) / [popper](https://popper.js.org/)
-- Replace anijs with a new animation library
-
-## Bugfixes
-
-- Increase icons clickable areas
-
-## Maybe's
-
-- Renew font awesome pro and add the cdn?
-- Change color mode icons into a slide toggle?

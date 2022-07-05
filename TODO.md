@@ -3,6 +3,7 @@
 ## About
 
 - Create a landing page above About Me section
+- Add skip to main
 
 ## Blog
 

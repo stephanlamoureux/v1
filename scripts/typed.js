@@ -1,4 +1,4 @@
-import Typed from 'typed.js'
+import Typed from '/typed.js'
 
 var typed = new Typed('#typed', {
   strings: [

@@ -532,8 +532,8 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"dAQqO":[function(require,module,exports) {
-var _typedJs = require("typed.js");
-var typed = new (0, _typedJs.Typed)("#typed", {
+const Typed = require("typed.js");
+var typed = new Typed("#typed", {
     strings: [
         "A Frontend Fanatic.",
         "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",

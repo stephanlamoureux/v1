@@ -1,4 +1,4 @@
-import { Typed } from 'typed.js'
+const Typed = require('typed.js')
 
 var typed = new Typed('#typed', {
   strings: [

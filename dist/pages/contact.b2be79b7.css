@@ -66,19 +66,13 @@ input:focus, textarea:focus {
   font-size: 1.3rem;
   font-style: normal;
   transition: all .1s;
-  box-shadow: 0 5px #a86ef8;
+  box-shadow: 0 5px #9e63f0;
 }
 
 .form-submit:focus {
-  text-decoration: underline wavy #50fa7b;
-  box-shadow: 0 5px #a86ef8;
-}
-
-.form-submit:active {
-  box-shadow: none;
-  text-decoration: none;
   transition: all .1s;
-  transform: translateY(5px);
+  transform: translateY(3px);
+  box-shadow: 0 3px #9e63f0;
 }
 
 /*# sourceMappingURL=contact.b2be79b7.css.map */

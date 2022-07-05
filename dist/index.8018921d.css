@@ -131,19 +131,13 @@ body.light-mode .form-submit {
   background-color: var(--dracula-greypurple);
   color: var(--dracula-foreground);
   text-shadow: 1px 1px 2px #000000e6;
-  box-shadow: 0 5px #26283e;
+  box-shadow: 0 5px #1e2032;
 }
 
 body.light-mode .form-submit:focus {
-  text-decoration: underline wavy #8be9fd;
-  box-shadow: 0 5px #26283e;
-}
-
-body.light-mode .form-submit:active {
-  box-shadow: none;
-  text-decoration: none;
   transition: all .1s;
-  transform: translateY(5px);
+  transform: translateY(3px);
+  box-shadow: 0 3px #1e2032;
 }
 
 @media (max-width: 1100px) {

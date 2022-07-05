@@ -71,18 +71,12 @@ textarea:focus {
   text-align: center;
   transition: ease 0.1s all;
   width: 100%;
-  box-shadow: 0 5px 0 rgb(168, 110, 248);
+  box-shadow: 0 5px 0 rgb(158, 99, 240);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
 
 .form-submit:focus {
-  box-shadow: 0 5px 0 rgb(168, 110, 248);
-  text-decoration: underline rgb(80, 250, 123) wavy;
-}
-
-.form-submit:active {
-  box-shadow: none;
-  transform: translateY(5px);
+  box-shadow: 0 3px 0 rgb(158, 99, 240);
+  transform: translateY(3px);
   transition: ease 0.1s all;
-  text-decoration: none;
 }

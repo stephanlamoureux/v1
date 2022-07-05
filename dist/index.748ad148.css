@@ -44,6 +44,7 @@ html {
 body {
   background-color: var(--dracula-background);
   color: var(--dracula-foreground);
+  background: linear-gradient( 180deg, var(--dracula-background) 50%, var(--dracula-greypurple) 100% );
   font-family: Inter, sans-serif;
 }
 

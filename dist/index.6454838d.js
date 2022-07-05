@@ -532,52 +532,6 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"dAQqO":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _typedJs = require("./typed.js");
-var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
-var typed = new (0, _typedJsDefault.default)("#typed", {
-    strings: [
-        "A Frontend Fanatic.",
-        "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
-        "^2000 The Duke of Dark Mode.",
-        "^2000 An Over-Caffeinated Coder.", 
-    ],
-    typeSpeed: 70,
-    loop: true,
-    startDelay: 1000,
-    backDelay: 3000,
-    backSpeed: 50
-});
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./typed.js":"dAQqO"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
 
 },{}]},["M8Ie4","dAQqO"], "dAQqO", "parcelRequire390d")
 

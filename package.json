@@ -30,8 +30,5 @@
     "jest": "^28.1.2",
     "parcel": "^2.6.2"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead",
-  "dependencies": {
-    "typed.js": "^2.0.12"
-  }
+  "browserslist": "> 0.5%, last 2 versions, not dead"
 }

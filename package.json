@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/stephanlamoureux/v1#readme",
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/preset-env": "^7.18.6",
-    "babel-jest": "^28.1.2",
     "jest": "^28.1.2",
     "parcel": "^2.6.2"
   },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
 }

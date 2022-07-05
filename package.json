@@ -29,6 +29,7 @@
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "typed.js": "^2.0.12"
   }
 }

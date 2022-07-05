@@ -532,9 +532,12 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"3eG7t":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _browser = require("@emailjs/browser");
+var _browserDefault = parcelHelpers.interopDefault(_browser);
 (function() {
     // https://dashboard.emailjs.com/admin/integration
-    emailjs.init("user_hYeCfF0DkAoQPn3bOS7WR");
+    (0, _browserDefault.default).init("user_hYeCfF0DkAoQPn3bOS7WR");
 })();
 window.onload = function() {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
@@ -543,7 +546,7 @@ window.onload = function() {
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
-        emailjs.sendForm("contact_service", "contact_form", this).then(function() {
+        (0, _browserDefault.default).sendForm("contact_service", "contact_form", this).then(function() {
             const submitButton = document.getElementById("submit").value = "Success!";
             const successButton = document.getElementById("submit").style.cssText = "background: var(--dracula-green); color: var(--dracula-background); text-shadow: none; box-shadow: 0 5px 0 var(--dracula-green);";
             console.log("SUCCESS!");
@@ -565,6 +568,134 @@ window.onload = function() {
     });
 };
 
-},{}]},["9B2wO","3eG7t"], "3eG7t", "parcelRequire390d")
+},{"@emailjs/browser":"kbSqr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kbSqr":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>(0, _init.init));
+parcelHelpers.export(exports, "send", ()=>(0, _send.send));
+parcelHelpers.export(exports, "sendForm", ()=>(0, _sendForm.sendForm));
+var _init = require("./methods/init/init");
+var _send = require("./methods/send/send");
+var _sendForm = require("./methods/sendForm/sendForm");
+exports.default = {
+    init: (0, _init.init),
+    send: (0, _send.send),
+    sendForm: (0, _sendForm.sendForm)
+};
+
+},{"./methods/init/init":"lqGq1","./methods/send/send":"m7CoX","./methods/sendForm/sendForm":"a1Cpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lqGq1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "init", ()=>init);
+var _store = require("../../store/store");
+const init = (publicKey, origin = "https://api.emailjs.com")=>{
+    (0, _store.store)._userID = publicKey;
+    (0, _store.store)._origin = origin;
+};
+
+},{"../../store/store":"3eehJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3eehJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "store", ()=>store);
+const store = {
+    _origin: "https://api.emailjs.com"
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"m7CoX":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "send", ()=>send);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const send = (serviceID, templateID, templatePrams, publicKey)=>{
+    const uID = publicKey || (0, _store.store)._userID;
+    (0, _validateParams.validateParams)(uID, serviceID, templateID);
+    const params = {
+        lib_version: "3.6.2",
+        user_id: uID,
+        service_id: serviceID,
+        template_id: templateID,
+        template_params: templatePrams
+    };
+    return (0, _sendPost.sendPost)("/api/v1.0/email/send", JSON.stringify(params), {
+        "Content-type": "application/json"
+    });
+};
+
+},{"../../store/store":"3eehJ","../../utils/validateParams":"5GPWw","../../api/sendPost":"3pmzm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5GPWw":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "validateParams", ()=>validateParams);
+const validateParams = (publicKey, serviceID, templateID)=>{
+    if (!publicKey) throw "The public key is required. Visit https://dashboard.emailjs.com/admin/account";
+    if (!serviceID) throw "The service ID is required. Visit https://dashboard.emailjs.com/admin";
+    if (!templateID) throw "The template ID is required. Visit https://dashboard.emailjs.com/admin/templates";
+    return true;
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3pmzm":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendPost", ()=>sendPost);
+var _emailJSResponseStatus = require("../models/EmailJSResponseStatus");
+var _store = require("../store/store");
+const sendPost = (url, data, headers = {})=>{
+    return new Promise((resolve, reject)=>{
+        const xhr = new XMLHttpRequest();
+        xhr.addEventListener("load", ({ target  })=>{
+            const responseStatus = new (0, _emailJSResponseStatus.EmailJSResponseStatus)(target);
+            if (responseStatus.status === 200 || responseStatus.text === "OK") resolve(responseStatus);
+            else reject(responseStatus);
+        });
+        xhr.addEventListener("error", ({ target  })=>{
+            reject(new (0, _emailJSResponseStatus.EmailJSResponseStatus)(target));
+        });
+        xhr.open("POST", (0, _store.store)._origin + url, true);
+        Object.keys(headers).forEach((key)=>{
+            xhr.setRequestHeader(key, headers[key]);
+        });
+        xhr.send(data);
+    });
+};
+
+},{"../models/EmailJSResponseStatus":"oZ06T","../store/store":"3eehJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"oZ06T":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "EmailJSResponseStatus", ()=>EmailJSResponseStatus);
+class EmailJSResponseStatus {
+    constructor(httpResponse){
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
+    }
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a1Cpe":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "sendForm", ()=>sendForm);
+var _store = require("../../store/store");
+var _validateParams = require("../../utils/validateParams");
+var _sendPost = require("../../api/sendPost");
+const findHTMLForm = (form)=>{
+    let currentForm;
+    if (typeof form === "string") currentForm = document.querySelector(form);
+    else currentForm = form;
+    if (!currentForm || currentForm.nodeName !== "FORM") throw "The 3rd parameter is expected to be the HTML form element or the style selector of form";
+    return currentForm;
+};
+const sendForm = (serviceID, templateID, form, publicKey)=>{
+    const uID = publicKey || (0, _store.store)._userID;
+    const currentForm = findHTMLForm(form);
+    (0, _validateParams.validateParams)(uID, serviceID, templateID);
+    const formData = new FormData(currentForm);
+    formData.append("lib_version", "3.6.2");
+    formData.append("service_id", serviceID);
+    formData.append("template_id", templateID);
+    formData.append("user_id", uID);
+    return (0, _sendPost.sendPost)("/api/v1.0/email/send-form", formData);
+};
+
+},{"../../store/store":"3eehJ","../../utils/validateParams":"5GPWw","../../api/sendPost":"3pmzm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["9B2wO","3eG7t"], "3eG7t", "parcelRequire390d")
 
 //# sourceMappingURL=contact.4f80c3cb.js.map

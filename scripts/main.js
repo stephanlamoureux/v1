@@ -54,10 +54,12 @@ function hoverLightChevron() {
     link.addEventListener('mouseover', () => {
       bullet.style.color = 'white'
       bullet.style.transition = 'ease 0.1s'
+      bullet.style.textShadow = '1px 1px 2px rgba(0, 0, 0, 0.75)'
     })
     link.addEventListener('mouseleave', () => {
       bullet.style.color = ''
       bullet.style.transition = 'ease 0.1s'
+      bullet.style.textShadow = ''
     })
   })
 }

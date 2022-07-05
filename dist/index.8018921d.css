@@ -1,7 +1,7 @@
 body.light-mode {
   color: #000;
   cursor: url("cursor-white.184c40f3.png"), auto;
-  background-color: #ad74ff;
+  background: linear-gradient(#ad74ff 25%, #ff79c6 100%);
 }
 
 body.light-mode .line {
@@ -23,7 +23,7 @@ body.light-mode .hire-me .tooltip {
 }
 
 body.light-mode .about-p {
-  text-shadow: 1px 1px 2px #0003;
+  text-shadow: none;
 }
 
 body.light-mode .p-icon {
@@ -32,9 +32,9 @@ body.light-mode .p-icon {
 }
 
 body.light-mode .vwc {
-  text-shadow: 1px 1px 2px #0003;
+  text-shadow: none;
   color: #000;
-  background-image: linear-gradient(90deg, #ad74ff 0%, #6272a4 50%, #fffc 100%);
+  background-image: linear-gradient(90deg, #ad74ff 0%, #8be9fd 50%, #50fa7be6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -44,7 +44,7 @@ body.light-mode .vwc {
 body.light-mode .working-on-link {
   color: #fff;
   text-shadow: 1px 1px 2px #000000bf;
-  background-image: linear-gradient(90deg, #ad74ff 0%, #6272a4 50%, #fffc 100%);
+  background-image: linear-gradient(90deg, #ff79c6b3 0%, #8be9fd 50%, #50fa7be6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -52,12 +52,12 @@ body.light-mode .working-on-link {
 }
 
 body.light-mode .working-on-list {
-  text-shadow: 1px 1px 2px #0003;
+  text-shadow: none;
 }
 
 body.light-mode .bullet {
   color: #000;
-  text-shadow: 1px 1px 2px #0003;
+  text-shadow: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -72,7 +72,7 @@ body.light-mode .project-tile:hover .project-image {
 
 body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
   color: #000;
-  text-shadow: 1px 1px 2px #0003;
+  text-shadow: 0 0 2px #0003;
 }
 
 body.light-mode .project-image {
@@ -84,7 +84,7 @@ body.light-mode .project-image {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
-    text-shadow: 1px 1px 2px #0003;
+    text-shadow: 0 0 2px #0003;
   }
 
   body.light-mode .project-image {
@@ -101,7 +101,7 @@ body.light-mode .project-image {
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
     opacity: 1;
-    text-shadow: 1px 1px 2px #0003;
+    text-shadow: 0 0 2px #0003;
     background-repeat: initial;
     background-position: initial;
     background-image: none;
@@ -135,11 +135,13 @@ body.light-mode .form-submit {
 }
 
 body.light-mode .form-submit:focus {
-  box-shadow: 0 5px #000000e6;
+  text-decoration: underline wavy #8be9fd;
+  box-shadow: 0 5px #26283e;
 }
 
 body.light-mode .form-submit:active {
   box-shadow: none;
+  text-decoration: none;
   transition: all .1s;
   transform: translateY(5px);
 }

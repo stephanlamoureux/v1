@@ -542,13 +542,14 @@ var _browserDefault = parcelHelpers.interopDefault(_browser);
 window.onload = function() {
     document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        const sendingButton = document.getElementById("submit").value = "Sending...";
+        let sendingButton = document.getElementById("submit").value = "Sending...";
+        sendingButton = document.getElementById("submit").style.textDecoration = "none";
         // generate a five digit number for the contact_number variable
         this.contact_number.value = Math.random() * 100000 | 0;
         // these IDs from the previous steps
         (0, _browserDefault.default).sendForm("contact_service", "contact_form", this).then(function() {
             const submitButton = document.getElementById("submit").value = "Success!";
-            const successButton = document.getElementById("submit").style.cssText = "background: var(--dracula-green); color: var(--dracula-background); text-shadow: none; box-shadow: 0 5px 0 var(--dracula-green);";
+            const successButton = document.getElementById("submit").style.cssText = "background: var(--dracula-green); color: var(--dracula-background); text-shadow: none; box-shadow: 0 5px 0 var(--dracula-green); text-decoration: none;";
             console.log("SUCCESS!");
             setTimeout(function() {
                 document.forms["contact-form"].reset();
@@ -557,7 +558,7 @@ window.onload = function() {
             }, 5000);
         }, function(error) {
             const submitButton = document.getElementById("submit").value = "Failed!";
-            const successButton = document.getElementById("submit").style.cssText = "background: var(--dracula-red) box-shadow: 0 5px 0 var(--dracula-red);";
+            const successButton = document.getElementById("submit").style.cssText = "background: var(--dracula-red) box-shadow: 0 5px 0 var(--dracula-red); text-decoration: none;";
             console.log("FAILED...", error);
             setTimeout(function() {
                 document.forms["contact-form"].reset();

@@ -70,12 +70,13 @@ input:focus, textarea:focus {
 }
 
 .form-submit:focus {
-  transition: all .1s;
-  box-shadow: 0 5px #6d37b8;
+  text-decoration: underline wavy #50fa7b;
+  box-shadow: 0 5px #a86ef8;
 }
 
 .form-submit:active {
   box-shadow: none;
+  text-decoration: none;
   transition: all .1s;
   transform: translateY(5px);
 }

@@ -76,12 +76,13 @@ textarea:focus {
 }
 
 .form-submit:focus {
-  box-shadow: 0 5px 0 rgb(109, 55, 184);
-  transition: ease 0.1s all;
+  box-shadow: 0 5px 0 rgb(168, 110, 248);
+  text-decoration: underline rgb(80, 250, 123) wavy;
 }
 
 .form-submit:active {
   box-shadow: none;
   transform: translateY(5px);
   transition: ease 0.1s all;
+  text-decoration: none;
 }

@@ -1,7 +1,8 @@
 /* Light Mode */
 
 body.light-mode {
-  background-color: rgb(173, 116, 255);
+  background: rgb(173, 116, 255);
+  background: linear-gradient(180deg, rgb(173, 116, 255) 25%, rgb(255, 121, 198) 100%);
   color: black;
   cursor: url('../assets/images/icons/cursor-white.png'), auto;
 }
@@ -13,7 +14,7 @@ body.light-mode .line {
     to right,
     rgba(189, 147, 249, 0.8),
     rgba(139, 233, 253, 1),
-    rgb(255, 121, 198, 0.8)
+    rgba(255, 121, 198, 0.8)
   );
 }
 
@@ -34,7 +35,7 @@ body.light-mode .hire-me .tooltip {
 }
 
 body.light-mode .about-p {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 body.light-mode .p-icon {
@@ -43,14 +44,14 @@ body.light-mode .p-icon {
 }
 
 body.light-mode .vwc {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
   background-repeat: repeat-x;
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
     rgba(173, 116, 255, 1) 0%,
-    rgb(98, 114, 164, 1) 50%,
-    rgba(255, 255, 255, 0.8) 100%
+    rgba(139, 233, 253, 1) 50%,
+    rgba(80, 250, 123, 0.9) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;
@@ -64,21 +65,21 @@ body.light-mode .working-on-link {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(173, 116, 255, 1) 0%,
-    rgb(98, 114, 164, 1) 50%,
-    rgba(255, 255, 255, 0.8) 100%
+    rgba(255, 121, 198, 0.7) 0%,
+    rgba(139, 233, 253, 1) 50%,
+    rgba(80, 250, 123, 0.9) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;
 }
 
 body.light-mode .working-on-list {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 body.light-mode .bullet {
   color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -100,7 +101,7 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
   color: black;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 body.light-mode .project-image {
@@ -117,7 +118,7 @@ body.light-mode .project-image {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
   }
 
   body.light-mode .project-image {
@@ -139,7 +140,7 @@ body.light-mode .project-image {
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: var(--dracula-background);
     opacity: 1;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     background-repeat: initial;
     background-position: initial;
     background-image: none;
@@ -179,13 +180,15 @@ body.light-mode .form-submit {
 }
 
 body.light-mode .form-submit:focus {
-  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.9);
+  box-shadow: 0 5px 0 rgb(38, 40, 62);
+  text-decoration: underline rgb(139, 233, 253) wavy;
 }
 
 body.light-mode .form-submit:active {
   box-shadow: none;
   transform: translateY(5px);
   transition: ease 0.1s all;
+  text-decoration: none;
 }
 
 @media (max-width: 1100px) {

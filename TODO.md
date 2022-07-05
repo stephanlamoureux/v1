@@ -20,7 +20,6 @@
 ## Nav
 
 - Close mobile nav when clicking outside of it
-- Increase icons clickable areas
 - Change color mode icons into a slide toggle
 
 ## Misc

@@ -2,6 +2,7 @@
 
 ## About
 
+- Still not happy with light mode
 - Create a landing page above About Me section
 - Add skip to main
 

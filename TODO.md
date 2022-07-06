@@ -7,9 +7,9 @@
 
 ## Blog
 
-- Add error handling (try/catch)
-- Adjust media queries
+- Add [error handling](https://wesbos.com/javascript/12-advanced-flow-control/71-async-await-error-handling)
 - Replace author with date posted
+- Adjust media queries
 - Add a loader
 - Add pagination - [toastui](https://ui.toast.com/tui-pagination)
 

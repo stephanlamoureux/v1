@@ -204,12 +204,10 @@
     margin-top: -27px;
     width: 36px;
     z-index: 1000;
-    transition: ease all 0.2s;
   }
 
   .showClose {
     background-image: url('../assets/images/icons/close.svg');
-    transition: ease all 0.2s;
   }
 
   .navbar {

@@ -16,6 +16,7 @@ async function getArticle() {
   document.getElementById('tags').textContent = tag.map(i => '#' + i).join(', ')
   document.getElementById('username').textContent = '@' + name
   // document.getElementById('profile_image').src = profilePic
+  // document.get
 
   //For multiple articles that you want to display
   function displayMultipleArticles() {
@@ -45,8 +46,8 @@ async function getArticle() {
 
       let tagsInArticle = document.createElement('p') //tag
       tagsInArticle.id = 'tags'
-      let realTags = data[i].tag_list
-      tagsInArticle.textContent = realTags.map(i => '#' + i).join(', ')
+      let hashTags = data[i].tag_list
+      tagsInArticle.textContent = hashTags.map(i => '#' + i).join(', ')
 
       let yourUsername = document.createElement('p') //username
       yourUsername.id = 'username'

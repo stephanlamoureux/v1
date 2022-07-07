@@ -18,7 +18,7 @@
 
 ## Nav
 
-- Close mobile nav when clicking outside of it [csstricks](https://css-tricks.com/click-outside-detector/)
+- Close mobile nav when clicking outside of it - [csstricks](https://css-tricks.com/click-outside-detector/)
 
   - Something like this
 
@@ -34,8 +34,8 @@
   )
   ```
 
-- Change color mode icons into a slide toggle [example 1](https://codepen.io/PaulinaSurazynska/pen/bGVpBOb) [example 2](https://towardsdev.com/how-to-create-a-dark-light-theme-toggle-67a9316d04d2) |
-- Replace hamburger menu icons with animated CSS [example 1](https://codepen.io/designcouch/pen/ExvwPY) [example 2](https://www.sliderrevolution.com/resources/css-hamburger-menu/)
+- Change color mode icons into a slide toggle [example 1](https://codepen.io/PaulinaSurazynska/pen/bGVpBOb) | [example 2](https://towardsdev.com/how-to-create-a-dark-light-theme-toggle-67a9316d04d2)
+- Replace hamburger menu icons with animated CSS [example 1](https://codepen.io/designcouch/pen/ExvwPY) | [example 2](https://www.sliderrevolution.com/resources/css-hamburger-menu/)
 
 ## Misc
 

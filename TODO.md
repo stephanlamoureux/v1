@@ -21,6 +21,7 @@
 
 - Close mobile nav when clicking outside of it
 - Change color mode icons into a slide toggle
+- Replace hamburger menu icons with animated CSS
 
 ## Misc
 

@@ -76,6 +76,21 @@
   color: var(--dracula-green);
 }
 
+#minutes {
+  color: var(--dracula-foreground);
+}
+
+#date {
+  color: var(--dracula-cyan);
+}
+
+.article-line {
+  height: 1px;
+  background: linear-gradient(to right, #bd93f966, #8be9fd, #ff79c666);
+  border: 0;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 1250px) {
   .devArticle {
     width: 48%;

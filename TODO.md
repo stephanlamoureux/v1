@@ -7,8 +7,7 @@
 
 ## Blog
 
-- Replace author with date posted
-- Adjust media queries
+- Adjust media queries / styling
 - Add a loader
 - Add pagination - [toastui](https://ui.toast.com/tui-pagination)
 

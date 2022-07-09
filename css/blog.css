@@ -82,22 +82,11 @@
 
 #minutes {
   color: var(--dracula-foreground);
+  margin-top: 20px;
 }
 
 #date {
   color: var(--dracula-cyan);
-}
-
-.article-line {
-  background: linear-gradient(
-    to right,
-    rgba(189, 147, 249, 0.4),
-    rgba(139, 233, 253, 1),
-    rgb(255, 121, 198, 0.4)
-  );
-  border: 0;
-  height: 1px;
-  margin-top: 15px;
 }
 
 @media screen and (max-width: 1250px) {

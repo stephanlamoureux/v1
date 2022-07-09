@@ -109,6 +109,10 @@
       margin-bottom: 0;
     }
   }
+
+  .devArticle {
+    width: 48%;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -118,10 +122,6 @@
 
   .header-sub {
     font-size: 1.1rem;
-  }
-
-  .projects-cell {
-    padding: 2rem 1rem;
   }
 
   .hire-me .tooltip {
@@ -135,6 +135,8 @@
     }
   }
 
+  /* Projects */
+
   .project-name0,
   .project-name1,
   .project-name2,
@@ -142,6 +144,10 @@
   .project-name4,
   .project-name5 {
     font-size: 1rem;
+  }
+
+  .projects-cell {
+    padding: 2rem 1rem;
   }
 
   .profile-image {
@@ -294,6 +300,12 @@
       margin-left: 40px;
       margin-bottom: 0;
     }
+  }
+
+  /* Blog */
+
+  .devArticle {
+    width: 75%;
   }
 
   /* Projects */

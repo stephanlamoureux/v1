@@ -90,6 +90,10 @@
       margin-left: 20px;
     }
   }
+
+  .devArticle {
+    width: 48%;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -99,10 +103,6 @@
 
   .header-sub {
     font-size: 1.1rem;
-  }
-
-  .projects-cell {
-    padding: 2rem 1rem;
   }
 
   .hire-me .tooltip {
@@ -118,6 +118,10 @@
 
   .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
     font-size: 1rem;
+  }
+
+  .projects-cell {
+    padding: 2rem 1rem;
   }
 
   .profile-image {
@@ -252,6 +256,10 @@
       margin-bottom: 0;
       margin-left: 40px;
     }
+  }
+
+  .devArticle {
+    width: 75%;
   }
 
   .projects-container {

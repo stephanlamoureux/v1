@@ -10,16 +10,12 @@ async function getArticle() {
     const tag = data[0].tag_list
     const date = data[0].readable_publish_date
     const readingTime = data[0].reading_time_minutes
-    // const name = data[0].user.username
-    // const profilePic = data[0].user.profile_image
-    // const cover = data[0].cover_image
 
     document.getElementById('article_title').textContent = title
     document.getElementById('article_link').href = link
     document.getElementById('tags').textContent = tag.map(i => '#' + i).join(', ')
     document.getElementById('minutes').textContent = readingTime + ' minute read'
     document.getElementById('date').textContent = date
-    // document.getElementById('profile_image').src = profilePic
 
     //For multiple articles that you want to display
     function displayMultipleArticles() {
@@ -39,15 +35,7 @@ async function getArticle() {
         let articleInfo = document.createElement('div') //info container
         articleInfo.className = 'article-info'
 
-        // let emptyProfileDiv = document.createElement('div') //pfp container
-        // let theProfileImage = document.createElement('img') //pfp
-        // theProfileImage.style.width = '50px'
-        // theProfileImage.id = 'profile_image'
-        // theProfileImage.src = data[i].user.profile_image
-
         let emptyDiv = document.createElement('div') //article data container
-        let hr = document.createElement('hr') //line
-        hr.className = 'article-line'
 
         let tagsInArticle = document.createElement('p') //tag
         tagsInArticle.id = 'tags'
@@ -67,11 +55,8 @@ async function getArticle() {
         articleLink.appendChild(articleInfo)
         articleInfo.appendChild(emptyDiv)
         emptyDiv.appendChild(tagsInArticle)
-        emptyDiv.appendChild(hr)
         emptyDiv.appendChild(articleMinutes)
         emptyDiv.appendChild(articleDate)
-        // articleInfo.appendChild(emptyProfileDiv)
-        // emptyProfileDiv.appendChild(theProfileImage)
         document.getElementById('blog_container').appendChild(element)
       }
     }

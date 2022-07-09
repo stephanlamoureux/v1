@@ -65,6 +65,7 @@
   display: flex;
   word-break: break-word;
   word-wrap: break-word;
+  margin-left: -5px;
 }
 
 .article-info p {

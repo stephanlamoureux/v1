@@ -60,6 +60,7 @@
 .article-info {
   word-break: break-word;
   word-wrap: break-word;
+  margin-left: -5px;
   display: flex;
 }
 

@@ -2,9 +2,10 @@ const api_url = 'https://dev.to/api/articles?username=stephanlamoureux'
 
 async function getArticle() {
   try {
-    // Data for the first article
     const response = await fetch(api_url)
     const data = await response.json()
+
+    // Data for the first article
     const title = data[0].title
     const link = data[0].url
     const tag = data[0].tag_list

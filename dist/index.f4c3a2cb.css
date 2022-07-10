@@ -260,6 +260,7 @@
 
   .devArticle {
     width: 75%;
+    margin-bottom: 2rem;
   }
 
   .projects-container {
@@ -633,6 +634,14 @@
 
   .working-on-list {
     margin-left: 0;
+  }
+
+  .article-info {
+    overflow-wrap: break-word;
+  }
+
+  #article_title {
+    font-size: 1.1rem;
   }
 
   .icons-flex > span {

@@ -551,24 +551,22 @@ async function getArticle() {
         //For multiple articles that you want to display
         function displayMultipleArticles() {
             for(let i1 = 1; i1 < data.length; i1++){
-                let element = document.createElement("div") //container
+                let card = document.createElement("div") //card container
                 ;
-                element.className = "devArticle";
-                let articleTitle = document.createElement("h1") //title
-                ;
-                articleTitle.id = "article_title";
-                articleTitle.textContent = data[i1].title;
-                let articleLink = document.createElement("a") //link
+                card.className = "devArticle";
+                let articleLink = document.createElement("a") //link to dev.to
                 ;
                 articleLink.id = "article_link" + i1;
                 articleLink.target = "_blank";
                 articleLink.href = data[i1].url;
+                let articleTitle = document.createElement("h1") //article title
+                ;
+                articleTitle.id = "article_title";
+                articleTitle.textContent = data[i1].title;
                 let articleInfo = document.createElement("div") //info container
                 ;
                 articleInfo.className = "article-info";
-                let emptyDiv = document.createElement("div") //article data container
-                ;
-                let tagsInArticle = document.createElement("p") //tag
+                let tagsInArticle = document.createElement("p") //tags
                 ;
                 tagsInArticle.id = "tags";
                 let hashTags = data[i1].tag_list;
@@ -581,14 +579,17 @@ async function getArticle() {
                 ;
                 articleDate.id = "date";
                 articleDate.textContent = data[i1].readable_publish_date;
-                element.appendChild(articleLink);
+                // make the card a link to the dev.to article
+                card.appendChild(articleLink);
+                // append the title and the article info to the card
                 articleLink.appendChild(articleTitle);
                 articleLink.appendChild(articleInfo);
-                articleInfo.appendChild(emptyDiv);
-                emptyDiv.appendChild(tagsInArticle);
-                emptyDiv.appendChild(articleMinutes);
-                emptyDiv.appendChild(articleDate);
-                document.getElementById("blog_container").appendChild(element);
+                // append tags, minutes, and date to info container
+                articleInfo.appendChild(tagsInArticle);
+                articleInfo.appendChild(articleMinutes);
+                articleInfo.appendChild(articleDate);
+                // append card container to main container
+                document.getElementById("blog_container").appendChild(card);
             }
         }
         displayMultipleArticles();

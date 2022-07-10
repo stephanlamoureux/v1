@@ -109,7 +109,7 @@ body.light-mode .project-image {
   }
 }
 
-body.light-mode .devArticle:hover {
+body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px #383a59e6;
 }
 

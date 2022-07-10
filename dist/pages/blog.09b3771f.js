@@ -538,46 +538,46 @@ async function getArticle() {
         const response = await fetch(api_url);
         const data = await response.json();
         // Data for the first article
-        const title = data[0].title;
         const link = data[0].url;
+        const title = data[0].title;
         const tag = data[0].tag_list;
         const date = data[0].readable_publish_date;
         const readingTime = data[0].reading_time_minutes;
-        document.getElementById("article_title").textContent = title;
-        document.getElementById("article_link").href = link;
-        document.getElementById("tags").textContent = tag.map((i)=>"#" + i).join(", ");
-        document.getElementById("minutes").textContent = readingTime + " minute read";
-        document.getElementById("date").textContent = date;
+        document.querySelector(".article-link").href = link;
+        document.querySelector(".article-title").textContent = title;
+        document.querySelector(".tags").textContent = tag.map((i)=>"#" + i).join(", ");
+        document.querySelector(".minutes").textContent = readingTime + " minute read";
+        document.querySelector(".date").textContent = date;
         //For multiple articles that you want to display
         function displayMultipleArticles() {
             for(let i1 = 1; i1 < data.length; i1++){
                 let card = document.createElement("div") //card container
                 ;
-                card.className = "devArticle";
+                card.className = "dev-article";
                 let articleLink = document.createElement("a") //link to dev.to
                 ;
-                articleLink.id = "article_link" + i1;
+                articleLink.className = "article-link" + i1;
                 articleLink.target = "_blank";
                 articleLink.href = data[i1].url;
                 let articleTitle = document.createElement("h1") //article title
                 ;
-                articleTitle.id = "article_title";
+                articleTitle.className = "article-title";
                 articleTitle.textContent = data[i1].title;
                 let articleInfo = document.createElement("div") //info container
                 ;
                 articleInfo.className = "article-info";
                 let tagsInArticle = document.createElement("p") //tags
                 ;
-                tagsInArticle.id = "tags";
+                tagsInArticle.className = "tags";
                 let hashTags = data[i1].tag_list;
                 tagsInArticle.textContent = hashTags.map((i)=>"#" + i).join(", ");
                 let articleMinutes = document.createElement("p") //minutes
                 ;
-                articleMinutes.id = "minutes";
+                articleMinutes.className = "minutes";
                 articleMinutes.textContent = data[i1].reading_time_minutes + " minute read";
                 let articleDate = document.createElement("p") //date posted
                 ;
-                articleDate.id = "date";
+                articleDate.className = "date";
                 articleDate.textContent = data[i1].readable_publish_date;
                 // make the card a link to the dev.to article
                 card.appendChild(articleLink);
@@ -589,7 +589,7 @@ async function getArticle() {
                 articleInfo.appendChild(articleMinutes);
                 articleInfo.appendChild(articleDate);
                 // append card container to main container
-                document.getElementById("blog_container").appendChild(card);
+                document.querySelector(".blog-container").appendChild(card);
             }
         }
         displayMultipleArticles();

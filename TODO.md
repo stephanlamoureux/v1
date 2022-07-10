@@ -7,8 +7,6 @@
 
 ## Blog
 
-- replace id's with classes
-- Adjust media queries / styling
 - Add a loader
 - Add pagination - [toastui](https://ui.toast.com/tui-pagination)
 

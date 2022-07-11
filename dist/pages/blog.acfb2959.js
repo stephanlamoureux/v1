@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"1muWg":[function(require,module,exports) {
+})({"7berY":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "be88e85309b3771f";
+module.bundle.HMR_BUNDLE_ID = "1819d555acfb2959";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,84 +531,33 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"gWX7s":[function(require,module,exports) {
+},{}],"7hBKZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _tuiPagination = require("tui-pagination");
 var _tuiPaginationDefault = parcelHelpers.interopDefault(_tuiPagination);
-const api_url = "https://dev.to/api/articles?username=stephanlamoureux";
-async function getArticle() {
-    try {
-        const response = await fetch(api_url);
-        const data = await response.json();
-        // Data for the first article
-        const link = data[0].url;
-        const title = data[0].title;
-        const tag = data[0].tag_list;
-        const date = data[0].readable_publish_date;
-        const readingTime = data[0].reading_time_minutes;
-        document.querySelector(".article-link").href = link;
-        document.querySelector(".article-title").textContent = title;
-        document.querySelector(".tags").textContent = tag.map((i)=>"#" + i).join(", ");
-        document.querySelector(".minutes").textContent = readingTime + " minute read";
-        document.querySelector(".date").textContent = date;
-        //For multiple articles that you want to display
-        function displayMultipleArticles() {
-            for(let i1 = 1; i1 < data.length; i1++){
-                let card = document.createElement("div") //card container
-                ;
-                card.className = "dev-article";
-                let articleLink = document.createElement("a") //link to dev.to
-                ;
-                articleLink.className = "article-link" + i1;
-                articleLink.target = "_blank";
-                articleLink.href = data[i1].url;
-                let articleTitle = document.createElement("h1") //article title
-                ;
-                articleTitle.className = "article-title";
-                articleTitle.textContent = data[i1].title;
-                let articleInfo = document.createElement("div") //info container
-                ;
-                articleInfo.className = "article-info";
-                let tagsInArticle = document.createElement("p") //tags
-                ;
-                tagsInArticle.className = "tags";
-                let hashTags = data[i1].tag_list;
-                tagsInArticle.textContent = hashTags.map((i)=>"#" + i).join(", ");
-                let articleMinutes = document.createElement("p") //minutes
-                ;
-                articleMinutes.className = "minutes";
-                articleMinutes.textContent = data[i1].reading_time_minutes + " minute read";
-                let articleDate = document.createElement("p") //date posted
-                ;
-                articleDate.className = "date";
-                articleDate.textContent = data[i1].readable_publish_date;
-                // make the card a link to the dev.to article
-                card.appendChild(articleLink);
-                // append the title and the article info to the card
-                articleLink.appendChild(articleTitle);
-                articleLink.appendChild(articleInfo);
-                // append tags, minutes, and date to info container
-                articleInfo.appendChild(tagsInArticle);
-                articleInfo.appendChild(articleMinutes);
-                articleInfo.appendChild(articleDate);
-                // append card container to main container
-                document.querySelector(".blog-container").appendChild(card);
-            }
-        }
-        displayMultipleArticles();
-    } catch (error) {
-        console.log(error);
-    }
-}
-getArticle();
-// ToastUI Pagination
 const container = document.getElementById("tui-pagination-container");
-const pagination = new (0, _tuiPaginationDefault.default)(container, {
-    itemsPerPage: 15
-}) // pagination.on('beforeMove', event => {
- //   window.scroll(0, 0)
- // })
-;
+const options = {
+    totalItems: 10,
+    itemsPerPage: 10,
+    visiblePages: 10,
+    page: 1,
+    centerAlign: false,
+    firstItemClassName: "tui-first-child",
+    lastItemClassName: "tui-last-child",
+    template: {
+        page: '<a href="#" class="tui-page-btn">{{page}}</a>',
+        currentPage: '<strong class="tui-page-btn tui-is-selected">{{page}}</strong>',
+        moveButton: '<a href="#" class="tui-page-btn tui-{{type}}"><span class="tui-ico-{{type}}">{{type}}</span></a>',
+        disabledMoveButton: '<span class="tui-page-btn tui-is-disabled tui-{{type}}"><span class="tui-ico-{{type}}">{{type}}</span></span>',
+        moreButton: '<a href="#" class="tui-page-btn tui-{{type}}-is-ellip"><span class="tui-ico-ellip">...</span></a>'
+    }
+};
+const pagination = new (0, _tuiPaginationDefault.default)(container, options);
+pagination.on("beforeMove", (event)=>{
+    submitButtonEvent(event.page);
+    window.scroll(0, 450);
+    getGrid.scrollTop -= 10000;
+});
 
 },{"tui-pagination":"b80gR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b80gR":[function(require,module,exports) {
 /*!
@@ -2900,6 +2849,6 @@ const pagination = new (0, _tuiPaginationDefault.default)(container, {
     ]);
 });
 
-},{}]},["1muWg","gWX7s"], "gWX7s", "parcelRequire390d")
+},{}]},["7berY","7hBKZ"], "7hBKZ", "parcelRequire390d")
 
-//# sourceMappingURL=blog.09b3771f.js.map
+//# sourceMappingURL=blog.acfb2959.js.map

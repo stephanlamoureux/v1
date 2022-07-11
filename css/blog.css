@@ -76,3 +76,9 @@
 .date {
   color: var(--dracula-cyan);
 }
+
+.tui-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

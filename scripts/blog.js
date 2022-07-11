@@ -1,3 +1,5 @@
+import Pagination from 'tui-pagination'
+
 const api_url = 'https://dev.to/api/articles?username=stephanlamoureux'
 
 async function getArticle() {
@@ -68,3 +70,14 @@ async function getArticle() {
   }
 }
 getArticle()
+
+// ToastUI Pagination
+
+const container = document.getElementById('tui-pagination-container')
+const pagination = new Pagination(container, {
+  itemsPerPage: 15,
+})
+
+// pagination.on('beforeMove', event => {
+//   window.scroll(0, 0)
+// })

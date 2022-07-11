@@ -72,4 +72,10 @@
   color: var(--dracula-cyan);
 }
 
+.tui-pagination {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /*# sourceMappingURL=blog.8f5b317e.css.map */

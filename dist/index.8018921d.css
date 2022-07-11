@@ -113,6 +113,37 @@ body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px #383a59e6;
 }
 
+body.light-mode .tui-pagination .tui-is-disabled:hover {
+  background: var(--dracula-background);
+}
+
+body.light-mode .tui-pagination .tui-is-selected, .tui-pagination strong {
+  color: var(--dracula-background);
+  background: var(--dracula-green);
+  border-color: var(--dracula-green);
+}
+
+body.light-mode .tui-pagination .tui-is-selected:hover {
+  background-color: var(--dracula-green);
+}
+
+body.light-mode .tui-pagination .tui-first-child.tui-is-selected {
+  border-left: 1px solid var(--dracula-green);
+}
+
+body.light-mode .tui-pagination .tui-last-child.tui-is-selected {
+  border-right: 1px solid var(--dracula-green);
+}
+
+body.light-mode .tui-page-inputs .tui-page-current {
+  color: var(--dracula-green);
+}
+
+body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui-prev, body.light-mode .tui-pagination .tui-next, body.light-mode .tui-pagination .tui-last, body.light-mode .tui-pagination .tui-prev-is-ellip, body.light-mode .tui-pagination .tui-next-is-ellip {
+  border: 1px solid var(--dracula-foreground);
+  background: var(--dracula-greypurple);
+}
+
 body.light-mode label {
   text-shadow: 1px 1px 2px #000000e6;
 }

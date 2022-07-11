@@ -7,8 +7,7 @@
 
 ## Blog
 
-- Add a loader
-- Add pagination - [toastui](https://ui.toast.com/tui-pagination)
+- Connect pagination to dev.to API - [toastui](https://ui.toast.com/tui-pagination)
 
 ## Projects
 

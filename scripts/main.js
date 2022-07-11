@@ -38,6 +38,7 @@ if (localStorage.getItem('lightMode') === 'enabled') {
 
 const navbar = document.querySelector('.navbar')
 const menu = document.querySelector('.menu')
+const toggle = document.querySelector('.mobile-mode-toggle')
 
 menu.addEventListener('click', toggleMenu)
 
@@ -52,10 +53,11 @@ menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
-// close the navbar when you click outside of it
+// close the navbar when you click outside of it, but not when the color mode toggle is clicked
 document.addEventListener('click', function (event) {
   const isClickedInside = menu.contains(event.target)
-  if (!isClickedInside) {
+  const mode = toggle.contains(event.target)
+  if (!isClickedInside && !mode) {
     navbar.classList.remove('showNav')
     menu.classList.remove('showClose')
   }

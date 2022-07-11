@@ -573,6 +573,13 @@ const menuLinks = document.querySelectorAll(".menu-link");
 menuLinks.forEach(function(menuLink) {
     menuLink.addEventListener("click", toggleMenu);
 });
+document.addEventListener("click", function(event) {
+    const isClickedInside = menu.contains(event.target);
+    if (!isClickedInside) {
+        navbar.classList.remove("showNav");
+        menu.classList.remove("showClose");
+    }
+});
 function hoverLightChevron() {
     // Hover effect on currently-working-on chevrons (light mode)
     links.forEach((link)=>{
@@ -632,36 +639,6 @@ var gtag = function gtag() {
 exports.gtag = gtag;
 var _default = gtag;
 exports["default"] = _default;
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
 
 },{}]},["foMn7","8VGZO"], "8VGZO", "parcelRequire390d")
 

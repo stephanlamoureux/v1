@@ -52,6 +52,14 @@ menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
+document.addEventListener('click', function (event) {
+  const isClickedInside = menu.contains(event.target)
+  if (!isClickedInside) {
+    navbar.classList.remove('showNav')
+    menu.classList.remove('showClose')
+  }
+})
+
 function hoverLightChevron() {
   // Hover effect on currently-working-on chevrons (light mode)
   links.forEach(link => {

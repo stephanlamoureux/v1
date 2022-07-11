@@ -52,6 +52,7 @@ menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
+// close the navbar when you click outside of it
 document.addEventListener('click', function (event) {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {

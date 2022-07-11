@@ -1,3 +1,8 @@
+import gtag, { install } from 'ga-gtag'
+
+// Google Analytics
+install('G-YYTQ7PKV12')
+
 // Light Mode
 
 const buttons = document.querySelectorAll('.mode-toggle')

@@ -532,6 +532,11 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8VGZO":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _gaGtag = require("ga-gtag");
+var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
+// Google Analytics
+(0, _gaGtag.install)("G-YYTQ7PKV12");
 // Light Mode
 const buttons = document.querySelectorAll(".mode-toggle");
 const links = document.querySelectorAll(".working-on-link");
@@ -598,6 +603,65 @@ function hoverDarkChevron() {
         });
     });
 }
+
+},{"ga-gtag":"cpRs5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cpRs5":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = exports.gtag = exports.install = void 0;
+var install = function install(trackingId) {
+    var additionalConfigInfo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var scriptId = "ga-gtag";
+    if (document.getElementById(scriptId)) return;
+    var _document = document, head = _document.head;
+    var script = document.createElement("script");
+    script.id = scriptId;
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=".concat(trackingId);
+    head.insertBefore(script, head.firstChild);
+    window.dataLayer = window.dataLayer || [];
+    gtag("js", new Date);
+    gtag("config", trackingId, additionalConfigInfo);
+};
+exports.install = install;
+var gtag = function gtag() {
+    window.dataLayer.push(arguments);
+};
+exports.gtag = gtag;
+var _default = gtag;
+exports["default"] = _default;
+
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["foMn7","8VGZO"], "8VGZO", "parcelRequire390d")
 

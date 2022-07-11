@@ -45,7 +45,7 @@ body.light-mode .vwc {
 body.light-mode .working-on-link {
   color: #fff;
   text-shadow: 1px 1px 2px #000000bf;
-  background-image: linear-gradient(90deg, #ff79c6b3 0%, #8be9fd 50%, #50fa7be6 100%);
+  background-image: linear-gradient(90deg, #f693ffb3 0%, #8be9fd 50%, #50fa7be6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -73,7 +73,7 @@ body.light-mode .project-tile:hover .project-image {
 
 body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
   color: #000;
-  text-shadow: 0 0 2px #0003;
+  text-shadow: none;
 }
 
 body.light-mode .project-image {
@@ -84,8 +84,8 @@ body.light-mode .project-image {
   body.light-mode .project-name0, body.light-mode .project-name1, body.light-mode .project-name2, body.light-mode .project-name3, body.light-mode .project-name4, body.light-mode .project-name5 {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
-    color: var(--dracula-background);
-    text-shadow: 0 0 2px #0003;
+    color: #000;
+    text-shadow: none;
   }
 
   body.light-mode .project-image {
@@ -100,9 +100,9 @@ body.light-mode .project-image {
 
   body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
     box-shadow: 0 0 3px 1px var(--dracula-background);
-    color: var(--dracula-background);
+    color: #000;
     opacity: 1;
-    text-shadow: 0 0 2px #0003;
+    text-shadow: none;
     background-repeat: initial;
     background-position: initial;
     background-image: none;

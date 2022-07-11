@@ -334,14 +334,14 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 0 0 2px 1px var(--dracula-foreground);
-    color: var(--dracula-background);
+    color: black;
     font-size: 1.3rem;
     font-weight: 500;
     padding: 1rem 0;
     transition: none;
     width: 100%;
     margin-top: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
   }
 
   .project-image {
@@ -369,8 +369,8 @@
   .project-tile:hover .project-name3,
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    color: var(--dracula-background);
+    text-shadow: none;
+    color: black;
     opacity: 1;
     transform: none;
     transition: none;

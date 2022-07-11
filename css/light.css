@@ -66,7 +66,7 @@ body.light-mode .working-on-link {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(255, 121, 198, 0.7) 0%,
+    rgb(246, 147, 255, 0.7) 0%,
     rgba(139, 233, 253, 1) 50%,
     rgba(80, 250, 123, 0.9) 100%
   );
@@ -102,7 +102,7 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
   color: black;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  text-shadow: none;
 }
 
 body.light-mode .project-image {
@@ -118,8 +118,8 @@ body.light-mode .project-image {
   body.light-mode .project-name5 {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
-    color: var(--dracula-background);
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    color: black;
+    text-shadow: none;
   }
 
   body.light-mode .project-image {
@@ -139,9 +139,9 @@ body.light-mode .project-image {
   body.light-mode .project-tile:hover .project-name4,
   body.light-mode .project-tile:hover .project-name5 {
     box-shadow: 0 0 3px 1px var(--dracula-background);
-    color: var(--dracula-background);
+    color: black;
     opacity: 1;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
     background-repeat: initial;
     background-position: initial;
     background-image: none;

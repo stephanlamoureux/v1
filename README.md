@@ -14,10 +14,10 @@
 			<ul>
 				<li><a href="https://parceljs.org/">Parcel</a> - Build tool</li>
 				<li><a href="https://ui.toast.com/tui-pagination">ToastUI</a> - Pagination</li>
-				<li><a href="https://developers.google.com/analytics/devguides/collection/gtagjs">Gtag</a> - Google analytics</li>
+				<li><a href="https://developers.google.com/analytics/devguides/collection/gtagjs">gtag.js</a> - Google analytics</li>
 				<li><a href="https://anijs.github.io/">AniJS</a> - Animation library</li>
 				<li><a href="https://www.emailjs.com/">EmailJS</a> - Email service</li>
-				<li><a href="https://mattboldt.com/demos/typed-js/">TypedJS</a> - Typing animation library</li>
+				<li><a href="https://mattboldt.com/demos/typed-js/">Typed.js</a> - Typing animation library</li>
 				<li><a href="https://developers.forem.com/api/">Dev.to API</a> - Blog Posts</li>
 				<li><a href="https://fontawesome.com/">Font	Awesome</a> - Icon library </li>
 				<li><a href="https://draculatheme.com/contribute#color-palette">Dracula</a> - Color palette</li>

@@ -13,7 +13,7 @@
 		</p>
 			<ul>
 				<li><a href="https://parceljs.org/">Parcel</a> - Build tool</li>
-				<li><a href="https://ui.toast.com/tui-pagination">ToastUIl</a> - Pagination</li>
+				<li><a href="https://ui.toast.com/tui-pagination">ToastUI</a> - Pagination</li>
 				<li><a href="https://developers.google.com/analytics/devguides/collection/gtagjs">Gtag</a> - Google analytics</li>
 				<li><a href="https://anijs.github.io/">AniJS</a> - Animation library</li>
 				<li><a href="https://www.emailjs.com/">EmailJS</a> - Email service</li>

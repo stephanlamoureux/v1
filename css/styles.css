@@ -58,6 +58,7 @@ body {
     var(--dracula-background) 50%,
     var(--dracula-greypurple) 100%
   );
+  transition: background-color 0.9s linear;
 }
 
 a {

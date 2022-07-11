@@ -46,6 +46,7 @@ body {
   color: var(--dracula-foreground);
   background: linear-gradient( 180deg, var(--dracula-background) 50%, var(--dracula-greypurple) 100% );
   font-family: Inter, sans-serif;
+  transition: background-color .9s linear;
 }
 
 a {

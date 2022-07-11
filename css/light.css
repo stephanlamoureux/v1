@@ -5,6 +5,7 @@ body.light-mode {
   background: linear-gradient(180deg, rgb(173, 116, 255) 25%, rgb(255, 121, 198) 100%);
   color: black;
   cursor: url('../assets/images/icons/cursor-white.png'), auto;
+  transition: background-color 0.9s linear;
 }
 
 /* Header */

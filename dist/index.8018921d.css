@@ -2,6 +2,7 @@ body.light-mode {
   color: #000;
   cursor: url("cursor-white.184c40f3.png"), auto;
   background: linear-gradient(#ad74ff 25%, #ff79c6 100%);
+  transition: background-color .9s linear;
 }
 
 body.light-mode .line {

@@ -260,6 +260,9 @@
 
   .dev-article {
     width: 75%;
+  }
+
+  .dev-article:not(:last-of-type) {
     margin-bottom: 2rem;
   }
 
@@ -500,7 +503,7 @@
   }
 
   .dev-article {
-    width: 90%;
+    width: 100%;
   }
 
   .icons-flex a i {

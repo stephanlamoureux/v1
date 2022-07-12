@@ -58,13 +58,12 @@ function toggleMenu() {
   navbar.classList.toggle('showNav')
   menu.classList.toggle('showClose')
 }
-
+// Close the menu when a link is clicked
 menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
-// Close the mobile nav menu when you click outside of it, but not when the color mode toggle is checked.
-
+// Close the mobile nav menu when you click outside of it
 document.addEventListener('click', event => {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {
@@ -73,6 +72,7 @@ document.addEventListener('click', event => {
   }
 })
 
+// but not when the color mode toggle is checked
 document.nav.addEventListener('change', event => {
   const modeToggle = toggle.contains(event.target)
   if (!modeToggle) {
@@ -81,7 +81,7 @@ document.nav.addEventListener('change', event => {
   }
 })
 
-// Currently working on section hover effect
+// About Me page hover effect
 
 function hoverLightChevron() {
   // Hover effect on currently-working-on chevrons (light mode)

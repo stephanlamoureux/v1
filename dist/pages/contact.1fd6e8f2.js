@@ -596,7 +596,7 @@ document.addEventListener("click", (event)=>{
     }
 });
 // but not when the color mode toggle is checked
-document.nav.addEventListener("change", (event)=>{
+navbar.addEventListener("change", (event)=>{
     const modeToggle = toggle.contains(event.target);
     if (!modeToggle) {
         navbar.classList.add("showNav");

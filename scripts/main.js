@@ -67,8 +67,8 @@ menuLinks.forEach(function (menuLink) {
 document.addEventListener('click', event => {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {
-    navbar.classList.toggle('showNav')
-    menu.classList.toggle('showClose')
+    navbar.classList.remove('showNav')
+    menu.classList.remove('showClose')
   }
 })
 

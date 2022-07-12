@@ -45,7 +45,12 @@
 			<li class="desktop-link" role="none"><a class="link" href="blog.html" role="menuitem">Blog</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="projects.html" role="menuitem">Projects</a></li>
 			<li class="desktop-link" role="none"><a class="link is-active" href="contact.html" role="menuitem">Contact</a></li>
-			<li role="none"><button role="menuitem" class="mode-toggle" aria-label="Color mode"><i alt="switch between dark mode and light mode" class="fas fa-2x fa-sun"></i></button></li>
+			<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="checkbox" id="checkbox" aria-label="color mode selector">
+				<label for="checkbox" class="checkbox-label">
+					<i class="fas fa-moon" alt="moon icon"></i>
+					<i class='fas fa-sun' alt="sun icon"></i>
+					<div class='ball'>
+					</label></div></div></li>
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -69,7 +74,12 @@
 				<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
 				<li class="menu-link" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
 				<li class="menu-link" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
-				<li role="none"><button role="menuitem" class="mode-toggle mobile-mode-toggle" aria-label="Color mode"><i alt="switch between dark mode and light mode" class="fas fa-3x fa-sun"></i></button></li>
+				<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="mobile-mode-toggle checkbox" id="checkbox" aria-label="color mode selector">
+					<label for="checkbox" class="checkbox-label">
+						<i class="fas fa-moon" alt="moon icon"></i>
+						<i class='fas fa-sun' alt="sun icon"></i>
+						<div class='ball'>
+						</label></div></div></li>
 			</ul>
 		</nav>
 	</header>
@@ -86,13 +96,13 @@
 				<form id="contact-form">
 					<fieldset>
 						<input type="hidden" name="contact_number" />
-						<label for="name">Name</label>
+						<label for="name" class="contact-label">Name</label>
 						<input type="text" id="name" name="user_name" required />
-						<label for="email">E-mail</label>
+						<label for="email" class="contact-label">E-mail</label>
 						<input type="email" id="email" name="user_email" required />
 					</fieldset>
 					<fieldset class="message">
-						<label>Message</label>
+						<label class="contact-label">Message</label>
 						<textarea id="message" name="message" rows="7" required placeholder="Say Hey!"></textarea>
 					</fieldset>
 					<input type="submit" value="Send" class="form-submit" id="submit" />
@@ -167,9 +177,9 @@
 
 	<!-- Scripts -->
 	<script src="../scripts/anijs-master/dist/anijs-min.js"></script>
+	<script src="../scripts/main.js" type="module"></script>
 	<script src="../scripts/typed.js" type="module"></script>
 	<script src="../scripts/email.js" type="module"></script>
-	<script src="../scripts/main.js" type="module"></script>
 </body>
 
 </html>

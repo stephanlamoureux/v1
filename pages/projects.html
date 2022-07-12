@@ -45,7 +45,12 @@
 			<li class="desktop-link" role="none"><a class="link" href="blog.html" role="menuitem">Blog</a></li>
 			<li class="desktop-link" role="none"><a class="link is-active" href="projects.html" role="menuitem">Projects</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="contact.html" role="menuitem">Contact</a></li>
-			<li role="none"><button role="menuitem" class="mode-toggle" aria-label="Color mode"><i alt="switch between dark mode and light mode" class="fas fa-2x fa-sun"></i></button></li>
+			<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="checkbox" id="checkbox" aria-label="color mode selector">
+				<label for="checkbox" class="checkbox-label">
+					<i class="fas fa-moon" alt="moon icon"></i>
+					<i class='fas fa-sun' alt="sun icon"></i>
+					<div class='ball'>
+					</label></div></div></li>
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -69,7 +74,12 @@
 				<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
 				<li class="menu-link" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
 				<li class="menu-link" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
-				<li role="none"><button role="menuitem" class="mode-toggle mobile-mode-toggle" aria-label="Color mode"><i alt="switch between dark mode and light mode" class="fas fa-3x fa-sun"></i></button></li>
+				<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="mobile-mode-toggle checkbox" id="checkbox" aria-label="color mode selector">
+					<label for="checkbox" class="checkbox-label">
+						<i class="fas fa-moon" alt="moon icon"></i>
+						<i class='fas fa-sun' alt="sun icon"></i>
+						<div class='ball'>
+						</label></div></div></li>
 			</ul>
 		</nav>
 	</header>
@@ -190,8 +200,8 @@
 
 	<!-- Scripts -->
 	<script src="../scripts/anijs-master/dist/anijs-min.js"></script>
-	<script src="../scripts/typed.js" type="module"></script>
 	<script src="../scripts/main.js" type="module"></script>
+	<script src="../scripts/typed.js" type="module"></script>
 </body>
 
 </html>

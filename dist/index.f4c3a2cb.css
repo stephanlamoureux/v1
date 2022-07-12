@@ -235,6 +235,10 @@
     padding: 0;
   }
 
+  .checkbox-label {
+    background-color: var(--dracula-selection);
+  }
+
   .working-on-list .bullet {
     display: none;
   }

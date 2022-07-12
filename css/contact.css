@@ -30,7 +30,7 @@ fieldset {
   border: none;
 }
 
-label {
+.contact-label {
   display: block;
   padding-bottom: 0.3rem;
   color: var(--dracula-foreground);

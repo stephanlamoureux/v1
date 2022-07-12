@@ -27,7 +27,7 @@ fieldset {
   border: none;
 }
 
-label {
+.contact-label {
   color: var(--dracula-foreground);
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   padding-bottom: .3rem;

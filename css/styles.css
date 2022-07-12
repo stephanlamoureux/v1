@@ -58,7 +58,6 @@ body {
     var(--dracula-background) 50%,
     var(--dracula-greypurple) 100%
   );
-  transition: background-color 0.9s linear;
 }
 
 a {
@@ -174,24 +173,50 @@ a {
   font-family: 'Inter', sans-serif;
 }
 
+/* Color Mode Toggle */
+
 .mode-toggle {
-  background: none;
-  border: none;
   position: absolute;
   top: 0;
   right: 0;
   margin-right: 50px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  width: 50px;
+  height: 26px;
+  background-color: var(--dracula-background);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  transform: scale(1.5);
   cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
-.fa-sun {
-  color: var(--dracula-foreground);
-  filter: drop-shadow(5px 5px 5px var(--dracula-background));
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: var(--dracula-foreground);
+  position: absolute;
+  top: 2px;
+  left: 27px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
 }
 
 .fa-moon {
-  color: rgb(209, 176, 255);
-  filter: drop-shadow(5px 5px 5px var(--dracula-background));
+  color: var(--dracula-purple);
+}
+
+.fa-sun {
+  color: var(--dracula-yellow);
 }
 
 /* || Header */

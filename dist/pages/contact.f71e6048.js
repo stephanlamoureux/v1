@@ -538,51 +538,70 @@ var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
 // Google Analytics
 (0, _gaGtag.install)("G-YYTQ7PKV12");
 // Light Mode
-const buttons = document.querySelectorAll(".mode-toggle");
+const checkboxes = document.querySelectorAll(".checkbox");
 const links = document.querySelectorAll(".working-on-link");
-buttons.forEach((button)=>{
-    button.addEventListener("click", function() {
+const balls = document.querySelectorAll(".ball");
+checkboxes.forEach((checkbox)=>{
+    checkbox.addEventListener("change", ()=>{
         document.body.classList.toggle("light-mode");
-        document.querySelectorAll(".fa-sun").forEach((icon)=>{
-            icon.classList.toggle("fa-moon");
-            icon.style.transition = "ease-in all 0.1s";
-        });
         if (document.body.classList.contains("light-mode")) {
             localStorage.setItem("lightMode", "enabled");
+            balls.forEach((ball)=>{
+                ball.style.transform = "translateX(-24px)";
+            });
             hoverLightChevron();
         } else {
             localStorage.setItem("lightMode", "disabled");
+            balls.forEach((ball)=>{
+                ball.style.transition = "transform 0.2s linear";
+                ball.style.transform = "translateX(0px)";
+            });
             hoverDarkChevron();
         }
     });
+    if (localStorage.getItem("lightMode") === "enabled") {
+        document.body.classList.add("light-mode");
+        balls.forEach((ball)=>{
+            ball.style.transition = "none";
+            ball.style.transform = "translateX(-24px)";
+        });
+        hoverLightChevron();
+    } else {
+        balls.forEach((ball)=>{
+            ball.style.transform = "translateX(0px)";
+        });
+        hoverDarkChevron();
+    }
 });
-if (localStorage.getItem("lightMode") === "enabled") {
-    document.body.classList.add("light-mode");
-    document.querySelectorAll(".fa-sun").forEach((icon)=>icon.classList.add("fa-moon"));
-    hoverLightChevron();
-} else hoverDarkChevron();
 // Mobile Nav
+const menuLinks = document.querySelectorAll(".menu-link");
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu");
-const toggle = document.querySelector(".mobile-mode-toggle");
 menu.addEventListener("click", toggleMenu);
 function toggleMenu() {
     navbar.classList.toggle("showNav");
     menu.classList.toggle("showClose");
 }
-const menuLinks = document.querySelectorAll(".menu-link");
 menuLinks.forEach(function(menuLink) {
     menuLink.addEventListener("click", toggleMenu);
 });
-// close the navbar when you click outside of it, but not when the color mode toggle is clicked on mobile
+// close the navbar when you click outside of it, but not when the color mode toggle is clicked
+const toggle = document.querySelector(".mobile-mode-toggle");
 document.addEventListener("click", function(event) {
     const isClickedInside = menu.contains(event.target);
-    const mode = toggle.contains(event.target);
-    if (!isClickedInside && !mode) {
+    if (!isClickedInside) {
         navbar.classList.remove("showNav");
         menu.classList.remove("showClose");
     }
 });
+document.addEventListener("change", (event)=>{
+    const modeToggle = toggle.contains(event.target);
+    if (!modeToggle) {
+        navbar.classList.add("showNav");
+        menu.classList.add("showClose");
+    }
+});
+// Currently working on section hover effect
 function hoverLightChevron() {
     // Hover effect on currently-working-on chevrons (light mode)
     links.forEach((link)=>{
@@ -642,6 +661,36 @@ var gtag = function gtag() {
 exports.gtag = gtag;
 var _default = gtag;
 exports["default"] = _default;
+
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["foMn7","8VGZO"], "8VGZO", "parcelRequire390d")
 

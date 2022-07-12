@@ -67,15 +67,15 @@ menuLinks.forEach(function (menuLink) {
 document.addEventListener('click', event => {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {
-    navbar.classList.remove('showNav')
-    menu.classList.remove('showClose')
+    navbar.classList.toggle('showNav')
+    menu.classList.toggle('showClose')
   }
 })
 
 // but not when the color mode toggle is checked
-navbar.addEventListener('change', event => {
+document.addEventListener('change', event => {
   const modeToggle = toggle.contains(event.target)
-  if (!modeToggle) {
+  if (modeToggle) {
     navbar.classList.add('showNav')
     menu.classList.add('showClose')
   }

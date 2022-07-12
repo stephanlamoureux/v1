@@ -1,6 +1,7 @@
 import gtag, { install } from 'ga-gtag'
 
 // Google Analytics
+
 install('G-YYTQ7PKV12')
 
 // Light Mode
@@ -61,16 +62,17 @@ menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
-// close the navbar when you click outside of it, but not when the color mode toggle is clicked
-const toggle = document.querySelector('.mobile-mode-toggle')
+// Close the navbar when you click outside of it, but not when the color mode toggle is checked
 
-document.addEventListener('click', function (event) {
+document.addEventListener('click', event => {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {
     navbar.classList.remove('showNav')
     menu.classList.remove('showClose')
   }
 })
+
+const toggle = document.querySelector('.mobile-mode-toggle')
 
 document.addEventListener('change', event => {
   const modeToggle = toggle.contains(event.target)

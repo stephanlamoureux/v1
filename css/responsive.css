@@ -692,6 +692,10 @@
     display: initial;
   }
 
+  .ball {
+    transition-property: none !important;
+  }
+
   .header-title {
     text-align: right;
     font-size: 2.6rem;

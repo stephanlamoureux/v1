@@ -50,6 +50,7 @@ checkboxes.forEach(checkbox => {
 const menuLinks = document.querySelectorAll('.menu-link')
 const navbar = document.querySelector('.navbar')
 const menu = document.querySelector('.menu')
+const toggle = document.querySelector('.mobile-mode-toggle')
 
 menu.addEventListener('click', toggleMenu)
 
@@ -62,19 +63,17 @@ menuLinks.forEach(function (menuLink) {
   menuLink.addEventListener('click', toggleMenu)
 })
 
-// Close the navbar when you click outside of it, but not when the color mode toggle is checked
+// Close the mobile nav menu when you click outside of it, but not when the color mode toggle is checked.
 
 document.addEventListener('click', event => {
   const isClickedInside = menu.contains(event.target)
   if (!isClickedInside) {
-    navbar.classList.remove('showNav')
-    menu.classList.remove('showClose')
+    navbar.classList.toggle('showNav')
+    menu.classList.toggle('showClose')
   }
 })
 
-const toggle = document.querySelector('.mobile-mode-toggle')
-
-document.addEventListener('change', event => {
+document.nav.addEventListener('change', event => {
   const modeToggle = toggle.contains(event.target)
   if (!modeToggle) {
     navbar.classList.add('showNav')

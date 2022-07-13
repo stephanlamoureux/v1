@@ -541,7 +541,21 @@ var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
 const checkboxes = document.querySelectorAll(".checkbox");
 const links = document.querySelectorAll(".working-on-link");
 const balls = document.querySelectorAll(".ball");
-checkboxes.forEach((checkbox)=>{
+/*
+Event listeners for the toggle switches on the desktop nav and mobile nav.
+
+The default mode is dark, so when the toggle is checked:
+1. Light mode stylesheet is enabled
+2. Local storage is updated to "light mode: enabled"
+3. The ball on both the desktop and mobile toggle is slid to the left
+4. The chevron hover effect is set to light mode
+
+When the toggle is unchecked:
+1. Light mode stylesheet is disabled
+2. Local storage is updated to "light mode: disabled"
+3. The ball on both the desktop and mobile toggle is slid to the right
+4. The chevron hover effect is set to dark mode
+*/ checkboxes.forEach((checkbox)=>{
     checkbox.addEventListener("change", ()=>{
         document.body.classList.toggle("light-mode");
         if (document.body.classList.contains("light-mode")) {
@@ -559,6 +573,8 @@ checkboxes.forEach((checkbox)=>{
             hoverDarkChevron();
         }
     });
+    // If the user has previously checked the light mode toggle
+    // the page will load in light mode and vice versa using the same logic as above.
     if (localStorage.getItem("lightMode") === "enabled") {
         document.body.classList.add("light-mode");
         balls.forEach((ball)=>{
@@ -578,6 +594,7 @@ const menuLinks = document.querySelectorAll(".menu-link");
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu");
 const toggle = document.querySelector(".mobile-mode-toggle");
+const nav = document.getElementById("nav");
 menu.addEventListener("click", toggleMenu);
 function toggleMenu() {
     navbar.classList.toggle("showNav");
@@ -589,7 +606,7 @@ menuLinks.forEach(function(menuLink) {
 });
 // Close the mobile nav menu when you click outside of it
 document.addEventListener("click", (event)=>{
-    const isClickedInside = menu.contains(event.target);
+    const isClickedInside = nav.contains(event.target);
     if (!isClickedInside) {
         navbar.classList.remove("showNav");
         menu.classList.remove("showClose");

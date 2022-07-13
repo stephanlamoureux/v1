@@ -1,11 +1,9 @@
 import gtag, { install } from 'ga-gtag'
 
 // Google Analytics
-
 install('G-YYTQ7PKV12')
 
 // Light Mode
-
 const checkboxes = document.querySelectorAll('.checkbox')
 const links = document.querySelectorAll('.working-on-link')
 const balls = document.querySelectorAll('.ball')
@@ -65,11 +63,11 @@ checkboxes.forEach(checkbox => {
 })
 
 // Mobile Nav
-
 const menuLinks = document.querySelectorAll('.menu-link')
 const navbar = document.querySelector('.navbar')
 const menu = document.querySelector('.menu')
 const toggle = document.querySelector('.mobile-mode-toggle')
+const nav = document.getElementById('nav')
 
 menu.addEventListener('click', toggleMenu)
 
@@ -85,7 +83,7 @@ menuLinks.forEach(function (menuLink) {
 
 // Close the mobile nav menu when you click outside of it
 document.addEventListener('click', event => {
-  const isClickedInside = menu.contains(event.target)
+  const isClickedInside = nav.contains(event.target)
   if (!isClickedInside) {
     navbar.classList.remove('showNav')
     menu.classList.remove('showClose')
@@ -102,7 +100,6 @@ document.addEventListener('change', event => {
 })
 
 // About Me page hover effect
-
 function hoverLightChevron() {
   // Hover effect on currently-working-on chevrons (light mode)
   links.forEach(link => {

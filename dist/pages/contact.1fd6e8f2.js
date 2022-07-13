@@ -594,7 +594,7 @@ const menuLinks = document.querySelectorAll(".menu-link");
 const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".menu");
 const toggle = document.querySelector(".mobile-mode-toggle");
-const nav = document.getElementById("nav");
+const nav = document.getElementById("nav-wrapper");
 menu.addEventListener("click", toggleMenu);
 function toggleMenu() {
     navbar.classList.toggle("showNav");
@@ -612,7 +612,7 @@ document.addEventListener("click", (event)=>{
         menu.classList.remove("showClose");
     }
 });
-// but not when the color mode toggle is checked
+// Keep the mobile nav menu open when the color mode toggle is clicked
 document.addEventListener("change", (event)=>{
     const modeToggle = toggle.contains(event.target);
     if (!modeToggle) {

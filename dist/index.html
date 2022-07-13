@@ -60,7 +60,7 @@
 		<!-- End Header -->
 
 		<!-- Mobile Menu -->
-		<div id="nav">
+		<div id="nav-wrapper">
 		<button class="menu" aria-label="Main Menu"></button>
 		<nav class="navbar">
 			<ul class="nav-list" role="menu">
@@ -68,12 +68,18 @@
 				<li class="menu-link" role="none"><a href="/pages/blog.html" role="menuitem">Blog</a></li>
 				<li class="menu-link" role="none"><a href="/pages/projects.html" role="menuitem">Projects</a></li>
 				<li class="menu-link" role="none"><a href="/pages/contact.html" role="menuitem">Contact</a></li>
-				<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="mobile-mode-toggle checkbox" id="checkbox" aria-label="color mode selector">
-					<label for="checkbox" class="checkbox-label">
-						<i class="fas fa-moon" alt="moon icon"></i>
-						<i class="fas fa-sun" alt="sun icon"></i>
-						<div class="ball"></div>
-						</label></div></li>
+				<!-- Color Mode Toggle -->
+				<li role="none">
+					<div class="mode-toggle" role="menuitem">
+						<input type="checkbox" class="mobile-mode-toggle checkbox" id="checkbox" aria-label="color mode selector">
+						<label for="checkbox" class="checkbox-label">
+							<i class="fas fa-moon" alt="moon icon"></i>
+							<i class="fas fa-sun" alt="sun icon"></i>
+							<div class="ball"></div>
+						</label>
+					</div>
+				</li>
+				<!-- End Color Mode Toggle -->
 			</ul>
 		</nav>
 	</div>

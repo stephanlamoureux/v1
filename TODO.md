@@ -15,7 +15,7 @@
 
 ## Nav
 
-- Replace hamburger menu icons with animated CSS - [example 1](https://codepen.io/designcouch/pen/ExvwPY) / [example 2](https://www.sliderrevolution.com/resources/css-hamburger-menu/)
+- Replace hamburger menu icons with animated CSS - [example 1](https://codepen.io/designcouch/pen/ExvwPY) / [example 2](https://www.sliderrevolution.com/resources/css-hamburger-menu/) [example 3](https://jonsuh.com/hamburgers/)
 
 ## Misc
 

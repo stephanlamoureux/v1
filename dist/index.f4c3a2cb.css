@@ -555,10 +555,6 @@
     margin-left: 40px;
   }
 
-  #article_title {
-    font-size: 1rem;
-  }
-
   .icons-flex > span {
     margin: 15px 0;
     font-size: 1.9rem;
@@ -651,7 +647,7 @@
     overflow-wrap: break-word;
   }
 
-  #article_title {
+  .article-title {
     font-size: 1.1rem;
   }
 

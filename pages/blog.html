@@ -46,12 +46,18 @@
 			<li class="desktop-link" role="none"><a class="link is-active" href="blog.html" role="menuitem">Blog</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="projects.html" role="menuitem">Projects</a></li>
 			<li class="desktop-link" role="none"><a class="link" href="contact.html" role="menuitem">Contact</a></li>
-			<li role="none"><div class="mode-toggle" role="menuitem"><input type="checkbox" class="checkbox" id="checkbox" aria-label="color mode selector">
-				<label for="checkbox" class="checkbox-label">
-					<i class="fas fa-moon" alt="moon icon"></i>
-					<i class='fas fa-sun' alt="sun icon"></i>
-					<div class='ball'>
-					</label></div></div></li>
+			<!--- Desktop Color Mode Toggle -->
+			<li role="none">
+				<div class="mode-toggle" role="menuitem">
+					<input type="checkbox" class="checkbox" id="checkbox" aria-label="color mode selector">
+					<label for="checkbox" class="checkbox-label">
+						<i class="fas fa-moon" alt="moon icon"></i>
+						<i class='fas fa-sun' alt="sun icon"></i>
+						<div class='ball'></div>
+					</label>
+				</div>
+			</li>
+			<!-- End Desktop Color Mode Toggle -->
 		</ul>
 	</div>
 	<!-- End Desktop Nav -->
@@ -68,7 +74,7 @@
 		<!-- End Header -->
 
 		<!-- Mobile Menu -->
-		<div id="nav-wrapper">
+		<div id="nav-wrapper" class="nav-wrapper">
 		<button class="menu" aria-label="Main Menu"></button>
 		<nav class="navbar">
 			<ul class="nav-list" role="menu">
@@ -76,7 +82,7 @@
 				<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
 				<li class="menu-link" role="none"><a href="projects.html" role="menuitem">Projects</a></li>
 				<li class="menu-link" role="none"><a href="contact.html" role="menuitem">Contact</a></li>
-				<!-- Color Mode Toggle -->
+				<!-- Mobile Color Mode Toggle -->
 				<li role="none">
 					<div class="mode-toggle" role="menuitem">
 						<input type="checkbox" class="mobile-mode-toggle checkbox" id="checkbox" aria-label="color mode selector">
@@ -87,7 +93,7 @@
 						</label>
 					</div>
 				</li>
-				<!-- End Color Mode Toggle -->
+				<!-- Mobile End Color Mode Toggle -->
 			</ul>
 		</nav>
 	</div>

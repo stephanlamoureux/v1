@@ -591,14 +591,15 @@ When the toggle is unchecked:
 });
 // Mobile Nav
 const menuLinks = document.querySelectorAll(".menu-link");
-const navbar = document.querySelector(".navbar");
-const menu = document.querySelector(".menu");
+const navbar = document.querySelector(".nav-wrapper .navbar");
+const menu = document.querySelector(".nav-wrapper .menu");
 const toggle = document.querySelector(".mobile-mode-toggle");
 const nav = document.getElementById("nav-wrapper");
+const hamburger = document.querySelector(".nav-wrapper .hamburger");
 menu.addEventListener("click", toggleMenu);
 function toggleMenu() {
+    hamburger.classList.toggle("is-active");
     navbar.classList.toggle("showNav");
-    menu.classList.toggle("showClose");
 }
 // Close the menu when a link is clicked
 menuLinks.forEach(function(menuLink) {
@@ -609,7 +610,7 @@ document.addEventListener("click", (event)=>{
     const isClickedInside = nav.contains(event.target);
     if (!isClickedInside) {
         navbar.classList.remove("showNav");
-        menu.classList.remove("showClose");
+        hamburger.classList.remove("is-active");
     }
 });
 // Keep the mobile nav menu open when the color mode toggle is clicked
@@ -617,7 +618,7 @@ document.addEventListener("change", (event)=>{
     const modeToggle = toggle.contains(event.target);
     if (!modeToggle) {
         navbar.classList.add("showNav");
-        menu.classList.add("showClose");
+        hamburger.classList.add("is-active");
     }
 });
 // About Me page hover effect

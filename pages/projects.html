@@ -6,15 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Hi, My name is Steve. I build (and break) things on the web." />
 	<link rel="icon" type="image/x-icon" href="../assets/images/icons/favicon.ico" />
-	<!-- Local -->
+	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../css/styles.css" />
 	<link rel="stylesheet" type="text/css" href="../css/projects.css" />
 	<link rel="stylesheet" type="text/css" href="../css/responsive.css" />
 	<link rel="stylesheet" type="text/css" href="../css/light.css" />
-	<!-- AniJS -->
+	<link rel="stylesheet" type="text/css" href="../css/hamburgers.css" >
 	<link rel="stylesheet" type="text/css" href="../css/anicollection.css" />
-	<!-- Font Awesome 5 -->
 	<link rel="stylesheet" type="text/css" href="../assets/fontawesome-pro-5.7.2-web/css/fontawesome-initial.css" />
+	<!-- Stylesheets -->
 	<title>Stephan Lamoureux - Projects</title>
 </head>
 
@@ -74,8 +74,12 @@
 
 		<!-- Mobile Menu -->
 		<div id="nav-wrapper" class="nav-wrapper">
-			<button class="menu" aria-label="Main Menu"></button>
-			<nav class="navbar">
+			<button class="menu hamburger hamburger--vortex" type="button" aria-label="Menu" aria-controls="navigation">
+				<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav id="navigation" class="navbar">
 				<ul class="nav-list" role="menu">
 					<li class="menu-link" role="none"><a href="../index.html" role="menuitem">About</a></li>
 					<li class="menu-link" role="none"><a href="blog.html" role="menuitem">Blog</a></li>
@@ -95,7 +99,7 @@
 					<!-- End Mobile Color Mode Toggle -->
 				</ul>
 			</nav>
-		</div>
+			</div>
 		</header>
 		<!-- End Mobile Menu -->
 

@@ -86,7 +86,7 @@ a {
   }
 }
 
-.menu, .navbar {
+.nav-wrapper .menu, .nav-wrapper .navbar {
   display: none;
 }
 

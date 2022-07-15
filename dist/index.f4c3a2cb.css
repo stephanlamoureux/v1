@@ -162,25 +162,22 @@
     display: none;
   }
 
-  .menu {
+  .nav-wrapper {
+    margin-top: -25px;
+  }
+
+  .nav-wrapper .menu {
     cursor: url("cursor-hand-white.8bf00820.png"), auto;
     display: initial;
-    height: 36px;
     width: 36px;
     z-index: 1000;
-    background-color: #0000;
-    background-image: url("menu-white.06476fa7.svg");
-    background-size: 100%;
     border: none;
-    margin-top: -27px;
-    margin-left: 55px;
+    margin-left: 35px;
+    padding: 0;
+    position: relative;
   }
 
-  .showClose {
-    background-image: url("close.70d87c17.svg");
-  }
-
-  .navbar {
+  .nav-wrapper .navbar {
     background: var(--dracula-background);
     color: var(--dracula-foreground);
     display: initial;
@@ -196,12 +193,12 @@
     box-shadow: 0 0 5px 2px #bd93f966;
   }
 
-  .showNav {
+  .nav-wrapper .navbar.showNav {
     transition: transform .2s;
     transform: translateY(0);
   }
 
-  .navbar ul {
+  .nav-wrapper .navbar ul {
     height: 100%;
     width: 100%;
     flex-flow: column;
@@ -349,10 +346,6 @@
   .header-sub {
     font-size: 1rem;
   }
-
-  .menu {
-    margin-top: -22px;
-  }
 }
 
 @media (max-width: 860px) {
@@ -370,12 +363,6 @@
 
   .section-header {
     font-size: 2.1rem;
-  }
-
-  .menu {
-    height: 30px;
-    width: 30px;
-    margin-top: -19px;
   }
 
   .hire-me .tooltip {
@@ -493,13 +480,6 @@
     text-align: left;
   }
 
-  .menu {
-    height: 25px;
-    width: 25px;
-    margin-top: -18px;
-    margin-left: 40px;
-  }
-
   .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
     padding: .5rem 0;
     font-size: 1.1rem;
@@ -548,13 +528,6 @@
     font-size: .8rem;
   }
 
-  .menu {
-    width: 20px;
-    height: 20px;
-    margin-top: -18px;
-    margin-left: 40px;
-  }
-
   .icons-flex > span {
     margin: 15px 0;
     font-size: 1.9rem;
@@ -580,11 +553,6 @@
 
   .header-sub {
     font-size: .75rem;
-  }
-
-  .menu {
-    margin-top: -16px;
-    margin-left: 35px;
   }
 }
 
@@ -614,12 +582,6 @@
 
   .header-sub {
     font-size: .8rem;
-  }
-
-  .menu {
-    height: 30px;
-    width: 30px;
-    margin-top: -20px;
   }
 
   .line {
@@ -666,7 +628,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 500px) {
-  .navbar {
+  .nav-wrapper .navbar {
     height: 90vh;
   }
 
@@ -703,7 +665,7 @@
 }
 
 @media (max-width: 450px) {
-  .navbar {
+  .nav-wrapper .navbar {
     height: 75vh;
   }
 
@@ -775,13 +737,6 @@
     font-size: .6rem;
   }
 
-  .menu {
-    height: 25px;
-    width: 25px;
-    margin-top: -13px;
-    margin-left: 35px;
-  }
-
   .about, .blog, .projects, .contact {
     margin-bottom: 7rem;
   }
@@ -812,12 +767,6 @@
     font-size: .6rem;
   }
 
-  .menu {
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-
   .line {
     width: 175px;
   }
@@ -844,12 +793,6 @@
 
   .header-sub {
     font-size: .5rem;
-  }
-
-  .menu {
-    width: 15px;
-    height: 15px;
-    margin-top: -10px;
   }
 }
 

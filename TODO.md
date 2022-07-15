@@ -13,10 +13,6 @@
 
 - Add modals to cards for project details (or use [dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)?)
 
-## Nav
-
-- Replace hamburger menu icons with animated CSS - [example 1](https://codepen.io/designcouch/pen/ExvwPY) / [example 2](https://www.sliderrevolution.com/resources/css-hamburger-menu/) [example 3](https://jonsuh.com/hamburgers/)
-
 ## Misc
 
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc

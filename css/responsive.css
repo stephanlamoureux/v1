@@ -198,25 +198,22 @@
     display: none;
   }
 
-  .menu {
-    background-color: transparent;
-    background-image: url('../assets/images/icons/menu-white.svg');
-    background-size: 100%;
+  .nav-wrapper {
+    margin-top: -25px;
+  }
+
+  .nav-wrapper .menu {
     border: none;
     cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
     display: initial;
-    height: 36px;
-    margin-left: 55px;
-    margin-top: -27px;
+    margin-left: 35px;
+    padding: 0;
     width: 36px;
     z-index: 1000;
+    position: relative;
   }
 
-  .showClose {
-    background-image: url('../assets/images/icons/close.svg');
-  }
-
-  .navbar {
+  .nav-wrapper .navbar {
     background: var(--dracula-background);
     box-shadow: 0 0 5px 2px rgba(189, 147, 249, 0.4);
     color: var(--dracula-foreground);
@@ -232,12 +229,12 @@
     z-index: 999;
   }
 
-  .showNav {
+  .nav-wrapper .navbar.showNav {
     transform: translateY(0);
     transition: transform 0.2s ease;
   }
 
-  .navbar ul {
+  .nav-wrapper .navbar ul {
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
@@ -415,10 +412,6 @@
   .header-sub {
     font-size: 1rem;
   }
-
-  .menu {
-    margin-top: -22px;
-  }
 }
 
 @media (max-width: 860px) {
@@ -436,12 +429,6 @@
 
   .section-header {
     font-size: 2.1rem;
-  }
-
-  .menu {
-    height: 30px;
-    margin-top: -19px;
-    width: 30px;
   }
 
   .hire-me .tooltip {
@@ -565,13 +552,6 @@
     text-align: left;
   }
 
-  .menu {
-    height: 25px;
-    margin-left: 40px;
-    margin-top: -18px;
-    width: 25px;
-  }
-
   /* Projects */
 
   .project-name0,
@@ -631,13 +611,6 @@
     font-size: 0.8rem;
   }
 
-  .menu {
-    margin-top: -18px;
-    margin-left: 40px;
-    width: 20px;
-    height: 20px;
-  }
-
   .icons-flex > span {
     margin: 15px 0;
     font-size: 1.9rem;
@@ -663,11 +636,6 @@
 
   .header-sub {
     font-size: 0.75rem;
-  }
-
-  .menu {
-    margin-left: 35px;
-    margin-top: -16px;
   }
 }
 
@@ -699,12 +667,6 @@
 
   .header-sub {
     font-size: 0.8rem;
-  }
-
-  .menu {
-    height: 30px;
-    margin-top: -20px;
-    width: 30px;
   }
 
   .line {
@@ -760,7 +722,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-device-width: 500px) {
-  .navbar {
+  .nav-wrapper .navbar {
     height: 90vh;
   }
 
@@ -796,7 +758,7 @@
 }
 
 @media (max-width: 450px) {
-  .navbar {
+  .nav-wrapper .navbar {
     height: 75vh;
   }
 
@@ -872,13 +834,6 @@
     font-size: 0.6rem;
   }
 
-  .menu {
-    height: 25px;
-    margin-left: 35px;
-    margin-top: -13px;
-    width: 25px;
-  }
-
   .about,
   .blog,
   .projects,
@@ -912,12 +867,6 @@
     font-size: 0.6rem;
   }
 
-  .menu {
-    width: 20px;
-    height: 20px;
-    margin-left: 25px;
-  }
-
   .line {
     width: 175px;
   }
@@ -944,11 +893,5 @@
 
   .header-sub {
     font-size: 0.5rem;
-  }
-
-  .menu {
-    width: 15px;
-    height: 15px;
-    margin-top: -10px;
   }
 }

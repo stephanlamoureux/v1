@@ -15,11 +15,11 @@
 }
 
 .hamburger:hover, .hamburger.is-active:hover {
-  opacity: .7;
+  opacity: .8;
 }
 
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:before, .hamburger.is-active .hamburger-inner:after {
-  background-color: #000;
+  background-color: var(--dracula-foreground);
 }
 
 .hamburger-box {
@@ -38,7 +38,7 @@
 .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: var(--dracula-foreground);
   border-radius: 4px;
   transition-property: transform;
   transition-duration: .15s;

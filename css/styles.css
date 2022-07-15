@@ -103,11 +103,11 @@ a {
 
 /* || Nav Menu */
 
-.menu {
+.nav-wrapper .menu {
   display: none;
 }
 
-.navbar {
+.nav-wrapper .navbar {
   display: none;
 }
 

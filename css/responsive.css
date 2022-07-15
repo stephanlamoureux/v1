@@ -199,16 +199,15 @@
   }
 
   .nav-wrapper {
-    margin-top: -25px;
+    margin-top: -18px;
   }
 
   .nav-wrapper .menu {
     border: none;
     cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
     display: initial;
-    margin-left: 35px;
     padding: 0;
-    width: 36px;
+    padding-left: 38px;
     z-index: 1000;
     position: relative;
   }
@@ -412,9 +411,17 @@
   .header-sub {
     font-size: 1rem;
   }
+
+  .navbar-wrapper {
+    margin-top: -16px;
+  }
 }
 
 @media (max-width: 860px) {
+  .nav-wrapper {
+    margin-top: -15px;
+  }
+
   .header-title {
     font-size: 2.3rem;
   }
@@ -492,6 +499,10 @@
 
 @media (max-width: 716px) {
   /* General */
+
+  .nav-wrapper {
+    margin-top: -14px;
+  }
 
   .header-title {
     font-size: 2.1rem;
@@ -579,6 +590,10 @@
 }
 
 @media (max-width: 660px) {
+  .nav-wrapper {
+    margin-top: -12px;
+  }
+
   .header-title {
     font-size: 1.9rem;
   }
@@ -630,22 +645,6 @@
 }
 
 @media (max-width: 560px) {
-  .header-title {
-    font-size: 1.4rem;
-  }
-
-  .header-sub {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 530px) {
-  footer p {
-    padding: 0 25px;
-  }
-}
-
-@media (max-width: 510px) {
   /* General */
 
   .hidden {
@@ -718,6 +717,12 @@
 
   footer p {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  footer p {
+    padding: 0 25px;
   }
 }
 
@@ -826,6 +831,10 @@
 }
 
 @media (max-width: 381px) {
+  .nav-wrapper {
+    margin-top: -8px;
+  }
+
   .header-title {
     font-size: 1.8rem;
   }

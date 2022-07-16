@@ -200,6 +200,7 @@
 
   .nav-wrapper {
     margin-top: -18px;
+    padding-right: 10px;
   }
 
   .nav-wrapper .menu {
@@ -207,7 +208,7 @@
     cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
     display: initial;
     padding: 0;
-    padding-left: 38px;
+    padding-left: 50px;
     z-index: 1000;
     position: relative;
   }
@@ -497,6 +498,12 @@
   }
 }
 
+@media (max-width: 740px) {
+  .nav-wrapper .menu {
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 716px) {
   /* General */
 
@@ -633,6 +640,10 @@
 }
 
 @media (max-width: 583px) {
+  .nav-wrapper .menu {
+    padding-left: 30px;
+  }
+
   footer {
     padding-left: 0;
     padding-right: 0;
@@ -644,8 +655,16 @@
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 570px) {
   /* General */
+
+  .nav-wrapper {
+    margin-top: -15px;
+  }
+
+  .nav-wrapper .menu {
+    padding-left: 60px;
+  }
 
   .hidden {
     display: none;
@@ -760,19 +779,7 @@
   .icons-flex > span {
     font-size: 1.7rem;
   }
-}
 
-@media (max-width: 450px) {
-  .nav-wrapper .navbar {
-    height: 75vh;
-  }
-
-  .paragraph h3 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 443px) {
   footer p {
     font-size: 1.3rem;
     padding: 0 10px;
@@ -791,12 +798,38 @@
   }
 }
 
+@media (max-width: 450px) {
+  .nav-wrapper .navbar {
+    height: 75vh;
+  }
+
+  .paragraph h3 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 430px) {
   .about,
   .blog,
   .projects,
   .contact {
     margin-bottom: 10rem;
+  }
+
+  .nav-wrapper {
+    margin-top: -8px;
+  }
+
+  .nav-wrapper .menu {
+    padding-left: 40px;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-sub {
+    font-size: 0.6rem;
   }
 
   .paragraph h3 {
@@ -819,6 +852,17 @@
 }
 
 @media (max-width: 395px) {
+  .about,
+  .blog,
+  .projects,
+  .contact {
+    margin-bottom: 7rem;
+  }
+
+  .bottom-divider svg {
+    height: 460px;
+  }
+
   footer p {
     font-size: 1.2rem;
     padding-left: 15px;
@@ -830,31 +874,6 @@
   }
 }
 
-@media (max-width: 381px) {
-  .nav-wrapper {
-    margin-top: -8px;
-  }
-
-  .header-title {
-    font-size: 1.8rem;
-  }
-
-  .header-sub {
-    font-size: 0.6rem;
-  }
-
-  .about,
-  .blog,
-  .projects,
-  .contact {
-    margin-bottom: 7rem;
-  }
-
-  .bottom-divider svg {
-    height: 460px;
-  }
-}
-
 @media (max-width: 368px) {
   footer p {
     padding: 0 5px;
@@ -862,6 +881,18 @@
 }
 
 @media (max-width: 348px) {
+  .header-title {
+    font-size: 1.6rem;
+  }
+
+  .header-sub {
+    font-size: 0.6rem;
+  }
+
+  .line {
+    width: 175px;
+  }
+
   .heart {
     right: 8px;
   }
@@ -876,8 +907,8 @@
     font-size: 0.6rem;
   }
 
-  .line {
-    width: 175px;
+  .nav-wrapper .menu {
+    padding-left: 20px;
   }
 }
 

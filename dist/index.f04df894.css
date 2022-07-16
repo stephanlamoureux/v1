@@ -17,47 +17,30 @@
   position: relative;
 }
 
-.hire-me .tooltip {
-  background-image: linear-gradient( 45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-green) );
+.tippy-box[data-theme~="gradient"] {
+  background-image: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-green) );
   color: var(--dracula-background);
-  opacity: 0;
-  text-align: center;
-  visibility: hidden;
   width: 120px;
-  z-index: 1;
-  border-radius: 6px;
-  margin-bottom: 15px;
-  margin-left: 60px;
-  padding: 5px 0;
+  text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  transition: all .3s ease-out;
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
+  box-shadow: 0 0 3px 1px #f8f8f2cc;
 }
 
-.hire-me .tooltip:after {
-  border-color: var(--dracula-cyan) var(--dracula-cyan) transparent transparent;
-  content: " ";
-  border-style: solid;
-  border-width: 6px;
-  margin-left: -6px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
+.tippy-box[data-theme~="gradient"][data-placement^="top"] > .tippy-arrow:before {
+  border-top-color: var(--dracula-cyan);
 }
 
-.hire-me:hover .tooltip {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity .4s ease-in;
+.tippy-box[data-theme~="gradient"][data-placement^="bottom"] > .tippy-arrow:before {
+  border-bottom-color: var(--dracula-cyan);
 }
 
-@-moz-document url-prefix() {
-  .hire-me:hover .tooltip {
-    visibility: hidden;
-  }
+.tippy-box[data-theme~="gradient"][data-placement^="left"] > .tippy-arrow:before {
+  border-left-color: var(--dracula-cyan);
+}
+
+.tippy-box[data-theme~="gradient"][data-placement^="right"] > .tippy-arrow:before {
+  border-right-color: var(--dracula-cyan);
 }
 
 .inline {

@@ -30,11 +30,6 @@ body.light-mode .paragraph h3 {
   text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(0, 0, 0, 0);
 }
 
-body.light-mode .hire-me .tooltip {
-  background-image: linear-gradient(45deg, white, var(--dracula-cyan), var(--dracula-green));
-  color: var(--dracula-selection);
-}
-
 body.light-mode .about-p {
   text-shadow: none;
 }

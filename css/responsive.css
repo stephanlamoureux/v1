@@ -8,19 +8,6 @@
   }
 }
 
-@media (min-width: 2200px) {
-  .hire-me .tooltip {
-    margin-left: 80px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 90px;
-      margin-bottom: 0;
-    }
-  }
-}
-
 @media (min-width: 2001px) {
   .contact-p {
     width: 65%;
@@ -30,19 +17,6 @@
 @media (min-width: 1776px) {
   form {
     max-width: 1000px;
-  }
-}
-
-@media (max-width: 1775px) {
-  .hire-me .tooltip {
-    margin-left: 30px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 40px;
-      margin-bottom: 0;
-    }
   }
 }
 
@@ -76,17 +50,6 @@
   .project-tile:hover .project-name5 {
     transform: translateY(-8px);
   }
-
-  .hire-me .tooltip {
-    margin-left: 30px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 40px;
-      margin-bottom: 0;
-    }
-  }
 }
 
 @media (max-width: 1450px) {
@@ -97,17 +60,6 @@
   .project-tile:hover .project-name4,
   .project-tile:hover .project-name5 {
     transform: translateY(-6px);
-  }
-
-  .hire-me .tooltip {
-    margin-bottom: 15px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 20px;
-      margin-bottom: 0;
-    }
   }
 
   .dev-article {
@@ -122,17 +74,6 @@
 
   .header-sub {
     font-size: 1.1rem;
-  }
-
-  .hire-me .tooltip {
-    margin-left: 35px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 50px;
-      margin-bottom: 0;
-    }
   }
 
   /* Projects */
@@ -292,17 +233,6 @@
     margin-bottom: 0;
   }
 
-  .hire-me .tooltip {
-    margin-left: 35px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 40px;
-      margin-bottom: 0;
-    }
-  }
-
   /* Blog */
 
   .dev-article {
@@ -439,17 +369,6 @@
     font-size: 2.1rem;
   }
 
-  .hire-me .tooltip {
-    margin-left: 15px;
-  }
-
-  @-moz-document url-prefix() {
-    .hire-me .tooltip {
-      margin-left: 20px;
-      margin-bottom: 0;
-    }
-  }
-
   .projects-container {
     width: 100%;
   }
@@ -542,10 +461,6 @@
 
   .profile-div {
     text-align: center;
-  }
-
-  .tooltip {
-    display: none;
   }
 
   .about-p {

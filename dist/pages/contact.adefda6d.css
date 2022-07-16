@@ -975,4 +975,115 @@
   position: relative;
 }
 
+.tippy-box[data-animation="scale-extreme"][data-placement^="top"] {
+  transform-origin: bottom;
+}
+
+.tippy-box[data-animation="scale-extreme"][data-placement^="bottom"] {
+  transform-origin: top;
+}
+
+.tippy-box[data-animation="scale-extreme"][data-placement^="left"] {
+  transform-origin: 100%;
+}
+
+.tippy-box[data-animation="scale-extreme"][data-placement^="right"] {
+  transform-origin: 0;
+}
+
+.tippy-box[data-animation="scale-extreme"][data-state="hidden"] {
+  opacity: .25;
+  transform: scale(0);
+}
+
+.tippy-box[data-theme~="light"] {
+  color: #26323d;
+  background-color: #fff;
+  box-shadow: 0 0 20px 4px #9aa1b126, 0 4px 80px -8px #24282f40, 0 4px 4px -2px #5b5e6926;
+}
+
+.tippy-box[data-theme~="light"][data-placement^="top"] > .tippy-arrow:before {
+  border-top-color: #fff;
+}
+
+.tippy-box[data-theme~="light"][data-placement^="bottom"] > .tippy-arrow:before {
+  border-bottom-color: #fff;
+}
+
+.tippy-box[data-theme~="light"][data-placement^="left"] > .tippy-arrow:before {
+  border-left-color: #fff;
+}
+
+.tippy-box[data-theme~="light"][data-placement^="right"] > .tippy-arrow:before {
+  border-right-color: #fff;
+}
+
+.tippy-box[data-theme~="light"] > .tippy-backdrop {
+  background-color: #fff;
+}
+
+.tippy-box[data-theme~="light"] > .tippy-svg-arrow {
+  fill: #fff;
+}
+
+.tippy-box {
+  border: 1px #0000;
+}
+
+.tippy-box[data-placement^="top"] > .tippy-arrow:after {
+  border-top-color: inherit;
+  border-width: 8px 8px 0;
+  bottom: -8px;
+  left: 0;
+}
+
+.tippy-box[data-placement^="bottom"] > .tippy-arrow:after {
+  border-bottom-color: inherit;
+  border-width: 0 8px 8px;
+  top: -8px;
+  left: 0;
+}
+
+.tippy-box[data-placement^="left"] > .tippy-arrow:after {
+  border-left-color: inherit;
+  border-width: 8px 0 8px 8px;
+  top: 0;
+  right: -8px;
+}
+
+.tippy-box[data-placement^="right"] > .tippy-arrow:after {
+  border-width: 8px 8px 8px 0;
+  border-right-color: inherit;
+  top: 0;
+  left: -8px;
+}
+
+.tippy-box[data-placement^="top"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
+  top: 17px;
+}
+
+.tippy-box[data-placement^="bottom"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
+  bottom: 17px;
+}
+
+.tippy-box[data-placement^="left"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
+  left: 12px;
+}
+
+.tippy-box[data-placement^="right"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
+  right: 12px;
+}
+
+.tippy-arrow {
+  border-color: inherit;
+}
+
+.tippy-arrow:after {
+  content: "";
+  z-index: -1;
+  border-style: solid;
+  border-color: #0000;
+  position: absolute;
+}
+
 /*# sourceMappingURL=contact.adefda6d.css.map */

@@ -177,7 +177,7 @@ a {
 
 .mode-toggle {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 0;
   margin-right: 50px;
 }

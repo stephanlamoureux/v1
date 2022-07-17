@@ -530,7 +530,11 @@
   }
 
   footer p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+
+  .heart {
+    right: 185px;
   }
 }
 
@@ -667,12 +671,6 @@
 
   .heart {
     right: 255px;
-  }
-}
-
-@media (max-width: 491px) {
-  .heart {
-    right: 125px;
   }
 }
 

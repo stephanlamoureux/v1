@@ -539,6 +539,7 @@ var _tippyCss = require("tippy.js/dist/tippy.css");
 var _scaleExtremeCss = require("tippy.js/animations/scale-extreme.css");
 var _lightCss = require("tippy.js/themes/light.css");
 var _borderCss = require("tippy.js/dist/border.css");
+var _svgArrowCss = require("tippy.js/dist/svg-arrow.css");
 (0, _tippyJsDefault.default)("#tippy", {
     content: "Hire Me!",
     delay: [
@@ -551,10 +552,12 @@ var _borderCss = require("tippy.js/dist/border.css");
         15
     ],
     animation: "scale-extreme",
-    theme: "gradient"
+    theme: "gradient",
+    arrow: (0, _tippyJs.roundArrow),
+    touch: false
 });
 
-},{"tippy.js":"ccpCS","tippy.js/dist/tippy.css":"2hEyg","tippy.js/animations/scale-extreme.css":"fYEd8","tippy.js/themes/light.css":"9d8Pn","tippy.js/dist/border.css":"lIqzD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ccpCS":[function(require,module,exports) {
+},{"tippy.js":"ccpCS","tippy.js/dist/tippy.css":"2hEyg","tippy.js/animations/scale-extreme.css":"fYEd8","tippy.js/themes/light.css":"9d8Pn","tippy.js/dist/border.css":"lIqzD","tippy.js/dist/svg-arrow.css":"9LNWv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ccpCS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "animateFill", ()=>animateFill);
@@ -4763,6 +4766,6 @@ var createPopper = /*#__PURE__*/ (0, _createPopperJs.popperGenerator)({
     defaultModifiers: defaultModifiers
 }); // eslint-disable-next-line import/no-unused-modules
 
-},{"./createPopper.js":"cHuNp","./modifiers/eventListeners.js":"hBKsL","./modifiers/popperOffsets.js":"6I679","./modifiers/computeStyles.js":"gDlm2","./modifiers/applyStyles.js":"4iMn4","./modifiers/offset.js":"3GKVY","./modifiers/flip.js":"fv5wq","./modifiers/preventOverflow.js":"1AMhb","./modifiers/arrow.js":"31HFW","./modifiers/hide.js":"2g4OF","./popper-lite.js":false,"./modifiers/index.js":"cap3W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hEyg":[function() {},{}],"fYEd8":[function() {},{}],"9d8Pn":[function() {},{}],"lIqzD":[function() {},{}]},["1uCsm","lN05r"], "lN05r", "parcelRequire390d")
+},{"./createPopper.js":"cHuNp","./modifiers/eventListeners.js":"hBKsL","./modifiers/popperOffsets.js":"6I679","./modifiers/computeStyles.js":"gDlm2","./modifiers/applyStyles.js":"4iMn4","./modifiers/offset.js":"3GKVY","./modifiers/flip.js":"fv5wq","./modifiers/preventOverflow.js":"1AMhb","./modifiers/arrow.js":"31HFW","./modifiers/hide.js":"2g4OF","./popper-lite.js":false,"./modifiers/index.js":"cap3W","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hEyg":[function() {},{}],"fYEd8":[function() {},{}],"9d8Pn":[function() {},{}],"lIqzD":[function() {},{}],"9LNWv":[function() {},{}]},["1uCsm","lN05r"], "lN05r", "parcelRequire390d")
 
 //# sourceMappingURL=index.7efea797.js.map

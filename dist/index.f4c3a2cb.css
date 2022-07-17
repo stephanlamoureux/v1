@@ -307,7 +307,7 @@
   }
 }
 
-@media screen and (max-device-width: 850px) {
+@media (max-width: 850px) {
   .heart {
     right: 200px;
   }
@@ -575,6 +575,12 @@
   }
 }
 
+@media (max-width: 491px) {
+  .heart {
+    right: 125px;
+  }
+}
+
 @media (max-width: 476px) {
   footer p {
     font-size: 1.1rem;
@@ -586,7 +592,7 @@
   }
 
   .heart {
-    right: 167px;
+    right: 170px;
   }
 
   @-moz-document url-prefix() {

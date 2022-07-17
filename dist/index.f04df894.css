@@ -27,20 +27,8 @@
   box-shadow: 0 0 3px 1px #f8f8f2cc;
 }
 
-.tippy-box[data-theme~="gradient"][data-placement^="top"] > .tippy-arrow:before {
-  border-top-color: var(--dracula-cyan);
-}
-
-.tippy-box[data-theme~="gradient"][data-placement^="bottom"] > .tippy-arrow:before {
-  border-bottom-color: var(--dracula-cyan);
-}
-
-.tippy-box[data-theme~="gradient"][data-placement^="left"] > .tippy-arrow:before {
-  border-left-color: var(--dracula-cyan);
-}
-
-.tippy-box[data-theme~="gradient"][data-placement^="right"] > .tippy-arrow:before {
-  border-right-color: var(--dracula-cyan);
+.tippy-box[data-theme~="gradient"] > .tippy-svg-arrow {
+  fill: var(--dracula-cyan);
 }
 
 .inline {

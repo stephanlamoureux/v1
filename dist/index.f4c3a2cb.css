@@ -661,7 +661,7 @@
   }
 
   .nav-wrapper {
-    margin-top: -8px;
+    margin-top: -12px;
   }
 
   .nav-wrapper .menu {
@@ -669,11 +669,11 @@
   }
 
   .header-title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .header-sub {
-    font-size: .6rem;
+    font-size: .7rem;
   }
 
   .paragraph h3 {
@@ -715,6 +715,10 @@
 }
 
 @media (max-width: 368px) {
+  .nav-wrapper .menu {
+    padding-left: 30px;
+  }
+
   footer p {
     padding: 0 5px;
   }
@@ -737,6 +741,10 @@
 
   .header-sub {
     font-size: .6rem;
+  }
+
+  .nav-wrapper {
+    margin-top: -8px;
   }
 
   .line {

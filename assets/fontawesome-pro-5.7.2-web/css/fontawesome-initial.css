@@ -116,6 +116,10 @@ readers do not read off random characters that represent icons */
   content: '\f186';
 }
 
+.fa-anchor:before {
+  content: '\f13d';
+}
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);

@@ -108,6 +108,10 @@
   content: "";
 }
 
+.fa-anchor:before {
+  content: "";
+}
+
 .sr-only {
   clip: rect(0, 0, 0, 0);
   height: 1px;

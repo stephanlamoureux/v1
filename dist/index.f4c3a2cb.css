@@ -510,11 +510,11 @@
 
 @media (max-width: 570px) {
   .nav-wrapper {
-    margin-top: -15px;
+    margin-top: -20px;
   }
 
   .nav-wrapper .menu {
-    padding-left: 60px;
+    padding-left: 40px;
   }
 
   .hidden {
@@ -531,11 +531,11 @@
 
   .header-title {
     text-align: right;
-    font-size: 2.6rem;
+    font-size: 2.7rem;
   }
 
   .header-sub {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .line {
@@ -625,7 +625,15 @@
   }
 
   .header-title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
+  }
+
+  .header-sub {
+    font-size: .8rem;
+  }
+
+  .nav-wrapper {
+    margin-top: -15px;
   }
 
   .made {

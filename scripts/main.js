@@ -92,7 +92,7 @@ document.addEventListener('click', event => {
 })
 
 // Keep the mobile nav menu open when the color mode toggle is clicked
-document.addEventListener('change', event => {
+navbar.addEventListener('change', event => {
   const modeToggle = toggle.contains(event.target)
   if (!modeToggle) {
     navbar.classList.add('showNav')

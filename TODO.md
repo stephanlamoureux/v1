@@ -18,4 +18,3 @@
 
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc
 - Write tests with [jest](https://jestjs.io/)
-- Open Graph cards

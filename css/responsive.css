@@ -209,15 +209,15 @@
     transition: ease color 0.2s;
   }
 
-  .anchor {
+  .s {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .anchor i {
+  .s img {
     position: relative;
-    top: 20px;
+    top: 25px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
   }

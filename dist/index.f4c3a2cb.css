@@ -166,16 +166,16 @@
     transition: color .2s;
   }
 
-  .anchor {
+  .s {
     justify-content: center;
     align-items: center;
     display: flex;
   }
 
-  .anchor i {
+  .s img {
     text-shadow: 0 2px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
     position: relative;
-    top: 20px;
+    top: 25px;
   }
 
   .mode-toggle {

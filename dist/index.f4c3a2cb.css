@@ -517,6 +517,10 @@
     padding-left: 40px;
   }
 
+  .nav-wrapper .navbar {
+    height: 60%;
+  }
+
   .hidden {
     display: none;
   }

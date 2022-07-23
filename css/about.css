@@ -1,4 +1,11 @@
 /* || About Me */
+body {
+  background: linear-gradient(
+    180deg,
+    var(--dracula-background) 20%,
+    var(--dracula-greypurple) 100%
+  );
+}
 
 .about {
   width: 70%;
@@ -148,11 +155,13 @@
 .about-p::selection {
   background: var(--dracula-green);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .paragraph h3::selection {
   background: var(--dracula-pink);
   color: var(--dracula-foreground);
+  text-shadow: none;
 }
 
 .profile-image {
@@ -175,6 +184,7 @@
 .working-on-list::selection {
   background-color: var(--dracula-green);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .working-on-list {
@@ -207,6 +217,7 @@
 .vwc::selection {
   color: var(--dracula-background);
   background-color: var(--dracula-green);
+  text-shadow: none;
 }
 
 .working-on-link {
@@ -224,8 +235,9 @@
 }
 
 .working-on-link::selection {
-  background-color: var(--dracula-green);
+  background-color: var(--dracula-cyan);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .bullet {

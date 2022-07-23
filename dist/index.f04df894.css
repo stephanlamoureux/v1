@@ -17,6 +17,11 @@ body {
   height: 75vh;
 }
 
+.terminal-container {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
 .terminal-window {
   text-align: left;
   width: 600px;
@@ -27,8 +32,8 @@ body {
 }
 
 .terminal-header {
+  background: var(--dracula-foreground);
   height: 30px;
-  background: #e0e8f0;
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
 }
@@ -36,28 +41,29 @@ body {
 .terminal-button {
   width: 12px;
   height: 12px;
-  border-radius: 8px;
+  border: 1px solid #282a3699;
+  border-radius: 50%;
   margin: 10px 4px 0 0;
   display: inline-block;
 }
 
 .term-green {
-  background: #3bb662;
+  background: var(--dracula-green);
 }
 
 .term-yellow {
-  background: #e5c30f;
+  background: var(--dracula-yellow);
 }
 
 .term-red {
-  background: #e75448;
+  background: var(--dracula-red);
 }
 
 .terminal-body {
   color: #fff;
+  background: var(--dracula-selection);
   box-sizing: border-box;
   width: 100%;
-  background: #30353a;
   padding: 10px;
   font-family: Menlo, Monaco, Consolas, Courier New, Courier;
   font-size: 11pt;

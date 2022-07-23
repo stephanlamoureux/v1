@@ -1,4 +1,5 @@
 /* || About Me */
+
 body {
   background: linear-gradient(
     180deg,
@@ -22,6 +23,11 @@ body {
   height: 75vh;
 }
 
+.terminal-container {
+  margin-top: 5rem;
+  padding: 0 2rem;
+}
+
 .terminal-window {
   text-align: left;
   width: 600px;
@@ -32,7 +38,7 @@ body {
 }
 
 .terminal-header {
-  background: #e0e8f0;
+  background: var(--dracula-foreground);
   height: 30px;
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
@@ -43,26 +49,27 @@ body {
   height: 12px;
   margin: 10px 4px 0 0;
   display: inline-block;
-  border-radius: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(40, 42, 54, 0.6);
 }
 
 .term-green {
-  background: #3bb662;
+  background: var(--dracula-green);
 }
 
 .term-yellow {
-  background: #e5c30f;
+  background: var(--dracula-yellow);
 }
 
 .term-red {
-  background: #e75448;
+  background: var(--dracula-red);
 }
 
 .terminal-body {
   color: white;
   font-family: Menlo, Monaco, 'Consolas', 'Courier New', 'Courier';
   font-size: 11pt;
-  background: #30353a;
+  background: var(--dracula-selection);
   padding: 10px;
   box-sizing: border-box;
   position: absolute;

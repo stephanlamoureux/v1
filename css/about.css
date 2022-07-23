@@ -22,6 +22,56 @@ body {
   height: 75vh;
 }
 
+.terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+}
+
+.terminal-header {
+  background: #e0e8f0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.term-green {
+  background: #3bb662;
+}
+
+.term-yellow {
+  background: #e5c30f;
+}
+
+.term-red {
+  background: #e75448;
+}
+
+.terminal-body {
+  color: white;
+  font-family: Menlo, Monaco, 'Consolas', 'Courier New', 'Courier';
+  font-size: 11pt;
+  background: #30353a;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+
 .anchor {
   width: 40px;
 }

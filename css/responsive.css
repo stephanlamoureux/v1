@@ -108,7 +108,6 @@
     width: 85%;
   }
 
-  .about,
   .blog,
   .projects,
   .contact {
@@ -200,6 +199,7 @@
       rgba(80, 250, 123, 1) 100%
     );
     background-size: 100% 12%;
+    transition: ease color 0.2s;
   }
 
   .menu-link a:hover {
@@ -231,6 +231,11 @@
   }
 
   /* About */
+
+  .about {
+    margin-top: 5rem;
+    scroll-margin-top: 10px;
+  }
 
   .working-on-list .bullet {
     display: none;
@@ -594,6 +599,12 @@
 @media (max-width: 570px) {
   /* General */
 
+  .blog,
+  .projects,
+  .contact {
+    margin-top: 3rem;
+  }
+
   .nav-wrapper {
     margin-top: -20px;
   }
@@ -633,15 +644,12 @@
 
   /* About */
 
-  .profile-image {
-    max-width: 70%;
+  .landing {
+    display: none;
   }
 
-  .about,
-  .blog,
-  .projects,
-  .contact {
-    margin-top: 3rem;
+  .profile-image {
+    max-width: 70%;
   }
 
   .about-p {

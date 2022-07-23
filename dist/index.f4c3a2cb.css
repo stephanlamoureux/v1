@@ -79,7 +79,7 @@
     width: 85%;
   }
 
-  .about, .blog, .projects, .contact {
+  .blog, .projects, .contact {
     margin-top: 4rem;
   }
 
@@ -159,6 +159,7 @@
     padding-bottom: 8px;
     font-size: 1.4rem;
     text-decoration: none;
+    transition: color .2s;
   }
 
   .menu-link a:hover {
@@ -186,6 +187,11 @@
 
   .checkbox-label {
     background-color: var(--dracula-selection);
+  }
+
+  .about {
+    margin-top: 5rem;
+    scroll-margin-top: 10px;
   }
 
   .working-on-list .bullet {
@@ -509,6 +515,10 @@
 }
 
 @media (max-width: 570px) {
+  .blog, .projects, .contact {
+    margin-top: 3rem;
+  }
+
   .nav-wrapper {
     margin-top: -20px;
   }
@@ -546,12 +556,12 @@
     width: 195px;
   }
 
-  .profile-image {
-    max-width: 70%;
+  .landing {
+    display: none;
   }
 
-  .about, .blog, .projects, .contact {
-    margin-top: 3rem;
+  .profile-image {
+    max-width: 70%;
   }
 
   .about-p {

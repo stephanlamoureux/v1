@@ -10,6 +10,7 @@ body {
 .about {
   width: 70%;
   margin: 5rem auto 20rem auto;
+  scroll-margin-top: 100px;
 }
 
 .about-container {
@@ -22,12 +23,12 @@ body {
 }
 
 .anchor {
-  width: 50px;
+  width: 45px;
 }
 
 .arrow-down {
   animation: 3s arrow infinite ease;
-  margin: 80vh auto;
+  margin: 85vh auto;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -90,6 +91,10 @@ body {
 
 .about-header-inline {
   display: inline;
+}
+
+.marg-bottom {
+  margin-bottom: 5rem;
 }
 
 .fa-blink {

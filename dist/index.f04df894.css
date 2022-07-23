@@ -12,6 +12,30 @@
   height: 75vh;
 }
 
+.anchor {
+  width: 50px;
+}
+
+.arrow-down {
+  justify-content: center;
+  align-items: center;
+  margin: 80vh auto;
+  animation: arrow 3s infinite;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+
+  50% {
+    top: 80px;
+  }
+}
+
 .profile-div {
   padding-bottom: 32px;
 }

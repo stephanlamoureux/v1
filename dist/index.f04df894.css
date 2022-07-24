@@ -18,16 +18,19 @@ body {
 }
 
 .terminal-container {
+  width: 100%;
   margin-top: 5rem;
   padding: 0 2rem;
+  display: flex;
 }
 
 .terminal-window {
   text-align: left;
   width: 600px;
   height: 360px;
-  border-radius: 10px;
-  margin: auto;
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -60,12 +63,12 @@ body {
 }
 
 .terminal-body {
-  color: #fff;
+  color: var(--dracula-foreground);
   background: var(--dracula-selection);
-  box-sizing: border-box;
+  opacity: .9;
   width: 100%;
   padding: 10px;
-  font-family: Menlo, Monaco, Consolas, Courier New, Courier;
+  font-family: Menlo, Monaco, Consolas, monospace, Courier New, Courier;
   font-size: 11pt;
   position: absolute;
   top: 30px;
@@ -113,7 +116,7 @@ body {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 0 0 3px 1px #f8f8f2cc;
+  box-shadow: 0 0 5px 1px #f8f8f2cc;
 }
 
 .tippy-box[data-theme~="gradient"] > .tippy-svg-arrow {

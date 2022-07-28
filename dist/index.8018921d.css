@@ -6,7 +6,11 @@ body.light-mode {
 }
 
 body.light-mode .line {
-  background: linear-gradient(to right, #bd93f9cc, #8be9fd, #ff79c6cc);
+  background: linear-gradient(to right, #bd93f9, #8be9fd, #ff79c6);
+}
+
+body.light-mode .about .line {
+  background: linear-gradient(to right, #8be9fd, #50fa7b, #f1fa8c);
 }
 
 body.light-mode .terminal-window {

@@ -13,13 +13,22 @@ body.light-mode {
 body.light-mode .line {
   background: linear-gradient(
     to right,
-    rgba(189, 147, 249, 0.8),
+    rgba(189, 147, 249, 1),
     rgba(139, 233, 253, 1),
-    rgba(255, 121, 198, 0.8)
+    rgba(255, 121, 198, 1)
   );
 }
 
 /* About */
+
+body.light-mode .about .line {
+  background: linear-gradient(
+    to right,
+    rgba(139, 233, 253, 1),
+    rgba(80, 250, 123, 1),
+    rgb(241, 250, 140, 1)
+  );
+}
 
 body.light-mode .terminal-window {
   box-shadow: 0 0 5px 1px var(--dracula-background);

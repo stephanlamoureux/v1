@@ -133,7 +133,7 @@ a {
 }
 
 .link:hover, .link.is-active {
-  background-image: linear-gradient(90deg, #8be9fd 0%, #bd93f9 50%, #50fa7b 100%);
+  background-image: linear-gradient(90deg, #bd93f9 0%, #8be9fd 50%, #50fa7b 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;

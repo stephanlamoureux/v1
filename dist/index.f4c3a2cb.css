@@ -42,6 +42,12 @@
   }
 }
 
+@media (max-width: 1500px), (max-height: 750px) {
+  .terminal-container {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1450px) {
   .project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
     transform: translateY(-6px);
@@ -49,12 +55,6 @@
 
   .dev-article {
     width: 48%;
-  }
-}
-
-@media (max-width: 1400px), (max-height: 700px) {
-  .terminal-container {
-    margin-top: 0;
   }
 }
 

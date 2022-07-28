@@ -202,7 +202,7 @@
   }
 
   .about {
-    margin-top: 5rem;
+    margin-top: 0;
     scroll-margin-top: 10px;
   }
 
@@ -590,6 +590,10 @@
 
   .line {
     width: 195px;
+  }
+
+  .about {
+    margin-top: 5rem;
   }
 
   .landing-wrapper {

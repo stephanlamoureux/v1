@@ -249,7 +249,7 @@
   /* About */
 
   .about {
-    margin-top: 5rem;
+    margin-top: 0;
     scroll-margin-top: 10px;
   }
 
@@ -683,6 +683,10 @@
   }
 
   /* About */
+
+  .about {
+    margin-top: 5rem;
+  }
 
   .landing-wrapper {
     height: auto;

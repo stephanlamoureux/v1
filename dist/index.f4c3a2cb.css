@@ -622,15 +622,7 @@
   }
 
   .about {
-    margin-top: 5rem;
-  }
-
-  .landing-wrapper {
-    height: auto;
-  }
-
-  .anchor {
-    display: none;
+    margin-top: 0;
   }
 
   .terminal-container {
@@ -695,7 +687,7 @@
   }
 
   .about {
-    margin-top: 3rem;
+    margin-top: 0;
   }
 
   footer p {

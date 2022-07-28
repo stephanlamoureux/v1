@@ -16,9 +16,25 @@
   }
 }
 
-@media (max-width: 2000px), (max-height: 850px) {
+@media (max-height: 850px) and (min-height: 681px) {
   .terminal-container {
     margin-top: 2rem;
+  }
+}
+
+@media (max-height: 680px) and (min-height: 641px) {
+  .terminal-container {
+    margin-top: 0;
+  }
+}
+
+@media (max-height: 640px) {
+  .anchor {
+    display: none;
+  }
+
+  .terminal-container {
+    margin-top: 0;
   }
 }
 

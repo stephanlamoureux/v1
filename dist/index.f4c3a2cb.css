@@ -52,6 +52,12 @@
   }
 }
 
+@media (max-width: 1400px), (max-height: 700px) {
+  .terminal-container {
+    margin-top: 0;
+  }
+}
+
 @media (max-width: 1300px) {
   .header-title {
     font-size: 3.3rem;

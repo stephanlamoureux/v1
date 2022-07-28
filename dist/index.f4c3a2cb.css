@@ -634,7 +634,7 @@
   }
 
   .terminal-container {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .profile-image {
@@ -690,12 +690,12 @@
 
 @media (max-width: 476px) {
   .terminal-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
     padding: 0 1.5rem;
   }
 
   .about {
-    margin-top: 4rem;
+    margin-top: 3rem;
   }
 
   footer p {
@@ -741,7 +741,7 @@
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 4px;
   }
 
   .made {
@@ -773,7 +773,7 @@
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 4px;
   }
 
   .nav-wrapper .menu {

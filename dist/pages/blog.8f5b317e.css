@@ -1,6 +1,7 @@
 .blog {
   width: 90%;
   margin: 5rem auto 18rem;
+  padding-top: 2px;
   overflow: hidden;
 }
 

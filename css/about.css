@@ -78,7 +78,7 @@ body {
   font-family: Menlo, Monaco, 'Consolas', monospace, 'Courier New', 'Courier';
   font-size: 1.2rem;
   background: var(--dracula-selection);
-  opacity: 0.9;
+  opacity: 0.8;
   padding: 10px;
   position: absolute;
   width: 100%;

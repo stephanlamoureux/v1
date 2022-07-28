@@ -626,7 +626,7 @@
   }
 
   .terminal-container {
-    margin-top: 4rem;
+    margin-top: 5rem;
   }
 
   .profile-image {
@@ -760,6 +760,10 @@
     margin-bottom: 8rem;
   }
 
+  .about {
+    margin-top: 4rem;
+  }
+
   .nav-wrapper {
     margin-top: -12px;
   }
@@ -778,6 +782,10 @@
 
   .header-sub {
     font-size: .7rem;
+  }
+
+  .landing-wrapper {
+    height: auto;
   }
 
   .terminal-container {

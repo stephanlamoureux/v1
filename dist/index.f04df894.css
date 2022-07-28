@@ -70,7 +70,7 @@ body {
 .terminal-body {
   color: var(--dracula-foreground);
   background: var(--dracula-selection);
-  opacity: .9;
+  opacity: .8;
   width: 100%;
   padding: 10px;
   font-family: Menlo, Monaco, Consolas, monospace, Courier New, Courier;

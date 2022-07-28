@@ -8,7 +8,7 @@ body {
 
 .about {
   width: 70%;
-  margin: 5rem auto 20rem;
+  margin: 0 auto 20rem;
   padding-top: 5px;
   scroll-margin-top: 100px;
 }
@@ -18,8 +18,8 @@ body {
   box-shadow: 10px 0 5px -5px #13121280;
 }
 
-.landing {
-  height: 60vh;
+.landing-wrapper {
+  height: 100vh;
 }
 
 .terminal-container {

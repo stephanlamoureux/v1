@@ -14,7 +14,7 @@ body {
 
 .about {
   width: 70%;
-  margin: 5rem auto 20rem auto;
+  margin: 0 auto 20rem auto;
   scroll-margin-top: 100px;
   padding-top: 5px;
 }
@@ -24,8 +24,8 @@ body {
   padding-bottom: 20px;
 }
 
-.landing {
-  height: 60vh;
+.landing-wrapper {
+  height: 100vh;
 }
 
 .terminal-container {

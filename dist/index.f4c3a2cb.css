@@ -206,10 +206,6 @@
     scroll-margin-top: 10px;
   }
 
-  .landing {
-    height: 75vh;
-  }
-
   .terminal-container {
     margin-top: 12rem;
   }
@@ -500,10 +496,6 @@
     font-size: .8rem;
   }
 
-  .landing {
-    height: 77vh;
-  }
-
   .icons-flex > span {
     margin: 15px 0;
     font-size: 2.2rem;
@@ -600,12 +592,12 @@
     width: 195px;
   }
 
-  .anchor {
-    display: none;
+  .landing-wrapper {
+    height: auto;
   }
 
-  .landing {
-    height: auto;
+  .anchor {
+    display: none;
   }
 
   .terminal-container {

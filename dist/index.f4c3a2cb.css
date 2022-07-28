@@ -21,6 +21,10 @@
     font-size: 3.8rem;
   }
 
+  .about-header-title {
+    font-size: 4.5rem;
+  }
+
   .header-sub {
     font-size: 1.2rem;
   }
@@ -53,6 +57,10 @@
     font-size: 3.3rem;
   }
 
+  .about-header-title {
+    font-size: 4rem;
+  }
+
   .header-sub {
     font-size: 1.1rem;
   }
@@ -79,11 +87,11 @@
     width: 85%;
   }
 
-  .about, .blog, .projects, .contact {
+  .blog, .projects, .contact {
     margin-top: 4rem;
   }
 
-  .header-title {
+  .header-title, .about-header-title {
     font-size: 3.5rem;
   }
 
@@ -104,8 +112,12 @@
   }
 
   .nav-wrapper {
-    margin-top: -18px;
+    margin-top: -20px;
     padding-right: 10px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
@@ -159,6 +171,7 @@
     padding-bottom: 8px;
     font-size: 1.4rem;
     text-decoration: none;
+    transition: color .2s;
   }
 
   .menu-link a:hover {
@@ -186,6 +199,19 @@
 
   .checkbox-label {
     background-color: var(--dracula-selection);
+  }
+
+  .about {
+    margin-top: 5rem;
+    scroll-margin-top: 10px;
+  }
+
+  .landing {
+    height: 75vh;
+  }
+
+  .terminal-container {
+    margin-top: 12rem;
   }
 
   .working-on-list .bullet {
@@ -288,8 +314,12 @@
     font-size: 1rem;
   }
 
-  .navbar-wrapper {
-    margin-top: -16px;
+  .nav-wrapper {
+    margin-top: -18px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 2px;
   }
 }
 
@@ -298,8 +328,12 @@
     margin-top: -15px;
   }
 
+  .about-nav-wrapper {
+    margin-top: 2px;
+  }
+
   .header-title {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
   .header-sub {
@@ -378,6 +412,10 @@
     margin-top: -14px;
   }
 
+  .about-nav-wrapper {
+    margin-top: 2px;
+  }
+
   .header-title {
     font-size: 2.1rem;
   }
@@ -450,12 +488,20 @@
     margin-top: -12px;
   }
 
+  .about-nav-wrapper {
+    margin-top: 3px;
+  }
+
   .header-title {
     font-size: 1.9rem;
   }
 
   .header-sub {
     font-size: .8rem;
+  }
+
+  .landing {
+    height: 77vh;
   }
 
   .icons-flex > span {
@@ -509,8 +555,16 @@
 }
 
 @media (max-width: 570px) {
+  .blog, .projects, .contact {
+    margin-top: 3rem;
+  }
+
   .nav-wrapper {
     margin-top: -20px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
@@ -546,12 +600,20 @@
     width: 195px;
   }
 
-  .profile-image {
-    max-width: 70%;
+  .anchor {
+    display: none;
   }
 
-  .about, .blog, .projects, .contact {
+  .landing {
+    height: auto;
+  }
+
+  .terminal-container {
     margin-top: 3rem;
+  }
+
+  .profile-image {
+    max-width: 70%;
   }
 
   .about-p {
@@ -598,6 +660,10 @@
 }
 
 @media (max-width: 476px) {
+  .terminal-container {
+    margin-top: 6rem;
+  }
+
   footer p {
     font-size: 1.1rem;
     font-weight: 500;
@@ -640,6 +706,10 @@
     margin-top: -15px;
   }
 
+  .about-nav-wrapper {
+    margin-top: 0;
+  }
+
   .made {
     margin-right: 26px;
   }
@@ -666,6 +736,10 @@
 
   .nav-wrapper {
     margin-top: -12px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
@@ -749,6 +823,10 @@
 
   .nav-wrapper {
     margin-top: -8px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 0;
   }
 
   .line {

@@ -9,6 +9,10 @@ body.light-mode .line {
   background: linear-gradient(to right, #bd93f9cc, #8be9fd, #ff79c6cc);
 }
 
+body.light-mode .terminal-window {
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+}
+
 body.light-mode .section-header {
   color: #fff;
 }
@@ -115,24 +119,24 @@ body.light-mode .tui-pagination .tui-is-disabled:hover {
 
 body.light-mode .tui-pagination .tui-is-selected, .tui-pagination strong {
   color: var(--dracula-background);
-  background: var(--dracula-green);
-  border-color: var(--dracula-green);
+  background: var(--dracula-cyan);
+  border-color: var(--dracula-cyan);
 }
 
 body.light-mode .tui-pagination .tui-is-selected:hover {
-  background-color: var(--dracula-green);
+  background-color: var(--dracula-cyan);
 }
 
 body.light-mode .tui-pagination .tui-first-child.tui-is-selected {
-  border-left: 1px solid var(--dracula-green);
+  border-left: 1px solid var(--dracula-cyan);
 }
 
 body.light-mode .tui-pagination .tui-last-child.tui-is-selected {
-  border-right: 1px solid var(--dracula-green);
+  border-right: 1px solid var(--dracula-cyan);
 }
 
 body.light-mode .tui-page-inputs .tui-page-current {
-  color: var(--dracula-green);
+  color: var(--dracula-cyan);
 }
 
 body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui-prev, body.light-mode .tui-pagination .tui-next, body.light-mode .tui-pagination .tui-last, body.light-mode .tui-pagination .tui-prev-is-ellip, body.light-mode .tui-pagination .tui-next-is-ellip {
@@ -184,7 +188,7 @@ body.light-mode .form-submit:focus {
 }
 
 body.light-mode .bottom-divider .shape-fill {
-  fill: var(--dracula-green);
+  fill: var(--dracula-cyan);
 }
 
 /*# sourceMappingURL=index.8018921d.css.map */

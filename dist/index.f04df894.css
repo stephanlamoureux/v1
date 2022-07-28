@@ -1,11 +1,108 @@
+body {
+  background: linear-gradient( 180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 100% );
+}
+
+.header-title {
+  font-size: 5rem;
+}
+
 .about {
   width: 70%;
   margin: 5rem auto 20rem;
+  padding-top: 5px;
+  scroll-margin-top: 100px;
 }
 
 .about-container {
   padding-bottom: 20px;
   box-shadow: 10px 0 5px -5px #13121280;
+}
+
+.landing {
+  height: 60vh;
+}
+
+.terminal-container {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.terminal-window {
+  text-align: left;
+  width: 600px;
+  height: 360px;
+  box-shadow: 0 0 5px 1px var(--dracula-greypurple);
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.terminal-header {
+  background: var(--dracula-foreground);
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #282a3699;
+  border-radius: 50%;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+}
+
+.term-green {
+  background: var(--dracula-green);
+}
+
+.term-yellow {
+  background: var(--dracula-yellow);
+}
+
+.term-red {
+  background: var(--dracula-red);
+}
+
+.terminal-body {
+  color: var(--dracula-foreground);
+  background: var(--dracula-selection);
+  opacity: .9;
+  width: 100%;
+  padding: 10px;
+  font-family: Menlo, Monaco, Consolas, monospace, Courier New, Courier;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.anchor {
+  width: 35px;
+}
+
+.arrow-down {
+  justify-content: center;
+  align-items: center;
+  margin: 85vh auto;
+  animation: arrow 3s infinite;
+  display: flex;
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes arrow {
+  0%, 100% {
+    top: 50px;
+  }
+
+  50% {
+    top: 80px;
+  }
 }
 
 .profile-div {
@@ -24,7 +121,7 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  box-shadow: 0 0 3px 1px #f8f8f2cc;
+  box-shadow: 0 0 5px 1px #f8f8f2cc;
 }
 
 .tippy-box[data-theme~="gradient"] > .tippy-svg-arrow {
@@ -49,6 +146,10 @@
 
 .about-header-inline {
   display: inline;
+}
+
+.marg-bottom {
+  margin-bottom: 5rem;
 }
 
 .fa-blink {
@@ -113,11 +214,13 @@
 .about-p::selection {
   background: var(--dracula-green);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .paragraph h3::selection {
   background: var(--dracula-pink);
   color: var(--dracula-foreground);
+  text-shadow: none;
 }
 
 .profile-image {
@@ -139,6 +242,7 @@
 .working-on-list::selection {
   background-color: var(--dracula-green);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .working-on-list {
@@ -166,6 +270,7 @@
 .vwc::selection {
   color: var(--dracula-background);
   background-color: var(--dracula-green);
+  text-shadow: none;
 }
 
 .working-on-link {
@@ -178,8 +283,9 @@
 }
 
 .working-on-link::selection {
-  background-color: var(--dracula-green);
+  background-color: var(--dracula-cyan);
   color: var(--dracula-background);
+  text-shadow: none;
 }
 
 .bullet {

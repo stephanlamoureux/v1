@@ -2,8 +2,8 @@
 
 ## About
 
-- Create a landing page above About Me section
 - Activate tooltip on scroll
+  - And on clicking the down arrow
 - Add skip to main
 
 ## Blog

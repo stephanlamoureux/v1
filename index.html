@@ -70,16 +70,16 @@
 	<!-- Header -->
 	<header>
 		<div class="center-header">
-			<h1 class="header-title"><span class="header-gradient"><span class="spacing">Stephan <span
-							class="hidden">Lamoureu</span></span><span class="hidden">x</span></span><span
-					class="show header-gradient">L.</span>
+			<h1 class="header-title about-header-title"><span class="header-gradient">
+				<span class="spacing">Stephan
+				<span class="hidden">Lamoureu</span></span><span class="hidden">x</span></span>
+				<span class="show header-gradient">L.</span>
 			</h1>
-			<p class="header-sub"><span id="typed" class="typed"></span></p>
 		</div>
 		<!-- End Header -->
 
 		<!-- Mobile Menu -->
-		<div id="nav-wrapper" class="nav-wrapper">
+		<div id="nav-wrapper" class="nav-wrapper about-nav-wrapper">
 			<button class="menu hamburger hamburger--vortex" type="button" aria-label="Menu" aria-controls="navigation">
   			<span class="hamburger-box">
     		<span class="hamburger-inner"></span>
@@ -112,7 +112,30 @@
 	</header>
 	<!-- End Mobile Menu -->
 
-	<main>
+	<!-- Landing Page -->
+	<div class="landing">
+		<div class="terminal-container">
+			<div class="terminal-window">
+				<div class="terminal-header">
+					<div class="terminal-button term-green"></div>
+					<div class="terminal-button term-yellow"></div>
+					<div class="terminal-button term-red"></div>
+				</div>
+				<div class="terminal-body">
+					<span class="prompt">$ </span><span id="typed-term" class="typed"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="arrow-down">
+			<a href="#about" class="arrow-down-link">
+				<img src="assets/images/icons/anchor.svg" class="anchor"/>
+			</a>
+		</div>
+	</div>
+	<!-- End Landing Page -->
+
+	<main id="main">
 		<section id="about" class="about">
 			<hr class="line" />
 			<h2 class="section-header">About Me</h2>
@@ -127,7 +150,6 @@
 			<!-- End Profile Image -->
 
 			<div class="about-container">
-
 				<!-- Bio -->
 				<div class="paragraph">
 					<div class="steve">
@@ -178,7 +200,6 @@
 					</ul>
 				</div>
 				<!-- End Currently Working On -->
-
 			</div> <!-- About Container -->
 		</section>
 	</main>
@@ -262,7 +283,7 @@
 	<!-- Scripts -->
 	<script src="scripts/anijs-master/dist/anijs-min.js"></script>
 	<script src="scripts/main.js" type="module" async></script>
-	<script src="scripts/typed.js" type="module" async></script>
+	<script src="scripts/typed-term.js" type="module" async></script>
 	<script src="scripts/tippy.js" type="module" async></script>
 </body>
 

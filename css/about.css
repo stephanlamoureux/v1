@@ -8,10 +8,15 @@ body {
   );
 }
 
+.header-title {
+  font-size: 5rem;
+}
+
 .about {
   width: 70%;
   margin: 5rem auto 20rem auto;
   scroll-margin-top: 100px;
+  padding-top: 5px;
 }
 
 .about-container {
@@ -20,11 +25,11 @@ body {
 }
 
 .landing {
-  height: 75vh;
+  height: 60vh;
 }
 
 .terminal-container {
-  margin-top: 5rem;
+  margin-top: 8rem;
   padding: 0 2rem;
   width: 100%;
   display: flex;
@@ -83,7 +88,7 @@ body {
 }
 
 .anchor {
-  width: 40px;
+  width: 35px;
 }
 
 .arrow-down {

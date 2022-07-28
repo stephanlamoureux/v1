@@ -205,7 +205,7 @@ a {
   height: 20px;
   background-color: var(--dracula-foreground);
   position: absolute;
-  top: 2px;
+  top: 3px;
   left: 27px;
   border-radius: 50%;
   transition: transform 0.2s linear;

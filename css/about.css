@@ -8,10 +8,6 @@ body {
   );
 }
 
-.header-title {
-  font-size: 5rem;
-}
-
 .about {
   width: 70%;
   margin: 0 auto 20rem auto;

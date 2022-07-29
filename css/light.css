@@ -34,6 +34,10 @@ body.light-mode .terminal-window {
   box-shadow: 0 0 5px 1px var(--dracula-background);
 }
 
+body.light-mode .terminal-body {
+  opacity: 0.9;
+}
+
 body.light-mode .section-header {
   color: white;
 }

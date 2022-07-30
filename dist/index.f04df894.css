@@ -252,7 +252,7 @@ body {
 
 .vwc {
   color: var(--dracula-foreground);
-  background-image: linear-gradient(90deg, #282a36 0%, #8be9fd 50%, #ff79c6e6 100%);
+  background-image: linear-gradient(90deg, #2b2d3d 0%, #8be9fd 50%, #bd93f9e6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -271,7 +271,7 @@ body {
 
 .working-on-link {
   color: var(--dracula-pink);
-  background-image: linear-gradient(90deg, #282a36 0%, #8be9fd 50%, #bd93f9e6 100%);
+  background-image: linear-gradient(90deg, #383a59cc 0%, #8be9fd 50%, #bd93f9e6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;

@@ -268,9 +268,9 @@ body {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(40, 42, 54, 1) 0%,
+    rgba(43, 45, 61, 1) 0%,
     rgba(139, 233, 253, 1) 50%,
-    rgba(255, 121, 198, 0.9) 100%
+    rgba(189, 147, 249, 0.9) 100%
   );
   background-size: 100% 12%;
   padding-bottom: 5px;
@@ -292,7 +292,7 @@ body {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(40, 42, 54, 1) 0%,
+    rgba(56, 58, 89, 0.8) 0%,
     rgba(139, 233, 253, 1) 50%,
     rgba(189, 147, 249, 0.9) 100%
   );

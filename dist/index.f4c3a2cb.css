@@ -16,7 +16,7 @@
   }
 }
 
-@media (max-height: 950px) and (min-height: 851px) {
+@media (max-height: 930px) and (min-height: 851px) {
   .terminal-container {
     margin-top: 5rem;
   }
@@ -24,25 +24,25 @@
 
 @media (max-height: 850px) and (min-height: 801px) {
   .terminal-container {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
 @media (max-height: 800px) and (min-height: 761px) {
   .terminal-container {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }
 
 @media (max-height: 760px) and (min-height: 721px) {
   .terminal-container {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
 @media (max-height: 720px) and (min-height: 701px) {
   .terminal-container {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   .terminal-container {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 

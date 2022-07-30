@@ -1,10 +1,10 @@
 /* || Contact */
 
 .contact {
-  margin: 4rem 0 7rem 0;
   width: 60%;
-  margin: 5rem auto 17rem auto;
+  margin: 5.3rem auto 17rem auto;
   overflow: hidden;
+  padding-top: 2px;
 }
 
 .contact-p {

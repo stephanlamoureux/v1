@@ -832,6 +832,10 @@
     padding: 0 1.5rem;
   }
 
+  .terminal-window {
+    height: 275px;
+  }
+
   .paragraph h3 {
     text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   }

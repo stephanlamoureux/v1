@@ -6,11 +6,11 @@ body.light-mode {
 }
 
 body.light-mode .line {
-  background: linear-gradient(to right, #bd93f9, #8be9fd, #ff79c6);
+  background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
 }
 
 body.light-mode .about .line {
-  background: linear-gradient(to right, #8be9fd, #50fa7b, #f1fa8c);
+  background: linear-gradient(to right, #fff, #52fff2, #fff);
 }
 
 body.light-mode .terminal-window {
@@ -42,7 +42,7 @@ body.light-mode .p-icon {
 body.light-mode .vwc {
   text-shadow: none;
   color: #000;
-  background-image: linear-gradient(90deg, #cd76e9 0%, #8be9fd 50%, #50fa7be6 100%);
+  background-image: linear-gradient(90deg, #cd76e9 0%, #8be9fd 50%, #1bff11 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -52,7 +52,7 @@ body.light-mode .vwc {
 body.light-mode .working-on-link {
   color: #fff;
   text-shadow: 1px 1px 2px #000000bf;
-  background-image: linear-gradient(90deg, #f693ffb3 0%, #8be9fd 50%, #50fa7be6 100%);
+  background-image: linear-gradient(90deg, #e477d9 0%, #8be9fd 50%, #1bff11 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;

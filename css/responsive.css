@@ -75,6 +75,10 @@
     width: 75%;
   }
 
+  .terminal-window {
+    width: 650px;
+  }
+
   .project-name0,
   .project-name1,
   .project-name2,
@@ -106,10 +110,6 @@
 
   .dev-article {
     width: 48%;
-  }
-
-  .terminal-window {
-    width: 650px;
   }
 }
 

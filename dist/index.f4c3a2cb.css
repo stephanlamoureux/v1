@@ -966,7 +966,7 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-device-height: 700px) {
+@media screen and (orientation: landscape) and (max-height: 768px) {
   .terminal-container {
     margin-top: 4rem;
   }

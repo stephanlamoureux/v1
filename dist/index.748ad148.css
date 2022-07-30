@@ -119,7 +119,7 @@ a {
 }
 
 .link {
-  color: var(--dracula-pink);
+  color: var(--dracula-foreground);
   text-transform: uppercase;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   margin-right: 5rem;
@@ -133,7 +133,7 @@ a {
 }
 
 .link:hover, .link.is-active {
-  background-image: linear-gradient(90deg, #bd93f9 0%, #8be9fd 50%, #50fa7b 100%);
+  background-image: linear-gradient(90deg, #8be9fd 0%, #bd93f9 50%, #ff79c6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -247,7 +247,7 @@ header {
 
 .typed-gradient {
   text-shadow: 2px 3px 5px #00000080;
-  background: -webkit-linear-gradient( var(--dracula-green), var(--dracula-cyan), var(--dracula-pink) );
+  background-image: linear-gradient(90deg, var(--dracula-purple) 60%, #ff79c6 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -271,7 +271,7 @@ header {
 .line {
   height: 1px;
   width: 240px;
-  background: linear-gradient(to right, #bd93f966, #8be9fd, #ff79c666);
+  background: linear-gradient(to right, #bd93f999, #8be9fd, #ff79c699);
   border: 0;
   margin: 0 auto;
 }

@@ -140,7 +140,7 @@ a {
 }
 
 .link {
-  color: var(--dracula-pink);
+  color: var(--dracula-foreground);
   font-size: 1.2rem;
   margin-right: 5rem;
   padding: 5px 5px 5px 5px;
@@ -160,9 +160,9 @@ a {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(189, 147, 249, 1) 0%,
-    rgba(139, 233, 253, 1) 50%,
-    rgba(80, 250, 123, 1) 100%
+    rgba(139, 233, 253, 1) 0%,
+    rgba(189, 147, 249, 1) 50%,
+    rgb(255, 121, 198, 1) 100%
   );
   background-size: 100% 12%;
   transition: ease-out 0.2s;
@@ -290,11 +290,7 @@ header {
 
 .typed-gradient {
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
-  background: -webkit-linear-gradient(
-    var(--dracula-green),
-    var(--dracula-cyan),
-    var(--dracula-pink)
-  );
+  background-image: linear-gradient(90deg, var(--dracula-purple) 60%, rgb(255, 121, 198, 1) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -319,9 +315,9 @@ header {
 .line {
   background: linear-gradient(
     to right,
-    rgba(189, 147, 249, 0.4),
+    rgba(189, 147, 249, 0.6),
     rgba(139, 233, 253, 1),
-    rgb(255, 121, 198, 0.4)
+    rgb(255, 121, 198, 0.6)
   );
   border: 0;
   height: 1px;

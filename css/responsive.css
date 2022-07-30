@@ -18,19 +18,37 @@
   }
 }
 
-@media (max-height: 850px) and (min-height: 721px) {
+@media (max-height: 950px) and (min-height: 851px) {
+  .terminal-container {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-height: 850px) and (min-height: 801px) {
+  .terminal-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-height: 800px) and (min-height: 761px) {
   .terminal-container {
     margin-top: 2rem;
   }
 }
 
-@media (max-height: 720px) and (min-height: 681px) {
+@media (max-height: 760px) and (min-height: 721px) {
   .terminal-container {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 
-@media (max-height: 680px) {
+@media (max-height: 720px) and (min-height: 701px) {
+  .terminal-container {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-height: 700px) {
   .anchor {
     display: none;
   }
@@ -89,6 +107,10 @@
   .dev-article {
     width: 48%;
   }
+
+  .terminal-window {
+    width: 650px;
+  }
 }
 
 @media (max-width: 1300px) {
@@ -145,7 +167,7 @@
   }
 
   header {
-    background-color: rgba(40, 42, 54, 0.8);
+    background-color: rgba(40, 42, 54, 0.9);
     border-radius: 0 0 10px 10px;
     box-shadow: 0 0 5px 4px rgba(50, 52, 75, 0.6);
   }
@@ -238,9 +260,9 @@
     background-position: left 0% bottom -5%;
     background-image: linear-gradient(
       90deg,
-      rgba(189, 147, 249, 1) 0%,
-      rgba(139, 233, 253, 1) 50%,
-      rgba(80, 250, 123, 1) 100%
+      rgba(139, 233, 253, 1) 0%,
+      rgba(189, 147, 249, 1) 50%,
+      rgb(255, 121, 198, 1) 100%
     );
     background-size: 100% 12%;
     transition: ease color 0.2s;
@@ -298,6 +320,10 @@
   }
 
   /* Blog */
+
+  .blog-container {
+    padding-top: 1rem;
+  }
 
   .dev-article {
     width: 75%;
@@ -441,6 +467,9 @@
     font-size: 2.1rem;
   }
 
+  .line {
+    width: 220px;
+  }
   .projects-container {
     width: 100%;
   }
@@ -527,6 +556,10 @@
 
   .section-header {
     font-size: 1.9rem;
+  }
+
+  .line {
+    width: 190px;
   }
 
   /* About */
@@ -643,6 +676,10 @@
     margin: 15px 0;
     font-size: 1.9rem;
   }
+
+  .line {
+    width: 180px;
+  }
 }
 
 @media (max-width: 583px) {
@@ -679,7 +716,7 @@
   }
 
   .nav-wrapper .menu {
-    padding-left: 40px;
+    padding-left: 60px;
   }
 
   .nav-wrapper .navbar {
@@ -708,7 +745,7 @@
   }
 
   .line {
-    width: 195px;
+    width: 180px;
   }
 
   /* About */
@@ -864,7 +901,7 @@
   }
 
   .nav-wrapper {
-    margin-top: -12px;
+    margin-top: -10px;
   }
 
   .about-nav-wrapper {

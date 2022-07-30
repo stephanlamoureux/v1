@@ -16,46 +16,6 @@
   }
 }
 
-@media (max-height: 930px) and (min-height: 851px) {
-  .terminal-container {
-    margin-top: 5rem;
-  }
-}
-
-@media (max-height: 850px) and (min-height: 801px) {
-  .terminal-container {
-    margin-top: 4rem;
-  }
-}
-
-@media (max-height: 800px) and (min-height: 761px) {
-  .terminal-container {
-    margin-top: 3rem;
-  }
-}
-
-@media (max-height: 760px) and (min-height: 721px) {
-  .terminal-container {
-    margin-top: 2rem;
-  }
-}
-
-@media (max-height: 720px) and (min-height: 701px) {
-  .terminal-container {
-    margin-top: 1rem;
-  }
-}
-
-@media (max-height: 700px) {
-  .anchor {
-    display: none;
-  }
-
-  .terminal-container {
-    margin-top: 1rem;
-  }
-}
-
 @media (max-width: 1650px) {
   .header-title {
     font-size: 3.8rem;
@@ -706,9 +666,13 @@
   }
 }
 
-@media screen and (orientation: landscape) and (max-device-width: 500px) {
+@media screen and (orientation: landscape) and (max-device-width: 900px) {
   .nav-wrapper .navbar {
     height: 90vh;
+  }
+
+  .about {
+    margin-top: 16rem;
   }
 
   .anchor {
@@ -836,6 +800,10 @@
     height: 325px;
   }
 
+  .anchor {
+    display: none;
+  }
+
   .paragraph h3 {
     text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   }
@@ -955,6 +923,52 @@
 
   .header-sub {
     font-size: .5rem;
+  }
+}
+
+@media (max-height: 930px) and (min-height: 851px) {
+  .terminal-container {
+    margin-top: 5rem;
+  }
+}
+
+@media (max-height: 850px) and (min-height: 801px) {
+  .terminal-container {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-height: 800px) and (min-height: 761px) {
+  .terminal-container {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-height: 760px) and (min-height: 721px) {
+  .terminal-container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-height: 720px) and (min-height: 701px) {
+  .terminal-container {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-height: 700px) {
+  .anchor {
+    display: none;
+  }
+
+  .terminal-container {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-device-height: 700px) {
+  .terminal-container {
+    margin-top: 4rem;
   }
 }
 

@@ -167,15 +167,17 @@
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
     cursor: url("cursor-hand-white.8bf00820.png"), auto;
-    display: initial;
     z-index: 1000;
     border: none;
+    justify-content: center;
+    align-items: center;
     padding: 0 0 0 50px;
+    display: flex;
     position: relative;
   }
 
@@ -365,21 +367,21 @@
   }
 
   .nav-wrapper {
-    margin-top: -18px;
+    margin-top: -19px;
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 }
 
 @media (max-width: 860px) {
   .nav-wrapper {
-    margin-top: -15px;
+    margin-top: -17px;
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .header-title {
@@ -463,11 +465,11 @@
 
 @media (max-width: 716px) {
   .nav-wrapper {
-    margin-top: -14px;
+    margin-top: -17px;
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .header-title {
@@ -544,11 +546,11 @@
 
 @media (max-width: 660px) {
   .nav-wrapper {
-    margin-top: -12px;
+    margin-top: -16px;
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .header-title {
@@ -623,7 +625,7 @@
   }
 
   .about-nav-wrapper {
-    margin-top: 3px;
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
@@ -771,7 +773,7 @@
   }
 
   .about-nav-wrapper {
-    margin-top: 4px;
+    margin-top: 0;
   }
 
   .made {
@@ -803,11 +805,11 @@
   }
 
   .nav-wrapper {
-    margin-top: -10px;
+    margin-top: -13px;
   }
 
   .about-nav-wrapper {
-    margin-top: 4px;
+    margin-top: 0;
   }
 
   .nav-wrapper .menu {
@@ -898,11 +900,11 @@
   }
 
   .nav-wrapper {
-    margin-top: -8px;
+    margin-top: -11px;
   }
 
   .about-nav-wrapper {
-    margin-top: 4px;
+    margin-top: 0;
   }
 
   .line {

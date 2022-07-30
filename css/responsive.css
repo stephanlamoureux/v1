@@ -702,7 +702,7 @@
 
 @media screen and (orientation: landscape) and (max-width: 1024px) and (max-height: 768px) {
   .terminal-container {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .about {

@@ -64,7 +64,7 @@ body.light-mode .vwc {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(205, 118, 233, 1) 0%,
+    rgba(205, 118, 233, 0.9) 0%,
     rgba(139, 233, 253, 1) 50%,
     rgba(27, 255, 17, 0.9) 100%
   );
@@ -80,7 +80,7 @@ body.light-mode .working-on-link {
   background-position: left 0% bottom -5%;
   background-image: linear-gradient(
     90deg,
-    rgba(228, 119, 217, 1) 0%,
+    rgba(228, 119, 217, 0.9) 0%,
     rgba(139, 233, 253, 1) 50%,
     rgba(27, 255, 17, 0.9) 100%
   );

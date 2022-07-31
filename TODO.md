@@ -1,5 +1,9 @@
 # TODO
 
+## Nav
+
+- Make mobile nav fixed
+
 ## About
 
 - Activate tooltip on scroll
@@ -21,3 +25,6 @@
 - Create [web components](https://www.section.io/engineering-education/how-to-create-a-web-component-with-vanilla-javascript/) for header/footer/nav etc
 - Write tests with [jest](https://jestjs.io/)
 - Add media queries for 4k+ monitors
+- Custom 404 isn't working
+- New README screenshots
+- Add subtitles to blog/contact/projects

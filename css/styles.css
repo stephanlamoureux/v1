@@ -211,12 +211,18 @@ a {
   transition: transform 0.2s linear;
 }
 
+.checkbox-label i {
+  line-height: normal;
+}
+
 .fa-moon {
   color: var(--dracula-purple);
+  line-height: none;
 }
 
 .fa-sun {
   color: var(--dracula-yellow);
+  line-height: none;
 }
 
 /* || Header */

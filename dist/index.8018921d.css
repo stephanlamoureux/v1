@@ -6,11 +6,13 @@ body.light-mode {
 }
 
 body.light-mode .line {
+  box-shadow: 0 0 5px 1px var(--dracula-comment);
   background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
 }
 
 body.light-mode .about .line {
-  background: linear-gradient(to right, #fff, #52fff2, #fff);
+  background: linear-gradient(to right, #1bff11, #8be9fd, #1bff11);
+  box-shadow: 0 0 5px 1px #a970f8;
 }
 
 body.light-mode .terminal-window {

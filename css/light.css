@@ -17,6 +17,7 @@ body.light-mode .line {
     rgba(139, 233, 253, 1),
     rgba(255, 121, 198, 1)
   );
+  box-shadow: 0 0 5px 1px var(--dracula-comment);
 }
 
 /* About */
@@ -24,10 +25,11 @@ body.light-mode .line {
 body.light-mode .about .line {
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 1),
-    rgba(82, 255, 242, 1),
-    rgba(255, 255, 255, 1)
+    rgba(27, 255, 17, 1),
+    rgba(139, 233, 253, 1),
+    rgba(27, 255, 17, 1)
   );
+  box-shadow: 0 0 5px 1px rgb(169, 112, 248);
 }
 
 body.light-mode .terminal-window {

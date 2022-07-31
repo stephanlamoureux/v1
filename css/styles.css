@@ -323,6 +323,7 @@ header {
   height: 1px;
   margin: 0 auto;
   width: 240px;
+  box-shadow: 0 0 5px 1px var(--dracula-selection);
 }
 
 .marg-bottom {

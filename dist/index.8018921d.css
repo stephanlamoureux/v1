@@ -20,7 +20,7 @@ body.light-mode .terminal-window {
 }
 
 body.light-mode .terminal-body {
-  opacity: .9;
+  background: #44475ab3;
 }
 
 body.light-mode .section-header {

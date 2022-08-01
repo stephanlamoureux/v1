@@ -73,8 +73,7 @@ body {
   color: var(--dracula-foreground);
   font-family: Menlo, Monaco, 'Consolas', monospace, 'Courier New', 'Courier';
   font-size: 1.2rem;
-  background: var(--dracula-selection);
-  opacity: 0.8;
+  background: rgba(68, 71, 90, 0.7);
   padding: 10px;
   position: absolute;
   width: 100%;

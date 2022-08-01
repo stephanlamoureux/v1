@@ -65,9 +65,8 @@ body {
 
 .terminal-body {
   color: var(--dracula-foreground);
-  background: var(--dracula-selection);
-  opacity: .8;
   width: 100%;
+  background: #44475ab3;
   padding: 10px;
   font-family: Menlo, Monaco, Consolas, monospace, Courier New, Courier;
   font-size: 1.2rem;

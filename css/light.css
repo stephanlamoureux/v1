@@ -37,7 +37,7 @@ body.light-mode .terminal-window {
 }
 
 body.light-mode .terminal-body {
-  opacity: 0.9;
+  background: rgba(68, 71, 90, 0.7);
 }
 
 body.light-mode .section-header {

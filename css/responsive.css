@@ -1024,11 +1024,14 @@
 }
 
 @media (max-width: 430px) {
-  .about,
   .blog,
   .projects,
   .contact {
     padding-top: 10.03rem;
+    margin-bottom: 8rem;
+  }
+
+  .about {
     margin-bottom: 8rem;
   }
 

@@ -923,9 +923,13 @@
 }
 
 @media (max-width: 430px) {
-  .about, .blog, .projects, .contact {
+  .blog, .projects, .contact {
     margin-bottom: 8rem;
     padding-top: 10.03rem;
+  }
+
+  .about {
+    margin-bottom: 8rem;
   }
 
   .nav-wrapper {

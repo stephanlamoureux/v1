@@ -56,11 +56,10 @@ input:focus, textarea:focus {
 
 .form-submit {
   background-color: var(--dracula-purple);
-  color: #fff;
+  color: #000;
   cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   text-align: center;
   width: 100%;
-  text-shadow: 1px 1px 2px #000000b3;
   border-radius: 5px;
   margin-bottom: 10px;
   padding: 19px 39px 18px;

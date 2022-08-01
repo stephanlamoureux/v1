@@ -1,9 +1,5 @@
 # TODO
 
-## Nav
-
-- Make mobile nav fixed
-
 ## About
 
 - Activate tooltip on scroll
@@ -18,7 +14,7 @@
 ## Projects
 
 - Add modals to cards for project details (or use [dialog](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog)?)
-- Connect pagination to project cards
+- Add pagination?
 
 ## Misc
 

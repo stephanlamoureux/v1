@@ -156,6 +156,7 @@ body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui
 
 body.light-mode .contact-label {
   text-shadow: 1px 1px 2px #000000e6;
+  color: #fff;
 }
 
 body.light-mode input, body.light-mode textarea {
@@ -170,7 +171,7 @@ body.light-mode input:focus, body.light-mode textarea:focus {
 
 body.light-mode .form-submit {
   background-color: var(--dracula-greypurple);
-  color: var(--dracula-foreground);
+  color: #fff;
   text-shadow: 1px 1px 2px #000000e6;
   box-shadow: 0 5px #1e2032;
 }

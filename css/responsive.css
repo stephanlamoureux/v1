@@ -105,29 +105,23 @@
     max-width: 35%;
   }
 }
-@media (min-width: 1101px) {
-  @media (max-height: 850px) {
-    .terminal-container {
-      padding-top: 4rem;
-      margin-top: 0;
-    }
-  }
 
-  @media (max-height: 800px) {
+@media (min-width: 1101px) {
+  @media (max-height: 900px) {
     .terminal-container {
       padding-top: 3rem;
       margin-top: 0;
     }
   }
 
-  @media (max-height: 760px) {
+  @media (max-height: 800px) {
     .terminal-container {
       padding-top: 2rem;
       margin-top: 0;
     }
   }
 
-  @media (max-height: 720px) {
+  @media (max-height: 750px) {
     .terminal-container {
       padding-top: 1rem;
       margin-top: 0;
@@ -138,13 +132,9 @@
     .anchor {
       display: none;
     }
-
-    .terminal-container {
-      padding-top: 1rem;
-      margin-top: 0;
-    }
   }
 }
+
 /* || Mobile */
 
 @media (max-width: 1100px) {
@@ -431,13 +421,6 @@
     opacity: 1;
   }
 
-  @media (max-height: 930px) {
-    .terminal-container {
-      padding-top: 13.1rem;
-      margin-top: 0;
-    }
-  }
-
   @media (max-height: 850px) {
     .terminal-container {
       padding-top: 12.1rem;
@@ -445,23 +428,9 @@
     }
   }
 
-  @media (max-height: 800px) {
-    .terminal-container {
-      padding-top: 11.1rem;
-      margin-top: 0;
-    }
-  }
-
   @media (max-height: 760px) {
     .terminal-container {
-      padding-top: 10.1rem;
-      margin-top: 0;
-    }
-  }
-
-  @media (max-height: 720px) {
-    .terminal-container {
-      padding-top: 9.1rem;
+      padding-top: 11.1rem;
       margin-top: 0;
     }
   }
@@ -469,11 +438,6 @@
   @media (max-height: 700px) {
     .anchor {
       display: none;
-    }
-
-    .terminal-container {
-      padding-top: 9.1rem;
-      margin-top: 0;
     }
   }
 }
@@ -949,7 +913,7 @@
 
 @media (max-width: 476px) {
   .terminal-container {
-    padding: 11rem 1.5rem 0 1.5rem;
+    padding: 10rem 1.5rem 0 1.5rem;
   }
 
   footer p {
@@ -1055,6 +1019,10 @@
     font-size: 0.7rem;
   }
 
+  .terminal-container {
+    padding-top: 9rem;
+  }
+
   .paragraph h3 {
     text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
       0 18px 23px rgba(0, 0, 0, 0.1);
@@ -1145,7 +1113,7 @@
   }
 
   .terminal-container {
-    padding-top: 9.6rem;
+    padding-top: 9rem;
   }
 
   .line {
@@ -1173,11 +1141,19 @@
   }
 
   .nav-wrapper .menu {
-    padding-left: 20px;
+    padding-left: 25px;
+  }
+
+  .terminal-container {
+    padding-top: 8rem;
   }
 }
 
 @media (max-width: 297px) {
+  .nav-wrapper .menu {
+    padding-left: 20px;
+  }
+
   footer p {
     padding: 0;
   }

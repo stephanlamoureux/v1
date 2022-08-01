@@ -16,7 +16,8 @@
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
   display: flex;
 }
 

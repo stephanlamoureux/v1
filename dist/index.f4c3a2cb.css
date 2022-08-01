@@ -83,28 +83,21 @@
 }
 
 @media (min-width: 1101px) {
-  @media (max-height: 850px) {
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 4rem;
-    }
-  }
-
-  @media (max-height: 800px) {
+  @media (max-height: 900px) {
     .terminal-container {
       margin-top: 0;
       padding-top: 3rem;
     }
   }
 
-  @media (max-height: 760px) {
+  @media (max-height: 800px) {
     .terminal-container {
       margin-top: 0;
       padding-top: 2rem;
     }
   }
 
-  @media (max-height: 720px) {
+  @media (max-height: 750px) {
     .terminal-container {
       margin-top: 0;
       padding-top: 1rem;
@@ -114,11 +107,6 @@
   @media (max-height: 700px) {
     .anchor {
       display: none;
-    }
-
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 1rem;
     }
   }
 }
@@ -364,13 +352,6 @@
     opacity: 1;
   }
 
-  @media (max-height: 930px) {
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 13.1rem;
-    }
-  }
-
   @media (max-height: 850px) {
     .terminal-container {
       margin-top: 0;
@@ -378,35 +359,16 @@
     }
   }
 
-  @media (max-height: 800px) {
+  @media (max-height: 760px) {
     .terminal-container {
       margin-top: 0;
       padding-top: 11.1rem;
     }
   }
 
-  @media (max-height: 760px) {
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 10.1rem;
-    }
-  }
-
-  @media (max-height: 720px) {
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 9.1rem;
-    }
-  }
-
   @media (max-height: 700px) {
     .anchor {
       display: none;
-    }
-
-    .terminal-container {
-      margin-top: 0;
-      padding-top: 9.1rem;
     }
   }
 }
@@ -850,7 +812,7 @@
 
 @media (max-width: 476px) {
   .terminal-container {
-    padding: 11rem 1.5rem 0;
+    padding: 10rem 1.5rem 0;
   }
 
   footer p {
@@ -952,6 +914,10 @@
     font-size: .7rem;
   }
 
+  .terminal-container {
+    padding-top: 9rem;
+  }
+
   .paragraph h3 {
     text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   }
@@ -1033,7 +999,7 @@
   }
 
   .terminal-container {
-    padding-top: 9.6rem;
+    padding-top: 9rem;
   }
 
   .line {
@@ -1059,11 +1025,19 @@
   }
 
   .nav-wrapper .menu {
-    padding-left: 20px;
+    padding-left: 25px;
+  }
+
+  .terminal-container {
+    padding-top: 8rem;
   }
 }
 
 @media (max-width: 297px) {
+  .nav-wrapper .menu {
+    padding-left: 20px;
+  }
+
   footer p {
     padding: 0;
   }

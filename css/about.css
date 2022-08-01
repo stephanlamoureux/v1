@@ -10,7 +10,7 @@ body {
 
 .about {
   width: 70%;
-  margin: 0 auto 20rem auto;
+  margin: 1rem auto 20rem auto;
   scroll-margin-top: 100px;
   padding-top: 2px;
 }

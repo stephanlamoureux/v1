@@ -271,11 +271,15 @@
   }
 
   .blog-container {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
   }
 
   .dev-article {
     width: 75%;
+  }
+
+  .dev-article:first-of-type {
+    margin-top: 0;
   }
 
   .dev-article:not(:last-of-type) {
@@ -342,6 +346,10 @@
   .projects-cell {
     width: 100%;
     padding: 2rem 1rem;
+  }
+
+  .projects-cell:first-of-type, .form-container {
+    padding-top: 1.5rem;
   }
 
   .contact-p {

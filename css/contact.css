@@ -18,12 +18,14 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 1.5rem;
 }
 
 form {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
+  padding-top: 0;
 }
 
 fieldset {

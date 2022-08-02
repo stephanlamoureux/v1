@@ -11,8 +11,8 @@ body.light-mode .line {
 }
 
 body.light-mode .about .line {
-  background: linear-gradient(to right, #1bff11, #8be9fd, #1bff11);
-  box-shadow: 0 0 5px 1px #a970f8;
+  background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
+  box-shadow: 0 0 3px 1px #6272a499;
 }
 
 body.light-mode .terminal-window {
@@ -37,14 +37,14 @@ body.light-mode .about-p {
 }
 
 body.light-mode .p-icon {
-  color: var(--dracula-green);
-  text-shadow: 1px 1px 2px #0003;
+  color: #50fa7b;
+  text-shadow: 1px 1px 2px #000c;
 }
 
 body.light-mode .vwc {
   text-shadow: none;
   color: #000;
-  background-image: linear-gradient(90deg, #cd76e9e6 0%, #8be9fd 50%, #1bff11e6 100%);
+  background-image: linear-gradient(90deg, #cd76e9e6 0%, #8be9fd 50%, #50fa7be6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
@@ -54,7 +54,7 @@ body.light-mode .vwc {
 body.light-mode .working-on-link {
   color: #fff;
   text-shadow: 1px 1px 2px #000000bf;
-  background-image: linear-gradient(90deg, #e477d9e6 0%, #8be9fd 50%, #1bff11e6 100%);
+  background-image: linear-gradient(90deg, #e477d9e6 0%, #8be9fd 50%, #50fa7be6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;

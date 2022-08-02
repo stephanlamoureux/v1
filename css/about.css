@@ -88,6 +88,7 @@ body {
 
 .arrow-down {
   animation: 3s arrow infinite ease;
+  -webkit-animation: 3s arrow infinite ease;
   margin: 85vh auto;
   position: absolute;
   top: 0;
@@ -100,6 +101,17 @@ body {
 }
 
 @keyframes arrow {
+  0%,
+  100% {
+    top: 50px;
+  }
+
+  50% {
+    top: 80px;
+  }
+}
+
+@-webkit-keyframes arrow {
   0%,
   100% {
     top: 50px;

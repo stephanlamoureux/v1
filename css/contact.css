@@ -79,5 +79,6 @@ textarea:focus {
 .form-submit:focus {
   box-shadow: 0 3px 0 rgb(158, 99, 240);
   transform: translateY(3px);
+  -webkit-transform: translateY(3px);
   transition: ease 0.1s all;
 }

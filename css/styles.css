@@ -432,9 +432,32 @@ span > i {
 
 .animate-beat {
   animation: beat 1.3s infinite;
+  -webkit-animation: 1.3s infinite;
 }
 
 @keyframes beat {
+  0% {
+    transform: scale(0.9);
+  }
+
+  40% {
+    transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@-webkit-keyframes beat {
   0% {
     transform: scale(0.9);
   }

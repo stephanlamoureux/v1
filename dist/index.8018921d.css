@@ -23,6 +23,10 @@ body.light-mode .terminal-body {
   background: #44475ab3;
 }
 
+body.light-mode .arrows path {
+  stroke: #000;
+}
+
 body.light-mode .section-header {
   color: #fff;
 }

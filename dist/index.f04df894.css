@@ -4,7 +4,7 @@ body {
 
 .about {
   width: 70%;
-  margin: 1rem auto 20rem;
+  margin: 2rem auto 20rem;
   padding-top: 2px;
   scroll-margin-top: 100px;
 }
@@ -86,9 +86,11 @@ body {
 }
 
 .arrows path {
-  stroke: var(--dracula-purple);
+  stroke: var(--dracula-cyan);
   fill: #0000;
   stroke-width: 1px;
+  -webkit-filter: drop-shadow(3px 3px 2px #000000b3);
+  filter: drop-shadow(3px 3px 2px #000000b3);
   animation: arrow 2s infinite;
 }
 

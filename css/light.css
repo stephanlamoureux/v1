@@ -40,6 +40,10 @@ body.light-mode .terminal-body {
   background: rgba(68, 71, 90, 0.7);
 }
 
+body.light-mode .arrows path {
+  stroke: black;
+}
+
 body.light-mode .section-header {
   color: white;
 }

@@ -369,7 +369,6 @@ span > i {
 
 .animate-beat {
   animation: beat 1.3s infinite;
-  -webkit-animation: none;
 }
 
 @keyframes beat {

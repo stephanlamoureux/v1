@@ -92,7 +92,7 @@ body {
 }
 
 .arrows path {
-  stroke: var(--dracula-cyan);
+  stroke: var(--dracula-purple);
   fill: transparent;
   stroke-width: 1px;
   animation: arrow 2s infinite;

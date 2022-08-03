@@ -11,8 +11,8 @@ body.light-mode .line {
 }
 
 body.light-mode .about .line {
-  background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
-  box-shadow: 0 0 3px 1px #6272a499;
+  background: linear-gradient(to right, #fffc, #8be9fd, #50fa7bcc);
+  box-shadow: 0 0 5px 1px #6272a4;
 }
 
 body.light-mode .terminal-window {
@@ -24,9 +24,9 @@ body.light-mode .terminal-body {
 }
 
 body.light-mode .arrows path {
-  stroke: #000;
-  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-comment) );
-  filter: drop-shadow(3px 3px 2px var(--dracula-comment) );
+  stroke: #fff;
+  -webkit-filter: drop-shadow(3px 3px 2px #000);
+  filter: drop-shadow(3px 3px 2px #8be9fdb3);
 }
 
 body.light-mode .section-header {

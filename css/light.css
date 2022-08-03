@@ -25,11 +25,11 @@ body.light-mode .line {
 body.light-mode .about .line {
   background: linear-gradient(
     to right,
-    rgba(183, 133, 253, 1),
+    rgba(255, 255, 255, 0.8),
     rgba(139, 233, 253, 1),
-    rgba(255, 121, 198, 1)
+    rgba(80, 250, 123, 0.8)
   );
-  box-shadow: 0 0 3px 1px rgba(98, 114, 164, 0.6);
+  box-shadow: 0 0 5px 1px rgba(98, 114, 164, 1);
 }
 
 body.light-mode .terminal-window {
@@ -41,9 +41,9 @@ body.light-mode .terminal-body {
 }
 
 body.light-mode .arrows path {
-  stroke: black;
-  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-comment));
-  filter: drop-shadow(3px 3px 2px var(--dracula-comment));
+  stroke: white;
+  -webkit-filter: drop-shadow(3px 3px 2px black);
+  filter: drop-shadow(3px 3px 2px rgba(139, 233, 253, 0.7));
 }
 
 body.light-mode .section-header {

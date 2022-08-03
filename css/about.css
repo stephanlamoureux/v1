@@ -95,10 +95,10 @@ body {
   stroke: var(--dracula-purple);
   fill: transparent;
   stroke-width: 1px;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite;
-  -webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
-  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.7));
+  animation: arrow 2.3s infinite;
+  -webkit-animation: arrow 2.3s infinite;
+  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-pink));
+  filter: drop-shadow(3px 3px 2px rgba(255, 121, 198, 0.5));
 }
 
 @keyframes arrow {

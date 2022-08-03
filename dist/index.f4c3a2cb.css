@@ -51,8 +51,14 @@
     transform: translateY(-6px);
   }
 
+  .blog-container {
+    margin-bottom: 1rem;
+    padding-top: 0;
+  }
+
   .dev-article {
-    width: 48%;
+    width: 40%;
+    margin: 2.5%;
   }
 }
 
@@ -282,6 +288,7 @@
   }
 
   .blog-container {
+    margin-bottom: 2rem;
     padding-top: 1.5rem;
   }
 

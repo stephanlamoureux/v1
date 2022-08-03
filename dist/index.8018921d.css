@@ -25,6 +25,8 @@ body.light-mode .terminal-body {
 
 body.light-mode .arrows path {
   stroke: #000;
+  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-comment) );
+  filter: drop-shadow(3px 3px 2px var(--dracula-comment) );
 }
 
 body.light-mode .section-header {

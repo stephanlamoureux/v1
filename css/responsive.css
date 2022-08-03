@@ -516,6 +516,10 @@
     height: 440%;
   }
 
+  .about {
+    scroll-margin-top: 120px;
+  }
+
   .about-nav-wrapper {
     margin-top: 0;
   }
@@ -857,7 +861,7 @@
   /* About */
 
   .about {
-    margin-top: 4rem;
+    scroll-margin-top: 140px;
   }
 
   .terminal-container {
@@ -969,6 +973,10 @@
   .projects,
   .contact {
     padding-top: 10.53rem;
+  }
+
+  .about {
+    scroll-margin-top: 120px;
   }
 
   .icons-flex > span {

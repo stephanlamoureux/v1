@@ -76,28 +76,50 @@ body {
   overflow: auto;
 }
 
-.anchor {
-  width: 35px;
+.arrows {
+  width: 60px;
+  height: 72px;
+  margin-left: -30px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
 }
 
-.arrow-down {
-  justify-content: center;
-  align-items: center;
-  margin: 85vh auto;
-  animation: arrow 3s infinite;
-  display: flex;
-  position: absolute;
-  inset: 0;
+.arrows path {
+  stroke: var(--dracula-purple);
+  fill: #0000;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
 }
 
 @keyframes arrow {
-  0%, 100% {
-    top: 50px;
+  0% {
+    opacity: 0;
   }
 
-  50% {
-    top: 80px;
+  40% {
+    opacity: 1;
   }
+
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
 }
 
 .profile-div {

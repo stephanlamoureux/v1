@@ -82,44 +82,66 @@ body {
   overflow: auto;
 }
 
-.anchor {
-  width: 35px;
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 40px;
 }
 
-.arrow-down {
-  animation: 3s arrow infinite ease;
-  -webkit-animation: 3s arrow infinite ease;
-  margin: 85vh auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.arrows path {
+  stroke: var(--dracula-purple);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }
 
 @keyframes arrow {
-  0%,
-  100% {
-    top: 50px;
+  0% {
+    opacity: 0;
   }
-
-  50% {
-    top: 80px;
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
 @-webkit-keyframes arrow {
-  0%,
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
   100% {
-    top: 50px;
+    opacity: 0;
   }
+}
 
-  50% {
-    top: 80px;
-  }
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
 }
 
 .profile-div {

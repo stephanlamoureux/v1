@@ -1,4 +1,9 @@
 /* || Desktop & Laptop */
+@media (min-width: 2560px) {
+  .about-p {
+    font-size: 1.4rem;
+  }
+}
 
 @media (min-width: 2400px) {
   .contact-p {
@@ -875,7 +880,7 @@
   }
 
   .terminal-window {
-    height: 345px;
+    height: 355px;
   }
 
   .profile-image {

@@ -84,3 +84,21 @@
   justify-content: center;
   align-items: center;
 }
+
+.hidden {
+  display: none;
+}
+
+.error-container {
+  display: flex;
+  width: 100%;
+}
+
+.error {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--dracula-red);
+  font-size: 1.8rem;
+}

@@ -66,6 +66,23 @@ async function getArticle() {
     }
     displayMultipleArticles()
   } catch (error) {
+    // Creates a container for the error message
+    const errorContainer = document.createElement('div')
+    errorContainer.className = 'error-container'
+
+    // Creates error message text
+    const errorMessage = document.createElement('p')
+    errorMessage.className = 'error'
+    errorMessage.textContent = 'API ERROR!'
+
+    // Remove the padding from dev-article and hide the other card elements
+    document.querySelector('.dev-article').style.padding = '0'
+    document.querySelector('.blog-container a').classList.add('hidden')
+
+    // Appends the error message to the error container and the error container to dev-article
+    errorContainer.appendChild(errorMessage)
+    document.querySelector('.dev-article').appendChild(errorContainer)
+
     console.log(error)
   }
 }
@@ -73,8 +90,7 @@ getArticle()
 
 // ToastUI Pagination
 
-const container = document.getElementById('tui-pagination-container')
-const pagination = new Pagination(container, {
+const pagination = new Pagination(document.getElementById('tui-pagination-container'), {
   itemsPerPage: 15,
 })
 

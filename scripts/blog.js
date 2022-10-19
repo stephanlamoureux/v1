@@ -77,7 +77,7 @@ async function getArticle() {
 
     // Remove the padding from dev-article and hide the other card elements
     document.querySelector('.dev-article').style.padding = '0'
-    document.querySelector('.blog-container a').classList.add('hidden')
+    document.querySelector('.blog-container a').classList.add('blog-hidden')
 
     // Appends the error message to the error container and the error container to dev-article
     errorContainer.appendChild(errorMessage)

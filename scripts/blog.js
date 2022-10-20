@@ -1,4 +1,6 @@
 import Pagination from 'tui-pagination'
+import Toastify from 'toastify-js'
+import 'toastify-js/src/toastify.css'
 
 const api_url = 'https://dev.to/api/articles?username=stephanlamoureux'
 
@@ -72,19 +74,28 @@ async function getArticle() {
 
     displayMultipleArticles()
   } catch (error) {
-    // Creates a container for the error message
-    const errorContainer = document.createElement('div')
-    errorContainer.className = 'error-container'
-    // Creates error message text
-    const errorMessage = document.createElement('p')
-    errorMessage.className = 'error'
-    errorMessage.textContent = 'API ERROR!'
-    // Remove the padding from dev-article and hide the other card elements
-    document.querySelector('.dev-article').style.padding = '0'
-    document.querySelector('.blog-container a').classList.add('blog-hidden')
-    // Appends the error message to the error container and the error container to dev-article
-    errorContainer.appendChild(errorMessage)
-    document.querySelector('.dev-article').appendChild(errorContainer)
+    // hide empty card
+    const blogContainer = document.querySelector('.blog-container')
+    blogContainer.classList.add('blog-hidden')
+
+    Toastify({
+      text: 'Error: Failed to Connect to The Dev.to API',
+      duration: -1,
+      destination: 'https://dev.to/stephanlamoureux',
+      newWindow: true,
+      close: true,
+      gravity: 'top', // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      offset: {
+        x: 10, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+        y: 100, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+      },
+      style: {
+        background: 'var(--dracula-red)',
+      },
+      onClick: function () {}, // Callback after click
+    }).showToast()
 
     console.log(error)
   }

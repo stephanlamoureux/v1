@@ -594,6 +594,10 @@ async function getArticle() {
                 // append card container to main container
                 document.querySelector(".blog-container").appendChild(card);
             }
+            // ToastUI Pagination
+            const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {
+                itemsPerPage: 15
+            });
         }
         displayMultipleArticles();
     } catch (error) {
@@ -614,13 +618,6 @@ async function getArticle() {
     }
 }
 getArticle();
-// ToastUI Pagination
-const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {
-    itemsPerPage: 15
-}) // pagination.on('beforeMove', event => {
- //   window.scroll(0, 0)
- // })
-;
 
 },{"tui-pagination":"b80gR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b80gR":[function(require,module,exports) {
 /*!

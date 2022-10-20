@@ -84,18 +84,4 @@
   display: none;
 }
 
-.error-container {
-  width: 100%;
-  display: flex;
-}
-
-.error {
-  width: 100%;
-  color: var(--dracula-red);
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  display: flex;
-}
-
 /*# sourceMappingURL=blog.8f5b317e.css.map */

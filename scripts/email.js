@@ -1,7 +1,9 @@
 import emailjs from '@emailjs/browser'
+import Toastify from 'toastify-js'
+import 'toastify-js/src/toastify.css'
 ;(function () {
   // https://dashboard.emailjs.com/admin/integration
-  emailjs.init('user_hYeCfF0DkAoQPn3bOS7WR')
+  emailjs.init('user_hYeCfF0DkAoQPn3bOS7WR') // user_hYeCfF0DkAoQPn3bOS7WR
 })()
 
 window.onload = function () {
@@ -21,18 +23,37 @@ window.onload = function () {
           document.forms['contact-form'].reset()
           document.getElementById('submit').value = 'Submit'
           document.getElementById('submit').style = ''
-        }, 5000)
+        }, 3000)
       },
       function (error) {
+        Toastify({
+          text: 'Error: Unable to Connect To Email Server',
+          duration: -1,
+          close: true,
+          gravity: 'top', // `top` or `bottom`
+          position: 'right', // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          offset: {
+            x: 10, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: 100, // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          },
+          style: {
+            background: 'var(--dracula-red)',
+          },
+          onClick: function () {}, // Callback after click
+        }).showToast()
+
         const submitButton = (document.getElementById('submit').value = 'Failed!')
         const successButton = (document.getElementById('submit').style.cssText =
-          'background: var(--dracula-red) box-shadow: 0 3px 0 rgb(219, 43, 43);')
+          'background: var(--dracula-red); box-shadow: 0 3px 0 rgb(219, 43, 43); color: var(--dracula-foreground')
         console.log('FAILED...', error)
         setTimeout(function () {
           document.forms['contact-form'].reset()
           document.getElementById('submit').value = 'Submit'
           document.getElementById('submit').style = ''
-        }, 5000)
+        }, 3000)
+
+        console.log(error)
       }
     )
   })

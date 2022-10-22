@@ -15,6 +15,7 @@ window.onload = function () {
     // these IDs from the previous steps
     emailjs.sendForm('contact_service', 'contact_form', this).then(
       function () {
+        // styling for submit button on success
         const submitButton = (document.getElementById('submit').value = 'Success!')
         const successButton = (document.getElementById('submit').style.cssText =
           'background: var(--dracula-green); color: var(--dracula-background); text-shadow: none; box-shadow: 0 3px 0 rgb(16, 197, 61);')
@@ -26,6 +27,7 @@ window.onload = function () {
         }, 3000)
       },
       function (error) {
+        // toast error message
         Toastify({
           text: 'Error: Unable to Connect To Email Server',
           duration: -1,
@@ -43,6 +45,7 @@ window.onload = function () {
           onClick: function () {}, // Callback after click
         }).showToast()
 
+        // error message styling for submit button
         const submitButton = (document.getElementById('submit').value = 'Failed!')
         const successButton = (document.getElementById('submit').style.cssText =
           'background: var(--dracula-red); box-shadow: 0 3px 0 rgb(219, 43, 43); color: var(--dracula-foreground')

@@ -15,51 +15,58 @@ async function getArticle() {
     const tag = data[0].tag_list
     const date = data[0].readable_publish_date
     const readingTime = data[0].reading_time_minutes
+    const description = data[0].description
 
     document.querySelector('.article-link').href = link
     document.querySelector('.article-title').textContent = title
     document.querySelector('.tags').textContent = tag.map(i => '#' + i).join(', ')
-    document.querySelector('.minutes').textContent = readingTime + ' minute read'
     document.querySelector('.date').textContent = date
+    document.querySelector('.minutes').textContent = readingTime + ' minute read'
+    document.querySelector('.description').textContent = description
 
     //For multiple articles that you want to display
     function displayMultipleArticles() {
       for (let i = 1; i < data.length; i++) {
-        let card = document.createElement('div') //card container
+        const card = document.createElement('div') //card container
         card.className = 'dev-article'
 
-        let articleLink = document.createElement('a') //link to dev.to
+        const articleLink = document.createElement('a') //link to dev.to
         articleLink.className = 'article-link' + i
         articleLink.target = '_blank'
         articleLink.href = data[i].url
 
-        let articleTitle = document.createElement('h1') //article title
+        const articleTitle = document.createElement('h1') //article title
         articleTitle.className = 'article-title'
         articleTitle.textContent = data[i].title
 
-        let articleInfo = document.createElement('div') //info container
+        const articleInfo = document.createElement('div') //info container
         articleInfo.className = 'article-info'
 
-        let tagsInArticle = document.createElement('p') //tags
+        const tagsInArticle = document.createElement('p') //tags
         tagsInArticle.className = 'tags'
-        let hashTags = data[i].tag_list
+        const hashTags = data[i].tag_list
         tagsInArticle.textContent = hashTags.map(i => '#' + i).join(', ')
 
-        let articleMinutes = document.createElement('p') //minutes
+        const articleDescription = document.createElement('p')
+        articleDescription.className = 'description'
+        articleDescription.textContent = data[i].description
+
+        const articleMinutes = document.createElement('p') //minutes
         articleMinutes.className = 'minutes'
         articleMinutes.textContent = data[i].reading_time_minutes + ' minute read'
 
-        let articleDate = document.createElement('p') //date posted
+        const articleDate = document.createElement('p') //date posted
         articleDate.className = 'date'
         articleDate.textContent = data[i].readable_publish_date
 
         // make the card a link to the dev.to article
         card.appendChild(articleLink)
-        // append the title and the article info to the card
+        // append the title and the article info container to the card
         articleLink.appendChild(articleTitle)
         articleLink.appendChild(articleInfo)
-        // append tags, minutes, and date to info container
+        // append tags, description, minutes, and date to info container
         articleInfo.appendChild(tagsInArticle)
+        articleInfo.appendChild(articleDescription)
         articleInfo.appendChild(articleMinutes)
         articleInfo.appendChild(articleDate)
         // append card container to main container
@@ -67,9 +74,7 @@ async function getArticle() {
       }
 
       // ToastUI Pagination
-      const pagination = new Pagination(document.getElementById('tui-pagination-container'), {
-        itemsPerPage: 15,
-      })
+      const pagination = new Pagination(document.getElementById('tui-pagination-container'), {})
     }
 
     displayMultipleArticles()

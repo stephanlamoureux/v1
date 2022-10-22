@@ -74,16 +74,6 @@
     transform: translateY(-6px);
     -webkit-transform: translateY(-6px);
   }
-
-  .blog-container {
-    padding-top: 0;
-    margin-bottom: 1rem;
-  }
-
-  .dev-article {
-    width: 40%;
-    margin: 2.5%;
-  }
 }
 
 @media (max-width: 1300px) {

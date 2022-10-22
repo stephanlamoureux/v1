@@ -56,16 +56,6 @@
   .project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
     transform: translateY(-6px);
   }
-
-  .blog-container {
-    margin-bottom: 1rem;
-    padding-top: 0;
-  }
-
-  .dev-article {
-    width: 40%;
-    margin: 2.5%;
-  }
 }
 
 @media (max-width: 1300px) {

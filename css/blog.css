@@ -16,7 +16,7 @@
 
 .blog-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
@@ -27,7 +27,7 @@
   margin: 1%;
   display: flex;
   border-radius: 5px;
-  width: 30%;
+  width: 55%;
   min-height: 180px;
   padding: 0 14px 0 20px;
   align-items: center;
@@ -36,6 +36,10 @@
   border-radius: 5px;
   border: 2px solid transparent;
   transition: 0.1s ease;
+}
+
+.dev-article:not(:last-of-type) {
+  margin-bottom: 2rem;
 }
 
 .dev-article:hover {
@@ -70,9 +74,13 @@
   color: var(--dracula-green);
 }
 
-.minutes {
+.description {
+  padding: 1rem 0;
   color: var(--dracula-foreground);
-  margin-top: 15px;
+}
+
+.minutes {
+  color: var(--dracula-cyan);
 }
 
 .date {

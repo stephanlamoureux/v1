@@ -549,58 +549,62 @@ async function getArticle() {
         const tag = data[0].tag_list;
         const date = data[0].readable_publish_date;
         const readingTime = data[0].reading_time_minutes;
+        const description = data[0].description;
         document.querySelector(".article-link").href = link;
         document.querySelector(".article-title").textContent = title;
         document.querySelector(".tags").textContent = tag.map((i)=>"#" + i).join(", ");
-        document.querySelector(".minutes").textContent = readingTime + " minute read";
         document.querySelector(".date").textContent = date;
+        document.querySelector(".minutes").textContent = readingTime + " minute read";
+        document.querySelector(".description").textContent = description;
         //For multiple articles that you want to display
         function displayMultipleArticles() {
             for(let i1 = 1; i1 < data.length; i1++){
-                let card = document.createElement("div") //card container
+                const card = document.createElement("div") //card container
                 ;
                 card.className = "dev-article";
-                let articleLink = document.createElement("a") //link to dev.to
+                const articleLink = document.createElement("a") //link to dev.to
                 ;
                 articleLink.className = "article-link" + i1;
                 articleLink.target = "_blank";
                 articleLink.href = data[i1].url;
-                let articleTitle = document.createElement("h1") //article title
+                const articleTitle = document.createElement("h1") //article title
                 ;
                 articleTitle.className = "article-title";
                 articleTitle.textContent = data[i1].title;
-                let articleInfo = document.createElement("div") //info container
+                const articleInfo = document.createElement("div") //info container
                 ;
                 articleInfo.className = "article-info";
-                let tagsInArticle = document.createElement("p") //tags
+                const tagsInArticle = document.createElement("p") //tags
                 ;
                 tagsInArticle.className = "tags";
-                let hashTags = data[i1].tag_list;
+                const hashTags = data[i1].tag_list;
                 tagsInArticle.textContent = hashTags.map((i)=>"#" + i).join(", ");
-                let articleMinutes = document.createElement("p") //minutes
+                const articleDescription = document.createElement("p");
+                articleDescription.className = "description";
+                articleDescription.textContent = data[i1].description;
+                const articleMinutes = document.createElement("p") //minutes
                 ;
                 articleMinutes.className = "minutes";
                 articleMinutes.textContent = data[i1].reading_time_minutes + " minute read";
-                let articleDate = document.createElement("p") //date posted
+                const articleDate = document.createElement("p") //date posted
                 ;
                 articleDate.className = "date";
                 articleDate.textContent = data[i1].readable_publish_date;
                 // make the card a link to the dev.to article
                 card.appendChild(articleLink);
-                // append the title and the article info to the card
+                // append the title and the article info container to the card
                 articleLink.appendChild(articleTitle);
                 articleLink.appendChild(articleInfo);
-                // append tags, minutes, and date to info container
+                // append tags, description, minutes, and date to info container
                 articleInfo.appendChild(tagsInArticle);
+                articleInfo.appendChild(articleDescription);
                 articleInfo.appendChild(articleMinutes);
                 articleInfo.appendChild(articleDate);
                 // append card container to main container
                 document.querySelector(".blog-container").appendChild(card);
             }
             // ToastUI Pagination
-            const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {
-                itemsPerPage: 15
-            });
+            const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {});
         }
         displayMultipleArticles();
     } catch (error) {
@@ -630,7 +634,7 @@ async function getArticle() {
 }
 getArticle();
 
-},{"tui-pagination":"b80gR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","toastify-js/src/toastify.css":"943FW","toastify-js":"96k49"}],"b80gR":[function(require,module,exports) {
+},{"tui-pagination":"b80gR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","toastify-js":"96k49","toastify-js/src/toastify.css":"943FW"}],"b80gR":[function(require,module,exports) {
 /*!
  * TOAST UI Pagination
  * @version 3.4.1
@@ -2950,7 +2954,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"943FW":[function() {},{}],"96k49":[function(require,module,exports) {
+},{}],"96k49":[function(require,module,exports) {
 /*!
  * Toastify js 1.12.0
  * https://github.com/apvarun/toastify-js
@@ -3240,6 +3244,6 @@ exports.export = function(dest, destName, get) {
     return Toastify;
 });
 
-},{}]},["gjOks","gWX7s"], "gWX7s", "parcelRequire390d")
+},{}],"943FW":[function() {},{}]},["gjOks","gWX7s"], "gWX7s", "parcelRequire390d")
 
 //# sourceMappingURL=blog.f18ac5c8.js.map

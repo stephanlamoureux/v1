@@ -91,7 +91,7 @@
 }
 
 .project-name1::after {
-  content: 'Personal Blog';
+  content: 'Next.js Blog';
 }
 
 .project-name2::after {
@@ -99,13 +99,5 @@
 }
 
 .project-name3::after {
-  content: 'JavaScript Calculator';
-}
-
-.project-name4::after {
-  content: 'Random Dog Generator';
-}
-
-.project-name5::after {
-  content: 'Responsive Design Certification';
+  content: 'Angular Team Generator';
 }

@@ -27,7 +27,7 @@
   max-width: 100%;
   opacity: .5;
   border-radius: 5px;
-  box-shadow: 0 0 5px 1px #f8f8f2cc;
+  box-shadow: 0 0 5px 1px #f8f8f299;
 }
 
 .project-tile {
@@ -39,8 +39,9 @@
 
 .project-tile:hover .project-image {
   opacity: 1;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   transition: all .3s;
-  box-shadow: 0 0 5px 1px #f8f8f2cc;
+  box-shadow: 0 0 5px 1px #f8f8f299;
 }
 
 .shrink {
@@ -71,7 +72,7 @@
 }
 
 .project-name0:after {
-  content: "Job Search App";
+  content: "Job Search";
 }
 
 .project-name1:after {
@@ -84,6 +85,105 @@
 
 .project-name3:after {
   content: "Angular Team Generator";
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 210;
+  background-color: #0009;
+  transition: visibility 0s linear .25s, opacity .25s, transform .25s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+}
+
+.modal-content {
+  width: 70%;
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+  background-color: #282a36cc;
+  border: 2px solid #0000;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-button {
+  width: 1.5rem;
+  text-align: center;
+  color: var(--dracula-background);
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  background-color: #bd93f9cc;
+  border-radius: 3px;
+  line-height: 1.5rem;
+  transition: all .1s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.close-button:hover {
+  background-color: var(--dracula-purple);
+  color: var(--dracula-foreground);
+  transition: all .1s;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility linear, opacity .25s, transform .25s;
+  transform: scale(1);
+}
+
+.modal-header {
+  color: var(--dracula-foreground);
+  text-align: center;
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 0 8px 1px #0000004d;
+}
+
+.button-container {
+  flex-flow: row;
+  place-content: center space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.project-button {
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  background-color: var(--dracula-purple);
+  color: #000;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  box-shadow: 0 5px #9e63f0;
+}
+
+.project-button:focus {
+  transition: all .1s;
+  transform: translateY(3px);
+  box-shadow: 0 3px #9e63f0;
 }
 
 /*# sourceMappingURL=projects.8f2a9608.css.map */

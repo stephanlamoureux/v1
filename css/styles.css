@@ -112,7 +112,8 @@ a {
 }
 
 .nav-desktop {
-  background-color: var(--dracula-greypurple);
+  background-color: rgba(57, 58, 89, 0.8);
+  backdrop-filter: blur(20px) saturate(180%);
   border-radius: 0 0 10px 10px;
   box-shadow: 0 0 5px 4px rgba(50, 52, 75, 0.6);
   margin: 0 auto 0 auto;

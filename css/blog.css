@@ -26,7 +26,6 @@
 .dev-article {
   margin: 1%;
   display: flex;
-  border-radius: 5px;
   width: 55%;
   min-height: 180px;
   padding: 0 14px 0 20px;

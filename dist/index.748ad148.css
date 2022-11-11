@@ -91,9 +91,10 @@ a {
 }
 
 .nav-desktop {
-  background-color: var(--dracula-greypurple);
+  backdrop-filter: blur(20px) saturate(180%);
   width: 100%;
   z-index: 200;
+  background-color: #393a59cc;
   border-radius: 0 0 10px 10px;
   margin: 0 auto;
   padding: 1.2rem 0;

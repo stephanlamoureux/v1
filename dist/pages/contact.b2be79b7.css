@@ -15,13 +15,14 @@
 .form-container {
   width: 100%;
   justify-content: center;
+  padding-top: 1.5rem;
   display: flex;
 }
 
 form {
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 
 fieldset {

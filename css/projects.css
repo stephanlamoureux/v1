@@ -27,7 +27,7 @@
 
 .project-image {
   border-radius: 5px;
-  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.8);
+  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
   max-width: 100%;
   opacity: 0.5;
 }
@@ -42,7 +42,8 @@
 .project-tile:hover .project-image {
   opacity: 1;
   transition: 0.3s ease all;
-  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.8);
+  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
 .shrink {
@@ -87,7 +88,7 @@
 }
 
 .project-name0::after {
-  content: 'Job Search App';
+  content: 'Job Search';
 }
 
 .project-name1::after {
@@ -100,4 +101,107 @@
 
 .project-name3::after {
   content: 'Angular Team Generator';
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 210;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  width: 70%;
+  background-color: rgb(40, 42, 54, 0.8);
+  border-radius: 5px;
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 2px solid transparent;
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+}
+
+.close-button {
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  border-radius: 3px;
+  color: var(--dracula-background);
+  background-color: rgba(189, 147, 249, 0.8);
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: ease all 0.1s;
+}
+
+.close-button:hover {
+  background-color: var(--dracula-purple);
+  color: var(--dracula-foreground);
+  transition: ease all 0.1s;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-header {
+  color: var(--dracula-foreground);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+    0 18px 23px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 5px;
+}
+
+.project-button {
+  padding: 10px 20px;
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+  background-color: var(--dracula-purple);
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0 5px 0 rgb(158, 99, 240);
+  color: black;
+  font-size: 1rem;
+}
+
+.project-button:focus {
+  box-shadow: 0 3px 0 rgb(158, 99, 240);
+  transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transition: ease 0.1s all;
 }

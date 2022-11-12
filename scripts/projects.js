@@ -11,7 +11,7 @@ function toggleModal() {
 }
 
 function windowOnClick(event) {
-  if (event.target === modal) {
+  if (this.event.target === modal) {
     toggleModal()
     showModal()
   }

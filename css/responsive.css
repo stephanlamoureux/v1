@@ -581,12 +581,6 @@
   }
 }
 
-@media (max-width: 850px) {
-  .heart {
-    right: 200px;
-  }
-}
-
 @media (max-width: 810px) {
   .icons-flex {
     flex-wrap: wrap;
@@ -783,7 +777,7 @@
   }
 
   .heart {
-    right: 185px;
+    right: 172px;
   }
 }
 
@@ -995,7 +989,7 @@
   }
 
   .heart {
-    right: 170px;
+    right: 159px;
   }
 
   @-moz-document url-prefix() {
@@ -1046,7 +1040,7 @@
   }
 
   .heart {
-    right: 125px;
+    right: 189px;
   }
 }
 
@@ -1113,6 +1107,10 @@
   .icon-links i {
     color: var(--dracula-background);
   }
+
+  .heart {
+    right: 138px;
+  }
 }
 
 @media (max-width: 395px) {
@@ -1134,7 +1132,7 @@
   }
 
   .heart {
-    right: 115px;
+    right: 127px;
     width: 50px;
   }
 }
@@ -1194,7 +1192,13 @@
   }
 
   .heart {
-    right: 8px;
+    right: 127px;
+  }
+}
+
+@media (max-width: 338px) {
+  .heart {
+    right: 106px;
   }
 }
 
@@ -1219,6 +1223,12 @@
 
   .terminal-container {
     padding-top: 8rem;
+  }
+}
+
+@media (max-width: 318px) {
+  .heart {
+    right: 10px;
   }
 }
 

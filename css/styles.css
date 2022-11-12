@@ -429,7 +429,7 @@ span > i {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  right: 200px;
+  right: 188px;
   text-align: center;
 }
 
@@ -480,6 +480,10 @@ span > i {
   100% {
     transform: scale(0.9);
   }
+}
+
+.source-link {
+  letter-spacing: -1px;
 }
 
 .source-link:link,

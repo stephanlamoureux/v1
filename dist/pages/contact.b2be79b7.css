@@ -32,13 +32,12 @@ fieldset {
 .contact-label {
   color: var(--dracula-foreground);
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
-  padding-bottom: 0.3rem;
+  padding-bottom: .3rem;
   font-size: 1.1rem;
   display: block;
 }
 
-input,
-textarea {
+input, textarea {
   background-color: var(--dracula-foreground);
   color: var(--dracula-background);
   height: auto;
@@ -52,15 +51,14 @@ textarea {
   box-shadow: inset 0 1px #00000008;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   box-shadow: 0 0 4px 1px #f893f9e6;
 }
 
 .form-submit {
   background-color: var(--dracula-purple);
   color: #000;
-  cursor: url('../cursor-hand-white.8bf00820.png'), auto;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   text-align: center;
   width: 100%;
   border-radius: 5px;
@@ -68,12 +66,12 @@ textarea:focus {
   padding: 19px 39px 18px;
   font-size: 1.3rem;
   font-style: normal;
-  transition: all 0.1s;
+  transition: all .1s;
   box-shadow: 0 5px #9e63f0;
 }
 
 .form-submit:focus {
-  transition: all 0.1s;
+  transition: all .1s;
   transform: translateY(3px);
   box-shadow: 0 3px #9e63f0;
 }

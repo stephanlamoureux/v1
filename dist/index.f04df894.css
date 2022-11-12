@@ -1,9 +1,5 @@
 body {
-  background: linear-gradient(
-    180deg,
-    var(--dracula-background) 20%,
-    var(--dracula-greypurple) 100%
-  );
+  background: linear-gradient( 180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 100% );
 }
 
 .about {
@@ -93,7 +89,7 @@ body {
   stroke: var(--dracula-purple);
   fill: #0000;
   stroke-width: 1px;
-  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-pink));
+  -webkit-filter: drop-shadow(3px 3px 2px var(--dracula-pink) );
   filter: drop-shadow(3px 3px 2px #ff79c680);
   animation: arrow 2.3s infinite;
 }
@@ -121,7 +117,7 @@ body {
 }
 
 .arrows path.a2 {
-  animation-delay: -0.5s;
+  animation-delay: -.5s;
 }
 
 .arrows path.a3 {
@@ -137,8 +133,8 @@ body {
   position: relative;
 }
 
-.tippy-box[data-theme~='gradient'] {
-  background-image: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-green));
+.tippy-box[data-theme~="gradient"] {
+  background-image: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-green) );
   color: var(--dracula-background);
   width: 120px;
   text-align: center;
@@ -147,7 +143,7 @@ body {
   box-shadow: 0 0 5px 1px #f8f8f2cc;
 }
 
-.tippy-box[data-theme~='gradient'] > .tippy-svg-arrow {
+.tippy-box[data-theme~="gradient"] > .tippy-svg-arrow {
   fill: var(--dracula-cyan);
 }
 
@@ -251,7 +247,7 @@ body {
   max-width: 25%;
   shape-outside: circle();
   border-radius: 50%;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   margin-right: 1rem;
 }
 

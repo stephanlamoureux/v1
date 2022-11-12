@@ -49,17 +49,32 @@
     width: 650px;
   }
 
-  .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
     font-size: 1.1rem;
   }
 
-  .project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
+  .project-tile:hover .project-name0,
+  .project-tile:hover .project-name1,
+  .project-tile:hover .project-name2,
+  .project-tile:hover .project-name3,
+  .project-tile:hover .project-name4,
+  .project-tile:hover .project-name5 {
     transform: translateY(-8px);
   }
 }
 
 @media (max-width: 1450px) {
-  .project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
+  .project-tile:hover .project-name0,
+  .project-tile:hover .project-name1,
+  .project-tile:hover .project-name2,
+  .project-tile:hover .project-name3,
+  .project-tile:hover .project-name4,
+  .project-tile:hover .project-name5 {
     transform: translateY(-6px);
   }
 }
@@ -77,7 +92,12 @@
     font-size: 1.1rem;
   }
 
-  .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
     font-size: 1rem;
   }
 
@@ -140,11 +160,14 @@
     padding-top: 2rem;
   }
 
-  .about, .contact {
+  .about,
+  .contact {
     width: 85%;
   }
 
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     margin-top: 0;
     padding-top: 14.03rem;
   }
@@ -161,7 +184,8 @@
     box-shadow: 0 0 5px 4px #32344b99;
   }
 
-  .header-title, .about-header-title {
+  .header-title,
+  .about-header-title {
     font-size: 3.5rem;
   }
 
@@ -191,7 +215,7 @@
   }
 
   .nav-wrapper .menu {
-    cursor: url("cursor-hand-white.8bf00820.png"), auto;
+    cursor: url('cursor-hand-white.8bf00820.png'), auto;
     z-index: 1000;
     border: none;
     justify-content: center;
@@ -208,7 +232,7 @@
     height: 385%;
     width: 100%;
     z-index: 999;
-    transition: transform .2s;
+    transition: transform 0.2s;
     position: absolute;
     top: 0;
     left: 0;
@@ -218,7 +242,7 @@
   }
 
   .nav-wrapper .navbar.showNav {
-    transition: transform .2s;
+    transition: transform 0.2s;
     transform: translateY(0);
   }
 
@@ -243,12 +267,12 @@
     padding-bottom: 8px;
     font-size: 1.4rem;
     text-decoration: none;
-    transition: color .2s;
+    transition: color 0.2s;
   }
 
   .menu-link a:hover {
     color: var(--dracula-purple);
-    transition: color .2s;
+    transition: color 0.2s;
   }
 
   .s {
@@ -333,11 +357,17 @@
     margin: 0 auto;
   }
 
-  .projects-p, .blog-p {
+  .projects-p,
+  .blog-p {
     text-align: center;
   }
 
-  .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 2px 1px var(--dracula-foreground);
     color: #000;
@@ -368,7 +398,12 @@
     transition: none;
   }
 
-  .project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
+  .project-tile:hover .project-name0,
+  .project-tile:hover .project-name1,
+  .project-tile:hover .project-name2,
+  .project-tile:hover .project-name3,
+  .project-tile:hover .project-name4,
+  .project-tile:hover .project-name5 {
     text-shadow: none;
     color: #000;
     opacity: 1;
@@ -390,7 +425,8 @@
     padding: 2rem 1rem;
   }
 
-  .projects-cell:first-of-type, .form-container {
+  .projects-cell:first-of-type,
+  .form-container {
     padding-top: 1.5rem;
   }
 
@@ -454,7 +490,9 @@
 }
 
 @media (max-width: 860px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 12.53rem;
   }
 
@@ -479,7 +517,7 @@
   }
 
   .header-sub {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .center-header {
@@ -552,7 +590,9 @@
 }
 
 @media (max-width: 716px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 11.53rem;
   }
 
@@ -574,7 +614,7 @@
   }
 
   .header-sub {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .center-header {
@@ -617,7 +657,8 @@
     text-indent: 0;
   }
 
-  .paragraph, .steve {
+  .paragraph,
+  .steve {
     text-align: center;
   }
 
@@ -629,8 +670,13 @@
     text-align: left;
   }
 
-  .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
-    padding: .5rem 0;
+  .project-name0,
+  .project-name1,
+  .project-name2,
+  .project-name3,
+  .project-name4,
+  .project-name5 {
+    padding: 0.5rem 0;
     font-size: 1.1rem;
     transition: none;
   }
@@ -662,7 +708,7 @@
   }
 
   .header-sub {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .terminal-container {
@@ -684,7 +730,9 @@
 }
 
 @media (max-width: 614px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 11.03rem;
   }
 
@@ -693,12 +741,12 @@
   }
 
   .section-header {
-    padding: .75rem 0;
+    padding: 0.75rem 0;
     font-size: 1.8rem;
   }
 
   .header-sub {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .terminal-container {
@@ -736,7 +784,9 @@
 }
 
 @media (max-width: 570px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 11.53rem;
   }
 
@@ -866,7 +916,7 @@
   }
 
   .modal-content {
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
   }
 
   footer p {
@@ -890,7 +940,9 @@
 }
 
 @media (max-width: 456px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 10.53rem;
   }
 
@@ -912,7 +964,7 @@
   }
 
   .header-sub {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   .nav-wrapper {
@@ -943,7 +995,9 @@
 }
 
 @media (max-width: 430px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     margin-bottom: 8rem;
     padding-top: 10.03rem;
   }
@@ -969,7 +1023,7 @@
   }
 
   .header-sub {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .terminal-container {
@@ -999,7 +1053,10 @@
 }
 
 @media (max-width: 395px) {
-  .about, .blog, .projects, .contact {
+  .about,
+  .blog,
+  .projects,
+  .contact {
     margin-bottom: 7rem;
   }
 
@@ -1030,7 +1087,10 @@
 }
 
 @media (max-width: 359.5px) {
-  .about, .blog, .projects, .contact {
+  .about,
+  .blog,
+  .projects,
+  .contact {
     margin-bottom: 0;
   }
 
@@ -1040,7 +1100,9 @@
 }
 
 @media (max-width: 348px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 9.53rem;
   }
 
@@ -1049,7 +1111,7 @@
   }
 
   .header-sub {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .nav-wrapper {
@@ -1080,7 +1142,9 @@
 }
 
 @media (max-width: 325px) {
-  .blog, .projects, .contact {
+  .blog,
+  .projects,
+  .contact {
     padding-top: 9.03rem;
   }
 
@@ -1089,7 +1153,7 @@
   }
 
   .header-sub {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .nav-wrapper .menu {
@@ -1131,7 +1195,7 @@
   }
 
   .header-sub {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 

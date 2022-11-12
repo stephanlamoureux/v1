@@ -1,0 +1,5 @@
+/dist
+/assets
+/.parcel-cahce
+/.vscode
+/node_modules

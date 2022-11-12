@@ -25,7 +25,7 @@
 
 .project-image {
   max-width: 100%;
-  opacity: 0.5;
+  opacity: .5;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px #f8f8f299;
 }
@@ -39,26 +39,21 @@
 
 .project-tile:hover .project-image {
   opacity: 1;
-  cursor: url('../cursor-hand-white.8bf00820.png'), auto;
-  transition: all 0.3s;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  transition: all .3s;
   box-shadow: 0 0 5px 1px #f8f8f299;
 }
 
 .shrink {
-  transition: all 0.3s;
+  transition: all .3s;
 }
 
 .shrink:hover {
-  transition: all 0.3s;
-  transform: scale(0.9);
+  transition: all .3s;
+  transform: scale(.9);
 }
 
-.project-name0,
-.project-name1,
-.project-name2,
-.project-name3,
-.project-name4,
-.project-name5 {
+.project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
   color: #0000;
   max-width: 1000px;
   text-align: center;
@@ -66,35 +61,30 @@
   padding: 0;
   font-family: Inter, sans-serif;
   font-size: 1.2rem;
-  transition: all 0.2s;
+  transition: all .2s;
 }
 
-.project-tile:hover .project-name0,
-.project-tile:hover .project-name1,
-.project-tile:hover .project-name2,
-.project-tile:hover .project-name3,
-.project-tile:hover .project-name4,
-.project-tile:hover .project-name5 {
+.project-tile:hover .project-name0, .project-tile:hover .project-name1, .project-tile:hover .project-name2, .project-tile:hover .project-name3, .project-tile:hover .project-name4, .project-tile:hover .project-name5 {
   color: var(--dracula-foreground);
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
-  transition: all 0.3s;
+  transition: all .3s;
   transform: translateY(-12px);
 }
 
 .project-name0:after {
-  content: '#VetsWhoCode Job Search';
+  content: "#VetsWhoCode Job Search";
 }
 
 .project-name1:after {
-  content: 'Next.js Blog';
+  content: "Next.js Blog";
 }
 
 .project-name2:after {
-  content: 'Windows Dev Guide';
+  content: "Windows Dev Guide";
 }
 
 .project-name3:after {
-  content: 'Angular Team Generator';
+  content: "Angular Team Generator";
 }
 
 .modal {
@@ -105,7 +95,7 @@
   visibility: hidden;
   z-index: 210;
   background-color: #44475acc;
-  transition: visibility 0s linear 0.25s, opacity 0.25s, transform 0.25s;
+  transition: visibility 0s linear .25s, opacity .25s, transform .25s;
   position: fixed;
   top: 0;
   left: 0;
@@ -130,12 +120,12 @@
   width: 1.5rem;
   text-align: center;
   color: #000;
-  cursor: url('../cursor-hand-white.8bf00820.png'), auto;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   background-color: #ff5555b3;
   border-radius: 3px;
   font-weight: 500;
   line-height: 1.5rem;
-  transition: all 0.1s;
+  transition: all .1s;
   position: absolute;
   top: 0;
   right: 0;
@@ -143,13 +133,13 @@
 
 .close-button:hover {
   background-color: #f55;
-  transition: all 0.1s;
+  transition: all .1s;
 }
 
 .show-modal {
   opacity: 1;
   visibility: visible;
-  transition: visibility linear, opacity 0.25s, transform 0.25s;
+  transition: visibility linear, opacity .25s, transform .25s;
   transform: scale(1);
 }
 
@@ -182,7 +172,7 @@
 }
 
 .project-button {
-  cursor: url('../cursor-hand-white.8bf00820.png'), auto;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   background-color: var(--dracula-purple);
   color: #000;
   letter-spacing: 1px;
@@ -194,7 +184,7 @@
 }
 
 .project-button:focus {
-  transition: all 0.1s;
+  transition: all .1s;
   transform: translateY(3px);
   box-shadow: 0 3px #9e63f0;
 }

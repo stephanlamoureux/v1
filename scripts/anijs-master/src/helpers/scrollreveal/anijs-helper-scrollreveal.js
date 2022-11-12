@@ -14,120 +14,118 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 /**
  * AniJS ScrollReview Helper
  */
-(function() {
+;(function () {
+  //Obtaining  the default helper
+  var AniJSDefaultHelper = AniJS.getHelper()
 
-    //Obtaining  the default helper
-    var AniJSDefaultHelper = AniJS.getHelper();
+  /**
+   * Creating a testing scroll before function
+   * @method scrollReveal
+   * @param {} e
+   * @param {} animationContext
+   * @return
+   */
+  AniJSDefaultHelper.scrollReveal = function (e, animationContext, params) {
+    var viewportRatio = 0.07
+    //Current elements that will be animated
+    animationContextBehaviorTargetList = animationContext.behaviorTargetList
+
+    // The revealed function will be executed just one time
+    if (params.length < 2 && params[0] !== 'repeat' && animationContext.after.length < 1) {
+      animationContext.after = [AniJS.getHelper().fireOnce]
+    }
+
+    if (!isNaN(parseFloat(params[0]))) {
+      viewportRatio = params[0]
+    }
+
+    for (var i = 0; i < animationContextBehaviorTargetList.length; i++) {
+      element = animationContextBehaviorTargetList[i]
+
+      //Check if the element is visible
+      if (ScrollRevealHelper.isElementInViewport(element, viewportRatio)) {
+        //The element is not animated again if it's visible
+        if (!element.isRevealed) {
+          element.isRevealed = 1
+          animationContext.run()
+        }
+      } else {
+        element.isRevealed = 0
+      }
+    }
+  }
+
+  /**
+   * Helper the custom EventTarget
+   * ! scrollReveal.js v0.1.2 (c) 2014 Julian Lloyd
+   * MIT License
+   * https://github.com/julianlloyd/scrollReveal.js
+   * @class ScrollRevealHelper
+   */
+  var ScrollRevealHelper = {
+    //ATTRS
+
+    //TODO: This attrs should be customizable
+    viewportFactor: 1,
+    docElem: window.document.documentElement,
 
     /**
-     * Creating a testing scroll before function
-     * @method scrollReveal
-     * @param {} e
-     * @param {} animationContext
-     * @return
+     * Return true if the element if visible in a viewport zone
+     * @method isElementInViewport
+     * @param {} el
+     * @param {} h
+     * @return LogicalExpression
      */
-    AniJSDefaultHelper.scrollReveal = function(e, animationContext, params) {
-        var viewportRatio = 0.07;
-        //Current elements that will be animated
-        animationContextBehaviorTargetList = animationContext.behaviorTargetList;
+    isElementInViewport: function (el, h) {
+      var scrolled = window.pageYOffset,
+        viewed = scrolled + this._getViewportH(),
+        elH = el.offsetHeight,
+        elTop = this._getOffset(el).top,
+        elBottom = elTop + elH,
+        h = h || 0
 
-        // The revealed function will be executed just one time
-        if(params.length < 2 && params[0] !== 'repeat' && animationContext.after.length < 1){
-            animationContext.after = [AniJS.getHelper().fireOnce];
-        }
-
-        if(!isNaN(parseFloat(params[0]))){
-            viewportRatio = params[0];
-        }
-
-        for (var i = 0; i < animationContextBehaviorTargetList.length; i++) {
-            element = animationContextBehaviorTargetList[i];
-
-            //Check if the element is visible
-            if (ScrollRevealHelper.isElementInViewport(element, viewportRatio)) {
-
-                //The element is not animated again if it's visible
-                if (!element.isRevealed) {
-                    element.isRevealed = 1;
-                    animationContext.run();
-                }
-
-            } else {
-                element.isRevealed = 0;
-            }
-        }
-    };
+      return (
+        (elTop + elH * h <= viewed && elBottom >= scrolled) ||
+        (el.currentStyle ? el.currentStyle : window.getComputedStyle(el, null)).position == 'fixed'
+      )
+    },
 
     /**
-     * Helper the custom EventTarget
-     * ! scrollReveal.js v0.1.2 (c) 2014 Julian Lloyd
-     * MIT License
-     * https://github.com/julianlloyd/scrollReveal.js
-     * @class ScrollRevealHelper
+     * Obtaining the viewport height
+     * @method _getViewportH
+     * @return ConditionalExpression
      */
-    var ScrollRevealHelper = {
+    _getViewportH: function () {
+      var client = this.docElem.clientHeight,
+        inner = window.innerHeight
 
-        //ATTRS
+      return client < inner ? inner : client
+    },
 
-        //TODO: This attrs should be customizable
-        viewportFactor: 1,
-        docElem: window.document.documentElement,
+    /**
+     * The offset of the element
+     * @method _getOffset
+     * @param {} el
+     * @return ObjectExpression
+     */
+    _getOffset: function (el) {
+      var offsetTop = 0,
+        offsetLeft = 0
 
-        /**
-         * Return true if the element if visible in a viewport zone
-         * @method isElementInViewport
-         * @param {} el
-         * @param {} h
-         * @return LogicalExpression
-         */
-        isElementInViewport: function(el, h) {
-            var scrolled = window.pageYOffset,
-                viewed = scrolled + this._getViewportH(),
-                elH = el.offsetHeight,
-                elTop = this._getOffset(el).top,
-                elBottom = elTop + elH,
-                h = h || 0;
-
-            return (elTop + elH * h) <= viewed && (elBottom) >= scrolled || (el.currentStyle ? el.currentStyle : window.getComputedStyle(el, null)).position == 'fixed';
-        },
-
-        /**
-         * Obtaining the viewport height
-         * @method _getViewportH
-         * @return ConditionalExpression
-         */
-        _getViewportH: function() {
-            var client = this.docElem.clientHeight,
-                inner = window.innerHeight;
-
-            return (client < inner) ? inner : client;
-        },
-
-        /**
-         * The offset of the element
-         * @method _getOffset
-         * @param {} el
-         * @return ObjectExpression
-         */
-        _getOffset: function(el) {
-            var offsetTop = 0,
-                offsetLeft = 0;
-
-            do {
-                if (!isNaN(el.offsetTop)) {
-                    offsetTop += el.offsetTop;
-                }
-                if (!isNaN(el.offsetLeft)) {
-                    offsetLeft += el.offsetLeft;
-                }
-            } while (el = el.offsetParent)
-
-            return {
-                top: offsetTop,
-                left: offsetLeft
-            }
+      do {
+        if (!isNaN(el.offsetTop)) {
+          offsetTop += el.offsetTop
         }
-    };
-    window.scroll(window.scrollX, window.scrollY+1);
+        if (!isNaN(el.offsetLeft)) {
+          offsetLeft += el.offsetLeft
+        }
+      } while ((el = el.offsetParent))
 
-}(window));
+      return {
+        top: offsetTop,
+        left: offsetLeft,
+      }
+    },
+  }
+  window.scroll(window.scrollX, window.scrollY + 1)
+})(window)

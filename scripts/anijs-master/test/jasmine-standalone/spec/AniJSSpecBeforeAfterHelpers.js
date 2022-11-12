@@ -1,248 +1,258 @@
 YUI().use('node', 'node-event-simulate', function (Y) {
-    var AniJSTest = {
-        Utils:{}
-    };
+  var AniJSTest = {
+    Utils: {},
+  }
 
-    AniJSTest.Utils.settingEnviroment = function(dataAnijJS){
-        var htmlNode = '<div class="test">Test</div>',
-            targetNode;
+  AniJSTest.Utils.settingEnviroment = function (dataAnijJS) {
+    var htmlNode = '<div class="test">Test</div>',
+      targetNode
 
-        //Ponemos el nodo en la zona de pruebas
-        Y.one('#testzone').appendChild(htmlNode);
-        targetNode = Y.one('#testzone .test');
-        targetNode.setAttribute('data-anijs', dataAnijJS);
-        return targetNode;
-    };
+    //Ponemos el nodo en la zona de pruebas
+    Y.one('#testzone').appendChild(htmlNode)
+    targetNode = Y.one('#testzone .test')
+    targetNode.setAttribute('data-anijs', dataAnijJS)
+    return targetNode
+  }
 
-    describe("AniJS", function() {
+  describe('AniJS', function () {
+    //---------------------------------------------------------------------
+    // Animation execution management before running it
+    //---------------------------------------------------------------------
+    describe('Animation execution management before running it.', function () {
+      afterEach(function () {
+        Y.one('#testzone .test').remove()
+        Y.one('body').removeClass('bounce')
+      })
 
-        //---------------------------------------------------------------------
-        // Animation execution management before running it
-        //---------------------------------------------------------------------
-        describe("Animation execution management before running it.", function() {
+      describe('when stop the animation execution', function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS = 'if: click, do: bounce, to: body, before: $beforeFunction',
+            targetNode
 
-            afterEach(function() {
-                Y.one('#testzone .test').remove();
-                Y.one('body').removeClass('bounce');
-            });
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-            describe('when stop the animation execution', function(){
-                beforeEach(function(done) {
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce, to: body, before: $beforeFunction',
-                        targetNode;
+          //Se obtiene el helper por defecto
+          AniJSDefaultHelper = AniJS.getHelper()
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          //Se agrega una funcion before
+          AniJSDefaultHelper.beforeFunction = function (e, animationContext) {
+            //Permite seguir con las pruebas
+            done()
+          }
 
-                    //Se obtiene el helper por defecto
-                    AniJSDefaultHelper = AniJS.getHelper();
+          // Ponemos un spy a dicha funcion para saber cuando se llama
+          // y con que parametros etc
+          // http://jasmine.github.io/2.0/introduction.html#section-Spies
+          // callThrough luego ejecuta el comportamiento por defecto
+          spyOn(AniJSDefaultHelper, 'beforeFunction').and.callThrough()
 
-                    //Se agrega una funcion before
-                    AniJSDefaultHelper.beforeFunction = function(e, animationContext){
-                        //Permite seguir con las pruebas
-                        done();
-                    };
+          //corremos AniJS
+          AniJS.run()
 
-                    // Ponemos un spy a dicha funcion para saber cuando se llama
-                    // y con que parametros etc
-                    // http://jasmine.github.io/2.0/introduction.html#section-Spies
-                    // callThrough luego ejecuta el comportamiento por defecto
-                    spyOn(AniJSDefaultHelper, 'beforeFunction').and.callThrough();
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
 
-                    //corremos AniJS
-                    AniJS.run();
+        it("then the animation it's not executed", function () {
+          expect(Y.one('body').hasClass('bounce')).toBeFalsy()
+        })
+      })
 
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
+      describe('when run the animation execution', function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS =
+              'if: click, do: bounce, to: body, before: $beforeFunction, after: $afterFunction',
+            targetNode
 
-                it("then the animation it's not executed", function() {
-                    expect(Y.one('body').hasClass('bounce')).toBeFalsy();
-                });
-            });
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-            describe('when run the animation execution', function(){
-                beforeEach(function(done) {
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce, to: body, before: $beforeFunction, after: $afterFunction',
-                        targetNode;
+          //Se obtiene el helper por defecto
+          AniJSDefaultHelper = AniJS.getHelper()
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          //Se agrega una funcion before
+          AniJSDefaultHelper.beforeFunction = function (e, animationContext, params) {
+            animationContext.run()
+          }
 
-                    //Se obtiene el helper por defecto
-                    AniJSDefaultHelper = AniJS.getHelper();
+          AniJSDefaultHelper.afterFunction = function (e, animationContext, params) {
+            done()
+          }
 
-                    //Se agrega una funcion before
-                    AniJSDefaultHelper.beforeFunction = function(e, animationContext, params){
-                        animationContext.run();
-                    };
+          spyOn(AniJSDefaultHelper, 'beforeFunction').and.callThrough()
+          spyOn(AniJSDefaultHelper, 'afterFunction').and.callThrough()
 
-                    AniJSDefaultHelper.afterFunction = function(e, animationContext, params){
-                        done();
-                    };
+          //corremos AniJS
+          AniJS.run()
 
-                    spyOn(AniJSDefaultHelper, 'beforeFunction').and.callThrough();
-                    spyOn(AniJSDefaultHelper, 'afterFunction').and.callThrough();
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
 
-                    //corremos AniJS
-                    AniJS.run();
+        it('then the animation is executed', function () {
+          expect(AniJSDefaultHelper.beforeFunction).toHaveBeenCalled()
+          expect(AniJSDefaultHelper.afterFunction).toHaveBeenCalled()
+        })
+      })
+    })
 
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
+    //---------------------------------------------------------------------
+    // Execute a function after animation run
+    //---------------------------------------------------------------------
+    describe('Execute a function after animation run', function () {
+      afterEach(function () {
+        Y.one('#testzone .test').remove()
+        Y.one('body').removeClass('bounce')
+      })
 
-                it("then the animation is executed", function() {
-                    expect(AniJSDefaultHelper.beforeFunction).toHaveBeenCalled();
-                    expect(AniJSDefaultHelper.afterFunction).toHaveBeenCalled();
-                });
-            });
-        });
+      describe("and it's empty", function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS = 'if: click, do: bounce animated, to: body, after: $afterFunction',
+            targetNode
 
-        //---------------------------------------------------------------------
-        // Execute a function after animation run
-        //---------------------------------------------------------------------
-        describe("Execute a function after animation run", function() {
-            afterEach(function() {
-                Y.one('#testzone .test').remove();
-                Y.one('body').removeClass('bounce');
-            });
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-            describe("and it's empty", function() {
-                beforeEach(function(done) {
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce animated, to: body, after: $afterFunction',
-                        targetNode;
+          //Se obtiene el helper por defecto
+          AniJSDefaultHelper = AniJS.getHelper()
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          //Se agrega una funcion before
+          AniJSDefaultHelper.afterFunction = function (e, animationContext) {
+            //Permite seguir con las pruebas
+            done()
+          }
 
-                    //Se obtiene el helper por defecto
-                    AniJSDefaultHelper = AniJS.getHelper();
+          // Ponemos un spy a dicha funcion para saber cuando se llama
+          // y con que parametros etc
+          // http://jasmine.github.io/2.0/introduction.html#section-Spies
+          // callThrough luego ejecuta el comportamiento por defecto
+          spyOn(AniJSDefaultHelper, 'afterFunction').and.callThrough()
 
-                    //Se agrega una funcion before
-                    AniJSDefaultHelper.afterFunction = function(e, animationContext){
-                        //Permite seguir con las pruebas
-                        done();
-                    };
+          //corremos AniJS
+          AniJS.run()
 
-                    // Ponemos un spy a dicha funcion para saber cuando se llama
-                    // y con que parametros etc
-                    // http://jasmine.github.io/2.0/introduction.html#section-Spies
-                    // callThrough luego ejecuta el comportamiento por defecto
-                    spyOn(AniJSDefaultHelper, 'afterFunction').and.callThrough();
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
 
-                    //corremos AniJS
-                    AniJS.run();
+        it('then the function is executed', function () {
+          //Permite comprobar que la funcion se ha llamado correctamente
+          expect(AniJSDefaultHelper.afterFunction).toHaveBeenCalled()
+        })
+      })
 
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
+      describe('and the function is non registered ', function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS = 'if: click, do: bounce animated, to: body, after: $afterNonRegistered',
+            targetNode
 
-                it("then the function is executed", function() {
-                    //Permite comprobar que la funcion se ha llamado correctamente
-                    expect(AniJSDefaultHelper.afterFunction).toHaveBeenCalled();
-                });
-            });
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-            describe("and the function is non registered ", function() {
-                beforeEach(function(done){
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce animated, to: body, after: $afterNonRegistered',
-                        targetNode;
+          //Se obtiene el helper por defecto
+          AniJSDefaultHelper = AniJS.getHelper()
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          //corremos AniJS
+          AniJS.run()
 
-                    //Se obtiene el helper por defecto
-                    AniJSDefaultHelper = AniJS.getHelper();
+          targetNode.on(
+            'click',
+            function (e) {
+              done()
+            },
+            this,
+            true
+          )
 
-                    //corremos AniJS
-                    AniJS.run();
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
+        //Se espera que no cree la funcion
+        it('then the function not to be created', function () {
+          expect(AniJS.getHelper['afterNonRegistered']).toBeFalsy()
+        })
+      })
+    })
 
-                    targetNode.on('click', function(e){
-                        done();
-                    },this, true);
+    //---------------------------------------------------------------------
+    // Helpers instance definition.
+    //---------------------------------------------------------------------
+    describe('Helpers instance definition.', function () {
+      afterEach(function () {
+        Y.one('#testzone .test').remove()
+        Y.one('body').removeClass('bounce')
+      })
 
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
-                //Se espera que no cree la funcion
-                it("then the function not to be created", function() {
-                    expect(AniJS.getHelper['afterNonRegistered']).toBeFalsy();
-                });
-            });
+      describe("when the helper it's empty", function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS =
+              'if: click, do: bounce, to: body, before: $beforeFunction, helper: emptyHelper',
+            targetNode,
+            emptyHelper = ''
 
-        });
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-        //---------------------------------------------------------------------
-        // Helpers instance definition.
-        //---------------------------------------------------------------------
-        describe("Helpers instance definition.", function() {
-            afterEach(function() {
-                Y.one('#testzone .test').remove();
-                Y.one('body').removeClass('bounce');
-            });
+          //Registramos un helper vacio
+          AniJS.registerHelper('emptyHelper', emptyHelper)
 
-            describe("when the helper it's empty", function() {
-                beforeEach(function(done){
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce, to: body, before: $beforeFunction, helper: emptyHelper',
-                        targetNode,
-                        emptyHelper = '';
+          //corremos AniJS
+          AniJS.run()
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          targetNode.on(
+            'click',
+            function (e) {
+              done()
+            },
+            this,
+            true
+          )
 
-                    //Registramos un helper vacio
-                    AniJS.registerHelper('emptyHelper', emptyHelper);
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
+        //Se espera que no cree la funcion
+        it('then a new helper could not be created', function () {
+          expect(AniJS.getHelper['emptyHelper']).toBeUndefined()
+        })
+      })
 
-                    //corremos AniJS
-                    AniJS.run();
+      describe('when the helper is a function', function () {
+        beforeEach(function (done) {
+          //Se configuran las precondiciones para la prueba
+          var dataAnijJS =
+              'if: click, do: bounce, to: body, before: $beforeFunction, helper: emptyHelper',
+            targetNode,
+            emptyHelper
 
-                    targetNode.on('click', function(e){
-                        done();
-                    },this, true);
+          targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS)
 
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
-                //Se espera que no cree la funcion
-                it("then a new helper could not be created", function() {
-                    expect(AniJS.getHelper['emptyHelper']).toBeUndefined();
-                });
-            });
+          emptyHelper = function () {}
 
-            describe("when the helper is a function", function() {
-                beforeEach(function(done){
-                    //Se configuran las precondiciones para la prueba
-                    var dataAnijJS = 'if: click, do: bounce, to: body, before: $beforeFunction, helper: emptyHelper',
-                        targetNode,
-                        emptyHelper;
+          //Registramos un helper vacio
+          AniJS.registerHelper('emptyHelper', emptyHelper)
 
-                    targetNode = AniJSTest.Utils.settingEnviroment(dataAnijJS);
+          //corremos AniJS
+          AniJS.run()
 
+          targetNode.on(
+            'click',
+            function (e) {
+              done()
+            },
+            this,
+            true
+          )
 
-                    emptyHelper = function(){};
-
-                    //Registramos un helper vacio
-                    AniJS.registerHelper('emptyHelper', emptyHelper);
-
-                    //corremos AniJS
-                    AniJS.run();
-
-                    targetNode.on('click', function(e){
-                        done();
-                    },this, true);
-
-                    //Simulamos el evento click
-                    targetNode.simulate("click");
-                });
-                //Se espera que no cree la funcion
-                it("then a new helper could not be created", function() {
-                    expect(AniJS.getHelper['emptyHelper']).toBeUndefined();
-                });
-            });
-        });
-    });
-});
-
-
-
-
+          //Simulamos el evento click
+          targetNode.simulate('click')
+        })
+        //Se espera que no cree la funcion
+        it('then a new helper could not be created', function () {
+          expect(AniJS.getHelper['emptyHelper']).toBeUndefined()
+        })
+      })
+    })
+  })
+})

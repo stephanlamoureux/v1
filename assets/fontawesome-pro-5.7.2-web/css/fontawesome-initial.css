@@ -120,6 +120,10 @@ readers do not read off random characters that represent icons */
   content: '\f13d';
 }
 
+.fa-browser:before {
+  content: '\f37e';
+}
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);

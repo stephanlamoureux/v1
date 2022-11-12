@@ -1,8 +1,8 @@
 body.light-mode {
   color: #000;
-  cursor: url("cursor-white.184c40f3.png"), auto;
+  cursor: url('cursor-white.184c40f3.png'), auto;
   background: linear-gradient(#ad74ff 25%, #ff79c6 100%);
-  transition: background-color .9s linear;
+  transition: background-color 0.9s linear;
 }
 
 body.light-mode .line {
@@ -86,7 +86,12 @@ body.light-mode .project-tile:hover .project-image {
   box-shadow: 0 0 5px 1px var(--dracula-background);
 }
 
-body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
+body.light-mode .project-tile:hover .project-name0,
+body.light-mode .project-tile:hover .project-name1,
+body.light-mode .project-tile:hover .project-name2,
+body.light-mode .project-tile:hover .project-name3,
+body.light-mode .project-tile:hover .project-name4,
+body.light-mode .project-tile:hover .project-name5 {
   color: #000;
   text-shadow: none;
 }
@@ -96,7 +101,12 @@ body.light-mode .project-image {
 }
 
 @media (max-width: 1100px) {
-  body.light-mode .project-name0, body.light-mode .project-name1, body.light-mode .project-name2, body.light-mode .project-name3, body.light-mode .project-name4, body.light-mode .project-name5 {
+  body.light-mode .project-name0,
+  body.light-mode .project-name1,
+  body.light-mode .project-name2,
+  body.light-mode .project-name3,
+  body.light-mode .project-name4,
+  body.light-mode .project-name5 {
     background-color: var(--dracula-foreground);
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: #000;
@@ -113,7 +123,12 @@ body.light-mode .project-image {
     box-shadow: 0 0 3px 1px var(--dracula-background);
   }
 
-  body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
+  body.light-mode .project-tile:hover .project-name0,
+  body.light-mode .project-tile:hover .project-name1,
+  body.light-mode .project-tile:hover .project-name2,
+  body.light-mode .project-tile:hover .project-name3,
+  body.light-mode .project-tile:hover .project-name4,
+  body.light-mode .project-tile:hover .project-name5 {
     box-shadow: 0 0 3px 1px var(--dracula-background);
     color: #000;
     opacity: 1;
@@ -133,7 +148,8 @@ body.light-mode .tui-pagination .tui-is-disabled:hover {
   background: var(--dracula-background);
 }
 
-body.light-mode .tui-pagination .tui-is-selected, .tui-pagination strong {
+body.light-mode .tui-pagination .tui-is-selected,
+.tui-pagination strong {
   color: var(--dracula-background);
   background: var(--dracula-cyan);
   border-color: var(--dracula-cyan);
@@ -155,7 +171,12 @@ body.light-mode .tui-page-inputs .tui-page-current {
   color: var(--dracula-cyan);
 }
 
-body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui-prev, body.light-mode .tui-pagination .tui-next, body.light-mode .tui-pagination .tui-last, body.light-mode .tui-pagination .tui-prev-is-ellip, body.light-mode .tui-pagination .tui-next-is-ellip {
+body.light-mode .tui-pagination .tui-first,
+body.light-mode .tui-pagination .tui-prev,
+body.light-mode .tui-pagination .tui-next,
+body.light-mode .tui-pagination .tui-last,
+body.light-mode .tui-pagination .tui-prev-is-ellip,
+body.light-mode .tui-pagination .tui-next-is-ellip {
   border: 1px solid var(--dracula-foreground);
   background: var(--dracula-greypurple);
 }
@@ -165,13 +186,15 @@ body.light-mode .contact-label {
   color: #fff;
 }
 
-body.light-mode input, body.light-mode textarea {
+body.light-mode input,
+body.light-mode textarea {
   color: var(--dracula-background);
   background-color: var(--dracula-foreground);
   box-shadow: 0 0 5px 0px var(--dracula-background);
 }
 
-body.light-mode input:focus, body.light-mode textarea:focus {
+body.light-mode input:focus,
+body.light-mode textarea:focus {
   box-shadow: 0 0 4px 1px #000;
 }
 
@@ -183,7 +206,7 @@ body.light-mode .form-submit {
 }
 
 body.light-mode .form-submit:focus {
-  transition: all .1s;
+  transition: all 0.1s;
   transform: translateY(3px);
   box-shadow: 0 3px #1e2032;
 }

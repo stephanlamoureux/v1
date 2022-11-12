@@ -1,0 +1,181 @@
+.projects {
+  width: 90%;
+  margin: 5.2rem auto 18rem;
+  padding-top: 2px;
+  overflow: hidden;
+}
+.projects-p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+.projects-grid {
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  display: flex;
+}
+.projects-cell {
+  width: 45%;
+  padding: 2rem;
+}
+.project-image {
+  max-width: 100%;
+  opacity: 0.5;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px #f8f8f299;
+}
+.project-tile {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.project-tile:hover .project-image {
+  opacity: 1;
+  cursor: url(../cursor-hand-white.34a347aa.png), auto;
+  transition: all 0.3s;
+  box-shadow: 0 0 5px 1px #f8f8f299;
+}
+.shrink {
+  transition: all 0.3s;
+}
+.shrink:hover {
+  transition: all 0.3s;
+  transform: scale(0.9);
+}
+.project-name0,
+.project-name1,
+.project-name2,
+.project-name3,
+.project-name4,
+.project-name5 {
+  color: #0000;
+  max-width: 1000px;
+  text-align: center;
+  background-color: #0000;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  font-size: 1.2rem;
+  transition: all 0.2s;
+}
+.project-tile:hover .project-name0,
+.project-tile:hover .project-name1,
+.project-tile:hover .project-name2,
+.project-tile:hover .project-name3,
+.project-tile:hover .project-name4,
+.project-tile:hover .project-name5 {
+  color: var(--dracula-foreground);
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  transition: all 0.3s;
+  transform: translateY(-12px);
+}
+.project-name0:after {
+  content: '#VetsWhoCode Job Search';
+}
+.project-name1:after {
+  content: 'Next.js Blog';
+}
+.project-name2:after {
+  content: 'Windows Dev Guide';
+}
+.project-name3:after {
+  content: 'Angular Team Generator';
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 210;
+  background-color: #44475acc;
+  transition: visibility 0s linear 0.25s, opacity 0.25s, transform 0.25s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+}
+.modal-content {
+  width: 70%;
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+  background-color: #282a36cc;
+  border: 2px solid #0000;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close-button {
+  width: 1.5rem;
+  text-align: center;
+  color: #000;
+  cursor: url(../cursor-hand-white.34a347aa.png), auto;
+  background-color: #ff5555b3;
+  border-radius: 3px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  transition: all 0.1s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.close-button:hover {
+  background-color: #f55;
+  transition: all 0.1s;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility linear, opacity 0.25s, transform 0.25s;
+  transform: scale(1);
+}
+.modal-header {
+  color: var(--dracula-foreground);
+  text-align: center;
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.modal-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 0 8px 1px #0000004d;
+}
+.button-container {
+  flex-flow: row;
+  place-content: center space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5px;
+  display: flex;
+}
+.project-button {
+  cursor: url(../cursor-hand-white.34a347aa.png), auto;
+  background-color: var(--dracula-purple);
+  color: #000;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  box-shadow: 0 5px #9e63f0;
+}
+.project-button:focus {
+  transition: all 0.1s;
+  transform: translateY(3px);
+  box-shadow: 0 3px #9e63f0;
+}
+/*# sourceMappingURL=projects.2e28c891.css.map */

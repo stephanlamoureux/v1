@@ -1,12 +1,12 @@
 @font-face {
   font-family: Proza;
-  src: url("Proza-Regular.e805eb15.otf") format("opentype");
+  src: url('Proza-Regular.e805eb15.otf') format('opentype');
   font-display: swap;
 }
 
 @font-face {
   font-family: Inter;
-  src: url("Inter-VariableFont_slnt,wght.38af0a48.ttf") format("truetype");
+  src: url('Inter-VariableFont_slnt,wght.38af0a48.ttf') format('truetype');
   font-weight: 100 900;
   font-display: swap;
 }
@@ -14,7 +14,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("cursor-blue.e8d970a5.png"), auto;
+  cursor: url('cursor-blue.e8d970a5.png'), auto;
 }
 
 * {
@@ -22,7 +22,9 @@ html {
   padding: 0;
 }
 
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: inherit;
 }
 
@@ -44,13 +46,17 @@ html {
 body {
   background-color: var(--dracula-background);
   color: var(--dracula-foreground);
-  background: linear-gradient( 180deg, var(--dracula-background) 50%, var(--dracula-greypurple) 100% );
+  background: linear-gradient(
+    180deg,
+    var(--dracula-background) 50%,
+    var(--dracula-greypurple) 100%
+  );
   font-family: Inter, sans-serif;
 }
 
 a {
   color: var(--dracula-cyan);
-  cursor: url("cursor-hand-white.8bf00820.png"), auto;
+  cursor: url('cursor-hand-white.8bf00820.png'), auto;
   text-decoration: none;
 }
 
@@ -86,7 +92,8 @@ a {
   }
 }
 
-.nav-wrapper .menu, .nav-wrapper .navbar {
+.nav-wrapper .menu,
+.nav-wrapper .navbar {
   display: none;
 }
 
@@ -123,6 +130,7 @@ a {
   color: var(--dracula-foreground);
   text-transform: uppercase;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  letter-spacing: 1px;
   margin-right: 5rem;
   padding: 5px;
   font-size: 1.2rem;
@@ -133,15 +141,17 @@ a {
   margin-right: 0;
 }
 
-.link:hover, .link.is-active {
+.link:hover,
+.link.is-active {
   background-image: linear-gradient(90deg, #8be9fd 0%, #bd93f9 50%, #ff79c6 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
-.menu-link a, .link {
+.menu-link a,
+.link {
   font-family: Inter, sans-serif;
 }
 
@@ -161,7 +171,7 @@ a {
   width: 50px;
   height: 26px;
   background-color: var(--dracula-background);
-  cursor: url("cursor-hand-white.8bf00820.png"), auto;
+  cursor: url('cursor-hand-white.8bf00820.png'), auto;
   border-radius: 50px;
   justify-content: space-between;
   align-items: center;
@@ -175,7 +185,7 @@ a {
   height: 20px;
   background-color: var(--dracula-foreground);
   border-radius: 50%;
-  transition: transform .2s linear;
+  transition: transform 0.2s linear;
   position: absolute;
   top: 3px;
   left: 27px;
@@ -215,7 +225,12 @@ header {
 .header-gradient {
   background-color: var(--dracula-purple);
   background-clip: text;
-  background-image: linear-gradient( 45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink) );
+  background-image: linear-gradient(
+    45deg,
+    var(--dracula-purple),
+    var(--dracula-cyan),
+    var(--dracula-pink)
+  );
   background-repeat: repeat;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -269,6 +284,7 @@ header {
   color: var(--dracula-foreground);
   text-align: center;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  letter-spacing: 1px;
   padding: 1rem 0;
   font-family: Inter, sans-serif;
   font-size: 2.4rem;
@@ -296,7 +312,7 @@ footer {
   border-radius: 5px;
   margin-top: 4rem;
   margin-bottom: 10px;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 footer p {
@@ -320,35 +336,46 @@ span > i {
 }
 
 .icon-links i:hover {
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
-.icon-links .red:hover, .icon-links:focus .red {
+.icon-links .red:hover,
+.icon-links:focus .red {
   color: var(--dracula-red);
 }
 
-.icon-links .orange:hover, .icon-links:focus .orange {
+.icon-links .orange:hover,
+.icon-links:focus .orange {
   color: var(--dracula-orange);
 }
 
-.icon-links .yellow:hover, .icon-links:focus .yellow {
+.icon-links .yellow:hover,
+.icon-links:focus .yellow {
   color: var(--dracula-yellow);
 }
 
-.icon-links .green:hover, .icon-links:focus .green {
+.icon-links .green:hover,
+.icon-links:focus .green {
   color: var(--dracula-green);
 }
 
-.icon-links .cyan:hover, .icon-links:focus .cyan {
+.icon-links .cyan:hover,
+.icon-links:focus .cyan {
   color: var(--dracula-cyan);
 }
 
-.icon-links .purple:hover, .icon-links:focus .purple {
+.icon-links .purple:hover,
+.icon-links:focus .purple {
   color: var(--dracula-purple);
 }
 
-.red, .orange, .yellow, .green, .cyan, .purple {
-  transition: color .4s;
+.red,
+.orange,
+.yellow,
+.green,
+.cyan,
+.purple {
+  transition: color 0.4s;
 }
 
 .coded-by {
@@ -374,7 +401,7 @@ span > i {
 
 @keyframes beat {
   0% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 
   40% {
@@ -382,7 +409,7 @@ span > i {
   }
 
   60% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 
   80% {
@@ -390,18 +417,19 @@ span > i {
   }
 
   100% {
-    transform: scale(.9);
+    transform: scale(0.9);
   }
 }
 
-.source-link:link, .source-link:visited {
+.source-link:link,
+.source-link:visited {
   color: var(--dracula-background);
   text-decoration: none;
 }
 
 .source-link:hover {
   text-shadow: 0 14px 10px #0000002e, 0 24px 2px #00000021, 0 34px 30px #00000021;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .divider2 {

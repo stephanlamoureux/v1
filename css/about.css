@@ -52,7 +52,7 @@ body {
 }
 
 .terminal-title {
-  color: black;
+  color: var(--dracula-background);
   display: flex;
   justify-content: center;
   margin-right: 51%;

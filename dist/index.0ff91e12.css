@@ -116,6 +116,10 @@
   content: "";
 }
 
+.fa-paper-plane:before {
+  content: "";
+}
+
 .sr-only {
   clip: rect(0, 0, 0, 0);
   height: 1px;

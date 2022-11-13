@@ -1,9 +1,9 @@
 // Project card modals
 
+const body = document.querySelector('body')
 const modal = document.querySelector('.modal')
 const trigger = document.querySelector('.trigger')
 const closeButton = document.querySelector('.close-button')
-const body = document.querySelector('body')
 
 function toggleModal() {
   modal.classList.toggle('show-modal')

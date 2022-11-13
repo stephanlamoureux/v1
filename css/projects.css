@@ -118,6 +118,13 @@
   z-index: 210;
 }
 
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
 .modal-content {
   position: absolute;
   top: 50%;
@@ -150,13 +157,6 @@
 .close-button:hover {
   background-color: rgba(255, 85, 85, 1);
   transition: ease all 0.1s;
-}
-
-.show-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 .modal-header {

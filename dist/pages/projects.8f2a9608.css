@@ -102,6 +102,13 @@
   transform: scale(1.1);
 }
 
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility linear, opacity .25s, transform .25s;
+  transform: scale(1);
+}
+
 .modal-content {
   width: 70%;
   backdrop-filter: blur(20px) saturate(180%);
@@ -134,13 +141,6 @@
 .close-button:hover {
   background-color: #f55;
   transition: all .1s;
-}
-
-.show-modal {
-  opacity: 1;
-  visibility: visible;
-  transition: visibility linear, opacity .25s, transform .25s;
-  transform: scale(1);
 }
 
 .modal-header {

@@ -45,13 +45,32 @@ body {
   background: var(--dracula-foreground);
   height: 30px;
   border-radius: 8px 8px 0 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.terminal-title {
+  color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 51%;
+  font-family: monospace;
+  font-size: 1.1rem;
+}
+
+.terminal-button-container {
+  display: flex;
+  align-content: center;
+  margin-right: auto;
   padding-left: 10px;
 }
 
 .terminal-button {
   width: 12px;
   height: 12px;
-  margin: 10px 4px 0 0;
+  margin: 2px 0.53rem 0 0;
   display: inline-block;
   border-radius: 50%;
   border: 1px solid rgba(40, 42, 54, 0.6);

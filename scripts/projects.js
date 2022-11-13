@@ -32,3 +32,19 @@ const showModal = function (e) {
     body.style.overflow = 'auto'
   }
 }
+
+// function toggleModal(modal) {
+//   modal.classList.toggle('show-modal')
+//   showModal(modal)
+// }
+
+// document.addEventListener('click', function (event) {
+//   if (event.target.classList.contains('modal')) {
+//     toggleModal(event.target)
+//     showModal(event.target)
+//   } else if (event.target.classList.contains('trigger')) {
+//     toggleModal(document.getElementById(event.target.getAttribute('data-target')))
+//   } else if (event.target.classList.contains('close-button')) {
+//     toggleModal(document.getElementById(event.target.getAttribute('data-target')))
+//   }
+// })

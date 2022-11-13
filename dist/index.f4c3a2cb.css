@@ -26,6 +26,10 @@
   .modal-content {
     width: auto;
   }
+
+  .dev-article {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1650px) {

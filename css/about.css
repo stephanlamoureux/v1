@@ -254,11 +254,6 @@ body {
   color: var(--dracula-purple);
 }
 
-.trio {
-  margin-left: 3px;
-  color: var(--dracula-purple);
-}
-
 .about-p {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;

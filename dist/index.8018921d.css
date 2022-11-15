@@ -129,6 +129,19 @@ body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px #383a59e6;
 }
 
+body.light-mode .subheader {
+  color: var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+}
+
+body.light-mode .subheader a {
+  color: var(--dracula-green);
+}
+
+body.light-mode .subheader a:hover {
+  color: #9dffb6;
+}
+
 body.light-mode .tui-pagination .tui-is-disabled:hover {
   background: var(--dracula-background);
 }

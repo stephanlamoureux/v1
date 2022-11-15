@@ -231,11 +231,6 @@ body {
   margin-right: 5px;
 }
 
-.trio {
-  color: var(--dracula-purple);
-  margin-left: 3px;
-}
-
 .about-p {
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   padding: 0 15px 20px;

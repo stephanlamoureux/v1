@@ -116,6 +116,7 @@
   transform: scale(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   z-index: 210;
+  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
 .show-modal {
@@ -137,6 +138,7 @@
   backdrop-filter: blur(20px) saturate(180%);
   border: 2px solid transparent;
   box-shadow: 0 0 5px 1px var(--dracula-background);
+  cursor: url('../assets/images/icons/cursor-blue.png'), auto;
 }
 
 .close-button {

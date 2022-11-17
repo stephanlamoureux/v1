@@ -354,6 +354,11 @@ header {
   box-shadow: 0 0 5px 1px var(--dracula-selection);
 }
 
+.subheader p {
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+}
+
 .subheader a {
   transition: ease all 0.2s;
   color: var(--dracula-purple);

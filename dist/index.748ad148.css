@@ -304,6 +304,11 @@ header {
   line-height: 1.8;
 }
 
+.subheader p {
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+}
+
 .subheader a {
   color: var(--dracula-purple);
   transition: all .2s;

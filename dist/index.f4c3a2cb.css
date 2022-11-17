@@ -1016,6 +1016,12 @@
   }
 }
 
+@media (max-width: 423px) {
+  .subheader p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 395px) {
   .about, .blog, .projects, .contact {
     margin-bottom: 7rem;

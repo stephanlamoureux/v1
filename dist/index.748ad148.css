@@ -304,8 +304,6 @@ header {
 }
 
 .subheader p {
-  white-space: break-spaces;
-  overflow-wrap: break-word;
   font-size: 1.2rem;
 }
 

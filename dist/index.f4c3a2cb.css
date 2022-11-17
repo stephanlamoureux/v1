@@ -257,6 +257,7 @@
     color: var(--dracula-foreground);
     text-shadow: 0 2px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
     text-transform: uppercase;
+    letter-spacing: 5px;
     background-image: linear-gradient(90deg, #8be9fd 0%, #bd93f9 50%, #ff79c6 100%);
     background-position: left 0% bottom -5%;
     background-repeat: repeat-x;

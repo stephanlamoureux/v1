@@ -322,6 +322,7 @@
     );
     background-size: 100% 12%;
     transition: ease color 0.2s;
+    letter-spacing: 5px;
   }
 
   .menu-link a:hover {

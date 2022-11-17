@@ -340,7 +340,6 @@ header {
 }
 
 .subheader {
-  font-size: 1.2rem;
   line-height: 1.8;
   width: 65%;
   text-align: center;
@@ -357,6 +356,7 @@ header {
 .subheader p {
   white-space: break-spaces;
   overflow-wrap: break-word;
+  font-size: 1.2rem;
 }
 
 .subheader a {

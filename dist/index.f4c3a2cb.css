@@ -32,6 +32,16 @@
   }
 }
 
+@media (max-width: 1660px) {
+  .subheader {
+    padding: 25px 10px 25px 20px;
+  }
+
+  .subheader p {
+    text-align: left;
+  }
+}
+
 @media (max-width: 1650px) {
   .header-title {
     font-size: 3.8rem;

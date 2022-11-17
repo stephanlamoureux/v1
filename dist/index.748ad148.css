@@ -300,13 +300,13 @@ header {
   border-radius: 5px;
   margin: 0 auto 1.7rem;
   padding: 25px 10px;
-  font-size: 1.2rem;
   line-height: 1.8;
 }
 
 .subheader p {
   white-space: break-spaces;
   overflow-wrap: break-word;
+  font-size: 1.2rem;
 }
 
 .subheader a {

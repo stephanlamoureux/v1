@@ -7,13 +7,6 @@
   padding-top: 2px;
 }
 
-.write {
-  display: inline;
-}
-.writing {
-  padding-left: 2px;
-}
-
 .blog-container {
   display: flex;
   flex-flow: column;

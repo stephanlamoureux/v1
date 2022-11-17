@@ -5,14 +5,6 @@
   overflow: hidden;
 }
 
-.write {
-  display: inline;
-}
-
-.writing {
-  padding-left: 2px;
-}
-
 .blog-container {
   flex-flow: column;
   justify-content: center;

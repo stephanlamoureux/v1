@@ -7,13 +7,6 @@
   padding-top: 2px;
 }
 
-.blog-p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 0 auto;
-  width: 75%;
-}
-
 .blog-container {
   display: flex;
   flex-flow: column;

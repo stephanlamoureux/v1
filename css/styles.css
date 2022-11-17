@@ -339,6 +339,31 @@ header {
   margin-bottom: 7rem;
 }
 
+.subheader {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  width: 65%;
+  text-align: center;
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
+  background: rgba(68, 71, 90, 0.7);
+  border-radius: 5px;
+  backdrop-filter: blur(20px) saturate(180%);
+  padding: 25px 10px;
+  margin: 0 auto;
+  margin-bottom: 1.7rem;
+  box-shadow: 0 0 5px 1px var(--dracula-selection);
+}
+
+.subheader a {
+  transition: ease all 0.2s;
+  color: var(--dracula-purple);
+}
+
+.subheader a:hover {
+  color: rgb(220, 195, 255);
+  transition: ease all 0.2s;
+}
+
 /* || Footer */
 
 footer {

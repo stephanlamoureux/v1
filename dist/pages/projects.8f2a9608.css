@@ -94,6 +94,7 @@
   opacity: 0;
   visibility: hidden;
   z-index: 210;
+  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
   background-color: #44475acc;
   transition: visibility 0s linear .25s, opacity .25s, transform .25s;
   position: fixed;
@@ -113,6 +114,7 @@
   width: 70%;
   backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 0 5px 1px var(--dracula-background);
+  cursor: url("../cursor-blue.e8d970a5.png"), auto;
   background-color: #282a36cc;
   border: 2px solid #0000;
   border-radius: 5px;

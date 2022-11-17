@@ -27,7 +27,7 @@
     width: auto;
   }
 
-  .dev-article {
+  .subheader, .dev-article {
     width: 55%;
   }
 }
@@ -68,6 +68,12 @@
   }
 }
 
+@media (max-width: 1369px) {
+  .subheader p {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .header-title {
     font-size: 3.3rem;
@@ -93,7 +99,7 @@
     max-width: 35%;
   }
 
-  .dev-article {
+  .dev-article, .subheader {
     width: 75%;
   }
 }
@@ -301,6 +307,14 @@
   .blog-container {
     margin-bottom: 2rem;
     padding-top: 1.5rem;
+  }
+
+  .subheader {
+    width: 75%;
+  }
+
+  .subheader p {
+    font-size: 1rem;
   }
 
   .dev-article {
@@ -639,8 +653,8 @@
     transition: none;
   }
 
-  .dev-article {
-    width: 100%;
+  .subheader, .dev-article {
+    width: 98%;
   }
 
   .icons-flex a i {

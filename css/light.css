@@ -175,6 +175,19 @@ body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px rgba(56, 58, 89, 0.9);
 }
 
+body.light-mode .subheader {
+  color: var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+}
+
+body.light-mode .subheader a {
+  color: var(--dracula-green);
+}
+
+body.light-mode .subheader a:hover {
+  color: rgb(157, 255, 182);
+}
+
 /* Pagination */
 
 body.light-mode .tui-pagination .tui-is-disabled:hover {

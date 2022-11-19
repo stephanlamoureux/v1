@@ -31,7 +31,7 @@
     width: auto;
   }
 
-  .blog .subheader, .dev-article {
+  .blog .subheader, .projects .subheader, .dev-article {
     width: 55%;
   }
 }
@@ -109,10 +109,6 @@
 
   .dev-article, .blog .subheader {
     width: 75%;
-  }
-
-  .projects .subheader {
-    width: 90%;
   }
 }
 
@@ -348,19 +344,25 @@
 
   .modal {
     z-index: 1001;
-    background-color: #0000;
   }
 
   .modal-content {
-    width: 100%;
-    height: 100%;
-    background-color: #44475acc;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1rem;
   }
 
   .close-button {
-    width: 1.8rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .modal-header {
     font-size: 1.2rem;
-    line-height: 1.8rem;
   }
 
   .projects .subheader {
@@ -774,10 +776,6 @@
 
   .projects .subheader p {
     font-size: 1.1rem;
-  }
-
-  .modal-content {
-    padding: 1rem;
   }
 
   .contact {

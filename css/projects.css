@@ -1,69 +1,69 @@
 /* || Projects */
 
 .projects {
-  margin: 5.2rem auto 18rem auto;
-  overflow: hidden;
-  width: 90%;
-  padding-top: 2px;
+	margin: 5.2rem auto 18rem auto;
+	overflow: hidden;
+	width: 90%;
+	padding-top: 2px;
 }
 
 .projects-p {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 0 auto;
-  width: 75%;
+	font-size: 1.4rem;
+	line-height: 1.5;
+	margin: 0 auto;
+	width: 75%;
 }
 
 .projects .subheader {
-  width: 65%;
-  padding: 25px 10px 25px 10px;
+	width: 65%;
+	padding: 25px 10px 25px 10px;
 }
 
 .projects .subheader p {
-  text-align: center;
+	text-align: center;
 }
 
 .projects-grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
 }
 
 .projects-cell {
-  padding: 2rem 2rem;
-  width: 45%;
+	padding: 2rem 2rem;
+	width: 45%;
 }
 
 .project-image {
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
-  max-width: 100%;
-  opacity: 0.5;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
+	max-width: 100%;
+	opacity: 0.5;
 }
 
 .project-tile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .project-tile:hover .project-image {
-  opacity: 1;
-  transition: 0.3s ease all;
-  box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
-  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	opacity: 1;
+	transition: 0.3s ease all;
+	box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
+	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
 .shrink {
-  transition: 0.3s ease;
+	transition: 0.3s ease;
 }
 
 .shrink:hover {
-  -webkit-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  transition: 0.3s ease;
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	transition: 0.3s ease;
 }
 
 .project-name0,
@@ -72,14 +72,14 @@
 .project-name3,
 .project-name4,
 .project-name5 {
-  background-color: transparent;
-  color: transparent;
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  max-width: 1000px;
-  padding: 0;
-  text-align: center;
-  transition: 0.2s ease all;
+	background-color: transparent;
+	color: transparent;
+	font-family: 'Inter', sans-serif;
+	font-size: 1.2rem;
+	max-width: 1000px;
+	padding: 0;
+	text-align: center;
+	transition: 0.2s ease all;
 }
 
 .project-tile:hover .project-name0,
@@ -88,134 +88,134 @@
 .project-tile:hover .project-name3,
 .project-tile:hover .project-name4,
 .project-tile:hover .project-name5 {
-  color: var(--dracula-foreground);
-  transition: 0.3s ease all;
-  transform: translateY(-12px);
-  -webkit-transform: translateY(-12px);
-  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-    0 18px 23px rgba(0, 0, 0, 0.1);
+	color: var(--dracula-foreground);
+	transition: 0.3s ease all;
+	transform: translateY(-12px);
+	-webkit-transform: translateY(-12px);
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+		0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .project-name0::after {
-  content: '#VetsWhoCode Job Search';
+	content: '#VetsWhoCode Job Search';
 }
 
 .project-name1::after {
-  content: 'Next.js Blog';
+	content: 'Next.js Blog';
 }
 
 .project-name2::after {
-  content: 'Windows Dev Guide';
+	content: 'Windows Dev Guide';
 }
 
 .project-name3::after {
-  content: 'Angular Team Generator';
+	content: 'Angular Team Generator';
 }
 
 .modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(68, 71, 90, 0.8);
-  backdrop-filter: blur(20px) saturate(180%);
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-  z-index: 210;
-  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(68, 71, 90, 0.8);
+	backdrop-filter: blur(20px) saturate(180%);
+	opacity: 0;
+	visibility: hidden;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	z-index: 210;
+	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
 }
 
 .show-modal {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem 2rem;
-  width: 70%;
-  background-color: rgb(40, 42, 54, 0.8);
-  border-radius: 5px;
-  backdrop-filter: blur(20px) saturate(180%);
-  border: 2px solid transparent;
-  box-shadow: 0 0 5px 1px var(--dracula-background);
-  cursor: url('../assets/images/icons/cursor-blue.png'), auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem 2rem;
+	width: 70%;
+	background-color: rgb(40, 42, 54, 0.8);
+	border-radius: 5px;
+	backdrop-filter: blur(20px) saturate(180%);
+	border: 2px solid transparent;
+	box-shadow: 0 0 5px 1px var(--dracula-background);
+	cursor: url('../assets/images/icons/cursor-blue.png'), auto;
 }
 
 .close-button {
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  border-radius: 3px;
-  color: black;
-  font-weight: 500;
-  background-color: rgba(255, 85, 85, 0.7);
-  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: ease all 0.1s;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	border-radius: 3px;
+	color: black;
+	font-weight: 500;
+	background-color: rgba(255, 85, 85, 0.7);
+	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: ease all 0.1s;
 }
 
 .close-button:hover {
-  background-color: rgba(255, 85, 85, 1);
-  transition: ease all 0.1s;
+	background-color: rgba(255, 85, 85, 1);
+	transition: ease all 0.1s;
 }
 
 .modal-header {
-  color: var(--dracula-foreground);
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-    0 18px 23px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 5px;
+	color: var(--dracula-foreground);
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 2rem;
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+		0 18px 23px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+	letter-spacing: 5px;
 }
 
 .modal-image {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
-  display: flex;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+	box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	display: flex;
 }
 
 .button-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  margin-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 2rem;
+	margin-bottom: 5px;
 }
 
 .project-button {
-  padding: 10px 20px;
-  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
-  background-color: var(--dracula-purple);
-  border-radius: 5px;
-  border: 0;
-  box-shadow: 0 5px 0 rgb(158, 99, 240);
-  color: black;
-  font-size: 1rem;
-  letter-spacing: 1px;
+	padding: 10px 20px;
+	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	background-color: var(--dracula-purple);
+	border-radius: 5px;
+	border: 0;
+	box-shadow: 0 5px 0 rgb(158, 99, 240);
+	color: black;
+	font-size: 1rem;
+	letter-spacing: 1px;
 }
 
 .project-button:focus {
-  box-shadow: 0 3px 0 rgb(158, 99, 240);
-  transform: translateY(3px);
-  -webkit-transform: translateY(3px);
-  transition: ease 0.1s all;
+	box-shadow: 0 3px 0 rgb(158, 99, 240);
+	transform: translateY(3px);
+	-webkit-transform: translateY(3px);
+	transition: ease 0.1s all;
 }

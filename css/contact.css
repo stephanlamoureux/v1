@@ -1,90 +1,90 @@
 /* || Contact */
 
 .contact {
-  width: 60%;
-  margin: 5.2rem auto 17rem auto;
-  overflow: hidden;
-  padding-top: 2px;
+	width: 60%;
+	margin: 5.2rem auto 17rem auto;
+	overflow: hidden;
+	padding-top: 2px;
 }
 
 .contact-p {
-  font-size: 1.4rem;
-  width: 75%;
-  margin: 0 auto;
-  line-height: 1.5;
+	font-size: 1.4rem;
+	width: 75%;
+	margin: 0 auto;
+	line-height: 1.5;
 }
 
 .contact .subheader {
-  max-width: 1000px;
-  width: 98%;
+	max-width: 1000px;
+	width: 98%;
 }
 
 .form-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding-top: 1.5rem;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 1.5rem;
 }
 
 form {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10px;
-  padding-top: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	padding-top: 0;
 }
 
 fieldset {
-  border: none;
+	border: none;
 }
 
 .contact-label {
-  display: block;
-  padding-bottom: 0.3rem;
-  color: var(--dracula-foreground);
-  font-size: 1.1rem;
-  text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-    0 18px 23px rgba(0, 0, 0, 0.1);
+	display: block;
+	padding-bottom: 0.3rem;
+	color: var(--dracula-foreground);
+	font-size: 1.1rem;
+	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
+		0 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 input,
 textarea {
-  background-color: var(--dracula-foreground);
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-  color: var(--dracula-background);
-  font-size: 18px;
-  height: auto;
-  margin-bottom: 30px;
-  outline: 0;
-  padding: 15px;
-  width: 100%;
+	background-color: var(--dracula-foreground);
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+	color: var(--dracula-background);
+	font-size: 18px;
+	height: auto;
+	margin-bottom: 30px;
+	outline: 0;
+	padding: 15px;
+	width: 100%;
 }
 
 input:focus,
 textarea:focus {
-  box-shadow: 0 0 4px 1px rgba(248, 147, 249, 0.9);
+	box-shadow: 0 0 4px 1px rgba(248, 147, 249, 0.9);
 }
 
 .form-submit {
-  background-color: var(--dracula-purple);
-  border-radius: 5px;
-  color: black;
-  cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
-  font-size: 1.3rem;
-  font-style: normal;
-  margin-bottom: 10px;
-  padding: 19px 39px 18px 39px;
-  text-align: center;
-  transition: ease 0.1s all;
-  width: 100%;
-  box-shadow: 0 5px 0 rgb(158, 99, 240);
-  transition: ease 0.1s all;
+	background-color: var(--dracula-purple);
+	border-radius: 5px;
+	color: black;
+	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	font-size: 1.3rem;
+	font-style: normal;
+	margin-bottom: 10px;
+	padding: 19px 39px 18px 39px;
+	text-align: center;
+	transition: ease 0.1s all;
+	width: 100%;
+	box-shadow: 0 5px 0 rgb(158, 99, 240);
+	transition: ease 0.1s all;
 }
 
 .form-submit:focus {
-  box-shadow: 0 3px 0 rgb(158, 99, 240);
-  transform: translateY(3px);
-  -webkit-transform: translateY(3px);
-  transition: ease 0.1s all;
+	box-shadow: 0 3px 0 rgb(158, 99, 240);
+	transform: translateY(3px);
+	-webkit-transform: translateY(3px);
+	transition: ease 0.1s all;
 }

@@ -37,10 +37,6 @@
 }
 
 @media (max-width: 1660px) {
-  .blog .subheader, .contact .subheader {
-    padding: 25px 10px;
-  }
-
   .subheader p {
     font-size: 1.1rem;
   }
@@ -82,12 +78,6 @@
   }
 }
 
-@media (max-width: 1369px) {
-  .subheader p {
-    font-size: 1.1rem;
-  }
-}
-
 @media (max-width: 1300px) {
   .header-title {
     font-size: 3.3rem;
@@ -101,13 +91,8 @@
     font-size: 1.1rem;
   }
 
-  .blog .subheader, .contact .subheader {
-    padding: 25px 5px 25px 20px;
-  }
-
-  .subheader p {
-    text-align: left;
-    font-size: 1.1rem;
+  .projects .subheader p {
+    text-align: center;
   }
 
   .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
@@ -169,6 +154,18 @@
     .arrows-container {
       display: none;
     }
+  }
+}
+
+@media (max-width: 1150px) {
+  .contact .subheader p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .subheader p {
+    font-size: 1rem;
   }
 }
 
@@ -337,15 +334,7 @@
     padding-top: 1.5rem;
   }
 
-  .blog .subheader {
-    width: 75%;
-  }
-
-  .subheader p {
-    font-size: 1.1rem;
-  }
-
-  .dev-article {
+  .blog .subheader, .dev-article {
     width: 75%;
   }
 
@@ -376,12 +365,7 @@
 
   .projects .subheader {
     width: 82%;
-    padding: 25px 5px 25px 20px;
-  }
-
-  .projects .subheader p {
-    text-align: left;
-    font-size: 1.1rem;
+    padding: 25px 15px;
   }
 
   .projects-container {
@@ -484,6 +468,17 @@
     .arrows-container {
       display: none;
     }
+  }
+}
+
+@media (max-width: 1020px) {
+  .blog .subheader, .contact .subheader {
+    padding: 25px 15px;
+  }
+
+  .blog .subheader p {
+    text-align: left;
+    font-size: 1rem;
   }
 }
 
@@ -602,6 +597,14 @@
 @media (max-width: 767.5px) {
   .about {
     margin-bottom: 15rem;
+  }
+
+  .contact .subheader, .projects .subheader {
+    padding: 25px 15px;
+  }
+
+  .contact .subheader p {
+    text-align: left;
   }
 }
 
@@ -905,6 +908,13 @@
 
   footer p {
     padding: 0 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .projects .subheader p {
+    text-align: left;
+    font-size: 1rem;
   }
 }
 

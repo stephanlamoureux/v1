@@ -592,7 +592,7 @@ window.onload = function() {
     });
 };
 
-},{"@emailjs/browser":"kbSqr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","toastify-js":"96k49","toastify-js/src/toastify.css":"943FW"}],"kbSqr":[function(require,module,exports) {
+},{"@emailjs/browser":"kbSqr","toastify-js":"96k49","toastify-js/src/toastify.css":"943FW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kbSqr":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "init", ()=>(0, _init.init));

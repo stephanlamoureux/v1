@@ -344,7 +344,7 @@ header {
   width: 65%;
   text-align: center;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
-  background: rgba(68, 71, 90, 0.7);
+  background: rgba(68, 71, 90, 0.4);
   border-radius: 5px;
   backdrop-filter: blur(20px) saturate(180%);
   padding: 25px 10px;

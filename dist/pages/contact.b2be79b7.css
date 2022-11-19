@@ -12,6 +12,11 @@
   line-height: 1.5;
 }
 
+.contact .subheader {
+  max-width: 1000px;
+  width: 98%;
+}
+
 .form-container {
   width: 100%;
   justify-content: center;

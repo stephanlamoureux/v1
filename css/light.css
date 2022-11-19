@@ -20,6 +20,20 @@ body.light-mode .line {
   box-shadow: 0 0 5px 1px var(--dracula-comment);
 }
 
+body.light-mode .subheader {
+  color: var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+  background: rgba(68, 71, 90, 0.7);
+}
+
+body.light-mode .subheader a {
+  color: var(--dracula-green);
+}
+
+body.light-mode .subheader a:hover {
+  color: rgb(157, 255, 182);
+}
+
 /* About */
 
 body.light-mode .about .line {
@@ -173,19 +187,6 @@ body.light-mode .project-image {
 
 body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px rgba(56, 58, 89, 0.9);
-}
-
-body.light-mode .subheader {
-  color: var(--dracula-foreground);
-  box-shadow: 0 0 5px 1px var(--dracula-background);
-}
-
-body.light-mode .subheader a {
-  color: var(--dracula-green);
-}
-
-body.light-mode .subheader a:hover {
-  color: rgb(157, 255, 182);
 }
 
 /* Pagination */

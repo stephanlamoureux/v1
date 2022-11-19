@@ -14,6 +14,10 @@
   .contact-p {
     width: 65%;
   }
+
+  .projects .subheader {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1776px) {
@@ -27,13 +31,13 @@
     width: auto;
   }
 
-  .subheader, .dev-article {
+  .blog .subheader, .dev-article {
     width: 55%;
   }
 }
 
 @media (max-width: 1660px) {
-  .subheader {
+  .blog .subheader, .contact .subheader {
     padding: 25px 10px 25px 20px;
   }
 
@@ -110,8 +114,12 @@
     max-width: 35%;
   }
 
-  .dev-article, .subheader {
+  .dev-article, .blog .subheader {
     width: 75%;
+  }
+
+  .projects .subheader {
+    width: 90%;
   }
 }
 
@@ -321,7 +329,7 @@
     padding-top: 1.5rem;
   }
 
-  .subheader {
+  .blog .subheader {
     width: 75%;
   }
 
@@ -356,6 +364,16 @@
     width: 1.8rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
+  }
+
+  .projects .subheader {
+    width: 82%;
+    padding: 25px 5px 25px 20px;
+  }
+
+  .projects .subheader p {
+    text-align: left;
+    font-size: 1.1rem;
   }
 
   .projects-container {
@@ -496,14 +514,6 @@
     height: 440%;
   }
 
-  .about {
-    scroll-margin-top: 120px;
-  }
-
-  .about-nav-wrapper {
-    margin-top: 0;
-  }
-
   .header-title {
     font-size: 2.4rem;
   }
@@ -524,12 +534,24 @@
     width: 220px;
   }
 
-  .projects-container {
-    width: 100%;
+  .about {
+    scroll-margin-top: 120px;
+  }
+
+  .about-nav-wrapper {
+    margin-top: 0;
   }
 
   .terminal-container {
     padding-top: 11.6rem;
+  }
+
+  .projects .subheader {
+    width: 96%;
+  }
+
+  .projects-container {
+    width: 100%;
   }
 }
 
@@ -665,7 +687,7 @@
     transition: none;
   }
 
-  .subheader, .dev-article {
+  .blog .subheader, .dev-article {
     width: 98%;
   }
 
@@ -722,30 +744,38 @@
     font-size: 1.7rem;
   }
 
-  .section-header {
-    padding: .75rem 0;
-    font-size: 1.8rem;
-  }
-
   .header-sub {
     font-size: .8rem;
   }
 
-  .terminal-container {
-    padding-top: 10.8rem;
-  }
-
-  .icons-flex > span {
-    margin: 15px 0;
-    font-size: 1.9rem;
+  .section-header {
+    padding: .75rem 0;
+    font-size: 1.8rem;
   }
 
   .line {
     width: 180px;
   }
 
+  .terminal-container {
+    padding-top: 10.8rem;
+  }
+
+  .projects .subheader p {
+    font-size: 1.1rem;
+  }
+
   .modal-content {
     padding: 1rem;
+  }
+
+  .contact {
+    width: 90%;
+  }
+
+  .icons-flex > span {
+    margin: 15px 0;
+    font-size: 1.9rem;
   }
 }
 
@@ -871,6 +901,14 @@
 }
 
 @media (max-width: 530px) {
+  .contact .subheader {
+    width: 98%;
+  }
+
+  .projects .subheader {
+    width: 93%;
+  }
+
   footer p {
     padding: 0 25px;
   }

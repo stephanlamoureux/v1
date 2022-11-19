@@ -10,6 +10,20 @@ body.light-mode .line {
   background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
 }
 
+body.light-mode .subheader {
+  color: var(--dracula-foreground);
+  box-shadow: 0 0 5px 1px var(--dracula-background);
+  background: #44475ab3;
+}
+
+body.light-mode .subheader a {
+  color: var(--dracula-green);
+}
+
+body.light-mode .subheader a:hover {
+  color: #9dffb6;
+}
+
 body.light-mode .about .line {
   background: linear-gradient(to right, #fffc, #8be9fd, #50fa7bcc);
   box-shadow: 0 0 5px 1px #6272a4;
@@ -127,19 +141,6 @@ body.light-mode .project-image {
 
 body.light-mode .dev-article:hover {
   box-shadow: 0 0 5px 1px #383a59e6;
-}
-
-body.light-mode .subheader {
-  color: var(--dracula-foreground);
-  box-shadow: 0 0 5px 1px var(--dracula-background);
-}
-
-body.light-mode .subheader a {
-  color: var(--dracula-green);
-}
-
-body.light-mode .subheader a:hover {
-  color: #9dffb6;
 }
 
 body.light-mode .tui-pagination .tui-is-disabled:hover {

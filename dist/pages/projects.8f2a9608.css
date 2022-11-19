@@ -12,6 +12,14 @@
   line-height: 1.5;
 }
 
+.projects .subheader {
+  width: 72%;
+}
+
+.projects .subheader p {
+  text-align: center;
+}
+
 .projects-grid {
   flex-flow: wrap;
   justify-content: space-evenly;

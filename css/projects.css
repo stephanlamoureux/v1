@@ -14,6 +14,14 @@
   width: 75%;
 }
 
+.projects .subheader {
+  width: 72%;
+}
+
+.projects .subheader p {
+  text-align: center;
+}
+
 .projects-grid {
   display: flex;
   flex-flow: row wrap;

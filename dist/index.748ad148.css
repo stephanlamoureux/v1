@@ -296,7 +296,7 @@ header {
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 0 5px 1px var(--dracula-selection);
-  background: #44475ab3;
+  background: #44475a66;
   border-radius: 5px;
   margin: 0 auto 1.7rem;
   padding: 25px 10px;

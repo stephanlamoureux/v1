@@ -15,7 +15,8 @@
 }
 
 .projects .subheader {
-  width: 72%;
+  width: 65%;
+  padding: 25px 10px 25px 10px;
 }
 
 .projects .subheader p {

@@ -39,25 +39,7 @@ body {
   background: var(--dracula-foreground);
   height: 30px;
   border-radius: 8px 8px 0 0;
-  place-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.terminal-title {
-  color: var(--dracula-background);
-  justify-content: center;
-  margin-right: 51%;
-  font-family: monospace;
-  font-size: 1.1rem;
-  display: flex;
-}
-
-.terminal-button-container {
-  align-content: center;
-  margin-right: auto;
   padding-left: 10px;
-  display: flex;
 }
 
 .terminal-button {
@@ -65,7 +47,7 @@ body {
   height: 12px;
   border: 1px solid #282a3699;
   border-radius: 50%;
-  margin: 2px .53rem 0 0;
+  margin: 10px 4px 0 0;
   display: inline-block;
 }
 
@@ -229,6 +211,11 @@ body {
 .p-icon {
   color: var(--dracula-purple);
   margin-right: 5px;
+}
+
+.trio {
+  color: var(--dracula-purple);
+  margin-left: 3px;
 }
 
 .about-p {

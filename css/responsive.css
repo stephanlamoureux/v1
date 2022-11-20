@@ -1093,6 +1093,10 @@
 		padding: 1rem 0.5rem;
 	}
 
+	.modal-header {
+		padding: 0 30px;
+	}
+
 	footer p {
 		font-size: 1.1rem;
 		font-weight: 500;

@@ -2,14 +2,9 @@ import Typed from 'typed.js'
 
 var typed = new Typed('#typed', {
 	strings: [
-		'A Frontend Fanatic.',
-		"^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
-		'^2000 The Duke of Dark Mode.',
-		'^2000 An Over-Caffeinated Coder.',
+		'cat welcome.txt ^1000 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web. <br> <span class="prompt">$</span>&nbsp;`',
 	],
 	typeSpeed: 70,
-	loop: true,
+	loop: false,
 	startDelay: 1000,
-	backDelay: 3000,
-	backSpeed: 50,
 })

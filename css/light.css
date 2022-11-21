@@ -46,6 +46,15 @@ body.light-mode .about .line {
 	box-shadow: 0 0 5px 1px rgba(98, 114, 164, 1);
 }
 
+body.light-mode .terminal-header {
+	background-color: var(--dracula-background);
+}
+
+body.light-mode .terminal-title {
+	box-shadow: 0 0 3px 1px var(--dracula-background);
+	color: var(--dracula-foreground);
+}
+
 body.light-mode .terminal-window {
 	box-shadow: 0 0 5px 1px var(--dracula-background);
 }

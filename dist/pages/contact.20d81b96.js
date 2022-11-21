@@ -537,16 +537,11 @@ var _typedJs = require("typed.js");
 var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
 var typed = new (0, _typedJsDefault.default)("#typed", {
     strings: [
-        "A Frontend Fanatic.",
-        "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
-        "^2000 The Duke of Dark Mode.",
-        "^2000 An Over-Caffeinated Coder.", 
+        'cat welcome.txt ^1000 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web. <br> <span class="prompt">$</span>&nbsp;`', 
     ],
     typeSpeed: 70,
-    loop: true,
-    startDelay: 1000,
-    backDelay: 3000,
-    backSpeed: 50
+    loop: false,
+    startDelay: 1000
 });
 
 },{"typed.js":"4hQNd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4hQNd":[function(require,module,exports) {

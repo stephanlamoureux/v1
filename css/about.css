@@ -49,6 +49,7 @@ body {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0 0 3px 1px var(--dracula-greypurple);
 }
 
 .terminal-title {
@@ -93,12 +94,23 @@ body {
 	font-family: Menlo, Monaco, 'Consolas', monospace, 'Courier New', 'Courier';
 	font-size: 1.2rem;
 	background: rgba(68, 71, 90, 0.7);
+	backdrop-filter: blur(20px) saturate(180%);
 	padding: 10px;
 	position: absolute;
 	width: 100%;
 	top: 30px;
 	bottom: 0;
 	overflow: auto;
+}
+
+.prompt {
+	text-shadow: 2px 3px 5px #00000080;
+	color: var(--dracula-green);
+}
+
+.typed {
+	color: var(--dracula-foreground);
+	line-height: 1.4;
 }
 
 .arrows {
@@ -113,7 +125,7 @@ body {
 .arrows path {
 	stroke: var(--dracula-purple);
 	fill: transparent;
-	stroke-width: 1px;
+	stroke-width: 2px;
 	animation: arrow 2.3s infinite;
 	-webkit-animation: arrow 2.3s infinite;
 	-webkit-filter: drop-shadow(3px 3px 2px var(--dracula-pink));

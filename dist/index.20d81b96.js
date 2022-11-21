@@ -538,7 +538,8 @@ var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
 window.onload = function() {
     const typed = new (0, _typedJsDefault.default)("#typed", {
         strings: [
-            'cat welcome.txt ^1000 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web. <br> <span class="prompt">$</span>&nbsp;`', 
+            " ",
+            'cat welcome.txt ^1400 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web. <br> <span class="prompt">$</span>&nbsp;`', 
         ],
         typeSpeed: 70,
         loop: false,
@@ -1363,4 +1364,4 @@ exports.export = function(dest, destName, get) {
 
 },{}]},["iXLhr","dAQqO"], "dAQqO", "parcelRequire390d")
 
-//# sourceMappingURL=contact.20d81b96.js.map
+//# sourceMappingURL=index.20d81b96.js.map

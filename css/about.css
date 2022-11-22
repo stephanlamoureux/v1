@@ -272,6 +272,7 @@ body {
 	padding: 0 15px 20px 15px;
 	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
 		0 18px 23px rgba(0, 0, 0, 0.1);
+	letter-spacing: 0.03rem;
 }
 
 .about-p:first-of-type {
@@ -305,6 +306,7 @@ body {
 	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
 		0 18px 23px rgba(0, 0, 0, 0.1);
 	padding-bottom: 20px;
+	letter-spacing: 0.03rem;
 }
 
 .working-on-list::selection {
@@ -334,6 +336,7 @@ body {
 	);
 	background-size: 100% 12%;
 	padding-bottom: 5px;
+	letter-spacing: initial;
 }
 
 .vwc:hover {
@@ -348,6 +351,7 @@ body {
 
 .working-on-link {
 	color: var(--dracula-pink);
+	letter-spacing: 0.03rem;
 }
 
 .working-on-link::selection {

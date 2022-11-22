@@ -64,7 +64,7 @@ body.light-mode .about-p {
 
 body.light-mode .p-icon {
   color: var(--dracula-green);
-  text-shadow: 1px 1px 1px #000000bf;
+  text-shadow: 1px 1px 1px #000;
 }
 
 body.light-mode .vwc {
@@ -80,7 +80,7 @@ body.light-mode .vwc {
 
 body.light-mode .working-on-link {
   color: var(--dracula-cyan);
-  text-shadow: 1px 1px 1px #000000bf;
+  text-shadow: 1px 1px 1px #000;
 }
 
 body.light-mode .working-on-list {
@@ -90,7 +90,7 @@ body.light-mode .working-on-list {
 
 body.light-mode .bullet {
   color: #fff;
-  text-shadow: 1px 1px 1px #000000bf;
+  text-shadow: 1px 1px 1px #000;
 }
 
 @media screen and (max-width: 1100px) {

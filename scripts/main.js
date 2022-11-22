@@ -106,7 +106,7 @@ function hoverLightChevron() {
 	links.forEach(link => {
 		const bullet = link.parentElement.querySelector('.bullet')
 		link.addEventListener('mouseover', () => {
-			bullet.style.color = 'white'
+			bullet.style.color = 'var(--dracula-cyan)'
 			bullet.style.transition = 'ease 0.1s'
 			bullet.style.textShadow = '1px 1px 2px rgba(0, 0, 0, 0.75)'
 		})

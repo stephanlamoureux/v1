@@ -2,7 +2,7 @@
 
 body.light-mode {
 	background: rgb(173, 116, 255);
-	background: linear-gradient(180deg, rgb(173, 116, 255) 25%, rgb(255, 121, 198) 100%);
+	background: linear-gradient(180deg, rgb(255, 121, 198) 10%, rgb(173, 116, 255) 50%);
 	color: black;
 	cursor: url('../assets/images/icons/cursor-white.png'), auto;
 	transition: background-color 0.9s linear;
@@ -17,7 +17,7 @@ body.light-mode .line {
 		rgba(139, 233, 253, 1),
 		rgba(255, 121, 198, 1)
 	);
-	box-shadow: 0 0 5px 1px var(--dracula-comment);
+	box-shadow: 0 0 5px 1px rgb(98, 114, 164, 0.8);
 }
 
 body.light-mode .subheader {
@@ -35,16 +35,6 @@ body.light-mode .subheader a:hover {
 }
 
 /* About */
-
-body.light-mode .about .line {
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.8),
-		rgba(139, 233, 253, 1),
-		rgba(80, 250, 123, 0.8)
-	);
-	box-shadow: 0 0 5px 1px rgba(98, 114, 164, 1);
-}
 
 body.light-mode .terminal-header {
 	background-color: var(--dracula-background);
@@ -64,13 +54,15 @@ body.light-mode .terminal-body {
 }
 
 body.light-mode .arrows path {
-	stroke: white;
-	-webkit-filter: drop-shadow(3px 3px 2px black);
-	filter: drop-shadow(3px 3px 2px rgba(139, 233, 253, 0.7));
+	stroke: var(--dracula-green);
+	-webkit-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.75));
+	filter: drop-shadow(3px 3px 2px rgba(255, 255, 255, 0.3));
 }
 
 body.light-mode .section-header {
 	color: white;
+	text-shadow: rgb(0 0 0 / 40%) 0px 4px 3px, rgb(0 0 0 / 10%) 0px 8px 13px,
+		rgb(0 0 0 / 10%) 0px 18px 23px;
 }
 
 body.light-mode .paragraph h3 {
@@ -80,11 +72,12 @@ body.light-mode .paragraph h3 {
 
 body.light-mode .about-p {
 	text-shadow: none;
+	font-weight: 500;
 }
 
 body.light-mode .p-icon {
-	color: rgba(80, 250, 123, 1);
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+	color: var(--dracula-green);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 body.light-mode .vwc {
@@ -93,37 +86,29 @@ body.light-mode .vwc {
 	background-position: left 0% bottom -5%;
 	background-image: linear-gradient(
 		90deg,
-		rgba(205, 118, 233, 0.9) 0%,
-		rgba(139, 233, 253, 1) 50%,
-		rgba(80, 250, 123, 0.9) 100%
+		rgba(173, 116, 255, 0.6) 0%,
+		rgba(139, 233, 253, 0.7) 50%,
+		rgba(80, 250, 123, 0.8) 100%
 	);
 	background-size: 100% 12%;
 	padding-bottom: 5px;
 	color: black;
+	font-weight: 500;
 }
 
 body.light-mode .working-on-link {
-	color: white;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
-	background-repeat: repeat-x;
-	background-position: left 0% bottom -5%;
-	background-image: linear-gradient(
-		90deg,
-		rgba(228, 119, 217, 0.9) 0%,
-		rgba(139, 233, 253, 1) 50%,
-		rgba(80, 250, 123, 0.9) 100%
-	);
-	background-size: 100% 12%;
-	padding-bottom: 5px;
+	color: var(--dracula-cyan);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 body.light-mode .working-on-list {
 	text-shadow: none;
+	font-weight: 500;
 }
 
 body.light-mode .bullet {
-	color: black;
-	text-shadow: none;
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 1100px) {
@@ -146,6 +131,7 @@ body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
 	color: black;
 	text-shadow: none;
+	font-weight: 500;
 }
 
 body.light-mode .project-image {

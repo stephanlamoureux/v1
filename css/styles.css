@@ -324,8 +324,8 @@ header {
 .line {
 	background: linear-gradient(
 		to right,
-		rgba(189, 147, 249, 0.6),
-		rgba(139, 233, 253, 1),
+		rgba(139, 233, 253, 0.6),
+		rgba(189, 147, 249, 1),
 		rgb(255, 121, 198, 0.6)
 	);
 	border: 0;
@@ -354,7 +354,7 @@ header {
 }
 
 .subheader p {
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 }
 
 .subheader a {

@@ -535,21 +535,19 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _typedJs = require("typed.js");
 var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
-window.onload = function() {
-    const typed2 = new (0, _typedJsDefault.default)("#typed2", {
-        strings: [
-            "A Frontend Fanatic.",
-            "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
-            "^2000 The Duke of Dark Mode.",
-            "^2000 An Over-Caffeinated Coder.", 
-        ],
-        typeSpeed: 70,
-        loop: true,
-        startDelay: 1000,
-        backDelay: 3000,
-        backSpeed: 50
-    });
-};
+const typed2 = new (0, _typedJsDefault.default)("#typed2", {
+    strings: [
+        "A Frontend Fanatic.",
+        "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
+        "^2000 The Duke of Dark Mode.",
+        "^2000 An Over-Caffeinated Coder.", 
+    ],
+    typeSpeed: 70,
+    loop: true,
+    startDelay: 1000,
+    backDelay: 3000,
+    backSpeed: 50
+});
 
 },{"typed.js":"4hQNd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4hQNd":[function(require,module,exports) {
 /*!

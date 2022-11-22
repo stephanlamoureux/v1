@@ -1,13 +1,13 @@
 body.light-mode {
   color: #000;
   cursor: url("cursor-white.184c40f3.png"), auto;
-  background: linear-gradient(#ad74ff 25%, #ff79c6 100%);
+  background: linear-gradient(#ff79c6 10%, #ad74ff 50%);
   transition: background-color .9s linear;
 }
 
 body.light-mode .line {
-  box-shadow: 0 0 5px 1px var(--dracula-comment);
   background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
+  box-shadow: 0 0 5px 1px #6272a4cc;
 }
 
 body.light-mode .subheader {
@@ -22,11 +22,6 @@ body.light-mode .subheader a {
 
 body.light-mode .subheader a:hover {
   color: #9dffb6;
-}
-
-body.light-mode .about .line {
-  background: linear-gradient(to right, #fffc, #8be9fd, #50fa7bcc);
-  box-shadow: 0 0 5px 1px #6272a4;
 }
 
 body.light-mode .terminal-header {
@@ -47,13 +42,14 @@ body.light-mode .terminal-body {
 }
 
 body.light-mode .arrows path {
-  stroke: #fff;
-  -webkit-filter: drop-shadow(3px 3px 2px #000);
-  filter: drop-shadow(3px 3px 2px #8be9fdb3);
+  stroke: var(--dracula-green);
+  -webkit-filter: drop-shadow(3px 3px 2px #000000bf);
+  filter: drop-shadow(3px 3px 2px #ffffff4d);
 }
 
 body.light-mode .section-header {
   color: #fff;
+  text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
 }
 
 body.light-mode .paragraph h3 {
@@ -63,40 +59,38 @@ body.light-mode .paragraph h3 {
 
 body.light-mode .about-p {
   text-shadow: none;
+  font-weight: 500;
 }
 
 body.light-mode .p-icon {
-  color: #50fa7b;
-  text-shadow: 1px 1px 2px #000c;
+  color: var(--dracula-green);
+  text-shadow: 1px 1px 1px #000000bf;
 }
 
 body.light-mode .vwc {
   text-shadow: none;
   color: #000;
-  background-image: linear-gradient(90deg, #cd76e9e6 0%, #8be9fd 50%, #50fa7be6 100%);
+  background-image: linear-gradient(90deg, #ad74ff99 0%, #8be9fdb3 50%, #50fa7bcc 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
   padding-bottom: 5px;
+  font-weight: 500;
 }
 
 body.light-mode .working-on-link {
-  color: #fff;
-  text-shadow: 1px 1px 2px #000000bf;
-  background-image: linear-gradient(90deg, #e477d9e6 0%, #8be9fd 50%, #50fa7be6 100%);
-  background-position: left 0% bottom -5%;
-  background-repeat: repeat-x;
-  background-size: 100% 12%;
-  padding-bottom: 5px;
+  color: var(--dracula-cyan);
+  text-shadow: 1px 1px 1px #000000bf;
 }
 
 body.light-mode .working-on-list {
   text-shadow: none;
+  font-weight: 500;
 }
 
 body.light-mode .bullet {
-  color: #000;
-  text-shadow: none;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000bf;
 }
 
 @media screen and (max-width: 1100px) {
@@ -112,6 +106,7 @@ body.light-mode .project-tile:hover .project-image {
 body.light-mode .project-tile:hover .project-name0, body.light-mode .project-tile:hover .project-name1, body.light-mode .project-tile:hover .project-name2, body.light-mode .project-tile:hover .project-name3, body.light-mode .project-tile:hover .project-name4, body.light-mode .project-tile:hover .project-name5 {
   color: #000;
   text-shadow: none;
+  font-weight: 500;
 }
 
 body.light-mode .project-image {

@@ -13,6 +13,13 @@
 	font-display: swap;
 }
 
+@font-face {
+	font-family: 'Caveat';
+	src: url('../assets/fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+	font-weight: 100 900;
+	font-display: swap;
+}
+
 /* Universal box sizing and base reset */
 
 html {

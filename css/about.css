@@ -10,12 +10,11 @@ body {
 
 .about {
 	width: 70%;
-	margin: 2rem auto 20rem auto;
+	margin: 2rem auto 2rem auto;
 	scroll-margin-top: 100px;
 }
 
 .about-container {
-	box-shadow: 10px 0 5px -5px rgba(19, 18, 18, 0.5);
 	padding-bottom: 20px;
 }
 
@@ -127,8 +126,8 @@ body {
 	stroke-width: 2px;
 	animation: arrow 2.3s infinite;
 	-webkit-animation: arrow 2.3s infinite;
-	-webkit-filter: drop-shadow(3px 3px 2px var(--dracula-pink));
-	filter: drop-shadow(3px 3px 2px rgba(255, 121, 198, 0.5));
+	-webkit-filter: drop-shadow(3px 3px 2px rgb(0, 0, 0, 0.7));
+	filter: drop-shadow(3px 3px 2px rgb(0, 0, 0, 0.7));
 }
 
 @keyframes arrow {
@@ -257,7 +256,7 @@ body {
 }
 
 .paragraph {
-	display: inline;
+	box-shadow: 10px 0 5px -5px rgba(19, 18, 18, 0.5);
 }
 
 .p-icon {
@@ -300,30 +299,6 @@ body {
 	shape-outside: circle();
 }
 
-.working-on {
-	list-style-type: none;
-	font-size: 1.2rem;
-	text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-		0 18px 23px rgba(0, 0, 0, 0.1);
-	padding-bottom: 20px;
-	letter-spacing: 0.03rem;
-}
-
-.working-on-list::selection {
-	background-color: var(--dracula-green);
-	color: var(--dracula-background);
-	text-shadow: none;
-}
-
-.working-on-list {
-	margin-left: 15px;
-	line-height: 1.5;
-}
-
-.working-on-list:not(:last-child) {
-	margin-bottom: 20px;
-}
-
 .vwc {
 	color: var(--dracula-foreground);
 	background-repeat: repeat-x;
@@ -349,18 +324,17 @@ body {
 	text-shadow: none;
 }
 
-.working-on-link {
-	color: var(--dracula-pink);
-	letter-spacing: 0.03rem;
+.scribble-header {
+	font-family: 'Caveat', cursive;
+	font-size: 2.2rem;
 }
 
-.working-on-link::selection {
-	background-color: var(--dracula-cyan);
-	color: var(--dracula-background);
-	text-shadow: none;
+.scribble-arrow {
+	text-align: center;
+	margin-top: 2rem;
 }
 
-.bullet {
-	padding-right: 5px;
-	color: var(--dracula-cyan);
+.scribble-image {
+	width: 15%;
+	height: auto;
 }

@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"dipOn":[function(require,module,exports) {
+})({"4OtMd":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "e7ffd4061fd6e8f2";
+module.bundle.HMR_BUNDLE_ID = "61bc9cb1fe9758b6";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,15 +531,20 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"8VGZO":[function(require,module,exports) {
+},{}],"vBRuM":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _gaGtag = require("ga-gtag");
 var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
+var _3DForwardArrow1Png = require("/assets/images/icons/3d-forward-arrow(1).png");
+var _3DForwardArrow1PngDefault = parcelHelpers.interopDefault(_3DForwardArrow1Png);
+var _3DForwardArrow5Png = require("/assets/images/icons/3d-forward-arrow(5).png");
+var _3DForwardArrow5PngDefault = parcelHelpers.interopDefault(_3DForwardArrow5Png);
 // Google Analytics
 (0, _gaGtag.install)("G-YYTQ7PKV12");
 // Light Mode
 const checkboxes = document.querySelectorAll(".checkbox");
 const balls = document.querySelectorAll(".ball");
+const downArrow = document.querySelector(".scribble-image");
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
 
@@ -562,12 +567,16 @@ When the toggle is unchecked:
             balls.forEach((ball)=>{
                 ball.style.transform = "translateX(-24px)";
             });
+            downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+        // hoverLightChevron()
         } else {
             localStorage.setItem("lightMode", "disabled");
             balls.forEach((ball)=>{
                 ball.style.transition = "transform 0.2s linear";
                 ball.style.transform = "translateX(0px)";
             });
+            downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+        // hoverDarkChevron()
         }
     });
     // If the user has previously checked the light mode toggle
@@ -578,9 +587,15 @@ When the toggle is unchecked:
             ball.style.transition = "none";
             ball.style.transform = "translateX(-24px)";
         });
-    } else balls.forEach((ball)=>{
-        ball.style.transform = "translateX(0px)";
-    });
+        downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+    // hoverLightChevron()
+    } else {
+        balls.forEach((ball)=>{
+            ball.style.transform = "translateX(0px)";
+        });
+        downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+    // hoverDarkChevron()
+    }
 });
 // Mobile Nav
 const menuLinks = document.querySelectorAll(".menu-link");
@@ -646,36 +661,47 @@ navbar.addEventListener("change", (event)=>{
  // }
 ;
 
-},{"ga-gtag":"cpRs5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cpRs5":[function(require,module,exports) {
-"use strict";
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports["default"] = exports.gtag = exports.install = void 0;
-var install = function install(trackingId) {
-    var additionalConfigInfo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-    var scriptId = "ga-gtag";
-    if (document.getElementById(scriptId)) return;
-    var _document = document, head = _document.head;
-    var script = document.createElement("script");
-    script.id = scriptId;
-    script.type = "text/javascript";
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=".concat(trackingId);
-    head.insertBefore(script, head.firstChild);
-    window.dataLayer = window.dataLayer || [];
-    gtag("js", new Date);
-    gtag("config", trackingId, additionalConfigInfo);
-};
-exports.install = install;
-var gtag = function gtag() {
-    window.dataLayer.push(arguments);
-};
-exports.gtag = gtag;
-var _default = gtag;
-exports["default"] = _default;
+},{"/assets/images/icons/3d-forward-arrow(1).png":"8UXI5","/assets/images/icons/3d-forward-arrow(5).png":"ciIIQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","ga-gtag":"cpRs5"}],"8UXI5":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "3d-forward-arrow(1).77f3d4b7.png" + "?" + Date.now();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"ciIIQ":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "3d-forward-arrow(5).52b010cc.png" + "?" + Date.now();
+
+},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -705,6 +731,35 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["dipOn","8VGZO"], "8VGZO", "parcelRequire390d")
+},{}],"cpRs5":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports["default"] = exports.gtag = exports.install = void 0;
+var install = function install(trackingId) {
+    var additionalConfigInfo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var scriptId = "ga-gtag";
+    if (document.getElementById(scriptId)) return;
+    var _document = document, head = _document.head;
+    var script = document.createElement("script");
+    script.id = scriptId;
+    script.type = "text/javascript";
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=".concat(trackingId);
+    head.insertBefore(script, head.firstChild);
+    window.dataLayer = window.dataLayer || [];
+    gtag("js", new Date);
+    gtag("config", trackingId, additionalConfigInfo);
+};
+exports.install = install;
+var gtag = function gtag() {
+    window.dataLayer.push(arguments);
+};
+exports.gtag = gtag;
+var _default = gtag;
+exports["default"] = _default;
 
-//# sourceMappingURL=contact.1fd6e8f2.js.map
+},{}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
+
+//# sourceMappingURL=index.fe9758b6.js.map

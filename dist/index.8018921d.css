@@ -13,7 +13,7 @@ body.light-mode .line {
 body.light-mode .subheader {
   color: var(--dracula-foreground);
   box-shadow: 0 0 5px 1px var(--dracula-background);
-  background: #44475ab3;
+  background-color: #282a36cc;
 }
 
 body.light-mode .subheader a {
@@ -42,9 +42,9 @@ body.light-mode .terminal-body {
 }
 
 body.light-mode .arrows path {
-  stroke: var(--dracula-green);
-  -webkit-filter: drop-shadow(3px 3px 2px #000000bf);
-  filter: drop-shadow(3px 3px 2px #ffffff4d);
+  stroke: var(--dracula-foreground);
+  -webkit-filter: drop-shadow(3px 3px 2px #000000b3);
+  filter: drop-shadow(3px 3px 2px #000000b3);
 }
 
 body.light-mode .section-header {
@@ -58,49 +58,28 @@ body.light-mode .paragraph h3 {
 }
 
 body.light-mode .about-p {
-  text-shadow: none;
-  font-weight: 500;
+  text-shadow: 0 0 1px #00000080;
 }
 
 body.light-mode .p-icon {
-  color: var(--dracula-green);
-  text-shadow: 1px 1px 1px #000;
+  color: var(--dracula-foreground);
+  text-shadow: 1px 2px 1px #000;
+}
+
+body.light-mode .fa-blink {
+  color: #000;
+  text-shadow: 0 0 1px #00000080;
 }
 
 body.light-mode .vwc {
   text-shadow: none;
   color: #000;
+  text-shadow: 0 0 1px #00000080;
   background-image: linear-gradient(90deg, #ad74ff99 0%, #8be9fdb3 50%, #50fa7bcc 100%);
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
   padding-bottom: 5px;
-  font-weight: 500;
-}
-
-body.light-mode .working-on-link {
-  color: var(--dracula-cyan);
-  text-shadow: 1px 1px 1px #000;
-}
-
-body.light-mode .working-on-list {
-  text-shadow: none;
-  font-weight: 500;
-}
-
-body.light-mode .bullet {
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-}
-
-@media screen and (max-width: 1100px) {
-  body.light-mode .bullet {
-    display: none;
-  }
-
-  body.light-mode .working-on-link {
-    color: var(--dracula-green);
-  }
 }
 
 body.light-mode .project-tile:hover .project-image {

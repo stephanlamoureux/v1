@@ -1,4 +1,6 @@
 import gtag, { install } from 'ga-gtag'
+import darkArrow from '/assets/images/icons/3d-forward-arrow(1).png'
+import lightArrow from '/assets/images/icons/3d-forward-arrow(5).png'
 
 // Google Analytics
 install('G-YYTQ7PKV12')
@@ -6,6 +8,7 @@ install('G-YYTQ7PKV12')
 // Light Mode
 const checkboxes = document.querySelectorAll('.checkbox')
 const balls = document.querySelectorAll('.ball')
+const downArrow = document.querySelector('.scribble-image')
 
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
@@ -32,12 +35,16 @@ checkboxes.forEach(checkbox => {
 			balls.forEach(ball => {
 				ball.style.transform = 'translateX(-24px)'
 			})
+			downArrow.src = lightArrow
+			// hoverLightChevron()
 		} else {
 			localStorage.setItem('lightMode', 'disabled')
 			balls.forEach(ball => {
 				ball.style.transition = 'transform 0.2s linear'
 				ball.style.transform = 'translateX(0px)'
 			})
+			downArrow.src = darkArrow
+			// hoverDarkChevron()
 		}
 	})
 
@@ -50,10 +57,14 @@ checkboxes.forEach(checkbox => {
 			ball.style.transition = 'none'
 			ball.style.transform = 'translateX(-24px)'
 		})
+		downArrow.src = lightArrow
+		// hoverLightChevron()
 	} else {
 		balls.forEach(ball => {
 			ball.style.transform = 'translateX(0px)'
 		})
+		downArrow.src = darkArrow
+		// hoverDarkChevron()
 	}
 })
 

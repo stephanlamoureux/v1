@@ -97,6 +97,10 @@ body.light-mode .bullet {
   body.light-mode .bullet {
     display: none;
   }
+
+  body.light-mode .working-on-link {
+    color: var(--dracula-green);
+  }
 }
 
 body.light-mode .project-tile:hover .project-image {

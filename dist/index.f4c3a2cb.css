@@ -313,10 +313,6 @@
     padding-top: 14rem;
   }
 
-  .working-on-list .bullet {
-    display: none;
-  }
-
   .profile-image {
     max-width: 35%;
   }
@@ -682,16 +678,16 @@
     text-indent: 0;
   }
 
+  .paragraph {
+    box-shadow: none;
+  }
+
   .paragraph, .steve {
     text-align: center;
   }
 
   .hidden-icon {
     display: none;
-  }
-
-  .working-on {
-    text-align: left;
   }
 
   .project-name0, .project-name1, .project-name2, .project-name3, .project-name4, .project-name5 {
@@ -869,10 +865,6 @@
   .about-p {
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .working-on-list {
-    margin-left: 0;
   }
 
   @media (max-height: 850px) {

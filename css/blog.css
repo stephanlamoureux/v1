@@ -27,7 +27,7 @@
 		linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink)) border-box;
 	border-radius: 5px;
 	border: 2px solid transparent;
-	transition: 0.1s ease;
+	transition: 0.2s ease all;
 }
 
 .dev-article:not(:last-of-type) {
@@ -35,7 +35,8 @@
 }
 
 .dev-article:hover {
-	box-shadow: 0 0 5px 1px rgba(189, 147, 249, 0.9);
+	box-shadow: 0 0 5px 1px rgba(189, 147, 249, 1);
+	transition: ease all 0.2s;
 }
 
 .dev-article a {

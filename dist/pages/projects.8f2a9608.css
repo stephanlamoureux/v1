@@ -161,16 +161,18 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 2rem;
+  padding: 0 30px;
   font-size: 1.5rem;
 }
 
 .modal-image {
   max-width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 5px;
   margin: 0 auto;
   display: flex;
-  box-shadow: 0 0 8px 1px #0000004d;
+  box-shadow: 0 0 20px 1px #000000b3;
 }
 
 .button-container {

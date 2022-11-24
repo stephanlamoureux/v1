@@ -53,6 +53,17 @@ body {
   color: var(--dracula-foreground);
   background: linear-gradient( 180deg, var(--dracula-background) 50%, var(--dracula-greypurple) 100% );
   font-family: Inter, sans-serif;
+  animation: fadeInAnimation .3s forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 a {

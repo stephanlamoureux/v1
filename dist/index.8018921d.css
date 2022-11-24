@@ -7,7 +7,7 @@ body.light-mode {
 
 body.light-mode .line {
   background: linear-gradient(to right, #b785fd, #8be9fd, #ff79c6);
-  box-shadow: 0 0 5px 1px #6272a4cc;
+  box-shadow: 0 0 5px 1px #6272a499;
 }
 
 body.light-mode .subheader {
@@ -127,7 +127,7 @@ body.light-mode .project-imagenp {
 }
 
 body.light-mode .dev-article:hover {
-  box-shadow: 0 0 5px 1px #383a59e6;
+  box-shadow: 0 0 5px 1px #383a59;
 }
 
 body.light-mode .tui-pagination .tui-is-disabled:hover {
@@ -162,7 +162,7 @@ body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui
 }
 
 body.light-mode .contact-label {
-  text-shadow: 1px 1px 2px #000000e6;
+  text-shadow: 1px 1px 2px #000;
   color: #fff;
 }
 

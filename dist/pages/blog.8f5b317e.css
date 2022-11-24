@@ -23,7 +23,7 @@
   align-items: center;
   margin: 1%;
   padding: 0 14px 0 20px;
-  transition: all .1s;
+  transition: all .2s;
   display: flex;
 }
 
@@ -32,7 +32,8 @@
 }
 
 .dev-article:hover {
-  box-shadow: 0 0 5px 1px #bd93f9e6;
+  transition: all .2s;
+  box-shadow: 0 0 5px 1px #bd93f9;
 }
 
 .dev-article a {

@@ -17,7 +17,7 @@ body.light-mode .line {
 		rgba(139, 233, 253, 1),
 		rgba(255, 121, 198, 1)
 	);
-	box-shadow: 0 0 5px 1px rgb(98, 114, 164, 0.8);
+	box-shadow: 0 0 5px 1px rgb(98, 114, 164, 0.6);
 }
 
 body.light-mode .subheader {
@@ -164,7 +164,7 @@ body.light-mode .project-imagenp {
 /* Blog */
 
 body.light-mode .dev-article:hover {
-	box-shadow: 0 0 5px 1px rgba(56, 58, 89, 0.9);
+	box-shadow: 0 0 5px 1px rgba(56, 58, 89, 1);
 }
 
 /* Pagination */
@@ -209,7 +209,7 @@ body.light-mode .tui-pagination .tui-next-is-ellip {
 /* Contact */
 
 body.light-mode .contact-label {
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
 	color: white;
 }
 

@@ -304,6 +304,10 @@
     background-color: var(--dracula-selection);
   }
 
+  .section-header {
+    font-size: 2.3rem;
+  }
+
   .about {
     scroll-margin-top: 150px;
   }
@@ -469,6 +473,15 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .top-divider svg {
+    height: 550px;
+    width: calc(500% + 1.3px);
+    display: block;
+    position: relative;
+  }
+}
+
 @media (max-width: 1020px) {
   .blog .subheader, .contact .subheader {
     padding: 25px 15px;
@@ -563,6 +576,10 @@
 }
 
 @media (max-width: 785px) {
+  .modal-image {
+    width: 100%;
+  }
+
   .bottom-divider {
     width: 100%;
     line-height: 0;

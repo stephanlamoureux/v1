@@ -9,7 +9,7 @@ body {
 }
 
 .about {
-	width: 70%;
+	width: 65%;
 	margin: 2rem auto 2rem auto;
 	scroll-margin-top: 100px;
 }
@@ -335,6 +335,6 @@ body {
 }
 
 .scribble-image {
-	width: 15%;
+	width: 17%;
 	height: auto;
 }

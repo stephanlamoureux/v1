@@ -65,7 +65,9 @@ body {
 		var(--dracula-background) 50%,
 		var(--dracula-greypurple) 100%
 	);
-	animation: fadeInAnimation ease 0.3s 1 forwards;
+	/* animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInAnimation {
@@ -129,7 +131,7 @@ a {
 }
 
 .nav-desktop {
-	background-color: rgba(57, 58, 89, 0.8);
+	background-color: rgba(56, 58, 89, 0.8);
 	backdrop-filter: blur(20px) saturate(180%);
 	border-radius: 0 0 10px 10px;
 	box-shadow: 0 0 5px 4px rgba(50, 52, 75, 0.6);

@@ -1,13 +1,5 @@
 /* || About Me */
 
-body {
-	background: linear-gradient(
-		180deg,
-		var(--dracula-background) 20%,
-		var(--dracula-greypurple) 100%
-	);
-}
-
 .about {
 	width: 65%;
 	margin: 2rem auto 2rem auto;
@@ -27,6 +19,9 @@ body {
 	padding: 5rem 2rem 0 2rem;
 	width: 100%;
 	display: flex;
+	animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
 }
 
 .terminal-window {
@@ -118,6 +113,9 @@ body {
 	left: 50%;
 	margin-left: -30px;
 	bottom: 40px;
+	animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
 }
 
 .arrows path {
@@ -202,7 +200,7 @@ body {
 	display: inline;
 }
 
-.paragraph h3 {
+.paragraph h2 {
 	margin-bottom: 25px;
 	text-shadow: 4px 4px 1px var(--dracula-greypurple), 9px 8px 1px rgba(0, 0, 0, 0.15);
 	font-size: 1.6rem;

@@ -1,7 +1,3 @@
-body {
-  background: linear-gradient( 180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 100% );
-}
-
 .about {
   width: 65%;
   margin: 2rem auto;
@@ -20,6 +16,7 @@ body {
   width: 100%;
   margin-top: 0;
   padding: 5rem 2rem 0;
+  animation: fadeInAnimation .3s;
   display: flex;
 }
 
@@ -108,6 +105,7 @@ body {
   width: 60px;
   height: 80px;
   margin-left: -30px;
+  animation: fadeInAnimation .3s;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -179,7 +177,7 @@ body {
   display: inline;
 }
 
-.paragraph h3 {
+.paragraph h2 {
   text-shadow: 4px 4px 1px var(--dracula-greypurple), 9px 8px 1px #00000026;
   margin-top: 40px;
   margin-bottom: 25px;

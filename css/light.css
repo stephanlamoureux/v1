@@ -1,8 +1,8 @@
 /* Light Mode */
 
 body.light-mode {
-	background: rgb(173, 116, 255);
-	background: linear-gradient(180deg, rgb(255, 121, 198) 10%, rgb(173, 116, 255) 50%);
+	background: rgb(255, 121, 198);
+	background: linear-gradient(180deg, rgb(255, 121, 198) 0%, rgb(173, 116, 255) 50%);
 	color: black;
 	cursor: url('../assets/images/icons/cursor-white.png'), auto;
 	transition: background-color 0.9s linear;
@@ -65,13 +65,13 @@ body.light-mode .section-header {
 		rgb(0 0 0 / 10%) 0px 18px 23px;
 }
 
-body.light-mode .paragraph h3 {
+body.light-mode .paragraph h2 {
 	color: white;
 	text-shadow: 4px 4px 1px var(--dracula-comment), 9px 8px 1px rgba(0, 0, 0, 0);
 }
 
 body.light-mode .about-p {
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 body.light-mode .p-icon {
@@ -97,7 +97,7 @@ body.light-mode .vwc {
 	background-size: 100% 12%;
 	padding-bottom: 5px;
 	color: black;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 /* Projects */

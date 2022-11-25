@@ -49,10 +49,14 @@ html {
 }
 
 body {
-  background-color: var(--dracula-background);
+  background: var(--dracula-background);
   color: var(--dracula-foreground);
-  background: linear-gradient( 180deg, var(--dracula-background) 50%, var(--dracula-greypurple) 100% );
+  background: linear-gradient(180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 75%);
   font-family: Inter, sans-serif;
+}
+
+main {
+  animation: fadeInAnimation .3s;
 }
 
 @keyframes fadeInAnimation {
@@ -115,6 +119,7 @@ a {
   border-radius: 0 0 10px 10px;
   margin: 0 auto;
   padding: 1.2rem 0;
+  animation: fadeInAnimation .3s;
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -220,6 +225,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 100px 0 25px;
+  animation: fadeInAnimation .3s;
   display: flex;
 }
 

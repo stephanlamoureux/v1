@@ -172,7 +172,7 @@
   border-radius: 5px;
   margin: 0 auto;
   display: flex;
-  box-shadow: 0 0 20px 1px #000000b3;
+  box-shadow: 0 0 20px 1px #00000080;
 }
 
 .button-container {

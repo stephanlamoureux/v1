@@ -58,16 +58,15 @@ html {
 
 body {
 	font-family: 'Inter', sans-serif;
-	background-color: var(--dracula-background);
+	background: var(--dracula-background);
 	color: var(--dracula-foreground);
-	background: linear-gradient(
-		180deg,
-		var(--dracula-background) 50%,
-		var(--dracula-greypurple) 100%
-	);
-	/* animation: fadeInAnimation ease 0.3s;
+	background: linear-gradient(180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 75%);
+}
+
+main {
+	animation: fadeInAnimation ease 0.3s;
 	animation-iteration-count: 1;
-	animation-fill-mode: forwards; */
+	animation-fill-mode: none;
 }
 
 @keyframes fadeInAnimation {
@@ -142,6 +141,9 @@ a {
 	top: 0;
 	width: 100%;
 	z-index: 200;
+	animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
 }
 
 .desktop-list {
@@ -256,6 +258,9 @@ header {
 	flex-flow: row nowrap;
 	justify-content: center;
 	padding: 100px 0 25px 0;
+	animation: fadeInAnimation ease 0.3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
 }
 
 .header-title {

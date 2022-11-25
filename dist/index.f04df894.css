@@ -258,7 +258,7 @@
   text-shadow: none;
 }
 
-.paragraph h3::selection {
+.paragraph h2::selection {
   background: var(--dracula-pink);
   color: var(--dracula-foreground);
   text-shadow: none;

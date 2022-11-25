@@ -547,13 +547,11 @@ The default mode is dark, so when the toggle is checked:
 1. Light mode stylesheet is enabled
 2. Local storage is updated to "light mode: enabled"
 3. The ball on both the desktop and mobile toggle is slid to the left
-4. The chevron hover effect is set to light mode
 
 When the toggle is unchecked:
 1. Light mode stylesheet is disabled
 2. Local storage is updated to "light mode: disabled"
 3. The ball on both the desktop and mobile toggle is slid to the right
-4. The chevron hover effect is set to dark mode
 */ checkboxes.forEach((checkbox)=>{
     checkbox.addEventListener("change", ()=>{
         document.body.classList.toggle("light-mode");
@@ -613,38 +611,7 @@ navbar.addEventListener("change", (event)=>{
         navbar.classList.add("showNav");
         hamburger.classList.add("is-active");
     }
-}) // About Me page hover effect
- // function hoverLightChevron() {
- // 	// Hover effect on currently-working-on chevrons (light mode)
- // 	links.forEach(link => {
- // 		const bullet = link.parentElement.querySelector('.bullet')
- // 		link.addEventListener('mouseover', () => {
- // 			bullet.style.color = 'var(--dracula-cyan)'
- // 			bullet.style.transition = 'ease 0.1s'
- // 			bullet.style.textShadow = '1px 1px 2px rgba(0, 0, 0, 0.75)'
- // 		})
- // 		link.addEventListener('mouseleave', () => {
- // 			bullet.style.color = ''
- // 			bullet.style.transition = 'ease 0.1s'
- // 			bullet.style.textShadow = ''
- // 		})
- // 	})
- // }
- // function hoverDarkChevron() {
- // 	// Hover effect on currently-working-on chevrons (dark mode)
- // 	links.forEach(link => {
- // 		const bullet = link.parentElement.querySelector('.bullet')
- // 		link.addEventListener('mouseover', () => {
- // 			bullet.style.color = 'var(--dracula-pink)'
- // 			bullet.style.transition = 'ease 0.1s'
- // 		})
- // 		link.addEventListener('mouseleave', () => {
- // 			bullet.style.color = ''
- // 			bullet.style.transition = 'ease 0.1s'
- // 		})
- // 	})
- // }
-;
+});
 
 },{"ga-gtag":"cpRs5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cpRs5":[function(require,module,exports) {
 "use strict";

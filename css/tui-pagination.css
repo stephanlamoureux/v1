@@ -53,7 +53,8 @@
 	color: #fff;
 	background: var(--dracula-purple);
 	border-color: var(--dracula-purple);
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 .tui-pagination .tui-is-selected:hover {
@@ -172,7 +173,8 @@
 
 .tui-pagination .tui-is-disabled:hover {
 	background: var(--dracula-comment);
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 .tui-pagination .tui-is-disabled .tui-ico-prev {

@@ -38,7 +38,7 @@
   color: #fff;
   background: var(--dracula-purple);
   border-color: var(--dracula-purple);
-  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  cursor: pointer;
 }
 
 .tui-pagination .tui-is-selected:hover {
@@ -138,7 +138,7 @@
 
 .tui-pagination .tui-is-disabled:hover {
   background: var(--dracula-comment);
-  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  cursor: pointer;
 }
 
 .tui-pagination .tui-is-disabled .tui-ico-prev {

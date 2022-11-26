@@ -545,6 +545,7 @@ var _3DForwardArrow5PngDefault = parcelHelpers.interopDefault(_3DForwardArrow5Pn
 const checkboxes = document.querySelectorAll(".checkbox");
 const balls = document.querySelectorAll(".ball");
 const downArrow = document.querySelector(".scribble-image");
+const root = document.querySelector(":root");
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
 
@@ -566,6 +567,7 @@ When the toggle is unchecked:
                 ball.style.transform = "translateX(-24px)";
             });
             downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+            root.style.setProperty("color-scheme", "light");
         } else {
             localStorage.setItem("lightMode", "disabled");
             balls.forEach((ball)=>{
@@ -573,6 +575,7 @@ When the toggle is unchecked:
                 ball.style.transform = "translateX(0px)";
             });
             downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+            root.style.setProperty("color-scheme", "dark");
         }
     });
     // If the user has previously checked the light mode toggle
@@ -584,11 +587,13 @@ When the toggle is unchecked:
             ball.style.transform = "translateX(-24px)";
         });
         downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+        root.style.setProperty("color-scheme", "light");
     } else {
         balls.forEach((ball)=>{
             ball.style.transform = "translateX(0px)";
         });
         downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+        root.style.setProperty("color-scheme", "dark");
     }
 });
 // Mobile Nav

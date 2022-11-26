@@ -21,7 +21,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("cursor-blue.e8d970a5.png"), auto;
 }
 
 * {
@@ -52,6 +51,7 @@ body {
   background: var(--dracula-background);
   color: var(--dracula-foreground);
   background: linear-gradient(180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 75%);
+  scrollbar-width: thin;
   font-family: Inter, sans-serif;
 }
 
@@ -71,7 +71,7 @@ main {
 
 a {
   color: var(--dracula-cyan);
-  cursor: url("cursor-hand-white.8bf00820.png"), auto;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -184,7 +184,7 @@ a {
   width: 50px;
   height: 26px;
   background-color: var(--dracula-background);
-  cursor: url("cursor-hand-white.8bf00820.png"), auto;
+  cursor: pointer;
   border-radius: 50px;
   justify-content: space-between;
   align-items: center;
@@ -254,6 +254,14 @@ header {
 
 .red {
   color: var(--dracula-red);
+}
+
+.purple {
+  color: var(--dracula-purple);
+}
+
+.cyan {
+  color: var(--dracula-cyan);
 }
 
 .header-sub {

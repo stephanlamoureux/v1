@@ -6,6 +6,7 @@ install('G-YYTQ7PKV12')
 // Light Mode
 const checkboxes = document.querySelectorAll('.checkbox')
 const balls = document.querySelectorAll('.ball')
+const root = document.querySelector(':root')
 
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
@@ -30,12 +31,14 @@ checkboxes.forEach(checkbox => {
 			balls.forEach(ball => {
 				ball.style.transform = 'translateX(-24px)'
 			})
+			root.style.setProperty('color-scheme', 'light')
 		} else {
 			localStorage.setItem('lightMode', 'disabled')
 			balls.forEach(ball => {
 				ball.style.transition = 'transform 0.2s linear'
 				ball.style.transform = 'translateX(0px)'
 			})
+			root.style.setProperty('color-scheme', 'dark')
 		}
 	})
 
@@ -48,10 +51,12 @@ checkboxes.forEach(checkbox => {
 			ball.style.transition = 'none'
 			ball.style.transform = 'translateX(-24px)'
 		})
+		root.style.setProperty('color-scheme', 'light')
 	} else {
 		balls.forEach(ball => {
 			ball.style.transform = 'translateX(0px)'
 		})
+		root.style.setProperty('color-scheme', 'dark')
 	}
 })
 

@@ -271,7 +271,8 @@
 
 	.nav-wrapper .menu {
 		border: none;
-		cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+		/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+		cursor: pointer;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -945,6 +946,10 @@
 		margin: 15px 0;
 		font-size: 1.8rem;
 	}
+
+	.typed {
+		font-size: 1.1rem;
+	}
 }
 
 @media (max-width: 570px) {
@@ -1009,6 +1014,11 @@
 
 	.terminal-window {
 		height: 355px;
+	}
+
+	.prompt,
+	.typed {
+		font-size: 1rem;
 	}
 
 	.profile-image {

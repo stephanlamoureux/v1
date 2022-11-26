@@ -25,7 +25,7 @@
 html {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	cursor: url('../assets/images/icons/cursor-blue.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-blue.png'), auto; */
 }
 
 * {
@@ -61,6 +61,7 @@ body {
 	background: var(--dracula-background);
 	color: var(--dracula-foreground);
 	background: linear-gradient(180deg, var(--dracula-background) 20%, var(--dracula-greypurple) 75%);
+	scrollbar-width: thin;
 }
 
 main {
@@ -81,7 +82,8 @@ main {
 a {
 	color: var(--dracula-cyan);
 	text-decoration: none;
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 /* Header Divider */
@@ -220,7 +222,8 @@ a {
 	justify-content: space-between;
 	padding: 5px;
 	transform: scale(1.5);
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 .ball {
@@ -298,6 +301,14 @@ header {
 
 .red {
 	color: var(--dracula-red);
+}
+
+.purple {
+	color: var(--dracula-purple);
+}
+
+.cyan {
+	color: var(--dracula-cyan);
 }
 
 .header-sub {

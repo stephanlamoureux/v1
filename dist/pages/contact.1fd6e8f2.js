@@ -540,6 +540,7 @@ var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
 // Light Mode
 const checkboxes = document.querySelectorAll(".checkbox");
 const balls = document.querySelectorAll(".ball");
+const root = document.querySelector(":root");
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
 
@@ -560,12 +561,14 @@ When the toggle is unchecked:
             balls.forEach((ball)=>{
                 ball.style.transform = "translateX(-24px)";
             });
+            root.style.setProperty("color-scheme", "light");
         } else {
             localStorage.setItem("lightMode", "disabled");
             balls.forEach((ball)=>{
                 ball.style.transition = "transform 0.2s linear";
                 ball.style.transform = "translateX(0px)";
             });
+            root.style.setProperty("color-scheme", "dark");
         }
     });
     // If the user has previously checked the light mode toggle
@@ -576,9 +579,13 @@ When the toggle is unchecked:
             ball.style.transition = "none";
             ball.style.transform = "translateX(-24px)";
         });
-    } else balls.forEach((ball)=>{
-        ball.style.transform = "translateX(0px)";
-    });
+        root.style.setProperty("color-scheme", "light");
+    } else {
+        balls.forEach((ball)=>{
+            ball.style.transform = "translateX(0px)";
+        });
+        root.style.setProperty("color-scheme", "dark");
+    }
 });
 // Mobile Nav
 const menuLinks = document.querySelectorAll(".menu-link");

@@ -52,7 +52,8 @@
 	opacity: 1;
 	transition: 0.3s ease all;
 	box-shadow: 0 0 5px 1px rgba(248, 248, 242, 0.6);
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 .shrink {
@@ -125,7 +126,8 @@
 	transform: scale(1.1);
 	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	z-index: 210;
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 }
 
 .show-modal {
@@ -147,7 +149,8 @@
 	backdrop-filter: blur(20px) saturate(180%);
 	border: 2px solid transparent;
 	box-shadow: 0 0 5px 1px var(--dracula-background);
-	cursor: url('../assets/images/icons/cursor-blue.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-blue.png'), auto; */
+	cursor: initial;
 }
 
 .close-button {
@@ -158,7 +161,8 @@
 	color: black;
 	font-weight: 500;
 	background-color: rgba(255, 85, 85, 0.7);
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -205,7 +209,8 @@
 
 .project-button {
 	padding: 10px 20px;
-	cursor: url('../assets/images/icons/cursor-hand-white.png'), auto;
+	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
+	cursor: pointer;
 	background-color: var(--dracula-purple);
 	border-radius: 5px;
 	border: 0;

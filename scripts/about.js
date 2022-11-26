@@ -9,6 +9,7 @@ install('G-YYTQ7PKV12')
 const checkboxes = document.querySelectorAll('.checkbox')
 const balls = document.querySelectorAll('.ball')
 const downArrow = document.querySelector('.scribble-image')
+const root = document.querySelector(':root')
 
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
@@ -34,6 +35,7 @@ checkboxes.forEach(checkbox => {
 				ball.style.transform = 'translateX(-24px)'
 			})
 			downArrow.src = lightArrow
+			root.style.setProperty('color-scheme', 'light')
 		} else {
 			localStorage.setItem('lightMode', 'disabled')
 			balls.forEach(ball => {
@@ -41,6 +43,7 @@ checkboxes.forEach(checkbox => {
 				ball.style.transform = 'translateX(0px)'
 			})
 			downArrow.src = darkArrow
+			root.style.setProperty('color-scheme', 'dark')
 		}
 	})
 
@@ -54,11 +57,13 @@ checkboxes.forEach(checkbox => {
 			ball.style.transform = 'translateX(-24px)'
 		})
 		downArrow.src = lightArrow
+		root.style.setProperty('color-scheme', 'light')
 	} else {
 		balls.forEach(ball => {
 			ball.style.transform = 'translateX(0px)'
 		})
 		downArrow.src = darkArrow
+		root.style.setProperty('color-scheme', 'dark')
 	}
 })
 

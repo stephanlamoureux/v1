@@ -63,7 +63,7 @@ input:focus, textarea:focus {
 .form-submit {
   background-color: var(--dracula-purple);
   color: #000;
-  cursor: url("../cursor-hand-white.8bf00820.png"), auto;
+  cursor: pointer;
   text-align: center;
   width: 100%;
   border-radius: 5px;

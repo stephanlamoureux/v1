@@ -282,16 +282,19 @@
     transition: color .2s;
   }
 
-  .s {
+  .mobile-profile {
+    height: 48px;
+    width: 48px;
+    background-image: url("profile-pic2.4dc4ef70.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
+    margin-bottom: -15px;
     display: flex;
-  }
-
-  .s img {
-    text-shadow: 0 2px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
-    position: relative;
-    top: 25px;
+    box-shadow: 0 0 5px 1px #0009;
   }
 
   .mode-toggle {
@@ -302,6 +305,7 @@
 
   .checkbox-label {
     background-color: var(--dracula-selection);
+    box-shadow: 0 0 5px 1px #0000004d;
   }
 
   .section-header {

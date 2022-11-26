@@ -341,17 +341,19 @@
 		transition: ease color 0.2s;
 	}
 
-	.s {
+	.mobile-profile {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
-
-	.s img {
-		position: relative;
-		top: 25px;
-		text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
-			0 18px 23px rgba(0, 0, 0, 0.1);
+		margin-bottom: -15px;
+		border-radius: 50%;
+		height: 48px;
+		width: 48px;
+		background-image: url(../assets/images/profile/profile-pic2.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
 	}
 
 	.mode-toggle {
@@ -362,6 +364,7 @@
 
 	.checkbox-label {
 		background-color: var(--dracula-selection);
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	.section-header {

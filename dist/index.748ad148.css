@@ -172,9 +172,10 @@ a {
   background: var(--dracula-background);
   height: 48px;
   width: 48px;
-  background-image: url("favicon.a918ca60.png");
+  background-image: url("profile-pic2.4dc4ef70.png");
   background-position: 50%;
   background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%;
   margin-left: 50px;
   display: block;

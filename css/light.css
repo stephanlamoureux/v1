@@ -113,11 +113,10 @@ body.light-mode .project-tile:hover .project-name3,
 body.light-mode .project-tile:hover .project-name4,
 body.light-mode .project-tile:hover .project-name5 {
 	color: black;
-	text-shadow: none;
-	font-weight: 500;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
 }
 
-body.light-mode .project-imagenp {
+body.light-mode .project-image {
 	box-shadow: 0 0 5px 1px var(--dracula-background);
 }
 
@@ -131,7 +130,6 @@ body.light-mode .project-imagenp {
 		background-color: var(--dracula-foreground);
 		box-shadow: 0 0 3px 1px var(--dracula-background);
 		color: black;
-		text-shadow: none;
 	}
 
 	body.light-mode .project-image {

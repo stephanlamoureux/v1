@@ -152,7 +152,7 @@ a {
   text-decoration: none;
 }
 
-.desktop-link:nth-of-type(4) a {
+.desktop-link:nth-of-type(5) a {
   margin-right: 0;
 }
 
@@ -166,6 +166,22 @@ a {
 
 .menu-link a, .link {
   font-family: Inter, sans-serif;
+}
+
+.brand {
+  background: var(--dracula-background);
+  height: 48px;
+  width: 48px;
+  background-image: url("favicon.a918ca60.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-left: 50px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  box-shadow: 0 0 5px 1px #0009;
 }
 
 .mode-toggle {
@@ -191,6 +207,7 @@ a {
   padding: 5px;
   display: flex;
   transform: scale(1.5);
+  box-shadow: 0 0 2px 1px #00000080;
 }
 
 .ball {

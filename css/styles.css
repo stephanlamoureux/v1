@@ -175,7 +175,7 @@ a {
 	letter-spacing: 1px;
 }
 
-.desktop-link:nth-of-type(4) a {
+.desktop-link:nth-of-type(5) a {
 	margin-right: 0;
 }
 
@@ -196,6 +196,22 @@ a {
 .menu-link a,
 .link {
 	font-family: 'Inter', sans-serif;
+}
+
+.brand {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -5px;
+	margin-left: 50px;
+	background: var(--dracula-background);
+	border-radius: 50%;
+	height: 48px;
+	width: 48px;
+	background-image: url(../assets/images/icons/favicon.png);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* Color Mode Toggle */
@@ -224,6 +240,7 @@ a {
 	transform: scale(1.5);
 	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
 	cursor: pointer;
+	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .ball {

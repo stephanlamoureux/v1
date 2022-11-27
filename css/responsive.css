@@ -353,7 +353,7 @@
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
 		background-size: contain;
-		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
 	}
 
 	.mode-toggle {
@@ -364,7 +364,7 @@
 
 	.checkbox-label {
 		background-color: var(--dracula-selection);
-		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	.section-header {

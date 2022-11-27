@@ -208,7 +208,7 @@ a {
   padding: 5px;
   display: flex;
   transform: scale(1.5);
-  box-shadow: 0 0 2px 1px #00000080;
+  box-shadow: 0 0 2px 1px #0006;
 }
 
 .ball {

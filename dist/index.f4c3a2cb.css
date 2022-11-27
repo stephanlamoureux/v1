@@ -294,7 +294,7 @@
     align-items: center;
     margin-bottom: -15px;
     display: flex;
-    box-shadow: 0 0 5px 1px #0009;
+    box-shadow: 0 0 5px 1px #00000080;
   }
 
   .mode-toggle {
@@ -305,7 +305,7 @@
 
   .checkbox-label {
     background-color: var(--dracula-selection);
-    box-shadow: 0 0 5px 1px #0000004d;
+    box-shadow: 0 0 8px 1px #0000004d;
   }
 
   .section-header {

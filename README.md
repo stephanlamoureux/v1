@@ -27,5 +27,5 @@
 </div>
 
 <div align="center">
-<img src="/assets/images/screenshots/laptop-mockup.png" alt="Portfolio mockup on laptops">
+<img src="/assets/images/screenshots/iphone.png" alt="Portfolio mockup on iphone">
 </div>

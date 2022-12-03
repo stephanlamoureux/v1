@@ -535,10 +535,10 @@ function hmrAcceptRun(bundle, id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _gaGtag = require("ga-gtag");
 var _gaGtagDefault = parcelHelpers.interopDefault(_gaGtag);
-var _3DForwardArrow1Png = require("/assets/images/icons/3d-forward-arrow(1).png");
-var _3DForwardArrow1PngDefault = parcelHelpers.interopDefault(_3DForwardArrow1Png);
-var _3DForwardArrow5Png = require("/assets/images/icons/3d-forward-arrow(5).png");
-var _3DForwardArrow5PngDefault = parcelHelpers.interopDefault(_3DForwardArrow5Png);
+var _lightArrowWebp = require("/assets/images/icons/light-arrow.webp");
+var _lightArrowWebpDefault = parcelHelpers.interopDefault(_lightArrowWebp);
+var _darkArrowWebp = require("/assets/images/icons/dark-arrow.webp");
+var _darkArrowWebpDefault = parcelHelpers.interopDefault(_darkArrowWebp);
 // Google Analytics
 (0, _gaGtag.install)("G-YYTQ7PKV12");
 // Light Mode
@@ -566,7 +566,7 @@ When the toggle is unchecked:
             balls.forEach((ball)=>{
                 ball.style.transform = "translateX(-24px)";
             });
-            downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+            downArrow.src = (0, _darkArrowWebpDefault.default);
             root.style.setProperty("color-scheme", "light");
         } else {
             localStorage.setItem("lightMode", "disabled");
@@ -574,7 +574,7 @@ When the toggle is unchecked:
                 ball.style.transition = "transform 0.2s linear";
                 ball.style.transform = "translateX(0px)";
             });
-            downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+            downArrow.src = (0, _lightArrowWebpDefault.default);
             root.style.setProperty("color-scheme", "dark");
         }
     });
@@ -586,13 +586,13 @@ When the toggle is unchecked:
             ball.style.transition = "none";
             ball.style.transform = "translateX(-24px)";
         });
-        downArrow.src = (0, _3DForwardArrow5PngDefault.default);
+        downArrow.src = (0, _darkArrowWebpDefault.default);
         root.style.setProperty("color-scheme", "light");
     } else {
         balls.forEach((ball)=>{
             ball.style.transform = "translateX(0px)";
         });
-        downArrow.src = (0, _3DForwardArrow1PngDefault.default);
+        downArrow.src = (0, _lightArrowWebpDefault.default);
         root.style.setProperty("color-scheme", "dark");
     }
 });
@@ -629,7 +629,7 @@ navbar.addEventListener("change", (event)=>{
     }
 });
 
-},{"ga-gtag":"cpRs5","/assets/images/icons/3d-forward-arrow(1).png":"8UXI5","/assets/images/icons/3d-forward-arrow(5).png":"ciIIQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cpRs5":[function(require,module,exports) {
+},{"ga-gtag":"cpRs5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC"}],"cpRs5":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -658,8 +658,38 @@ exports.gtag = gtag;
 var _default = gtag;
 exports["default"] = _default;
 
-},{}],"8UXI5":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "3d-forward-arrow(1).77f3d4b7.png" + "?" + Date.now();
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"in2Mf":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "light-arrow.c31e494d.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
 "use strict";
@@ -695,39 +725,9 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"ciIIQ":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "3d-forward-arrow(5).52b010cc.png" + "?" + Date.now();
+},{}],"1c2XC":[function(require,module,exports) {
+module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "dark-arrow.078a00d9.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
+},{"./helpers/bundle-url":"lgJ39"}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
 
 //# sourceMappingURL=index.fe9758b6.js.map

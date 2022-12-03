@@ -270,15 +270,15 @@ header {
   letter-spacing: 10px;
 }
 
-.red-term {
+.red {
   color: var(--dracula-red);
 }
 
-.purple-term {
+.purple {
   color: var(--dracula-purple);
 }
 
-.cyan-term {
+.cyan {
   color: var(--dracula-cyan);
 }
 

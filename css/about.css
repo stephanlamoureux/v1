@@ -101,6 +101,18 @@
 	color: var(--dracula-green);
 }
 
+.red-term {
+	color: var(--dracula-red);
+}
+
+.purple-term {
+	color: var(--dracula-purple);
+}
+
+.cyan-term {
+	color: var(--dracula-cyan);
+}
+
 .typed {
 	color: var(--dracula-foreground);
 	line-height: 1.4;

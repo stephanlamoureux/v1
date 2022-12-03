@@ -71,7 +71,7 @@ input:focus, textarea:focus {
   padding: 19px 39px 18px;
   font-size: 1.3rem;
   font-style: normal;
-  transition: all .1s;
+  transition: box-shadow .1s;
   box-shadow: 0 5px #9e63f0;
 }
 

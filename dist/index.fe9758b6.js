@@ -629,7 +629,7 @@ navbar.addEventListener("change", (event)=>{
     }
 });
 
-},{"ga-gtag":"cpRs5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC"}],"cpRs5":[function(require,module,exports) {
+},{"ga-gtag":"cpRs5","/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cpRs5":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -657,36 +657,6 @@ var gtag = function gtag() {
 exports.gtag = gtag;
 var _default = gtag;
 exports["default"] = _default;
-
-},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
 
 },{}],"in2Mf":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "light-arrow.c31e494d.webp" + "?" + Date.now();
@@ -728,6 +698,36 @@ exports.getOrigin = getOrigin;
 },{}],"1c2XC":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "dark-arrow.078a00d9.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
+},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
 
 //# sourceMappingURL=index.fe9758b6.js.map

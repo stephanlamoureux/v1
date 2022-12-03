@@ -77,10 +77,9 @@ textarea:focus {
 	margin-bottom: 10px;
 	padding: 19px 39px 18px 39px;
 	text-align: center;
-	transition: ease 0.1s all;
 	width: 100%;
 	box-shadow: 0 5px 0 rgb(158, 99, 240);
-	transition: ease 0.1s all;
+	transition: ease 0.1s box-shadow;
 }
 
 .form-submit:focus {

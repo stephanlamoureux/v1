@@ -27,7 +27,7 @@
 		linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink)) border-box;
 	border-radius: 5px;
 	border: 2px solid transparent;
-	transition: 0.2s ease all;
+	transition: 0.2s ease box-shadow;
 }
 
 .dev-article:not(:last-of-type) {

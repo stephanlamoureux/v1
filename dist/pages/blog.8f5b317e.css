@@ -23,7 +23,7 @@
   align-items: center;
   margin: 1%;
   padding: 0 14px 0 20px;
-  transition: all .2s;
+  transition: box-shadow .2s;
   display: flex;
 }
 

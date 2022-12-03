@@ -166,12 +166,12 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	transition: ease all 0.1s;
+	transition: ease background-color 0.1s;
 }
 
 .close-button:hover {
 	background-color: rgba(255, 85, 85, 1);
-	transition: ease all 0.1s;
+	transition: ease background-color 0.1s;
 }
 
 .modal-header {

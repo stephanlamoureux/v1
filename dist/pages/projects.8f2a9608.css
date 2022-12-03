@@ -143,7 +143,7 @@
   border-radius: 3px;
   font-weight: 500;
   line-height: 1.5rem;
-  transition: all .1s;
+  transition: background-color .1s;
   position: absolute;
   top: 0;
   right: 0;
@@ -151,7 +151,7 @@
 
 .close-button:hover {
   background-color: #f55;
-  transition: all .1s;
+  transition: background-color .1s;
 }
 
 .modal-header {

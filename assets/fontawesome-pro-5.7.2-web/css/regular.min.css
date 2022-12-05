@@ -2,7 +2,7 @@
   font-family: 'Font Awesome 5 Pro';
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: block;
   src: url(../webfonts/fa-regular-400.eot);
   src: url(../webfonts/fa-regular-400.eot?#iefix) format('embedded-opentype'),
     url(../webfonts/fa-regular-400.woff2) format('woff2'),

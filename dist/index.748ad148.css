@@ -161,7 +161,10 @@ a {
   background-position: left 0% bottom -5%;
   background-repeat: repeat-x;
   background-size: 100% 12%;
-  transition: all .2s ease-out;
+}
+
+.link:hover {
+  transition: background-position .2s ease-out;
 }
 
 .menu-link a, .link {

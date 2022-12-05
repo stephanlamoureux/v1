@@ -1,9 +1,9 @@
-import gtag, { install } from 'ga-gtag'
+// import gtag, { install } from 'ga-gtag'
 import darkArrow from '/assets/images/icons/light-arrow.webp'
 import lightArrow from '/assets/images/icons/dark-arrow.webp'
 
 // Google Analytics
-install('G-YYTQ7PKV12')
+// install('G-YYTQ7PKV12')
 
 // Light Mode
 const checkboxes = document.querySelectorAll('.checkbox')

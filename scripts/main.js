@@ -1,7 +1,7 @@
-import gtag, { install } from 'ga-gtag'
+// import gtag, { install } from 'ga-gtag'
 
 // Google Analytics
-install('G-YYTQ7PKV12')
+// install('G-YYTQ7PKV12')
 
 // Light Mode
 const checkboxes = document.querySelectorAll('.checkbox')

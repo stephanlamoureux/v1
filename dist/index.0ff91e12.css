@@ -144,7 +144,7 @@
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: normal;
-  font-display: auto;
+  font-display: block;
   src: url("fa-brands-400.bc49868f.eot");
   src: url("fa-brands-400.bc49868f.eot#iefix") format("embedded-opentype"), url("fa-brands-400.e041a0e2.woff2") format("woff2"), url("fa-brands-400.7761876d.woff") format("woff"), url("fa-brands-400.f7aa1294.ttf") format("truetype"), url("fa-brands-400.66fa14e6.svg#fontawesome") format("svg");
 }
@@ -157,7 +157,7 @@
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 300;
-  font-display: auto;
+  font-display: block;
   src: url("fa-light-300.65aaa5a4.eot");
   src: url("fa-light-300.65aaa5a4.eot#iefix") format("embedded-opentype"), url("fa-light-300.74f898a6.woff2") format("woff2"), url("fa-light-300.67e73d02.woff") format("woff"), url("fa-light-300.ddcd717b.ttf") format("truetype"), url("fa-light-300.7189dd43.svg#fontawesome") format("svg");
 }
@@ -171,7 +171,7 @@
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
+  font-display: block;
   src: url("fa-regular-400.db16e02b.eot");
   src: url("fa-regular-400.db16e02b.eot#iefix") format("embedded-opentype"), url("fa-regular-400.df3c05a0.woff2") format("woff2"), url("fa-regular-400.397a5798.woff") format("woff"), url("fa-regular-400.e56155e8.ttf") format("truetype"), url("fa-regular-400.d113af60.svg#fontawesome") format("svg");
 }
@@ -185,7 +185,7 @@
   font-family: "Font Awesome 5 Pro";
   font-style: normal;
   font-weight: 900;
-  font-display: auto;
+  font-display: block;
   src: url("fa-solid-900.c9230b40.eot");
   src: url("fa-solid-900.c9230b40.eot#iefix") format("embedded-opentype"), url("fa-solid-900.dd902cee.woff2") format("woff2"), url("fa-solid-900.7fffb548.woff") format("woff"), url("fa-solid-900.8ad376bd.ttf") format("truetype"), url("fa-solid-900.050f0709.svg#fontawesome") format("svg");
 }

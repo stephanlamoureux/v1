@@ -1,24 +1,24 @@
-!function(a1, b) {
+!function(a, b) {
     "use strict";
-    "object" == typeof module && "object" == typeof module.exports ? module.exports = a1.document ? b(a1, !0) : function(a) {
+    "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
         if (!a.document) throw new Error("AniJS-RWWD");
         return b(a);
-    } : b(a1);
-}("undefined" != typeof window ? window : this, function(a2, b1) {
-    var c1 = function(b2) {
-        var c2 = "data-anijs", d1 = "default", e1 = "|", f1 = "$", g1 = "if", h1 = "on", i1 = [
+    } : b(a);
+}("undefined" != typeof window ? window : this, function(a, b) {
+    var c = function(b) {
+        var c = "data-anijs", d = "default", e = "|", f = "$", g = "if", h = "on", i = [
             "do",
             "after",
             "before",
             "to"
-        ], j1 = "(\\s+|^)", k1 = "(\\s+|$)", l1 = "animationend", m = "transitionend", n = "target";
-        b2 = {
+        ], j = "(\\s+|^)", k = "(\\s+|$)", l = "animationend", m = "transitionend", n = "target";
+        b = {
             rootDOMTravelScope: {},
             notifierCollection: {},
             init: function() {
                 o._t = {};
                 var a = o._a();
-                b2.registerHelper(d1, a), o._u = d1, b2.rootDOMTravelScope = document, b2.Parser = o.Parser, o._v = o._p(), o._w = "";
+                b.registerHelper(d, a), o._u = d, b.rootDOMTravelScope = document, b.Parser = o.Parser, o._v = o._p(), o._w = "";
             },
             setDOMRootTravelScope: function(a) {
                 var c, d = document;
@@ -27,14 +27,14 @@
                 } catch (e) {
                     c = d;
                 }
-                b2.rootDOMTravelScope = c;
+                b.rootDOMTravelScope = c;
             },
             run: function() {
                 var a = [], d = {};
-                b2.purgeAll(), b2.notifierCollection = {}, a = o._o(b2.rootDOMTravelScope);
+                b.purgeAll(), b.notifierCollection = {}, a = o._o(b.rootDOMTravelScope);
                 var e, f = a.length, g = 0;
-                for(g; f > g; g++)e = a[g], d = o._n(e.getAttribute(c2)), o._c(e, d);
-                var h = b2.getNotifier("AniJSNotifier");
+                for(g; f > g; g++)e = a[g], d = o._n(e.getAttribute(c)), o._c(e, d);
+                var h = b.getNotifier("AniJSNotifier");
                 h && h.dispatchEvent("onRunFinished");
             },
             createAnimation: function(a, b) {
@@ -43,7 +43,7 @@
             },
             getHelper: function(a) {
                 var b = o._t;
-                return b[a] || b[d1];
+                return b[a] || b[d];
             },
             registerHelper: function(a, b) {
                 o._t[a] = b;
@@ -51,32 +51,32 @@
             purge: function(a) {
                 if (a && "" !== a && " " !== a) {
                     var c = document.querySelectorAll(a), d = c.length, e = 0;
-                    for(e; d > e; e++)b2.EventSystem.purgeEventTarget(c[e]);
+                    for(e; d > e; e++)b.EventSystem.purgeEventTarget(c[e]);
                 }
             },
             purgeAll: function() {
-                b2.EventSystem.purgeAll();
+                b.EventSystem.purgeAll();
             },
             purgeEventTarget: function(a) {
-                b2.EventSystem.purgeEventTarget(a);
+                b.EventSystem.purgeEventTarget(a);
             },
             setClassNamesWhenAnim: function(a) {
                 o._w = " " + a;
             },
             createNotifier: function() {
-                return b2.EventSystem.createEventTarget();
+                return b.EventSystem.createEventTarget();
             },
             registerNotifier: function(a) {
-                var c = b2.notifierCollection;
-                return a.id && a.value && b2.EventSystem.isEventTarget(a.value) ? (c[a.id] = a.value, 1) : "";
+                var c = b.notifierCollection;
+                return a.id && a.value && b.EventSystem.isEventTarget(a.value) ? (c[a.id] = a.value, 1) : "";
             },
             getNotifier: function(a) {
-                return b2.notifierCollection[a];
+                return b.notifierCollection[a];
             }
         };
         var o = {};
         return o._a = function() {
-            var a3 = {
+            var a = {
                 removeAnim: function(a, b) {
                     a.target && a.type && b.nodeHelper.removeClass(a.target, b.behavior);
                 },
@@ -88,23 +88,23 @@
                     var e = d[0] || null, f = "";
                     if (null !== e) {
                         e = e.split("."), e.length > 1 ? (f = e[0], e = e[1]) : (f = "", e = e[0]);
-                        var g = b2.getNotifier(f) || null;
+                        var g = b.getNotifier(f) || null;
                         null !== g && g.dispatchEvent(e);
                     }
                     c.hasRunned || c.run();
                 }
             };
-            return a3;
+            return a;
         }, o._b = function() {
             return new Parser();
         }, o._c = function(a, b) {
             var c, d, e, f, g = b.length, h = 0;
             for(h; g > h; h++)c = b[h], e = c.after, d = c.before, f = c.behavior, e && (c.after = o.Parser.parseDoDefinition(e)), d && (c.before = o.Parser.parseDoDefinition(d)), f && (c.behavior = o.Parser.parseDoDefinition(f)), o._d(a, c);
         }, o._d = function(a, c) {
-            var d, e2 = o._e(c), f2 = o._f(a, c);
-            if (c.after && o.Util._x(c.after) && (d = c.after[0]), "" !== e2) {
-                var g2, h2 = f2.length, i2 = 0;
-                for(i2; h2 > i2; i2++)if (g2 = f2[i2], b2.EventSystem.isEventTarget(g2)) {
+            var d, e = o._e(c), f = o._f(a, c);
+            if (c.after && o.Util._x(c.after) && (d = c.after[0]), "" !== e) {
+                var g, h = f.length, i = 0;
+                for(i; h > i; i++)if (g = f[i], b.EventSystem.isEventTarget(g)) {
                     var j = function(e) {
                         var f = o._g(a, c, e), g = o._h(c), h = o._j(a, c), i = o._i(a, c);
                         "" !== o._w && (o.Util._x(g) || (g += o._w));
@@ -114,33 +114,33 @@
                             animationEndEvent: o._v,
                             behavior: g,
                             after: i,
-                            eventSystem: b2.EventSystem,
+                            eventSystem: b.EventSystem,
                             eventTarget: e.currentTarget,
                             afterFunctionName: d,
                             dataAniJSOwner: a,
                             listener: j,
                             event: e,
                             before: h
-                        }, l = new b2.AnimationContext(k);
+                        }, l = new b.AnimationContext(k);
                         l.runAll(k);
                     };
-                    b2.EventSystem.addEventListenerHelper(g2, e2, j, !1), b2.EventSystem.registerEventHandle(g2, e2, j);
+                    b.EventSystem.addEventListenerHelper(g, e, j, !1), b.EventSystem.registerEventHandle(g, e, j);
                 }
             }
         }, o._e = function(a) {
             var b = "", c = a.event || b;
-            return c === l1 ? c = o._p() : c === m && (c = o._q()), c;
+            return c === l ? c = o._p() : c === m && (c = o._q()), c;
         }, o._f = function(c, d) {
             var e, f = c, g = [
                 f
-            ], h = b2.rootDOMTravelScope;
+            ], h = b.rootDOMTravelScope;
             if (d.eventTarget) {
                 if (e = o._notifierHelper(d.eventTarget), e.length > 0) g = e;
                 else if ("document" === d.eventTarget) g = [
                     document
                 ];
                 else if ("window" === d.eventTarget) g = [
-                    a2
+                    a
                 ];
                 else if (d.eventTarget.split) try {
                     g = h.querySelectorAll(d.eventTarget);
@@ -152,7 +152,7 @@
         }, o._g = function(a, c, d) {
             var e = a, g = [
                 e
-            ], h = b2.rootDOMTravelScope, i = c.behaviorTarget;
+            ], h = b.rootDOMTravelScope, i = c.behaviorTarget;
             if (i) {
                 if (o.Util._x(i)) {
                     var j = this._y(a, c, i);
@@ -163,7 +163,7 @@
                     d.currentTarget
                 ];
                 else {
-                    i = i.split(f1).join(",");
+                    i = i.split(f).join(",");
                     try {
                         g = h.querySelectorAll(i);
                     } catch (k) {
@@ -195,16 +195,16 @@
             return b;
         }, o._notifierHelper = function(a) {
             var c = [];
-            b2.notifierCollection;
+            b.notifierCollection;
             if (a) {
-                if (a.id && b2.EventSystem.isEventTarget(a.value)) c.push(a.value), b2.registerNotifier(a);
+                if (a.id && b.EventSystem.isEventTarget(a.value)) c.push(a.value), b.registerNotifier(a);
                 else if (a.split) {
                     notifierIDList = a.split("$");
                     var d, e = notifierIDList.length, f = 1;
                     for(f; e > f; f++)if (d = notifierIDList[f], d && " " !== d) {
                         d = d.trim();
-                        var g = b2.getNotifier(d);
-                        g || (g = b2.EventSystem.createEventTarget(), b2.registerNotifier({
+                        var g = b.getNotifier(d);
+                        g || (g = b.EventSystem.createEventTarget(), b.registerNotifier({
                             id: d,
                             value: g
                         })), c.push(g);
@@ -218,13 +218,13 @@
         }, o._n = function(a) {
             return o.Parser.parse(a);
         }, o._o = function(a) {
-            var b = "[" + c2 + "]";
+            var b = "[" + c + "]";
             return a.querySelectorAll(b);
         }, o._p = function() {
             var a = o._r(), b = [
-                l1,
+                l,
                 "oAnimationEnd",
-                l1,
+                l,
                 "webkitAnimationEnd"
             ];
             return b[a];
@@ -243,15 +243,15 @@
                 "Moz" + b,
                 "webkit" + b
             ], d = 0; d < c.length; d++)if (void 0 !== a.style[c[d]]) return d;
-        }, b2.AnimationContext = function(a4) {
+        }, b.AnimationContext = function(a) {
             var c = this;
             c.init = function(a) {
                 c.behaviorTargetList = a.behaviorTargetList || [], c.nodeHelper = a.nodeHelper, c.animationEndEvent = a.animationEndEvent, c.behavior = a.behavior, c.after = a.after, c.eventSystem = a.eventSystem, c.eventTarget = a.eventTarget, c.afterFunctionName = a.afterFunctionName, c.dataAniJSOwner = a.dataAniJSOwner, c.listener = a.listener, c.event = a.event, c.before = a.before;
-            }, c.doDefaultAction = function(a5, b) {
+            }, c.doDefaultAction = function(a, b) {
                 var d, e = c, f = e.nodeHelper, g = e.animationEndEvent, h = e.after, i = e.afterFunctionName;
-                e.eventSystem.addEventListenerHelper(a5, g, function(a) {
+                e.eventSystem.addEventListenerHelper(a, g, function(a) {
                     a.stopPropagation(), e.eventSystem.removeEventListenerHelper(a.target, a.type, arguments.callee), h && (o.Util.isFunction(h) ? h(a, c) : o.Util._x(h) && h[0](a, c, o._z(h)));
-                }), "holdAnimClass" !== i && "$holdAnimClass" !== i && (d = a5._ajLastBehavior, d && f.removeClass(a5, d), a5._ajLastBehavior = b), a5.offsetWidth = a5.offsetWidth, f.addClass(a5, b);
+                }), "holdAnimClass" !== i && "$holdAnimClass" !== i && (d = a._ajLastBehavior, d && f.removeClass(a, d), a._ajLastBehavior = b), a.offsetWidth = a.offsetWidth, f.addClass(a, b);
             }, c.doFunctionAction = function(a, b) {
                 var d = c, e = d.after, f = {
                     target: a
@@ -273,11 +273,11 @@
                     dataAniJSOwner: c.dataAniJSOwner,
                     listener: c.listener,
                     event: j
-                }, a = new b2.AnimationContext(d), i ? o.Util.isFunction(i) ? i(j, a) : o.Util._x(i) && i[0](j, a, o._z(i)) : a.run();
+                }, a = new b.AnimationContext(d), i ? o.Util.isFunction(i) ? i(j, a) : o.Util._x(i) && i[0](j, a, o._z(i)) : a.run();
             }, c.run = function() {
                 var a = c, b = a.behavior, d = a.behaviorTargetList[0];
                 c.hasRunned = 1, o.Util._x(b) ? a.doFunctionAction(d, b) : a.doDefaultAction(d, b);
-            }, c.init(a4);
+            }, c.init(a);
         }, o.Parser = {
             parse: function(a) {
                 return this.parseDeclaration(a);
@@ -304,9 +304,9 @@
                     "behaviorTarget"
                 ];
                 if (b = a.split(":"), b.length > 1) {
-                    if (c = b[0].trim(), b.length > 2 ? (d = b.slice(1), d = d.join(":"), d = d.trim()) : d = b[1].trim(), e.value = d, c === g1) c = f;
-                    else if (c === h1) c = j;
-                    else for(var l = i1.length - 1; l >= 0; l--)c === i1[l] && (c = k[l], "after" !== c && "before" !== c || "$" === d[0] || (d = "$" + d), d = this.parseDoDefinition(d));
+                    if (c = b[0].trim(), b.length > 2 ? (d = b.slice(1), d = d.join(":"), d = d.trim()) : d = b[1].trim(), e.value = d, c === g) c = f;
+                    else if (c === h) c = j;
+                    else for(var l = i.length - 1; l >= 0; l--)c === i[l] && (c = k[l], "after" !== c && "before" !== c || "$" === d[0] || (d = "$" + d), d = this.parseDoDefinition(d));
                     e.key = c, e.value = d;
                 }
                 return e;
@@ -314,7 +314,7 @@
             parseDoDefinition: function(a) {
                 var b = /^\$(\w+)\s*/g, c = b.exec(a), d = "", f = 1;
                 if (null !== c) {
-                    d = c[1], doDefinitionArray = a.split(c[0])[1], doDefinitionArray = null !== doDefinitionArray ? doDefinitionArray.split(e1) : [], a = [], a[0] = d;
+                    d = c[1], doDefinitionArray = a.split(c[0])[1], doDefinitionArray = null !== doDefinitionArray ? doDefinitionArray.split(e) : [], a = [], a[0] = d;
                     for(var g = 0; g < doDefinitionArray.length; g++)"" !== doDefinitionArray[g] && (a[f++] = doDefinitionArray[g].trim());
                     return a;
                 }
@@ -323,14 +323,14 @@
         }, o.NodeHelper = {
             addClass: function(a, b) {
                 b instanceof Array || (b = b.split(" "));
-                for(var c = 0, d = b.length; d > c; ++c)b[c] && !new RegExp(j1 + b[c] + k1).test(a.className) && (a.className = "" === a.className ? b[c] : a.className.trim() + " " + b[c]);
+                for(var c = 0, d = b.length; d > c; ++c)b[c] && !new RegExp(j + b[c] + k).test(a.className) && (a.className = "" === a.className ? b[c] : a.className.trim() + " " + b[c]);
             },
             removeClass: function(a, b) {
                 b instanceof Array || (b = b.split(" "));
-                for(var c = 0, d = b.length; d > c; ++c)a.className = a.className.replace(new RegExp(j1 + b[c] + k1), " ").trim();
+                for(var c = 0, d = b.length; d > c; ++c)a.className = a.className.replace(new RegExp(j + b[c] + k), " ").trim();
             },
             hasClass: function(a, b) {
-                return b && new RegExp(j1 + b + k1).test(a.className);
+                return b && new RegExp(j + b + k).test(a.className);
             }
         }, o.Util = {
             isFunction: function(a) {
@@ -339,14 +339,14 @@
             _x: function(a) {
                 return Array.isArray(a);
             }
-        }, b2.EventSystem = {
+        }, b.EventSystem = {
             eventCollection: {},
             eventIdCounter: 0,
             isEventTarget: function(a) {
                 return a.addEventListener ? 1 : 0;
             },
             createEventTarget: function() {
-                return new b2.EventTarget();
+                return new b.EventTarget();
             },
             addEventListenerHelper: function(a, b, c) {
                 a.addEventListener(b, c, !1);
@@ -388,10 +388,10 @@
                     f[++d.eventIdCounter] = h, a._aniJSEventID = d.eventIdCounter;
                 }
             }
-        }, b2.EventTarget = function() {
+        }, b.EventTarget = function() {
             this._listeners = {};
-        }, b2.EventTarget.prototype = {
-            constructor: b2.EventTarget,
+        }, b.EventTarget.prototype = {
+            constructor: b.EventTarget,
             addEventListener: function(a, b) {
                 var c = this;
                 "undefined" == typeof c._listeners[a] && (c._listeners[a] = []), c._listeners[a].push(b);
@@ -412,11 +412,11 @@
                     }
                 }
             }
-        }, b2;
-    }(c1 || {});
-    return c1.init(), c1.run(), "function" == typeof define && define.amd && define("anijs", [], function() {
-        return c1;
-    }), "undefined" == typeof b1 && (a2.AniJS = c1), c1;
+        }, b;
+    }(c || {});
+    return c.init(), c.run(), "function" == typeof define && define.amd && define("anijs", [], function() {
+        return c;
+    }), "undefined" == typeof b && (a.AniJS = c), c;
 });
 
-//# sourceMappingURL=contact.c223c5fd.js.map
+//# sourceMappingURL=index.c223c5fd.js.map

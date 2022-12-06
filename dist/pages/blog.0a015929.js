@@ -143,13 +143,13 @@
     }
   }
 })({"lKg3l":[function(require,module,exports) {
-"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "6acd487f0a015929";
+"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] \u2728 Error resolved");
+        console.log("[parcel] ✨ Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id1) {
+function hmrDelete(bundle, id) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id1]) {
+    if (modules[id]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id1][1];
+        let deps = modules[id][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id1];
-        delete bundle.cache[id1]; // Now delete the orphans.
+        delete modules[id];
+        delete bundle.cache[id]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -540,7 +540,7 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
         "A Frontend Fanatic.",
         "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
         "^2000 The Duke of Dark Mode.",
-        "^2000 An Over-Caffeinated Coder.", 
+        "^2000 An Over-Caffeinated Coder."
     ],
     typeSpeed: 70,
     loop: true,
@@ -569,17 +569,17 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
             /******/ /******/ // Check if module is in cache
             /******/ if (installedModules[moduleId]) /******/ return installedModules[moduleId].exports;
             /******/ /******/ // Create a new module (and put it into the cache)
-            /******/ var module = installedModules[moduleId] = {
+            /******/ var module1 = installedModules[moduleId] = {
                 /******/ exports: {},
                 /******/ id: moduleId,
                 /******/ loaded: false
             };
             /******/ /******/ // Execute the module function
-            /******/ modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+            /******/ modules[moduleId].call(module1.exports, module1, module1.exports, __webpack_require__);
             /******/ /******/ // Flag the module as loaded
-            /******/ module.loaded = true;
+            /******/ module1.loaded = true;
             /******/ /******/ // Return the exports of the module
-            /******/ return module.exports;
+            /******/ return module1.exports;
         /******/ }
         /******/ /******/ /******/ // expose the modules object (__webpack_modules__)
         /******/ __webpack_require__.m = modules;
@@ -590,7 +590,7 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
         /******/ /******/ // Load entry module and return exports
         /******/ return __webpack_require__(0);
     /******/ }([
-        /* 0 */ /***/ function(module, exports, __webpack_require__) {
+        /* 0 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             Object.defineProperty(exports, "__esModule", {
                 value: true
@@ -621,7 +621,7 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
 	 * @param {string} elementId HTML element ID _OR_ HTML element
 	 * @param {object} options options object
 	 * @returns {object} a new Typed object
-	 */ var Typed1 = function() {
+	 */ var Typed = function() {
                 function Typed(elementId, options) {
                     _classCallCheck(this, Typed);
                     // Initialize it up
@@ -954,10 +954,10 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
                 ]);
                 return Typed;
             }();
-            exports["default"] = Typed1;
-            module.exports = exports["default"];
+            exports["default"] = Typed;
+            module1.exports = exports["default"];
         /***/ },
-        /* 1 */ /***/ function(module, exports, __webpack_require__) {
+        /* 1 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             Object.defineProperty(exports, "__esModule", {
                 value: true
@@ -997,7 +997,7 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
             var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
             /**
 	 * Initialize the Typed object
-	 */ var Initializer1 = function() {
+	 */ var Initializer = function() {
                 function Initializer() {
                     _classCallCheck(this, Initializer);
                 }
@@ -1124,11 +1124,11 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
                 ]);
                 return Initializer;
             }();
-            exports["default"] = Initializer1;
-            var initializer = new Initializer1();
+            exports["default"] = Initializer;
+            var initializer = new Initializer();
             exports.initializer = initializer;
         /***/ },
-        /* 2 */ /***/ function(module, exports) {
+        /* 2 */ /***/ function(module1, exports) {
             /**
 	 * Defaults & options
 	 * @returns {object} Typed defaults & options
@@ -1247,9 +1247,9 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
 	   */ onDestroy: function onDestroy(self) {}
             };
             exports["default"] = defaults;
-            module.exports = exports["default"];
+            module1.exports = exports["default"];
         /***/ },
-        /* 3 */ /***/ function(module, exports) {
+        /* 3 */ /***/ function(module1, exports) {
             /**
 	 * TODO: These methods can probably be combined somehow
 	 * Parse HTML tags & HTML Characters
@@ -1276,7 +1276,7 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
             function _classCallCheck(instance, Constructor) {
                 if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
             }
-            var HTMLParser1 = function() {
+            var HTMLParser = function() {
                 function HTMLParser() {
                     _classCallCheck(this, HTMLParser);
                 }
@@ -1327,8 +1327,8 @@ const typed2 = new (0, _typedJsDefault.default)("#typed2", {
                 ]);
                 return HTMLParser;
             }();
-            exports["default"] = HTMLParser1;
-            var htmlParser = new HTMLParser1();
+            exports["default"] = HTMLParser;
+            var htmlParser = new HTMLParser();
             exports.htmlParser = htmlParser;
         /***/ }
     ]);
@@ -1366,4 +1366,4 @@ exports.export = function(dest, destName, get) {
 
 },{}]},["lKg3l","kdBVb"], "kdBVb", "parcelRequire390d")
 
-//# sourceMappingURL=contact.0a015929.js.map
+//# sourceMappingURL=blog.0a015929.js.map

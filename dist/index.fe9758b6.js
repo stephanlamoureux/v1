@@ -143,13 +143,13 @@
     }
   }
 })({"4OtMd":[function(require,module,exports) {
-"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "61bc9cb1fe9758b6";
+"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] \u2728 Error resolved");
+        console.log("[parcel] ✨ Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id1) {
+function hmrDelete(bundle, id) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id1]) {
+    if (modules[id]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id1][1];
+        let deps = modules[id][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id1];
-        delete bundle.cache[id1]; // Now delete the orphans.
+        delete modules[id];
+        delete bundle.cache[id]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -532,8 +532,8 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"vBRuM":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 // import gtag, { install } from 'ga-gtag'
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _lightArrowWebp = require("/assets/images/icons/light-arrow.webp");
 var _lightArrowWebpDefault = parcelHelpers.interopDefault(_lightArrowWebp);
 var _darkArrowWebp = require("/assets/images/icons/dark-arrow.webp");
@@ -628,37 +628,7 @@ navbar.addEventListener("change", (event)=>{
     }
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"in2Mf":[function(require,module,exports) {
+},{"/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"in2Mf":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "light-arrow.c31e494d.webp" + "?" + Date.now();
 
 },{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -698,6 +668,36 @@ exports.getOrigin = getOrigin;
 },{}],"1c2XC":[function(require,module,exports) {
 module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "dark-arrow.078a00d9.webp" + "?" + Date.now();
 
-},{"./helpers/bundle-url":"lgJ39"}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
+},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
 
 //# sourceMappingURL=index.fe9758b6.js.map

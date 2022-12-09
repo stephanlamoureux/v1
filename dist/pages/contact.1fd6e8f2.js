@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"4OtMd":[function(require,module,exports) {
+})({"dipOn":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "61bc9cb1fe9758b6";
+module.bundle.HMR_BUNDLE_ID = "e7ffd4061fd6e8f2";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,19 +531,13 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"vBRuM":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+},{}],"8VGZO":[function(require,module,exports) {
 // import gtag, { install } from 'ga-gtag'
-var _lightArrowWebp = require("/assets/images/icons/light-arrow.webp");
-var _lightArrowWebpDefault = parcelHelpers.interopDefault(_lightArrowWebp);
-var _darkArrowWebp = require("/assets/images/icons/dark-arrow.webp");
-var _darkArrowWebpDefault = parcelHelpers.interopDefault(_darkArrowWebp);
 // Google Analytics
 // install('G-YYTQ7PKV12')
 // Light Mode
 const checkboxes = document.querySelectorAll(".checkbox");
 const balls = document.querySelectorAll(".ball");
-const downArrow = document.querySelector(".scribble-image");
 const root = document.querySelector(":root");
 /*
 Event listeners for the toggle switches on the desktop nav and mobile nav.
@@ -565,7 +559,6 @@ When the toggle is unchecked:
             balls.forEach((ball)=>{
                 ball.style.transform = "translateX(-24px)";
             });
-            downArrow.src = (0, _darkArrowWebpDefault.default);
             root.style.setProperty("color-scheme", "light");
         } else {
             localStorage.setItem("lightMode", "disabled");
@@ -573,7 +566,6 @@ When the toggle is unchecked:
                 ball.style.transition = "transform 0.2s linear";
                 ball.style.transform = "translateX(0px)";
             });
-            downArrow.src = (0, _lightArrowWebpDefault.default);
             root.style.setProperty("color-scheme", "dark");
         }
     });
@@ -585,13 +577,11 @@ When the toggle is unchecked:
             ball.style.transition = "none";
             ball.style.transform = "translateX(-24px)";
         });
-        downArrow.src = (0, _darkArrowWebpDefault.default);
         root.style.setProperty("color-scheme", "light");
     } else {
         balls.forEach((ball)=>{
             ball.style.transform = "translateX(0px)";
         });
-        downArrow.src = (0, _lightArrowWebpDefault.default);
         root.style.setProperty("color-scheme", "dark");
     }
 });
@@ -628,76 +618,6 @@ navbar.addEventListener("change", (event)=>{
     }
 });
 
-},{"/assets/images/icons/light-arrow.webp":"in2Mf","/assets/images/icons/dark-arrow.webp":"1c2XC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"in2Mf":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "light-arrow.c31e494d.webp" + "?" + Date.now();
+},{}]},["dipOn","8VGZO"], "8VGZO", "parcelRequire390d")
 
-},{"./helpers/bundle-url":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"1c2XC":[function(require,module,exports) {
-module.exports = require("./helpers/bundle-url").getBundleURL("8ofwY") + "dark-arrow.078a00d9.webp" + "?" + Date.now();
-
-},{"./helpers/bundle-url":"lgJ39"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["4OtMd","vBRuM"], "vBRuM", "parcelRequire390d")
-
-//# sourceMappingURL=index.fe9758b6.js.map
+//# sourceMappingURL=contact.1fd6e8f2.js.map

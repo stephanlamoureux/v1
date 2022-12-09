@@ -180,7 +180,6 @@
   }
 
   header {
-    -webkit-backdrop-filter: blur(20px) saturate(180%);
     backdrop-filter: blur(20px) saturate(180%);
     width: 100%;
     z-index: 998;
@@ -390,8 +389,8 @@
     color: #000;
     width: 100%;
     text-shadow: none;
-    border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin-top: 5px;
     padding: 1rem 0;
     font-size: 1.3rem;
@@ -410,8 +409,8 @@
   .project-tile:hover .project-image {
     opacity: 1;
     box-shadow: 0 0 2px 1px var(--dracula-foreground);
-    border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     transition: none;
   }
 
@@ -936,7 +935,9 @@
     text-align: left;
     font-size: 1rem;
   }
+}
 
+@media (max-width: 530px) {
   .contact .subheader {
     width: 98%;
   }

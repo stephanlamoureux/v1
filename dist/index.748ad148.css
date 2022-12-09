@@ -56,7 +56,7 @@ body {
 }
 
 main {
-  animation: .3s fadeInAnimation;
+  animation: fadeInAnimation .3s;
 }
 
 @keyframes fadeInAnimation {
@@ -112,7 +112,6 @@ a {
 }
 
 .nav-desktop {
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   width: 100%;
   z-index: 200;
@@ -120,7 +119,7 @@ a {
   border-radius: 0 0 10px 10px;
   margin: 0 auto;
   padding: 1.2rem 0;
-  animation: .3s fadeInAnimation;
+  animation: fadeInAnimation .3s;
   position: fixed;
   top: 0;
   overflow: hidden;
@@ -247,7 +246,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 100px 0 25px;
-  animation: .3s fadeInAnimation;
+  animation: fadeInAnimation .3s;
   display: flex;
 }
 
@@ -260,9 +259,8 @@ header {
 
 .header-gradient {
   background-color: var(--dracula-purple);
-  -webkit-background-clip: text;
   background-clip: text;
-  background-image: linear-gradient(45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink));
+  background-image: linear-gradient( 45deg, var(--dracula-purple), var(--dracula-cyan), var(--dracula-pink) );
   background-repeat: repeat;
   background-size: 100%;
   -webkit-background-clip: text;
@@ -310,7 +308,6 @@ header {
 .typed-gradient {
   text-shadow: 2px 3px 5px #00000080;
   background-image: linear-gradient(90deg, var(--dracula-purple) 60%, #ff79c6 100%);
-  -webkit-background-clip: text;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -349,7 +346,6 @@ header {
   width: 65%;
   text-align: center;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   box-shadow: 0 0 5px 1px var(--dracula-selection);
   background: #44475a66;
@@ -454,7 +450,7 @@ span > i {
 }
 
 .animate-beat {
-  animation: 1.3s infinite beat;
+  animation: beat 1.3s infinite;
 }
 
 @keyframes beat {

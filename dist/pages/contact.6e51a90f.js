@@ -143,13 +143,13 @@
     }
   }
 })({"aXZPJ":[function(require,module,exports) {
+"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "12fabea66e51a90f";
-"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] ✨ Error resolved");
+        console.log("[parcel] \u2728 Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id) {
+function hmrDelete(bundle, id1) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id]) {
+    if (modules[id1]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id][1];
+        let deps = modules[id1][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id];
-        delete bundle.cache[id]; // Now delete the orphans.
+        delete modules[id1];
+        delete bundle.cache[id1]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -666,7 +666,7 @@ const send = (serviceID, templateID, templatePrams, publicKey)=>{
     const uID = publicKey || (0, _store.store)._userID;
     (0, _validateParams.validateParams)(uID, serviceID, templateID);
     const params = {
-        lib_version: "3.10.0",
+        lib_version: "3.6.2",
         user_id: uID,
         service_id: serviceID,
         template_id: templateID,
@@ -719,8 +719,8 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "EmailJSResponseStatus", ()=>EmailJSResponseStatus);
 class EmailJSResponseStatus {
     constructor(httpResponse){
-        this.status = httpResponse ? httpResponse.status : 0;
-        this.text = httpResponse ? httpResponse.responseText : "Network Error";
+        this.status = httpResponse.status;
+        this.text = httpResponse.responseText;
     }
 }
 
@@ -743,7 +743,7 @@ const sendForm = (serviceID, templateID, form, publicKey)=>{
     const currentForm = findHTMLForm(form);
     (0, _validateParams.validateParams)(uID, serviceID, templateID);
     const formData = new FormData(currentForm);
-    formData.append("lib_version", "3.10.0");
+    formData.append("lib_version", "3.6.2");
     formData.append("service_id", serviceID);
     formData.append("template_id", templateID);
     formData.append("user_id", uID);

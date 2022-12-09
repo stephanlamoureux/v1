@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"iXLhr":[function(require,module,exports) {
+})({"lKg3l":[function(require,module,exports) {
 "use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "4483dacf20d81b96";
+module.bundle.HMR_BUNDLE_ID = "6acd487f0a015929";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -531,19 +531,22 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"dAQqO":[function(require,module,exports) {
+},{}],"kdBVb":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _typedJs = require("typed.js");
 var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
-const typed = new (0, _typedJsDefault.default)("#typed", {
+const typed2 = new (0, _typedJsDefault.default)("#typed2", {
     strings: [
-        "",
-        '^2000cat welcome.txt ^1400 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web.``<br> <span class="prompt">\u2192 <span class="cyan-term">v1</span> <span class="purple-term">git:</span><span class="purple-term">(</span><span class="red-term">main</span><span class="purple-term">)</span></span>&nbsp;`', 
+        "A Frontend Fanatic.",
+        "^2000 The <span class='typed-gradient'>Gradient</span> Gangsta.",
+        "^2000 The Duke of Dark Mode.",
+        "^2000 An Over-Caffeinated Coder.", 
     ],
     typeSpeed: 70,
-    loop: false,
-    startDelay: 0,
-    cursorChar: "&#x258c;"
+    loop: true,
+    startDelay: 1000,
+    backDelay: 3000,
+    backSpeed: 50
 });
 
 },{"typed.js":"4hQNd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4hQNd":[function(require,module,exports) {
@@ -1361,6 +1364,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["iXLhr","dAQqO"], "dAQqO", "parcelRequire390d")
+},{}]},["lKg3l","kdBVb"], "kdBVb", "parcelRequire390d")
 
-//# sourceMappingURL=index.20d81b96.js.map
+//# sourceMappingURL=contact.0a015929.js.map

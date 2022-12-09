@@ -1,5 +1,4 @@
 .tui-pagination * {
-  -webkit-user-select: none;
   user-select: none;
 }
 

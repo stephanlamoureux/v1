@@ -309,31 +309,6 @@
 	shape-outside: circle();
 }
 
-.vwc {
-	color: var(--dracula-foreground);
-	background-repeat: repeat-x;
-	background-position: left 0% bottom -5%;
-	background-image: linear-gradient(
-		90deg,
-		rgba(43, 45, 61, 0.6) 0%,
-		rgba(139, 233, 253, 0.7) 50%,
-		rgba(189, 147, 249, 0.8) 100%
-	);
-	background-size: 100% 12%;
-	padding-bottom: 5px;
-	letter-spacing: initial;
-}
-
-.vwc:hover {
-	color: var(--dracula-foreground);
-}
-
-.vwc::selection {
-	color: var(--dracula-background);
-	background-color: var(--dracula-green);
-	text-shadow: none;
-}
-
 .scribble-header {
 	font-family: 'Caveat', cursive;
 	font-size: 2.2rem;

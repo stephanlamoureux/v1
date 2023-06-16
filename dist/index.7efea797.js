@@ -143,13 +143,13 @@
     }
   }
 })({"1uCsm":[function(require,module,exports) {
-"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "b2b2939b7efea797";
+"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] \u2728 Error resolved");
+        console.log("[parcel] ✨ Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id1) {
+function hmrDelete(bundle, id) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id1]) {
+    if (modules[id]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id1][1];
+        let deps = modules[id][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id1];
-        delete bundle.cache[id1]; // Now delete the orphans.
+        delete modules[id];
+        delete bundle.cache[id]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -557,7 +557,11 @@ var _svgArrowCss = require("tippy.js/dist/svg-arrow.css");
 });
 
 },{"tippy.js":"ccpCS","tippy.js/dist/tippy.css":"2hEyg","tippy.js/animations/scale-extreme.css":"fYEd8","tippy.js/dist/border.css":"lIqzD","tippy.js/dist/svg-arrow.css":"9LNWv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ccpCS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+/**!
+* tippy.js v6.3.7
+* (c) 2017-2021 atomiks
+* MIT License
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "animateFill", ()=>animateFill);
 parcelHelpers.export(exports, "createSingleton", ()=>createSingleton);
@@ -567,11 +571,7 @@ parcelHelpers.export(exports, "hideAll", ()=>hideAll);
 parcelHelpers.export(exports, "inlinePositioning", ()=>inlinePositioning);
 parcelHelpers.export(exports, "roundArrow", ()=>ROUND_ARROW);
 parcelHelpers.export(exports, "sticky", ()=>sticky);
-/**!
-* tippy.js v6.3.7
-* (c) 2017-2021 atomiks
-* MIT License
-*/ var _core = require("@popperjs/core");
+var _core = require("@popperjs/core");
 var ROUND_ARROW = '<svg width="16" height="6" xmlns="http://www.w3.org/2000/svg"><path d="M0 6s1.796-.013 4.67-3.615C5.851.9 6.93.006 8 0c1.07-.006 2.148.887 3.343 2.385C14.233 6.005 16 6 16 6H0z"></svg>';
 var BOX_CLASS = "tippy-box";
 var CONTENT_CLASS = "tippy-content";
@@ -787,7 +787,7 @@ function clean(value) {
     return value.replace(spacesAndTabs, " ").replace(lineStartWithSpaces, "").trim();
 }
 function getDevMessage(message) {
-    return clean("\n  %ctippy.js\n\n  %c" + clean(message) + "\n\n  %c\uD83D\uDC77\u200D This is a development-only message. It will be removed in production.\n  ");
+    return clean("\n  %ctippy.js\n\n  %c" + clean(message) + "\n\n  %c\uD83D\uDC77‍ This is a development-only message. It will be removed in production.\n  ");
 }
 function getFormattedMessage(message) {
     return [
@@ -900,7 +900,7 @@ var setDefaultProps = function setDefaultProps(partialProps) {
 };
 function getExtendedPassedProps(passedProps) {
     var plugins = passedProps.plugins || [];
-    var pluginProps1 = plugins.reduce(function(acc, plugin) {
+    var pluginProps = plugins.reduce(function(acc, plugin) {
         var name = plugin.name, defaultValue = plugin.defaultValue;
         if (name) {
             var _name;
@@ -908,7 +908,7 @@ function getExtendedPassedProps(passedProps) {
         }
         return acc;
     }, {});
-    return Object.assign({}, passedProps, pluginProps1);
+    return Object.assign({}, passedProps, pluginProps);
 }
 function getDataAttributeProps(reference, plugins) {
     var propKeys = plugins ? Object.keys(getExtendedPassedProps(Object.assign({}, defaultProps, {
@@ -1003,16 +1003,16 @@ function getChildren(popper) {
 }
 function render(instance) {
     var popper = div();
-    var box1 = div();
-    box1.className = BOX_CLASS;
-    box1.setAttribute("data-state", "hidden");
-    box1.setAttribute("tabindex", "-1");
-    var content1 = div();
-    content1.className = CONTENT_CLASS;
-    content1.setAttribute("data-state", "hidden");
-    setContent(content1, instance.props);
-    popper.appendChild(box1);
-    box1.appendChild(content1);
+    var box = div();
+    box.className = BOX_CLASS;
+    box.setAttribute("data-state", "hidden");
+    box.setAttribute("tabindex", "-1");
+    var content = div();
+    content.className = CONTENT_CLASS;
+    content.setAttribute("data-state", "hidden");
+    setContent(content, instance.props);
+    popper.appendChild(box);
+    box.appendChild(content);
     onUpdate(instance.props, instance.props);
     function onUpdate(prevProps, nextProps) {
         var _getChildren = getChildren(popper), box = _getChildren.box, content = _getChildren.content, arrow = _getChildren.arrow;
@@ -1063,10 +1063,10 @@ function createTippy(reference, passedProps) {
     var currentTarget; // ===========================================================================
     // 🔑 Public members
     // ===========================================================================
-    var id1 = idCounter++;
+    var id = idCounter++;
     var popperInstance = null;
     var plugins = unique(props.plugins);
-    var state1 = {
+    var state = {
         // Is the instance currently enabled?
         isEnabled: true,
         // Is the tippy currently showing and not transitioning out?
@@ -1078,19 +1078,19 @@ function createTippy(reference, passedProps) {
         // Has the tippy finished transitioning in?
         isShown: false
     };
-    var instance1 = {
+    var instance = {
         // properties
-        id: id1,
+        id: id,
         reference: reference,
         popper: div(),
         popperInstance: popperInstance,
         props: props,
-        state: state1,
+        state: state,
         plugins: plugins,
         // methods
         clearDelayTimeouts: clearDelayTimeouts,
         setProps: setProps,
-        setContent: setContent1,
+        setContent: setContent,
         show: show,
         hide: hide,
         hideWithInteractivity: hideWithInteractivity,
@@ -1102,40 +1102,40 @@ function createTippy(reference, passedProps) {
     // it doesn't seem to happen in the browser
     /* istanbul ignore if */ if (!props.render) {
         errorWhen(true, "render() function has not been supplied.");
-        return instance1;
+        return instance;
     } // ===========================================================================
     // Initial mutations
     // ===========================================================================
-    var _props$render = props.render(instance1), popper1 = _props$render.popper, onUpdate = _props$render.onUpdate;
-    popper1.setAttribute("data-tippy-root", "");
-    popper1.id = "tippy-" + instance1.id;
-    instance1.popper = popper1;
-    reference._tippy = instance1;
-    popper1._tippy = instance1;
+    var _props$render = props.render(instance), popper = _props$render.popper, onUpdate = _props$render.onUpdate;
+    popper.setAttribute("data-tippy-root", "");
+    popper.id = "tippy-" + instance.id;
+    instance.popper = popper;
+    reference._tippy = instance;
+    popper._tippy = instance;
     var pluginsHooks = plugins.map(function(plugin) {
-        return plugin.fn(instance1);
+        return plugin.fn(instance);
     });
     var hasAriaExpanded = reference.hasAttribute("aria-expanded");
     addListeners();
     handleAriaExpandedAttribute();
     handleStyles();
     invokeHook("onCreate", [
-        instance1
+        instance
     ]);
     if (props.showOnCreate) scheduleShow();
      // Prevent a tippy with a delay from hiding if the cursor left then returned
     // before it started hiding
-    popper1.addEventListener("mouseenter", function() {
-        if (instance1.props.interactive && instance1.state.isVisible) instance1.clearDelayTimeouts();
+    popper.addEventListener("mouseenter", function() {
+        if (instance.props.interactive && instance.state.isVisible) instance.clearDelayTimeouts();
     });
-    popper1.addEventListener("mouseleave", function() {
-        if (instance1.props.interactive && instance1.props.trigger.indexOf("mouseenter") >= 0) getDocument().addEventListener("mousemove", debouncedOnMouseMove);
+    popper.addEventListener("mouseleave", function() {
+        if (instance.props.interactive && instance.props.trigger.indexOf("mouseenter") >= 0) getDocument().addEventListener("mousemove", debouncedOnMouseMove);
     });
-    return instance1; // ===========================================================================
+    return instance; // ===========================================================================
     // 🔒 Private methods
     // ===========================================================================
     function getNormalizedTouchSettings() {
-        var touch = instance1.props.touch;
+        var touch = instance.props.touch;
         return Array.isArray(touch) ? touch : [
             touch,
             0
@@ -1147,7 +1147,7 @@ function createTippy(reference, passedProps) {
     function getIsDefaultRenderFn() {
         var _instance$props$rende;
         // @ts-ignore
-        return !!((_instance$props$rende = instance1.props.render) != null && _instance$props$rende.$$tippy);
+        return !!((_instance$props$rende = instance.props.render) != null && _instance$props$rende.$$tippy);
     }
     function getCurrentTarget() {
         return currentTarget || reference;
@@ -1157,71 +1157,52 @@ function createTippy(reference, passedProps) {
         return parent ? getOwnerDocument(parent) : document;
     }
     function getDefaultTemplateChildren() {
-        return getChildren(popper1);
+        return getChildren(popper);
     }
     function getDelay(isShow) {
         // For touch or keyboard input, force `0` delay for UX reasons
         // Also if the instance is mounted but not visible (transitioning out),
         // ignore delay
-        if (instance1.state.isMounted && !instance1.state.isVisible || currentInput.isTouch || lastTriggerEvent && lastTriggerEvent.type === "focus") {
-            return 0;
-        }
-        return getValueAtIndexOrReturn(instance1.props.delay, isShow ? 0 : 1, defaultProps.delay);
+        if (instance.state.isMounted && !instance.state.isVisible || currentInput.isTouch || lastTriggerEvent && lastTriggerEvent.type === "focus") return 0;
+        return getValueAtIndexOrReturn(instance.props.delay, isShow ? 0 : 1, defaultProps.delay);
     }
     function handleStyles(fromHide) {
-        if (fromHide === void 0) {
-            fromHide = false;
-        }
-        popper1.style.pointerEvents = instance1.props.interactive && !fromHide ? "" : "none";
-        popper1.style.zIndex = "" + instance1.props.zIndex;
+        if (fromHide === void 0) fromHide = false;
+        popper.style.pointerEvents = instance.props.interactive && !fromHide ? "" : "none";
+        popper.style.zIndex = "" + instance.props.zIndex;
     }
     function invokeHook(hook, args, shouldInvokePropsHook) {
-        if (shouldInvokePropsHook === void 0) {
-            shouldInvokePropsHook = true;
-        }
+        if (shouldInvokePropsHook === void 0) shouldInvokePropsHook = true;
         pluginsHooks.forEach(function(pluginHooks) {
-            if (pluginHooks[hook]) {
-                pluginHooks[hook].apply(pluginHooks, args);
-            }
+            if (pluginHooks[hook]) pluginHooks[hook].apply(pluginHooks, args);
         });
         if (shouldInvokePropsHook) {
             var _instance$props;
-            (_instance$props = instance1.props)[hook].apply(_instance$props, args);
+            (_instance$props = instance.props)[hook].apply(_instance$props, args);
         }
     }
     function handleAriaContentAttribute() {
-        var aria = instance1.props.aria;
-        if (!aria.content) {
-            return;
-        }
+        var aria = instance.props.aria;
+        if (!aria.content) return;
         var attr = "aria-" + aria.content;
-        var id = popper1.id;
-        var nodes = normalizeToArray(instance1.props.triggerTarget || reference);
+        var id = popper.id;
+        var nodes = normalizeToArray(instance.props.triggerTarget || reference);
         nodes.forEach(function(node) {
             var currentValue = node.getAttribute(attr);
-            if (instance1.state.isVisible) {
-                node.setAttribute(attr, currentValue ? currentValue + " " + id : id);
-            } else {
+            if (instance.state.isVisible) node.setAttribute(attr, currentValue ? currentValue + " " + id : id);
+            else {
                 var nextValue = currentValue && currentValue.replace(id, "").trim();
-                if (nextValue) {
-                    node.setAttribute(attr, nextValue);
-                } else {
-                    node.removeAttribute(attr);
-                }
+                if (nextValue) node.setAttribute(attr, nextValue);
+                else node.removeAttribute(attr);
             }
         });
     }
     function handleAriaExpandedAttribute() {
-        if (hasAriaExpanded || !instance1.props.aria.expanded) {
-            return;
-        }
-        var nodes = normalizeToArray(instance1.props.triggerTarget || reference);
+        if (hasAriaExpanded || !instance.props.aria.expanded) return;
+        var nodes = normalizeToArray(instance.props.triggerTarget || reference);
         nodes.forEach(function(node) {
-            if (instance1.props.interactive) {
-                node.setAttribute("aria-expanded", instance1.state.isVisible && node === getCurrentTarget() ? "true" : "false");
-            } else {
-                node.removeAttribute("aria-expanded");
-            }
+            if (instance.props.interactive) node.setAttribute("aria-expanded", instance.state.isVisible && node === getCurrentTarget() ? "true" : "false");
+            else node.removeAttribute("aria-expanded");
         });
     }
     function cleanupInteractiveMouseListeners() {
@@ -1233,32 +1214,23 @@ function createTippy(reference, passedProps) {
     function onDocumentPress(event) {
         // Moved finger to scroll instead of an intentional tap outside
         if (currentInput.isTouch) {
-            if (didTouchMove || event.type === "mousedown") {
-                return;
-            }
+            if (didTouchMove || event.type === "mousedown") return;
         }
         var actualTarget = event.composedPath && event.composedPath()[0] || event.target; // Clicked on interactive popper
-        if (instance1.props.interactive && actualContains(popper1, actualTarget)) {
-            return;
-        } // Clicked on the event listeners target
-        if (normalizeToArray(instance1.props.triggerTarget || reference).some(function(el) {
+        if (instance.props.interactive && actualContains(popper, actualTarget)) return;
+         // Clicked on the event listeners target
+        if (normalizeToArray(instance.props.triggerTarget || reference).some(function(el) {
             return actualContains(el, actualTarget);
         })) {
-            if (currentInput.isTouch) {
-                return;
-            }
-            if (instance1.state.isVisible && instance1.props.trigger.indexOf("click") >= 0) {
-                return;
-            }
-        } else {
-            invokeHook("onClickOutside", [
-                instance1,
-                event
-            ]);
-        }
-        if (instance1.props.hideOnClick === true) {
-            instance1.clearDelayTimeouts();
-            instance1.hide(); // `mousedown` event is fired right before `focus` if pressing the
+            if (currentInput.isTouch) return;
+            if (instance.state.isVisible && instance.props.trigger.indexOf("click") >= 0) return;
+        } else invokeHook("onClickOutside", [
+            instance,
+            event
+        ]);
+        if (instance.props.hideOnClick === true) {
+            instance.clearDelayTimeouts();
+            instance.hide(); // `mousedown` event is fired right before `focus` if pressing the
             // currentTarget. This lets a tippy with `focus` trigger know that it
             // should not show
             didHideDueToDocumentMouseDown = true;
@@ -1267,9 +1239,7 @@ function createTippy(reference, passedProps) {
             }); // The listener gets added in `scheduleShow()`, but this may be hiding it
             // before it shows, and hide()'s early bail-out behavior can prevent it
             // from being cleaned up
-            if (!instance1.state.isMounted) {
-                removeDocumentPress();
-            }
+            if (!instance.state.isMounted) removeDocumentPress();
         }
     }
     function onTouchMove() {
@@ -1294,9 +1264,7 @@ function createTippy(reference, passedProps) {
     }
     function onTransitionedOut(duration, callback) {
         onTransitionEnd(duration, function() {
-            if (!instance1.state.isVisible && popper1.parentNode && popper1.parentNode.contains(popper1)) {
-                callback();
-            }
+            if (!instance.state.isVisible && popper.parentNode && popper.parentNode.contains(popper)) callback();
         });
     }
     function onTransitionedIn(duration, callback) {
@@ -1311,18 +1279,14 @@ function createTippy(reference, passedProps) {
             }
         } // Make callback synchronous if duration is 0
         // `transitionend` won't fire otherwise
-        if (duration === 0) {
-            return callback();
-        }
+        if (duration === 0) return callback();
         updateTransitionEndListener(box, "remove", currentTransitionEndListener);
         updateTransitionEndListener(box, "add", listener);
         currentTransitionEndListener = listener;
     }
     function on(eventType, handler, options) {
-        if (options === void 0) {
-            options = false;
-        }
-        var nodes = normalizeToArray(instance1.props.triggerTarget || reference);
+        if (options === void 0) options = false;
+        var nodes = normalizeToArray(instance.props.triggerTarget || reference);
         nodes.forEach(function(node) {
             node.addEventListener(eventType, handler, options);
             listeners.push({
@@ -1342,10 +1306,8 @@ function createTippy(reference, passedProps) {
                 passive: true
             });
         }
-        splitBySpaces(instance1.props.trigger).forEach(function(eventType) {
-            if (eventType === "manual") {
-                return;
-            }
+        splitBySpaces(instance.props.trigger).forEach(function(eventType) {
+            if (eventType === "manual") return;
             on(eventType, onTrigger);
             switch(eventType){
                 case "mouseenter":
@@ -1370,51 +1332,37 @@ function createTippy(reference, passedProps) {
     function onTrigger(event) {
         var _lastTriggerEvent;
         var shouldScheduleClickHide = false;
-        if (!instance1.state.isEnabled || isEventListenerStopped(event) || didHideDueToDocumentMouseDown) {
-            return;
-        }
+        if (!instance.state.isEnabled || isEventListenerStopped(event) || didHideDueToDocumentMouseDown) return;
         var wasFocused = ((_lastTriggerEvent = lastTriggerEvent) == null ? void 0 : _lastTriggerEvent.type) === "focus";
         lastTriggerEvent = event;
         currentTarget = event.currentTarget;
         handleAriaExpandedAttribute();
-        if (!instance1.state.isVisible && isMouseEvent(event)) {
-            // If scrolling, `mouseenter` events can be fired if the cursor lands
-            // over a new target, but `mousemove` events don't get fired. This
-            // causes interactive tooltips to get stuck open until the cursor is
-            // moved
-            mouseMoveListeners.forEach(function(listener) {
-                return listener(event);
-            });
-        } // Toggle show/hide when clicking click-triggered tooltips
-        if (event.type === "click" && (instance1.props.trigger.indexOf("mouseenter") < 0 || isVisibleFromClick) && instance1.props.hideOnClick !== false && instance1.state.isVisible) {
-            shouldScheduleClickHide = true;
-        } else {
-            scheduleShow(event);
-        }
-        if (event.type === "click") {
-            isVisibleFromClick = !shouldScheduleClickHide;
-        }
-        if (shouldScheduleClickHide && !wasFocused) {
-            scheduleHide(event);
-        }
+        if (!instance.state.isVisible && isMouseEvent(event)) // If scrolling, `mouseenter` events can be fired if the cursor lands
+        // over a new target, but `mousemove` events don't get fired. This
+        // causes interactive tooltips to get stuck open until the cursor is
+        // moved
+        mouseMoveListeners.forEach(function(listener) {
+            return listener(event);
+        });
+         // Toggle show/hide when clicking click-triggered tooltips
+        if (event.type === "click" && (instance.props.trigger.indexOf("mouseenter") < 0 || isVisibleFromClick) && instance.props.hideOnClick !== false && instance.state.isVisible) shouldScheduleClickHide = true;
+        else scheduleShow(event);
+        if (event.type === "click") isVisibleFromClick = !shouldScheduleClickHide;
+        if (shouldScheduleClickHide && !wasFocused) scheduleHide(event);
     }
     function onMouseMove(event) {
         var target = event.target;
-        var isCursorOverReferenceOrPopper = getCurrentTarget().contains(target) || popper1.contains(target);
-        if (event.type === "mousemove" && isCursorOverReferenceOrPopper) {
-            return;
-        }
-        var popperTreeData = getNestedPopperTree().concat(popper1).map(function(popper) {
+        var isCursorOverReferenceOrPopper = getCurrentTarget().contains(target) || popper.contains(target);
+        if (event.type === "mousemove" && isCursorOverReferenceOrPopper) return;
+        var popperTreeData = getNestedPopperTree().concat(popper).map(function(popper) {
             var _instance$popperInsta;
             var instance = popper._tippy;
             var state = (_instance$popperInsta = instance.popperInstance) == null ? void 0 : _instance$popperInsta.state;
-            if (state) {
-                return {
-                    popperRect: popper.getBoundingClientRect(),
-                    popperState: state,
-                    props: props
-                };
-            }
+            if (state) return {
+                popperRect: popper.getBoundingClientRect(),
+                popperState: state,
+                props: props
+            };
             return null;
         }).filter(Boolean);
         if (isCursorOutsideInteractiveBorder(popperTreeData, event)) {
@@ -1423,23 +1371,18 @@ function createTippy(reference, passedProps) {
         }
     }
     function onMouseLeave(event) {
-        var shouldBail = isEventListenerStopped(event) || instance1.props.trigger.indexOf("click") >= 0 && isVisibleFromClick;
-        if (shouldBail) {
-            return;
-        }
-        if (instance1.props.interactive) {
-            instance1.hideWithInteractivity(event);
+        var shouldBail = isEventListenerStopped(event) || instance.props.trigger.indexOf("click") >= 0 && isVisibleFromClick;
+        if (shouldBail) return;
+        if (instance.props.interactive) {
+            instance.hideWithInteractivity(event);
             return;
         }
         scheduleHide(event);
     }
     function onBlurOrFocusOut(event) {
-        if (instance1.props.trigger.indexOf("focusin") < 0 && event.target !== getCurrentTarget()) {
-            return;
-        } // If focus was moved to within the popper
-        if (instance1.props.interactive && event.relatedTarget && popper1.contains(event.relatedTarget)) {
-            return;
-        }
+        if (instance.props.trigger.indexOf("focusin") < 0 && event.target !== getCurrentTarget()) return;
+         // If focus was moved to within the popper
+        if (instance.props.interactive && event.relatedTarget && popper.contains(event.relatedTarget)) return;
         scheduleHide(event);
     }
     function isEventListenerStopped(event) {
@@ -1447,8 +1390,8 @@ function createTippy(reference, passedProps) {
     }
     function createPopperInstance() {
         destroyPopperInstance();
-        var _instance$props2 = instance1.props, popperOptions = _instance$props2.popperOptions, placement = _instance$props2.placement, offset = _instance$props2.offset, getReferenceClientRect = _instance$props2.getReferenceClientRect, moveTransition = _instance$props2.moveTransition;
-        var arrow = getIsDefaultRenderFn() ? getChildren(popper1).arrow : null;
+        var _instance$props2 = instance.props, popperOptions = _instance$props2.popperOptions, placement = _instance$props2.placement, offset = _instance$props2.offset, getReferenceClientRect = _instance$props2.getReferenceClientRect, moveTransition = _instance$props2.moveTransition;
+        var arrow = getIsDefaultRenderFn() ? getChildren(popper).arrow : null;
         var computedReference = getReferenceClientRect ? {
             getBoundingClientRect: getReferenceClientRect,
             contextElement: getReferenceClientRect.contextElement || getCurrentTarget()
@@ -1469,15 +1412,9 @@ function createTippy(reference, passedProps) {
                         "reference-hidden",
                         "escaped"
                     ].forEach(function(attr) {
-                        if (attr === "placement") {
-                            box.setAttribute("data-placement", state.placement);
-                        } else {
-                            if (state.attributes.popper["data-popper-" + attr]) {
-                                box.setAttribute("data-" + attr, "");
-                            } else {
-                                box.removeAttribute("data-" + attr);
-                            }
-                        }
+                        if (attr === "placement") box.setAttribute("data-placement", state.placement);
+                        else if (state.attributes.popper["data-popper-" + attr]) box.setAttribute("data-" + attr, "");
+                        else box.removeAttribute("data-" + attr);
                     });
                     state.attributes.popper = {};
                 }
@@ -1515,136 +1452,114 @@ function createTippy(reference, passedProps) {
             },
             tippyModifier
         ];
-        if (getIsDefaultRenderFn() && arrow) {
-            modifiers.push({
-                name: "arrow",
-                options: {
-                    element: arrow,
-                    padding: 3
-                }
-            });
-        }
+        if (getIsDefaultRenderFn() && arrow) modifiers.push({
+            name: "arrow",
+            options: {
+                element: arrow,
+                padding: 3
+            }
+        });
         modifiers.push.apply(modifiers, (popperOptions == null ? void 0 : popperOptions.modifiers) || []);
-        instance1.popperInstance = (0, _core.createPopper)(computedReference, popper1, Object.assign({}, popperOptions, {
+        instance.popperInstance = (0, _core.createPopper)(computedReference, popper, Object.assign({}, popperOptions, {
             placement: placement,
             onFirstUpdate: onFirstUpdate,
             modifiers: modifiers
         }));
     }
     function destroyPopperInstance() {
-        if (instance1.popperInstance) {
-            instance1.popperInstance.destroy();
-            instance1.popperInstance = null;
+        if (instance.popperInstance) {
+            instance.popperInstance.destroy();
+            instance.popperInstance = null;
         }
     }
     function mount() {
-        var appendTo = instance1.props.appendTo;
+        var appendTo = instance.props.appendTo;
         var parentNode; // By default, we'll append the popper to the triggerTargets's parentNode so
         // it's directly after the reference element so the elements inside the
         // tippy can be tabbed to
         // If there are clipping issues, the user can specify a different appendTo
         // and ensure focus management is handled correctly manually
         var node = getCurrentTarget();
-        if (instance1.props.interactive && appendTo === TIPPY_DEFAULT_APPEND_TO || appendTo === "parent") {
-            parentNode = node.parentNode;
-        } else {
-            parentNode = invokeWithArgsOrReturn(appendTo, [
-                node
-            ]);
-        } // The popper element needs to exist on the DOM before its position can be
+        if (instance.props.interactive && appendTo === TIPPY_DEFAULT_APPEND_TO || appendTo === "parent") parentNode = node.parentNode;
+        else parentNode = invokeWithArgsOrReturn(appendTo, [
+            node
+        ]);
+         // The popper element needs to exist on the DOM before its position can be
         // updated as Popper needs to read its dimensions
-        if (!parentNode.contains(popper1)) {
-            parentNode.appendChild(popper1);
-        }
-        instance1.state.isMounted = true;
+        if (!parentNode.contains(popper)) parentNode.appendChild(popper);
+        instance.state.isMounted = true;
         createPopperInstance();
-        /* istanbul ignore else */ if (true) {
-            // Accessibility check
-            warnWhen(instance1.props.interactive && appendTo === defaultProps.appendTo && node.nextElementSibling !== popper1, [
-                "Interactive tippy element may not be accessible via keyboard",
-                "navigation because it is not directly after the reference element",
-                "in the DOM source order.",
-                "\n\n",
-                "Using a wrapper <div> or <span> tag around the reference element",
-                "solves this by creating a new parentNode context.",
-                "\n\n",
-                "Specifying `appendTo: document.body` silences this warning, but it",
-                "assumes you are using a focus management solution to handle",
-                "keyboard navigation.",
-                "\n\n",
-                "See: https://atomiks.github.io/tippyjs/v6/accessibility/#interactivity"
-            ].join(" "));
-        }
+        // Accessibility check
+        warnWhen(instance.props.interactive && appendTo === defaultProps.appendTo && node.nextElementSibling !== popper, [
+            "Interactive tippy element may not be accessible via keyboard",
+            "navigation because it is not directly after the reference element",
+            "in the DOM source order.",
+            "\n\n",
+            "Using a wrapper <div> or <span> tag around the reference element",
+            "solves this by creating a new parentNode context.",
+            "\n\n",
+            "Specifying `appendTo: document.body` silences this warning, but it",
+            "assumes you are using a focus management solution to handle",
+            "keyboard navigation.",
+            "\n\n",
+            "See: https://atomiks.github.io/tippyjs/v6/accessibility/#interactivity"
+        ].join(" "));
     }
     function getNestedPopperTree() {
-        return arrayFrom(popper1.querySelectorAll("[data-tippy-root]"));
+        return arrayFrom(popper.querySelectorAll("[data-tippy-root]"));
     }
     function scheduleShow(event) {
-        instance1.clearDelayTimeouts();
-        if (event) {
-            invokeHook("onTrigger", [
-                instance1,
-                event
-            ]);
-        }
+        instance.clearDelayTimeouts();
+        if (event) invokeHook("onTrigger", [
+            instance,
+            event
+        ]);
         addDocumentPress();
         var delay = getDelay(true);
         var _getNormalizedTouchSe = getNormalizedTouchSettings(), touchValue = _getNormalizedTouchSe[0], touchDelay = _getNormalizedTouchSe[1];
-        if (currentInput.isTouch && touchValue === "hold" && touchDelay) {
-            delay = touchDelay;
-        }
-        if (delay) {
-            showTimeout = setTimeout(function() {
-                instance1.show();
-            }, delay);
-        } else {
-            instance1.show();
-        }
+        if (currentInput.isTouch && touchValue === "hold" && touchDelay) delay = touchDelay;
+        if (delay) showTimeout = setTimeout(function() {
+            instance.show();
+        }, delay);
+        else instance.show();
     }
     function scheduleHide(event) {
-        instance1.clearDelayTimeouts();
+        instance.clearDelayTimeouts();
         invokeHook("onUntrigger", [
-            instance1,
+            instance,
             event
         ]);
-        if (!instance1.state.isVisible) {
+        if (!instance.state.isVisible) {
             removeDocumentPress();
             return;
         } // For interactive tippies, scheduleHide is added to a document.body handler
         // from onMouseLeave so must intercept scheduled hides from mousemove/leave
         // events when trigger contains mouseenter and click, and the tip is
         // currently shown as a result of a click.
-        if (instance1.props.trigger.indexOf("mouseenter") >= 0 && instance1.props.trigger.indexOf("click") >= 0 && [
+        if (instance.props.trigger.indexOf("mouseenter") >= 0 && instance.props.trigger.indexOf("click") >= 0 && [
             "mouseleave",
             "mousemove"
-        ].indexOf(event.type) >= 0 && isVisibleFromClick) {
-            return;
-        }
+        ].indexOf(event.type) >= 0 && isVisibleFromClick) return;
         var delay = getDelay(false);
-        if (delay) {
-            hideTimeout = setTimeout(function() {
-                if (instance1.state.isVisible) {
-                    instance1.hide();
-                }
-            }, delay);
-        } else {
-            // Fixes a `transitionend` problem when it fires 1 frame too
-            // late sometimes, we don't want hide() to be called.
-            scheduleHideAnimationFrame = requestAnimationFrame(function() {
-                instance1.hide();
-            });
-        }
+        if (delay) hideTimeout = setTimeout(function() {
+            if (instance.state.isVisible) instance.hide();
+        }, delay);
+        else // Fixes a `transitionend` problem when it fires 1 frame too
+        // late sometimes, we don't want hide() to be called.
+        scheduleHideAnimationFrame = requestAnimationFrame(function() {
+            instance.hide();
+        });
     } // ===========================================================================
     // 🔑 Public methods
     // ===========================================================================
     function enable() {
-        instance1.state.isEnabled = true;
+        instance.state.isEnabled = true;
     }
     function disable() {
         // Disabling the instance should also hide it
         // https://github.com/atomiks/tippy.js-react/issues/106
-        instance1.hide();
-        instance1.state.isEnabled = false;
+        instance.hide();
+        instance.state.isEnabled = false;
     }
     function clearDelayTimeouts() {
         clearTimeout(showTimeout);
@@ -1652,40 +1567,31 @@ function createTippy(reference, passedProps) {
         cancelAnimationFrame(scheduleHideAnimationFrame);
     }
     function setProps(partialProps) {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("setProps"));
-        }
-        if (instance1.state.isDestroyed) {
-            return;
-        }
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("setProps"));
+        if (instance.state.isDestroyed) return;
         invokeHook("onBeforeUpdate", [
-            instance1,
+            instance,
             partialProps
         ]);
         removeListeners();
-        var prevProps = instance1.props;
+        var prevProps = instance.props;
         var nextProps = evaluateProps(reference, Object.assign({}, prevProps, removeUndefinedProps(partialProps), {
             ignoreAttributes: true
         }));
-        instance1.props = nextProps;
+        instance.props = nextProps;
         addListeners();
         if (prevProps.interactiveDebounce !== nextProps.interactiveDebounce) {
             cleanupInteractiveMouseListeners();
             debouncedOnMouseMove = debounce(onMouseMove, nextProps.interactiveDebounce);
         } // Ensure stale aria-expanded attributes are removed
-        if (prevProps.triggerTarget && !nextProps.triggerTarget) {
-            normalizeToArray(prevProps.triggerTarget).forEach(function(node) {
-                node.removeAttribute("aria-expanded");
-            });
-        } else if (nextProps.triggerTarget) {
-            reference.removeAttribute("aria-expanded");
-        }
+        if (prevProps.triggerTarget && !nextProps.triggerTarget) normalizeToArray(prevProps.triggerTarget).forEach(function(node) {
+            node.removeAttribute("aria-expanded");
+        });
+        else if (nextProps.triggerTarget) reference.removeAttribute("aria-expanded");
         handleAriaExpandedAttribute();
         handleStyles();
-        if (onUpdate) {
-            onUpdate(prevProps, nextProps);
-        }
-        if (instance1.popperInstance) {
+        if (onUpdate) onUpdate(prevProps, nextProps);
+        if (instance.popperInstance) {
             createPopperInstance(); // Fixes an issue with nested tippies if they are all getting re-rendered,
             // and the nested ones get re-rendered first.
             // https://github.com/atomiks/tippyjs-react/issues/177
@@ -1697,47 +1603,37 @@ function createTippy(reference, passedProps) {
             });
         }
         invokeHook("onAfterUpdate", [
-            instance1,
+            instance,
             partialProps
         ]);
     }
-    function setContent1(content) {
-        instance1.setProps({
+    function setContent(content) {
+        instance.setProps({
             content: content
         });
     }
     function show() {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("show"));
-        } // Early bail-out
-        var isAlreadyVisible = instance1.state.isVisible;
-        var isDestroyed = instance1.state.isDestroyed;
-        var isDisabled = !instance1.state.isEnabled;
-        var isTouchAndTouchDisabled = currentInput.isTouch && !instance1.props.touch;
-        var duration = getValueAtIndexOrReturn(instance1.props.duration, 0, defaultProps.duration);
-        if (isAlreadyVisible || isDestroyed || isDisabled || isTouchAndTouchDisabled) {
-            return;
-        } // Normalize `disabled` behavior across browsers.
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("show"));
+        var isAlreadyVisible = instance.state.isVisible;
+        var isDestroyed = instance.state.isDestroyed;
+        var isDisabled = !instance.state.isEnabled;
+        var isTouchAndTouchDisabled = currentInput.isTouch && !instance.props.touch;
+        var duration = getValueAtIndexOrReturn(instance.props.duration, 0, defaultProps.duration);
+        if (isAlreadyVisible || isDestroyed || isDisabled || isTouchAndTouchDisabled) return;
+         // Normalize `disabled` behavior across browsers.
         // Firefox allows events on disabled elements, but Chrome doesn't.
         // Using a wrapper element (i.e. <span>) is recommended.
-        if (getCurrentTarget().hasAttribute("disabled")) {
-            return;
-        }
+        if (getCurrentTarget().hasAttribute("disabled")) return;
         invokeHook("onShow", [
-            instance1
+            instance
         ], false);
-        if (instance1.props.onShow(instance1) === false) {
-            return;
-        }
-        instance1.state.isVisible = true;
-        if (getIsDefaultRenderFn()) {
-            popper1.style.visibility = "visible";
-        }
+        if (instance.props.onShow(instance) === false) return;
+        instance.state.isVisible = true;
+        if (getIsDefaultRenderFn()) popper.style.visibility = "visible";
         handleStyles();
         addDocumentPress();
-        if (!instance1.state.isMounted) {
-            popper1.style.transition = "none";
-        } // If flipping to the opposite side after hiding at least once, the
+        if (!instance.state.isMounted) popper.style.transition = "none";
+         // If flipping to the opposite side after hiding at least once, the
         // animation will use the wrong placement without resetting the duration
         if (getIsDefaultRenderFn()) {
             var _getDefaultTemplateCh2 = getDefaultTemplateChildren(), box = _getDefaultTemplateCh2.box, content = _getDefaultTemplateCh2.content;
@@ -1748,13 +1644,11 @@ function createTippy(reference, passedProps) {
         }
         onFirstUpdate = function onFirstUpdate() {
             var _instance$popperInsta2;
-            if (!instance1.state.isVisible || ignoreOnFirstUpdate) {
-                return;
-            }
+            if (!instance.state.isVisible || ignoreOnFirstUpdate) return;
             ignoreOnFirstUpdate = true; // reflow
-            void popper1.offsetHeight;
-            popper1.style.transition = instance1.props.moveTransition;
-            if (getIsDefaultRenderFn() && instance1.props.animation) {
+            popper.offsetHeight;
+            popper.style.transition = instance.props.moveTransition;
+            if (getIsDefaultRenderFn() && instance.props.animation) {
                 var _getDefaultTemplateCh3 = getDefaultTemplateChildren(), _box = _getDefaultTemplateCh3.box, _content = _getDefaultTemplateCh3.content;
                 setTransitionDuration([
                     _box,
@@ -1767,53 +1661,43 @@ function createTippy(reference, passedProps) {
             }
             handleAriaContentAttribute();
             handleAriaExpandedAttribute();
-            pushIfUnique(mountedInstances, instance1); // certain modifiers (e.g. `maxSize`) require a second update after the
+            pushIfUnique(mountedInstances, instance); // certain modifiers (e.g. `maxSize`) require a second update after the
             // popper has been positioned for the first time
-            (_instance$popperInsta2 = instance1.popperInstance) == null ? void 0 : _instance$popperInsta2.forceUpdate();
+            (_instance$popperInsta2 = instance.popperInstance) == null || _instance$popperInsta2.forceUpdate();
             invokeHook("onMount", [
-                instance1
+                instance
             ]);
-            if (instance1.props.animation && getIsDefaultRenderFn()) {
-                onTransitionedIn(duration, function() {
-                    instance1.state.isShown = true;
-                    invokeHook("onShown", [
-                        instance1
-                    ]);
-                });
-            }
+            if (instance.props.animation && getIsDefaultRenderFn()) onTransitionedIn(duration, function() {
+                instance.state.isShown = true;
+                invokeHook("onShown", [
+                    instance
+                ]);
+            });
         };
         mount();
     }
     function hide() {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("hide"));
-        } // Early bail-out
-        var isAlreadyHidden = !instance1.state.isVisible;
-        var isDestroyed = instance1.state.isDestroyed;
-        var isDisabled = !instance1.state.isEnabled;
-        var duration = getValueAtIndexOrReturn(instance1.props.duration, 1, defaultProps.duration);
-        if (isAlreadyHidden || isDestroyed || isDisabled) {
-            return;
-        }
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("hide"));
+        var isAlreadyHidden = !instance.state.isVisible;
+        var isDestroyed = instance.state.isDestroyed;
+        var isDisabled = !instance.state.isEnabled;
+        var duration = getValueAtIndexOrReturn(instance.props.duration, 1, defaultProps.duration);
+        if (isAlreadyHidden || isDestroyed || isDisabled) return;
         invokeHook("onHide", [
-            instance1
+            instance
         ], false);
-        if (instance1.props.onHide(instance1) === false) {
-            return;
-        }
-        instance1.state.isVisible = false;
-        instance1.state.isShown = false;
+        if (instance.props.onHide(instance) === false) return;
+        instance.state.isVisible = false;
+        instance.state.isShown = false;
         ignoreOnFirstUpdate = false;
         isVisibleFromClick = false;
-        if (getIsDefaultRenderFn()) {
-            popper1.style.visibility = "hidden";
-        }
+        if (getIsDefaultRenderFn()) popper.style.visibility = "hidden";
         cleanupInteractiveMouseListeners();
         removeDocumentPress();
         handleStyles(true);
         if (getIsDefaultRenderFn()) {
             var _getDefaultTemplateCh4 = getDefaultTemplateChildren(), box = _getDefaultTemplateCh4.box, content = _getDefaultTemplateCh4.content;
-            if (instance1.props.animation) {
+            if (instance.props.animation) {
                 setTransitionDuration([
                     box,
                     content
@@ -1826,63 +1710,45 @@ function createTippy(reference, passedProps) {
         }
         handleAriaContentAttribute();
         handleAriaExpandedAttribute();
-        if (instance1.props.animation) {
-            if (getIsDefaultRenderFn()) {
-                onTransitionedOut(duration, instance1.unmount);
-            }
-        } else {
-            instance1.unmount();
-        }
+        if (instance.props.animation) {
+            if (getIsDefaultRenderFn()) onTransitionedOut(duration, instance.unmount);
+        } else instance.unmount();
     }
     function hideWithInteractivity(event) {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("hideWithInteractivity"));
-        }
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("hideWithInteractivity"));
         getDocument().addEventListener("mousemove", debouncedOnMouseMove);
         pushIfUnique(mouseMoveListeners, debouncedOnMouseMove);
         debouncedOnMouseMove(event);
     }
     function unmount() {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("unmount"));
-        }
-        if (instance1.state.isVisible) {
-            instance1.hide();
-        }
-        if (!instance1.state.isMounted) {
-            return;
-        }
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("unmount"));
+        if (instance.state.isVisible) instance.hide();
+        if (!instance.state.isMounted) return;
         destroyPopperInstance(); // If a popper is not interactive, it will be appended outside the popper
         // tree by default. This seems mainly for interactive tippies, but we should
         // find a workaround if possible
         getNestedPopperTree().forEach(function(nestedPopper) {
             nestedPopper._tippy.unmount();
         });
-        if (popper1.parentNode) {
-            popper1.parentNode.removeChild(popper1);
-        }
+        if (popper.parentNode) popper.parentNode.removeChild(popper);
         mountedInstances = mountedInstances.filter(function(i) {
-            return i !== instance1;
+            return i !== instance;
         });
-        instance1.state.isMounted = false;
+        instance.state.isMounted = false;
         invokeHook("onHidden", [
-            instance1
+            instance
         ]);
     }
     function destroy() {
-        /* istanbul ignore else */ if (true) {
-            warnWhen(instance1.state.isDestroyed, createMemoryLeakWarning("destroy"));
-        }
-        if (instance1.state.isDestroyed) {
-            return;
-        }
-        instance1.clearDelayTimeouts();
-        instance1.unmount();
+        warnWhen(instance.state.isDestroyed, createMemoryLeakWarning("destroy"));
+        if (instance.state.isDestroyed) return;
+        instance.clearDelayTimeouts();
+        instance.unmount();
         removeListeners();
         delete reference._tippy;
-        instance1.state.isDestroyed = true;
+        instance.state.isDestroyed = true;
         invokeHook("onDestroy", [
-            instance1
+            instance
         ]);
     }
 }
@@ -2051,7 +1917,7 @@ var createSingleton = function createSingleton(tippyInstances, optionalProps) {
             };
         }
     };
-    var singleton1 = tippy(div(), Object.assign({}, removeProperties(optionalProps, [
+    var singleton = tippy(div(), Object.assign({}, removeProperties(optionalProps, [
         "overrides"
     ]), {
         plugins: [
@@ -2064,42 +1930,42 @@ var createSingleton = function createSingleton(tippyInstances, optionalProps) {
             ])
         })
     }));
-    var originalShow = singleton1.show;
-    singleton1.show = function(target) {
+    var originalShow = singleton.show;
+    singleton.show = function(target) {
         originalShow(); // first time, showOnCreate or programmatic call with no params
         // default to showing first instance
-        if (!currentTarget && target == null) return prepareInstance(singleton1, references[0]);
+        if (!currentTarget && target == null) return prepareInstance(singleton, references[0]);
          // triggered from event (do nothing as prepareInstance already called by onTrigger)
         // programmatic call with no params when already visible (do nothing again)
         if (currentTarget && target == null) return;
          // target is index of instance
-        if (typeof target === "number") return references[target] && prepareInstance(singleton1, references[target]);
+        if (typeof target === "number") return references[target] && prepareInstance(singleton, references[target]);
          // target is a child tippy instance
         if (individualInstances.indexOf(target) >= 0) {
             var ref = target.reference;
-            return prepareInstance(singleton1, ref);
+            return prepareInstance(singleton, ref);
         } // target is a ReferenceElement
-        if (references.indexOf(target) >= 0) return prepareInstance(singleton1, target);
+        if (references.indexOf(target) >= 0) return prepareInstance(singleton, target);
     };
-    singleton1.showNext = function() {
+    singleton.showNext = function() {
         var first = references[0];
-        if (!currentTarget) return singleton1.show(0);
+        if (!currentTarget) return singleton.show(0);
         var index = references.indexOf(currentTarget);
-        singleton1.show(references[index + 1] || first);
+        singleton.show(references[index + 1] || first);
     };
-    singleton1.showPrevious = function() {
+    singleton.showPrevious = function() {
         var last = references[references.length - 1];
-        if (!currentTarget) return singleton1.show(last);
+        if (!currentTarget) return singleton.show(last);
         var index = references.indexOf(currentTarget);
         var target = references[index - 1] || last;
-        singleton1.show(target);
+        singleton.show(target);
     };
-    var originalSetProps1 = singleton1.setProps;
-    singleton1.setProps = function(props) {
+    var originalSetProps = singleton.setProps;
+    singleton.setProps = function(props) {
         overrides = props.overrides || overrides;
-        originalSetProps1(props);
+        originalSetProps(props);
     };
-    singleton1.setInstances = function(nextInstances) {
+    singleton.setInstances = function(nextInstances) {
         enableInstances(true);
         interceptSetPropsCleanups.forEach(function(fn) {
             return fn();
@@ -2108,13 +1974,13 @@ var createSingleton = function createSingleton(tippyInstances, optionalProps) {
         enableInstances(false);
         setReferences();
         setTriggerTargets();
-        interceptSetPropsCleanups = interceptSetProps(singleton1);
-        singleton1.setProps({
+        interceptSetPropsCleanups = interceptSetProps(singleton);
+        singleton.setProps({
             triggerTarget: triggerTargets
         });
     };
-    interceptSetPropsCleanups = interceptSetProps(singleton1);
-    return singleton1;
+    interceptSetPropsCleanups = interceptSetProps(singleton);
+    return singleton;
 };
 var BUBBLING_EVENTS_MAP = {
     mouseover: "mouseenter",
@@ -2186,11 +2052,11 @@ var BUBBLING_EVENTS_MAP = {
         });
         listeners = [];
     }
-    function applyMutations(instance2) {
-        var originalDestroy = instance2.destroy;
-        var originalEnable = instance2.enable;
-        var originalDisable = instance2.disable;
-        instance2.destroy = function(shouldDestroyChildInstances) {
+    function applyMutations(instance) {
+        var originalDestroy = instance.destroy;
+        var originalEnable = instance.enable;
+        var originalDisable = instance.disable;
+        instance.destroy = function(shouldDestroyChildInstances) {
             if (shouldDestroyChildInstances === void 0) shouldDestroyChildInstances = true;
             if (shouldDestroyChildInstances) childTippyInstances.forEach(function(instance) {
                 instance.destroy();
@@ -2199,21 +2065,21 @@ var BUBBLING_EVENTS_MAP = {
             removeEventListeners();
             originalDestroy();
         };
-        instance2.enable = function() {
+        instance.enable = function() {
             originalEnable();
             childTippyInstances.forEach(function(instance) {
                 return instance.enable();
             });
             disabled = false;
         };
-        instance2.disable = function() {
+        instance.disable = function() {
             originalDisable();
             childTippyInstances.forEach(function(instance) {
                 return instance.disable();
             });
             disabled = true;
         };
-        addEventListeners(instance2);
+        addEventListeners(instance);
     }
     normalizedReturnValue.forEach(applyMutations);
     return returnValue;
@@ -2322,25 +2188,25 @@ var followCursor = {
             // If the instance is interactive, avoid updating the position unless it's
             // over the reference element
             var isCursorOverReference = event.target ? reference.contains(event.target) : true;
-            var followCursor1 = instance.props.followCursor;
+            var followCursor = instance.props.followCursor;
             var clientX = event.clientX, clientY = event.clientY;
-            var rect1 = reference.getBoundingClientRect();
-            var relativeX = clientX - rect1.left;
-            var relativeY = clientY - rect1.top;
+            var rect = reference.getBoundingClientRect();
+            var relativeX = clientX - rect.left;
+            var relativeY = clientY - rect.top;
             if (isCursorOverReference || !instance.props.interactive) instance.setProps({
                 // @ts-ignore - unneeded DOMRect properties
                 getReferenceClientRect: function getReferenceClientRect() {
                     var rect = reference.getBoundingClientRect();
                     var x = clientX;
                     var y = clientY;
-                    if (followCursor1 === "initial") {
+                    if (followCursor === "initial") {
                         x = rect.left + relativeX;
                         y = rect.top + relativeY;
                     }
-                    var top = followCursor1 === "horizontal" ? rect.top : y;
-                    var right = followCursor1 === "vertical" ? rect.right : x;
-                    var bottom = followCursor1 === "horizontal" ? rect.bottom : y;
-                    var left = followCursor1 === "vertical" ? rect.left : x;
+                    var top = followCursor === "horizontal" ? rect.top : y;
+                    var right = followCursor === "vertical" ? rect.right : x;
+                    var bottom = followCursor === "horizontal" ? rect.bottom : y;
+                    var left = followCursor === "vertical" ? rect.left : x;
                     return {
                         width: right - left,
                         height: bottom - top,
@@ -2376,11 +2242,11 @@ var followCursor = {
                 prevProps = instance.props;
             },
             onAfterUpdate: function onAfterUpdate(_, _ref2) {
-                var followCursor2 = _ref2.followCursor;
+                var followCursor = _ref2.followCursor;
                 if (isInternalUpdate) return;
-                if (followCursor2 !== undefined && prevProps.followCursor !== followCursor2) {
+                if (followCursor !== undefined && prevProps.followCursor !== followCursor) {
                     destroy();
-                    if (followCursor2) {
+                    if (followCursor) {
                         create();
                         if (instance.state.isMounted && !wasFocusEvent && !getIsInitialBehavior()) addListener();
                     } else {
@@ -2436,7 +2302,7 @@ var inlinePositioning = {
         function isEnabled() {
             return !!instance.props.inlinePositioning;
         }
-        var placement1;
+        var placement;
         var cursorRectIndex = -1;
         var isInternalUpdate = false;
         var triedPlacements = [];
@@ -2448,7 +2314,7 @@ var inlinePositioning = {
                 var state = _ref2.state;
                 if (isEnabled()) {
                     if (triedPlacements.indexOf(state.placement) !== -1) triedPlacements = [];
-                    if (placement1 !== state.placement && triedPlacements.indexOf(state.placement) === -1) {
+                    if (placement !== state.placement && triedPlacements.indexOf(state.placement) === -1) {
                         triedPlacements.push(state.placement);
                         instance.setProps({
                             // @ts-ignore - unneeded DOMRect properties
@@ -2457,7 +2323,7 @@ var inlinePositioning = {
                             }
                         });
                     }
-                    placement1 = state.placement;
+                    placement = state.placement;
                 }
             }
         };
@@ -2752,10 +2618,10 @@ var _instanceOfJs = require("../dom-utils/instanceOf.js"); // This modifier take
 // and applies them to the HTMLElements such as popper and arrow
 function applyStyles(_ref) {
     var state = _ref.state;
-    Object.keys(state.elements).forEach(function(name1) {
-        var style = state.styles[name1] || {};
-        var attributes = state.attributes[name1] || {};
-        var element = state.elements[name1]; // arrow is optional + virtual elements
+    Object.keys(state.elements).forEach(function(name) {
+        var style = state.styles[name] || {};
+        var attributes = state.attributes[name] || {};
+        var element = state.elements[name]; // arrow is optional + virtual elements
         if (!(0, _instanceOfJs.isHTMLElement)(element) || !(0, _getNodeNameJsDefault.default)(element)) return;
          // Flow doesn't support to extend this property, but it's the most
         // effective way to apply styles to an HTMLElement
@@ -2790,12 +2656,12 @@ function effect(_ref2) {
             var element = state.elements[name];
             var attributes = state.attributes[name] || {};
             var styleProperties = Object.keys(state.styles.hasOwnProperty(name) ? state.styles[name] : initialStyles[name]); // Set all values to an empty string to unset them
-            var style1 = styleProperties.reduce(function(style, property) {
+            var style = styleProperties.reduce(function(style, property) {
                 style[property] = "";
                 return style;
             }, {}); // arrow is optional + virtual elements
             if (!(0, _instanceOfJs.isHTMLElement)(element) || !(0, _getNodeNameJsDefault.default)(element)) return;
-            Object.assign(element.style, style1);
+            Object.assign(element.style, style);
             Object.keys(attributes).forEach(function(attribute) {
                 element.removeAttribute(attribute);
             });
@@ -2985,32 +2851,40 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _instanceOfJs = require("./instanceOf.js");
 var _mathJs = require("../utils/math.js");
-function getBoundingClientRect(element, includeScale) {
+var _getWindowJs = require("./getWindow.js");
+var _getWindowJsDefault = parcelHelpers.interopDefault(_getWindowJs);
+var _isLayoutViewportJs = require("./isLayoutViewport.js");
+var _isLayoutViewportJsDefault = parcelHelpers.interopDefault(_isLayoutViewportJs);
+function getBoundingClientRect(element, includeScale, isFixedStrategy) {
     if (includeScale === void 0) includeScale = false;
-    var rect = element.getBoundingClientRect();
+    if (isFixedStrategy === void 0) isFixedStrategy = false;
+    var clientRect = element.getBoundingClientRect();
     var scaleX = 1;
     var scaleY = 1;
-    if ((0, _instanceOfJs.isHTMLElement)(element) && includeScale) {
-        var offsetHeight = element.offsetHeight;
-        var offsetWidth = element.offsetWidth; // Do not attempt to divide by 0, otherwise we get `Infinity` as scale
-        // Fallback to 1 in case both values are `0`
-        if (offsetWidth > 0) scaleX = (0, _mathJs.round)(rect.width) / offsetWidth || 1;
-        if (offsetHeight > 0) scaleY = (0, _mathJs.round)(rect.height) / offsetHeight || 1;
+    if (includeScale && (0, _instanceOfJs.isHTMLElement)(element)) {
+        scaleX = element.offsetWidth > 0 ? (0, _mathJs.round)(clientRect.width) / element.offsetWidth || 1 : 1;
+        scaleY = element.offsetHeight > 0 ? (0, _mathJs.round)(clientRect.height) / element.offsetHeight || 1 : 1;
     }
+    var _ref = (0, _instanceOfJs.isElement)(element) ? (0, _getWindowJsDefault.default)(element) : window, visualViewport = _ref.visualViewport;
+    var addVisualOffsets = !(0, _isLayoutViewportJsDefault.default)() && isFixedStrategy;
+    var x = (clientRect.left + (addVisualOffsets && visualViewport ? visualViewport.offsetLeft : 0)) / scaleX;
+    var y = (clientRect.top + (addVisualOffsets && visualViewport ? visualViewport.offsetTop : 0)) / scaleY;
+    var width = clientRect.width / scaleX;
+    var height = clientRect.height / scaleY;
     return {
-        width: rect.width / scaleX,
-        height: rect.height / scaleY,
-        top: rect.top / scaleY,
-        right: rect.right / scaleX,
-        bottom: rect.bottom / scaleY,
-        left: rect.left / scaleX,
-        x: rect.left / scaleX,
-        y: rect.top / scaleY
+        width: width,
+        height: height,
+        top: y,
+        right: x + width,
+        bottom: y + height,
+        left: x,
+        x: x,
+        y: y
     };
 }
 exports.default = getBoundingClientRect;
 
-},{"./instanceOf.js":"gYFUC","../utils/math.js":"gQqVe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gQqVe":[function(require,module,exports) {
+},{"./instanceOf.js":"gYFUC","../utils/math.js":"gQqVe","./getWindow.js":"2SkOo","./isLayoutViewport.js":"3ipHv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gQqVe":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "max", ()=>max);
@@ -3019,6 +2893,28 @@ parcelHelpers.export(exports, "round", ()=>round);
 var max = Math.max;
 var min = Math.min;
 var round = Math.round;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3ipHv":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _userAgentJs = require("../utils/userAgent.js");
+var _userAgentJsDefault = parcelHelpers.interopDefault(_userAgentJs);
+function isLayoutViewport() {
+    return !/^((?!chrome|android).)*safari/i.test((0, _userAgentJsDefault.default)());
+}
+exports.default = isLayoutViewport;
+
+},{"../utils/userAgent.js":"1hEx0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1hEx0":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+function getUAString() {
+    var uaData = navigator.userAgentData;
+    if (uaData != null && uaData.brands) return uaData.brands.map(function(item) {
+        return item.brand + "/" + item.version;
+    }).join(" ");
+    return navigator.userAgent;
+}
+exports.default = getUAString;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4QxRR":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -3053,14 +2949,17 @@ var _isTableElementJs = require("./isTableElement.js");
 var _isTableElementJsDefault = parcelHelpers.interopDefault(_isTableElementJs);
 var _getParentNodeJs = require("./getParentNode.js");
 var _getParentNodeJsDefault = parcelHelpers.interopDefault(_getParentNodeJs);
+var _userAgentJs = require("../utils/userAgent.js");
+var _userAgentJsDefault = parcelHelpers.interopDefault(_userAgentJs);
 function getTrueOffsetParent(element) {
-    if (!(0, _instanceOfJs.isHTMLElement)(element) || (0, _getComputedStyleJsDefault.default)(element).position === "fixed") return null;
+    if (!(0, _instanceOfJs.isHTMLElement)(element) || // https://github.com/popperjs/popper-core/issues/837
+    (0, _getComputedStyleJsDefault.default)(element).position === "fixed") return null;
     return element.offsetParent;
 } // `.offsetParent` reports `null` for fixed elements, while absolute elements
 // return the containing block
 function getContainingBlock(element) {
-    var isFirefox = navigator.userAgent.toLowerCase().indexOf("firefox") !== -1;
-    var isIE = navigator.userAgent.indexOf("Trident") !== -1;
+    var isFirefox = /firefox/i.test((0, _userAgentJsDefault.default)());
+    var isIE = /Trident/i.test((0, _userAgentJsDefault.default)());
     if (isIE && (0, _instanceOfJs.isHTMLElement)(element)) {
         // In IE 9, 10 and 11 fixed elements containing block is always established by the viewport
         var elementCss = (0, _getComputedStyleJsDefault.default)(element);
@@ -3092,7 +2991,7 @@ function getOffsetParent(element) {
 }
 exports.default = getOffsetParent;
 
-},{"./getWindow.js":"2SkOo","./getNodeName.js":"a2Qom","./getComputedStyle.js":"3mZjB","./instanceOf.js":"gYFUC","./isTableElement.js":"2qBb7","./getParentNode.js":"bIHpd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3mZjB":[function(require,module,exports) {
+},{"./getWindow.js":"2SkOo","./getNodeName.js":"a2Qom","./getComputedStyle.js":"3mZjB","./instanceOf.js":"gYFUC","./isTableElement.js":"2qBb7","./getParentNode.js":"bIHpd","../utils/userAgent.js":"1hEx0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"3mZjB":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _getWindowJs = require("./getWindow.js");
@@ -3128,7 +3027,9 @@ function getParentNode(element) {
     if ((0, _getNodeNameJsDefault.default)(element) === "html") return element;
     return(// $FlowFixMe[incompatible-return]
     // $FlowFixMe[prop-missing]
-    element.assignedSlot || element.parentNode || ((0, _instanceOfJs.isShadowRoot)(element) ? element.host : null) || // $FlowFixMe[incompatible-call]: HTMLElement is a Node
+    element.assignedSlot || // step into the shadow DOM of the parent of a slotted node
+    element.parentNode || ((0, _instanceOfJs.isShadowRoot)(element) ? element.host : null) || // ShadowRoot detected
+    // $FlowFixMe[incompatible-call]: HTMLElement is a Node
     (0, _getDocumentElementJsDefault.default)(element) // fallback
     );
 }
@@ -3449,16 +3350,16 @@ function flip(_ref) {
     var makeFallbackChecks = true;
     var firstFittingPlacement = placements[0];
     for(var i = 0; i < placements.length; i++){
-        var placement1 = placements[i];
-        var _basePlacement = (0, _getBasePlacementJsDefault.default)(placement1);
-        var isStartVariation = (0, _getVariationJsDefault.default)(placement1) === (0, _enumsJs.start);
+        var placement = placements[i];
+        var _basePlacement = (0, _getBasePlacementJsDefault.default)(placement);
+        var isStartVariation = (0, _getVariationJsDefault.default)(placement) === (0, _enumsJs.start);
         var isVertical = [
             (0, _enumsJs.top),
             (0, _enumsJs.bottom)
         ].indexOf(_basePlacement) >= 0;
         var len = isVertical ? "width" : "height";
         var overflow = (0, _detectOverflowJsDefault.default)(state, {
-            placement: placement1,
+            placement: placement,
             boundary: boundary,
             rootBoundary: rootBoundary,
             altBoundary: altBoundary,
@@ -3473,11 +3374,11 @@ function flip(_ref) {
         if (checks.every(function(check) {
             return check;
         })) {
-            firstFittingPlacement = placement1;
+            firstFittingPlacement = placement;
             makeFallbackChecks = false;
             break;
         }
-        checksMap.set(placement1, checks);
+        checksMap.set(placement, checks);
     }
     if (makeFallbackChecks) {
         // `2` may be desired in some cases – research later
@@ -3494,8 +3395,8 @@ function flip(_ref) {
                 return "break";
             }
         };
-        for(var _i1 = numberOfChecks; _i1 > 0; _i1--){
-            var _ret = _loop(_i1);
+        for(var _i = numberOfChecks; _i > 0; _i--){
+            var _ret = _loop(_i);
             if (_ret === "break") break;
         }
     }
@@ -3569,12 +3470,12 @@ var _expandToHashMapJs = require("./expandToHashMap.js"); // eslint-disable-next
 var _expandToHashMapJsDefault = parcelHelpers.interopDefault(_expandToHashMapJs);
 function detectOverflow(state, options) {
     if (options === void 0) options = {};
-    var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? (0, _enumsJs.clippingParents) : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? (0, _enumsJs.viewport) : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? (0, _enumsJs.popper) : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
+    var _options = options, _options$placement = _options.placement, placement = _options$placement === void 0 ? state.placement : _options$placement, _options$strategy = _options.strategy, strategy = _options$strategy === void 0 ? state.strategy : _options$strategy, _options$boundary = _options.boundary, boundary = _options$boundary === void 0 ? (0, _enumsJs.clippingParents) : _options$boundary, _options$rootBoundary = _options.rootBoundary, rootBoundary = _options$rootBoundary === void 0 ? (0, _enumsJs.viewport) : _options$rootBoundary, _options$elementConte = _options.elementContext, elementContext = _options$elementConte === void 0 ? (0, _enumsJs.popper) : _options$elementConte, _options$altBoundary = _options.altBoundary, altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary, _options$padding = _options.padding, padding = _options$padding === void 0 ? 0 : _options$padding;
     var paddingObject = (0, _mergePaddingObjectJsDefault.default)(typeof padding !== "number" ? padding : (0, _expandToHashMapJsDefault.default)(padding, (0, _enumsJs.basePlacements)));
     var altContext = elementContext === (0, _enumsJs.popper) ? (0, _enumsJs.reference) : (0, _enumsJs.popper);
     var popperRect = state.rects.popper;
     var element = state.elements[altBoundary ? altContext : elementContext];
-    var clippingClientRect = (0, _getClippingRectJsDefault.default)((0, _instanceOfJs.isElement)(element) ? element : element.contextElement || (0, _getDocumentElementJsDefault.default)(state.elements.popper), boundary, rootBoundary);
+    var clippingClientRect = (0, _getClippingRectJsDefault.default)((0, _instanceOfJs.isElement)(element) ? element : element.contextElement || (0, _getDocumentElementJsDefault.default)(state.elements.popper), boundary, rootBoundary, strategy);
     var referenceClientRect = (0, _getBoundingClientRectJsDefault.default)(state.elements.reference);
     var popperOffsets = (0, _computeOffsetsJsDefault.default)({
         reference: referenceClientRect,
@@ -3638,8 +3539,8 @@ var _getNodeNameJsDefault = parcelHelpers.interopDefault(_getNodeNameJs);
 var _rectToClientRectJs = require("../utils/rectToClientRect.js");
 var _rectToClientRectJsDefault = parcelHelpers.interopDefault(_rectToClientRectJs);
 var _mathJs = require("../utils/math.js");
-function getInnerBoundingClientRect(element) {
-    var rect = (0, _getBoundingClientRectJsDefault.default)(element);
+function getInnerBoundingClientRect(element, strategy) {
+    var rect = (0, _getBoundingClientRectJsDefault.default)(element, false, strategy === "fixed");
     rect.top = rect.top + element.clientTop;
     rect.left = rect.left + element.clientLeft;
     rect.bottom = rect.top + element.clientHeight;
@@ -3650,8 +3551,8 @@ function getInnerBoundingClientRect(element) {
     rect.y = rect.top;
     return rect;
 }
-function getClientRectFromMixedType(element, clippingParent) {
-    return clippingParent === (0, _enumsJs.viewport) ? (0, _rectToClientRectJsDefault.default)((0, _getViewportRectJsDefault.default)(element)) : (0, _instanceOfJs.isElement)(clippingParent) ? getInnerBoundingClientRect(clippingParent) : (0, _rectToClientRectJsDefault.default)((0, _getDocumentRectJsDefault.default)((0, _getDocumentElementJsDefault.default)(element)));
+function getClientRectFromMixedType(element, clippingParent, strategy) {
+    return clippingParent === (0, _enumsJs.viewport) ? (0, _rectToClientRectJsDefault.default)((0, _getViewportRectJsDefault.default)(element, strategy)) : (0, _instanceOfJs.isElement)(clippingParent) ? getInnerBoundingClientRect(clippingParent, strategy) : (0, _rectToClientRectJsDefault.default)((0, _getDocumentRectJsDefault.default)((0, _getDocumentElementJsDefault.default)(element)));
 } // A "clipping parent" is an overflowable container with the characteristic of
 // clipping (or hiding) overflowing elements with a position different from
 // `initial`
@@ -3668,20 +3569,20 @@ function getClippingParents(element) {
         return (0, _instanceOfJs.isElement)(clippingParent) && (0, _containsJsDefault.default)(clippingParent, clipperElement) && (0, _getNodeNameJsDefault.default)(clippingParent) !== "body";
     });
 } // Gets the maximum area that the element is visible in due to any number of
-function getClippingRect(element, boundary, rootBoundary) {
+function getClippingRect(element, boundary, rootBoundary, strategy) {
     var mainClippingParents = boundary === "clippingParents" ? getClippingParents(element) : [].concat(boundary);
     var clippingParents = [].concat(mainClippingParents, [
         rootBoundary
     ]);
     var firstClippingParent = clippingParents[0];
     var clippingRect = clippingParents.reduce(function(accRect, clippingParent) {
-        var rect = getClientRectFromMixedType(element, clippingParent);
+        var rect = getClientRectFromMixedType(element, clippingParent, strategy);
         accRect.top = (0, _mathJs.max)(rect.top, accRect.top);
         accRect.right = (0, _mathJs.min)(rect.right, accRect.right);
         accRect.bottom = (0, _mathJs.min)(rect.bottom, accRect.bottom);
         accRect.left = (0, _mathJs.max)(rect.left, accRect.left);
         return accRect;
-    }, getClientRectFromMixedType(element, firstClippingParent));
+    }, getClientRectFromMixedType(element, firstClippingParent, strategy));
     clippingRect.width = clippingRect.right - clippingRect.left;
     clippingRect.height = clippingRect.bottom - clippingRect.top;
     clippingRect.x = clippingRect.left;
@@ -3699,29 +3600,21 @@ var _getDocumentElementJs = require("./getDocumentElement.js");
 var _getDocumentElementJsDefault = parcelHelpers.interopDefault(_getDocumentElementJs);
 var _getWindowScrollBarXJs = require("./getWindowScrollBarX.js");
 var _getWindowScrollBarXJsDefault = parcelHelpers.interopDefault(_getWindowScrollBarXJs);
-function getViewportRect(element) {
+var _isLayoutViewportJs = require("./isLayoutViewport.js");
+var _isLayoutViewportJsDefault = parcelHelpers.interopDefault(_isLayoutViewportJs);
+function getViewportRect(element, strategy) {
     var win = (0, _getWindowJsDefault.default)(element);
     var html = (0, _getDocumentElementJsDefault.default)(element);
     var visualViewport = win.visualViewport;
     var width = html.clientWidth;
     var height = html.clientHeight;
     var x = 0;
-    var y = 0; // NB: This isn't supported on iOS <= 12. If the keyboard is open, the popper
-    // can be obscured underneath it.
-    // Also, `html.clientHeight` adds the bottom bar height in Safari iOS, even
-    // if it isn't open, so if this isn't available, the popper will be detected
-    // to overflow the bottom of the screen too early.
+    var y = 0;
     if (visualViewport) {
         width = visualViewport.width;
-        height = visualViewport.height; // Uses Layout Viewport (like Chrome; Safari does not currently)
-        // In Chrome, it returns a value very close to 0 (+/-) but contains rounding
-        // errors due to floating point numbers, so we need to check precision.
-        // Safari returns a number <= 0, usually < -1 when pinch-zoomed
-        // Feature detection fails in mobile emulation mode in Chrome.
-        // Math.abs(win.innerWidth / visualViewport.scale - visualViewport.width) <
-        // 0.001
-        // Fallback here: "Not Safari" userAgent
-        if (!/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+        height = visualViewport.height;
+        var layoutViewport = (0, _isLayoutViewportJsDefault.default)();
+        if (layoutViewport || !layoutViewport && strategy === "fixed") {
             x = visualViewport.offsetLeft;
             y = visualViewport.offsetTop;
         }
@@ -3735,7 +3628,7 @@ function getViewportRect(element) {
 }
 exports.default = getViewportRect;
 
-},{"./getWindow.js":"2SkOo","./getDocumentElement.js":"eJ9Y1","./getWindowScrollBarX.js":"sz4Ld","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"sz4Ld":[function(require,module,exports) {
+},{"./getWindow.js":"2SkOo","./getDocumentElement.js":"eJ9Y1","./getWindowScrollBarX.js":"sz4Ld","./isLayoutViewport.js":"3ipHv","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"sz4Ld":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _getBoundingClientRectJs = require("./getBoundingClientRect.js");
@@ -3952,8 +3845,8 @@ var _getBasePlacementJs = require("./getBasePlacement.js");
 var _getBasePlacementJsDefault = parcelHelpers.interopDefault(_getBasePlacementJs);
 function computeAutoPlacement(state, options) {
     if (options === void 0) options = {};
-    var _options = options, placement1 = _options.placement, boundary = _options.boundary, rootBoundary = _options.rootBoundary, padding = _options.padding, flipVariations = _options.flipVariations, _options$allowedAutoP = _options.allowedAutoPlacements, allowedAutoPlacements = _options$allowedAutoP === void 0 ? (0, _enumsJs.placements) : _options$allowedAutoP;
-    var variation = (0, _getVariationJsDefault.default)(placement1);
+    var _options = options, placement = _options.placement, boundary = _options.boundary, rootBoundary = _options.rootBoundary, padding = _options.padding, flipVariations = _options.flipVariations, _options$allowedAutoP = _options.allowedAutoPlacements, allowedAutoPlacements = _options$allowedAutoP === void 0 ? (0, _enumsJs.placements) : _options$allowedAutoP;
+    var variation = (0, _getVariationJsDefault.default)(placement);
     var placements = variation ? flipVariations ? (0, _enumsJs.variationPlacements) : (0, _enumsJs.variationPlacements).filter(function(placement) {
         return (0, _getVariationJsDefault.default)(placement) === variation;
     }) : (0, _enumsJs.basePlacements);
@@ -4056,15 +3949,15 @@ parcelHelpers.export(exports, "distanceAndSkiddingToXY", ()=>distanceAndSkidding
 var _getBasePlacementJs = require("../utils/getBasePlacement.js");
 var _getBasePlacementJsDefault = parcelHelpers.interopDefault(_getBasePlacementJs);
 var _enumsJs = require("../enums.js"); // eslint-disable-next-line import/no-unused-modules
-function distanceAndSkiddingToXY(placement, rects, offset1) {
+function distanceAndSkiddingToXY(placement, rects, offset) {
     var basePlacement = (0, _getBasePlacementJsDefault.default)(placement);
     var invertDistance = [
         (0, _enumsJs.left),
         (0, _enumsJs.top)
     ].indexOf(basePlacement) >= 0 ? -1 : 1;
-    var _ref = typeof offset1 === "function" ? offset1(Object.assign({}, rects, {
+    var _ref = typeof offset === "function" ? offset(Object.assign({}, rects, {
         placement: placement
-    })) : offset1, skidding = _ref[0], distance = _ref[1];
+    })) : offset, skidding = _ref[0], distance = _ref[1];
     skidding = skidding || 0;
     distance = (distance || 0) * invertDistance;
     return [
@@ -4080,12 +3973,12 @@ function distanceAndSkiddingToXY(placement, rects, offset1) {
 }
 function offset(_ref2) {
     var state = _ref2.state, options = _ref2.options, name = _ref2.name;
-    var _options$offset = options.offset, offset2 = _options$offset === void 0 ? [
+    var _options$offset = options.offset, offset = _options$offset === void 0 ? [
         0,
         0
     ] : _options$offset;
     var data = (0, _enumsJs.placements).reduce(function(acc, placement) {
-        acc[placement] = distanceAndSkiddingToXY(placement, state.rects, offset2);
+        acc[placement] = distanceAndSkiddingToXY(placement, state.rects, offset);
         return acc;
     }, {});
     var _data$state$placement = data[state.placement], x = _data$state$placement.x, y = _data$state$placement.y;
@@ -4309,16 +4202,16 @@ function areValidElements() {
 function popperGenerator(generatorOptions) {
     if (generatorOptions === void 0) generatorOptions = {};
     var _generatorOptions = generatorOptions, _generatorOptions$def = _generatorOptions.defaultModifiers, defaultModifiers = _generatorOptions$def === void 0 ? [] : _generatorOptions$def, _generatorOptions$def2 = _generatorOptions.defaultOptions, defaultOptions = _generatorOptions$def2 === void 0 ? DEFAULT_OPTIONS : _generatorOptions$def2;
-    return function createPopper(reference1, popper1, options1) {
-        if (options1 === void 0) options1 = defaultOptions;
-        var state1 = {
+    return function createPopper(reference, popper, options) {
+        if (options === void 0) options = defaultOptions;
+        var state = {
             placement: "bottom",
             orderedModifiers: [],
             options: Object.assign({}, DEFAULT_OPTIONS, defaultOptions),
             modifiersData: {},
             elements: {
-                reference: reference1,
-                popper: popper1
+                reference: reference,
+                popper: popper
             },
             attributes: {},
             styles: {}
@@ -4326,27 +4219,27 @@ function popperGenerator(generatorOptions) {
         var effectCleanupFns = [];
         var isDestroyed = false;
         var instance = {
-            state: state1,
+            state: state,
             setOptions: function setOptions(setOptionsAction) {
-                var options = typeof setOptionsAction === "function" ? setOptionsAction(state1.options) : setOptionsAction;
+                var options = typeof setOptionsAction === "function" ? setOptionsAction(state.options) : setOptionsAction;
                 cleanupModifierEffects();
-                state1.options = Object.assign({}, defaultOptions, state1.options, options);
-                state1.scrollParents = {
-                    reference: (0, _instanceOfJs.isElement)(reference1) ? (0, _listScrollParentsJsDefault.default)(reference1) : reference1.contextElement ? (0, _listScrollParentsJsDefault.default)(reference1.contextElement) : [],
-                    popper: (0, _listScrollParentsJsDefault.default)(popper1)
+                state.options = Object.assign({}, defaultOptions, state.options, options);
+                state.scrollParents = {
+                    reference: (0, _instanceOfJs.isElement)(reference) ? (0, _listScrollParentsJsDefault.default)(reference) : reference.contextElement ? (0, _listScrollParentsJsDefault.default)(reference.contextElement) : [],
+                    popper: (0, _listScrollParentsJsDefault.default)(popper)
                 }; // Orders the modifiers based on their dependencies and `phase`
                 // properties
-                var orderedModifiers = (0, _orderModifiersJsDefault.default)((0, _mergeByNameJsDefault.default)([].concat(defaultModifiers, state1.options.modifiers))); // Strip out disabled modifiers
-                state1.orderedModifiers = orderedModifiers.filter(function(m) {
+                var orderedModifiers = (0, _orderModifiersJsDefault.default)((0, _mergeByNameJsDefault.default)([].concat(defaultModifiers, state.options.modifiers))); // Strip out disabled modifiers
+                state.orderedModifiers = orderedModifiers.filter(function(m) {
                     return m.enabled;
                 }); // Validate the provided modifiers so that the consumer will get warned
-                var modifiers = (0, _uniqueByJsDefault.default)([].concat(orderedModifiers, state1.options.modifiers), function(_ref) {
+                var modifiers = (0, _uniqueByJsDefault.default)([].concat(orderedModifiers, state.options.modifiers), function(_ref) {
                     var name = _ref.name;
                     return name;
                 });
                 (0, _validateModifiersJsDefault.default)(modifiers);
-                if ((0, _getBasePlacementJsDefault.default)(state1.options.placement) === (0, _enumsJs.auto)) {
-                    var flipModifier = state1.orderedModifiers.find(function(_ref2) {
+                if ((0, _getBasePlacementJsDefault.default)(state.options.placement) === (0, _enumsJs.auto)) {
+                    var flipModifier = state.orderedModifiers.find(function(_ref2) {
                         var name = _ref2.name;
                         return name === "flip";
                     });
@@ -4355,7 +4248,7 @@ function popperGenerator(generatorOptions) {
                         "present and enabled to work."
                     ].join(" "));
                 }
-                var _getComputedStyle = (0, _getComputedStyleJsDefault.default)(popper1), marginTop = _getComputedStyle.marginTop, marginRight = _getComputedStyle.marginRight, marginBottom = _getComputedStyle.marginBottom, marginLeft = _getComputedStyle.marginLeft; // We no longer take into account `margins` on the popper, and it can
+                var _getComputedStyle = (0, _getComputedStyleJsDefault.default)(popper), marginTop = _getComputedStyle.marginTop, marginRight = _getComputedStyle.marginRight, marginBottom = _getComputedStyle.marginBottom, marginLeft = _getComputedStyle.marginLeft; // We no longer take into account `margins` on the popper, and it can
                 // cause bugs with positioning, so we'll warn the consumer
                 if ([
                     marginTop,
@@ -4381,47 +4274,47 @@ function popperGenerator(generatorOptions) {
             // prefer the async Popper#update method
             forceUpdate: function forceUpdate() {
                 if (isDestroyed) return;
-                var _state$elements = state1.elements, reference = _state$elements.reference, popper = _state$elements.popper; // Don't proceed if `reference` or `popper` are not valid elements
+                var _state$elements = state.elements, reference = _state$elements.reference, popper = _state$elements.popper; // Don't proceed if `reference` or `popper` are not valid elements
                 // anymore
                 if (!areValidElements(reference, popper)) {
                     console.error(INVALID_ELEMENT_ERROR);
                     return;
                 } // Store the reference and popper rects to be read by modifiers
-                state1.rects = {
-                    reference: (0, _getCompositeRectJsDefault.default)(reference, (0, _getOffsetParentJsDefault.default)(popper), state1.options.strategy === "fixed"),
+                state.rects = {
+                    reference: (0, _getCompositeRectJsDefault.default)(reference, (0, _getOffsetParentJsDefault.default)(popper), state.options.strategy === "fixed"),
                     popper: (0, _getLayoutRectJsDefault.default)(popper)
                 }; // Modifiers have the ability to reset the current update cycle. The
                 // most common use case for this is the `flip` modifier changing the
                 // placement, which then needs to re-run all the modifiers, because the
                 // logic was previously ran for the previous placement and is therefore
                 // stale/incorrect
-                state1.reset = false;
-                state1.placement = state1.options.placement; // On each update cycle, the `modifiersData` property for each modifier
+                state.reset = false;
+                state.placement = state.options.placement; // On each update cycle, the `modifiersData` property for each modifier
                 // is filled with the initial data specified by the modifier. This means
                 // it doesn't persist and is fresh on each update.
                 // To ensure persistent data, use `${name}#persistent`
-                state1.orderedModifiers.forEach(function(modifier) {
-                    return state1.modifiersData[modifier.name] = Object.assign({}, modifier.data);
+                state.orderedModifiers.forEach(function(modifier) {
+                    return state.modifiersData[modifier.name] = Object.assign({}, modifier.data);
                 });
                 var __debug_loops__ = 0;
-                for(var index = 0; index < state1.orderedModifiers.length; index++){
+                for(var index = 0; index < state.orderedModifiers.length; index++){
                     __debug_loops__ += 1;
                     if (__debug_loops__ > 100) {
                         console.error(INFINITE_LOOP_ERROR);
                         break;
                     }
-                    if (state1.reset === true) {
-                        state1.reset = false;
+                    if (state.reset === true) {
+                        state.reset = false;
                         index = -1;
                         continue;
                     }
-                    var _state$orderedModifie = state1.orderedModifiers[index], fn = _state$orderedModifie.fn, _state$orderedModifie2 = _state$orderedModifie.options, _options = _state$orderedModifie2 === void 0 ? {} : _state$orderedModifie2, name = _state$orderedModifie.name;
-                    if (typeof fn === "function") state1 = fn({
-                        state: state1,
+                    var _state$orderedModifie = state.orderedModifiers[index], fn = _state$orderedModifie.fn, _state$orderedModifie2 = _state$orderedModifie.options, _options = _state$orderedModifie2 === void 0 ? {} : _state$orderedModifie2, name = _state$orderedModifie.name;
+                    if (typeof fn === "function") state = fn({
+                        state: state,
                         options: _options,
                         name: name,
                         instance: instance
-                    }) || state1;
+                    }) || state;
                 }
             },
             // Async and optimistically optimized update – it will not be executed if
@@ -4429,7 +4322,7 @@ function popperGenerator(generatorOptions) {
             update: (0, _debounceJsDefault.default)(function() {
                 return new Promise(function(resolve) {
                     instance.forceUpdate();
-                    resolve(state1);
+                    resolve(state);
                 });
             }),
             destroy: function destroy() {
@@ -4437,23 +4330,23 @@ function popperGenerator(generatorOptions) {
                 isDestroyed = true;
             }
         };
-        if (!areValidElements(reference1, popper1)) {
+        if (!areValidElements(reference, popper)) {
             console.error(INVALID_ELEMENT_ERROR);
             return instance;
         }
-        instance.setOptions(options1).then(function(state) {
-            if (!isDestroyed && options1.onFirstUpdate) options1.onFirstUpdate(state);
+        instance.setOptions(options).then(function(state) {
+            if (!isDestroyed && options.onFirstUpdate) options.onFirstUpdate(state);
         }); // Modifiers have the ability to execute arbitrary code before the first
         // update cycle runs. They will be executed in the same order as the update
         // cycle. This is useful when a modifier adds some persistent data that
         // other modifiers need to use, but the modifier is run after the dependent
         // one.
         function runModifierEffects() {
-            state1.orderedModifiers.forEach(function(_ref3) {
+            state.orderedModifiers.forEach(function(_ref3) {
                 var name = _ref3.name, _ref3$options = _ref3.options, options = _ref3$options === void 0 ? {} : _ref3$options, effect = _ref3.effect;
                 if (typeof effect === "function") {
                     var cleanupFn = effect({
-                        state: state1,
+                        state: state,
                         name: name,
                         instance: instance,
                         options: options
@@ -4502,7 +4395,7 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
     var isOffsetParentAnElement = (0, _instanceOfJs.isHTMLElement)(offsetParent);
     var offsetParentIsScaled = (0, _instanceOfJs.isHTMLElement)(offsetParent) && isElementScaled(offsetParent);
     var documentElement = (0, _getDocumentElementJsDefault.default)(offsetParent);
-    var rect = (0, _getBoundingClientRectJsDefault.default)(elementOrVirtualElement, offsetParentIsScaled);
+    var rect = (0, _getBoundingClientRectJsDefault.default)(elementOrVirtualElement, offsetParentIsScaled, isFixed);
     var scroll = {
         scrollLeft: 0,
         scrollTop: 0
@@ -4512,7 +4405,8 @@ function getCompositeRect(elementOrVirtualElement, offsetParent, isFixed) {
         y: 0
     };
     if (isOffsetParentAnElement || !isOffsetParentAnElement && !isFixed) {
-        if ((0, _getNodeNameJsDefault.default)(offsetParent) !== "body" || (0, _isScrollParentJsDefault.default)(documentElement)) scroll = (0, _getNodeScrollJsDefault.default)(offsetParent);
+        if ((0, _getNodeNameJsDefault.default)(offsetParent) !== "body" || // https://github.com/popperjs/popper-core/issues/1078
+        (0, _isScrollParentJsDefault.default)(documentElement)) scroll = (0, _getNodeScrollJsDefault.default)(offsetParent);
         if ((0, _instanceOfJs.isHTMLElement)(offsetParent)) {
             offsets = (0, _getBoundingClientRectJsDefault.default)(offsetParent, true);
             offsets.x += offsetParent.clientLeft;
@@ -4704,7 +4598,7 @@ exports.default = uniqueBy;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 function mergeByName(modifiers) {
-    var merged1 = modifiers.reduce(function(merged, current) {
+    var merged = modifiers.reduce(function(merged, current) {
         var existing = merged[current.name];
         merged[current.name] = existing ? Object.assign({}, existing, current, {
             options: Object.assign({}, existing.options, current.options),
@@ -4712,8 +4606,8 @@ function mergeByName(modifiers) {
         }) : current;
         return merged;
     }, {}); // IE11 does not support Object.values
-    return Object.keys(merged1).map(function(key) {
-        return merged1[key];
+    return Object.keys(merged).map(function(key) {
+        return merged[key];
     });
 }
 exports.default = mergeByName;
@@ -4721,13 +4615,13 @@ exports.default = mergeByName;
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1PuRF":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "createPopperLite", ()=>(0, _popperLiteJs.createPopper)) // eslint-disable-next-line import/no-unused-modules
+;
 parcelHelpers.export(exports, "createPopper", ()=>createPopper) // eslint-disable-next-line import/no-unused-modules
 ;
 parcelHelpers.export(exports, "popperGenerator", ()=>(0, _createPopperJs.popperGenerator));
 parcelHelpers.export(exports, "defaultModifiers", ()=>defaultModifiers);
 parcelHelpers.export(exports, "detectOverflow", ()=>(0, _createPopperJs.detectOverflow));
-parcelHelpers.export(exports, "createPopperLite", ()=>(0, _popperLiteJs.createPopper)) // eslint-disable-next-line import/no-unused-modules
-;
 var _createPopperJs = require("./createPopper.js");
 var _eventListenersJs = require("./modifiers/eventListeners.js");
 var _eventListenersJsDefault = parcelHelpers.interopDefault(_eventListenersJs);

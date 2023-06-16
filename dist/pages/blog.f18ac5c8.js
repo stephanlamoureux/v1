@@ -143,13 +143,13 @@
     }
   }
 })({"gjOks":[function(require,module,exports) {
-"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "2c4e2dabf18ac5c8";
+"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] \u2728 Error resolved");
+        console.log("[parcel] ✨ Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id1) {
+function hmrDelete(bundle, id) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id1]) {
+    if (modules[id]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id1][1];
+        let deps = modules[id][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id1];
-        delete bundle.cache[id1]; // Now delete the orphans.
+        delete modules[id];
+        delete bundle.cache[id]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -558,38 +558,38 @@ async function getArticle() {
         document.querySelector(".description").textContent = description;
         //For multiple articles that you want to display
         function displayMultipleArticles() {
-            for(let i1 = 1; i1 < data.length; i1++){
+            for(let i = 1; i < data.length; i++){
                 const card = document.createElement("div") //card container
                 ;
                 card.className = "dev-article";
                 const articleLink = document.createElement("a") //link to dev.to
                 ;
-                articleLink.className = "article-link" + i1;
+                articleLink.className = "article-link" + i;
                 articleLink.target = "_blank";
-                articleLink.href = data[i1].url;
+                articleLink.href = data[i].url;
                 const articleTitle = document.createElement("h1") //article title
                 ;
                 articleTitle.className = "article-title";
-                articleTitle.textContent = data[i1].title;
+                articleTitle.textContent = data[i].title;
                 const articleInfo = document.createElement("div") //info container
                 ;
                 articleInfo.className = "article-info";
                 const tagsInArticle = document.createElement("p") //tags
                 ;
                 tagsInArticle.className = "tags";
-                const hashTags = data[i1].tag_list;
+                const hashTags = data[i].tag_list;
                 tagsInArticle.textContent = hashTags.map((i)=>"#" + i).join(", ");
                 const articleDescription = document.createElement("p");
                 articleDescription.className = "description";
-                articleDescription.textContent = data[i1].description;
+                articleDescription.textContent = data[i].description;
                 const articleMinutes = document.createElement("p") //minutes
                 ;
                 articleMinutes.className = "minutes";
-                articleMinutes.textContent = data[i1].reading_time_minutes + " minute read";
+                articleMinutes.textContent = data[i].reading_time_minutes + " minute read";
                 const articleDate = document.createElement("p") //date posted
                 ;
                 articleDate.className = "date";
-                articleDate.textContent = data[i1].readable_publish_date;
+                articleDate.textContent = data[i].readable_publish_date;
                 // make the card a link to the dev.to article
                 card.appendChild(articleLink);
                 // append the title and the article info container to the card
@@ -651,17 +651,17 @@ getArticle();
             /******/ /******/ // Check if module is in cache
             /******/ if (installedModules[moduleId]) /******/ return installedModules[moduleId].exports;
             /******/ // Create a new module (and put it into the cache)
-            /******/ var module = installedModules[moduleId] = {
+            /******/ var module1 = installedModules[moduleId] = {
                 /******/ i: moduleId,
                 /******/ l: false,
                 /******/ exports: {}
             };
             /******/ /******/ // Execute the module function
-            /******/ modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+            /******/ modules[moduleId].call(module1.exports, module1, module1.exports, __webpack_require__);
             /******/ /******/ // Flag the module as loaded
-            /******/ module.l = true;
+            /******/ module1.l = true;
             /******/ /******/ // Return the exports of the module
-            /******/ return module.exports;
+            /******/ return module1.exports;
         /******/ }
         /******/ /******/ /******/ // expose the modules object (__webpack_modules__)
         /******/ __webpack_require__.m = modules;
@@ -698,17 +698,17 @@ getArticle();
                 enumerable: true,
                 value: value
             });
-            /******/ if (mode & 2 && typeof value != "string") for(var key1 in value)__webpack_require__.d(ns, key1, (function(key) {
+            /******/ if (mode & 2 && typeof value != "string") for(var key in value)__webpack_require__.d(ns, key, (function(key) {
                 return value[key];
-            }).bind(null, key1));
+            }).bind(null, key));
             /******/ return ns;
         /******/ };
         /******/ /******/ // getDefaultExport function for compatibility with non-harmony modules
-        /******/ __webpack_require__.n = function(module) {
-            /******/ var getter = module && module.__esModule ? /******/ function getDefault() {
-                return module["default"];
+        /******/ __webpack_require__.n = function(module1) {
+            /******/ var getter = module1 && module1.__esModule ? /******/ function getDefault() {
+                return module1["default"];
             } : /******/ function getModuleExports() {
-                return module;
+                return module1;
             };
             /******/ __webpack_require__.d(getter, "a", getter);
             /******/ return getter;
@@ -722,7 +722,7 @@ getArticle();
         /******/ /******/ /******/ // Load entry module and return exports
         /******/ return __webpack_require__(__webpack_require__.s = 10);
     /******/ }([
-        /* 0 */ /***/ function(module, exports, __webpack_require__) {
+        /* 0 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Extend the target object from other objects.
@@ -744,9 +744,9 @@ getArticle();
                 }
                 return target;
             }
-            module.exports = extend;
+            module1.exports = extend;
         /***/ },
-        /* 1 */ /***/ function(module, exports, __webpack_require__) {
+        /* 1 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is undefined or not.
@@ -760,9 +760,9 @@ getArticle();
  */ function isUndefined(obj) {
                 return obj === undefined; // eslint-disable-line no-undefined
             }
-            module.exports = isUndefined;
+            module1.exports = isUndefined;
         /***/ },
-        /* 2 */ /***/ function(module, exports, __webpack_require__) {
+        /* 2 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is an instance of Array or not.
@@ -776,9 +776,9 @@ getArticle();
  */ function isArray(obj) {
                 return obj instanceof Array;
             }
-            module.exports = isArray;
+            module1.exports = isArray;
         /***/ },
-        /* 3 */ /***/ function(module, exports, __webpack_require__) {
+        /* 3 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Execute the provided callback once for each property of object(or element of array) which actually exist.
@@ -819,9 +819,9 @@ getArticle();
                 if (isArray(obj)) forEachArray(obj, iteratee, context);
                 else forEachOwnProperties(obj, iteratee, context);
             }
-            module.exports = forEach;
+            module1.exports = forEach;
         /***/ },
-        /* 4 */ /***/ function(module, exports, __webpack_require__) {
+        /* 4 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is a string or not.
@@ -835,9 +835,9 @@ getArticle();
  */ function isString(obj) {
                 return typeof obj === "string" || obj instanceof String;
             }
-            module.exports = isString;
+            module1.exports = isString;
         /***/ },
-        /* 5 */ /***/ function(module, exports, __webpack_require__) {
+        /* 5 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is a function or not.
@@ -851,9 +851,9 @@ getArticle();
  */ function isFunction(obj) {
                 return obj instanceof Function;
             }
-            module.exports = isFunction;
+            module1.exports = isFunction;
         /***/ },
-        /* 6 */ /***/ function(module, exports, __webpack_require__) {
+        /* 6 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Execute the provided callback once for each property of object which actually exist.
@@ -885,9 +885,9 @@ getArticle();
                     if (iteratee.call(context, obj[key], key, obj) === false) break;
                 }
             }
-            module.exports = forEachOwnProperties;
+            module1.exports = forEachOwnProperties;
         /***/ },
-        /* 7 */ /***/ function(module, exports, __webpack_require__) {
+        /* 7 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview
@@ -952,9 +952,9 @@ getArticle();
                 extend(obj.prototype, props);
                 return obj;
             }
-            module.exports = defineClass;
+            module1.exports = defineClass;
         /***/ },
-        /* 8 */ /***/ function(module, exports, __webpack_require__) {
+        /* 8 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /* eslint-disable complexity */ /**
  * @fileoverview Returns the first index at which a given element can be found in the array.
@@ -990,9 +990,9 @@ getArticle();
                 }
                 return -1;
             }
-            module.exports = inArray;
+            module1.exports = inArray;
         /***/ },
-        /* 9 */ /***/ function(module, exports, __webpack_require__) {
+        /* 9 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             var template = __webpack_require__(29);
             var sendHostname = __webpack_require__(30);
@@ -1046,20 +1046,20 @@ getArticle();
                     sendHostname("pagination", "UA-129987462-1");
                 }
             };
-            module.exports = util;
+            module1.exports = util;
         /***/ },
-        /* 10 */ /***/ function(module, exports, __webpack_require__) {
+        /* 10 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview The entry file of Pagination components
  * @author NHN. FE Development Lab <dl_javascript@nhn.com>
  */ __webpack_require__(11);
-            module.exports = __webpack_require__(12);
+            module1.exports = __webpack_require__(12);
         /***/ },
-        /* 11 */ /***/ function(module, exports, __webpack_require__) {
+        /* 11 */ /***/ function(module1, exports, __webpack_require__) {
         // extracted by mini-css-extract-plugin
         /***/ },
-        /* 12 */ /***/ function(module, exports, __webpack_require__) {
+        /* 12 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             var CustomEvents = __webpack_require__(13);
             var defineClass = __webpack_require__(7);
@@ -1381,9 +1381,9 @@ getArticle();
                 }
             });
             CustomEvents.mixin(Pagination);
-            module.exports = Pagination;
+            module1.exports = Pagination;
         /***/ },
-        /* 13 */ /***/ function(module, exports, __webpack_require__) {
+        /* 13 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview This module provides some functions for custom events. And it is implemented in the observer design pattern.
@@ -1815,9 +1815,9 @@ getArticle();
                 var events = this._safeEvent(eventName);
                 return events.length;
             };
-            module.exports = CustomEvents;
+            module1.exports = CustomEvents;
         /***/ },
-        /* 14 */ /***/ function(module, exports, __webpack_require__) {
+        /* 14 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is existing or not.
@@ -1842,9 +1842,9 @@ getArticle();
 */ function isExisty(param) {
                 return !isUndefined(param) && !isNull(param);
             }
-            module.exports = isExisty;
+            module1.exports = isExisty;
         /***/ },
-        /* 15 */ /***/ function(module, exports, __webpack_require__) {
+        /* 15 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is null or not.
@@ -1858,9 +1858,9 @@ getArticle();
  */ function isNull(obj) {
                 return obj === null;
             }
-            module.exports = isNull;
+            module1.exports = isNull;
         /***/ },
-        /* 16 */ /***/ function(module, exports, __webpack_require__) {
+        /* 16 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is an object or not.
@@ -1874,9 +1874,9 @@ getArticle();
  */ function isObject(obj) {
                 return obj === Object(obj);
             }
-            module.exports = isObject;
+            module1.exports = isObject;
         /***/ },
-        /* 17 */ /***/ function(module, exports, __webpack_require__) {
+        /* 17 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Execute the provided callback once for each element present in the array(or Array-like object) in ascending order.
@@ -1910,9 +1910,9 @@ getArticle();
                     if (iteratee.call(context, arr[index], index, arr) === false) break;
                 }
             }
-            module.exports = forEachArray;
+            module1.exports = forEachArray;
         /***/ },
-        /* 18 */ /***/ function(module, exports, __webpack_require__) {
+        /* 18 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Provide a simple inheritance in prototype-oriented.
@@ -1955,9 +1955,9 @@ getArticle();
                 prototype.constructor = subType;
                 subType.prototype = prototype;
             }
-            module.exports = inherit;
+            module1.exports = inherit;
         /***/ },
-        /* 19 */ /***/ function(module, exports, __webpack_require__) {
+        /* 19 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Create a new object with the specified prototype object and properties.
@@ -1974,9 +1974,9 @@ getArticle();
                 F.prototype = obj;
                 return new F();
             }
-            module.exports = createObject;
+            module1.exports = createObject;
         /***/ },
-        /* 20 */ /***/ function(module, exports, __webpack_require__) {
+        /* 20 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             var forEach = __webpack_require__(3);
             var defineClass = __webpack_require__(7);
@@ -2284,9 +2284,9 @@ getArticle();
                     this._appendLastButton(viewData);
                 }
             });
-            module.exports = View;
+            module1.exports = View;
         /***/ },
-        /* 21 */ /***/ function(module, exports, __webpack_require__) {
+        /* 21 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Get a target element from an event object.
@@ -2299,9 +2299,9 @@ getArticle();
  */ function getTarget(e) {
                 return e.target || e.srcElement;
             }
-            module.exports = getTarget;
+            module1.exports = getTarget;
         /***/ },
-        /* 22 */ /***/ function(module, exports, __webpack_require__) {
+        /* 22 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Bind DOM events
@@ -2391,9 +2391,9 @@ getArticle();
                     wrappedHandler: wrappedHandler
                 });
             }
-            module.exports = on;
+            module1.exports = on;
         /***/ },
-        /* 23 */ /***/ function(module, exports, __webpack_require__) {
+        /* 23 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Get event collection for specific HTML element
@@ -2413,9 +2413,9 @@ getArticle();
                 if (!handlers) handlers = events[type] = [];
                 return handlers;
             }
-            module.exports = safeEvent;
+            module1.exports = safeEvent;
         /***/ },
-        /* 24 */ /***/ function(module, exports, __webpack_require__) {
+        /* 24 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Prevent default action
@@ -2431,9 +2431,9 @@ getArticle();
                 }
                 e.returnValue = false;
             }
-            module.exports = preventDefault;
+            module1.exports = preventDefault;
         /***/ },
-        /* 25 */ /***/ function(module, exports, __webpack_require__) {
+        /* 25 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Add css class to element
@@ -2468,9 +2468,9 @@ getArticle();
                 });
                 setClassName(element, newClass);
             }
-            module.exports = addClass;
+            module1.exports = addClass;
         /***/ },
-        /* 26 */ /***/ function(module, exports, __webpack_require__) {
+        /* 26 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Get HTML element's design classes.
@@ -2486,9 +2486,9 @@ getArticle();
                 if (isUndefined(element.className.baseVal)) return element.className;
                 return element.className.baseVal;
             }
-            module.exports = getClass;
+            module1.exports = getClass;
         /***/ },
-        /* 27 */ /***/ function(module, exports, __webpack_require__) {
+        /* 27 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Set className value
@@ -2509,9 +2509,9 @@ getArticle();
                 }
                 element.className.baseVal = cssClass;
             }
-            module.exports = setClassName;
+            module1.exports = setClassName;
         /***/ },
-        /* 28 */ /***/ function(module, exports, __webpack_require__) {
+        /* 28 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Check whether the given variable is a instance of HTMLNode or not.
@@ -2526,9 +2526,9 @@ getArticle();
                 if (typeof HTMLElement === "object") return html && (html instanceof HTMLElement || !!html.nodeType);
                 return !!(html && html.nodeType);
             }
-            module.exports = isHTMLNode;
+            module1.exports = isHTMLNode;
         /***/ },
-        /* 29 */ /***/ function(module, exports, __webpack_require__) {
+        /* 29 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Convert text by binding expressions with context.
@@ -2829,9 +2829,9 @@ getArticle();
  */ function template(text, context) {
                 return compile(splitByRegExp(text, EXPRESSION_REGEXP), context);
             }
-            module.exports = template;
+            module1.exports = template;
         /***/ },
-        /* 30 */ /***/ function(module, exports, __webpack_require__) {
+        /* 30 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Send hostname on DOMContentLoaded.
@@ -2879,9 +2879,9 @@ getArticle();
                     });
                 }, 1000);
             }
-            module.exports = sendHostname;
+            module1.exports = sendHostname;
         /***/ },
-        /* 31 */ /***/ function(module, exports, __webpack_require__) {
+        /* 31 */ /***/ function(module1, exports, __webpack_require__) {
             "use strict";
             /**
  * @fileoverview Request image ping.
@@ -2919,7 +2919,7 @@ getArticle();
                 document.body.removeChild(trackingElement);
                 return trackingElement;
             }
-            module.exports = imagePing;
+            module1.exports = imagePing;
         /***/ }
     ]);
 });

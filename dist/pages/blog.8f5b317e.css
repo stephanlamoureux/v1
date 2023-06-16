@@ -17,7 +17,7 @@
 .dev-article {
   width: 65%;
   min-height: 180px;
-  background: linear-gradient(var(--dracula-greypurple), var(--dracula-greypurple) ) padding-box, linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink) ) border-box;
+  background: linear-gradient(var(--dracula-greypurple), var(--dracula-greypurple)) padding-box, linear-gradient(to right, var(--dracula-cyan), var(--dracula-pink)) border-box;
   border: 2px solid #0000;
   border-radius: 5px;
   align-items: center;

@@ -149,8 +149,8 @@ body.light-mode .tui-pagination .tui-first, body.light-mode .tui-pagination .tui
 }
 
 body.light-mode .contact-label {
-  text-shadow: 1px 1px 2px #000;
-  color: #fff;
+  text-shadow: 1px 1px 2px #c7c1c1a8;
+  color: #000;
 }
 
 body.light-mode input, body.light-mode textarea {

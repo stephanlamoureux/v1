@@ -64,11 +64,11 @@ body {
 	scrollbar-width: thin;
 }
 
-main {
-	animation: fadeInAnimation ease 0.3s;
+/* main {
+	animation: fadeInAnimation ease 0.2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: none;
-}
+} */
 
 @keyframes fadeInAnimation {
 	0% {

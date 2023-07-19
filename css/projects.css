@@ -98,7 +98,7 @@
 }
 
 .project-name0::after {
-	content: '#VetsWhoCode Job Search';
+	content: 'Vets Who Code Job Search';
 }
 
 .project-name1::after {
@@ -122,7 +122,7 @@
 	background-color: rgba(68, 71, 90, 0.8);
 	backdrop-filter: blur(20px) saturate(180%);
 	opacity: 0;
-	visibility: hidden;
+	display: none;
 	transform: scale(1.1);
 	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	z-index: 210;
@@ -132,7 +132,7 @@
 
 .show-modal {
 	opacity: 1;
-	visibility: visible;
+	display: initial;
 	transform: scale(1);
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }

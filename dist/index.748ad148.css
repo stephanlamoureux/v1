@@ -55,10 +55,6 @@ body {
   font-family: Inter, sans-serif;
 }
 
-main {
-  animation: .3s fadeInAnimation;
-}
-
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;

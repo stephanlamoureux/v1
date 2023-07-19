@@ -19,9 +19,9 @@
 	padding: 5rem 2rem 0 2rem;
 	width: 100%;
 	display: flex;
-	animation: fadeInAnimation ease 0.3s;
+	/* animation: fadeInAnimation ease 0.3s;
 	animation-iteration-count: 1;
-	animation-fill-mode: none;
+	animation-fill-mode: none; */
 }
 
 .terminal-window {

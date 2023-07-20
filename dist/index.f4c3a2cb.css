@@ -493,7 +493,6 @@
   }
 
   .blog .subheader p {
-    text-align: left;
     font-size: 1rem;
   }
 }
@@ -621,10 +620,6 @@
 
   .contact .subheader, .projects .subheader {
     padding: 25px 15px;
-  }
-
-  .contact .subheader p {
-    text-align: left;
   }
 }
 
@@ -933,7 +928,6 @@
 
 @media (max-width: 530px) {
   .projects .subheader p {
-    text-align: left;
     font-size: 1rem;
   }
 

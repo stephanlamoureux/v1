@@ -78,7 +78,6 @@
 
 .terminal-body {
   color: var(--dracula-foreground);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   width: 100%;
   background: #44475ab3;
@@ -117,7 +116,7 @@
   width: 60px;
   height: 80px;
   margin-left: -30px;
-  animation: .3s fadeInAnimation;
+  animation: fadeInAnimation .3s;
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -129,7 +128,7 @@
   stroke-width: 2px;
   -webkit-filter: drop-shadow(3px 3px 2px #000000b3);
   filter: drop-shadow(3px 3px 2px #000000b3);
-  animation: 2.3s infinite arrow;
+  animation: arrow 2.3s infinite;
 }
 
 @keyframes arrow {
@@ -172,7 +171,7 @@
 }
 
 .tippy-box[data-theme~="gradient"] {
-  background-image: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-green));
+  background-image: linear-gradient(90deg, var(--dracula-cyan), var(--dracula-green) );
   color: var(--dracula-background);
   width: 120px;
   text-align: center;
@@ -213,7 +212,7 @@
   -ms-animation: fa-blink 1.5s infinite;
   text-shadow: 0 4px 3px #0006, 0 8px 13px #0000001a, 0 18px 23px #0000001a;
   font-size: 1.6rem;
-  animation: 1.5s infinite fa-blink;
+  animation: fa-blink 1.5s infinite;
 }
 
 @keyframes fa-blink {
@@ -298,224 +297,6 @@
 .scribble-image {
   width: 17%;
   height: auto;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-svg-arrow {
-  bottom: 0;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-svg-arrow:after, .tippy-box[data-placement^="top"] > .tippy-svg-arrow > svg {
-  top: 16px;
-  transform: rotate(180deg);
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-svg-arrow {
-  top: 0;
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-svg-arrow > svg {
-  bottom: 16px;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-svg-arrow {
-  right: 0;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-svg-arrow:after, .tippy-box[data-placement^="left"] > .tippy-svg-arrow > svg {
-  top: calc(50% - 3px);
-  left: 11px;
-  transform: rotate(90deg);
-}
-
-.tippy-box[data-placement^="right"] > .tippy-svg-arrow {
-  left: 0;
-}
-
-.tippy-box[data-placement^="right"] > .tippy-svg-arrow:after, .tippy-box[data-placement^="right"] > .tippy-svg-arrow > svg {
-  top: calc(50% - 3px);
-  right: 11px;
-  transform: rotate(-90deg);
-}
-
-.tippy-svg-arrow {
-  width: 16px;
-  height: 16px;
-  fill: #333;
-  text-align: initial;
-}
-
-.tippy-svg-arrow, .tippy-svg-arrow > svg {
-  position: absolute;
-}
-
-.tippy-box {
-  border: 1px #0000;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-arrow:after {
-  border-top-color: inherit;
-  border-width: 8px 8px 0;
-  bottom: -8px;
-  left: 0;
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-arrow:after {
-  border-bottom-color: inherit;
-  border-width: 0 8px 8px;
-  top: -8px;
-  left: 0;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-arrow:after {
-  border-left-color: inherit;
-  border-width: 8px 0 8px 8px;
-  top: 0;
-  right: -8px;
-}
-
-.tippy-box[data-placement^="right"] > .tippy-arrow:after {
-  border-width: 8px 8px 8px 0;
-  border-right-color: inherit;
-  top: 0;
-  left: -8px;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
-  top: 17px;
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
-  bottom: 17px;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
-  left: 12px;
-}
-
-.tippy-box[data-placement^="right"] > .tippy-svg-arrow > svg:first-child:not(:last-child) {
-  right: 12px;
-}
-
-.tippy-arrow {
-  border-color: inherit;
-}
-
-.tippy-arrow:after {
-  content: "";
-  z-index: -1;
-  border-style: solid;
-  border-color: #0000;
-  position: absolute;
-}
-
-.tippy-box[data-animation="scale-extreme"][data-placement^="top"] {
-  transform-origin: bottom;
-}
-
-.tippy-box[data-animation="scale-extreme"][data-placement^="bottom"] {
-  transform-origin: top;
-}
-
-.tippy-box[data-animation="scale-extreme"][data-placement^="left"] {
-  transform-origin: 100%;
-}
-
-.tippy-box[data-animation="scale-extreme"][data-placement^="right"] {
-  transform-origin: 0;
-}
-
-.tippy-box[data-animation="scale-extreme"][data-state="hidden"] {
-  opacity: .25;
-  transform: scale(0);
-}
-
-.tippy-box[data-animation="fade"][data-state="hidden"] {
-  opacity: 0;
-}
-
-[data-tippy-root] {
-  max-width: calc(100vw - 10px);
-}
-
-.tippy-box {
-  color: #fff;
-  white-space: normal;
-  background-color: #333;
-  border-radius: 4px;
-  outline: 0;
-  font-size: 14px;
-  line-height: 1.4;
-  transition-property: transform, visibility, opacity;
-  position: relative;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-arrow {
-  bottom: 0;
-}
-
-.tippy-box[data-placement^="top"] > .tippy-arrow:before {
-  border-width: 8px 8px 0;
-  border-top-color: initial;
-  transform-origin: top;
-  bottom: -7px;
-  left: 0;
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-arrow {
-  top: 0;
-}
-
-.tippy-box[data-placement^="bottom"] > .tippy-arrow:before {
-  border-width: 0 8px 8px;
-  border-bottom-color: initial;
-  transform-origin: bottom;
-  top: -7px;
-  left: 0;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-arrow {
-  right: 0;
-}
-
-.tippy-box[data-placement^="left"] > .tippy-arrow:before {
-  border-width: 8px 0 8px 8px;
-  border-left-color: initial;
-  transform-origin: 0;
-  right: -7px;
-}
-
-.tippy-box[data-placement^="right"] > .tippy-arrow {
-  left: 0;
-}
-
-.tippy-box[data-placement^="right"] > .tippy-arrow:before {
-  border-width: 8px 8px 8px 0;
-  border-right-color: initial;
-  transform-origin: 100%;
-  left: -7px;
-}
-
-.tippy-box[data-inertia][data-state="visible"] {
-  transition-timing-function: cubic-bezier(.54, 1.5, .38, 1.11);
-}
-
-.tippy-arrow {
-  width: 16px;
-  height: 16px;
-  color: #333;
-}
-
-.tippy-arrow:before {
-  content: "";
-  border-style: solid;
-  border-color: #0000;
-  position: absolute;
-}
-
-.tippy-content {
-  z-index: 1;
-  padding: 5px 9px;
-  position: relative;
 }
 
 /*# sourceMappingURL=index.f04df894.css.map */

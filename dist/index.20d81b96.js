@@ -143,13 +143,13 @@
     }
   }
 })({"iXLhr":[function(require,module,exports) {
+"use strict";
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 module.bundle.HMR_BUNDLE_ID = "4483dacf20d81b96";
-"use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, globalThis, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
   HMRAsset,
@@ -281,7 +281,7 @@ function removeErrorOverlay() {
     var overlay = document.getElementById(OVERLAY_ID);
     if (overlay) {
         overlay.remove();
-        console.log("[parcel] ✨ Error resolved");
+        console.log("[parcel] \u2728 Error resolved");
     }
 }
 function createErrorOverlay(diagnostics) {
@@ -452,23 +452,23 @@ function hmrApply(bundle, asset) {
         } else if (bundle.parent) hmrApply(bundle.parent, asset);
     }
 }
-function hmrDelete(bundle, id) {
+function hmrDelete(bundle, id1) {
     let modules = bundle.modules;
     if (!modules) return;
-    if (modules[id]) {
+    if (modules[id1]) {
         // Collect dependencies that will become orphaned when this module is deleted.
-        let deps = modules[id][1];
+        let deps = modules[id1][1];
         let orphans = [];
         for(let dep in deps){
             let parents = getParents(module.bundle.root, deps[dep]);
             if (parents.length === 1) orphans.push(deps[dep]);
         } // Delete the module. This must be done before deleting dependencies in case of circular dependencies.
-        delete modules[id];
-        delete bundle.cache[id]; // Now delete the orphans.
+        delete modules[id1];
+        delete bundle.cache[id1]; // Now delete the orphans.
         orphans.forEach((id)=>{
             hmrDelete(module.bundle.root, id);
         });
-    } else if (bundle.parent) hmrDelete(bundle.parent, id);
+    } else if (bundle.parent) hmrDelete(bundle.parent, id1);
 }
 function hmrAcceptCheck(bundle, id, depsByBundle) {
     if (hmrAcceptCheckOne(bundle, id, depsByBundle)) return true;
@@ -538,7 +538,7 @@ var _typedJsDefault = parcelHelpers.interopDefault(_typedJs);
 const typed = new (0, _typedJsDefault.default)("#typed", {
     strings: [
         "",
-        '^2000cat welcome.txt ^1400 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web.``<br> <span class="prompt">→ <span class="cyan-term">v1</span> <span class="purple-term">git:</span><span class="purple-term">(</span><span class="red-term">main</span><span class="purple-term">)</span></span>&nbsp;`'
+        '^2000cat welcome.txt ^1400 <br> `Hey, I\'m Steve.<br>I love to build (and break) things on the web.``<br> <span class="prompt">\u2192 <span class="cyan-term">v1</span> <span class="purple-term">git:</span><span class="purple-term">(</span><span class="red-term">main</span><span class="purple-term">)</span></span>&nbsp;`', 
     ],
     typeSpeed: 70,
     loop: false,
@@ -566,17 +566,17 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
             /******/ /******/ // Check if module is in cache
             /******/ if (installedModules[moduleId]) /******/ return installedModules[moduleId].exports;
             /******/ /******/ // Create a new module (and put it into the cache)
-            /******/ var module1 = installedModules[moduleId] = {
+            /******/ var module = installedModules[moduleId] = {
                 /******/ exports: {},
                 /******/ id: moduleId,
                 /******/ loaded: false
             };
             /******/ /******/ // Execute the module function
-            /******/ modules[moduleId].call(module1.exports, module1, module1.exports, __webpack_require__);
+            /******/ modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
             /******/ /******/ // Flag the module as loaded
-            /******/ module1.loaded = true;
+            /******/ module.loaded = true;
             /******/ /******/ // Return the exports of the module
-            /******/ return module1.exports;
+            /******/ return module.exports;
         /******/ }
         /******/ /******/ /******/ // expose the modules object (__webpack_modules__)
         /******/ __webpack_require__.m = modules;
@@ -587,7 +587,7 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
         /******/ /******/ // Load entry module and return exports
         /******/ return __webpack_require__(0);
     /******/ }([
-        /* 0 */ /***/ function(module1, exports, __webpack_require__) {
+        /* 0 */ /***/ function(module, exports, __webpack_require__) {
             "use strict";
             Object.defineProperty(exports, "__esModule", {
                 value: true
@@ -618,7 +618,7 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
 	 * @param {string} elementId HTML element ID _OR_ HTML element
 	 * @param {object} options options object
 	 * @returns {object} a new Typed object
-	 */ var Typed = function() {
+	 */ var Typed1 = function() {
                 function Typed(elementId, options) {
                     _classCallCheck(this, Typed);
                     // Initialize it up
@@ -951,10 +951,10 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
                 ]);
                 return Typed;
             }();
-            exports["default"] = Typed;
-            module1.exports = exports["default"];
+            exports["default"] = Typed1;
+            module.exports = exports["default"];
         /***/ },
-        /* 1 */ /***/ function(module1, exports, __webpack_require__) {
+        /* 1 */ /***/ function(module, exports, __webpack_require__) {
             "use strict";
             Object.defineProperty(exports, "__esModule", {
                 value: true
@@ -994,7 +994,7 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
             var _defaultsJs2 = _interopRequireDefault(_defaultsJs);
             /**
 	 * Initialize the Typed object
-	 */ var Initializer = function() {
+	 */ var Initializer1 = function() {
                 function Initializer() {
                     _classCallCheck(this, Initializer);
                 }
@@ -1121,11 +1121,11 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
                 ]);
                 return Initializer;
             }();
-            exports["default"] = Initializer;
-            var initializer = new Initializer();
+            exports["default"] = Initializer1;
+            var initializer = new Initializer1();
             exports.initializer = initializer;
         /***/ },
-        /* 2 */ /***/ function(module1, exports) {
+        /* 2 */ /***/ function(module, exports) {
             /**
 	 * Defaults & options
 	 * @returns {object} Typed defaults & options
@@ -1244,9 +1244,9 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
 	   */ onDestroy: function onDestroy(self) {}
             };
             exports["default"] = defaults;
-            module1.exports = exports["default"];
+            module.exports = exports["default"];
         /***/ },
-        /* 3 */ /***/ function(module1, exports) {
+        /* 3 */ /***/ function(module, exports) {
             /**
 	 * TODO: These methods can probably be combined somehow
 	 * Parse HTML tags & HTML Characters
@@ -1273,7 +1273,7 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
             function _classCallCheck(instance, Constructor) {
                 if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
             }
-            var HTMLParser = function() {
+            var HTMLParser1 = function() {
                 function HTMLParser() {
                     _classCallCheck(this, HTMLParser);
                 }
@@ -1324,8 +1324,8 @@ const typed = new (0, _typedJsDefault.default)("#typed", {
                 ]);
                 return HTMLParser;
             }();
-            exports["default"] = HTMLParser;
-            var htmlParser = new HTMLParser();
+            exports["default"] = HTMLParser1;
+            var htmlParser = new HTMLParser1();
             exports.htmlParser = htmlParser;
         /***/ }
     ]);

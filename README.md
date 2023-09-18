@@ -1,15 +1,13 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a19fb031-1095-4149-84a8-7daffcc71542/deploy-status)](https://app.netlify.com/sites/stephanlamoureux/deploys)
-
 # 🔗 [wheresteve.codes](https://wheresteve.codes/)
 
 ## Welcome To My Portfolio Site 👋
 
-<p>I use this as a playground to learn new technologies and showcase my work.</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a19fb031-1095-4149-84a8-7daffcc71542/deploy-status)](https://app.netlify.com/sites/stephanlamoureux/deploys)
 
 <div>
   <h3 class="about-header">Tech Used</h3>
   <p class="about-p">
-  For v1 of my portfolio, I focused on the foundations by using semantic HTML, responsive CSS && vanilla JavaScript along with the following resources:
+    I focused on the foundations by using semantic HTML, responsive CSS && vanilla JavaScript along with the following resources:
   </p>
    <ul>
     <li><a href="https://parceljs.org/">Parcel</a> - Build tool</li>

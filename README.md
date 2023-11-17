@@ -13,6 +13,7 @@
     <li><a href="https://parceljs.org/">Parcel</a> - Build tool</li>
     <li><a href="https://ui.toast.com/tui-pagination">ToastUI</a> - Pagination</li>
     <li><a href="https://atomiks.github.io/tippyjs/">Tippy.js</a> - Tooltips</li>
+    <li><a href="https://github.com/apvarun/toastify-js">Toastify</a> - Notifications</li>
     <li><a href="https://developers.google.com/analytics/devguides/collection/gtagjs">gtag.js</a> - Google analytics</li>
     <li><a href="https://anijs.github.io/">AniJS</a> - Animation library</li>
     <li><a href="https://www.emailjs.com/">EmailJS</a> - Email service</li>

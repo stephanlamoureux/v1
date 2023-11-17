@@ -151,8 +151,12 @@ body.light-mode .dev-article:hover {
 
 /* Pagination */
 
+body.light-mode .tui-pagination .tui-page-btn:hover {
+	background-color: var(--dracula-pink);
+}
+
 body.light-mode .tui-pagination .tui-is-disabled:hover {
-	background: var(--dracula-background);
+	background: var(--dracula-greypurple);
 }
 
 body.light-mode .tui-pagination .tui-is-selected,
@@ -185,6 +189,10 @@ body.light-mode .tui-pagination .tui-last,
 body.light-mode .tui-pagination .tui-prev-is-ellip,
 body.light-mode .tui-pagination .tui-next-is-ellip {
 	border: 1px solid var(--dracula-foreground);
+	background: var(--dracula-greypurple);
+}
+
+body.light-mode .tui-pagination .tui-is-disabled:hover {
 	background: var(--dracula-greypurple);
 }
 

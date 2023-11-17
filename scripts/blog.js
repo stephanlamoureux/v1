@@ -9,7 +9,7 @@ async function getArticle() {
 		const response = await fetch(api_url)
 		const data = await response.json()
 
-		const itemsPerPage = 10 // Number of articles per page
+		const itemsPerPage = 6 // Number of articles per page
 		const totalItems = data.length
 		const totalPages = Math.ceil(totalItems / itemsPerPage)
 
@@ -37,7 +37,7 @@ async function getArticle() {
 				const articleInfo = document.createElement('div') // Info container
 				articleInfo.className = 'article-info'
 
-				const tagsInArticle = document.createElement('p') // Tags
+				const tagsInArticle = document.createElement('p') // Article Tags
 				tagsInArticle.className = 'tags'
 				tagsInArticle.textContent = item.tag_list.map(tag => `#${tag}`).join(', ')
 
@@ -82,8 +82,10 @@ async function getArticle() {
 			template: {
 				page: '<a href="#" class="tui-page-btn">{{page}}</a>',
 				currentPage: '<strong class="tui-page-btn tui-is-selected">{{page}}</strong>',
-				moveButton: (type, disabled) => {
+				moveButton: (typeObj, disabled) => {
 					const isDisabled = disabled ? ' disabled' : ''
+					const type = typeObj.type // Access the 'type' property of the object
+					console.log(type) // This should now log 'first', 'prev', 'next', 'last'
 					return `<a href="#" class="tui-page-btn tui-${type}${isDisabled}"><span class="tui-ico-${type}"></span></a>`
 				},
 			},
@@ -92,6 +94,7 @@ async function getArticle() {
 		pagination.on('afterMove', event => {
 			const currentPage = event.page
 			displayArticles(currentPage)
+			document.querySelector('.divider1').scrollIntoView()
 		})
 	} catch (error) {
 		// hide empty card

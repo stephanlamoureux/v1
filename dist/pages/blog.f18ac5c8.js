@@ -543,70 +543,85 @@ async function getArticle() {
     try {
         const response = await fetch(api_url);
         const data = await response.json();
-        // Data for the first article
-        const link = data[0].url;
-        const title = data[0].title;
-        const tag = data[0].tag_list;
-        const date = data[0].readable_publish_date;
-        const readingTime = data[0].reading_time_minutes;
-        const description = data[0].description;
-        document.querySelector(".article-link").href = link;
-        document.querySelector(".article-title").textContent = title;
-        document.querySelector(".tags").textContent = tag.map((i)=>"#" + i).join(", ");
-        document.querySelector(".date").textContent = date;
-        document.querySelector(".minutes").textContent = readingTime + " minute read";
-        document.querySelector(".description").textContent = description;
-        //For multiple articles that you want to display
-        function displayMultipleArticles() {
-            for(let i = 1; i < data.length; i++){
-                const card = document.createElement("div") //card container
+        const itemsPerPage = 10 // Number of articles per page
+        ;
+        const totalItems = data.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        function displayArticles(page) {
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const paginatedItems = data.slice(startIndex, endIndex);
+            const blogContainer = document.querySelector(".blog-container");
+            blogContainer.innerHTML = "" // Clear existing items
+            ;
+            paginatedItems.forEach((item)=>{
+                const card = document.createElement("div") // Card container
                 ;
                 card.className = "dev-article";
-                const articleLink = document.createElement("a") //link to dev.to
+                const articleLink = document.createElement("a") // Link to dev.to
                 ;
-                articleLink.className = "article-link" + i;
+                articleLink.className = "article-link";
                 articleLink.target = "_blank";
-                articleLink.href = data[i].url;
-                const articleTitle = document.createElement("h1") //article title
+                articleLink.href = item.url;
+                const articleTitle = document.createElement("h3") // Article title
                 ;
                 articleTitle.className = "article-title";
-                articleTitle.textContent = data[i].title;
-                const articleInfo = document.createElement("div") //info container
+                articleTitle.textContent = item.title;
+                const articleInfo = document.createElement("div") // Info container
                 ;
                 articleInfo.className = "article-info";
-                const tagsInArticle = document.createElement("p") //tags
+                const tagsInArticle = document.createElement("p") // Tags
                 ;
                 tagsInArticle.className = "tags";
-                const hashTags = data[i].tag_list;
-                tagsInArticle.textContent = hashTags.map((i)=>"#" + i).join(", ");
-                const articleDescription = document.createElement("p");
+                tagsInArticle.textContent = item.tag_list.map((tag)=>`#${tag}`).join(", ");
+                const articleDescription = document.createElement("p") // Description
+                ;
                 articleDescription.className = "description";
-                articleDescription.textContent = data[i].description;
-                const articleMinutes = document.createElement("p") //minutes
+                articleDescription.textContent = item.description;
+                const articleMinutes = document.createElement("p") // Reading time
                 ;
                 articleMinutes.className = "minutes";
-                articleMinutes.textContent = data[i].reading_time_minutes + " minute read";
-                const articleDate = document.createElement("p") //date posted
+                articleMinutes.textContent = item.reading_time_minutes + " minute read";
+                const articleDate = document.createElement("p") // Date posted
                 ;
                 articleDate.className = "date";
-                articleDate.textContent = data[i].readable_publish_date;
-                // make the card a link to the dev.to article
+                articleDate.textContent = item.readable_publish_date;
+                // Append elements to their respective containers
                 card.appendChild(articleLink);
-                // append the title and the article info container to the card
                 articleLink.appendChild(articleTitle);
                 articleLink.appendChild(articleInfo);
-                // append tags, description, minutes, and date to info container
                 articleInfo.appendChild(tagsInArticle);
                 articleInfo.appendChild(articleDescription);
                 articleInfo.appendChild(articleMinutes);
                 articleInfo.appendChild(articleDate);
-                // append card container to main container
-                document.querySelector(".blog-container").appendChild(card);
-            }
-            // ToastUI Pagination
-            const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {});
+                // Append the card to the blog container
+                blogContainer.appendChild(card);
+            });
         }
-        displayMultipleArticles();
+        // Initial display
+        displayArticles(1);
+        // ToastUI Pagination
+        const pagination = new (0, _tuiPaginationDefault.default)(document.getElementById("tui-pagination-container"), {
+            totalItems,
+            itemsPerPage,
+            visiblePages: 5,
+            page: 1,
+            centerAlign: true,
+            firstItemClassName: "tui-first-child",
+            lastItemClassName: "tui-last-child",
+            template: {
+                page: '<a href="#" class="tui-page-btn">{{page}}</a>',
+                currentPage: '<strong class="tui-page-btn tui-is-selected">{{page}}</strong>',
+                moveButton: (type, disabled)=>{
+                    const isDisabled = disabled ? " disabled" : "";
+                    return `<a href="#" class="tui-page-btn tui-${type}${isDisabled}"><span class="tui-ico-${type}"></span></a>`;
+                }
+            }
+        });
+        pagination.on("afterMove", (event)=>{
+            const currentPage = event.page;
+            displayArticles(currentPage);
+        });
     } catch (error) {
         // hide empty card
         const blogContainer = document.querySelector(".blog-container");

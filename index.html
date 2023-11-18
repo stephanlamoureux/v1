@@ -43,74 +43,9 @@
 
 	<body>
 		<div class="landing-wrapper">
-			<!-- Header Divider -->
-			<div class="divider1">
-				<div class="top-divider">
-					<svg
-						data-name="Layer 1"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 1200 120"
-						preserveAspectRatio="none"
-					>
-						<path
-							d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-							opacity=".25"
-							class="shape-fill"
-						></path>
-						<path
-							d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-							opacity=".5"
-							class="shape-fill"
-						></path>
-						<path
-							d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-							class="shape-fill"
-						></path>
-					</svg>
-				</div>
-			</div>
-			<!-- Divider End -->
+			<header-divider></header-divider>
 
-			<!-- Desktop Nav -->
-			<div class="nav-desktop">
-				<ul class="desktop-list" role="menu">
-					<li role="none">
-						<a href="index.html" role="menuitem">
-							<div class="brand" role="img" aria-label="portfolio picture of Stephan"></div>
-						</a>
-					</li>
-					<li class="desktop-link" role="none">
-						<a class="link is-active" href="index.html" role="menuitem">About</a>
-					</li>
-					<li class="desktop-link" role="none">
-						<a class="link" href="pages/blog.html" role="menuitem">Blog</a>
-					</li>
-					<li class="desktop-link" role="none">
-						<a class="link" href="pages/projects.html" role="menuitem">Projects</a>
-					</li>
-					<li class="desktop-link" role="none">
-						<a class="link" href="pages/contact.html" role="menuitem">Contact</a>
-					</li>
-					<!-- Desktop Color Mode Toggle -->
-					<li role="none">
-						<div class="mode-toggle" role="menuitem">
-							<input
-								type="checkbox"
-								class="checkbox"
-								id="desktop-checkbox"
-								aria-label="color mode selector"
-							/>
-							<label for="desktop-checkbox" class="checkbox-label">
-								<i class="fas fa-moon" alt="moon icon"></i>
-								<i class="fas fa-sun" alt="sun icon"></i>
-								<div class="ball"></div>
-							</label>
-						</div>
-					</li>
-					<!-- End Desktop Color Mode Toggle -->
-				</ul>
-			</div>
-			<!-- End Desktop Nav -->
+			<desktop-nav></desktop-nav>
 
 			<!-- Header -->
 			<header>
@@ -125,62 +60,7 @@
 				</div>
 				<!-- End Header -->
 
-				<!-- Mobile Menu -->
-				<div id="nav-wrapper" class="nav-wrapper about-nav-wrapper">
-					<button
-						class="menu hamburger hamburger--vortex"
-						type="button"
-						aria-label="Menu"
-						aria-controls="navigation"
-					>
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</button>
-					<nav id="navigation" class="navbar">
-						<ul class="nav-list" role="menu">
-							<li class="menu-link" role="none">
-								<a href="index.html" role="menuitem">
-									<div
-										class="mobile-profile"
-										role="img"
-										aria-label="portfolio picture of Stephan"
-									></div>
-								</a>
-							</li>
-							<li class="menu-link" role="none">
-								<a href="index.html" role="menuitem">About</a>
-							</li>
-							<li class="menu-link" role="none">
-								<a href="pages/blog.html" role="menuitem">Blog</a>
-							</li>
-							<li class="menu-link" role="none">
-								<a href="pages/projects.html" role="menuitem">Projects</a>
-							</li>
-							<li class="menu-link" role="none">
-								<a href="pages/contact.html" role="menuitem">Contact</a>
-							</li>
-							<!-- Mobile Color Mode Toggle -->
-							<li role="none">
-								<div class="mode-toggle" role="menuitem">
-									<input
-										type="checkbox"
-										class="mobile-mode-toggle checkbox"
-										id="mobile-checkbox"
-										aria-label="color mode selector"
-									/>
-									<label for="mobile-checkbox" class="checkbox-label">
-										<i class="fas fa-moon" alt="moon icon"></i>
-										<i class="fas fa-sun" alt="sun icon"></i>
-										<div class="ball"></div>
-									</label>
-								</div>
-							</li>
-							<!-- End Mobile Color Mode Toggle -->
-						</ul>
-					</nav>
-				</div>
-				<!-- End Mobile Menu -->
+				<mobile-nav></mobile-nav>
 			</header>
 
 			<!-- Landing Page -->
@@ -284,134 +164,19 @@
 			</section>
 		</main>
 
-		<!-- Footer -->
-		<footer>
-			<div class="icons-flex">
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="https://github.com/stephanlamoureux"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my GitHub"
-					>
-						<i class="fab fa-github fa-stack-1x fa-inverse red"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="assets/StephanLamoureux.pdf"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my Résumé"
-					>
-						<i class="fas fa-file-user fa-stack-1x fa-inverse orange"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="https://twitter.com/sa_lamoureux"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my Twitter"
-					>
-						<i class="fab fa-twitter fa-stack-1x fa-inverse yellow"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="https://dev.to/stephanlamoureux"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my Dev.to"
-					>
-						<i class="fab fa-dev fa-stack-1x fa-inverse green"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="https://www.linkedin.com/in/stephanlamoureux"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my LinkedIn"
-					>
-						<i class="fab fa-linkedin fa-stack-1x fa-inverse cyan"></i>
-					</a>
-				</span>
-				<span class="fa-stack fa-2x" data-anijs="if: mouseenter, do: rubberBand animated">
-					<i class="fas fa-circle fa-stack-2x"></i>
-					<a
-						href="mailto:sa.lamoureux@gmail.com"
-						target="_blank"
-						class="icon-links"
-						rel="noopener noreferrer"
-						aria-label="Link to my email"
-					>
-						<i class="fa fa-envelope fa-stack-1x fa-inverse purple"></i>
-					</a>
-				</span>
-			</div>
-			<p class="coded-by">
-				<a
-					href="https://github.com/stephanlamoureux/v1"
-					target="_blank"
-					class="source-link"
-					rel="noopener noreferrer"
-				>
-					<span class="made">Made with </span>
-					<span class="heart animate-beat">🖤</span>
-					<span class="stephan">
-						by Stephan Lamoureux &copy;
-						<script>
-							document.write(new Date().getFullYear())
-						</script>
-					</span>
-				</a>
-			</p>
-		</footer>
-		<!-- End Footer -->
+		<my-footer></my-footer>
 
-		<!-- Pink Footer Divider -->
-		<div class="divider2">
-			<div class="bottom-divider">
-				<svg
-					data-name="Layer 1"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none"
-				>
-					<path
-						d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-						opacity=".25"
-						class="shape-fill"
-					></path>
-					<path
-						d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-						opacity=".5"
-						class="shape-fill"
-					></path>
-					<path
-						d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-						class="shape-fill"
-					></path>
-				</svg>
-			</div>
-		</div>
-		<!-- Divider End -->
+		<footer-divider></footer-divider>
 
 		<!-- Scripts -->
 		<script src="scripts/about.js" async type="module"></script>
 		<script src="scripts/typed.js" async type="module"></script>
 		<script src="scripts/tippy.js" async type="module"></script>
+		<script src="./components/desktopNav.js"></script>
+		<script src="./components/mobileNav.js"></script>
+		<script src="./components/headerDivider.js"></script>
+		<script src="./components/myFooter.js"></script>
+		<script src="./components/footerDivider.js"></script>
 		<script src="scripts/anijs-master/dist/anijs-min.js" defer></script>
 	</body>
 </html>

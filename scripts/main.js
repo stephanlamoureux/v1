@@ -99,8 +99,10 @@ navbar.addEventListener('change', event => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-	const myHeaderElement = document.querySelector('my-header')
-	if (myHeaderElement) {
-		myHeaderElement.initializeTyped()
-	}
+	setTimeout(() => {
+		const myHeaderElement = document.querySelector('my-header')
+		if (myHeaderElement) {
+			myHeaderElement.initializeTyped()
+		}
+	}, 1000) // Adjust the delay as needed
 })

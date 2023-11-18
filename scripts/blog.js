@@ -85,7 +85,6 @@ async function getArticle() {
 				moveButton: (typeObj, disabled) => {
 					const isDisabled = disabled ? ' disabled' : ''
 					const type = typeObj.type // Access the 'type' property of the object
-					console.log(type) // This should now log 'first', 'prev', 'next', 'last'
 					return `<a href="#" class="tui-page-btn tui-${type}${isDisabled}"><span class="tui-ico-${type}"></span></a>`
 				},
 			},

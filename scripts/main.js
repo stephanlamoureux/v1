@@ -97,3 +97,10 @@ navbar.addEventListener('change', event => {
 		hamburger.classList.add('is-active')
 	}
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+	const myHeaderElement = document.querySelector('my-header')
+	if (myHeaderElement) {
+		myHeaderElement.initializeTyped()
+	}
+})

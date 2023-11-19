@@ -2,7 +2,7 @@ class mobileNav extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 		<!-- Mobile Menu -->
-		<div id="nav-wrapper" class="nav-wrapper about-nav-wrapper">
+		<div id="nav-wrapper" class="nav-wrapper">
 			<button
 				class="menu hamburger hamburger--vortex"
 				type="button"
@@ -58,6 +58,18 @@ class mobileNav extends HTMLElement {
 		</div>
 		<!-- End Mobile Menu -->
 `
+
+		this.updateNavWrapperClass()
+	}
+
+	updateNavWrapperClass() {
+		const currentPath = window.location.pathname
+		const navWrapper = this.querySelector('#nav-wrapper')
+
+		// Add the about-nav-wrapper class if on index.html or root path
+		if (currentPath === '/' || currentPath === '/index.html') {
+			navWrapper.classList.add('about-nav-wrapper')
+		}
 	}
 }
 

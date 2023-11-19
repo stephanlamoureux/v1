@@ -98,9 +98,9 @@ navbar.addEventListener('change', event => {
 	}
 })
 
-document.addEventListener('myHeaderRendered', () => {
-	const myHeaderElement = document.querySelector('my-header')
-	if (myHeaderElement) {
-		myHeaderElement.initializeTyped()
-	}
-})
+// document.addEventListener('myHeaderRendered', () => {
+// 	const myHeaderElement = document.querySelector('my-header')
+// 	if (myHeaderElement) {
+// 		myHeaderElement.initializeTyped()
+// 	}
+// })

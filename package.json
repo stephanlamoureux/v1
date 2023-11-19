@@ -5,10 +5,16 @@
 	"source": "index.html",
 	"scripts": {
 		"dev": "parcel",
-		"build": "parcel build index.html",
+		"build": "parcel build",
 		"test": "jest --verbose ./tests --passWithNoTests",
 		"format": "prettier --write ."
 	},
+  "targets": {
+    "default": {
+      "include": ["src/index.html", "src/pages/*.html"],
+      "context": "browser"
+    }
+  },
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/stephanlamoureux/v1.git"

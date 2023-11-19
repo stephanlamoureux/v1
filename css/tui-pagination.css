@@ -52,7 +52,6 @@
 .tui-pagination strong {
 	color: #fff;
 	background: var(--dracula-purple);
-	border-color: var(--dracula-purple);
 	/* cursor: url('../assets/images/icons/cursor-hand-white.png'), auto; */
 	cursor: pointer;
 }
@@ -74,14 +73,6 @@
 .tui-pagination .tui-last-child,
 .tui-pagination .tui-next-is-ellip {
 	border-right: 1px solid #ddd;
-}
-
-.tui-pagination .tui-first-child.tui-is-selected {
-	border-left: 1px solid var(--dracula-purple);
-}
-
-.tui-pagination .tui-last-child.tui-is-selected {
-	border-right: 1px solid var(--dracula-purple);
 }
 
 .tui-pagination .tui-first,
@@ -179,18 +170,22 @@
 
 .tui-pagination .tui-is-disabled .tui-ico-prev {
 	background-position: -26px 0px;
+	filter: hue-rotate(180deg) brightness(0.4);
 }
 
 .tui-pagination .tui-is-disabled .tui-ico-first {
 	background-position: 0px 0px;
+	filter: hue-rotate(180deg) brightness(0.4);
 }
 
 .tui-pagination .tui-is-disabled .tui-ico-next {
 	background-position: -13px -24px;
+	filter: hue-rotate(180deg) brightness(0.4);
 }
 
 .tui-pagination .tui-is-disabled .tui-ico-last {
 	background-position: 0px -12px;
+	filter: hue-rotate(180deg) brightness(0.4);
 }
 
 .tui-page-inputs {

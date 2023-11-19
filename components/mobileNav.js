@@ -16,7 +16,7 @@ class mobileNav extends HTMLElement {
 			<nav id="navigation" class="navbar">
 				<ul class="nav-list" role="menu">
 					<li class="menu-link" role="none">
-						<a href="index.html" role="menuitem">
+						<a href="/index.html" role="menuitem">
 							<div
 								class="mobile-profile"
 								role="img"
@@ -25,16 +25,16 @@ class mobileNav extends HTMLElement {
 						</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="index.html" role="menuitem">About</a>
+						<a href="/index.html" role="menuitem">About</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="pages/blog.html" role="menuitem">Blog</a>
+						<a href="/blog.html" role="menuitem">Blog</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="pages/projects.html" role="menuitem">Projects</a>
+						<a href="/projects.html" role="menuitem">Projects</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="pages/contact.html" role="menuitem">Contact</a>
+						<a href="/contact.html" role="menuitem">Contact</a>
 					</li>
 					<!-- Mobile Color Mode Toggle -->
 					<li role="none">

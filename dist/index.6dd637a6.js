@@ -10,16 +10,16 @@ class desktopNav extends HTMLElement {
 					</a>
 				</li>
 				<li class="desktop-link" role="none">
-					<a class="link is-active" href="index.html" role="menuitem">About</a>
+					<a class="link is-active" href="/index.html" role="menuitem">About</a>
 				</li>
 				<li class="desktop-link" role="none">
-					<a class="link" href="pages/blog.html" role="menuitem">Blog</a>
+					<a class="link" href="/blog.html" role="menuitem">Blog</a>
 				</li>
 				<li class="desktop-link" role="none">
-					<a class="link" href="pages/projects.html" role="menuitem">Projects</a>
+					<a class="link" href="/projects.html" role="menuitem">Projects</a>
 				</li>
 				<li class="desktop-link" role="none">
-					<a class="link" href="pages/contact.html" role="menuitem">Contact</a>
+					<a class="link" href="/contact.html" role="menuitem">Contact</a>
 				</li>
 				<!-- Desktop Color Mode Toggle -->
 				<li role="none">

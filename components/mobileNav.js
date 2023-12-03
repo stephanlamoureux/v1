@@ -25,16 +25,16 @@ class mobileNav extends HTMLElement {
 						</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/index.html" role="menuitem">About</a>
+						<a href="/" role="menuitem">About</a>
 					</li>
 					<li class="menu-link" role="none">
 						<a href="/blog.html" role="menuitem">Blog</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/projects.html" role="menuitem">Projects</a>
+						<a href="/projects" role="menuitem">Projects</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/contact.html" role="menuitem">Contact</a>
+						<a href="/contact" role="menuitem">Contact</a>
 					</li>
 					<!-- Mobile Color Mode Toggle -->
 					<li role="none">
@@ -67,7 +67,7 @@ class mobileNav extends HTMLElement {
 		const navWrapper = this.querySelector('#nav-wrapper')
 
 		// Add the about-nav-wrapper class if on index.html or root path
-		if (currentPath === '/' || currentPath === '/index.html') {
+		if (currentPath === '/' || currentPath === '/') {
 			navWrapper.classList.add('about-nav-wrapper')
 		}
 	}

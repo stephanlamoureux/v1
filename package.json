@@ -5,7 +5,7 @@
 	"source": "index.html",
 	"scripts": {
 		"dev": "parcel",
-		"build": "parcel build index.html blog.html contact.html projects.html",
+		"build": "parcel build index.html blog.html contact.html projects.html 404.html",
 		"test": "jest --verbose ./tests --passWithNoTests",
 		"format": "prettier --write ."
 	},

@@ -67,7 +67,7 @@ class mobileNav extends HTMLElement {
 		const navWrapper = this.querySelector('#nav-wrapper')
 
 		// Add the about-nav-wrapper class if on index.html or root path
-		if (currentPath === '/' || currentPath === '/') {
+		if (currentPath === '/') {
 			navWrapper.classList.add('about-nav-wrapper')
 		}
 	}

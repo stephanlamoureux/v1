@@ -60,6 +60,7 @@ class mobileNav extends HTMLElement {
 `
 
 		this.updateNavWrapperClass()
+		this.setActiveLink()
 	}
 
 	updateNavWrapperClass() {
@@ -70,6 +71,21 @@ class mobileNav extends HTMLElement {
 		if (currentPath === '/') {
 			navWrapper.classList.add('about-nav-wrapper')
 		}
+	}
+
+	setActiveLink() {
+		const currentPath = window.location.pathname
+		const links = this.querySelectorAll('.link')
+
+		links.forEach(link => {
+			const href = link.getAttribute('href')
+			// Check if the href matches either the root path or index.html
+			if (href === currentPath || (currentPath === '/' && href === '/')) {
+				link.classList.add('is-active')
+			} else {
+				link.classList.remove('is-active')
+			}
+		})
 	}
 }
 

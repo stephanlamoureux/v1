@@ -25,16 +25,16 @@ class mobileNav extends HTMLElement {
 						</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/index.html" role="menuitem">About</a>
+						<a href="/" role="menuitem">About</a>
 					</li>
 					<li class="menu-link" role="none">
 						<a href="/blog.html" role="menuitem">Blog</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/projects.html" role="menuitem">Projects</a>
+						<a href="/projects" role="menuitem">Projects</a>
 					</li>
 					<li class="menu-link" role="none">
-						<a href="/contact.html" role="menuitem">Contact</a>
+						<a href="/contact" role="menuitem">Contact</a>
 					</li>
 					<!-- Mobile Color Mode Toggle -->
 					<li role="none">
@@ -59,12 +59,23 @@ class mobileNav extends HTMLElement {
 		<!-- End Mobile Menu -->
 `;
         this.updateNavWrapperClass();
+        this.setActiveLink();
     }
     updateNavWrapperClass() {
         const currentPath = window.location.pathname;
         const navWrapper = this.querySelector("#nav-wrapper");
         // Add the about-nav-wrapper class if on index.html or root path
-        if (currentPath === "/" || currentPath === "/index.html") navWrapper.classList.add("about-nav-wrapper");
+        if (currentPath === "/") navWrapper.classList.add("about-nav-wrapper");
+    }
+    setActiveLink() {
+        const currentPath = window.location.pathname;
+        const links = this.querySelectorAll(".link");
+        links.forEach((link)=>{
+            const href = link.getAttribute("href");
+            // Check if the href matches either the root path or index.html
+            if (href === currentPath || currentPath === "/" && href === "/") link.classList.add("is-active");
+            else link.classList.remove("is-active");
+        });
     }
 }
 customElements.define("mobile-nav", mobileNav);

@@ -1,6 +1,5 @@
 body.light-mode {
   color: #000;
-  cursor: url("cursor-white.184c40f3.png"), auto;
   background: linear-gradient(#ff79c6 0%, #ad74ff 50%);
   transition: background-color .9s linear;
 }

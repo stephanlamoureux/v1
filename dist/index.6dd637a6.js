@@ -10,16 +10,16 @@ class desktopNav extends HTMLElement {
 									</a>
 							</li>
 							<li class="desktop-link" role="none">
-									<a class="link" href="/index.html" role="menuitem">About</a>
+									<a class="link" href="/" role="menuitem">About</a>
 							</li>
 							<li class="desktop-link" role="none">
-									<a class="link" href="/blog.html" role="menuitem">Blog</a>
+									<a class="link" href="/blog" role="menuitem">Blog</a>
 							</li>
 							<li class="desktop-link" role="none">
-									<a class="link" href="/projects.html" role="menuitem">Projects</a>
+									<a class="link" href="/projects" role="menuitem">Projects</a>
 							</li>
 							<li class="desktop-link" role="none">
-									<a class="link" href="/contact.html" role="menuitem">Contact</a>
+									<a class="link" href="/contact" role="menuitem">Contact</a>
 							</li>
 							<!-- Desktop Color Mode Toggle -->
 							<li role="none">
@@ -50,7 +50,7 @@ class desktopNav extends HTMLElement {
         links.forEach((link)=>{
             const href = link.getAttribute("href");
             // Check if the href matches either the root path or index.html
-            if (href === currentPath || currentPath === "/" && href === "/index.html") link.classList.add("is-active");
+            if (href === currentPath || currentPath === "/" && href === "/") link.classList.add("is-active");
             else link.classList.remove("is-active");
         });
     }

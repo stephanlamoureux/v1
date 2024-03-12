@@ -721,6 +721,10 @@
 	.projects .subheader {
 		padding: 25px 15px;
 	}
+
+	.modal-content ul {
+		max-width: 90%;
+	}
 }
 
 @media (max-width: 740px) {

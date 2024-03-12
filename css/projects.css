@@ -153,6 +153,19 @@
 	cursor: initial;
 }
 
+.modal-content ul {
+	list-style-type: '🔹 ';
+	margin: 32px auto 20px auto;
+	max-width: 80%;
+	color: var(--dracula-foreground);
+}
+
+.modal-content li {
+	margin-bottom: 10px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
 .close-button {
 	width: 1.5rem;
 	line-height: 1.5rem;
@@ -225,4 +238,9 @@
 	transform: translateY(3px);
 	-webkit-transform: translateY(3px);
 	transition: ease 0.1s all;
+}
+
+.job-search-note {
+	font-style: italic;
+	color: var(--dracula-red);
 }

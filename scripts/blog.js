@@ -124,3 +124,5 @@ async function getArticle() {
 }
 
 getArticle()
+
+export { getArticle }
